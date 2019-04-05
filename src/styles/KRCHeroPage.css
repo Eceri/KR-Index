@@ -1,0 +1,208 @@
+
+body > div{
+
+}
+#pageContainer{
+    width: 55%;
+    min-width: 550px;
+    margin: 0 auto 0 auto;
+}
+body > div:last-child{
+    margin-bottom: 200px;
+}
+#hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 185px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding-bottom: 0;
+}
+#hero > h1{
+    margin: 0 15px 0 15px;
+}
+#hero > h2{
+    flex: 2;
+}
+#hero img{
+    margin: 0px;
+    float: left;
+    border: solid darkgray 1px;
+}
+#uw img {
+    width: 100px;
+    height: 100px;
+    border: solid darkgray 1px;
+}
+#uw > section{
+    flex: 1;
+    margin-left: 15px;
+}
+#uw > section > p{
+    margin: 5px 0 0 0;
+}
+#uw > p{
+    flex: 100%;
+}
+
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.skill{
+   display: flex;
+   flex-direction: column;
+   flex: 100%;
+   min-height: 350px;
+   min-width: 420px;
+}
+.skillIcon,
+.ut > img{
+    max-height: 60px;
+    max-width: 60px;
+    border: solid darkgray 1px;
+}
+.skillInfo{
+    margin: 10px;
+}
+#uw,
+.skillInfo > section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skillInfo > section > section{
+    margin-left: 10px;
+}
+.skillInfo > section > p{
+    margin-bottom: 0;
+    flex: 50%;
+    padding-right: 10px;
+}
+.mana{
+    vertical-align: middle;
+    margin: 0;
+}
+.skillName{
+    margin: 0 0 5px 0;
+}
+
+.tPerks{
+    margin: 0 10px 0 10px;
+    display: flex;
+}
+.skillInfo hr{
+    font-weight: lighter;
+    border-color: rgba(166, 166, 166, 0.50);
+}
+.tPerks h4{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.tPerks > section{
+    flex: 2;
+    padding: 0 25px 0 10px;
+}
+.tPerks p{
+
+    margin-top: 5px;
+}
+.ut{
+    margin: 0 10px;
+    display: flex;
+}
+.utStory{
+    margin: 0 10px;
+    width: 60px;
+    text-align: center;
+}
+.ut section{
+    flex: 1;
+    margin-left: 10px;
+}
+.ut p{
+    margin-top: 0;
+    width: 90%;
+}
+#uw h2,
+.ut h3, .books > h3{
+    margin: 0;
+}
+.books{
+    padding: 0 10px 0 10px;
+
+    min-width: 25%;
+}
+.books > p {
+    margin: 0;
+}
+.bookSeperator{
+    margin: 0;
+}
+.skillSeperator{
+    width: 65%;
+    border-color: rgba(166, 166, 166, 0.80);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.subSectionHeadline{
+    margin-top: 100px;
+}
+
+.genericPerks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.genericPerks > h2{
+   horiz-align: center;
+}
+.genericPerks > section{
+    flex: 1;
+    margin: 0 10px 0 10px;
+}
+.genericPerks > hr{
+    font-weight: lighter;
+    border-color: rgba(166, 166, 166, 0.50);
+    margin: 0;
+}
+#triviaList{
+
+    padding-top: 0;
+    list-style: none;
+    flex: 50%;
+}
+#triviaList > li:before{
+    content: "";
+    border-color: transparent darkgray;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+
+.tab-content{
+    width: 100%;
+    border: solid;
+    border-width: 1px 0 0 0;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+.skin{
+    width: 100%;
+}
+@media only screen and (max-width: 1600px) {
+    .bookSeperator {
+        display: none;
+    }
+    .skillInfo > section > p{
+        flex: 100%;
+    }
+}
