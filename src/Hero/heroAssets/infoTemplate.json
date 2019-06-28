@@ -1,0 +1,82 @@
+{
+  "heroName": "",
+  "title": "",
+  "uw": {
+    "name": "",
+    "effect": ""
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "",
+      "effect": "",
+      "cooldown": 0,
+      "cost": 0,
+      "light": "",
+      "dark": "",
+      "books": [
+        "",
+        "",
+        ""
+      ],
+      "ut": {
+        "name": "",
+        "effect": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "",
+      "effect": "",
+      "cooldown": 0,
+      "cost": 0,
+      "light": "",
+      "dark": "",
+      "books": [
+        "",
+        "",
+        ""
+      ],
+      "ut": {
+        "name": "",
+        "effect": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "",
+      "effect": "",
+      "cooldown": 0,
+      "cost": 0,
+      "light": "",
+      "dark": "",
+      "books": [
+        "",
+        "",
+        ""
+      ],
+      "ut": {
+        "name": "",
+        "effect": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "",
+      "effect": "",
+      "cooldown": 0,
+      "cost": 0,
+      "light": "",
+      "dark": "",
+      "books": [
+        "",
+        "",
+        ""
+      ],
+      "ut": {
+        "name": "",
+        "effect": ""
+      }
+    }
+  ]
+}

@@ -1,57 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4a45b3b-6cf5-425a-8652-7f36d5d4fe36" name="Default Changelist" comment="0.2">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/micha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e4a45b3b-6cf5-425a-8652-7f36d5d4fe36" name="Default Changelist" comment="0.2 - added files">
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/Base.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/Beachside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/Fallen Angel.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/Fallen Angel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/Loading Screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/The Holy Vow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/ut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/ut2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/ut3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/ut4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Aselica/uw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/Base.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/ut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/ut2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/ut3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/ut4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Epis/uw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/s1_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/s1_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/ut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/ut2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/ut3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/ut4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Seria/uw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/Sonia/info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/book1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/book2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/book3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/book4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/chain_link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hero/heroAssets/infoTemplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Archers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Assassins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Knights.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Mechanics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Priests.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Warriors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Wizards.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/classes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/heroSkill.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Skill.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero/Skill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artifacts/Artifact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/Base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/Beachside.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/Fallen Angel.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/Fallen Angel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/The Holy Vow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/details.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/s2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/s3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/s4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/ut1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/ut2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/ut3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/ut4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Aselica/uw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/Base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/s2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/s3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/s4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/ut1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/ut2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/ut3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/ut4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/Epis/uw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/heroes/infoTemplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/manaOrb.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero/manaOrb.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getHeroData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/KRCHeroPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/KRCompendiumNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/KRCompendiumNav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tabStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero/tabStyles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -111,16 +121,21 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Hero/Skill.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
-                  <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+                <state relative-caret-position="182">
+                  <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Hero/heroAssets/chain_link.svg">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -193,8 +208,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+                <state relative-caret-position="384">
+                  <caret line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -277,6 +292,7 @@
         <option value="$PROJECT_DIR$/src/styles/KRCompendiumNav.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/Hero/Skill.js" />
+        <option value="$PROJECT_DIR$/src/Hero/heroAssets/chain_link.svg" />
       </list>
     </option>
   </component>
@@ -410,12 +426,20 @@
       <workItem from="1561568820748" duration="15142000" />
       <workItem from="1561653931856" duration="16617000" />
       <workItem from="1561747772385" duration="642000" />
-      <workItem from="1561748721598" duration="11139000" />
+      <workItem from="1561748721598" duration="13343000" />
     </task>
+    <task id="LOCAL-00001" summary="0.2">
+      <created>1561760100792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561760100792</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107718000" />
+    <option name="totallyTimeSpent" value="109922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -425,7 +449,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32855567" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.3296582" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.33076075" />
@@ -447,7 +471,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.2" />
+    <MESSAGE value="0.2 - added files" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.2 - added files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -636,20 +661,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        <state relative-caret-position="384">
+          <caret line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hero/Skill.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        <state relative-caret-position="182">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hero/heroAssets/chain_link.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

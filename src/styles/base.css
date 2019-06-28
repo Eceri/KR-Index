@@ -1,0 +1,24 @@
+main{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(45, 45, 45, .95);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Oswald', sans-serif
+}
+#content{
+    margin-left: 120px;
+    padding: 30px;
+}
+#pageContainer{
+    width: 55%;
+    min-width: 550px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+}
+#pageContainer:last-child{
+    margin-bottom: 200px;
+}

@@ -1,0 +1,137 @@
+p{
+    margin: 0;
+}
+p:hover {
+    cursor: default;
+}
+.skillIcon,
+.ut img{
+    max-height: 70px;
+    max-width: 70px;
+    border: solid darkgray 1px;
+}
+.skillBaseInfo{
+    min-width: 450px;
+    padding: 0;
+}
+.skillBlock{
+    padding: 5px;
+}
+.skillHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skillHeader > div{
+    margin-left: 10px;
+}
+.skillDescription{
+    padding: 5px;
+}
+.mana{
+    vertical-align: middle;
+    margin: 0;
+}
+.skillName{
+    margin: 0 0 5px 0;
+}
+.skillBaseInfo hr{
+    font-weight: lighter;
+    border-color: rgba(166, 166, 166, 0.50);
+}
+.linkedSkill{
+    height: 100%;
+}
+.linkedSkill:nth-child(2){
+    margin-left: 30px;
+}
+.linkedSkill:nth-child(3){
+     margin-left: 30px;
+ }
+.ut{
+    margin: 25px 0 15px 15px;
+}
+.ut > h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.utStory{
+    margin: 0 10px;
+    width: 60px;
+    text-align: center;
+}
+.ut > section{
+    display: flex;
+}
+.ut section{
+    flex: 1;
+    margin-left: 5px;
+}
+.ut img {
+    margin-top: 5px;
+}
+.ut p{
+    margin-top: 0;
+    width: 90%;
+}
+.ut h4, .books > h3{
+    margin: 0;
+}
+.books{
+    margin: 25px 10px 0 10px;
+    width: 100%;
+    min-width: 25%;
+}
+.books > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.bookEffects{
+    flex: 1;
+}
+.bookEffects > img{
+    height: 30px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+.books p {
+    margin: 0 10px;
+}
+.skillSeperator{
+    width: 65%;
+    border-color: rgba(166, 166, 166, 0.80);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tPerks{
+    margin: 25px 5px 0 5px;
+    display: flex;
+}
+.tPerks h4{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.tPerks > div{
+    flex: 2;
+    margin: 0 25px 0 0;
+    padding: 10px;
+}
+.light:hover{
+    background-color: #989b97;
+}
+.dark:hover{
+    background-color: #202021;
+}
+.chainlink{
+    width: 30px;
+    color: white;
+    z-index: 3000;
+}
+@media only screen and (max-width: 1600px) {
+    .skillBaseInfo > section > section > p{
+        flex: 100%;
+    }
+}
+

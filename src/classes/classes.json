@@ -1,0 +1,70 @@
+{
+  "classes": [
+    {
+      "class": "Knights",
+      "heroes": [
+        "Aselica",
+        "Clause",
+        "Demia",
+        "Dosarta",
+        "Glenwys",
+        "Jane",
+        "Morrah",
+        "Loman",
+        "Neraxis",
+        "Phillop",
+        "Ricardo",
+        "Sonia"
+      ],
+      "ClassTranscendencePerks": []
+    },
+    {
+      "class": "Warriors",
+      "heroes": [
+        "Bernheim",
+        "Chase",
+        "Gau",
+        "Kasel",
+        "Naila",
+        "Nicky",
+        "Priscilla",
+        "Scarlet",
+        "Seria",
+        "Theo",
+        "Viska"
+      ],
+      "ClassTranscendencePerks": []
+    },
+    {
+      "class": "Assassins",
+      "heroes": [
+        "Epis",
+        "Erze",
+        "Ezekiel",
+        "Fluss",
+        "Gladi",
+        "Laudia",
+        "Mirianne",
+        "Nia",
+        "Reina",
+        "Roi",
+        "Tanya"
+      ],
+      "ClassTranscendencePerks": []
+    },
+    {
+      "class": "Archers",
+      "heroes": [
+        "Arch",
+        "Dimael",
+        "Luna",
+        "Requina",
+        "Selene",
+        "Shamilla",
+        "Yanne",
+        "Zafir"
+      ],
+      "ClassTranscendencePerks": []
+    }
+  ]
+}
