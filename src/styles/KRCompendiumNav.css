@@ -1,19 +1,15 @@
-main{
+#sideNav {
+    width: 150px;
     margin: 0;
     padding: 0;
+    height: 100%;
+    position: fixed;
+    background-color: #292928;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
-body{
-    background-color: #414240;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Oswald', sans-serif
-}
-#content{
-    margin-left: 120px;
-    padding: 30px;
-}
-nav {
+#sideNav {
     width: 120px;
     z-index: 200;
     position: fixed;
@@ -22,38 +18,65 @@ nav {
     height: 100%;
     background-color: #292928;
 }
-nav,
-nav ul,
-nav ul li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
+#sideNav a{
+    padding: 10px 0 10px 10px;
 }
-nav a{
+#sideNav  a,
+.heroClassButton{
     display: inline-block;
     text-align: left;
-    padding: 15px 15px;
     text-decoration: none;
     color: white;
 }
-
-nav ul li:hover,
-.navClass:hover{background-color: black;}
-.navClass a{padding-left: 30px;}
-.navClass:hover ul{
-    visibility: visible;
-}
-.classesSubmenu{
-    position: absolute;
-    visibility: hidden;
+.heroClassButton{
     width: 100%;
-    top: 0;
-    left: 100%;
-    display: inline-block;
+    padding: 10px 0;
+}
+.heroClassButton > span {
+    margin-left: 10px;
+}
+
+#sideNav img{
+    vertical-align: middle;
+    margin-right: 5px;
 
 }
-.classesSubmenu li{
-    background-color:#313331;
+#sideNav ul li:hover,
+.navClass:hover,
+#sideNav .btn:hover{background-color: black;}
+.navClass{padding-left: 15px;}
+
+.classDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.heroClassButton:hover,
+a:hover{
+    background-color: black;
+}
+
+.heroContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.hero{
+    flex: 1;
+    background-color: dimgray;
+
+}
+.active{
+    background-color: black;
 }
 

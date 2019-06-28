@@ -1,18 +1,36 @@
 import React, { Component } from "react";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 class Home extends Component {
     render() {
         return (
             <div id={"pageContainer"}>
                 <h1>King's Raid Compendium</h1>
-                <p>Cras facilisis urna ornare ex volutpat, et
-                    convallis erat elementum. Ut aliquam, ipsum vitae
-                    gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-                    metus nec massa. Maecenas hendrerit laoreet augue
-                    nec molestie. Cum sociis natoque penatibus et magnis
-                    dis parturient montes, nascetur ridiculus mus.</p>
+                <Accordion allowZeroExpanded={true}>
+                    <AccordionItem>
+                        <a href={"/hero/Aselica"}>Aselica</a>
+                        <AccordionItemHeading>
 
-                <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+                            <AccordionItemButton>
+                                What harsh truths do you prefer to ignore?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                                Exercitation in fugiat est ut ad ea cupidatat ut in
+                                cupidatat occaecat ut occaecat consequat est minim minim
+                                esse tempor laborum consequat esse adipisicing eu
+                                reprehenderit enim.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                </Accordion>
             </div>
         );
     }
