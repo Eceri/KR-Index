@@ -4,7 +4,6 @@
     padding: 0;
     width: inherit;
 }
-
 .react-tabs__tab {
     display: inline-block;
     border: 1px solid transparent;
@@ -16,8 +15,10 @@
     cursor: pointer;
     width: inherit;
 }
-.skin {
-    height: 705px;
+.skin{
+    border: none;
+    width: 100%;
+    min-width: 350px;
 }
 .react-tabs__tab-panel > img{
     max-height: 945px;

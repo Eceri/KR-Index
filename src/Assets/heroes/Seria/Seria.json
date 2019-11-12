@@ -1,5 +1,5 @@
 {
-  "heroName": "Seria",
+  "name": "Seria",
   "title": "Shadow of the Abyss",
   "class": "warrior",
   "uw": {
@@ -37,7 +37,8 @@
       ],
       "ut": {
         "name": "Whetstone of Demon",
-        "effect": "[Mysterious Sword - Falling Petals] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 240. [Mysterious Sword - Blossom] Increases DMG by 50%, and upon Critical Hit, reduces Cooldown of [Mysterious Sword - Falling Petals] by 1 sec. "
+        "effect": "[Mysterious Sword - Falling Petals] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 240. [Mysterious Sword - Blossom] Increases DMG by 50%, and upon Critical Hit, reduces Cooldown of [Mysterious Sword - Falling Petals] by 1 sec.",
+        "introduction": "An ominous whetstone known to hold the soul of a demon.\n Swords that contain a pact of servitude must be sharpened with this whetstone as ordinary ones won't work for them. Used with Enlightening candlelight, Elision's resistance against Demons becomes maximized."
       }
     },
     {
@@ -111,17 +112,15 @@
   "light": "ATK, DEF, HP+15% / Crit DMG +20%",
   "dark": "All of caster's attacks will be critical hits, but the caster becomes unable to block while taking 25% increased damage.",
   "skins": [],
-  "story": "Seria is the 101st heir of the ShadowHilts, a family of hunters that slays non-human, supernatural beings. She came all the way to Orvelia as a vampire hunter, seeking vengeance against her sister who turned into a vampire and slaughtered her comrades. Seria is also trying to save her little sister by putting her out of her misery.",
-  "trivia": [
-    "Seria is a 19 year old girl.",
-    "Her birthday is July 6, month of Harmony.",
-    "Her constellation is Notmun the Turner.",
-    "She likes her sister Erze, strawberry parfait, fine swords and the moon.",
-    "She dislikes her sister as a vampire and spiders.",
-    "She is the second hero to have a playable sibling (after Laias and Lilia).",
-    "Aside from hunting down her sister due to the murder of her friends, Seria had also been searching for Lewisia.",
-    "Her name means 'serious' in Spanish.",
-    "Her weapon more closely resembles a Katana.",
-    "Likely the chosen warrior in her story is Kyle, who seems to have fallen into path of darkness."
-  ]
+  "story": "The 101st Heir of ShadowHilt and the Sister of Erze. People call her cold-blooded for her unfriendly attitude, but she used to be all smiles when she was around her beloved sister, Erze. Seria always felt sorry for her feeble sister and was overprotective of her, without realizing that she was actually putting Erze in great despair.\n One day Erze fell into a trap during a mission. She was saved, but her sickness started to worsen dramatically. Meanwhile, Seria was sent to Windland Snow Mountain to follow the traces of the Vampire Princess.\n She had a glimpse of what was going on with her sister, but she left for the top-priority mission, praying that she was wrong. However, the tragedy strick the sisters as if it was mocking Seria's prayers.\n - Oh, my beloved sister, Seria!\n Seria returned to find the corpses of her comrades laying on the ground, cold as ice.\n Erze welcomed her with two sharp fangs, thirsting for blood.\n Seria trembled with waves of emotions.\n Her heart was breaking, yet she spoke in a cold, calm tone.\n- You...are not my little sister anymore. You're a filthy bloodsucker.",
+  "profile": {
+    "gender": "female",
+    "race": "Human",
+    "age": "19 years",
+    "height": "172 cm",
+    "birthday": "July 6, month of Harmony.",
+    "constellation": "Notmun, the Turner",
+    "likes": "Her sister Erze, strawberry parfait, fine swords, the moon",
+    "dislikes": "Vampire Erze, spiders"
+  }
 }

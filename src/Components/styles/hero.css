@@ -1,3 +1,7 @@
+hr{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
 #hero{
     display: flex;
     flex-direction: row;
@@ -12,7 +16,6 @@
     margin: 0;
     flex: 70%;
 }
-
 #hero  h1 > img{
     border: none;
     width: 20px;
@@ -20,37 +23,39 @@
 }
 #hero img{
     margin: 0 15px 0 0 ;
-    width: 90px;
-    height: 90px;
-    border: solid darkgray 1px;
-}
-#uw img {
     width: 100px;
     height: 100px;
-    border: solid darkgray 1px;
-}
-#uw > section{
-    flex: 1;
-    margin-left: 15px;
-}
-#uw > section > p{
-    margin: 5px 0 0 0;
-}
-#uw > p{
-    flex: 100%;
 }
 
+#uw{
+    display: flex;
+}
+#uwIcon{
+    padding: 10px;
+}
+#uwIcon > img {
+    width: 95px;
+    height: 95px;
+}
+#uw h2{
+    margin: 0;
+}
+#uw p{
+    padding: 0;
+    margin: 0;
+}
 .flexBox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 5px;
 }
 .flexBox > section {
     width: 100%;
 }
 .subSectionHeadline{
+    margin-bottom: 10px;
     margin-top: 100px;
 }
 .genericPerks{
@@ -70,23 +75,35 @@
     border-color: rgba(166, 166, 166, 0.50);
     margin: 0;
 }
-#triviaList{
-
-    padding-top: 0;
-    list-style: none;
-    flex: 50%;
+#heroBackground {
+    display: flex;
+    flex-direction: row;
 }
-#triviaList > li:before{
-    content: "";
-    border-color: transparent darkgray;
-    border-style: solid;
-    border-width: 0.35em 0 0.35em 0.45em;
-    display: block;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
+#story{
+    width: 50%;
+    white-space: pre-line;
+    padding: 10px;
+    min-width: 305px;
 }
-
+#profile{
+    width: 50%;
+    min-width: 350px;
+    padding: 10px;
+    margin-left: 30px;
+    background-color: #202021;
+}
+#profileTable td{
+    vertical-align: baseline;
+}
+.react-tabs__tab-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.react-tabs__tab{
+    flex: 1;
+    text-align: center;
+}
 .tab-content{
     width: 100%;
     border: solid;
@@ -95,4 +112,3 @@
     margin: 0;
     min-height: 100%;
 }
-

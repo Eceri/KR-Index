@@ -1,0 +1,24 @@
+[
+{
+    "name": "ATK Up",
+    "effect": "ATK is increased by 30%"
+  },
+  {
+    "name": "HP Up",
+    "effect": "HP is increased by 30%"
+
+  },
+  {
+    "name": "DEF Up",
+    "effect": "DEF is increased by 35%"
+  },
+  {
+    "name": "Crit Resist Up",
+    "effect": "Crit Resistance increases by 250"
+
+  },
+  {
+    "name": "Monster Hunting",
+    "effect": "Increases DMG to non-hero Enemies by 10% and takes 10% less dmg."
+  }
+]

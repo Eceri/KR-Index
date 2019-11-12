@@ -7,17 +7,21 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Oswald', sans-serif
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+img{
+    border: solid darkgray 1px;
 }
 #content{
     margin-left: 120px;
     padding: 30px;
 }
 #pageContainer{
-    width: 55%;
-    min-width: 550px;
+    width: 50%;
+    min-width: 350px;
     margin: 0 auto 0 auto;
-    padding: 20px;
+
 }
 #pageContainer:last-child{
     margin-bottom: 200px;

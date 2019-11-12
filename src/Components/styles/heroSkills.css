@@ -1,17 +1,28 @@
 p{
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 p:hover {
     cursor: default;
 }
+.skillNumber{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 50px;
+    position: relative;
+    height: 0;
+    top: -25px;
+}
 .skillIcon,
-.ut img{
+.ut img,
+.books img{
     max-height: 70px;
     max-width: 70px;
-    border: solid darkgray 1px;
 }
 .skillBaseInfo{
-    min-width: 450px;
+    min-width: 350px;
     padding: 0;
 }
 .skillBlock{
@@ -25,12 +36,10 @@ p:hover {
 .skillHeader > div{
     margin-left: 10px;
 }
-.skillDescription{
-    padding: 5px;
-}
 .mana{
     vertical-align: middle;
     margin: 0;
+    border: none;
 }
 .skillName{
     margin: 0 0 5px 0;
@@ -41,9 +50,7 @@ p:hover {
 }
 .linkedSkill{
     height: 100%;
-}
-.linkedSkill:nth-child(2){
-    margin-left: 30px;
+    display: flex;
 }
 .linkedSkill:nth-child(3){
      margin-left: 30px;
@@ -60,25 +67,28 @@ p:hover {
     width: 60px;
     text-align: center;
 }
-.ut > section{
+.ut > div{
     display: flex;
-}
-.ut section{
     flex: 1;
-    margin-left: 5px;
 }
-.ut img {
+.ut > img {
     margin-top: 5px;
+
 }
 .ut p{
     margin-top: 0;
+    margin-left: 5px;
     width: 90%;
 }
-.ut h4, .books > h3{
+h3{
     margin: 0;
 }
+.ut h4{
+    margin: 0;
+    margin-left: 5px;
+}
 .books{
-    margin: 25px 10px 0 10px;
+    margin: 25px 15px 0 15px;
     width: 100%;
     min-width: 25%;
 }
@@ -118,20 +128,13 @@ p:hover {
     margin: 0 25px 0 0;
     padding: 10px;
 }
-.light:hover{
+/*.light:hover{
     background-color: #989b97;
 }
 .dark:hover{
     background-color: #202021;
-}
+}*/
 .chainlink{
-    width: 30px;
-    color: white;
-    z-index: 3000;
+    height: 50px;
+    border: none;
 }
-@media only screen and (max-width: 1600px) {
-    .skillBaseInfo > section > section > p{
-        flex: 100%;
-    }
-}
-

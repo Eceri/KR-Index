@@ -1,5 +1,5 @@
 {
-  "heroName": "Aselica",
+  "name": "Aselica",
   "title": "Guardian of the Sun",
   "class": "knight",
   "uw": {
@@ -98,8 +98,8 @@
   "light": "ATK, DEF, HP+15% / P. Block +200.",
   "dark": "At the beginning of the first battle, increases P.DEF of the ally with the highest ATK by 20% of P.DEF. This effect cannot be dispelled.",
   "skins": ["Base", "The Holy Vow", "Beachside", "Fallen Angel", "Loading Screen"],
-  "story": "As a knight of the righteous heavens, she punishes evil with her sword and protects the weak with her shield. She has descended in order to defeat the Demons who are ruining the earthly realm. Her beautiful sword and shield are wielded to smite enemies and protect her comrades with their light.",
-  "trivia": [
+  "story": "A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose devine light she uses to fight against darkness. She is tasked with the protection of the soul of the other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again.",
+  "profile": [
     "She is 170cm (about 5'6' feet).",
     "Her birthday is September 22nd.",
     "Her constellation is Judgment Layan.",

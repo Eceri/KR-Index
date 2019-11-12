@@ -17,7 +17,7 @@ class Hero extends Component {
     }
 
     setStateFromProps(heroName) {
-        let jsonFile = require(`./heroAssets/${heroName}/info.json`);
+        let jsonFile = require(`./heroAssets/${heroName}/${heroName}.json`);
         let pathString = `./heroAssets/${heroName}/`;
         this.setState({
             isLoading: false,
@@ -53,16 +53,17 @@ class Hero extends Component {
         if (!this.state.isLoading) {
             const heroPath = this.state.heroPath;
             const heroInfo = this.state.heroInfo;
+            const profile = heroInfo.profile
             return <article id={"pageContainer"}>
                 {title}
                 <div id={"hero"}>
                     <img src={require(`${heroPath}hero.png`)} alt={heroName} />
                     <div>
-                        <h1>{heroInfo.heroName} </h1>
+                        <h1>{heroInfo.name} </h1>
                         <h2>{heroInfo.title}</h2>
                     </div>
                 </div>
-                <h2>Unique Weapon</h2>
+                <h2 >Unique Weapon</h2>
                 <hr/>
                 <section id={"uw"}>
                     <img src={require(`${heroPath}uw.png`)} alt={"UW Icon"}/>
@@ -148,32 +149,46 @@ class Hero extends Component {
                     </div>
                 </section>
 
+                <div>
+                    <h2 className={"subSectionHeadline"}>Art & Skins</h2>
+                    <Tabs>
+                        <TabList>
+                            {heroInfo.skins.map(skin => <Tab>{skin}</Tab>)}
+                        </TabList>
+                        {heroInfo.skins.map(skin =>
+                            <TabPanel forceRender={true}>
+                                <div><img src={require(`${heroPath}${skin}.png`)} alt={skin} className={"skin"}/></div>
+                            </TabPanel>)}
+                    </Tabs>
+                </div>
                 <h2 className="subSectionHeadline">Miscellaneous</h2>
                 <hr/>
-                <section>
-                    <h3>Story</h3>
-                    <section>
+                <div id={"heroBackground"}>
+                    <div id={"story"} >
+                        <h3>Story</h3>
                         <p>{heroInfo.story}</p>
-                    </section>
-                    <h3>Trivia</h3>
-                    <ul id="triviaList">
-                        {heroInfo.trivia.map(info => <li>{info}</li>)}
-                    </ul>
-                </section>
-                <h2>Art</h2>
-                <Tabs>
-                    <TabList>
-                        {heroInfo.skins.map(skin => <Tab>{skin}</Tab>)}
-                    </TabList>
-                    {heroInfo.skins.map(skin =>
-                        <TabPanel forceRender={true}>
-                            <img src={require(`${heroPath}${skin}.png`)} alt={skin} className={"skin"}/>
-                        </TabPanel>)}
-                </Tabs>
+                    </div>
+
+                    <div id={"profile"}>
+                        <div>
+                            <h3>Profile</h3>
+                            <table id="profileTable">
+                                <tr><td>Name</td><td>{heroInfo.name}</td></tr>
+                                <tr><td>Title</td><td>{heroInfo.title}</td></tr>
+                                <tr><td>Gender</td><td>{profile.gender}</td></tr>
+                                <tr><td>Race</td><td>{profile.race}</td></tr>
+                                <tr><td>Age</td><td>{profile.age}</td></tr>
+                                <tr><td>Height</td><td>{profile.height}</td></tr>
+                                <tr><td>Birthday</td><td>{profile.birthday}</td></tr>
+                                <tr><td>Constellation</td><td>{profile.constellation}</td></tr>
+                                <tr><td>Likes</td><td>{profile.likes}</td></tr>
+                                <tr><td>Dislikes</td><td>{profile.dislikes}</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </article>
         }
     }
 }
-
-
 export default Hero;
