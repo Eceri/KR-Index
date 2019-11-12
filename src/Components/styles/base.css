@@ -24,9 +24,6 @@ body{
     width: 100%;
     max-width: 860px;
 }
-#pageContainer:last-child{
-    /*margin-bottom: 200px;*/
-}
 #content{
     padding: 10px;
 }

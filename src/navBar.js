@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import Hero from "./Components/Hero/Hero";
 import Artifact from "./Components/Artifacts/Artifact";
 import etc from "./etc";
@@ -31,7 +31,6 @@ class NavBar extends Component {
           <Route path="/artifacts" component={Artifact} />
           <Route path="/etc" component={etc} />
           <Route path={"/Maya"} component={Maya} />
-          {/* <IndexRedirect component={"/home"} /> */}
         </Switch>
       </div>
     );

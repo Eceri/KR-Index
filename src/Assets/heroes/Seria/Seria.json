@@ -9,10 +9,12 @@
     "effect": "Reduces own Heal Rate by 20%. Upon a critical skill hit, deals additional M.DMG of 30% ATK. Reduces Heal Rate of the target by 24% for 5 sec, and increases own Heal Rate by 4% for 20 sec. The Heal Rate increasing effect can be stacked up to max 5 times, and cannot be dispelled."
   },
   "sw":{
-    "a0": "Summons the soul of Executioner of Domains, Elsion and deals M.DMG to nearby enemies within a circular range of self and increases M.DMG the enemies take by 30% for 5sec. Afterwards, absorbs the soul of Executioner of Domains, Elsion for 10 sec and deals M.DMG to one random enemy every 1 sec. If the target is not a hero, the dmg is increased by 100%.",
-    "a1": "something something",
-    "a2": "something more",
-    "activation": "Charges up over 20 sec."
+    "advancement0": "Summons the soul of Executioner of Domains, Elsion and deals M.DMG to nearby enemies within a circular range of self and increases M.DMG the enemies take by 30% for 5sec. Afterwards, absorbs the soul of Executioner of Domains, Elsion for 10 sec and deals M.DMG to one random enemy every 1 sec. If the target is not a hero, the dmg is increased by 100%.",
+    "advancement1": "something something",
+    "advancement2": "something more",
+    "activation": "Charges up over 20 sec.",
+    "cd": 20,
+    "charges": 5
   },
   "skills":
   [
