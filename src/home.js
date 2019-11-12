@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import NavBar from "./navBar";
-
 
 class Home extends Component {
-    render() {
-        return <div>asdasdas</div>
-    }
+  render() {
+    return <div>I am only on the Home Page</div>;
+  }
 }
 
 export default Home;
