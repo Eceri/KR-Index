@@ -1,10 +1,18 @@
 {
   "name": "Seria",
   "title": "Shadow of the Abyss",
-  "class": "warrior",
+  "class": "Warrior",
+  "damageType": "Magic",
+  "position": "Front",
   "uw": {
     "name": "Executioner of Domains, Elsion",
     "effect": "Reduces own Heal Rate by 20%. Upon a critical skill hit, deals additional M.DMG of 30% ATK. Reduces Heal Rate of the target by 24% for 5 sec, and increases own Heal Rate by 4% for 20 sec. The Heal Rate increasing effect can be stacked up to max 5 times, and cannot be dispelled."
+  },
+  "sw":{
+    "a0": "Summons the soul of Executioner of Domains, Elsion and deals M.DMG to nearby enemies within a circular range of self and increases M.DMG the enemies take by 30% for 5sec. Afterwards, absorbs the soul of Executioner of Domains, Elsion for 10 sec and deals M.DMG to one random enemy every 1 sec. If the target is not a hero, the dmg is increased by 100%.",
+    "a1": "something something",
+    "a2": "something more",
+    "activation": "Charges up over 20 sec."
   },
   "skills":
   [
@@ -83,7 +91,7 @@
       ],
       "ut": {
         "name": "Enlightening Candlelight",
-        "effect": "[Red Moon Blade] Gains immunity to CC for the duration of the skill. When the battle starts, increases DMG by 70% for 5 time."
+        "effect": "[Red Moon Blade] Gains immunity to CC for the duration of the skill. When the battle starts, increases DMG by 70% for 5 times."
       }
     },
     {
@@ -111,16 +119,26 @@
   ],
   "light": "ATK, DEF, HP+15% / Crit DMG +20%",
   "dark": "All of caster's attacks will be critical hits, but the caster becomes unable to block while taking 25% increased damage.",
-  "skins": [],
-  "story": "The 101st Heir of ShadowHilt and the Sister of Erze. People call her cold-blooded for her unfriendly attitude, but she used to be all smiles when she was around her beloved sister, Erze. Seria always felt sorry for her feeble sister and was overprotective of her, without realizing that she was actually putting Erze in great despair.\n One day Erze fell into a trap during a mission. She was saved, but her sickness started to worsen dramatically. Meanwhile, Seria was sent to Windland Snow Mountain to follow the traces of the Vampire Princess.\n She had a glimpse of what was going on with her sister, but she left for the top-priority mission, praying that she was wrong. However, the tragedy strick the sisters as if it was mocking Seria's prayers.\n - Oh, my beloved sister, Seria!\n Seria returned to find the corpses of her comrades laying on the ground, cold as ice.\n Erze welcomed her with two sharp fangs, thirsting for blood.\n Seria trembled with waves of emotions.\n Her heart was breaking, yet she spoke in a cold, calm tone.\n- You...are not my little sister anymore. You're a filthy bloodsucker.",
-  "profile": {
-    "gender": "female",
-    "race": "Human",
-    "age": "19 years",
-    "height": "172 cm",
-    "birthday": "July 6, month of Harmony.",
-    "constellation": "Notmun, the Turner",
-    "likes": "Her sister Erze, strawberry parfait, fine swords, the moon",
-    "dislikes": "Vampire Erze, spiders"
+  "skins": [
+    "Priestess",
+    "A Resting Sword"
+  ],
+  "background": {
+    "story": "The 101st Heir of ShadowHilt and the Sister of Erze. People call her cold-blooded for her unfriendly attitude, but she used to be all smiles when she was around her beloved sister, Erze. Seria always felt sorry for her feeble sister and was overprotective of her, without realizing that she was actually putting Erze in great despair.\n One day Erze fell into a trap during a mission. She was saved, but her sickness started to worsen dramatically. Meanwhile, Seria was sent to Windland Snow Mountain to follow the traces of the Vampire Princess.\n She had a glimpse of what was going on with her sister, but she left for the top-priority mission, praying that she was wrong. However, the tragedy strick the sisters as if it was mocking Seria's prayers.\n - Oh, my beloved sister, Seria!\n Seria returned to find the corpses of her comrades laying on the ground, cold as ice.\n Erze welcomed her with two sharp fangs, thirsting for blood.\n Seria trembled with waves of emotions.\n Her heart was breaking, yet she spoke in a cold, calm tone.\n- You...are not my little sister anymore. You're a filthy bloodsucker.",
+    "profile": {
+      "gender": "female",
+      "race": "Human",
+      "age": "19 years",
+      "height": "172 cm",
+      "birthday": "July 6, month of Harmony.",
+      "constellation": "Notmun, the Turner",
+      "likes": "Her sister Erze, strawberry parfait, fine swords, the moon",
+      "dislikes": "Vampire Erze, spiders",
+      "VA": {
+        "en": "N/A",
+        "kr": "N/A",
+        "jp": "Fukuhara Ayaka"
+      }
+    }
   }
 }

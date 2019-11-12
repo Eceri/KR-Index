@@ -1,39 +1,37 @@
 import React, {Component} from "react";
 import {
     Route,
-    BrowserRouter,
+    HashRouter,
     NavLink,
     Switch
 } from "react-router-dom";
-import Home from "./home";
 import Hero from "./Components/Hero/Hero";
 import Artifact from "./Components/Artifacts/Artifact";
-import etc  from "./etc";
-import "./Components/styles/base.css";
-import "./Components/styles/nav.css";
-import heroes from "./Assets/classes/classes";
-
+import etc from "./etc";
 import {HeroesMenu} from "./Components/components";
-
-class Main extends Component {
+import {Maya} from "./Components/components"
+class NavBar extends Component {
     render() {
-        return <BrowserRouter>
+        return <HashRouter>
             <nav id={"nav"}>
-                <NavLink exact to={"/"}>Home</NavLink>
-                <HeroesMenu heroes={heroes}/>
-                <NavLink to={"/artifacts"}>Artifacts</NavLink>
-                <NavLink to={"/etc"}>Etc.</NavLink>
+                <NavLink exact to={"/"} className={"navLink"}><img src={"/iconTest.png"} alt={"nagatoro.jpg"} style={{width: 24,}}/></NavLink>
+                <HeroesMenu className={"navLink"} />
+                <NavLink to={"/artifacts"} className={"navLink"}>Artifacts</NavLink>
+                <NavLink to={"/etc"} className={"navLink"}>Etc.</NavLink>
             </nav>
             <Switch>
-                <Route path="/" component={Home} >
+                <Route path={"/"}>
                     <Route push={true} path={"/hero/:hero"} component={Hero}/>
                     <Route path="/artifact/:artifact" component={Artifact}/>
                     <Route path="/artifacts" component={Artifact}/>
                     <Route path="/etc" component={etc}/>
+                    <Route path={"/Maya"} component={Maya}/>
+                    <IndexRedirect component={"/home"} />
+
                 </Route>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     }
 }
 
-export default Main
+export default NavBar

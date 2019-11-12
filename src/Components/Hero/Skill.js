@@ -1,82 +1,75 @@
 import React from "react";
-import "./heroSkill.css";
 import ReactToolTip from 'react-tooltip';
-import chainLink from './../../Assets/chain_link.svg';
-import manaOrb from './../../Assets/manaOrb.png';
+import {
+    Image,
+    UniqueTreasure as UT,
+} from "./../components";
+import chainLink from "./../../Assets/chain_link.svg";
+import { skillDescriptionHeadline } from "./styledHeroComponents"
 
 const Skill = (props) => {
     const manaCost = function (n) {
         let orbs = [];
         for (let i = 0; i < n; ++i) {
-            orbs.push(<img alt="Mana Orb" src={manaOrb} className={"mana"}/>)
+            orbs.push(<Image alt="Mana Orb" src={"manaOrb.png"} className={"mana"} />)
         }
-        return (
-            orbs
-        )
+        return orbs
     };
     return (
         <section className="skill" key={props.skill.id}>
-            <div className="skillBaseInfo">
-               {props.skill.skillInfo.map((skillInfo, index) =>
-                <div className={"skillBlock" + (props.skill.linked && index > 0 && " linkedSkill")}>
-                    {props.skill.linked && index > 0 && <div><img src={chainLink}
-                                                             alt={"chain-link"} className={"chainlink"}
-                                                             data-tip="This skill is linked to a previous cast." />
-                                                        </div>}
-                    <div className={"skillDescription"} >
-                        <div className={"skillHeader"}>
-                                <img src={`${props.heroImagesPath}${skillInfo.skillNumber}.png`} className={"skillIcon"}
-                                     alt={`Skill ${skillInfo.id} Icon`}/>
-                            <div>
-                            <h2 className="skillName">{skillInfo.name}</h2>
-                            {manaCost(skillInfo.cost)}
-                            {(skillInfo.cooldown > 0) && <strong> {skillInfo.cooldown} Sec</strong>}
+            <div>
+                {props.skill.skillInfo.map((skillInfo, index) =>
+                    <div className="skillBaseInfo">
+                        {props.skill.linked && index > 0 && <div>
+                            <img src={chainLink} //TODO maybe adjust to match others.
+                                alt={"chain-link"}
+                                className={"chainlink skillImageMargin"}
+                                data-tip="This skill is linked to a previous cast." />
+                        </div>}
+                        <div>
+                            <div className={"skillHeadline"}>
+                                <Image src={`${props.heroPath}${skillInfo.skillNumber}.png`}
+                                    alt={`Skill ${skillInfo.id} Icon`}
+                                    className={"skillIcon defaultBorder"} />
+                                <p className={"skillHeader"}>
+                                    <p className="skillName">{skillInfo.name}</p>
+                                    {manaCost(skillInfo.cost)}
+                                    {(skillInfo.cooldown > 0) && <span className={"cooldown"}> {skillInfo.cooldown} Sec</span>}
+                                </p>
+                                <p className={"skillDescription"}>{skillInfo.effect}</p>
                             </div>
                         </div>
-                       <p>{skillInfo.effect}</p>
-                    </div>
-                </div>)}
+                    </div>)}
             </div>
             <div className="books">
-                <h3>Books</h3>
                 <div>
-                {props.skill.books.map(book => {
-                    return <p className={"bookEffects"}>
-                            <img src={`/Assets/book${props.skill.id}.png`} alt={"book icon"} />
-                        {book}
-                    </p>
-                })}
+                    {props.skill.books.map(book =>
+                        <p className={"bookEffects"}>
+                            <Image src={`book${props.skill.id}.png`}
+                                alt={"book icon"}
+                                className={"defaultBorder floatLeft skillImageMargin"} />
+                            {book}
+                        </p>
+                    )}
                 </div>
             </div>
-            <div className="tPerks">
-                <div className={"light"}>
-                    <h4>LIGHT</h4>
-                    <p>{props.skill.light}</p>
+            <div className="skillPerks">
+                <div>
+                    <p> <Image src={`${props.heroPath}s${props.skill.id}l.png`}
+                        className={"defaultBorder perkIcon floatLeft"} />{props.skill.light}</p>
                 </div>
-                <div className={"dark"}>
-                    <h4>DARK</h4>
-                    <p>{props.skill.dark}</p>
-                </div>
-            </div>
-            <div className="ut">
-                <h3>Unique Treasure {props.skill.id}</h3>
-                <div >
-                    <div>
-                        <img src={`${props.heroImagesPath}ut${props.skill.id}.png`}
-                             alt={`Unique Treasure ${props.skill.id} Icon`}/>
-                    </div>
-                    <div>
-                        <h4>{props.skill.ut.name}</h4>
-                        <p>{props.skill.ut.effect}</p>
-                    </div>
+                <div>
+                    <p>
+                        <Image src={`${props.heroPath}s${props.skill.id}d.png`}
+                            className={"defaultBorder perkIcon floatLeft"} />
+                        {props.skill.dark}</p>
                 </div>
             </div>
-
-            {(props.skill.id < 4 ) && <hr className="skillSeperator" />}
-            <ReactToolTip
-                multiline={true}
+            <UT heroPath={props.heroPath} skill={props.skill} />
+            {(props.skill.id < 4) && <hr className="seperator" />}
+            <ReactToolTip multiline={true}
                 border={true}
-                className={"tooltip"}/>
+                className={"tooltip"} />
         </section>
     )
 };

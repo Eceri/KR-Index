@@ -1,86 +1,41 @@
 import React from "react";
 import {
+    Image,
+    ClassPerks,
+    GenericPerks,
     UniqueWeapon as UW,
 } from "../components";
 import Skill from "./Skill";
+import perks from "../../Assets/genericPerks/genericPerks";
 
 export const StatsAndSkills = (props) => {
     const heroPath = props.heroPath;
     const heroInfo = props.heroInfo;
-    return <div id="skills">
+    return <div id="generalInfo">
         <UW heroPath={heroPath} uw={heroInfo.uw}/>
-        <h2 className={"subSectionHeadline"}>Skills</h2>
+        <p className={"title2 subSectionHeadline"}>Skills</p>
         <hr/>
-        <div className={"flexBox"}>
+        <div className={"flexBox"} id={"skills"}>
             {heroInfo.skills.map(skill => <Skill skill={skill} heroPath={heroPath}/>)}
         </div>
-        <h2 className="subSectionHeadline">Transcendence</h2>
+        <p className="title2 subSectionHeadline">Transcendence</p>
         <hr/>
         <div>
-            <h2>T1 - Generic</h2>
-            <div className="genericPerks">
-                <div>
-                    <h4>ATK Up</h4>
-                    <p>Increases ATK by 30%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>HP Up</h4>
-                    <p>Increases HP by 30%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>DEF Up</h4>
-                    <p>Increases DEF by 30%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>Crit Resist Up</h4>
-                    <p>Increases DEF by 30%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>Monster Hunting</h4>
-                    <p>Increases DMG to non-hero Enemies by 10% and takes 10% less dmg.</p>
-                </div>
-            </div>
-            <hr className="skillSeperator"/>
-            <h2>T2 - Class-Specific</h2>
-            <div className="genericPerks">
-                <div>
-                    <h4>Expirienced Fighter</h4>
-                    <p>Increases the dmg targets take by 20%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>HP Up</h4>
-                    <p>Increases HP by 30%.</p>
-                </div>
-                <hr/>
-                <section>
-                    <h4>DEF Up</h4>
-                    <p>Increases DEF by 30%.</p>
-                </section>
-                <hr/>
-                <div>
-                    <h4>Shield of Protection</h4>
-                    <p>Increases DEF by 30%.</p>
-                </div>
-                <hr/>
-                <div>
-                    <h4>Monster Hunting</h4>
-                    <p>Increases DMG to non-hero Enemies by 10% and takes 10% less dmg.</p>
-                </div>
-            </div>
-            <hr className="skillSeperator"/>
+            <p className={"title2"}>T1 - Generic</p>
+            <GenericPerks perks={perks}/>
+            <hr className="seperator"/>
+            <p className={"title2"}>T2 - Class-Specific</p>
+            <ClassPerks heroClass={heroInfo.class} />
+            <hr className="seperator"/>
+            <p className={"title2"}>T5</p>
             <div className="tPerks">
                 <div>
-                    <h4>LIGHT</h4>
+                    <Image src={`${heroPath}light.png`} alt={"light"} className={"defaultBorder perkIcon floatLeft"}/>
                     <p>{heroInfo.light}</p>
                 </div>
                 <div>
-                    <h4>DARK</h4>
-                    <p>{heroInfo.dark}</p>
+                    <Image src={`${heroPath}dark.png`} alt={"dark"} className={"defaultBorder perkIcon floatLeft"}/>
+                    {heroInfo.dark}
                 </div>
             </div>
         </div>

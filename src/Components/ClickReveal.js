@@ -7,29 +7,20 @@ export class ClickReveal extends Component{
             show: false,
         };
         this.show = this.show.bind(this);
-        this.close = this.close.bind(this);
     }
     show(event) {
         event.preventDefault();
         this.setState({
-            show: true,
-        }, () => {document.addEventListener('click', this.close)});
-    }
-    close(event) {
-        if (!this.menu.contains(event.target)){
-        this.setState({ show: false }, () => {
-            document.removeEventListener('click', this.close);
-        });}
+            show: !this.state.show,
+        });
     }
     render(){
-        let clickTitle = this.props.match.params.title;
-        let content = this.match.params.content;
-        return <div>
+        return <div className={this.props.className}>
             <div>
-                <div onClick={this.show}className={"clickRevealButton"}>{clickTitle}</div>
+                <div onClick={this.show}className={"clickRevealButton"}>{this.props.title}</div>
             </div>
             {this.state.show ? (<div className={"clickRevealContent"} ref={(element) => {this.menu = element;}} >
-                {content}
+                {this.props.content}
                 </div>) : null}
         </div>
     }

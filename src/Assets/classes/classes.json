@@ -1,7 +1,6 @@
-{
-  "classes": [
-    {
-      "class": "Knights",
+[
+  {
+      "name": "Knight",
       "heroes": [
         "Aselica",
         "Clause",
@@ -16,55 +15,159 @@
         "Ricardo",
         "Sonia"
       ],
-      "ClassTranscendencePerks": []
-    },
-    {
-      "class": "Warriors",
-      "heroes": [
-        "Bernheim",
-        "Chase",
-        "Gau",
-        "Kasel",
-        "Naila",
-        "Nicky",
-        "Priscilla",
-        "Scarlet",
-        "Seria",
-        "Theo",
-        "Viska"
+      "classTranscendencePerks": [
+        {
+          "name": "Expirienced Fighter",
+          "effect": "Increases the dmg targets take by 20%."
+        },
+        {
+          "name": "Excellent Strategy",
+          "effect": "Increases CC ACC of all allies by 150. If the ally uses the same Perk, only 50 additional CC ACC applies."
+        },
+        {
+          "name": "Battle Cry",
+          "effect": "Increases HP of all allies by 15%. If the ally uses the same Perk, only 5% additional HP applies."
+        },
+        {
+          "name": "Shield of Protection",
+          "effect": "Block Rate is increased by 200 and CC resistance is increased by 200."
+        },
+        {
+          "name": "Swift Move",
+          "effect": "Increases ATK Spd by 200 and ACC by 400."
+        }
       ],
-      "ClassTranscendencePerks": []
-    },
-    {
-      "class": "Assassins",
-      "heroes": [
-        "Epis",
-        "Erze",
-        "Ezekiel",
-        "Fluss",
-        "Gladi",
-        "Laudia",
-        "Mirianne",
-        "Nia",
-        "Reina",
-        "Roi",
-        "Tanya"
-      ],
-      "ClassTranscendencePerks": []
-    },
-    {
-      "class": "Archers",
-      "heroes": [
-        "Arch",
-        "Dimael",
-        "Luna",
-        "Requina",
-        "Selene",
-        "Shamilla",
-        "Yanne",
-        "Zafir"
-      ],
-      "ClassTranscendencePerks": []
+    "baseStats": {
+      "pdef": 7832,
+      "mdef": 6096,
+      "crit": 50,
+      "pblock": 100,
+      "mblock": 100,
+      "ptough": 250,
+      "mtough": 250
     }
-  ]
-}
+    },
+  {
+    "name": "Warrior",
+    "heroes": [
+      "Bernheim",
+      "Chase",
+      "Gau",
+      "Kasel",
+      "Naila",
+      "Nicky",
+      "Priscilla",
+      "Scarlet",
+      "Seria",
+      "Theo",
+      "Viska",
+      "Kirze"
+    ],
+    "classTranscendencePerks": [
+      {
+        "name": "Opportune Strike",
+        "effect": "Crit Chance is increased by 150 and Crit DMG is increased by 30%."
+      },
+      {
+        "name": "Warlike",
+        "effect": "Per each enemy, ATK is increased 7% and CC Resistance is increased by 30. Can be stacked up to max 10 times."
+      },{
+        "name": "Offensive Guard",
+        "effect": "ATK rises equal to half of P.DEF and received P.DMG is decreased by 15%."
+      },{
+        "name": "Tactical Foresight",
+        "effect": "Dodge rate is increased by 200 and takes 10% reduced DMG."
+      },
+      {
+        "name": "Blood Wrath",
+        "effect": "Increases Lifesteal by 200 and ATK Spd by 200."
+      }
+    ]
+  },
+  {
+    "name": "Assassin",
+    "heroes": [
+      "Epis",
+      "Erze",
+      "Ezekiel",
+      "Fluss",
+      "Gladi",
+      "Laudia",
+      "Mirianne",
+      "Nia",
+      "Reina",
+      "Roi",
+      "Tanya"
+    ],
+    "classTranscendencePerks": []
+  },
+  {
+    "name": "Archer",
+    "heroes": [
+      "Arch",
+      "Dimael",
+      "Luna",
+      "Requina",
+      "Selene",
+      "Shamilla",
+      "Yanne",
+      "Yuria",
+      "Zafir"
+    ],
+    "classTranscendencePerks": []
+  },
+  {
+    "name": "Mechanic",
+    "heroes": [
+      "Annette",
+      "Cecilia",
+      "Chrisha",
+      "Crow",
+      "Kara",
+      "Lakrak",
+      "Miruru",
+      "Mitra",
+      "Oddy",
+      "Rodina"
+    ],
+    "classTranscendencePerks": []
+  },
+  {
+    "name": "Wizard",
+    "heroes": [
+      "Aisha",
+      "Artemia",
+      "Cleo",
+      "Dakaris",
+      "Esker",
+      "Lewisia",
+      "Lilia",
+      "Lorraine",
+      "Maria",
+      "Nyx",
+      "Ophelia",
+      "Pavel",
+      "Veronica"
+    ],
+    "classTranscendencePerks": []
+  },
+  {
+    "name": "Priest",
+    "heroes": [
+      "Baudouin",
+      "Cassandra",
+      "Frey",
+      "Juno",
+      "Kaulah",
+      "Laias",
+      "Lavril",
+      "Leo",
+      "Lucias",
+      "May",
+      "Mediana",
+      "Rephy",
+      "Shea"
+    ],
+    "classTranscendencePerks": []
+  }
+]

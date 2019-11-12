@@ -3,6 +3,7 @@
     margin: 0 0 10px;
     padding: 0;
     width: inherit;
+    z-index: 1;
 }
 .react-tabs__tab {
     display: inline-block;
@@ -16,6 +17,8 @@
     width: inherit;
 }
 .skin{
+    display: flex;
+    flex-direction: column;
     border: none;
     width: 100%;
     min-width: 350px;

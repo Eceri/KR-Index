@@ -1,5 +1,5 @@
 [
-{
+  {
     "name": "ATK Up",
     "effect": "ATK is increased by 30%"
   },
@@ -13,7 +13,7 @@
     "effect": "DEF is increased by 35%"
   },
   {
-    "name": "Crit Resist Up",
+    "name": "Crit Resistance Up",
     "effect": "Crit Resistance increases by 250"
 
   },

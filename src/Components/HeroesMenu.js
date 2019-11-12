@@ -1,8 +1,8 @@
-import React, {Component} from "react";
-import "./styles/Menu.css"
-
-export class Menu extends Component{
-    constructor(props){
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import heroes from "./../Assets/classes/classes";
+export class HeroesMenu extends Component {
+    constructor(props) {
         super(props);
         this.state = {
             show: false,
@@ -14,29 +14,35 @@ export class Menu extends Component{
         event.preventDefault();
         this.setState({
             show: true,
-        }, () => {document.addEventListener('click', this.close)});
+        }, () => { document.addEventListener('click', this.close) });
     }
     close(event) {
-        if (!this.menu.contains(event.target)){
+        /*if (!this.menu.contains(event.target) || event.target){*/
+        event.preventDefault();
         this.setState({ show: false }, () => {
             document.removeEventListener('click', this.close);
-        });}
+        });
     }
-    render(){
-        return <div>
+
+    render() {
+        return <div onClick={this.show} className={"navLink"}>
             <div>
-                <div onClick={this.show}>Heroes</div>
+                <div>Heroes</div>
             </div>
-            {this.state.show ? (<div className={"menu"} ref={(element) => {this.menu = element;}} >
-                    <div className={"subMenu"}>All</div>
-                    <div className={"subMenu class"}> Menu item 2 </div>
-                    <div className={"subMenu class"}> Menu item 3 </div>
-                    <div className={"subMenu class"}> Menu item 4 </div>
-                    <div className={"subMenu class"}> Menu item 5 </div>
-                    <div className={"subMenu class"}> Menu item 6 </div>
-                    <div className={"subMenu class"}> Menu item 7 </div>
-                    <div className={"subMenu class"}> Menu item 8 </div>
-                </div>) : null}
+            {this.state.show ? (<div className={"menu"} ref={(element) => { this.menu = element; }} >
+                {
+                    heroes.map(heroClass => <div className={"class"}>
+                        {console.log(heroClass)}
+                        <NavLink to={"/" + heroClass.name} className={"navLink"}>{heroClass.name}</NavLink>
+                        {
+                            heroClass.heroes.map(hero => <NavLink to={`/hero/${hero}`}
+                                className={"heroLink"} >
+                                {hero}
+                            </NavLink>)
+                        }
+                    </div>)
+                }
+            </div>) : null}
         </div>
     }
-    }
+}

@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./main";
-import "./styles/KRCompendiumNav.css";
-
+import NavBar from "./navBar";
+import "./Components/styles/base.css";
 ReactDOM.render(
-    <Main/>,
+    <div id={"pageContainer"} >
+        <NavBar key={"components.js"}/>
+        <div id={"footer"}>
+            footer
+        </div>
+    </div>
+  ,
     document.getElementById("root")
 );
 

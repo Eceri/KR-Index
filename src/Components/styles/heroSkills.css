@@ -1,9 +1,17 @@
 p{
-    margin-top: 5px;
-    margin-bottom: 0;
+    /*margin-top: 5px;
+    margin-bottom: 0;*/
+    margin: 0;
 }
 p:hover {
     cursor: default;
+}
+.skillImageMargin{
+    margin-top: 5px;
+}
+.floatLeft{
+    float: left;
+    margin-right: 10px;
 }
 .skillNumber{
     margin-top: 5px;
@@ -18,40 +26,52 @@ p:hover {
 .skillIcon,
 .ut img,
 .books img{
-    max-height: 70px;
-    max-width: 70px;
+    max-height: 60px;
+    max-width: 60px;
+}
+.skillIcon{
+    float: left;
+    margin-right: 10px;
 }
 .skillBaseInfo{
     min-width: 350px;
     padding: 0;
+    margin: 15px 0;
+    display: flex;
 }
 .skillBlock{
     padding: 5px;
 }
 .skillHeader{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 15px;
 }
-.skillHeader > div{
-    margin-left: 10px;
+.skillDescription{
+    margin-top: 5px;
+    clear: left;
 }
 .mana{
-    vertical-align: middle;
-    margin: 0;
+    vertical-align: bottom;
+    margin-top: 0;
+    margin-right: 0;
     border: none;
 }
+.cooldown{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 .skillName{
-    margin: 0 0 5px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-anchor: start;
+    line-height: 25px;
+    margin-bottom: 10px;
 }
 .skillBaseInfo hr{
     font-weight: lighter;
     border-color: rgba(166, 166, 166, 0.50);
 }
-.linkedSkill{
-    height: 100%;
-    display: flex;
-}
+
 .linkedSkill:nth-child(3){
      margin-left: 30px;
  }
@@ -71,9 +91,9 @@ p:hover {
     display: flex;
     flex: 1;
 }
-.ut > img {
+.ut img {
     margin-top: 5px;
-
+    width: 63px;
 }
 .ut p{
     margin-top: 0;
@@ -85,7 +105,6 @@ h3{
 }
 .ut h4{
     margin: 0;
-    margin-left: 5px;
 }
 .books{
     margin: 25px 15px 0 15px;
@@ -103,29 +122,29 @@ h3{
 }
 .bookEffects > img{
     height: 30px;
-    vertical-align: middle;
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
 }
 .books p {
-    margin: 0 10px;
+    margin: 0 15px 0 0;
 }
-.skillSeperator{
+.seperator{
     width: 65%;
     border-color: rgba(166, 166, 166, 0.80);
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.tPerks{
-    margin: 25px 5px 0 5px;
+.skillPerks{
     display: flex;
+    margin: 25px 0;
 }
-.tPerks h4{
-    margin-bottom: 0;
-    margin-top: 0;
+.skillPerks > div{
+    flex: 2;
+    padding: 10px;
+    clear: left;
 }
 .tPerks > div{
-    flex: 2;
-    margin: 0 25px 0 0;
+    clear: left;
+    min-height: 45px;
     padding: 10px;
 }
 /*.light:hover{
@@ -134,7 +153,28 @@ h3{
 .dark:hover{
     background-color: #202021;
 }*/
+.perkIcon{
+    height: 45px;
+}
 .chainlink{
+    float: left;
+    width: 25px;
+}
+.t5icon{
     height: 50px;
-    border: none;
+}
+.heroClassIcon{
+    width: 25px;
+    margin-right: 5px;
+}
+@media only screen and (max-width: 650px) {
+    .books > div {
+        display: block;
+    }
+    .books p {
+        margin: 10px 15px 0 0;
+    }
+    .tPerks {
+        display: block;
+    }
 }
