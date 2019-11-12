@@ -1,11 +1,39 @@
-.uwIcon{
-    margin-right: 10px;
+.uwIcon {
     margin-top: 10px;
+}
+
+.swIcon {
+    margin-top: 5px;
+}
+
+.swIcon,
+.uwIcon {
+    margin-right: 10px;
     margin-bottom: 0;
     width: 95px;
     height: 95px;
     float: left;
 }
-#uw{
+
+#uw {
     min-height: 101px;
+    min-height: 101px;
+}
+
+#sw {
+    margin-top: 30px;
+}
+
+.swAdvancement {
+    clear: both;
+    margin-left: 15px;
+}
+
+.swAdvancement>h3 {
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+#title2 {
+    margin: 0;
 }

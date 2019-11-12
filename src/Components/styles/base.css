@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     font-size: 1rem;
     text-align: justify;
     overflow: scroll;
@@ -85,16 +85,12 @@ body{
 .title1,
 .title2{
     line-height: 2.5rem;
-    font-weight: bold;
 }
 .title1{
     font-size: 2rem;
 }
 .title2{
     font-size: 1.5rem;
-}
-.bold{
-    font-weight: bold;
 }
 *, *:after, *:before {
     box-sizing: border-box;

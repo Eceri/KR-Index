@@ -26,8 +26,6 @@ class NavBar extends Component {
                     <Route path="/artifacts" component={Artifact}/>
                     <Route path="/etc" component={etc}/>
                     <Route path={"/Maya"} component={Maya}/>
-                    <IndexRedirect component={"/home"} />
-
                 </Route>
             </Switch>
         </HashRouter>

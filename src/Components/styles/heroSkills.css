@@ -56,13 +56,11 @@ p:hover {
     border: none;
 }
 .cooldown{
-    font-weight: bold;
     margin-left: 10px;
 }
 
 .skillName{
     font-size: 25px;
-    font-weight: bold;
     text-anchor: start;
     line-height: 25px;
     margin-bottom: 10px;

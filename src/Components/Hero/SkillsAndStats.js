@@ -12,7 +12,7 @@ export const StatsAndSkills = (props) => {
     const heroPath = props.heroPath;
     const heroInfo = props.heroInfo;
     return <div id="generalInfo">
-        <UW heroPath={heroPath} uw={heroInfo.uw}/>
+        <UW heroPath={heroPath} uw={heroInfo.uw} sw={heroInfo.sw} />
         <p className={"title2 subSectionHeadline"}>Skills</p>
         <hr/>
         <div className={"flexBox"} id={"skills"}>
