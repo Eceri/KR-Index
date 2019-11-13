@@ -28,7 +28,8 @@
     "react-scripts": "^3.0.1",
     "react-tabs": "^3.0.0",
     "react-tooltip": "^3.10.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "yarn": "^1.19.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -9,10 +9,6 @@ p:hover {
 .skillImageMargin{
     margin-top: 5px;
 }
-.floatLeft{
-    float: left;
-    margin-right: 10px;
-}
 .skillNumber{
     margin-top: 5px;
     margin-bottom: 0;
@@ -23,16 +19,16 @@ p:hover {
     height: 0;
     top: -25px;
 }
-.skillIcon,
+.skillIcon{
+    width: 70px;
+    height: 70px;
+}
 .ut img,
 .books img{
     max-height: 60px;
     max-width: 60px;
 }
-.skillIcon{
-    float: left;
-    margin-right: 10px;
-}
+
 .skillBaseInfo{
     min-width: 350px;
     padding: 0;
@@ -44,6 +40,9 @@ p:hover {
 }
 .skillHeader{
     margin-left: 15px;
+}
+.skillHeadline{
+    display: flex;
 }
 .skillDescription{
     margin-top: 5px;
@@ -116,6 +115,8 @@ h3{
     flex: 1;
 }
 .bookEffects{
+    display: flex;
+    align-items: center;
     flex: 1;
 }
 .bookEffects > img{
@@ -153,6 +154,7 @@ h3{
 }*/
 .perkIcon{
     height: 45px;
+    display: flex;
 }
 .chainlink{
     float: left;

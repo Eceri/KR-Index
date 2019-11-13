@@ -34,7 +34,7 @@ const Skill = (props) => {
                                 <p className={"skillHeader"}>
                                     <p className="skillName">{skillInfo.name}</p>
                                     {manaCost(skillInfo.cost)}
-                                    {(skillInfo.cooldown > 0) && <span className={"cooldown"}> {skillInfo.cooldown} Sec</span>}
+                                    {(skillInfo.cooldown > 0) && <span className={"cooldown"}> {skillInfo.cooldown} Secs</span>}
                                 </p>
                                 <p className={"skillDescription"}>{skillInfo.effect}</p>
                             </div>
@@ -55,8 +55,9 @@ const Skill = (props) => {
             </div>
             <div className="skillPerks">
                 <div>
-                    <p> <Image src={`${props.heroPath}s${props.skill.id}l.png`}
-                        className={"defaultBorder perkIcon floatLeft"} />{props.skill.light}</p>
+                    <Image src={`${props.heroPath}s${props.skill.id}l.png`}
+                        className={"defaultBorder perkIcon floatLeft"} />
+                    <p> {props.skill.light}</p>
                 </div>
                 <div>
                     <p>
