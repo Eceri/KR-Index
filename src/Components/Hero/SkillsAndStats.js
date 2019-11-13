@@ -2,11 +2,10 @@ import React from "react";
 import {
     Image,
     ClassPerks,
-    GenericPerks,
+    TierOnePerks,
     UniqueWeapon as UW,
 } from "../components";
 import Skill from "./Skill";
-import perks from "../../Assets/genericPerks/genericPerks";
 
 export const StatsAndSkills = (props) => {
     const heroPath = props.heroPath;
@@ -22,7 +21,7 @@ export const StatsAndSkills = (props) => {
         <hr/>
         <div>
             <p className={"title2"}>T1 - Generic</p>
-            <GenericPerks perks={perks}/>
+            <TierOnePerks/>
             <hr className="seperator"/>
             <p className={"title2"}>T2 - Class-Specific</p>
             <ClassPerks heroClass={heroInfo.class} />

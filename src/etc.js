@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import {ClassPerks} from "./Components/Hero/ClassPerks";
-import perks from "./Assets/genericPerks/genericPerks";
 class Contact extends Component {
     render() {
         return (
@@ -10,7 +8,6 @@ class Contact extends Component {
                     our <a href="http://forum.kirupa.com">forums</a>.
                 </p>
                 <div>
-                    <ClassPerks perks={perks}/>
                 </div>
             </div>
         );

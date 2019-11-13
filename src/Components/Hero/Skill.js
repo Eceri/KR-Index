@@ -5,7 +5,6 @@ import {
     UniqueTreasure as UT,
 } from "./../components";
 import chainLink from "./../../Assets/chain_link.svg";
-import { skillDescriptionHeadline } from "./styledHeroComponents"
 
 const Skill = (props) => {
     const manaCost = function (n) {
@@ -36,8 +35,8 @@ const Skill = (props) => {
                                     {manaCost(skillInfo.cost)}
                                     {(skillInfo.cooldown > 0) && <span className={"cooldown"}> {skillInfo.cooldown} Secs</span>}
                                 </p>
-                                <p className={"skillDescription"}>{skillInfo.effect}</p>
                             </div>
+                                <p className={"skillDescription"}>{skillInfo.effect}</p>
                         </div>
                     </div>)}
             </div>
@@ -60,10 +59,9 @@ const Skill = (props) => {
                     <p> {props.skill.light}</p>
                 </div>
                 <div>
-                    <p>
                         <Image src={`${props.heroPath}s${props.skill.id}d.png`}
                             className={"defaultBorder perkIcon floatLeft"} />
-                        {props.skill.dark}</p>
+                    <p>{props.skill.dark}</p>
                 </div>
             </div>
             <UT heroPath={props.heroPath} skill={props.skill} />

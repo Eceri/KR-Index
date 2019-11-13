@@ -1,0 +1,37 @@
+
+.ut{
+    padding: 0 10px;
+}
+.ut > h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.utStory{
+    margin: 0 10px;
+    width: 60px;
+    text-align: center;
+}
+.ut > div{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.ut img {
+    margin: 5px 5px 0 0;
+    width: 63px;
+}
+.ut p{
+    margin-left: 5px;
+    width: 90%;
+}
+.ut h4{
+    margin: 0;
+}
+
+.ut img{
+    max-height: 60px;
+    max-width: 60px;
+}
+h3{
+    font-weight: normal;
+}

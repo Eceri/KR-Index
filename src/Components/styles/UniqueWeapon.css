@@ -8,20 +8,21 @@
     margin-bottom: 0;
     width: 95px;
     height: 95px;
-    float: left;
 }
 
 #uw {
     min-height: 101px;
     min-height: 101px;
 }
-
+#uwHeader{
+    flex-wrap: nowrap;
+}
 #sw {
     margin-top: 30px;
 }
 
-#swDescription{
-    clear: both;
+
+.weaponDescription{
     padding-top: 10px;
 }
 .swAdvancement {

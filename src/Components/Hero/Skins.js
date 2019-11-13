@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import Lightbox from 'react-images-texts-videos';
 import ImageGallery from 'react-image-gallery';
 import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
-import {Image} from "./../components";
 import throttle from 'lodash.throttle';
 
 export class Skins extends Component {

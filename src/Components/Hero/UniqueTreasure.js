@@ -1,5 +1,6 @@
 import React from 'react'
 import {Image }from "../components";
+import "./../styles/UniqueTreasure.css";
 
 export const UniqueTreasure = (props) => {
     let utPath = `${props.heroPath}ut${props.skill.id}.png`;

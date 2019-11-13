@@ -65,11 +65,11 @@ class Hero extends Component {
                     <div>
                         <p className={"title1"}>{heroInfo.name}</p>
                         <p className={"title2"}>{heroInfo.title}</p>
-                        <p>
+                        <div id="heroType" className="flexBox">
                             <Image src={`classes/${heroInfo.class}.png`} className={"heroClassIcon"}/>
                             <Image src={`${heroInfo.damageType}.png`} id={"damageType"} />
-                            {heroInfo.position}
-                        </p>
+                            <p>{heroInfo.position}</p>
+                        </div>
                     </div>
                 </div>
                 <Tabs>

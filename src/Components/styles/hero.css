@@ -26,11 +26,6 @@ hr{
     vertical-align: top;
     margin-right: 10px;
 }
-.flexBox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .flexBox > section {
     width: 100%;
 }
@@ -73,4 +68,8 @@ hr{
     padding: 0;
     margin: 0;
     min-height: 100%;
+}
+.heroType{
+
+    align-items: center;
 }

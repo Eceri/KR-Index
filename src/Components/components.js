@@ -1,11 +1,12 @@
 export { UniqueTreasure } from "./Hero/UniqueTreasure";
 export { UniqueWeapon } from "./Hero/UniqueWeapon";
+export { TierOnePerks } from "./Hero/TierOnePerks";
+export { ClassPerks } from "./Hero/TierTwoPerks";
+export { GenericPerks } from "./Hero/GenericPerks";
 export { Image }  from "./Image";
+export { HeroesMenu } from "./HeroesMenu";
 export { StatsAndSkills } from "./Hero/SkillsAndStats";
 export { Background } from "./Hero/Background";
 export { Skins } from "./Hero/Skins";
-export { HeroesMenu } from "./HeroesMenu"
-export { ClassPerks } from "./Hero/ClassPerks"
-export { ClickReveal } from "./ClickReveal"
+export { ClickReveal } from "./ClickReveal";
 export { Maya } from "./Hero/Maya";
-export { GenericPerks } from "./Hero/GenericPerks"

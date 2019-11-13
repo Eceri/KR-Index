@@ -92,6 +92,11 @@ body{
 *, *:after, *:before {
     box-sizing: border-box;
 }
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 @media only screen and (max-width: 650px) {
     #pageContainer{
         margin: 0;

@@ -14,7 +14,11 @@ ReactDOM.render(
         <NavBar key={"components.js"} />
       </Route>
       <Route exact path="/" component={Home} />
-      <div id={"footer"}>footer</div>
+      <div id={"footer"}>
+        <p>
+          Got Suggestions, found a mistake or wanna help out? Message me on Discord under Eceri@2547
+        </p>
+      </div>
     </div>
   </BrowserRouter>,
   document.getElementById("root")
