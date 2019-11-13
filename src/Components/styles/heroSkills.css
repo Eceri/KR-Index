@@ -1,6 +1,4 @@
 p{
-    /*margin-top: 5px;
-    margin-bottom: 0;*/
     margin: 0;
 }
 p:hover {
@@ -113,16 +111,12 @@ h3{
     flex: 1;
 }
 .tPerks > div{
-    clear: left;
+    align-items: center;
+    display: flex;
+    flex: 1;
     min-height: 45px;
-    padding: 10px;
+    padding: 10px 0;
 }
-/*.light:hover{
-    background-color: #989b97;
-}
-.dark:hover{
-    background-color: #202021;
-}*/
 .perkIcon{
     height: 45px;
     width: auto;

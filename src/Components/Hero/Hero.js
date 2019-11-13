@@ -1,13 +1,14 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "../styles/hero.css";
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "../styles/tabStyles.css";
 import Helmet from "react-helmet";
 import {
     Image,
-    StatsAndSkills,
-    Background,
-    Skins,
+    HeroGeneral,
+    HeroStory,
+    HeroSkins,
+    HeroVoice
 } from "./../components";
 import "../styles/heroSkills.css";
 
@@ -33,7 +34,7 @@ class Hero extends Component {
             this.setStateFromProps(nextProps.match.params["hero"])
         }
     }
-    goBack(){
+    goBack() {
         this.props.history.goBack();
     }
 
@@ -58,15 +59,15 @@ class Hero extends Component {
             </div>
         }
         if (!this.state.isLoading) {
-            return <article id={"content"}>
-                { title }
+            return <div id={"content"}>
+                {title}
                 <div id={"hero"}>
-                    <Image src={`${heroPath}hero.png`} className={"defaultBorder "} id={"portrait"}/>
+                    <Image src={`${heroPath}hero.png`} className={"defaultBorder "} id={"portrait"} />
                     <div>
                         <p className={"title1"}>{heroInfo.name}</p>
                         <p className={"title2"}>{heroInfo.title}</p>
                         <div id="heroType" className="flexBox">
-                            <Image src={`classes/${heroInfo.class}.png`} className={"heroClassIcon"}/>
+                            <Image src={`classes/${heroInfo.class}.png`} className={"heroClassIcon"} />
                             <Image src={`${heroInfo.damageType}.png`} id={"damageType"} />
                             <p>{heroInfo.position}</p>
                         </div>
@@ -75,23 +76,29 @@ class Hero extends Component {
                 <Tabs>
                     <TabList>
                         <Tab>General</Tab>
-                        <Tab>Background</Tab>
+                        <Tab>Story</Tab>
                         <Tab>Skins</Tab>
+                        <Tab>Voice</Tab>
                     </TabList>
                     <TabPanel>
-                        <StatsAndSkills heroPath={heroPath} heroInfo={heroInfo} />
+                        <HeroGeneral heroPath={heroPath} heroInfo={heroInfo} />
                     </TabPanel>
                     <TabPanel>
-                        <Background backgroundData={heroInfo.background}
-                                    heroPath ={heroPath}
-                                    name={heroInfo.name}
-                                    title={heroInfo.title} />
+                        <HeroStory backgroundData={heroInfo.background}
+                            heroPath={heroPath}
+                            name={heroInfo.name}
+                            title={heroInfo.title} />
                     </TabPanel>
                     <TabPanel>
-                        <Skins skins={heroInfo.skins}  heroPath ={heroPath} />
+                        <HeroSkins skins={heroInfo.skins} heroPath={heroPath} />
+                    </TabPanel>
+                    <TabPanel>
+                        <HeroVoice heroPath={heroPath}
+                            name={heroInfo.name}
+                            title={heroInfo.title}></HeroVoice>
                     </TabPanel>
                 </Tabs>
-            </article>
+            </div>
         }
     }
 }

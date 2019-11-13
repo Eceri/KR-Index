@@ -8,7 +8,7 @@
     "name": "Executioner of Domains, Elsion",
     "effect": "Reduces own Heal Rate by 20%. Upon a critical skill hit, deals additional M.DMG of 30% ATK. Reduces Heal Rate of the target by 24% for 5 sec, and increases own Heal Rate by 4% for 20 sec. The Heal Rate increasing effect can be stacked up to max 5 times, and cannot be dispelled."
   },
-  "sw":{
+  "sw": {
     "advancement0": "Summons the soul of Executioner of Domains, Elsion and deals M.DMG to nearby enemies within a circular range of self and increases M.DMG the enemies take by 30% for 5sec. Afterwards, absorbs the soul of Executioner of Domains, Elsion for 10 sec and deals M.DMG to one random enemy every 1 sec. If the target is not a hero, the dmg is increased by 100%.",
     "advancement1": "something something",
     "advancement2": "something more",
@@ -16,18 +16,16 @@
     "cd": 20,
     "charges": 5
   },
-  "skills":
-  [
+  "skills": [
     {
       "id": 1,
-      "skillInfo":
-      [
+      "skillInfo": [
         {
-        "skillNumber": "s1_1",
-        "name": "Mysterious Sword - Falling Petals",
-        "effect": "Performs a horizontal slash to the front and deals M.DMG to the target and enemies in a narrow range. Can activate [Mysterious Sword - Blossom] once within 5 sec after use.",
-        "cooldown": 7,
-        "cost": 1
+          "skillNumber": "s1_1",
+          "name": "Mysterious Sword - Falling Petals",
+          "effect": "Performs a horizontal slash to the front and deals M.DMG to the target and enemies in a narrow range. Can activate [Mysterious Sword - Blossom] once within 5 sec after use.",
+          "cooldown": 7,
+          "cost": 1
         },
         {
           "skillNumber": "s1_2",
@@ -60,7 +58,8 @@
           "effect": "Rapidly charges forward to deal M.DMG and inflicts irremovable Original Sin of Blood on enemies for 3 sec. Enemies under Original Sin of Blood have their ATK Spd reduced by 300. Shortly afterward, attacks enemies under Original Sin of Blood 2 times, and deals additional M.DMG, and if the target is not a hero, deals additional DEF Ignoring M.DMG.",
           "cooldown": 13,
           "cost": 3
-        }],
+        }
+      ],
       "light": "Reduces Mana Cost by 1.",
       "dark": "Upon each DMG dealt, recovers 200 Mana.",
       "books": [
@@ -105,7 +104,8 @@
           "effect": "ATK is increased by. Upon a critical skill hit, own Crit DMG is increased by 5%. This effect can be stacked up to 30 times.",
           "cooldown": 0,
           "cost": 0
-        }],
+        }
+      ],
       "light": "Takes 0.7% reduced DMG per stack.",
       "dark": "When the battle starts, increases DMG to Non-Hero enemies by 25% for 200 sec.",
       "books": [
@@ -119,7 +119,7 @@
       }
     }
   ],
-  "light": "ATK, DEF, HP+15% / Crit DMG +20%",
+  "light": "Crit DMG +20%",
   "dark": "All of caster's attacks will be critical hits, but the caster becomes unable to block while taking 25% increased damage.",
   "skins": [
     "Priestess",
@@ -141,6 +141,13 @@
         "kr": "N/A",
         "jp": "Fukuhara Ayaka"
       }
+    },
+    "itemStories": {
+      "uw": "A sword of authority passed down tot the masters of Shadow Hilts.\nThis sword contains the power of mighty beings that made a pact to serve the Shadow Hilt.\nSome of them were Elements, some were innocent spirits, and some even demons.\nIt is known that tens of thousand of evil forces fell to this sword. it also has a demonic quality that binds the spirits of the slain evil to the blade.\nDespite its great power, fewer than 5 people in 600 years that were able to wield this sword.\nSeria, the 101st Heir of the Shadow Hilts and the only master in history chosen by the sword entered the pact with the sword to put her beloved sister to rest.",
+      "ut1": "An ominous whetstone known to hold the soul of a demon.\nSwords that contain a pact of servitude must be sharpened with this whetstone as ordinary ones won't work for them. Used with Enlightening Candlelight, Elsion's resistance against the Demons becomes maximized.",
+      "ut2": "A silver ring that represents the Shadow Hilts. Seria touches it whenever she feels her life is meaningless.\nDoing so would remind her of her dead comrades, filling her heart with the need for vengeance against her sister Erze.\nIronically, the ring has a note written by Erze, hidden within the rings jewel when she was young, but Seria still doesn't know about it.",
+      "ut3": "The Candle known to have been on the table of the meeting hall where ancient warriors from different contitents gathered to defeat supernatural beings.\nBlazing on this old candle is ablue exorcising flame.\nwhen the flame touches an evil being, it sucks the vitality out of the creatures body.\nThis is the first material Seria uses whenever she refines her sword.",
+      "ut4": "The Eight Trigrams that the first leader of the Shadow Hilts Family received from a supernatual being.\nOnly the leaders of Shadow Hilt can handle it and maximize the power of Elsion through the demonic energy stored inside.\n8 different beasts that punished are sealed in the trigrams and different forces arise based on wether each trigram is pointed to yin or yang.\nWhen all 8 trigrams point towards perfect yin, the full moon raised by the Cold Blooded Witch is redder than the thickest blood."
     }
   }
 }

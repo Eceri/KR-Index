@@ -1,17 +1,11 @@
-#heroBackground {
-    flex: 1;
-}
-#story{
+
+.story{
     white-space: pre-line;
     padding: 10px;
 }
 #profile{
-    padding: 0 10px;
     flex: 1;
     /* background-color: #202021;*/
-}
-#profileTable{
-    border: beige 1px solid;
 }
 #profileTable td{
     vertical-align: baseline;
@@ -19,10 +13,7 @@
 .profilePoint{
     width: 120px
 }
-.test{
-    display: flex;
-    flex-direction: row;
-}
+
 @media only screen and (max-width: 705px) {
     #profile{
         margin-top: 30px;

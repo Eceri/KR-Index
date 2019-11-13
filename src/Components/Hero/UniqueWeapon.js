@@ -13,9 +13,11 @@ export const UniqueWeapon = (props) => {
             </div>
             <p className="weaponDescription"> {props.uw.effect} </p>
         </div>
-        {props.sw ?
-            <div id={"sw"} >
-                <p className={"title2"} > Soul </p>
+
+        <div id={"sw"} >
+            <p className={"title2"} > Soul </p>
+            {props.sw ?
+
                 <div className="flexBox">
                     <Image src={`${props.heroPath}sw.png`}
                         alt="soul weapon"
@@ -46,6 +48,8 @@ export const UniqueWeapon = (props) => {
                         </p>
                     </div>
                 </div>
-            </div> : < div > N / A </div>
-        } </section>
+                : < div > N / A </div>
+            }
+        </div>
+    </section>
 }

@@ -12,7 +12,7 @@ class NavBar extends Component {
         <nav id={"nav"}>
           <Link to={"/"} className={"navLink"}>
             <img
-              src={"/iconTest.png"}
+              src={require("./Assets/iconTest.png")}
               alt={"nagatoro.jpg"}
               style={{ width: 24 }}
             />

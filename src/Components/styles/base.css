@@ -25,7 +25,7 @@ body{
     max-width: 860px;
 }
 #content{
-    padding: 10px;
+    padding: 1rem;
 }
 #nav{
     position: sticky;
@@ -67,6 +67,7 @@ body{
     position: absolute;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background: #262626;
     top: 50px;

@@ -5,7 +5,7 @@ import "./../styles/UniqueTreasure.css";
 export const UniqueTreasure = (props) => {
     let utPath = `${props.heroPath}ut${props.skill.id}.png`;
     return <div className="ut">
-        <h3>Unique Treasure {props.skill.id} - {props.skill.ut.name}</h3>
+        <h3>UT {props.skill.id} - {props.skill.ut.name}</h3>
         <div>
             <Image
                 src={utPath}

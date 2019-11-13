@@ -1,16 +1,9 @@
 import React from "react";
-import "./../styles/background.css";
+import "./../styles/HeroStory.css";
 
-export const Background = (props) => {
+export const HeroStory = (props) => {
     let profile = props.backgroundData.profile;
     return <div>
-        <div className={"test"}>
-        <div id={"heroBackground"}>
-            <div>
-            <p className={"title2"}>Story</p>
-            <p id={"story"}>{props.backgroundData.story}</p>
-            </div>
-        </div>
         <div id={"profile"}>
             <div>
                 <p className={"title2"}>Profile</p>
@@ -58,16 +51,33 @@ export const Background = (props) => {
                 </table>
             </div>
         </div>
-        </div>
+
         <div>
-            <hr className={"subSectionHeadline"}/>
-            <p>Voice Lines</p>
-            <figure>
-                <figcaption>Test Audio file</figcaption>
-                <audio controls
-                       src={require("./../../Assets/heroes/test.mp3")}
-                       preload={"none"}/>
-            </figure>
+            <p className="title2">{props.name}</p>
+            <p className={"story"}>{props.backgroundData.story}</p>
+        </div>
+
+        <div>
+            <div>
+                <p className="title2">Unique Weapon</p>
+                <p className="story">{props.backgroundData.itemStories.uw}</p>
+            </div>
+            <div>
+                <p className="title2">UT1</p>
+                <p className="story">{props.backgroundData.itemStories.ut1}</p>
+            </div>
+            <div>
+                <p className="title2">UT2</p>
+                <p className="story">{props.backgroundData.itemStories.ut2}</p>
+            </div>
+            <div>
+                <p className="title2">UT3</p>
+                <p className="story">{props.backgroundData.itemStories.ut3}</p>
+            </div>
+            <div>
+                <p className="title2">UT4</p>
+                <p className="story">{props.backgroundData.itemStories.ut4}</p>
+            </div>
         </div>
     </div>
 };

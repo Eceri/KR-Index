@@ -8,7 +8,7 @@ class Home extends Component {
         <p>Currently working on: 
           <ul> 
             <li>Hero Page</li>
-            <li></li>
+            <li>Artifacts</li>
           </ul>
         </p>
       </div>;
