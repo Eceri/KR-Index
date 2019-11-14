@@ -1,110 +1,112 @@
-main{
-    margin: 0;
-    padding: 0;
+main {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #18181b;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Oswald';
-    font-size: 1rem;
-    text-align: justify;
-    overflow: scroll;
-    overflow-x: hidden;
-    min-width: 100%;
-    letter-spacing: 0.5px;
+body {
+  background-color: #18181b;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Oswald";
+  font-size: 1rem;
+  text-align: justify;
+  overflow: scroll;
+  overflow-x: hidden;
+  min-width: 100%;
+  letter-spacing: 0.5px;
 }
-#pageContainer{
-    margin: 0 auto;
-    padding: 0;
-    align-content: center;
-    background: #404040;
-    min-width: 360px;
-    width: 100%;
-    max-width: 860px;
+#pageContainer {
+  margin: 0 auto;
+  padding: 0;
+  align-content: center;
+  background: #404040;
+  min-width: 360px;
+  width: 100%;
+  max-width: 860px;
 }
-#content{
-    padding: 10px;
+#content {
+  padding: 10px;
 }
-#nav{
-    position: sticky;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    background: #262626;
-    z-index: 2000;
-    width: 100%;
+#nav {
+  position: sticky;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  z-index: 2000;
+  width: 100%;
 }
-.navLink{
-     padding: 10px;
+.navLink {
+  padding: 10px;
 }
 .navLink,
-.heroLink{
-    text-decoration: none;
-    color: white;
+.heroLink {
+  text-decoration: none;
+  color: white;
 }
 .navLink:hover,
-.heroLink:hover{
-    cursor: pointer;
+.heroLink:hover {
+  cursor: pointer;
 }
-.heroLink{
-    padding: 5px 10px;
+.heroLink {
+  padding: 5px 10px;
 }
-#nav a:hover, .navLink:hover{
-    background: black;
+#nav a:hover,
+.navLink:hover {
+  background: black;
 }
 .class {
-     display: flex;
-     flex-direction: column;
-     flex: 1;
- }
-.menu{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background: #262626;
-    top: 50px;
-    left: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-.defaultBorder{
-    border: solid darkgray 1px;
+.menu {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #262626;
+  top: 50px;
+  left: 0;
 }
-#footer{
-    padding-top: 200px;
-    text-align: center;
+.defaultBorder {
+  border: solid darkgray 1px;
+}
+#footer {
+  text-align: center;
 }
 .title1,
-.title2{
-    line-height: 2.5rem;
+.title2 {
+  line-height: 2.5rem;
 }
-.title1{
-    font-size: 2rem;
+.title1 {
+  font-size: 2rem;
 }
-.title2{
-    font-size: 1.5rem;
+.title2 {
+  font-size: 1.5rem;
 }
-*, *:after, *:before {
-    box-sizing: border-box;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
-.flexBox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 650px) {
-    #pageContainer{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    #nav{
-        width: 100%;
-        margin: 0;
-    }
+  #pageContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #nav {
+    width: 100%;
+    margin: 0;
+  }
 }
