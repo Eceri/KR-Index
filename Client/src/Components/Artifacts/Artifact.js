@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
 
+// const writeJsonFile = require("write-json-file");
+
 // Styled Components --------------------------------------------------------------------------------------------------
 
 const Question = styled.div`
@@ -66,6 +68,10 @@ const Artifact = () => {
       </div>
     );
   };
+
+  // const write = object => {
+  //   writeJsonFile("ArtifactsDB.json", JSON.stringify(object));
+  // };
 
   return (
     <div id={"content"}>
