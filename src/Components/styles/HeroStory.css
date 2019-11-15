@@ -1,0 +1,24 @@
+
+.story{
+    white-space: pre-line;
+    padding: 10px;
+}
+#profile{
+    flex: 1;
+    /* background-color: #202021;*/
+}
+#profileTable td{
+    vertical-align: baseline;
+}
+.profilePoint{
+    width: 120px
+}
+
+@media only screen and (max-width: 705px) {
+    #profile{
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+
+    }
+}

@@ -17,10 +17,7 @@ ReactDOM.render(
         {/* <Route path="/artifacts" component={Artifact} /> */}
       </div>
       <div id={"footer"}>
-        <p>
-          Got Suggestions, found a mistake or wanna help out? Message me on
-          Discord under Eceri@2547
-        </p>
+        <p>Everything is under construction.</p>
       </div>
     </div>
   </HashRouter>,

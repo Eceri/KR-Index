@@ -3,11 +3,12 @@ import {
   Image,
   ClassPerks,
   TierOnePerks,
+  GenericPerks,
   UniqueWeapon as UW
 } from "../components";
 import Skill from "./Skill";
 
-export const StatsAndSkills = props => {
+export const HeroGeneral = props => {
   const heroPath = props.heroPath;
   const heroInfo = props.heroInfo;
   return (
@@ -37,7 +38,7 @@ export const StatsAndSkills = props => {
               alt={"light"}
               className={"defaultBorder perkIcon floatLeft"}
             />
-            <p>{heroInfo.light}</p>
+            <p>ATK, DEF, HP+15% / {heroInfo.light}</p>
           </div>
           <div>
             <Image

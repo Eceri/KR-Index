@@ -10,7 +10,7 @@ class Home extends Component {
           Currently working on:
           <ul>
             <li>Hero Page</li>
-            <li></li>
+            <li>Artifacts</li>
           </ul>
         </div>
       </React.Fragment>
