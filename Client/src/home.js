@@ -2,16 +2,19 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return <div>
+    return (
+      <React.Fragment>
         <h1>Welcome to KRC</h1>
         <p>This is a WIP. Only Seria and Aselica work so far.</p>
-        <p>Currently working on: 
-          <ul> 
+        <div>
+          Currently working on:
+          <ul>
             <li>Hero Page</li>
             <li></li>
           </ul>
-        </p>
-      </div>;
+        </div>
+      </React.Fragment>
+    );
   }
 }
 

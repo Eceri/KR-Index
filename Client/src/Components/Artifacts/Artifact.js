@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
 
-// const writeJsonFile = require("write-json-file");
-
 // Styled Components --------------------------------------------------------------------------------------------------
 
 const Question = styled.div`

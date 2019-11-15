@@ -29,7 +29,6 @@
     "react-tabs": "^3.0.0",
     "react-tooltip": "^3.10.0",
     "styled-components": "^4.3.2",
-    "write-json-file": "^4.2.0",
     "yarn": "^1.19.1"
   },
   "scripts": {

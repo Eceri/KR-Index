@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "nodemon -r esm .\\app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.11",
+    "nodemon": "^1.19.4"
+  }
+}
