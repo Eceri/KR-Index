@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import throttle from "lodash.throttle";
 
-export class Skins extends Component {
+export class HeroSkins extends Component {
   constructor(props) {
     super(props);
     this.state = { isMobile: this.handleWindowResize() };

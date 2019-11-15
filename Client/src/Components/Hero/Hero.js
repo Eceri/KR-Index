@@ -3,7 +3,13 @@ import "../styles/hero.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../styles/tabStyles.css";
 import Helmet from "react-helmet";
-import { Image, StatsAndSkills, Background, Skins } from "./../components";
+import {
+  Image,
+  HeroGeneral,
+  HeroStory,
+  HeroSkins,
+  HeroVoice
+} from "./../components";
 import "../styles/heroSkills.css";
 
 class Hero extends Component {
@@ -57,7 +63,7 @@ class Hero extends Component {
     }
     if (!this.state.isLoading) {
       return (
-        <article id={"content"}>
+        <div id={"content"}>
           {title}
           <div id={"hero"}>
             <Image
@@ -81,14 +87,15 @@ class Hero extends Component {
           <Tabs>
             <TabList>
               <Tab>General</Tab>
-              <Tab>Background</Tab>
+              <Tab>Story</Tab>
               <Tab>Skins</Tab>
+              <Tab>Voice</Tab>
             </TabList>
             <TabPanel>
-              <StatsAndSkills heroPath={heroPath} heroInfo={heroInfo} />
+              <HeroGeneral heroPath={heroPath} heroInfo={heroInfo} />
             </TabPanel>
             <TabPanel>
-              <Background
+              <HeroStory
                 backgroundData={heroInfo.background}
                 heroPath={heroPath}
                 name={heroInfo.name}
@@ -96,10 +103,17 @@ class Hero extends Component {
               />
             </TabPanel>
             <TabPanel>
-              <Skins skins={heroInfo.skins} heroPath={heroPath} />
+              <HeroSkins skins={heroInfo.skins} heroPath={heroPath} />
+            </TabPanel>
+            <TabPanel>
+              <HeroVoice
+                heroPath={heroPath}
+                name={heroInfo.name}
+                title={heroInfo.title}
+              ></HeroVoice>
             </TabPanel>
           </Tabs>
-        </article>
+        </div>
       );
     }
   }
