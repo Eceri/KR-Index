@@ -7,9 +7,7 @@ const Skill = props => {
   const manaCost = function(n) {
     let orbs = [];
     for (let i = 0; i < n; ++i) {
-      orbs.push(
-        <Image alt="Mana Orb" src={"manaOrb.png"} className={"mana"} />
-      );
+      orbs.push(<Image alt="Mana Orb" src={"manaOrb.png"} className={"mana"} key={`orb${i}`}/>);
     }
     return orbs;
   };
@@ -54,7 +52,7 @@ const Skill = props => {
       <div className="books">
         <div>
           {props.skill.books.map(book => (
-            <p className={"bookEffects"}>
+            <p className={"bookEffects"} key={book}>
               <Image
                 src={`book${props.skill.id}.png`}
                 alt={"book icon"}

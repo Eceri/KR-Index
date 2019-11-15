@@ -37,7 +37,7 @@ export class HeroSkins extends Component {
     return (
       <div>
         {skins.map(skin => (
-          <div className="skin">
+          <div className="skin" key={skin.title}>
             <p className="title2">{skin.title}</p>
             <Image src={skin.file}
               alt={skin.title}

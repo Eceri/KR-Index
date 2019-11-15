@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "../components";
 import "../styles/UniqueWeapon.css";
+
 export const UniqueWeapon = props => {
   return (
     <section>
