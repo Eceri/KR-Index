@@ -3,7 +3,7 @@ import "../styles/hero.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../styles/tabStyles.css";
 import Helmet from "react-helmet";
-import { Image, StatsAndSkills, Background, Skins } from "../components";
+import { Image, StatsAndSkills, Background, Skins } from "./../components";
 import "../styles/heroSkills.css";
 
 class Hero extends Component {
