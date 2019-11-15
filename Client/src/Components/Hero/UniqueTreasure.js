@@ -17,9 +17,7 @@ export const UniqueTreasure = props => {
           className={"defaultBorder"}
         />
         <div>
-          <h3>
-            UT {skill.id} - {skill.ut.name}
-          </h3>
+          UT {skill.id} - {skill.ut.name}
           <p>{stars(setStars)}</p>
         </div>
         <p>{skill.ut.effect[star]}</p>
