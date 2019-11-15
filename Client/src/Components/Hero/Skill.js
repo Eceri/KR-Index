@@ -21,7 +21,7 @@ const Skill = props => {
             {props.skill.linked && index > 0 && (
               <div>
                 <img
-                  src={chainLink} //TODO maybe adjust to match others.
+                  src={chainLink} // TODO: maybe adjust to match others.
                   alt={"chain-link"}
                   className={"chainlink skillImageMargin"}
                   data-tip="This skill is linked to a previous cast."

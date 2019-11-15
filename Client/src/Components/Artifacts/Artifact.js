@@ -4,13 +4,6 @@ import styled from "styled-components";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
-const Question = styled.div`
-  text-align: center;
-  position: absolute;
-  bottom: 10rem;
-  left: 40%;
-`;
-
 const ArtifactContainer = styled.p`
   width: calc(100% - 10rem);
   height: 5rem;
@@ -42,8 +35,6 @@ const Artifact = () => {
   const [star, setStar] = useState(0);
   const [artifactNumber, setArtifactNumber] = useState(1);
 
-  const artifactPicture = require(`../../Assets/artifacts/${artifactNumber}.png`);
-
   useEffect(() => {
     artifactNumber < 10 &&
       fetch(
@@ -55,21 +46,6 @@ const Artifact = () => {
         .then(data => artifactsTest.push({ ...data, picture: artifactNumber }))
         .then(setArtifactNumber(artifactNumber + 1));
   }, [artifactNumber]);
-
-  const stars = () => {
-    const arr = [0, 1, 2, 3, 4, 5];
-    return (
-      <div>
-        {arr.map(v => (
-          <button onClick={() => setStar(v)}>{v}</button>
-        ))}
-      </div>
-    );
-  };
-
-  // const write = object => {
-  //   writeJsonFile("ArtifactsDB.json", JSON.stringify(object));
-  // };
 
   return (
     <div id={"content"}>
@@ -110,11 +86,6 @@ const Artifact = () => {
           onChange={e => setArtifactNumber(e.currentTarget.value)}
         ></input> */}
       </ArtifactContainer>
-
-      {/* <Question>
-        <h2>GOT QUESTIONS?</h2>
-        <p>The easiest thing to do is post on.</p>
-      </Question> */}
     </div>
   );
 };
