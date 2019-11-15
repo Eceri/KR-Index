@@ -36,8 +36,8 @@
         }
       ],
       "linked": true,
-      "light": "[Mysterious Sword - Falling Petals] - Mana cost is reduced by 1. [Mysterious Sword - Blossom] - Hit enemies' heal rate is reduced by 50% for 5 sec.",
-      "dark": "[Mysterious Sword - Falling Petals] - Target takes 25% increased M.DMG for 10 sec. [Mysterious Sword - Blossom] - Mana cost is increased by 1, and Ignores enemy's DEF.",
+      "light": "[Mysterious Sword - Falling Petals] - Mana cost is reduced by 1.\n[Mysterious Sword - Blossom] - Hit enemies' heal rate is reduced by 50% for 5 sec.",
+      "dark": "[Mysterious Sword - Falling Petals] - Target takes 25% increased M.DMG for 10 sec.\n[Mysterious Sword - Blossom] - Mana cost is increased by 1, and Ignores enemy's DEF.",
       "books": [
         "Dmg is increased by 10%",
         "Dmg is increased by 15%",
@@ -45,7 +45,7 @@
       ],
       "ut": {
         "name": "Whetstone of Demon",
-        "effect": "[Mysterious Sword - Falling Petals] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 240. [Mysterious Sword - Blossom] Increases DMG by 50%, and upon Critical Hit, reduces Cooldown of [Mysterious Sword - Falling Petals] by 1 sec.",
+        "effect": "[Mysterious Sword - Falling Petals] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 240.\n[Mysterious Sword - Blossom] Increases DMG by 50%, and upon Critical Hit, reduces Cooldown of [Mysterious Sword - Falling Petals] by 1 sec.",
         "introduction": "An ominous whetstone known to hold the soul of a demon.\n Swords that contain a pact of servitude must be sharpened with this whetstone as ordinary ones won't work for them. Used with Enlightening candlelight, Elision's resistance against Demons becomes maximized."
       }
     },
