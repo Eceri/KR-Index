@@ -3,10 +3,10 @@ import ReactToolTip from 'react-tooltip';
 import {
     Image,
     UniqueTreasure as UT,
-} from "./../components";
+} from "../components";
 import chainLink from "./../../Assets/chain_link.svg";
 
-const Skill = (props) => {
+const HeroSkill = (props) => {
     const manaCost = function (n) {
         let orbs = [];
         for (let i = 0; i < n; ++i) {
@@ -72,4 +72,4 @@ const Skill = (props) => {
         </section>
     )
 };
-export default Skill;
+export default HeroSkill;

@@ -6,7 +6,7 @@ import {
     GenericPerks,
     UniqueWeapon as UW,
 } from "../components";
-import Skill from "./Skill";
+import HeroSkill from "./HeroSkill";
 
 export const HeroGeneral = (props) => {
     const heroPath = props.heroPath;
@@ -16,7 +16,7 @@ export const HeroGeneral = (props) => {
         <p className={"title2 subSectionHeadline"}>Skills</p>
         <hr/>
         <div className={"flexBox"} id={"skills"}>
-            {heroInfo.skills.map(skill => <Skill skill={skill} heroPath={heroPath}/>)}
+            {heroInfo.skills.map(skill => <HeroSkill skill={skill} heroPath={heroPath}/>)}
         </div>
         <p className="title2 subSectionHeadline">Transcendence</p>
         <hr/>
