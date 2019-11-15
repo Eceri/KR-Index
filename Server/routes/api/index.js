@@ -3,6 +3,6 @@ import Artifact from "./api.artifacts";
 
 const router = express.Router();
 
-router.use("/artifact", Artifact);
+router.use("/artifacts", Artifact);
 
 export default router;

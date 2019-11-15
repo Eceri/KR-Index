@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import pino from "express-pino-logger";
 
 import apiRoutes from "../routes/api/index";
 
@@ -27,6 +28,7 @@ app.listen(PORT, () => {
 });
 
 app.use(bodyParser.json());
+// app.use(pino);
 app.use("/api", apiRoutes);
 
 export default router;

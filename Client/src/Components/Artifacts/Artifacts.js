@@ -106,8 +106,8 @@ const Artifacts = () => {
         {artifact.map((item, index) => (
           <ArtifactImage
             onClick={() => setArtifactNumber(index)}
-            src={require(`../../Assets/artifacts/${item.picture}.png`)}
-            alt="Pic"
+            src={require(`../../Assets/artifacts/${item.name}.png`)}
+            alt={`Picture of ${item.name}`}
             align="left"
           />
         ))}

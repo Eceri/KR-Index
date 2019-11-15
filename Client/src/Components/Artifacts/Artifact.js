@@ -18,7 +18,7 @@ const Artifact = artifact => {
     <div key={artifact.picture}>
       <div>
         <img
-          src={require(`../../Assets/artifacts/${artifact.picture}.png`)}
+          src={require(`../../Assets/artifacts/${artifact.name}.png`)}
           alt="Pic"
           align="left"
           style={{ marginRight: "1rem", width: "96px" }}
