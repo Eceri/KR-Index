@@ -17,7 +17,7 @@ const Skill = props => {
     <section className="skill" key={props.skill.id}>
       <div>
         {props.skill.skillInfo.map((skillInfo, index) => (
-          <div className="skillBaseInfo">
+          <div className="skillBaseInfo" key={skillInfo.skillNumber}>
             {props.skill.linked && index > 0 && (
               <div>
                 <img
@@ -25,6 +25,7 @@ const Skill = props => {
                   alt={"chain-link"}
                   className={"chainlink skillImageMargin"}
                   data-tip="This skill is linked to a previous cast."
+                  style={{border: "none"}}
                 />
               </div>
             )}
@@ -33,18 +34,17 @@ const Skill = props => {
                 <Image
                   src={`${props.heroPath}${skillInfo.skillNumber}.png`}
                   alt={`Skill ${skillInfo.id} Icon`}
-                  className={"skillIcon defaultBorder"}
+                  className={"skillIcon"}
                 />
-                <p className={"skillHeader"}>
+                <div className={"skillHeader"}>
                   <p className="skillName">{skillInfo.name}</p>
                   {manaCost(skillInfo.cost)}
                   {skillInfo.cooldown > 0 && (
                     <span className={"cooldown"}>
-                      {" "}
                       {skillInfo.cooldown} Secs
                     </span>
                   )}
-                </p>
+                </div>
               </div>
               <p className={"skillDescription"}>{skillInfo.effect}</p>
             </div>
@@ -58,7 +58,7 @@ const Skill = props => {
               <Image
                 src={`book${props.skill.id}.png`}
                 alt={"book icon"}
-                className={"defaultBorder floatLeft skillImageMargin"}
+                className={"skillImageMargin"}
               />
               {book}
             </p>
@@ -69,14 +69,14 @@ const Skill = props => {
         <div>
           <Image
             src={`${props.heroPath}s${props.skill.id}l.png`}
-            className={"defaultBorder perkIcon floatLeft"}
+            className={"perkIcon"}
           />
           <p> {props.skill.light}</p>
         </div>
         <div>
           <Image
             src={`${props.heroPath}s${props.skill.id}d.png`}
-            className={"defaultBorder perkIcon floatLeft"}
+            className={"perkIcon"}
           />
           <p>{props.skill.dark}</p>
         </div>

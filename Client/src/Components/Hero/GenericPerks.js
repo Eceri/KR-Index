@@ -6,9 +6,9 @@ export const GenericPerks = (props) => {
     let perks = props.perks;
     return <div>
         {perks.map(perk =>
-            <div className={"genericPerk"}>
+            <div className={"genericPerk"} key={perk.name}>
                 <div><Image src={`genericPerks/${perk.name}.png`}
-                    className={"classPerkIcon defaultBorder"} />
+                    className={"classPerkIcon"} />
                 </div>
                 <div>
                     <p className={"genericPerkName"}>{perk.name}</p>

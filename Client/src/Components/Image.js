@@ -6,5 +6,6 @@ export const Image = props => (
     alt={props.alt}
     className={props.className}
     id={props.id}
+    style={props.style}
   />
 );

@@ -14,7 +14,7 @@ class NavBar extends Component {
             <img
               src={require("./Assets/iconTest.png")}
               alt={"nagatoro.jpg"}
-              style={{ width: 24 }}
+              style={{ width: 24, border: "none" }}
             />
           </Link>
           <HeroesMenu className={"navLink"} />

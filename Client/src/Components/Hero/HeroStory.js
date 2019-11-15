@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/background.css";
+import "../styles/HeroStory.css";
 
 export const HeroStory = props => {
   let profile = props.backgroundData.profile;
@@ -63,19 +63,19 @@ export const HeroStory = props => {
         <p className="story">{props.backgroundData.itemStories.uw}</p>
       </div>
       <div>
-        <p className="title2">UT1</p>
+        <p className="title2">Unique Treasure 1</p>
         <p className="story">{props.backgroundData.itemStories.ut1}</p>
       </div>
       <div>
-        <p className="title2">UT2</p>
+        <p className="title2">Unique Treasure 2</p>
         <p className="story">{props.backgroundData.itemStories.ut2}</p>
       </div>
       <div>
-        <p className="title2">UT3</p>
+        <p className="title2">Unique Treasure 3</p>
         <p className="story">{props.backgroundData.itemStories.ut3}</p>
       </div>
       <div>
-        <p className="title2">UT4</p>
+        <p className="title2">Unique Treasure 4</p>
         <p className="story">{props.backgroundData.itemStories.ut4}</p>
       </div>
     </div>

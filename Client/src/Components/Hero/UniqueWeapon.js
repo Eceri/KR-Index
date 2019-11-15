@@ -10,7 +10,7 @@ export const UniqueWeapon = props => {
           <Image
             src={`${props.heroPath}uw.png`}
             alt="UW Icon"
-            className={"defaultBorder uwIcon"}
+            className={"uwIcon"}
           />
           <p className="title2"> {props.uw.name} </p>
         </div>
@@ -23,9 +23,10 @@ export const UniqueWeapon = props => {
             <Image
               src={`${props.heroPath}sw.png`}
               alt="soul weapon"
-              className={"defaultBorder swIcon"}
+              className={"swIcon"}
             />
             <table>
+              <tbody>
               <tr>
                 <td>Activation:</td>
                 <td>{props.sw.activation}</td>
@@ -38,17 +39,18 @@ export const UniqueWeapon = props => {
                 <td>Charges:</td>
                 <td>{props.sw.charges}</td>
               </tr>
+              </tbody>
             </table>
             <div className="weaponDescription">
               <p> {props.sw.advancement0} </p>
-              <p class="swAdvancement">
+              <div className="swAdvancement">
                 <h3> Advancement 1 </h3>
                 {props.sw.advancement1}
-              </p>
-              <p class="swAdvancement">
+              </div>
+              <div className="swAdvancement">
                 <h3> Advancement 2 </h3>
                 {props.sw.advancement2}
-              </p>
+              </div>
             </div>
           </div>
         ) : (

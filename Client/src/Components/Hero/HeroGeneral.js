@@ -18,7 +18,7 @@ export const HeroGeneral = props => {
       <hr />
       <div className={"flexBox"} id={"skills"}>
         {heroInfo.skills.map(skill => (
-          <Skill skill={skill} heroPath={heroPath} />
+          <Skill skill={skill} heroPath={heroPath} key={skill.id}/>
         ))}
       </div>
       <p className="title2 subSectionHeadline">Transcendence</p>
@@ -36,7 +36,7 @@ export const HeroGeneral = props => {
             <Image
               src={`${heroPath}light.png`}
               alt={"light"}
-              className={"defaultBorder perkIcon floatLeft"}
+              className={"perkIcon"}
             />
             <p>ATK, DEF, HP+15% / {heroInfo.light}</p>
           </div>
@@ -44,7 +44,7 @@ export const HeroGeneral = props => {
             <Image
               src={`${heroPath}dark.png`}
               alt={"dark"}
-              className={"defaultBorder perkIcon floatLeft"}
+              className={"perkIcon"}
             />
             {heroInfo.dark}
           </div>

@@ -44,7 +44,6 @@ export class HeroesMenu extends Component {
           >
             {heroes.map(heroClass => (
               <div className={"class"}>
-                {console.log(heroClass)}
                 <NavLink to={"/" + heroClass.name} className={"navLink"}>
                   {heroClass.name}
                 </NavLink>

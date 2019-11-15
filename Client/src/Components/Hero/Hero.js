@@ -68,7 +68,6 @@ class Hero extends Component {
           <div id={"hero"}>
             <Image
               src={`${heroPath}hero.png`}
-              className={"defaultBorder "}
               id={"portrait"}
             />
             <div>
@@ -78,8 +77,11 @@ class Hero extends Component {
                 <Image
                   src={`classes/${heroInfo.class}.png`}
                   className={"heroClassIcon"}
+                  style={{border: "none"}}
                 />
-                <Image src={`${heroInfo.damageType}.png`} id={"damageType"} />
+                <Image src={`${heroInfo.damageType}.png`}
+                  id={"damageType"}
+                  style={{border: "none"}}/>
                 <p>{heroInfo.position}</p>
               </div>
             </div>

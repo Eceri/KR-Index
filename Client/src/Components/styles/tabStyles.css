@@ -16,22 +16,11 @@
     cursor: pointer;
     width: inherit;
 }
-.skin{
-    display: flex;
-    flex-direction: column;
-    border: none;
-    width: 100%;
-    min-width: 350px;
-}
-.react-tabs__tab-panel > img{
-    max-height: 945px;
-}
 .react-tabs__tab--selected {
     background: dimgray;
 }
 
 .react-tabs__tab--disabled {
-    color: GrayText;
     cursor: default;
 }
 
