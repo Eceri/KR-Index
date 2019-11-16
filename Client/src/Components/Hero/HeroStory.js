@@ -1,8 +1,14 @@
 import React from "react";
 import "../styles/HeroStory.css";
+import {
+  Image,
+  UniqueWeapon,
+  UniqueTreasure
+} from "./../components"
 
 export const HeroStory = props => {
-  let profile = props.backgroundData.profile;
+  let { heroPath, name, backgroundData, title } = props
+  let profile = backgroundData.profile;
   return (
     <div>
       <div>
@@ -13,11 +19,11 @@ export const HeroStory = props => {
               <tbody>
                 <tr>
                   <td className={"profilePoint"}>Name</td>
-                  <td>{props.name}</td>
+                  <td>{name}</td>
                 </tr>
                 <tr>
                   <td className={"profilePoint"}>Title</td>
-                  <td>{props.title}</td>
+                  <td>{title}</td>
                 </tr>
                 <tr>
                   <td className={"profilePoint"}>Gender</td>
@@ -56,36 +62,32 @@ export const HeroStory = props => {
           </div>
         </div>
       </div>
-      <hr />
+      <hr style={{ marginTop: "10px" }} />
       <div>
-        <p className="title2">{props.name}</p>
-        <p className={"story"}>{props.backgroundData.story}</p>
+        <p className="title2">{name}</p>
+        <p className={"story"}>{backgroundData.story}</p>
       </div>
-      <hr className="seperator"/>
+      <hr className="seperator" />
       <div>
-        <p className="title2">Unique Weapon</p>
-        <p className="story">{props.backgroundData.itemStories.uw}</p>
+        <div className="headline">
+          <Image src={`${heroPath}uw.png`}
+            className="uw" />
+          <p className="title2">Unique Weapon</p>
+        </div>
+        <p className="story">{backgroundData.itemStories.uw}</p>
       </div>
-      <hr className="seperator"/>
-      <div>
-        <p className="title2">Unique Treasure 1</p>
-        <p className="story">{props.backgroundData.itemStories.ut1}</p>
-      </div>
-      <hr className="seperator"/>
-      <div>
-        <p className="title2">Unique Treasure 2</p>
-        <p className="story">{props.backgroundData.itemStories.ut2}</p>
-      </div>
-      <hr className="seperator"/>
-      <div>
-        <p className="title2">Unique Treasure 3</p>
-        <p className="story">{props.backgroundData.itemStories.ut3}</p>
-      </div>
-      <hr className="seperator"/>
-      <div>
-        <p className="title2">Unique Treasure 4</p>
-        <p className="story">{props.backgroundData.itemStories.ut4}</p>
-      </div>
+      <hr className="seperator" />
+      {backgroundData.itemStories.uts.map((utStory, index) => (
+        <div key={`ut${index + 1}Story`}>
+          <div className="headline">
+            <Image src={`${heroPath}ut${index + 1}.png`}
+              className="uw" />
+            <p className="title2">Unique Treasure {index + 1}</p>
+          </div>
+          <p className="story">{utStory}</p>
+          <hr className="seperator" />
+        </div>
+      ))}
     </div>
   );
 };

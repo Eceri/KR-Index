@@ -49,7 +49,7 @@ class Hero extends Component {
     }
     const title = (
       <Helmet>
-        <title>{`KRC - ${heroName}`}</title>
+        <title>{`${heroName}`}</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
     );
@@ -99,21 +99,21 @@ class Hero extends Component {
             </TabPanel>
             <TabPanel>
               <HeroStory
-                backgroundData={heroInfo.background}
                 heroPath={heroPath}
                 name={heroInfo.name}
+                backgroundData={heroInfo.background}
                 title={heroInfo.title}
               />
             </TabPanel>
             <TabPanel>
-              <HeroSkins skins={heroInfo.skins}
-                heroPath={heroPath} />
+              <HeroSkins heroPath={heroPath}
+                skins={heroInfo.skins} />
             </TabPanel>
             <TabPanel>
               <HeroVoice
                 heroPath={heroPath}
                 name={heroInfo.name}
-                voice={heroInfo.voice}/>
+                voice={heroInfo.voice} />
             </TabPanel>
           </Tabs>
         </div>

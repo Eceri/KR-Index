@@ -5,6 +5,7 @@ import { stars } from "../atoms/Stars/stars";
 
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
+  let { heroPath, } = props
   return (
     <div>
       <p className={"title2"}> Unique Weapon </p> <hr />
@@ -16,7 +17,7 @@ export const UniqueWeapon = props => {
             className={"uwIcon"} />
           <div>
             <p className="title2"> {props.uw.name} </p>
-          {stars(setStars)}
+            {stars(setStars)}
           </div>
         </div>
         <p className="weaponDescription"> {props.uw.effect[star]} </p>
@@ -58,9 +59,8 @@ export const UniqueWeapon = props => {
               </div>
             </div>
           </div>
-        ) : (
-            <div> N / A </div>
-          )}
+        ) : <div> N / A </div>
+        }
       </div>
     </div>
   );

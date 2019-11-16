@@ -15,7 +15,15 @@
 .profilePoint{
     width: 120px
 }
-
+.uw{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+.headline{
+    display: flex;
+    align-items: center;
+}
 @media only screen and (max-width: 705px) {
     #profile{
         margin-top: 30px;
