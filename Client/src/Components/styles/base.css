@@ -10,7 +10,7 @@ body {
   font-family: "Oswald";
   font-size: 1rem;
   text-align: justify;
-  overflow: scroll;
+  /* ÜBELTÄTER */
   overflow-x: hidden;
   min-width: 100%;
   letter-spacing: 0.5px;

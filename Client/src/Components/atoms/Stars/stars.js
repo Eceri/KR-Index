@@ -6,6 +6,7 @@ const Star = styled.button`
   border: 0px solid transparent;
   background: none;
   color: ${props => (props.active ? "#FFD700" : "white")};
+  vertical-align: middle;
 
   &:hover {
     cursor: pointer;
@@ -28,7 +29,19 @@ export const stars = (setStar, active) => {
           key={v}
           active={active >= v ? true : false}
         >
-          {v > 0 ? "☆" : "X"}
+          {v > 0 ? (
+            "☆"
+          ) : (
+            <span
+              style={{
+                fontSize: "2rem",
+                fontWeight: "700",
+                textShadow: "0.5px 0.5px #ffd700"
+              }}
+            >
+              ○
+            </span>
+          )}
         </Star>
       ))}
     </div>

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-
 import styled from "styled-components";
+import ReactTooltip from "react-tooltip";
+import Helmet from "react-helmet";
 
 import Artifact from "./Artifact";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
 const ArtifactContainer = styled.div`
-  width: calc(100% - 10rem);
+  width: 100%;
   padding: 1rem;
 `;
 
@@ -20,9 +21,14 @@ const ArtifactImage = styled.img`
     cursor: pointer;
   }
 `;
+
+const Scrollable = styled.div`
+  overflow: auto;
+  height: 62vh;
+`;
 // Declarations -------------------------------------------------------------------------------------------------------
 
-let artifact = [
+const artifactsTest = [
   {
     name: "Burning Brazier of Elf",
     description: [
@@ -34,8 +40,7 @@ let artifact = [
       "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
     ],
     story:
-      "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
-    picture: 1
+      "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana."
   },
   {
     name: "Drinking Horn of Ancient Cow",
@@ -48,8 +53,7 @@ let artifact = [
       "Upon auto attacking, there is a 10% chance that ATK rises by 25% and ATK Speed rises by 250."
     ],
     story:
-      "A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance.",
-    picture: 2
+      "A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance."
   },
   {
     name: "Dice of Magical Letters",
@@ -62,8 +66,7 @@ let artifact = [
       "Upon attacking an enemy, deal 1000% M. DMG for a 3% chance."
     ],
     story:
-      "A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters.",
-    picture: 3
+      "A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters."
   },
   {
     name: "Golden Cat Statue",
@@ -76,15 +79,28 @@ let artifact = [
       "Every Battle, Spd increases by 1000 for the first 15 secs."
     ],
     story:
-      "A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw.",
-    picture: 4
+      "A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw."
   }
 ];
 
-let artifactsTest = [{}];
+const loadingArtifact = {
+  name: "Burning Brazier of Elf",
+  description: [
+    "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
+    "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
+    "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
+    "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
+    "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
+    "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
+  ],
+  story:
+    "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
+  picture: 1
+};
 
 const Artifacts = () => {
   const [artifactNumber, setArtifactNumber] = useState(0);
+  const [artifacts, setArtifacts] = useState();
 
   // useEffect(() => {
   //   artifactNumber < 10 &&
@@ -98,19 +114,41 @@ const Artifacts = () => {
   //       .then(setArtifactNumber(artifactNumber + 1));
   // }, [artifactNumber]);
 
+  // TODO: create process.ENV with
+  useEffect(() => {
+    fetch(`http://localhost:5000/api/artifacts/`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => setArtifacts(data));
+  }, []);
+
   return (
     <div id={"content"}>
+      <Helmet>
+        <title>{`Artifacts`}</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <ArtifactContainer>
-        {/* artifactTest */}
-        {Artifact(artifact[artifactNumber])}
-        {artifact.map((item, index) => (
-          <ArtifactImage
-            onClick={() => setArtifactNumber(index)}
-            src={require(`../../Assets/artifacts/${item.name}.png`)}
-            alt={`Picture of ${item.name}`}
-            align="left"
-          />
-        ))}
+        {Artifact(
+          artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
+        )}
+        <Scrollable>
+          {artifacts &&
+            artifacts.map((item, index) => (
+              <React.Fragment key={item.name + index}>
+                <ArtifactImage
+                  onClick={() => setArtifactNumber(index)}
+                  src={require(`../../Assets/artifacts/${item.name}.png`)}
+                  alt={`Picture of ${item.name}`}
+                  align="left"
+                  data-tip
+                  data-for={item.name}
+                />
+                <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
+              </React.Fragment>
+            ))}
+        </Scrollable>
       </ArtifactContainer>
     </div>
   );

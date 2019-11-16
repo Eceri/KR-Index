@@ -1,0 +1,888 @@
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"message":"GET Route /","level":"info","service":"user-service"}
+{"message":"End GET Route /","level":"error","service":"user-service"}
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"info","service":"user-service"}
+{"requestId":"451","message":"End GET Route /","level":"info","service":"user-service"}
+{
+  message: 'App is running on port 5000',
+  level: 'info',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: 'info',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: 'info',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: 'info',
+  service: 'user-service'
+}
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"info","service":"user-service"}
+{"requestId":"451","message":"End GET Route /","level":"info","service":"user-service"}
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"info","service":"user-service"}
+{"requestId":"451","message":"End GET Route /","level":"info","service":"user-service"}
+{"message":"App is running on port 5000","level":"info","service":"user-service"}
+{"message":"Connected to Database!","level":"info","service":"user-service"}
+{"message":"App is running on port 5000","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"Connected to Database!","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"requestId":"451","message":"End GET Route /","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"App is running on port 5000","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"Connected to Database!","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"\u001b[31merror\u001b[39m","service":"user-service"}
+{"requestId":"451","message":"End GET Route /","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"App is running on port 5000","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"Connected to Database!","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"App is running on port 5000","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"Connected to Database!","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"App is running on port 5000","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{"message":"Connected to Database!","level":"\u001b[32minfo\u001b[39m","service":"user-service"}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  service: 'user-service',
+  '$__': InternalCache {
+    strictMode: true,
+    selected: undefined,
+    shardval: undefined,
+    saveError: undefined,
+    validationError: undefined,
+    adhocPaths: undefined,
+    removing: undefined,
+    inserting: true,
+    saving: undefined,
+    version: undefined,
+    getters: {},
+    _id: 5dcf5bb8efcede2990b1e484,
+    populate: undefined,
+    populated: undefined,
+    wasPopulated: false,
+    scope: undefined,
+    activePaths: StateMachine {
+      paths: {},
+      states: { ignore: {}, default: {}, init: {}, modify: {}, require: {} },
+      stateNames: [ 'require', 'modify', 'init', 'default', 'ignore', [length]: 5 ],
+      forEach: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      },
+      map: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      }
+    },
+    pathsToScopes: {
+      description: {
+        description: [
+          'Upon attacking an enemy, there is a 10% chance to recover 1 MP.',
+          'Upon attacking an enemy, there is a 12% chance to recover 1 MP.',
+          'Upon attacking an enemy, there is a 14% chance to recover 1 MP.',
+          'Upon attacking an enemy, there is a 17% chance to recover 1 MP.',
+          'Upon attacking an enemy, there is a 20% chance to recover 1 MP.',
+          'Upon attacking an enemy, there is a 25% chance to recover 1 MP.',
+          [length]: 6
+        ],
+        _id: 5dcf5bb8efcede2990b1e484,
+        name: 'Burning Brazier of Elf',
+        story: 'A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.',
+        createdAt: 2019-11-16T02:15:20.503Z,
+        updatedAt: 2019-11-16T02:15:20.503Z,
+        __v: 0
+      }
+    },
+    cachedRequired: {},
+    session: null,
+    '$setCalled': Set {
+      'name',
+      'description',
+      'story',
+      'createdAt',
+      'updatedAt',
+      [size]: 5
+    },
+    ownerDocument: undefined,
+    fullPath: undefined,
+    emitter: EventEmitter {
+      [domain]: null,
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: 0
+    },
+    '$options': {}
+  },
+  isNew: false,
+  errors: undefined,
+  _doc: {
+    description: ["Upon attacking an enemy, there is a 10% chance to recover 1 MP.","Upon attacking an enemy, there is a 12% chance to recover 1 MP.","Upon attacking an enemy, there is a 14% chance to recover 1 MP.","Upon attacking an enemy, there is a 17% chance to recover 1 MP.","Upon attacking an enemy, there is a 20% chance to recover 1 MP.","Upon attacking an enemy, there is a 25% chance to recover 1 MP."],
+    _id: 5dcf5bb8efcede2990b1e484,
+    name: 'Burning Brazier of Elf',
+    story: 'A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.',
+    createdAt: 2019-11-16T02:15:20.503Z,
+    updatedAt: 2019-11-16T02:15:20.503Z,
+    __v: 0
+  },
+  '$locals': {},
+  level: '\u001b[32minfo\u001b[39m',
+  message: 'DB got a new entry'
+}
+{
+  service: 'user-service',
+  '$__': InternalCache {
+    strictMode: true,
+    selected: undefined,
+    shardval: undefined,
+    saveError: undefined,
+    validationError: undefined,
+    adhocPaths: undefined,
+    removing: undefined,
+    inserting: true,
+    saving: undefined,
+    version: undefined,
+    getters: {},
+    _id: 5dcf5bb8efcede2990b1e485,
+    populate: undefined,
+    populated: undefined,
+    wasPopulated: false,
+    scope: undefined,
+    activePaths: StateMachine {
+      paths: {},
+      states: { ignore: {}, default: {}, init: {}, modify: {}, require: {} },
+      stateNames: [ 'require', 'modify', 'init', 'default', 'ignore', [length]: 5 ],
+      forEach: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      },
+      map: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      }
+    },
+    pathsToScopes: {
+      description: {
+        description: [
+          'Upon auto attacking, there is a 10% chance that ATK rises by 10% and ATK Speed rises by 100.',
+          'Upon auto attacking, there is a 10% chance that ATK rises by 12% and ATK Speed rises by 120.',
+          'Upon auto attacking, there is a 10% chance that ATK rises by 14% and ATK Speed rises by 140.',
+          'Upon auto attacking, there is a 10% chance that ATK rises by 17% and ATK Speed rises by 170.',
+          'Upon auto attacking, there is a 10% chance that ATK rises by 20% and ATK Speed rises by 200.',
+          'Upon auto attacking, there is a 10% chance that ATK rises by 25% and ATK Speed rises by 250.',
+          [length]: 6
+        ],
+        _id: 5dcf5bb8efcede2990b1e485,
+        name: 'Drinking Horn of Ancient Cow',
+        story: 'A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance.',
+        createdAt: 2019-11-16T02:15:20.504Z,
+        updatedAt: 2019-11-16T02:15:20.504Z,
+        __v: 0
+      }
+    },
+    cachedRequired: {},
+    session: null,
+    '$setCalled': Set {
+      'name',
+      'description',
+      'story',
+      'createdAt',
+      'updatedAt',
+      [size]: 5
+    },
+    ownerDocument: undefined,
+    fullPath: undefined,
+    emitter: EventEmitter {
+      [domain]: null,
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: 0
+    },
+    '$options': {}
+  },
+  isNew: false,
+  errors: undefined,
+  _doc: {
+    description: ["Upon auto attacking, there is a 10% chance that ATK rises by 10% and ATK Speed rises by 100.","Upon auto attacking, there is a 10% chance that ATK rises by 12% and ATK Speed rises by 120.","Upon auto attacking, there is a 10% chance that ATK rises by 14% and ATK Speed rises by 140.","Upon auto attacking, there is a 10% chance that ATK rises by 17% and ATK Speed rises by 170.","Upon auto attacking, there is a 10% chance that ATK rises by 20% and ATK Speed rises by 200.","Upon auto attacking, there is a 10% chance that ATK rises by 25% and ATK Speed rises by 250."],
+    _id: 5dcf5bb8efcede2990b1e485,
+    name: 'Drinking Horn of Ancient Cow',
+    story: 'A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance.',
+    createdAt: 2019-11-16T02:15:20.504Z,
+    updatedAt: 2019-11-16T02:15:20.504Z,
+    __v: 0
+  },
+  '$locals': {},
+  level: '\u001b[32minfo\u001b[39m',
+  message: 'DB got a new entry'
+}
+{
+  service: 'user-service',
+  '$__': InternalCache {
+    strictMode: true,
+    selected: undefined,
+    shardval: undefined,
+    saveError: undefined,
+    validationError: undefined,
+    adhocPaths: undefined,
+    removing: undefined,
+    inserting: true,
+    saving: undefined,
+    version: undefined,
+    getters: {},
+    _id: 5dcf5bb8efcede2990b1e486,
+    populate: undefined,
+    populated: undefined,
+    wasPopulated: false,
+    scope: undefined,
+    activePaths: StateMachine {
+      paths: {},
+      states: { ignore: {}, default: {}, init: {}, modify: {}, require: {} },
+      stateNames: [ 'require', 'modify', 'init', 'default', 'ignore', [length]: 5 ],
+      forEach: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      },
+      map: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      }
+    },
+    pathsToScopes: {
+      description: {
+        description: [
+          'Upon attacking an enemy, deal 400% M. DMG for a 3% chance.',
+          'Upon attacking an enemy, deal 480% M. DMG for a 3% chance.',
+          'Upon attacking an enemy, deal 575% M. DMG for a 3% chance.',
+          'Upon attacking an enemy, deal 690% M. DMG for a 3% chance.',
+          'Upon attacking an enemy, deal 830% M. DMG for a 3% chance.',
+          'Upon attacking an enemy, deal 1000% M. DMG for a 3% chance.',
+          [length]: 6
+        ],
+        _id: 5dcf5bb8efcede2990b1e486,
+        name: 'Dice of Magical Letters',
+        story: 'A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters.',
+        createdAt: 2019-11-16T02:15:20.504Z,
+        updatedAt: 2019-11-16T02:15:20.504Z,
+        __v: 0
+      }
+    },
+    cachedRequired: {},
+    session: null,
+    '$setCalled': Set {
+      'name',
+      'description',
+      'story',
+      'createdAt',
+      'updatedAt',
+      [size]: 5
+    },
+    ownerDocument: undefined,
+    fullPath: undefined,
+    emitter: EventEmitter {
+      [domain]: null,
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: 0
+    },
+    '$options': {}
+  },
+  isNew: false,
+  errors: undefined,
+  _doc: {
+    description: ["Upon attacking an enemy, deal 400% M. DMG for a 3% chance.","Upon attacking an enemy, deal 480% M. DMG for a 3% chance.","Upon attacking an enemy, deal 575% M. DMG for a 3% chance.","Upon attacking an enemy, deal 690% M. DMG for a 3% chance.","Upon attacking an enemy, deal 830% M. DMG for a 3% chance.","Upon attacking an enemy, deal 1000% M. DMG for a 3% chance."],
+    _id: 5dcf5bb8efcede2990b1e486,
+    name: 'Dice of Magical Letters',
+    story: 'A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters.',
+    createdAt: 2019-11-16T02:15:20.504Z,
+    updatedAt: 2019-11-16T02:15:20.504Z,
+    __v: 0
+  },
+  '$locals': {},
+  level: '\u001b[32minfo\u001b[39m',
+  message: 'DB got a new entry'
+}
+{
+  service: 'user-service',
+  '$__': InternalCache {
+    strictMode: true,
+    selected: undefined,
+    shardval: undefined,
+    saveError: undefined,
+    validationError: undefined,
+    adhocPaths: undefined,
+    removing: undefined,
+    inserting: true,
+    saving: undefined,
+    version: undefined,
+    getters: {},
+    _id: 5dcf5bb8efcede2990b1e487,
+    populate: undefined,
+    populated: undefined,
+    wasPopulated: false,
+    scope: undefined,
+    activePaths: StateMachine {
+      paths: {},
+      states: { ignore: {}, default: {}, init: {}, modify: {}, require: {} },
+      stateNames: [ 'require', 'modify', 'init', 'default', 'ignore', [length]: 5 ],
+      forEach: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      },
+      map: [Function] {
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] }
+      }
+    },
+    pathsToScopes: {
+      description: {
+        description: [
+          'Every Battle, Spd increases by 400 for the first 15 secs.',
+          'Every Battle, Spd increases by 480 for the first 15 secs.',
+          'Every Battle, Spd increases by 570 for the first 15 secs.',
+          'Every Battle, Spd increases by 690 for the first 15 secs.',
+          'Every Battle, Spd increases by 830 for the first 15 secs.',
+          'Every Battle, Spd increases by 1000 for the first 15 secs.',
+          [length]: 6
+        ],
+        _id: 5dcf5bb8efcede2990b1e487,
+        name: 'Golden Cat Statue',
+        story: 'A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw.',
+        createdAt: 2019-11-16T02:15:20.504Z,
+        updatedAt: 2019-11-16T02:15:20.504Z,
+        __v: 0
+      }
+    },
+    cachedRequired: {},
+    session: null,
+    '$setCalled': Set {
+      'name',
+      'description',
+      'story',
+      'createdAt',
+      'updatedAt',
+      [size]: 5
+    },
+    ownerDocument: undefined,
+    fullPath: undefined,
+    emitter: EventEmitter {
+      [domain]: null,
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: 0
+    },
+    '$options': {}
+  },
+  isNew: false,
+  errors: undefined,
+  _doc: {
+    description: ["Every Battle, Spd increases by 400 for the first 15 secs.","Every Battle, Spd increases by 480 for the first 15 secs.","Every Battle, Spd increases by 570 for the first 15 secs.","Every Battle, Spd increases by 690 for the first 15 secs.","Every Battle, Spd increases by 830 for the first 15 secs.","Every Battle, Spd increases by 1000 for the first 15 secs."],
+    _id: 5dcf5bb8efcede2990b1e487,
+    name: 'Golden Cat Statue',
+    story: 'A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw.',
+    createdAt: 2019-11-16T02:15:20.504Z,
+    updatedAt: 2019-11-16T02:15:20.504Z,
+    __v: 0
+  },
+  '$locals': {},
+  level: '\u001b[32minfo\u001b[39m',
+  message: 'DB got a new entry'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 0 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 0 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got undefined new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got undefined new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 0 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 0 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 0 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 72 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'DB got 4 new entry',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'End POST Route /artifact/post',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 76 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}

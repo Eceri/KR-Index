@@ -6,8 +6,10 @@
     "body-parser": "^1.19.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "express-pino-logger": "^4.0.0",
+    "express-winston": "^4.0.1",
     "mongoose": "^5.7.11",
-    "nodemon": "^1.19.4"
-  }
+    "nodemon": "^1.19.4",
+    "winston": "^3.2.1"
+  },
+  "proxy": "http://localhost:3000"
 }

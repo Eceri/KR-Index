@@ -1,39 +1,45 @@
 import express from "express";
+import Logger from "../../Config/logger";
 
 import Data from "../../model/model.artifacts";
 
 const router = express.Router();
 
 router.get("/", async (req, res, next) => {
-  console.log("GET Route /");
+  const childLogger = Logger.child({ requestId: "451" });
+  childLogger.info("GET Route /");
   try {
     const result = await Data.find();
     res.status(200).send(result);
+    childLogger.info(`Found ${Object.keys(result).length} entries`);
   } catch (error) {
     next(error);
   }
-  console.log("End GET Route /");
+  childLogger.info("End GET Route /");
 });
 
 router.post("/post", async (req, res, next) => {
-  console.log("POST Route /artifact/post");
+  const body = req.body;
+  Logger.info("POST Route /artifact/post");
   try {
-    const Artifact = Data({
-      name: req.body.name,
-      description: req.body.description,
-      story: req.body.story
+    await body.map(async v => {
+      const Artifact = Data({
+        name: v.name,
+        description: v.description,
+        story: v.story
+      });
+      await Artifact.save();
     });
-    await Artifact.save();
-    console.log("DB got a new entry", Artifact);
+    Logger.info(`DB got ${body.length} new entry`);
     res.status(200).send("OK");
   } catch (error) {
     next(error);
   }
-  console.log("End POST Route /artifact/post");
+  Logger.info("End POST Route /artifact/post");
 });
 
 router.get("/id", async (req, res, next) => {
-  console.log("GET Route /artifact/id");
+  Logger.info("GET Route /artifact/id");
   try {
     const id = req.body._id;
     const result = await Data.findById(id);
@@ -41,11 +47,11 @@ router.get("/id", async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-  console.log("End GET Route /artifact/id");
+  Logger.info("End GET Route /artifact/id");
 });
 
 router.put("/update", async (req, res, next) => {
-  console.log("UPDATE Route /artifact/update");
+  Logger.info("UPDATE Route /artifact/update");
   const id = req.body._id;
   try {
     await Data.updateOne(
@@ -62,11 +68,11 @@ router.put("/update", async (req, res, next) => {
     next(error);
   }
   res.status(200).send(`Updated ${id}`);
-  console.log("End UPDATE Route /artifact/update", id);
+  Logger.info("End UPDATE Route /artifact/update", id);
 });
 
 router.delete("/delete/id", async (req, res, next) => {
-  console.log("DELETE Route /artifact/delete/id");
+  Logger.info("DELETE Route /artifact/delete/id");
   const id = req.body._id;
   try {
     await Data.deleteOne({ _id: id });
@@ -74,18 +80,18 @@ router.delete("/delete/id", async (req, res, next) => {
     next(error);
   }
   res.status(200).send(`Deleted ${id}`);
-  console.log("End DELETE Route /artifact/delete/id", id);
+  Logger.info("End DELETE Route /artifact/delete/id", id);
 });
 
 router.delete("/delete/all", async (req, res, next) => {
-  console.log("DELETE ALL Route /artifact/delete/all");
+  Logger.info("DELETE ALL Route /artifact/delete/all");
   try {
     await Data.deleteMany({});
   } catch (error) {
     next(error);
   }
   res.status(200).send(`Deleted all`);
-  console.log("End DELETE ALL Route /artifact/delete/all");
+  Logger.info("End DELETE ALL Route /artifact/delete/all");
 });
 
 export default router;
