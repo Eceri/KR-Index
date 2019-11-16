@@ -56,26 +56,32 @@ export const HeroStory = props => {
           </div>
         </div>
       </div>
+      <hr />
       <div>
         <p className="title2">{props.name}</p>
         <p className={"story"}>{props.backgroundData.story}</p>
       </div>
+      <hr className="seperator"/>
       <div>
         <p className="title2">Unique Weapon</p>
         <p className="story">{props.backgroundData.itemStories.uw}</p>
       </div>
+      <hr className="seperator"/>
       <div>
         <p className="title2">Unique Treasure 1</p>
         <p className="story">{props.backgroundData.itemStories.ut1}</p>
       </div>
+      <hr className="seperator"/>
       <div>
         <p className="title2">Unique Treasure 2</p>
         <p className="story">{props.backgroundData.itemStories.ut2}</p>
       </div>
+      <hr className="seperator"/>
       <div>
         <p className="title2">Unique Treasure 3</p>
         <p className="story">{props.backgroundData.itemStories.ut3}</p>
       </div>
+      <hr className="seperator"/>
       <div>
         <p className="title2">Unique Treasure 4</p>
         <p className="story">{props.backgroundData.itemStories.ut4}</p>

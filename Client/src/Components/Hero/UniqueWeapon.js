@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "../components";
 import "../styles/UniqueWeapon.css";
+import { stars } from "../atoms/Stars/stars";
 
 export const UniqueWeapon = props => {
+  const [star, setStars] = useState(0);
   return (
-    <section>
+    <div>
       <p className={"title2"}> Unique Weapon </p> <hr />
       <div id="uw">
         <div className="flexBox" id="uwHeader">
           <Image
             src={`${props.heroPath}uw.png`}
             alt="UW Icon"
-            className={"uwIcon"}
-          />
-          <p className="title2"> {props.uw.name} </p>
+            className={"uwIcon"} />
+          <div>
+            <p className="title2"> {props.uw.name} </p>
+          {stars(setStars)}
+          </div>
         </div>
-        <p className="weaponDescription"> {props.uw.effect} </p>
+        <p className="weaponDescription"> {props.uw.effect[star]} </p>
       </div>
       <div id={"sw"}>
         <p className={"title2"}> Soul </p>
@@ -28,18 +32,18 @@ export const UniqueWeapon = props => {
             />
             <table>
               <tbody>
-              <tr>
-                <td>Activation:</td>
-                <td>{props.sw.activation}</td>
-              </tr>
-              <tr>
-                <td>Cooldown:</td>
-                <td>{props.sw.cd}</td>
-              </tr>
-              <tr>
-                <td>Charges:</td>
-                <td>{props.sw.charges}</td>
-              </tr>
+                <tr>
+                  <td>Activation:</td>
+                  <td>{props.sw.activation}</td>
+                </tr>
+                <tr>
+                  <td>Cooldown:</td>
+                  <td>{props.sw.cd}</td>
+                </tr>
+                <tr>
+                  <td>Charges:</td>
+                  <td>{props.sw.charges}</td>
+                </tr>
               </tbody>
             </table>
             <div className="weaponDescription">
@@ -55,9 +59,9 @@ export const UniqueWeapon = props => {
             </div>
           </div>
         ) : (
-          <div> N / A </div>
-        )}
+            <div> N / A </div>
+          )}
       </div>
-    </section>
+    </div>
   );
 };

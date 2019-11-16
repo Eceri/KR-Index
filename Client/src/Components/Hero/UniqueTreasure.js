@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "../components";
+import { stars } from "../atoms/Stars/stars";
 import "../styles/UniqueTreasure.css";
 
 export const UniqueTreasure = props => {
-  let utPath = `${props.heroPath}ut${props.skill.id}.png`;
+  const [star, setStars] = useState(0);
+  const { heroPath, skill } = props;
+  let utPath = `${heroPath}ut${skill.id}.png`;
   return (
     <div className="ut">
       <div>
-        <Image
-          src={utPath}
-          alt={`Unique Treasure ${props.skill.id} Icon`}
+        <Image src={utPath}
+          alt={`Unique Treasure ${skill.id}`}
         />
         <div>
-          <h3>Unique Treasure {props.skill.id} - {props.skill.ut.name}</h3>
-          <div>
-            
-          </div>
+          <h3>
+            Unique Treasure {skill.id} - {skill.ut.name}
+          </h3>
+          {stars(setStars)}
         </div>
       </div>
-      <p>{props.skill.ut.effect}</p>
+      <p>{skill.ut.effect[star]}</p>
     </div>
   );
 };

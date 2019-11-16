@@ -14,7 +14,9 @@
 .ut > div{
     display: flex;
     flex: 1;
-    align-items: center;
+}
+.ut > p{
+    margin-top: 5px;
 }
 .ut img {
     margin: 5px 5px 0 0;

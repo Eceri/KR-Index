@@ -1,5 +1,8 @@
 .story{
     white-space: pre-line;
+}
+.story,
+#profileTable{
     padding: 10px;
 }
 #profile{

@@ -3,7 +3,6 @@ import {
   Image,
   ClassPerks,
   TierOnePerks,
-  GenericPerks,
   UniqueWeapon as UW
 } from "../components";
 import Skill from "./Skill";

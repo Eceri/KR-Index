@@ -1,13 +1,14 @@
 .genericPerk{
     display: flex;
-    margin: 15px 0;
-    align-items: center;
+    margin: 10px 0;
+    align-items: flex-start;
 }
 .genericPerkName{
     font-size: larger;
 }
-.classPerkIcon{
+.genericPerkIcon{
     width: 45px;
     height: auto;
+    margin-top: 7px;
     margin-right: 10px;
 }

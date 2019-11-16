@@ -77,11 +77,11 @@ class Hero extends Component {
                 <Image
                   src={`classes/${heroInfo.class}.png`}
                   className={"heroClassIcon"}
-                  style={{border: "none"}}
+                  style={{ border: "none" }}
                 />
                 <Image src={`${heroInfo.damageType}.png`}
                   id={"damageType"}
-                  style={{border: "none"}}/>
+                  style={{ border: "none" }} />
                 <p>{heroInfo.position}</p>
               </div>
             </div>
@@ -94,7 +94,8 @@ class Hero extends Component {
               <Tab>Voice</Tab>
             </TabList>
             <TabPanel>
-              <HeroGeneral heroPath={heroPath} heroInfo={heroInfo} />
+              <HeroGeneral heroPath={heroPath}
+                heroInfo={heroInfo} />
             </TabPanel>
             <TabPanel>
               <HeroStory
@@ -105,14 +106,14 @@ class Hero extends Component {
               />
             </TabPanel>
             <TabPanel>
-              <HeroSkins skins={heroInfo.skins} heroPath={heroPath} />
+              <HeroSkins skins={heroInfo.skins}
+                heroPath={heroPath} />
             </TabPanel>
             <TabPanel>
               <HeroVoice
                 heroPath={heroPath}
                 name={heroInfo.name}
-                title={heroInfo.title}
-              ></HeroVoice>
+                voice={heroInfo.voice}/>
             </TabPanel>
           </Tabs>
         </div>
