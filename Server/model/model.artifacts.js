@@ -6,8 +6,7 @@ const DataSchema = new Schema(
     id: Number,
     name: String,
     description: [String],
-    story: String,
-    picture: Number
+    story: String
   },
   { timestamps: true, collection: "artifacts" }
 );

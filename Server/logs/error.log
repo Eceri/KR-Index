@@ -1,0 +1,2 @@
+{"message":"End GET Route /","level":"error","service":"user-service"}
+{"requestId":"451","message":"GET Route /","level":"\u001b[31merror\u001b[39m","service":"user-service"}

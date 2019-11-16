@@ -4,7 +4,7 @@ WIP
 
 ## Docker Setup
 
-`docker run -d -p 27017:27017 mongo`
+`docker run --name YOURMONGODBNAME --restart=always -d -p 27017:27017 mongo`
 
 # How to start
 
