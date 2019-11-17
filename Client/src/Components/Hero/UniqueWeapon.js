@@ -5,29 +5,29 @@ import { stars } from "../atoms/Stars/stars";
 
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
-  let { heroPath, } = props
+  let { heroPath, uw, sw } = props
   return (
     <div>
       <p className={"title2"}> Unique Weapon </p> <hr />
       <div id="uw">
         <div className="flexBox" id="uwHeader">
           <Image
-            src={`${props.heroPath}uw.png`}
+            src={`${heroPath}uw.png`}
             alt="UW Icon"
             className={"uwIcon"} />
           <div>
-            <p className="title2"> {props.uw.name} </p>
+            <p className="title2"> {uw.name} </p>
             {stars(setStars, star)}
           </div>
         </div>
-        <p className="weaponDescription"> {props.uw.effect[star]} </p>
+        <p className="weaponDescription"> {uw.effect[star]} </p>
       </div>
       <div id={"sw"}>
         <p className={"title2"}> Soul </p>
-        {props.sw ? (
+        {sw ? (
           <div className="flexBox">
             <Image
-              src={`${props.heroPath}sw.png`}
+              src={`${heroPath}sw.png`}
               alt="soul weapon"
               className={"swIcon"}
             />
@@ -35,27 +35,27 @@ export const UniqueWeapon = props => {
               <tbody>
                 <tr>
                   <td>Activation:</td>
-                  <td>{props.sw.activation}</td>
+                  <td>{sw.activation}</td>
                 </tr>
                 <tr>
                   <td>Cooldown:</td>
-                  <td>{props.sw.cd}</td>
+                  <td>{sw.cd}</td>
                 </tr>
                 <tr>
                   <td>Charges:</td>
-                  <td>{props.sw.charges}</td>
+                  <td>{sw.charges}</td>
                 </tr>
               </tbody>
             </table>
             <div className="weaponDescription">
-              <p> {props.sw.advancement0} </p>
+              <p> {sw.advancement0} </p>
               <div className="swAdvancement">
                 <h3> Advancement 1 </h3>
-                {props.sw.advancement1}
+                {sw.advancement1}
               </div>
               <div className="swAdvancement">
                 <h3> Advancement 2 </h3>
-                {props.sw.advancement2}
+                {sw.advancement2}
               </div>
             </div>
           </div>

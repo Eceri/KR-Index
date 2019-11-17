@@ -1,10 +1,6 @@
 import React from "react";
 import "../styles/HeroStory.css";
-import {
-  Image,
-  UniqueWeapon,
-  UniqueTreasure
-} from "./../components"
+import { Image } from "./../components"
 
 export const HeroStory = props => {
   let { heroPath, name, backgroundData, title } = props

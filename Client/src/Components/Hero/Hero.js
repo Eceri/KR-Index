@@ -102,8 +102,7 @@ class Hero extends Component {
                 heroPath={heroPath}
                 name={heroInfo.name}
                 backgroundData={heroInfo.background}
-                title={heroInfo.title}
-              />
+                title={heroInfo.title} />
             </TabPanel>
             <TabPanel>
               <HeroSkins heroPath={heroPath}
@@ -112,7 +111,6 @@ class Hero extends Component {
             <TabPanel>
               <HeroVoice
                 heroPath={heroPath}
-                name={heroInfo.name}
                 voice={heroInfo.voice} />
             </TabPanel>
           </Tabs>

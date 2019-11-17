@@ -12,9 +12,7 @@ export const UniqueTreasure = props => {
       <div>
         <Image src={utPath} alt={`Unique Treasure ${skill.id}`} />
         <div>
-          <h3>
-            Unique Treasure {skill.id} - {skill.ut.name}
-          </h3>
+          <h3>{skill.ut.name}</h3>
           {stars(setStars, star)}
         </div>
       </div>

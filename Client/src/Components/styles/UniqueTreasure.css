@@ -2,9 +2,9 @@
 .ut{
     padding: 0 10px;
 }
-.ut > h3{
+.ut  h3{
     margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0 0 0 5px;
 }
 .utStory{
     margin: 0 10px;

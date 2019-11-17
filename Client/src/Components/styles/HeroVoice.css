@@ -1,11 +1,24 @@
 .fig{
     margin: 0;
     align-items: center;
-    display: flex;
+    flex-wrap: nowrap;
 }
-.fig:not(:first-child){
-    margin-top: 15px;
+.fig{
+    flex: 1;
 }
-.figCaption{
-    width: 15%;
+.fig > audio{
+    padding: 0 5px;
+}
+.fig > figcaption{
+    padding-bottom: 5px;
+}
+.voiceContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#voiceActor{
+    margin-bottom: 1rem;
+}
+.languageTd{
+    width: 150px
 }
