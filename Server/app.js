@@ -1,3 +1,3 @@
-import startServer from "./config/connection";
+import startServer from "./Config/connection";
 
 startServer;
