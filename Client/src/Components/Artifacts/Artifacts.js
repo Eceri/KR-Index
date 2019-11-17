@@ -116,7 +116,7 @@ const Artifacts = () => {
 
   // TODO: create process.ENV with
   useEffect(() => {
-    fetch(`http://localhost:5000/api/artifacts/`)
+    fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
       .then(res => {
         return res.json();
       })
