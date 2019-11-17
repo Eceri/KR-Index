@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon -r esm .\\app.js",
+    "start": "node -r esm .\\app.js",
     "dev": "netlify dev"
   },
   "dependencies": {
