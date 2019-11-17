@@ -6,6 +6,7 @@ const Star = styled.button`
   border: 0px solid transparent;
   background: none;
   color: ${props => (props.active ? "#FFD700" : "white")};
+  
   vertical-align: middle;
 
   &:hover {

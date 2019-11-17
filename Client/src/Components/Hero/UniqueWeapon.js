@@ -17,7 +17,7 @@ export const UniqueWeapon = props => {
             className={"uwIcon"} />
           <div>
             <p className="title2"> {props.uw.name} </p>
-            {stars(setStars)}
+            {stars(setStars, star)}
           </div>
         </div>
         <p className="weaponDescription"> {props.uw.effect[star]} </p>

@@ -85,7 +85,7 @@ export const HeroStory = props => {
             <p className="title2">Unique Treasure {index + 1}</p>
           </div>
           <p className="story">{utStory}</p>
-          <hr className="seperator" />
+          {index < 3 && <hr className="seperator" />}
         </div>
       ))}
     </div>

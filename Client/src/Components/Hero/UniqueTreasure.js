@@ -15,7 +15,7 @@ export const UniqueTreasure = props => {
           <h3>
             Unique Treasure {skill.id} - {skill.ut.name}
           </h3>
-          {stars(setStars)}
+          {stars(setStars, star)}
         </div>
       </div>
       <p>{skill.ut.effect[star]}</p>
