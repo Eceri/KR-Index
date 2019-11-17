@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "node -r esm .\\app.js",
-    "dev": "netlify dev"
+    "start": "node -r esm app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
