@@ -16,7 +16,9 @@ const PORT = 5000;
 
 try {
   // TODO: create process.ENV with URL
-  mongoose.connect("mongodb://localhost:27017/krc");
+  mongoose.connect(
+    `mongodb+srv://${process.env.MONGOLAB_URI}@krc-hinbo.mongodb.net/test?retryWrites=true&w=majority`
+  );
 } catch (error) {
   mongoose.connection.on("error", error => {
     Logger.error("Database connection error:", error);

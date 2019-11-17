@@ -886,3 +886,56 @@
   level: '\u001b[32minfo\u001b[39m',
   service: 'user-service'
 }
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'Found 0 entries',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  requestId: '451',
+  message: 'End GET Route /',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'App is running on port 5000',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
+{
+  message: 'Connected to Database!',
+  level: '\u001b[32minfo\u001b[39m',
+  service: 'user-service'
+}
