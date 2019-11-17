@@ -11,8 +11,10 @@ const Star = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: #ffd700;
-    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffd700;
+    // text-shadow: 1px 0 0 #ffd700, 0 -1px #ffd700, 0 1px 0 #ffd700,
+    //   -1px 0 0 #ffd700;
   }
 
   &:focus {
@@ -31,7 +33,7 @@ export const stars = (setStar, active) => {
           active={active >= v ? true : false}
         >
           {v > 0 ? (
-            "☆"
+            "★"
           ) : (
             <span
               style={{
