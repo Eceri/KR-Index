@@ -9,7 +9,6 @@ import Artifact from "./Artifact";
 
 const ArtifactContainer = styled.div`
   width: 100%;
-  padding: 1rem;
 `;
 
 const ArtifactImage = styled.img`

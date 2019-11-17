@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/HeroVoice.css"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { VoiceLinePanel } from "./VoiceLinePanels"
 
 export const HeroVoice = props => {
   let { heroPath, name, voice } = props;
@@ -29,40 +30,15 @@ export const HeroVoice = props => {
           <Tab>English</Tab>
         </TabList>
         <TabPanel>
-          {voiceLines.jp.map(voiceLine => (
-            <figure className="fig" key={voiceLine}>
-              <figcaption className="figCaption">{voiceLine}</figcaption>
-              <audio
-                controls
-                src={require(`./../../Assets/${heroPath}voice/jp/${voiceLine}.wav`)}
-                preload={"none"} />
-            </figure>
-          ))}
+          <VoiceLinePanel heroPath={heroPath} voiceLines={voiceLines.jp} languageKey="jp" />
         </TabPanel>
         <TabPanel>
-          {voiceLines.kr.map(voiceLine => (
-            <figure className="fig" key={voiceLine}>
-              <figcaption className="figCaption">{voiceLine}</figcaption>
-              <audio
-                controls
-                src={require(`./../../Assets/${heroPath}voice/kr/${voiceLine}.wav`)}
-                preload={"none"} />
-            </figure>
-          ))}</TabPanel>
+          <VoiceLinePanel heroPath={heroPath} voiceLines={voiceLines.kr} languageKey="kr" />
+        </TabPanel>
         <TabPanel>
-        {voiceLines.en.map(voiceLine => (
-            <figure className="fig" key={voiceLine}>
-              <figcaption className="figCaption">{voiceLine}</figcaption>
-              <audio
-                controls
-                src={require(`./../../Assets/${heroPath}voice/en/${voiceLine}.wav`)}
-                preload={"none"} />
-            </figure>
-          ))}
+          <VoiceLinePanel heroPath={heroPath} voiceLines={voiceLines.en} languageKey="en" />
         </TabPanel>
       </Tabs>
-
-
     </div>
   );
 };
