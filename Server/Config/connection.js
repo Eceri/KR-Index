@@ -12,7 +12,7 @@ import winston from "winston";
 const router = express.Router();
 const app = express();
 // TODO: Settings.json ?
-const PORT = process.env.PORT;
+const PORT = "0.0.0.0";
 
 try {
   // TODO: create process.ENV with URL
