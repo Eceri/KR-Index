@@ -12,7 +12,7 @@ import {
 } from "./../components";
 import "../styles/heroSkills.css";
 
-class Hero extends Component {
+export class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -63,7 +63,7 @@ class Hero extends Component {
     }
     if (!this.state.isLoading) {
       return (
-        <div id={"content"}>
+        <div id="content">
           {title}
           <div id={"hero"}>
             <Image

@@ -1,3 +1,4 @@
+export { Hero } from "./Hero/Hero"
 export { HeroesMenu } from "./HeroesMenu";
 export { HeroGeneral } from "./Hero/HeroGeneral";
 export { HeroStory } from "./Hero/HeroStory";
@@ -11,3 +12,7 @@ export { GenericPerks } from "./Hero/GenericPerks";
 export { Image } from "./Image";
 export { ClickReveal } from "./ClickReveal";
 export { Maya } from "./Hero/Maya";
+export { Heroes } from "./Hero/Heroes";
+export { Artifacts } from "./Artifacts/Artifacts";
+export { Etc } from "./../Etc";
+export { Home } from "./../home"

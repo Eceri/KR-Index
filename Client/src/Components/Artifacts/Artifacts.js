@@ -97,7 +97,7 @@ const loadingArtifact = {
   picture: 1
 };
 
-const Artifacts = () => {
+export const Artifacts = () => {
   const [artifactNumber, setArtifactNumber] = useState(0);
   const [artifacts, setArtifacts] = useState();
 
@@ -123,7 +123,7 @@ const Artifacts = () => {
   }, []);
 
   return (
-    <div id={"content"}>
+    <div id="content">
       <Helmet>
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />

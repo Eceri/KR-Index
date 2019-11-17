@@ -7,5 +7,7 @@ export const Image = props => (
     className={props.className}
     id={props.id}
     style={props.style}
+    data-tip={props.dataTip}
   />
 );
+export default Image

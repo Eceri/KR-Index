@@ -6,9 +6,10 @@ import { VoiceLinePanel } from "./VoiceLinePanels"
 export const HeroVoice = props => {
   let { heroPath, voice } = props;
   let voiceLines = voice.lines;
-  return (
+  return ( 
+    // TODO: change layout to something more pleasing
     <div>
-      <div>
+      <div id="voiceActor">
         <p className="title2">Voice Actor</p>
         <table>
           <tbody>
@@ -24,7 +25,6 @@ export const HeroVoice = props => {
           </tbody>
         </table>
       </div>
-
       <Tabs>
         <TabList>
           <Tab>Japanese</Tab>

@@ -40,11 +40,10 @@ export class HeroesMenu extends Component {
             className={"menu"}
             ref={element => {
               this.menu = element;
-            }}
-          >
+            }}>
             {heroes.map(heroClass => (
               <div className={"class"}>
-                <NavLink to={"/" + heroClass.name} className={"navLink"}>
+                <NavLink to={"/heroes#" + heroClass.name} className={"navLink"}>
                   {heroClass.name}
                 </NavLink>
                 {heroClass.heroes.map(hero => (

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import Hero from "./Components/Hero/Hero";
 import Artifacts from "./Components/Artifacts/Artifacts";
-import etc from "./etc";
-import { HeroesMenu } from "./Components/components";
+import Etc from "./Etc";
+import { HeroesMenu, Heroes } from "./Components/components";
 import { Maya } from "./Components/components";
 class NavBar extends Component {
   render() {
@@ -24,13 +24,16 @@ class NavBar extends Component {
           <Link to={"/etc"} className={"navLink"}>
             Etc.
           </Link>
+          <Link to={"/heroes"} className="navLink">
+          Heroes(Temp)</Link>
         </nav>
         <Switch>
-          <Route push={true} path={"/hero/:hero"} component={Hero} />
+          <Route push={true} path="/hero/:hero" component={Hero} />
           <Route path="/artifact/:artifact" component={Artifacts} />
           <Route path="/artifacts" component={Artifacts} />
-          <Route path="/etc" component={etc} />
-          <Route path={"/Maya"} component={Maya} />
+          <Route path="/etc" component={Etc} />
+          <Route path="/Maya" component={Maya} />
+          <Route path="/Heroes" component={Heroes} />
         </Switch>
       </div>
     );
