@@ -22,7 +22,7 @@ router.post("/post", async (req, res, next) => {
   const body = req.body;
   Logger.info("POST Route /artifact/post");
   try {
-    await body.map(async v => {
+    await body.map(async (v, index) => {
       const Artifact = Data({
         name: v.name,
         description: v.description,
@@ -30,6 +30,7 @@ router.post("/post", async (req, res, next) => {
       });
       await Artifact.save();
     });
+
     Logger.info(`DB got ${body.length} new entry`);
     res.status(200).send("OK");
   } catch (error) {

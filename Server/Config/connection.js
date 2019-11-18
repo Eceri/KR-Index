@@ -33,7 +33,7 @@ app.listen(PORT, () => {
   Logger.info(`App is running on port ${PORT}`);
 });
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ type: "application/json" }));
 app.use(
   expressWinston.logger({
     transports: [

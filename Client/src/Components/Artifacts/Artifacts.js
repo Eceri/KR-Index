@@ -120,6 +120,7 @@ export const Artifacts = () => {
         return res.json();
       })
       .then(data => setArtifacts(data));
+    return (art = artifacts);
   }, []);
 
   return (
