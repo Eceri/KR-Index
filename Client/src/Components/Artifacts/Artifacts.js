@@ -125,7 +125,6 @@ export const Artifacts = () => {
 
   return (
     <div id="content">
-      {console.log(art)}
       <Helmet>
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
