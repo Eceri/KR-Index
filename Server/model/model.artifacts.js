@@ -4,8 +4,11 @@ const Schema = mongoose.Schema;
 const DataSchema = new Schema(
   {
     id: Number,
-    name: String,
-    description: [String],
+    name: {
+      required: true,
+      type: String
+    },
+    description: {required: true, type: [String]},
     story: String
   },
   { timestamps: true, collection: "artifacts" }

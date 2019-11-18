@@ -22,8 +22,8 @@ const ArtifactImage = styled.img`
 `;
 
 const Scrollable = styled.div`
-  overflow: auto;
-  height: 62vh;
+  // overflow: auto;
+  // height: 62vh;
 `;
 // Declarations -------------------------------------------------------------------------------------------------------
 
@@ -119,8 +119,7 @@ export const Artifacts = () => {
       .then(res => {
         return res.json();
       })
-      .then(data => setArtifacts(data));
-    return (art = artifacts);
+      .then(data => setArtifacts(data.sort((a, b) => a.name > b.name)));
   }, []);
 
   return (
@@ -129,10 +128,10 @@ export const Artifacts = () => {
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
+      {Artifact(
+        artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
+      )}
       <ArtifactContainer>
-        {Artifact(
-          artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
-        )}
         <Scrollable>
           {artifacts &&
             artifacts.map((item, index) => (

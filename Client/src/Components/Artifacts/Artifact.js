@@ -15,7 +15,7 @@ const Artifact = artifact => {
   const [star, setStar] = useState(0);
 
   return (
-    <div key={artifact.name}>
+    <div key={artifact.name} style={{position: "fixed", backgroundColor: "black"}}>
       <div>
         <img
           src={require(`../../Assets/artifacts/${artifact.name}.png`)}

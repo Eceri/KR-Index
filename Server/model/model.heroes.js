@@ -6,11 +6,6 @@ const positions = [
   "Middle",
   "Back"
 ]
-const gender = [
-  "male",
-  "female",
-  "???"
-]
 const DataSchema = new Schema(
   { //TODO: go through heroes.json and see what can be added were in the Schema!
     id: Number,
@@ -33,7 +28,7 @@ const DataSchema = new Schema(
         advancement1: String,
         advancement2: String,
         activation: String,
-        cd: Number,
+        cooldown: Number,
         charges: Number
       }
     },
@@ -44,7 +39,7 @@ const DataSchema = new Schema(
           skillNumber: String,
           name: String,
           effect: String,
-          cd: Number,
+          cooldown: Number,
           cost: Number
         },
         linked: Boolean,
@@ -64,7 +59,7 @@ const DataSchema = new Schema(
     background: {
       story: String,
       profile: { //TODO: look for abnormalities in the profile points ingame
-        gender: genders,
+        gender: String,
         race: String,
         age: Number,
         height: Number,

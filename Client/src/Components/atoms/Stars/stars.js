@@ -13,12 +13,15 @@ const Star = styled.button`
     cursor: pointer;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #ffd700;
-    // text-shadow: 1px 0 0 #ffd700, 0 -1px #ffd700, 0 1px 0 #ffd700,
-    //   -1px 0 0 #ffd700;
   }
 
   &:focus {
     outline: none;
+  }
+
+  &:after {
+    content: "";
+    
   }
 `;
 

@@ -22,12 +22,8 @@ router.post("/post", async (req, res, next) => {
   const body = req.body;
   Logger.info("POST Route /artifact/post");
   try {
-    await body.map(async (v, index) => {
-      const Artifact = Data({
-        name: v.name,
-        description: v.description,
-        story: v.story
-      });
+    await body.map(async v => {
+      const Artifact = Data();
       await Artifact.save();
     });
 

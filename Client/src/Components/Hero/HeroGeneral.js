@@ -3,7 +3,8 @@ import {
   Image,
   ClassPerks,
   TierOnePerks,
-  UniqueWeapon
+  UniqueWeapon,
+  ClickReveal
 } from "../components";
 import Skill from "./Skill";
 
@@ -23,7 +24,9 @@ export const HeroGeneral = props => {
       <hr />
       <div>
         <p className={"title2"}>T1 - Generic</p>
+        <ClickReveal title="t1">
         <TierOnePerks />
+        </ClickReveal>
         <hr className="seperator" />
         <p className={"title2"}>T2 - Class-Specific</p>
         <ClassPerks heroClass={heroInfo.class} />
@@ -31,6 +34,7 @@ export const HeroGeneral = props => {
         <p className={"title2"}>T5</p>
         <div className="tPerks">
           <div>
+            {console.log(Image())}
             <Image
               src={`${heroPath}light.png`}
               alt={"light"}
