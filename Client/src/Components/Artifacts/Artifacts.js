@@ -120,10 +120,12 @@ export const Artifacts = () => {
         return res.json();
       })
       .then(data => setArtifacts(data));
+    return (art = artifacts);
   }, []);
 
   return (
     <div id="content">
+      {console.log(art)}
       <Helmet>
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
