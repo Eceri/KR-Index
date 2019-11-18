@@ -10,4 +10,4 @@ export class Etc extends Component {
         );
     }
 }
-export default Etc;
+export default Etc
