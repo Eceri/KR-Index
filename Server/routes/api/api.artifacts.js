@@ -39,43 +39,49 @@ router.post("/post", async (req, res, next) => {
   Logger.info("End POST Route /artifact/post");
 });
 
-// Get one Artifact by ID
+// Get one Artifact by ID or Name
 router.get("/:id", async (req, res, next) => {
-  Logger.info("GET Route /artifact/id");
-  try {
-    const id = req.params.id;
-    await Data.findById(id, (error, artifact) => {
-      if (error) {
-        Logger.error(error);
-        res.status(400).send(`No Artifact found with ${id} as an id`);
-      }
-      res.status(200).send(artifact);
-    });
-  } catch (error) {
-    next(error);
+  Logger.info("GET Route /artifact/");
+
+  const id = req.params.id;
+
+  if (id.match("^[A-Z]")) {
+    Logger.info("Name");
+    await searchName(id, res, next);
+  } else {
+    await searchID(id, res, next);
   }
+
   Logger.info("End GET Route /artifact/id");
 });
 
+const searchID = async (id, res, next) => {
+  Logger.info("GET Route /artifact/id");
+  await Data.findById(id, (error, artifact) => {
+    if (error) {
+      Logger.error(error);
+      res.status(400).send(error);
+    }
+    res.status(200).send(artifact);
+    next();
+  });
+};
+
 // Get one Artifact by Name
-router.get("/:name", async (req, res, next) => {
+const searchName = async (req, res, next) => {
   Logger.info("GET Route /artifact/:name");
-  try {
-    const name = req.params.name;
-    await Data.findOne({ name: name }, (error, artifact) => {
-      if (error) {
-        Logger.error(error);
-        res
-          .status(400)
-          .send(`No Artifact named ${name} exists in our Database`);
-      }
-      res.status(200).send(artifact);
-    });
-  } catch (error) {
-    next(error);
-  }
-  Logger.info("End GET Route /artifact/id");
-});
+  await Data.findOne({ name: req }, (error, artifact) => {
+    artifact
+      ? res.status(200).send(artifact)
+      : res.status(400).send(`No Artifact named ${req} exists in our Database`);
+    if (error) {
+      Logger.error(error);
+      res.status(400).send(`No Artifact named ${req} exists in our Database`);
+    }
+    next();
+  });
+  Logger.info("End GET Route /artifact/:name");
+};
 
 // Update one Artifact with id as identifier
 router.put("/update/:id", async (req, res, next) => {
