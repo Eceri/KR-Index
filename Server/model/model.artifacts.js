@@ -6,9 +6,10 @@ const DataSchema = new Schema(
     id: Number,
     name: {
       required: true,
-      type: String
+      type: String,
+      trim: true
     },
-    description: {required: true, type: [String]},
+    description: { required: true, type: [String] },
     story: String
   },
   { timestamps: true, collection: "artifacts" }
