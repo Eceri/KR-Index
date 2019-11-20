@@ -21,30 +21,53 @@ const ArtifactImage = styled.img`
   }
 `;
 
-const Scrollable = styled.div`
-  // overflow: auto;
-  // height: 62vh;
+const ClickedArtifact = styled.section`
+  position: fixed;
+  background-color: black;
 `;
+
 // Declarations -------------------------------------------------------------------------------------------------------
 
-const loadingArtifact = {
-  name: "Burning Brazier of Elf",
-  description: [
-    "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
-  ],
-  story:
-    "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
-  picture: 1
+const loadingArtifact = [
+  {
+    description: [
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 30%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 36%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 43%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 52%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 63%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 75%. This effect cannot be dispelled, and it does not stack with other effects for allies."
+    ],
+    name: "Abyssal Crown",
+    story:
+      "Hair accessory of Abyssal Goddess Xanadus. The serpent-shaped crown gives off a deadly scent."
+  }
+];
+
+const sortNames = (data, direction) => {
+  if (direction === "ASC") {
+    return data.sort((a, b) => {
+      if (a.name > b.name) return 1;
+      if (a.name < b.name) return -1;
+      return 0;
+    });
+  }
+  if (direction === "DESC") {
+    return data.reverse();
+  }
+};
+
+const filterArtifacts = (artifacts, query) => {
+  return artifacts.filter(v =>
+    v.name.toLowerCase().includes(query.toLowerCase())
+  );
 };
 
 export const Artifacts = () => {
-  const [artifactNumber, setArtifactNumber] = useState(0);
-  const [artifacts, setArtifacts] = useState();
+  const [artifactName, setArtifactName] = useState("Abyssal Crown");
+  const [artifacts, setArtifacts] = useState(loadingArtifact);
+  const [direction, setDirection] = useState("ASC");
+  const [searchQuery, setSearchQuery] = useState("");
 
   // TODO: create process.ENV with
   useEffect(() => {
@@ -52,7 +75,7 @@ export const Artifacts = () => {
       .then(res => {
         return res.json();
       })
-      .then(data => setArtifacts(data.sort((a, b) => a.name > b.name)));
+      .then(data => setArtifacts(sortNames(data, direction)));
   }, []);
 
   return (
@@ -61,26 +84,38 @@ export const Artifacts = () => {
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
-      {Artifact(
-        artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
-      )}
+      <ClickedArtifact>
+        {Artifact(
+          artifacts.filter(artifact => artifact.name === artifactName)[0]
+        )}
+      </ClickedArtifact>
+      <button
+        onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
+        style={{ marginTop: "30%" }}
+      >
+        {direction}
+      </button>
+      <input
+        placeholder="Filter..."
+        onChange={e => setSearchQuery(e.currentTarget.value)}
+        value={searchQuery}
+      />
       <ArtifactContainer>
-        <Scrollable>
-          {artifacts &&
-            artifacts.map((item, index) => (
-              <React.Fragment key={item.name + index}>
-                <ArtifactImage
-                  onClick={() => setArtifactNumber(index)}
-                  src={require(`../../Assets/artifacts/${item.name}.png`)}
-                  alt={`Picture of ${item.name}`}
-                  align="left"
-                  data-tip
-                  data-for={item.name}
-                />
-                <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
-              </React.Fragment>
-            ))}
-        </Scrollable>
+        {sortNames(filterArtifacts(artifacts, searchQuery), direction).map(
+          (item, index) => (
+            <React.Fragment key={item.name + index}>
+              <ArtifactImage
+                onClick={() => setArtifactName(item.name)}
+                src={require(`../../Assets/artifacts/${item.name}.png`)}
+                alt={`Picture of ${item.name}`}
+                align="left"
+                data-tip
+                data-for={item.name}
+              />
+              <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
+            </React.Fragment>
+          )
+        )}
       </ArtifactContainer>
     </div>
   );
