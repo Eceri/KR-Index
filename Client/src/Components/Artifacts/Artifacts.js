@@ -4,6 +4,7 @@ import ReactTooltip from "react-tooltip";
 import Helmet from "react-helmet";
 
 import Artifact from "./Artifact";
+import {LOADING_ARTIFACT} from "../../Constants/Components/constants.Artifacts"
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
@@ -27,24 +28,10 @@ const Scrollable = styled.div`
 `;
 // Declarations -------------------------------------------------------------------------------------------------------
 
-const loadingArtifact = {
-  name: "Burning Brazier of Elf",
-  description: [
-    "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
-  ],
-  story:
-    "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
-  picture: 1
-};
 
 export const Artifacts = () => {
   const [artifactNumber, setArtifactNumber] = useState(0);
-  const [artifacts, setArtifacts] = useState();
+  const [artifacts, setArtifacts] = useState(LOADING_ARTIFACT);
 
   // TODO: create process.ENV with
   useEffect(() => {
@@ -62,7 +49,7 @@ export const Artifacts = () => {
         <meta name="description" content="Helmet application" />
       </Helmet>
       {Artifact(
-        artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
+        artifacts[artifactNumber]
       )}
       <ArtifactContainer>
         <Scrollable>
