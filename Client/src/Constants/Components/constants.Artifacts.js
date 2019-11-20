@@ -1,15 +1,15 @@
-// TODO: Change to correct Artifact
-export const LOADING_ARTIFACT = [{
-    name: "Burning Brazier of Elf",
+export const LOADING_ARTIFACT = [
+  {
     description: [
-      "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 30%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 36%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 43%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 52%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 63%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 75%. This effect cannot be dispelled, and it does not stack with other effects for allies."
     ],
+    name: "Abyssal Crown",
     story:
-      "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
-    picture: 1
-  }]
+      "Hair accessory of Abyssal Goddess Xanadus. The serpent-shaped crown gives off a deadly scent."
+  }
+];

@@ -37,7 +37,7 @@ const NavBar = () => {
   const [search, setSeach] = useState(false);
 
   useEffect(() => {
-    JSON.parse(localStorage.getItem("Artifacts")).length < 1 &&
+    if (localStorage.getItem("Artifacts") === null) {
       fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
         .then(res => {
           return res.json();
@@ -49,6 +49,7 @@ const NavBar = () => {
             JSON.stringify(sortNames(data, "ASC"))
           );
         });
+    }
   }, []);
 
   const artifactNamesfilter = (names, query) => {
