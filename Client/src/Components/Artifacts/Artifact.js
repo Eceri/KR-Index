@@ -15,7 +15,7 @@ const Artifact = artifact => {
   const [star, setStar] = useState(0);
 
   return (
-    <div key={artifact.name} style={{position: "fixed", backgroundColor: "black"}}>
+    <React.Fragment key={artifact.name}>
       <div>
         <img
           src={require(`../../Assets/artifacts/${artifact.name}.png`)}
@@ -32,7 +32,7 @@ const Artifact = artifact => {
       <p>{artifact.description[star]}</p>
 
       <ArtifactStory>{artifact.story}</ArtifactStory>
-    </div>
+    </React.Fragment>
   );
 };
 

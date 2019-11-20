@@ -4,11 +4,13 @@ import ReactTooltip from "react-tooltip";
 import Helmet from "react-helmet";
 
 import Artifact from "./Artifact";
+import { LOADING_ARTIFACT } from "../../Constants/Components/constants.Artifacts";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
 const ArtifactContainer = styled.div`
   width: 100%;
+  display: inline-block;
 `;
 
 const ArtifactImage = styled.img`
@@ -21,105 +23,59 @@ const ArtifactImage = styled.img`
   }
 `;
 
-const Scrollable = styled.div`
-  // overflow: auto;
-  // height: 62vh;
+const ClickedArtifact = styled.section`
+  top: 3rem;
+  position: fixed;
+  background-color: #404040;
+  width: 50rem;
+  height: 17rem;
 `;
+
 // Declarations -------------------------------------------------------------------------------------------------------
 
-const artifactsTest = [
-  {
-    name: "Burning Brazier of Elf",
-    description: [
-      "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
-      "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
-    ],
-    story:
-      "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana."
-  },
-  {
-    name: "Drinking Horn of Ancient Cow",
-    description: [
-      "Upon auto attacking, there is a 10% chance that ATK rises by 10% and ATK Speed rises by 100.",
-      "Upon auto attacking, there is a 10% chance that ATK rises by 12% and ATK Speed rises by 120.",
-      "Upon auto attacking, there is a 10% chance that ATK rises by 14% and ATK Speed rises by 140.",
-      "Upon auto attacking, there is a 10% chance that ATK rises by 17% and ATK Speed rises by 170.",
-      "Upon auto attacking, there is a 10% chance that ATK rises by 20% and ATK Speed rises by 200.",
-      "Upon auto attacking, there is a 10% chance that ATK rises by 25% and ATK Speed rises by 250."
-    ],
-    story:
-      "A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance."
-  },
-  {
-    name: "Dice of Magical Letters",
-    description: [
-      "Upon attacking an enemy, deal 400% M. DMG for a 3% chance.",
-      "Upon attacking an enemy, deal 480% M. DMG for a 3% chance.",
-      "Upon attacking an enemy, deal 575% M. DMG for a 3% chance.",
-      "Upon attacking an enemy, deal 690% M. DMG for a 3% chance.",
-      "Upon attacking an enemy, deal 830% M. DMG for a 3% chance.",
-      "Upon attacking an enemy, deal 1000% M. DMG for a 3% chance."
-    ],
-    story:
-      "A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters."
-  },
-  {
-    name: "Golden Cat Statue",
-    description: [
-      "Every Battle, Spd increases by 400 for the first 15 secs.",
-      "Every Battle, Spd increases by 480 for the first 15 secs.",
-      "Every Battle, Spd increases by 570 for the first 15 secs.",
-      "Every Battle, Spd increases by 690 for the first 15 secs.",
-      "Every Battle, Spd increases by 830 for the first 15 secs.",
-      "Every Battle, Spd increases by 1000 for the first 15 secs."
-    ],
-    story:
-      "A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw."
+// TODO: Refactore into own file
+// FIXME: Make me generic!!!
+export const sortNames = (data, direction) => {
+  if (direction === "ASC") {
+    return data.sort((a, b) => {
+      if (a.name > b.name) return 1;
+      if (a.name < b.name) return -1;
+      return 0;
+    });
   }
-];
+  if (direction === "DESC") {
+    return data.reverse();
+  }
+};
 
-const loadingArtifact = {
-  name: "Burning Brazier of Elf",
-  description: [
-    "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
-    "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
-  ],
-  story:
-    "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
-  picture: 1
+const filterArtifacts = (artifacts, query) => {
+  return artifacts.filter(v =>
+    v.name.toLowerCase().includes(query.toLowerCase())
+  );
 };
 
 export const Artifacts = () => {
-  const [artifactNumber, setArtifactNumber] = useState(0);
-  const [artifacts, setArtifacts] = useState();
-
-  // useEffect(() => {
-  //   artifactNumber < 10 &&
-  //     fetch(
-  //       `https://maskofgoblin.com/i18n/English/artifact/${artifactNumber}.json`
-  //     )
-  //       .then(res => {
-  //         return res.json();
-  //       })
-  //       .then(data => artifactsTest.push({ ...data, picture: artifactNumber }))
-  //       .then(setArtifactNumber(artifactNumber + 1));
-  // }, [artifactNumber]);
+  const [artifactName, setArtifactName] = useState("Abyssal Crown");
+  const [artifacts, setArtifacts] = useState(
+    JSON.parse(localStorage.getItem("Artifacts")) || LOADING_ARTIFACT
+  );
+  const [direction, setDirection] = useState("ASC");
+  const [searchQuery, setSearchQuery] = useState("");
 
   // TODO: create process.ENV with
   useEffect(() => {
-    fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
-      .then(res => {
-        return res.json();
-      })
-      .then(data => setArtifacts(data.sort((a, b) => a.name > b.name)));
+    JSON.parse(localStorage.getItem("Artifacts")).length < 1 &&
+      fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          setArtifacts(sortNames(data, "ASC"));
+          localStorage.setItem(
+            "Artifacts",
+            JSON.stringify(sortNames(data, "ASC"))
+          );
+        });
   }, []);
 
   return (
@@ -128,26 +84,39 @@ export const Artifacts = () => {
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
-      {Artifact(
-        artifacts === undefined ? loadingArtifact : artifacts[artifactNumber]
-      )}
+      <ClickedArtifact>
+        {Artifact(
+          artifacts.filter(artifact => artifact.name === artifactName)[0]
+        )}
+      </ClickedArtifact>
+      <div style={{ marginTop: "32%", marginBottom: "1rem" }}>
+        <button
+          onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
+        >
+          {direction}
+        </button>
+        <input
+          placeholder="Filter..."
+          onChange={e => setSearchQuery(e.currentTarget.value)}
+          value={searchQuery}
+        />
+      </div>
       <ArtifactContainer>
-        <Scrollable>
-          {artifacts &&
-            artifacts.map((item, index) => (
-              <React.Fragment key={item.name + index}>
-                <ArtifactImage
-                  onClick={() => setArtifactNumber(index)}
-                  src={require(`../../Assets/artifacts/${item.name}.png`)}
-                  alt={`Picture of ${item.name}`}
-                  align="left"
-                  data-tip
-                  data-for={item.name}
-                />
-                <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
-              </React.Fragment>
-            ))}
-        </Scrollable>
+        {sortNames(filterArtifacts(artifacts, searchQuery), direction).map(
+          (item, index) => (
+            <React.Fragment key={item.name + index}>
+              <ArtifactImage
+                onClick={() => setArtifactName(item.name)}
+                src={require(`../../Assets/artifacts/${item.name}.png`)}
+                alt={`Picture of ${item.name}`}
+                align="left"
+                data-tip
+                data-for={item.name}
+              />
+              <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
+            </React.Fragment>
+          )
+        )}
       </ArtifactContainer>
     </div>
   );
