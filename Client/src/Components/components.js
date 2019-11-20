@@ -1,4 +1,4 @@
-export { Hero } from "./Hero/Hero"
+export { Hero } from "./Hero/Hero";
 export { HeroesMenu } from "./HeroesMenu";
 export { HeroGeneral } from "./Hero/HeroGeneral";
 export { HeroStory } from "./Hero/HeroStory";
@@ -14,5 +14,6 @@ export { ClickReveal } from "./ClickReveal";
 export { Maya } from "./Hero/Maya";
 export { Heroes } from "./Hero/Heroes";
 export { Artifacts } from "./Artifacts/Artifacts";
+export { sortNames } from "./Artifacts/Artifacts";
 export { Etc } from "./../Etc";
-export { Home } from "./../home"
+export { Home } from "./../home";

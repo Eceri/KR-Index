@@ -10,6 +10,7 @@ import { LOADING_ARTIFACT } from "../../Constants/Components/constants.Artifacts
 
 const ArtifactContainer = styled.div`
   width: 100%;
+  display: inline-block;
 `;
 
 const ArtifactImage = styled.img`
@@ -23,13 +24,18 @@ const ArtifactImage = styled.img`
 `;
 
 const ClickedArtifact = styled.section`
+  top: 3rem;
   position: fixed;
-  background-color: black;
+  background-color: #404040;
+  width: 50rem;
+  height: 17rem;
 `;
 
 // Declarations -------------------------------------------------------------------------------------------------------
 
-const sortNames = (data, direction) => {
+// TODO: Refactore into own file
+// FIXME: Make me generic!!!
+export const sortNames = (data, direction) => {
   if (direction === "ASC") {
     return data.sort((a, b) => {
       if (a.name > b.name) return 1;
@@ -50,17 +56,26 @@ const filterArtifacts = (artifacts, query) => {
 
 export const Artifacts = () => {
   const [artifactName, setArtifactName] = useState("Abyssal Crown");
-  const [artifacts, setArtifacts] = useState(loadingArtifact);
+  const [artifacts, setArtifacts] = useState(
+    JSON.parse(localStorage.getItem("Artifacts")) || LOADING_ARTIFACT
+  );
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
 
   // TODO: create process.ENV with
   useEffect(() => {
-    fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
-      .then(res => {
-        return res.json();
-      })
-      .then(data => setArtifacts(sortNames(data, direction)));
+    JSON.parse(localStorage.getItem("Artifacts")).length < 1 &&
+      fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          setArtifacts(sortNames(data, "ASC"));
+          localStorage.setItem(
+            "Artifacts",
+            JSON.stringify(sortNames(data, "ASC"))
+          );
+        });
   }, []);
 
   return (
@@ -74,17 +89,18 @@ export const Artifacts = () => {
           artifacts.filter(artifact => artifact.name === artifactName)[0]
         )}
       </ClickedArtifact>
-      <button
-        onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
-        style={{ marginTop: "30%" }}
-      >
-        {direction}
-      </button>
-      <input
-        placeholder="Filter..."
-        onChange={e => setSearchQuery(e.currentTarget.value)}
-        value={searchQuery}
-      />
+      <div style={{ marginTop: "32%", marginBottom: "1rem" }}>
+        <button
+          onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
+        >
+          {direction}
+        </button>
+        <input
+          placeholder="Filter..."
+          onChange={e => setSearchQuery(e.currentTarget.value)}
+          value={searchQuery}
+        />
+      </div>
       <ArtifactContainer>
         {sortNames(filterArtifacts(artifacts, searchQuery), direction).map(
           (item, index) => (
