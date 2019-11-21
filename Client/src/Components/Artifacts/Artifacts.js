@@ -4,7 +4,11 @@ import ReactTooltip from "react-tooltip";
 import Helmet from "react-helmet";
 
 import Artifact from "./Artifact";
-import { LOADING_ARTIFACT } from "../../Constants/Components/constants.Artifacts";
+import {
+  LOADING_ARTIFACT,
+  API_URL,
+  ARTIFACT_URL
+} from "../../Constants/constants.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
@@ -31,21 +35,24 @@ const ClickedArtifact = styled.section`
   height: 14rem;
 `;
 
-// Declarations -------------------------------------------------------------------------------------------------------
+// Implementation -----------------------------------------------------------------------------------------------------
 
 // TODO: Refactore into own file
 // FIXME: Make me generic!!!
 export const sortNames = (data, direction) => {
   if (direction === "ASC") {
     return data.sort((a, b) => {
-      if (a.name > b.name) return 1;
-      if (a.name < b.name) return -1;
-      return 0;
+      stringSortAlgorithm(a.name, b.name);
     });
   }
   if (direction === "DESC") {
     return data.reverse();
   }
+};
+const stringSortAlgorithm = (a, b) => {
+  if (a.name > b.name) return 1;
+  if (a.name < b.name) return -1;
+  return 0;
 };
 
 const filterArtifacts = (artifacts, query) => {
@@ -54,10 +61,15 @@ const filterArtifacts = (artifacts, query) => {
   );
 };
 
+// FIXME: Refactore into own File with getter and setter
+const GET_LOCALSTORAGE = name => localStorage.getItem(name);
+const SET_LOCALSTORAGE = (name, item) => localStorage.setItem(name, item);
+
 export const Artifacts = () => {
+  const ARTIFACTS = "Artifacts";
   const [artifactName, setArtifactName] = useState("Abyssal Crown");
   const [artifacts, setArtifacts] = useState(
-    JSON.parse(localStorage.getItem("Artifacts")) || LOADING_ARTIFACT
+    JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
   );
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
@@ -73,24 +85,20 @@ export const Artifacts = () => {
 
   // TODO: create process.ENV with
   useEffect(() => {
-    if (localStorage.getItem("Artifacts") === null) {
-      fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
+    if (GET_LOCALSTORAGE(ARTIFACTS) === null) {
+      fetch(`${API_URL}${ARTIFACT_URL}`)
         .then(res => {
           return res.json();
         })
         .then(data => {
           setArtifacts(sortNames(data, "ASC"));
-          localStorage.setItem(
-            "Artifacts",
-            JSON.stringify(sortNames(data, "ASC"))
-          );
+          SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(data, "ASC")));
         });
     }
   }, []);
 
   return (
     <div id="content">
-      {console.log(process.env.NODE_ENV)}
       <Helmet>
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
@@ -112,32 +120,51 @@ export const Artifacts = () => {
           value={searchQuery}
         />
       </div>
-      <ArtifactContainer>
-        {sortNames(filterArtifacts(artifacts, searchQuery), direction).map(
-          (item, index) => (
-            <React.Fragment key={item.name + index}>
-              <ArtifactImage
-                onClick={() => {
-                  setArtifactName(item.name);
-                  window.history.pushState(
-                    `artifact/${item.name}`,
-                    item.name,
-                    `/artifacts/${item.name}`
-                  );
-                }}
-                src={require(`../../Assets/artifacts/${item.name}.png`)}
-                alt={`Picture of ${item.name}`}
-                align="left"
-                data-tip
-                data-for={item.name}
-              />
-              <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
-            </React.Fragment>
-          )
-        )}
-      </ArtifactContainer>
+      {renderArtifactContainer(
+        artifacts,
+        searchQuery,
+        direction,
+        setArtifactName
+      )}
     </div>
   );
 };
+
+const renderArtifactContainer = (
+  artifacts,
+  searchQuery,
+  direction,
+  setArtifactName
+) => (
+  <ArtifactContainer>
+    {sortNames(
+      filterArtifacts(artifacts, searchQuery),
+      direction
+    ).map((item, index) =>
+      renderArtifactPictures(item, index, setArtifactName)
+    )}
+  </ArtifactContainer>
+);
+
+const renderArtifactPictures = (item, index, setArtifactName) => (
+  <React.Fragment key={item.name + index}>
+    <ArtifactImage
+      onClick={() => {
+        setArtifactName(item.name);
+        window.history.pushState(
+          `artifact/${item.name}`,
+          item.name,
+          `/artifacts/${item.name}`
+        );
+      }}
+      src={require(`../../Assets/artifacts/${item.name}.png`)}
+      alt={`Picture of ${item.name}`}
+      align="left"
+      data-tip
+      data-for={item.name}
+    />
+    <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
+  </React.Fragment>
+);
 
 export default Artifacts;
