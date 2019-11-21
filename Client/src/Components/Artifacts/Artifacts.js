@@ -10,7 +10,6 @@ import { LOADING_ARTIFACT } from "../../Constants/Components/constants.Artifacts
 
 const ArtifactContainer = styled.div`
   width: 100%;
-  display: inline-block;
 `;
 
 const ArtifactImage = styled.img`
@@ -24,11 +23,12 @@ const ArtifactImage = styled.img`
 `;
 
 const ClickedArtifact = styled.section`
+  padding: 1rem;
   top: 3rem;
   position: fixed;
   background-color: #404040;
-  width: 50rem;
-  height: 17rem;
+  width: 53.8rem;
+  height: 14rem;
 `;
 
 // Declarations -------------------------------------------------------------------------------------------------------
@@ -62,6 +62,15 @@ export const Artifacts = () => {
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
 
+  useEffect(() => {
+    try {
+      const chosenArtifactName = window.location.pathname
+        .split("/")[2]
+        .replace(/%20/g, " ");
+      setArtifactName(chosenArtifactName);
+    } catch (error) {}
+  }, [window.location.pathname]);
+
   // TODO: create process.ENV with
   useEffect(() => {
     if (localStorage.getItem("Artifacts") === null) {
@@ -90,7 +99,7 @@ export const Artifacts = () => {
           artifacts.filter(artifact => artifact.name === artifactName)[0]
         )}
       </ClickedArtifact>
-      <div style={{ marginTop: "32%", marginBottom: "1rem" }}>
+      <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
         <button
           onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
         >
@@ -107,7 +116,14 @@ export const Artifacts = () => {
           (item, index) => (
             <React.Fragment key={item.name + index}>
               <ArtifactImage
-                onClick={() => setArtifactName(item.name)}
+                onClick={() => {
+                  setArtifactName(item.name);
+                  window.history.pushState(
+                    `artifact/${item.name}`,
+                    item.name,
+                    `/artifacts/${item.name}`
+                  );
+                }}
                 src={require(`../../Assets/artifacts/${item.name}.png`)}
                 alt={`Picture of ${item.name}`}
                 align="left"

@@ -2,23 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
-import {
-  BrowserRouter,
-  Switch,
-  Route
-} from "react-router-dom";
-import {
-  Hero,
-  Heroes,
-  Maya,
-  Artifacts,
-  Etc
-} from "./Components/components"
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import Home from "./home";
 
 ReactDOM.render(
   <div id="pageContainer">
-  <BrowserRouter>
+    <BrowserRouter>
       <NavBar key={"components.js"} />
       <Route path="/hero" />
       <Route exact path="/" component={Home} />
@@ -33,7 +23,7 @@ ReactDOM.render(
       <footer id={"footer"}>
         <p>Everything is under construction.</p>
       </footer>
-  </BrowserRouter>
-      </div>,
+    </BrowserRouter>
+  </div>,
   document.getElementById("root")
 );
