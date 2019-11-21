@@ -1,7 +1,3 @@
-main {
-  margin: 0;
-  padding: 0;
-}
 body {
   background-color: #18181b;
   margin: 0;
@@ -10,101 +6,83 @@ body {
   font-family: "Oswald";
   font-size: 1rem;
   text-align: justify;
-  min-width: 100%;
   letter-spacing: 0.5px;
 }
+hr{
+  margin-bottom: 1.5rem;
+}
+h1,
+h2,
+h3{
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.3;
+}
 img {
-  border: solid darkgray 1px;
+  border: solid lightgrey 1px;
 }
-#pageContainer {
-  margin: 0 auto;
-  padding: 0;
-  align-content: center;
-  background: #404040;
-  min-width: 360px;
+nav{
   width: 100%;
-  max-width: 860px;
-  white-space: pre-line;
-}
-#content {
-  margin: 1rem;
-}
-#nav {
-  position: sticky;
-  height: 50px;
+  max-width: inherit;
+  position: fixed;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   top: 0;
-  margin: 0;
-  padding: 0;
   background: #262626;
   z-index: 2000;
-  width: 100%;
+  height: 3rem;
 }
-.navLink {
-  padding: 10px;
+nav > a{
+padding: .75rem;
 }
-.navLink,
-.heroLink {
+a{
   text-decoration: none;
   color: white;
 }
-.navLink:hover,
-.heroLink:hover {
-  cursor: pointer;
-}
-.heroLink {
-  padding: 5px 10px;
-}
-#nav a:hover,
-.navLink:hover {
+nav a:hover{
   background: black;
 }
-.class {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+p{
+  margin: 0
 }
-.menu {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background: #262626;
-  top: 50px;
-  left: 0;
-}
-#footer {
+footer {
   text-align: center;
-}
-.title1,
-.title2 {
-  line-height: 2.5rem;
-}
-.title1 {
-  font-size: 2rem;
-}
-.title2 {
-  font-size: 1.5rem;
+  margin: 3rem 0 0 0;
 }
 *,
 *:after,
 *:before {
   box-sizing: border-box;
 }
+#pageContainer {
+  margin: auto;
+  background: #404040;
+  white-space: pre-line;
+  min-height: calc(100vh);
+  min-width: 360px;
+  max-width: 860px;
+  width: 100%;
+  margin-top: 3rem;
+}
+#pageContainer > div {
+  margin: 1rem 1rem 1rem 1rem;
+}
+#pageContainer:empty{
+  background-color: pink;
+}
 .flexBox {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+.flexBox > div {
+  margin: 0 .75rem;
 }
 @media only screen and (max-width: 650px) {
   #pageContainer {
-    margin: 0;
-    padding: 0;
     width: 100%;
   }
-  #nav {
+  nav {
     width: 100%;
     margin: 0;
   }

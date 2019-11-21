@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Heroes } from "./Components/components"
 export class Home extends Component {
   render() {
     return (

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Route, Link, Switch } from "react-router-dom";
-import Hero from "./Components/Hero/Hero";
-import Artifacts from "./Components/Artifacts/Artifacts";
-import Etc from "./Etc";
-import { HeroesMenu, Heroes, sortNames } from "./Components/components";
-import { Maya } from "./Components/components";
+import { Link } from "react-router-dom";
+import { sortNames } from "./Components/components";
 
 import styled from "styled-components";
 
@@ -29,7 +25,7 @@ const SearchListElement = styled.li`
   }
 `;
 
-const NavBar = () => {
+export const NavBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [artifacts, setArtifacts] = useState(
     JSON.parse(localStorage.getItem("Artifacts")) || []
@@ -60,68 +56,53 @@ const NavBar = () => {
   };
 
   return (
-    <div>
-      <nav
-        id={"nav"}
-        style={{ display: "flex", justifyContent: "space-between" }}
-      >
-        <React.Fragment>
-          <Link to={"/"} className={"navLink"}>
-            <img
-              src={require("./Assets/iconTest.png")}
-              alt={"nagatoro.jpg"}
-              style={{ width: 24, border: "none" }}
-            />
-          </Link>
-          <HeroesMenu className={"navLink"} />
-          <Link to={"/artifacts"} className={"navLink"}>
-            Artifacts
-          </Link>
-          <Link to={"/etc"} className={"navLink"}>
-            Etc.
-          </Link>
-          <Link to={"/heroes"} className="navLink">
-            Heroes(Temp)
-          </Link>
-        </React.Fragment>
-        <React.Fragment>
-          <input
-            placeholder="Filter..."
-            onChange={e => {
-              setSearchQuery(e.currentTarget.value);
-              setSeach(true);
-            }}
-            value={searchQuery}
-            style={{ width: "15rem", float: "right" }}
-            // onBlur={() => setSeach(false)}
-            onClick={() => setSeach(true)}
+    <nav>
+      <React.Fragment>
+        <Link to={"/"} className={"navLink"}>
+          <img
+            src={require("./Assets/iconTest.png")}
+            alt={"nagatoro.jpg"}
+            style={{ width: 24, border: "none" }}
           />
-          {search && (
-            <SearchBox>
-              <ul style={{ margin: 0, padding: 0 }}>
-                {artifactNamesfilter(artifacts, searchQuery).map(name => (
-                  <SearchListElement
-                    key={name}
-                    onClick={() => alert(`Go to Artifact: ${name}`)}
-                  >
-                    {name}
-                  </SearchListElement>
-                ))}
-              </ul>
-            </SearchBox>
-          )}
-        </React.Fragment>
-      </nav>
-      <Switch>
-        <Route push={true} path="/hero/:hero" component={Hero} />
-        <Route path="/artifact/:artifact" component={Artifacts} />
-        <Route path="/artifacts" component={Artifacts} />
-        <Route path="/etc" component={Etc} />
-        <Route path="/Maya" component={Maya} />
-        <Route path="/Heroes" component={Heroes} />
-      </Switch>
-    </div>
+        </Link>
+        <Link to={"/heroes"} className="navLink">
+          Heroes
+          </Link>
+        <Link to={"/artifacts"} className={"navLink"}>
+          Artifacts
+          </Link>
+        {/* <Link to={"/etc"} className={"navLink"}>
+          Etc.
+          </Link> */}
+      </React.Fragment>
+      <React.Fragment>
+        <input
+          placeholder="Filter..."
+          onChange={e => {
+            setSearchQuery(e.currentTarget.value);
+            setSeach(true);
+          }}
+          value={searchQuery}
+          style={{ marginLeft: "auto"}}
+          // onBlur={() => setSeach(false)}
+          onClick={() => setSeach(true)}
+        />
+        {search && (
+          <SearchBox>
+            <ul style={{ margin: 0, padding: 0 }}>
+              {artifactNamesfilter(artifacts, searchQuery).map(name => (
+                <SearchListElement
+                  key={name}
+                  onClick={() => alert(`Go to Artifact: ${name}`)}
+                >
+                  {name}
+                </SearchListElement>
+              ))}
+            </ul>
+          </SearchBox>
+        )}
+      </React.Fragment>
+    </nav>
   );
 };
-
 export default NavBar;

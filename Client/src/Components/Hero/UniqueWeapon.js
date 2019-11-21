@@ -8,58 +8,44 @@ export const UniqueWeapon = props => {
   let { heroPath, uw, sw } = props
   return (
     <div>
-      <p className={"title2"}> Unique Weapon </p> <hr />
-      <div id="uw">
-        <div className="flexBox" id="uwHeader">
-          <Image
-            src={`${heroPath}uw.png`}
-            alt="UW Icon"
-            className={"uwIcon"} />
-          <div>
-            <p className="title2"> {uw.name} </p>
-            {stars(setStars, star)}
-          </div>
+      <div className="flexBox" id="uw">
+        <Image
+          src={`${heroPath}uw.png`}
+          alt="UW Icon"
+          className={"uwIcon"} />
+        <div>
+          <h2> {uw.name} </h2>
+          {stars(setStars, star)}
         </div>
-        <p className="weaponDescription"> {uw.effect[star]} </p>
       </div>
+      <p className="description"> {uw.effect[star]} </p>
       <div id={"sw"}>
-        <p className={"title2"}> Soul </p>
+        <h2> Soul </h2>
         {sw ? (
-          <div className="flexBox">
-            <Image
-              src={`${heroPath}sw.png`}
-              alt="soul weapon"
-              className={"swIcon"}
-            />
-            <table>
-              <tbody>
-                <tr>
-                  <td>Activation:</td>
-                  <td>{sw.activation}</td>
-                </tr>
-                <tr>
-                  <td>Cooldown:</td>
-                  <td>{sw.cd}</td>
-                </tr>
-                <tr>
-                  <td>Charges:</td>
-                  <td>{sw.charges}</td>
-                </tr>
-              </tbody>
-            </table>
-            <div className="weaponDescription">
-              <p> {sw.advancement0} </p>
-              <div className="swAdvancement">
-                <h3> Advancement 1 </h3>
-                {sw.advancement1}
-              </div>
-              <div className="swAdvancement">
-                <h3> Advancement 2 </h3>
-                {sw.advancement2}
+          <>
+            <div className="flexBox">
+              <Image
+                src={`${heroPath}sw.png`}
+                alt="soul weapon"
+                className="swIcon"
+              />
+              <div id="soulBasic">
+                <p>{sw.activation}</p>
+                <p>{sw.cd} secs cooldown</p>
+                <p>{sw.charges} charges</p>
               </div>
             </div>
-          </div>
-        ) : <div> N / A </div>
+            <p className="description"> {sw.advancement0} </p>
+            <div className="swAdvancement">
+              <h3> Advancement 1 </h3>
+              {sw.advancement1}
+            </div>
+            <div className="swAdvancement">
+              <h3> Advancement 2 </h3>
+              {sw.advancement2}
+            </div>
+          </>)
+          : <> Not released yet </>
         }
       </div>
     </div>

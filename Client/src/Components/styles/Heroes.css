@@ -1,10 +1,11 @@
 .heroIcon{
-    margin: 10px;
     width: 96px;
 }
 .heroesContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
+}
+.heroesContainer > a{
+    margin: 0.25rem;
 }

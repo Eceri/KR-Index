@@ -1,33 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 import { Image } from "./../components"
 import "./../styles/HeroSkins.css"
 
-export class HeroSkins extends Component {
-  render() {
-    let heroPath = this.props.heroPath;
-    let skins = [];
-    skins.push({
-      file: `${heroPath}Loading Screen.png`,
-      title: "Loading Screen"
-    });
-    this.props.skins.map(skin =>
-      skins.push({
-        file: `${heroPath}${skin}.png`,
-        title: skin
-      })
-    );
-    return (
-      <div>
-        {skins.map(skin => (
-          <div className="skin" key={skin.title}>
-            <p className="title2">{skin.title}</p>
-            <Image src={skin.file}
-              alt={skin.title}
-              style={{ border: "none" }}
-              className="skin" />
-          </div>
-        ))}
+export const HeroSkins = props => {
+  let { heroPath, skins } = props
+  let heroSkins = [];
+  heroSkins.push({
+    file: `${heroPath}Loading Screen.png`,
+    title: "Loading Screen"
+  });
+  skins.map(skin =>
+    heroSkins.push({
+      file: `${heroPath}${skin}.png`,
+      title: skin
+    })
+  );
+  return <>
+    {heroSkins.map(skin => (
+      <div className="skin" key={skin.title}>
+        <h2>{skin.title}</h2>
+        <Image src={skin.file}
+          alt={skin.title}
+          style={{ border: "none" }}
+          className="skin" />
       </div>
-    );
-  }
+    ))}
+  </>
 }

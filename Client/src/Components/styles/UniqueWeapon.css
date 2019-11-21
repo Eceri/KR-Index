@@ -1,40 +1,29 @@
-.uwIcon {
-    margin-top: 10px;
-}
-
 .swIcon,
 .uwIcon {
-    margin-right: 5px;
-    margin-bottom: 0;
-    width: 95px;
-    height: 95px;
+  width: auto;
+  height: 95px;
 }
-
-#uw {
-    min-height: 101px;
-    min-height: 101px;
+#soulBasic {
+  display: flex;
+  flex-direction: column;
 }
-#uwHeader{
-    flex-wrap: nowrap;
+#soulBasic > p{
+  flex: 1
+}
+#uw{
+  flex-wrap: nowrap;
 }
 #sw {
-    margin-top: 30px;
-}
-
-.weaponDescription{
-    padding-top: 10px;
+  margin-top: 1.5rem;
 }
 .swAdvancement {
-    margin-left: 15px;
+  margin-left: 1rem;
 }
 
-.swAdvancement>h3 {
-    font-weight: normal;
-    margin-top: 15px;
+.swAdvancement > h3 {
+  font-weight: normal;
+  margin-top: 1rem;
 }
 #swAdctivation{
- margin-top: 5px;   
-}
-#title2 {
-    margin: 0;
+  margin-top: .5rem;   
 }
