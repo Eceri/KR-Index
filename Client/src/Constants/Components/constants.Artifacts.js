@@ -13,3 +13,5 @@ export const LOADING_ARTIFACT = [
       "Hair accessory of Abyssal Goddess Xanadus. The serpent-shaped crown gives off a deadly scent."
   }
 ];
+
+export const ARTIFACT_URL = "artifacts/";

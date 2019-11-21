@@ -22,20 +22,21 @@ router.get("/", async (req, res, next) => {
 router.post("/post", async (req, res, next) => {
   const body = req.body;
   Logger.info("POST Route /artifact/post");
-  try {
-    await body.map(async v => {
+  await body.map(async v => {
+    await searchName(
+      v.name,
+      res,
       Data.create({ ...v }, error => {
         if (error) {
           Logger.error(error);
           res.status(400).send(error);
         }
-      });
-    });
-    Logger.info(`DB got ${body.length} new entry`);
-    res.status(200).send("OK");
-  } catch (error) {
-    next(error);
-  }
+      })
+    );
+  });
+  Logger.info(`DB got ${body.length} new entry`);
+  res.status(200).send("OK");
+
   Logger.info("End POST Route /artifact/post");
 });
 

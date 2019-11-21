@@ -7,7 +7,8 @@ const DataSchema = new Schema(
     name: {
       required: true,
       type: String,
-      trim: true
+      trim: true,
+      unique: true
     },
     description: { required: true, type: [String] },
     story: String
