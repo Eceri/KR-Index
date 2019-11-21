@@ -90,6 +90,7 @@ export const Artifacts = () => {
 
   return (
     <div id="content">
+      {console.log(process.env.NODE_ENV)}
       <Helmet>
         <title>{`Artifacts`}</title>
         <meta name="description" content="Helmet application" />
