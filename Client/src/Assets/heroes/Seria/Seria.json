@@ -39,10 +39,10 @@
           "name": "Mysterious Sword - Blossom",
           "effect": "Performs a vertical slash to the front and deals M.DMG to the target and enemies in a narrow range.",
           "cooldown": 0,
-          "cost": 0
+          "cost": 0,
+          "linked": "s1_1"
         }
       ],
-      "linked": true,
       "light": "[Mysterious Sword - Falling Petals] - Mana cost is reduced by 1.\n[Mysterious Sword - Blossom] - Hit enemies' heal rate is reduced by 50% for 5 sec.",
       "dark": "[Mysterious Sword - Falling Petals] - Target takes 25% increased M.DMG for 10 sec.\n[Mysterious Sword - Blossom] - Mana cost is increased by 1, and Ignores enemy's DEF.",
       "books": [

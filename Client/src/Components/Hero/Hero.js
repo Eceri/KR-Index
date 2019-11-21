@@ -45,7 +45,7 @@ export class Hero extends Component {
     try {
       heroInfo = require(`./../../Assets/heroes/${heroName}/${heroName}.json`);
     } catch (e) {
-      return <div>Hero not Found</div>;
+      return <div style={{textAlign:"center"}}>Hero not Found</div>;
     }
     const title = (
       <Helmet>
@@ -53,70 +53,60 @@ export class Hero extends Component {
         <meta name="description" content="Helmet application" />
       </Helmet>
     );
-    if (this.state.isLoading) {
-      return (
-        <div>
-          {title}
-          Loading
-        </div>
-      );
-    }
-    if (!this.state.isLoading) {
-      return (
-        <div id="content">
-          {title}
-          <div id={"hero"}>
-            <Image
-              src={`${heroPath}hero.png`}
-              id={"portrait"}
-            />
-            <div>
-              <p className={"title1"}>{heroInfo.name}</p>
-              <p className={"title2"}>{heroInfo.title}</p>
-              <div id="heroType" className="flexBox">
-                <Image
-                  src={`classes/${heroInfo.class}.png`}
-                  className={"heroClassIcon"}
-                  style={{ border: "none" }}
-                />
-                <Image src={`${heroInfo.damageType}.png`}
-                  id={"damageType"}
-                  style={{ border: "none" }} />
-                <p>{heroInfo.position}</p>
-              </div>
+    return this.state.isLoading ?
+      <> {title} Loading </>
+      : <>
+        {title}
+        <div className="flexBox" id="hero">
+          <Image
+            src={`${heroPath}portrait.png`}
+            id={"portrait"}
+          />
+          <div>
+            <h1>{heroInfo.name}</h1>
+            <h2>{heroInfo.title}</h2>
+            <div id="heroType" className="flexBox">
+              <Image
+                src={`classes/${heroInfo.class}.png`}
+                id={"heroClassIcon"}
+                style={{ border: "none" }}
+              />
+              <Image src={`${heroInfo.damageType}.png`}
+                id={"damageType"}
+                style={{ border: "none" }} />
+              <p>{heroInfo.position}</p>
             </div>
           </div>
-          <Tabs>
-            <TabList>
-              <Tab>General</Tab>
-              <Tab>Story</Tab>
-              <Tab>Skins</Tab>
-              <Tab>Voice</Tab>
-            </TabList>
-            <TabPanel>
-              <HeroGeneral heroPath={heroPath}
-                heroInfo={heroInfo} />
-            </TabPanel>
-            <TabPanel>
-              <HeroStory
-                heroPath={heroPath}
-                name={heroInfo.name}
-                backgroundData={heroInfo.background}
-                title={heroInfo.title} />
-            </TabPanel>
-            <TabPanel>
-              <HeroSkins heroPath={heroPath}
-                skins={heroInfo.skins} />
-            </TabPanel>
-            <TabPanel>
-              <HeroVoice
-                heroPath={heroPath}
-                voice={heroInfo.voice} />
-            </TabPanel>
-          </Tabs>
         </div>
-      );
-    }
+        <Tabs>
+          <TabList>
+            <Tab>General</Tab>
+            <Tab>Story</Tab>
+            <Tab>Skins</Tab>
+            <Tab>Voice</Tab>
+          </TabList>
+          <TabPanel>
+            <HeroGeneral heroPath={heroPath}
+              heroInfo={heroInfo} />
+          </TabPanel>
+          <TabPanel>
+            <HeroStory
+              heroPath={heroPath}
+              name={heroInfo.name}
+              backgroundData={heroInfo.background}
+              title={heroInfo.title} />
+          </TabPanel>
+          <TabPanel>
+            <HeroSkins heroPath={heroPath}
+              skins={heroInfo.skins} />
+          </TabPanel>
+          <TabPanel>
+            <HeroVoice
+              heroPath={heroPath}
+              voice={heroInfo.voice} />
+          </TabPanel>
+        </Tabs>
+      </>
   }
 }
 export default Hero;

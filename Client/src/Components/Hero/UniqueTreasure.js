@@ -9,7 +9,7 @@ export const UniqueTreasure = props => {
   let utPath = `${heroPath}ut${skill.id}.png`;
   return (
     <div className="ut">
-      <div>
+      <div className="flexBox">
         <Image src={utPath} alt={`Unique Treasure ${skill.id}`} />
         <div>
           <h3>{skill.ut.name}</h3>

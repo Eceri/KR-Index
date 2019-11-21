@@ -2,23 +2,13 @@ import React from "react";
 import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
 import { Image } from "./../components";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "./../styles/Heroes.css";
-
-const heroesDiv = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-`;
-const imageDiv = styled.div`
-  padding: 10px;
-`;
 
 let heroesClasses = [
   {
     name: "Knight",
-    heroes: ["Aselica"]
+    heroes: ["Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia"]
   },
   {
     name: "Warrior",
@@ -33,10 +23,6 @@ let heroesClasses = [
 export const Heroes = () => {
   // let heroes = require("./../../Assets/classes/classes.json")
   let heroes = [];
-  heroesClasses.map(heroClass => heroes.push(heroClass.heroes));
-  heroesClasses.map(heroClass => heroes.push(heroClass.heroes));
-  heroesClasses.map(heroClass => heroes.push(heroClass.heroes));
-  heroes.sort();
 
   const title = (
     <Helmet>
@@ -44,15 +30,15 @@ export const Heroes = () => {
       <meta name="description" content="Helmet application" />
     </Helmet>
   );
-  return (
-    <div id="content">
-      {title}
-      <div  className="heroesContainer">
-        {console.log(Heroes)}
-        {heroes.map(hero => (
-          <Link to={`/hero/${hero}`}>
+  return <>
+    {title}
+    {heroesClasses.map(heroClass => <div key={heroClass.name}>
+      <h2>{heroClass.name}</h2>
+      <div className="heroesContainer">
+        {heroClass.heroes.sort().map(hero => (
+          <Link to={`/hero/${hero}`} key={hero}>
             <Image
-              src={`heroes/${hero}/hero.png`}
+              src={`heroes/${hero}/portrait.png`}
               dataTip={hero}
               className="heroIcon"
             />
@@ -61,6 +47,8 @@ export const Heroes = () => {
         <ReactToolTip multiline={true} border={true} className={"tooltip"} />
       </div>
     </div>
-  );
-};
-export default Heroes;
+    )
+    }
+  </>
+}
+  export default Heroes;

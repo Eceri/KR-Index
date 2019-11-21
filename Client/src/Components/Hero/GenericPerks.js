@@ -1,25 +1,22 @@
 import React from "react";
-import { Image } from "../Image";
+import { Image } from "../components";
 import "../styles/genericPerks.css";
 
 export const GenericPerks = props => {
   let perks = props.perks;
-  return (
-    <div>
-      {perks.map(perk => (
-        <div className={"genericPerk"} key={perk.name}>
-          <div>
-            <Image
-              src={`genericPerks/${perk.name}.png`}
-              className={"genericPerkIcon"}
-            />
-          </div>
-          <div>
-            <p className={"genericPerkName"}>{perk.name}</p>
-            <p>{perk.effect}</p>
-          </div>
+  return <div>
+    {perks.map(perk => (
+      <div className={"genericPerk flexBox"} key={perk.name}>
+        <Image
+          src={`genericPerks/${perk.name}.png`}
+          className={"genericPerkIcon"}
+        />
+        <div>
+          <h3 className={"genericPerkName"}>{perk.name}</h3>
+          <p>{perk.effect}</p>
         </div>
-      ))}
-    </div>
-  );
+      </div>
+    ))}
+  </div>
 };
+export default GenericPerks

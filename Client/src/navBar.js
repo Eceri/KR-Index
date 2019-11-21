@@ -1,5 +1,3 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { sortNames } from "./Components/components";
@@ -58,57 +56,53 @@ export const NavBar = () => {
   };
 
   return (
-    <div>
-      <nav
-        style={{ display: "flex", justifyContent: "space-between" }}
-      >
-        <React.Fragment>
-          <Link to={"/"} className={"navLink"}>
-            <img
-              src={require("./Assets/iconTest.png")}
-              alt={"nagatoro.jpg"}
-              style={{ width: 24, border: "none" }}
-            />
-          </Link>
-          <Link to={"/heroes"} className="navLink">
-            Heroes(Temp)
-          </Link>
-          <Link to={"/artifacts"} className={"navLink"}>
-            Artifacts
-          </Link>
-          <Link to={"/etc"} className={"navLink"}>
-            Etc.
-          </Link>
-        </React.Fragment>
-        <React.Fragment>
-          <input
-            placeholder="Filter..."
-            onChange={e => {
-              setSearchQuery(e.currentTarget.value);
-              setSeach(true);
-            }}
-            value={searchQuery}
-            style={{ width: "15rem", float: "right" }}
-            // onBlur={() => setSeach(false)}
-            onClick={() => setSeach(true)}
+    <nav>
+      <React.Fragment>
+        <Link to={"/"} className={"navLink"}>
+          <img
+            src={require("./Assets/iconTest.png")}
+            alt={"nagatoro.jpg"}
+            style={{ width: 24, border: "none" }}
           />
-          {search && (
-            <SearchBox>
-              <ul style={{ margin: 0, padding: 0 }}>
-                {artifactNamesfilter(artifacts, searchQuery).map(name => (
-                  <SearchListElement
-                    key={name}
-                    onClick={() => alert(`Go to Artifact: ${name}`)}
-                  >
-                    {name}
-                  </SearchListElement>
-                ))}
-              </ul>
-            </SearchBox>
-          )}
-        </React.Fragment>
-      </nav>
-    </div>
+        </Link>
+        <Link to={"/heroes"} className="navLink">
+          Heroes
+          </Link>
+        <Link to={"/artifacts"} className={"navLink"}>
+          Artifacts
+          </Link>
+        {/* <Link to={"/etc"} className={"navLink"}>
+          Etc.
+          </Link> */}
+      </React.Fragment>
+      <React.Fragment>
+        <input
+          placeholder="Filter..."
+          onChange={e => {
+            setSearchQuery(e.currentTarget.value);
+            setSeach(true);
+          }}
+          value={searchQuery}
+          style={{ marginLeft: "auto"}}
+          // onBlur={() => setSeach(false)}
+          onClick={() => setSeach(true)}
+        />
+        {search && (
+          <SearchBox>
+            <ul style={{ margin: 0, padding: 0 }}>
+              {artifactNamesfilter(artifacts, searchQuery).map(name => (
+                <SearchListElement
+                  key={name}
+                  onClick={() => alert(`Go to Artifact: ${name}`)}
+                >
+                  {name}
+                </SearchListElement>
+              ))}
+            </ul>
+          </SearchBox>
+        )}
+      </React.Fragment>
+    </nav>
   );
 };
 export default NavBar;

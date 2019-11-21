@@ -1,85 +1,35 @@
-p{
-    margin: 0;
-}
 p:hover {
     cursor: default;
 }
-.skillImageMargin{
+.bookImageMargin{
     margin-top: 5px;
-}
-.skillNumber{
-    margin-top: 5px;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding: 0;
-    width: 50px;
-    position: relative;
-    height: 0;
-    top: -25px;
 }
 .skillIcon{
     width: auto;
     height: 70px;
 }
-.books img{
-    max-height: 60px;
-    max-width: 60px;
-}
-
-.skillBaseInfo{
-    padding: 0;
-    margin: 15px 0;
-    display: flex;
-}
-.skillBlock{
-    padding: 5px;
-}
-.skillHeader{
-    margin-left: 15px;
-}
-.skillHeadline{
-    display: flex;
-}
-.skillDescription{
-    margin-top: 5px;
-    clear: left;
-}
 .mana{
     vertical-align: bottom;
-    margin-top: 0;
-    margin-right: 0;
     border: none;
 }
 .cooldown{
     margin-left: 10px;
 }
-
-.skillName{
-    font-size: 25px;
-    text-anchor: start;
-    line-height: 25px;
-    margin-bottom: 10px;
+.mana,
+.cooldown{
+    margin-top: .75rem
 }
-.skillBaseInfo hr{
-    font-weight: lighter;
-    border-color: rgba(166, 166, 166, 0.50);
+.skillPerks > div:first-child{
+    margin-right: 1rem;
 }
-
-.linkedSkill:nth-child(3){
-     margin-left: 30px;
- }
-h3{
-    margin: 0;
-}
-.books{
-    margin: 25px 15px 0 15px;
-    width: 100%;
-}
-.books > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.skillPerks > div{
+    align-items: center;
     flex: 1;
+}
+.skillPerks,
+.books{
+    display: flex;
+    margin: 2.5rem .5rem;
 }
 .bookEffects{
     display: flex;
@@ -88,61 +38,25 @@ h3{
 }
 .bookEffects > img{
     height: 30px;
-    margin: 0 10px 0 0;
-}
-.books p {
-    margin: 0 15px 0 0;
-}
-.seperator{
-    width: 65%;
-    border-color: rgba(166, 166, 166, 0.80);
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.skillPerks{
-    display: flex;
-    margin: 25px 0;
-}
-.skillPerks > div{
-    margin: 10px;
-    align-items: center;
-    display: flex;
-    flex: 1;
-}
-.tPerks > div{
-    align-items: center;
-    display: flex;
-    flex: 1;
-    min-height: 45px;
-    padding: 10px 0;
+    margin-right: .5rem;
 }
 .perkIcon{
     height: 45px;
     width: auto;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
-.chainlink{
-    float: left;
-    width: 25px;
-}
-.t5icon{
-    height: 50px;
-}
-.heroClassIcon{
-    width: 25px;
-    margin-right: 5px;
+.linkedSkill{
+    margin-left: .5rem;
 }
 @media only screen and (max-width: 650px) {
-    .books > div {
+    .books{
         display: block;
     }
-    .books p {
-        margin: 10px 15px 0 0;
-    }
-    .tPerks {
-        display: block;
+    .skillPerks > div:first-child{
+    margin-right: 0;
+    margin-bottom: 1rem;
     }
     .skillPerks{
-        flex-direction: column;
+        display: block;
     }
 }
