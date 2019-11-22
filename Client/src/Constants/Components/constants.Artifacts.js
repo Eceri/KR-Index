@@ -1,3 +1,4 @@
+// TODO: Create Placeholder ??
 export const LOADING_ARTIFACT = [
   {
     description: [
