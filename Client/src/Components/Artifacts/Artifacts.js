@@ -42,17 +42,14 @@ const ClickedArtifact = styled.section`
 export const sortNames = (data, direction) => {
   if (direction === "ASC") {
     return data.sort((a, b) => {
-      stringSortAlgorithm(a.name, b.name);
+      if (a.name > b.name) return 1;
+      if (a.name < b.name) return -1;
+      return 0;
     });
   }
   if (direction === "DESC") {
     return data.reverse();
   }
-};
-const stringSortAlgorithm = (a, b) => {
-  if (a.name > b.name) return 1;
-  if (a.name < b.name) return -1;
-  return 0;
 };
 
 const filterArtifacts = (artifacts, query) => {
@@ -81,7 +78,7 @@ export const Artifacts = () => {
         .replace(/%20/g, " ");
       setArtifactName(chosenArtifactName);
     } catch (error) {}
-  }, [window.location.pathname]);
+  }, []);
 
   // TODO: create process.ENV with
   useEffect(() => {
@@ -104,8 +101,12 @@ export const Artifacts = () => {
         <meta name="description" content="Helmet application" />
       </Helmet>
       <ClickedArtifact>
+        {/* FIXME: I am ugly REFACTORE ME!!! */}
         {Artifact(
-          artifacts.filter(artifact => artifact.name === artifactName)[0]
+          artifacts.filter(artifact => artifact.name === artifactName)[0] ===
+            undefined
+            ? LOADING_ARTIFACT[0]
+            : artifacts.filter(artifact => artifact.name === artifactName)[0]
         )}
       </ClickedArtifact>
       <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
