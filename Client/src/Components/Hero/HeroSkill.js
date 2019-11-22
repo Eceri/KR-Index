@@ -13,7 +13,8 @@ export const HeroSkill = props => {
   return (
     <div className="skill" key={skill.id}>
       {skill.skillInfo.map((skillInfo, index) => (
-        <div key={skillInfo.skillNumber} className={skillInfo.linked && index > 0 ? "linkedSkill" : ""}>
+        <div key={skillInfo.skillNumber}
+          className={skillInfo.linked && index > 0 ? "linkedSkill" : ""}>
           <div className="flexBox">
             <Image
               src={`${heroPath}${skillInfo.skillNumber}.png`}
