@@ -10,15 +10,14 @@ ReactDOM.render(
   <div id="pageContainer">
     <BrowserRouter>
       <NavBar key={"components.js"} />
-      <Route path="/hero" />
-      <Route exact path="/" component={Home} />
       <Switch>
-        <Route push={true} path="/hero/:hero" component={Hero} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Heroes" component={Heroes} />
+        <Route push={true} path="/heroes/:hero" component={Hero} />
         <Route path="/artifact/:artifact" component={Artifacts} />
         <Route path="/artifacts" component={Artifacts} />
         <Route path="/etc" component={Etc} />
         <Route path="/Maya" component={Maya} />
-        <Route path="/Heroes" component={Heroes} />
       </Switch>
       <footer id={"footer"}>
         <p>Everything is under construction.</p>
