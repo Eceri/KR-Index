@@ -13,13 +13,12 @@ import {
 import "../styles/heroSkills.css";
 
 export const Hero = props => {
-  const heroName = props.match.params.hero;
-  const heroPath = `heroes/${heroName}/`;
-  let heroInfo = require(`./../../Assets/heroes/${heroName}/${heroName}.json`)
+  let heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`)
+  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
 
   const title = (
     <Helmet>
-      <title>{`${heroName}`}</title>
+      <title>{`${heroInfo.name}`}</title>
       <meta name="description" content="Helmet application" />
     </Helmet>
   );
