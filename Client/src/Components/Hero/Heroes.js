@@ -8,7 +8,7 @@ import "./../styles/Heroes.css";
 let heroesClasses = [
   {
     name: "Knight",
-    heroes: ["Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia","Aselica", "Sonia"]
+    heroes: ["Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia"]
   },
   {
     name: "Warrior",
@@ -22,7 +22,7 @@ let heroesClasses = [
 // TODO: change the routing to accomodate a heroes overview.
 export const Heroes = () => {
   // let heroes = require("./../../Assets/classes/classes.json")
-  let heroes = [];
+  // let heroes = [];
 
   const title = (
     <Helmet>
@@ -36,7 +36,7 @@ export const Heroes = () => {
       <h2>{heroClass.name}</h2>
       <div className="heroesContainer">
         {heroClass.heroes.sort().map(hero => (
-          <Link to={`/hero/${hero}`} key={hero}>
+          <Link to={`/heroes/${hero}`} key={hero}>
             <Image
               src={`heroes/${hero}/portrait.png`}
               dataTip={hero}
@@ -51,4 +51,4 @@ export const Heroes = () => {
     }
   </>
 }
-  export default Heroes;
+export default Heroes;

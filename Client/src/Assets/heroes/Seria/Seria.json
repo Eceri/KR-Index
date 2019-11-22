@@ -39,7 +39,7 @@
           "name": "Mysterious Sword - Blossom",
           "effect": "Performs a vertical slash to the front and deals M.DMG to the target and enemies in a narrow range.",
           "cooldown": 0,
-          "cost": 0,
+          "cost": 1,
           "linked": "s1_1"
         }
       ],

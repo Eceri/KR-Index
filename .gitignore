@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# public
-.iconTest.png
-
 # testing
 /coverage
 
