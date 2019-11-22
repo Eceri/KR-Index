@@ -66,8 +66,11 @@ const GET_LOCALSTORAGE = name => localStorage.getItem(name);
 const SET_LOCALSTORAGE = (name, item) => localStorage.setItem(name, item);
 
 export const Artifacts = () => {
+  const chosenArtifactName = window.location.pathname
+    .split("/")[2]
+    .replace(/%20/g, " ");
   const ARTIFACTS = "Artifacts";
-  const [artifactName, setArtifactName] = useState("Abyssal Crown");
+  const [artifactName, setArtifactName] = useState(chosenArtifactName);
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
   );
@@ -76,14 +79,10 @@ export const Artifacts = () => {
 
   useEffect(() => {
     try {
-      const chosenArtifactName = window.location.pathname
-        .split("/")[2]
-        .replace(/%20/g, " ");
       setArtifactName(chosenArtifactName);
     } catch (error) {}
   }, [window.location.pathname]);
 
-  // TODO: create process.ENV with
   useEffect(() => {
     if (GET_LOCALSTORAGE(ARTIFACTS) === null) {
       fetch(`${API_URL}${ARTIFACT_URL}`)
@@ -99,13 +98,15 @@ export const Artifacts = () => {
 
   return (
     <div id="content">
-      <Helmet>
-        <title>{`Artifacts`}</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+      {console.log(artifacts, artifactName)}
+      {createHelmet()}
       <ClickedArtifact>
         {Artifact(
-          artifacts.filter(artifact => artifact.name === artifactName)[0]
+          artifacts.filter(artifact =>
+            artifact.name === artifactName
+              ? artifact.name
+              : LOADING_ARTIFACT.name
+          )[0]
         )}
       </ClickedArtifact>
       <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
@@ -129,6 +130,13 @@ export const Artifacts = () => {
     </div>
   );
 };
+
+const createHelmet = () => (
+  <Helmet>
+    <title>{`Artifacts`}</title>
+    <meta name="description" content="Helmet application" />
+  </Helmet>
+);
 
 const renderArtifactContainer = (
   artifacts,
