@@ -66,11 +66,11 @@ const GET_LOCALSTORAGE = name => localStorage.getItem(name);
 const SET_LOCALSTORAGE = (name, item) => localStorage.setItem(name, item);
 
 export const Artifacts = () => {
-  const chosenArtifactName = window.location.pathname
-    .split("/")[2]
-    .replace(/%20/g, " ");
+  const chosenArtifactName = window.location.pathname.split("/")[2];
+  const replaceChosenArtifactName =
+    chosenArtifactName !== undefined && chosenArtifactName.replace(/%20/g, " ");
   const ARTIFACTS = "Artifacts";
-  const [artifactName, setArtifactName] = useState(chosenArtifactName);
+  const [artifactName, setArtifactName] = useState(replaceChosenArtifactName);
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
   );
@@ -79,7 +79,7 @@ export const Artifacts = () => {
 
   useEffect(() => {
     try {
-      setArtifactName(chosenArtifactName);
+      setArtifactName(replaceChosenArtifactName);
     } catch (error) {}
   }, [window.location.pathname]);
 
@@ -98,7 +98,6 @@ export const Artifacts = () => {
 
   return (
     <div id="content">
-      {console.log(artifacts, artifactName)}
       {createHelmet()}
       <ClickedArtifact>
         {Artifact(
