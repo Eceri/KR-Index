@@ -35,7 +35,6 @@
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-styled-components": "^1.10.6",
     "file-loader": "^4.3.0",
-    "image-webpack-loader": "^5.0.0",
-    "react-snap": "^1.23.0"
+    "image-webpack-loader": "^5.0.0"
   }
 }

@@ -1,12 +1,13 @@
 import React from "react";
+import ReactDOM from "react-dom"
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./home";
 import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 
-export const App = () => {
-   return <div id="pageContainer">
+ReactDOM.render(
+   <div id="pageContainer">
     <BrowserRouter>
       <NavBar key={"components.js"} />
       <Switch>
@@ -22,6 +23,6 @@ export const App = () => {
         <p>Everything is under construction.</p>
       </footer>
     </BrowserRouter>
-  </div>
-}
-export default App
+  </div>, 
+  document.getElementById("root")
+)
