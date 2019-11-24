@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "global": "^4.4.0",
-    "netlify-cli": "^2.21.0"
-  }
-}
