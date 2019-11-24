@@ -1,3 +1,3 @@
-/heroes/* /heroes/:splat
-/artifacts/* /artifacts/:splat
-/static/*   /static
+/*  /index.html   200
+/heroes/static/*.png    /static/:splat
+/heroes/*   /heroes/:splat
