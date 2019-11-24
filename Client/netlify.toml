@@ -1,5 +1,5 @@
 [[redirects]]
-    from = "/heroes/*.png"
+    from = "/heroes/static/*.png"
     to = "/static/:splat"
     status = 301
     force = false
