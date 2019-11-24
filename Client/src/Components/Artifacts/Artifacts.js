@@ -74,6 +74,7 @@ export const Artifacts = () => {
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const canvas = document.createElement("canvas");
   useEffect(() => {
     try {
       setArtifactName(replaceChosenArtifactName);
