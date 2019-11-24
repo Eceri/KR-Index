@@ -6,7 +6,7 @@ const Star = styled.button`
   border: 0px solid transparent;
   background: none;
   color: ${props => (props.active ? "#FFD700" : "white")};
-  
+
   vertical-align: middle;
 
   &:hover {
@@ -21,35 +21,32 @@ const Star = styled.button`
 
   &:after {
     content: "";
-    
   }
 `;
 
-export const stars = (setStar, active) => {
-  const arr = [0, 1, 2, 3, 4, 5];
-  return (
-    <div>
-      {arr.map(v => (
-        <Star
-          onClick={() => setStar(v)}
-          key={v}
-          active={active >= v ? true : false}
-        >
-          {v > 0 ? (
-            "★"
-          ) : (
-            <span
-              style={{
-                fontSize: "2rem",
-                fontWeight: "700",
-                textShadow: "0.5px 0.5px #ffd700"
-              }}
-            >
-              ○
-            </span>
-          )}
-        </Star>
-      ))}
-    </div>
-  );
-};
+const arr = [0, 1, 2, 3, 4, 5];
+export const stars = (setStar, active) => (
+  <div>
+    {arr.map(v => (
+      <Star
+        onClick={() => setStar(v)}
+        key={v}
+        active={active >= v ? true : false}
+      >
+        {v > 0 ? "★" : renderCircle()}
+      </Star>
+    ))}
+  </div>
+);
+
+const renderCircle = () => (
+  <span
+    style={{
+      fontSize: "2rem",
+      fontWeight: "700",
+      textShadow: "0.5px 0.5px #ffd700"
+    }}
+  >
+    ○
+  </span>
+);

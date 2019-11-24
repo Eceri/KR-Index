@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
-import Helmet from "react-helmet";
 
+// Relative imports ---------------------------------------------------------------------------------------------------
 import Artifact from "./Artifact";
 import {
   LOADING_ARTIFACT,
   API_URL,
   ARTIFACT_URL
 } from "../../Constants/constants.index";
+import {
+  createHelmet,
+  GET_LOCALSTORAGE,
+  SET_LOCALSTORAGE
+} from "../../helpers/helpers.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
@@ -58,13 +63,12 @@ const filterArtifacts = (artifacts, query) => {
   );
 };
 
-// FIXME: Refactore into own File with getter and setter
-const GET_LOCALSTORAGE = name => localStorage.getItem(name);
-const SET_LOCALSTORAGE = (name, item) => localStorage.setItem(name, item);
-
 export const Artifacts = () => {
+  const chosenArtifactName = window.location.pathname.split("/")[2];
+  const replaceChosenArtifactName =
+    chosenArtifactName !== undefined && chosenArtifactName.replace(/%20/g, " ");
   const ARTIFACTS = "Artifacts";
-  const [artifactName, setArtifactName] = useState("Abyssal Crown");
+  const [artifactName, setArtifactName] = useState(replaceChosenArtifactName);
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
   );
@@ -73,14 +77,10 @@ export const Artifacts = () => {
 
   useEffect(() => {
     try {
-      const chosenArtifactName = window.location.pathname
-        .split("/")[2]
-        .replace(/%20/g, " ");
-      setArtifactName(chosenArtifactName);
+      setArtifactName(replaceChosenArtifactName);
     } catch (error) {}
   }, []);
 
-  // TODO: create process.ENV with
   useEffect(() => {
     if (GET_LOCALSTORAGE(ARTIFACTS) === null) {
       fetch(`${API_URL}${ARTIFACT_URL}`)
@@ -94,19 +94,17 @@ export const Artifacts = () => {
     }
   }, []);
 
+  const getFirstArtifactMatches = name =>
+    artifacts.filter(artifact => artifact.name === name)[0];
+
   return (
     <div id="content">
-      <Helmet>
-        <title>{`Artifacts`}</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+      {createHelmet()}
       <ClickedArtifact>
-        {/* FIXME: I am ugly REFACTORE ME!!! */}
         {Artifact(
-          artifacts.filter(artifact => artifact.name === artifactName)[0] ===
-            undefined
+          getFirstArtifactMatches(artifactName) === undefined
             ? LOADING_ARTIFACT[0]
-            : artifacts.filter(artifact => artifact.name === artifactName)[0]
+            : getFirstArtifactMatches(artifactName)
         )}
       </ClickedArtifact>
       <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
