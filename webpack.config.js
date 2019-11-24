@@ -6,8 +6,7 @@ module.exports = {
   output: {
     context: path.resolve(__dirname, "src"),
     path: path.resolve(__dirname, 'build'),
-    filename: 'main.bundle.js',
-    publicPath: ''
+    filename: 'main.bundle.js'
   },
   module: {
     loaders: [
