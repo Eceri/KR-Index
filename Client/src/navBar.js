@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { sortNames } from "./Components/components";
 
@@ -9,11 +9,11 @@ const SearchBox = styled.div`
   background-color: white;
   color: black;
   height: 15rem;
-  position: absolute;
-  top: 3.2rem;
-  right: 12.5rem;
+  position: relative;
   overflow: auto;
   z-index: 2;
+  left: 26.65rem;
+  top: 3rem;
 `;
 
 const SearchListElement = styled.li`
@@ -25,12 +25,21 @@ const SearchListElement = styled.li`
   }
 `;
 
+const artifactNamesfilter = (names, query) => {
+  const artifactNames = names.map(artifact => artifact.name);
+  return artifactNames.filter(v =>
+    v.toLowerCase().includes(query.toLowerCase())
+  );
+};
+
 export const NavBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [artifacts, setArtifacts] = useState(
     JSON.parse(localStorage.getItem("Artifacts")) || []
   );
   const [search, setSeach] = useState(false);
+
+  const ref = useRef(null);
 
   useEffect(() => {
     if (localStorage.getItem("Artifacts") === null) {
@@ -48,61 +57,85 @@ export const NavBar = () => {
     }
   }, []);
 
-  const artifactNamesfilter = (names, query) => {
-    const artifactNames = names.map(artifact => artifact.name);
-    return artifactNames.filter(v =>
-      v.toLowerCase().includes(query.toLowerCase())
-    );
+  const handleClickOutside = event => {
+    if (ref.current && !ref.current.contains(event.target)) setSeach(false);
   };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
 
   return (
     <nav>
-      <React.Fragment>
-        <Link to={"/"} className={"navLink"}>
-          <img
-            src={require("./Assets/iconTest.png")}
-            alt={"nagatoro.jpg"}
-            style={{ width: 24, border: "none" }}
-          />
-        </Link>
-        <Link to={"/heroes"} className="navLink">
-          Heroes
-          </Link>
-        <Link to={"/artifacts"} className={"navLink"}>
-          Artifacts
-          </Link>
-        {/* <Link to={"/etc"} className={"navLink"}>
+      <Link to={"/"} className={"navLink"}>
+        <img
+          src={require("./Assets/iconTest.png")}
+          alt={"nagatoro.jpg"}
+          style={{ width: 24, border: "none" }}
+        />
+      </Link>
+      <Link to={"/heroes"} className="navLink">
+        Heroes
+      </Link>
+      <Link to={"/artifacts"} className={"navLink"}>
+        Artifacts
+      </Link>
+      {/* <Link to={"/etc"} className={"navLink"}>
           Etc.
           </Link> */}
-      </React.Fragment>
-      <React.Fragment>
-        <input
-          placeholder="Filter..."
-          onChange={e => {
-            setSearchQuery(e.currentTarget.value);
-            setSeach(true);
-          }}
-          value={searchQuery}
-          style={{ marginLeft: "auto"}}
-          // onBlur={() => setSeach(false)}
-          onClick={() => setSeach(true)}
-        />
-        {search && (
-          <SearchBox>
-            <ul style={{ margin: 0, padding: 0 }}>
-              {artifactNamesfilter(artifacts, searchQuery).map(name => (
-                <SearchListElement
-                  key={name}
-                  onClick={() => alert(`Go to Artifact: ${name}`)}
-                >
-                  {name}
-                </SearchListElement>
-              ))}
-            </ul>
-          </SearchBox>
-        )}
-      </React.Fragment>
+      {renderSearch(
+        search,
+        ref,
+        artifacts,
+        searchQuery,
+        setSearchQuery,
+        setSeach
+      )}
     </nav>
   );
 };
+
+const renderSearch = (
+  search,
+  ref,
+  artifacts,
+  searchQuery,
+  setSearchQuery,
+  setSeach
+) => (
+  <React.Fragment>
+    {renderSearchBox(search, artifacts, ref, searchQuery)}
+    <input
+      placeholder="Filter..."
+      onChange={e => {
+        setSearchQuery(e.currentTarget.value);
+        setSeach(true);
+      }}
+      value={searchQuery}
+      style={{ marginLeft: "auto", width: "15rem" }}
+      onClick={() => setSeach(true)}
+      ref={ref}
+    />
+  </React.Fragment>
+);
+
+const renderSearchBox = (search, artifacts, ref, searchQuery) =>
+  search && (
+    <SearchBox ref={ref}>
+      <ul style={{ margin: 0, padding: 0 }}>
+        {artifactNamesfilter(artifacts, searchQuery).map(name => (
+          <SearchListElement
+            key={name}
+            onClick={() => window.open(`/artifacts/${name}`, "_self")}
+          >
+            {name}
+          </SearchListElement>
+        ))}
+      </ul>
+    </SearchBox>
+  );
+
 export default NavBar;

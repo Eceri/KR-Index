@@ -1,13 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom"
+import { render } from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./home";
 import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 
-ReactDOM.render(
-   <div id="pageContainer">
+render(
+  <div id="pageContainer">
     <BrowserRouter>
       <NavBar key={"components.js"} />
       <Switch>
@@ -23,6 +23,6 @@ ReactDOM.render(
         <p>Everything is under construction.</p>
       </footer>
     </BrowserRouter>
-  </div>, 
+  </div>,
   document.getElementById("root")
-)
+);

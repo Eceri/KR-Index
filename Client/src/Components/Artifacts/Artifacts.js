@@ -14,11 +14,14 @@ import {
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE
 } from "../../helpers/helpers.index";
+import { Button } from "../atoms/atoms.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
 const ArtifactContainer = styled.div`
-  width: 100%;
+  position: relative;
+  padding-top: 15rem;
+  padding-left: 1.5rem;
 `;
 
 const ArtifactImage = styled.img`
@@ -33,11 +36,31 @@ const ArtifactImage = styled.img`
 
 const ClickedArtifact = styled.section`
   padding: 1rem;
-  top: 3rem;
+  padding-left: 0;
   position: fixed;
   background-color: #404040;
-  width: 53.8rem;
+  width: 52rem;
   height: 14rem;
+  z-index: 2;
+`;
+
+const FilterBox = styled.input`
+  background-color: #303030;
+  padding: 0.3rem;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+  border: 1px solid transparent;
+
+  &:focus {
+    box-shadow: -1px -1px 9px white;
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: -1px -1px 9px #303030;
+  }
 `;
 
 // Implementation -----------------------------------------------------------------------------------------------------
@@ -79,7 +102,7 @@ export const Artifacts = () => {
     try {
       setArtifactName(replaceChosenArtifactName);
     } catch (error) {}
-  }, []);
+  }, [replaceChosenArtifactName]);
 
   useEffect(() => {
     if (GET_LOCALSTORAGE(ARTIFACTS) === null) {
@@ -107,23 +130,13 @@ export const Artifacts = () => {
             : getFirstArtifactMatches(artifactName)
         )}
       </ClickedArtifact>
-      <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
-        <button
-          onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
-        >
-          {direction}
-        </button>
-        <input
-          placeholder="Filter..."
-          onChange={e => setSearchQuery(e.currentTarget.value)}
-          value={searchQuery}
-        />
-      </div>
       {renderArtifactContainer(
         artifacts,
         searchQuery,
         direction,
-        setArtifactName
+        setArtifactName,
+        setDirection,
+        setSearchQuery
       )}
     </div>
   );
@@ -133,9 +146,23 @@ const renderArtifactContainer = (
   artifacts,
   searchQuery,
   direction,
-  setArtifactName
+  setArtifactName,
+  setDirection,
+  setSearchQuery
 ) => (
   <ArtifactContainer>
+    <div style={{ marginBottom: "1rem" }}>
+      <Button
+        onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
+      >
+        {direction}
+      </Button>
+      <FilterBox
+        placeholder="Filter..."
+        onChange={e => setSearchQuery(e.currentTarget.value)}
+        value={searchQuery}
+      />
+    </div>
     {sortNames(
       filterArtifacts(artifacts, searchQuery),
       direction
