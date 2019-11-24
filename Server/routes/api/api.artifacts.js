@@ -23,16 +23,12 @@ router.post("/post", async (req, res, next) => {
   const body = req.body;
   Logger.info("POST Route /artifact/post");
   await body.map(async v => {
-    await searchName(
-      v.name,
-      res,
-      Data.create({ ...v }, error => {
-        if (error) {
-          Logger.error(error);
-          res.status(400).send(error);
-        }
-      })
-    );
+    Data.create({ ...v }, error => {
+      if (error) {
+        Logger.error(error);
+        res.status(400).send(error);
+      }
+    });
   });
   Logger.info(`DB got ${body.length} new entry`);
   res.status(200).send("OK");
@@ -72,13 +68,11 @@ const searchID = async (id, res, next) => {
 const searchName = async (req, res, next) => {
   Logger.info("GET Route /artifact/:name");
   await Data.findOne({ name: req }, (error, artifact) => {
-    artifact
-      ? res.status(200).send(artifact)
-      : res.status(400).send(`No Artifact named ${req} exists in our Database`);
     if (error) {
       Logger.error(error);
       res.status(400).send(`No Artifact named ${req} exists in our Database`);
     }
+    res.status(200).send(artifact);
     next();
   });
   Logger.info("End GET Route /artifact/:name");

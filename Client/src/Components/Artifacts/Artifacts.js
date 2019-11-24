@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
-import Helmet from "react-helmet";
 
+// Relative imports ---------------------------------------------------------------------------------------------------
 import Artifact from "./Artifact";
 import {
   LOADING_ARTIFACT,
   API_URL,
   ARTIFACT_URL
 } from "../../Constants/constants.index";
+import {
+  createHelmet,
+  GET_LOCALSTORAGE,
+  SET_LOCALSTORAGE
+} from "../../helpers/helpers.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 
@@ -58,10 +63,6 @@ const filterArtifacts = (artifacts, query) => {
   );
 };
 
-// FIXME: Refactore into own File with getter and setter
-const GET_LOCALSTORAGE = name => localStorage.getItem(name);
-const SET_LOCALSTORAGE = (name, item) => localStorage.setItem(name, item);
-
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
@@ -74,7 +75,6 @@ export const Artifacts = () => {
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const canvas = document.createElement("canvas");
   useEffect(() => {
     try {
       setArtifactName(replaceChosenArtifactName);
@@ -94,16 +94,17 @@ export const Artifacts = () => {
     }
   }, []);
 
+  const getFirstArtifactMatches = name =>
+    artifacts.filter(artifact => artifact.name === name)[0];
+
   return (
     <div id="content">
       {createHelmet()}
       <ClickedArtifact>
-        {/* FIXME: I am ugly REFACTORE ME!!! */}
         {Artifact(
-          artifacts.filter(artifact => artifact.name === artifactName)[0] ===
-            undefined
+          getFirstArtifactMatches(artifactName) === undefined
             ? LOADING_ARTIFACT[0]
-            : artifacts.filter(artifact => artifact.name === artifactName)[0]
+            : getFirstArtifactMatches(artifactName)
         )}
       </ClickedArtifact>
       <div style={{ marginTop: "17rem", marginBottom: "1rem" }}>
@@ -127,13 +128,6 @@ export const Artifacts = () => {
     </div>
   );
 };
-
-const createHelmet = () => (
-  <Helmet>
-    <title>{`Artifacts`}</title>
-    <meta name="description" content="Helmet application" />
-  </Helmet>
-);
 
 const renderArtifactContainer = (
   artifacts,

@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { stars } from "../atoms/Stars/stars";
-import { LOADING_ARTIFACT } from "../../Constants/constants.index";
 
 const ArtifactStory = styled.section`
   padding: 1rem;
