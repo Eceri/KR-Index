@@ -2,11 +2,12 @@ import path from 'path';
 import webpack from 'webpack';
 
 module.exports = {
-  entry: './js/navBar.js',
+  entry: './js/index.js',
   output: {
     context: path.resolve(__dirname, "src"),
     path: path.resolve(__dirname, 'build'),
     filename: 'main.bundle.js',
+    publicPath: ''
   },
   module: {
     loaders: [
