@@ -1,0 +1,15 @@
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
+    force = false
+[[redirects]]
+    from = "/heroes/*.png"
+    to = "/static/:splat"
+    status = 301
+    force = false
+[[redirects]]
+    from = "/heroes/*"
+    to = "/heroes/:splat"
+    status = 301
+    force = false
