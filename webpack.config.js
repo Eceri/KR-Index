@@ -18,7 +18,7 @@ module.exports = {
           presets: ['es2015']
         }
       },
-      { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file" }
+      { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "url-loader" }
     ]
   },
   stats: {
