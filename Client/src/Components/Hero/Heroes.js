@@ -38,7 +38,7 @@ export const Heroes = () => {
         {heroClass.heroes.sort().map(hero => (
           <Link to={`/heroes/${hero}`} key={hero}>
             <Image
-              src={`heroes/${hero}/portrait.png`}
+              src={`heroes/${hero.toLowerCase()}/portrait.png`}
               dataTip={hero}
               className="heroIcon"
             />

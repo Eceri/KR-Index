@@ -1,3 +1,4 @@
 
 /heroes/* /heroes/:splat
 /artifacts/* /artifacts/:splat
+/static/*   /static
