@@ -1,5 +1,3 @@
 /heroes/static/*    /static/:splat
-/heroes/   /heroes/
 /artifacts/static/*    /static/:splat
-/artifacts/ /artifacts/
 /* /    200
