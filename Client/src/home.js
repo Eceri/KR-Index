@@ -1,22 +1,21 @@
-import React, { Component } from "react";
-export class Home extends Component {
-  render() {
-    return (
-      <React.Fragment>
+import React from "react";
+
+export const Home = () => {
+  return (
+    <React.Fragment>
+      <div>
+        <h1 style={{textAlign: "center"}}>Welcome to KRC</h1>
+        <p></p>
         <div>
-          <h1>Welcome to KRC</h1>
-          <p>This is a WIP. Only Seria and Aselica work so far.</p>
-          <div>
-            Currently working on:
+          Currently working on:
           <ul>
-              <li>Hero Page</li>
-              <li>Artifacts</li>
-            </ul>
-          </div>
+            <li>Adding hero data to the DB</li>
+            <li>Artifacts?</li>
+          </ul>
         </div>
-      </React.Fragment>
-    );
-  }
+      </div>
+    </React.Fragment>
+  );
 }
 
 export default Home;
