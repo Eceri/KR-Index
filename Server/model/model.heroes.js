@@ -6,6 +6,10 @@ const positions = [
   "Middle",
   "Back"
 ]
+const damageTypes = [
+  "magic",
+  "physical"
+]
 const DataSchema = new Schema(
   { //TODO: go through heroes.json and see what can be added were in the Schema!
     id: Number,
@@ -17,6 +21,7 @@ const DataSchema = new Schema(
     },
     title: String,
     class: String,
+    damageType: damageTypes,
     position: positions,
     weapon: {
       uniqueWeapon: {
@@ -71,6 +76,23 @@ const DataSchema = new Schema(
       itemStories: {
         uniqueWeapon: String, 
         uniqueTreasure: [String]
+      },
+      dialog: {
+        idle: String,
+        recruiting: {
+            greet: String,
+            conversation: [String],
+            gift: String
+        },
+        affinty: {
+          greet: String,
+          conversation: [String],
+          gift: String
+        },
+        relationship: {
+          greet: String,
+          conversation: [String]
+        }
       },
       voice: {
         actor: {
