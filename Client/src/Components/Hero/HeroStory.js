@@ -60,7 +60,7 @@ export const HeroStory = props => {
       <div className="headline">
         <Image src={`${heroPath}portrait.png`}
           className="uw" />
-        <h2>Unique Weapon</h2>
+        <h2>{name}</h2>
       </div>
       <p className={"story"}>{backgroundData.story}</p>
     </div>
@@ -71,10 +71,10 @@ export const HeroStory = props => {
           className="uw" />
         <h2>Unique Weapon</h2>
       </div>
-      <p className="story">{backgroundData.itemStories.uw}</p>
+      <p className="story">{backgroundData.itemIntroductions.weapon}</p>
     </div>
     <hr className="seperator" />
-    {backgroundData.itemStories.uts.map((utStory, index) => (
+    {backgroundData.itemIntroductions.treasures.map((utStory, index) => (
       <div key={`ut${index + 1}Story`}>
         <div className="headline">
           <Image src={`${heroPath}ut${index + 1}.png`}

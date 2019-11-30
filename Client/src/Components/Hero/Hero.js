@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/hero.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "../styles/tabStyles.css";
 import Helmet from "react-helmet";
 import {
   Image,
@@ -10,7 +8,10 @@ import {
   HeroSkins,
   HeroVoice
 } from "./../components";
-import "../styles/heroSkills.css";
+import ReactTooltip from "react-tooltip"
+//import css
+import "../styles/hero.css";
+import "../styles/tabStyles.css";
 
 export const Hero = props => {
   let heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`)
@@ -37,13 +38,18 @@ export const Hero = props => {
             src={`classes/${heroInfo.class}.png`}
             id={"heroClassIcon"}
             style={{ border: "none" }}
+            dataTip={heroInfo.class}
           />
           <Image src={`${heroInfo.damageType}.png`}
             id={"damageType"}
-            style={{ border: "none" }} />
+            alt={"dmg type"}
+            style={{ border: "none" }}
+            dataTip={heroInfo.damageType}
+           />
           <p>{heroInfo.position}</p>
         </div>
       </div>
+        <ReactTooltip border={true} />
     </div>
     <Tabs>
       <TabList>

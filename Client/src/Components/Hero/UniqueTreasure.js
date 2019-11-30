@@ -12,11 +12,11 @@ export const UniqueTreasure = props => {
       <div className="flexBox">
         <Image src={utPath} alt={`Unique Treasure ${skill.id}`} />
         <div>
-          <h3>{skill.ut.name}</h3>
+          <h3>{skill.uniqueTreasure.name}</h3>
           {stars(setStars, star)}
         </div>
       </div>
-      <p>{skill.ut.effect[star]}</p>
+      <p>{skill.uniqueTreasure.effect[star]}</p>
     </div>
   );
 };
