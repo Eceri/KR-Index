@@ -16,8 +16,8 @@ export const HeroGeneral = props => {
     <hr />
     <div id={"skills"}>
       <HeroSkill skill={heroInfo.skills[0]} heroPath={heroPath} />
-      <HeroSkill skill={heroInfo.skills[2]} heroPath={heroPath} />
       <HeroSkill skill={heroInfo.skills[1]} heroPath={heroPath} />
+      <HeroSkill skill={heroInfo.skills[2]} heroPath={heroPath} />
       <HeroSkill skill={heroInfo.skills[3]} heroPath={heroPath} />
     </div>
     <h2 className="subSectionHeadline">Transcendence</h2>
