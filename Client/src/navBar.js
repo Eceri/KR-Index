@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { sortNames } from "./Components/components";
+import DATA from "./TestJSON/data";
+import HEROES from "./TestJSON/heroes";
 
 import styled from "styled-components";
 

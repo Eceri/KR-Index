@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "node -r esm app.js"
+    "start": "node -r esm app.js",
+    "docs": "apidoc -i .\\routes\\api\\ -o apidoc/"
   },
   "dependencies": {
+    "apidoc": "^0.18.0",
     "body-parser": "^1.19.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
@@ -14,5 +16,10 @@
   "keywords": [
     "heroku",
     "API"
-  ]
+  ],
+  "apidoc": {
+    "version": "0.0.2",
+    "title": "KRC API for Artifacts",
+    "url": "https://krc-api.herokuapp.com/api/"
+  }
 }

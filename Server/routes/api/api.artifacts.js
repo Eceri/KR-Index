@@ -5,11 +5,19 @@ import Data from "../../model/model.artifacts";
 
 const router = express.Router();
 
+/**
+ * @api {get} artifacts/
+ */
 router.get("/", async (req, res, next) => {
   const childLogger = Logger.child({ requestId: "451" });
   childLogger.info("GET Route /");
   try {
-    const result = await Data.find();
+    let result = await Data.find();
+    result = result.sort((a, b) => {
+      if (a.name > b.name) return 1;
+      if (a.name < b.name) return -1;
+      return 0;
+    });
     res.status(200).send(result);
     childLogger.info(`Found ${Object.keys(result).length} entries`);
   } catch (error) {
