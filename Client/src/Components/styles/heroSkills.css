@@ -34,7 +34,14 @@ p:hover {
 .bookEffects{
     display: flex;
     align-items: center;
+    margin: 0 .5rem;
     flex: 1;
+}
+.bookEffects:first-child{
+    margin: 0 .5rem 0 0;
+}
+.bookEffects:last-child{
+    margin: 0 0 0 .5rem;
 }
 .bookEffects > img{
     height: 30px;

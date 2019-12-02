@@ -17,6 +17,10 @@ let heroesClasses = [
   {
     name: "Assassin",
     heroes: ["Epis"]
+  },
+  {
+    name: "Mechanics",
+    heroes: ["Annette"]
   }
 ];
 // TODO: change the routing to accomodate a heroes overview.
@@ -44,7 +48,7 @@ export const Heroes = () => {
             />
           </Link>
         ))}
-        <ReactToolTip multiline={true} border={true} className={"tooltip"} />
+        <ReactToolTip border={true} className={"tooltip"} />
       </div>
     </div>
     )

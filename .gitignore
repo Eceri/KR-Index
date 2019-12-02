@@ -11,6 +11,7 @@
 # production
 /build
 /Client/build
+krc.code-workspace
 
 # misc
 .DS_Store

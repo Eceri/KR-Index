@@ -11,13 +11,14 @@ export const HeroGeneral = props => {
   let { heroPath, heroInfo } = props
   return <>
     <h2> Unique Weapon </h2> <hr />
-    <UniqueWeapon heroPath={heroPath} uw={heroInfo.uw} sw={heroInfo.sw} />
+    <UniqueWeapon heroPath={heroPath} weapon={heroInfo.weapon} />
     <h2 className="subSectionHeadline">Skills</h2>
     <hr />
     <div id={"skills"}>
-      {heroInfo.skills.map(skill => (
-        <HeroSkill skill={skill} heroPath={heroPath} key={skill.id} />
-      ))}
+      <HeroSkill skill={heroInfo.skills[0]} heroPath={heroPath} />
+      <HeroSkill skill={heroInfo.skills[1]} heroPath={heroPath} />
+      <HeroSkill skill={heroInfo.skills[2]} heroPath={heroPath} />
+      <HeroSkill skill={heroInfo.skills[3]} heroPath={heroPath} />
     </div>
     <h2 className="subSectionHeadline">Transcendence</h2>
     <hr />

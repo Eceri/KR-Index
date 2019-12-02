@@ -1,8 +1,10 @@
 import React from "react";
 import { Image, UniqueTreasure } from "../components";
 
+import "./../styles/heroSkills.css"
+
 export const HeroSkill = props => {
-  let { heroPath, skill, } = props
+  let { heroPath, skill } = props
   const manaCost = n => {
     let orbs = [];
     for (let i = 0; i < n; ++i) {
@@ -13,8 +15,7 @@ export const HeroSkill = props => {
   return (
     <div className="skill" key={skill.id}>
       {skill.skillInfo.map((skillInfo, index) => (
-        <div key={skillInfo.skillNumber}
-          className={skillInfo.linked && index > 0 ? "linkedSkill" : ""}>
+        <div key={skillInfo.skillNumber} className={skillInfo.linked && index > 0 && "linkedSkill"}>
           <div className="flexBox">
             <Image
               src={`${heroPath}${skillInfo.skillNumber}.png`}
@@ -31,7 +32,7 @@ export const HeroSkill = props => {
               )}
             </div>
           </div>
-          <p className={"description"}>{skillInfo.effect}</p>
+          <p className={"description"}>{skillInfo.description}</p>
         </div>
       ))}
       <div className="books">
@@ -50,6 +51,7 @@ export const HeroSkill = props => {
         <div className="flexBox">
           <Image
             src={`${heroPath}s${skill.id}l.png`}
+            alt="light"
             className={"perkIcon"}
           />
           <p> {skill.light}</p>
@@ -57,6 +59,7 @@ export const HeroSkill = props => {
         <div className="flexBox">
           <Image
             src={`${heroPath}s${skill.id}d.png`}
+            alt="dark"
             className={"perkIcon"}
           />
           <p>{skill.dark}</p>
