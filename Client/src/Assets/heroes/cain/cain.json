@@ -1,0 +1,199 @@
+{
+    "name": "Cain",
+    "title": "The Immortal God King",
+    "class": "wizard",
+    "damageType": "physical",
+    "position": "Middle",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Might of the God King, Tyrannicus",
+            "effect": [
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 20% chance.\n[Tyrant] Increases P.DMG the target takes by 20% for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 2$% chance.\n[Tyrant] Increases P.DMG the target takes by 2$% for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 29% chance.\n[Tyrant] Increases P.DMG the target takes by 29% for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 35% chance.\n[Tyrant] Increases P.DMG the target takes by 35% for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 42% chance.\n[Tyrant] Increases P.DMG the target takes by 42% for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 50% chance.\n[Tyrant] Increases P.DMG the target takes by 50% for 3 sec."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "No info yet.",
+            "advancement1": "No info yet.",
+            "advancement2": "No info yet.",
+            "activation": "No info yet.",
+            "cd": 0,
+            "charges": 0
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Tremble!",
+                    "description": "Cain heals the ally with the lowest HP and grants the ally with [The God King’s Blessing] for 5 seconds, which reduces All DMG the ally receives 30% and grants immunity to CC. After 5 seconds, Cain dispels negative effects from the target and the allies nearby. Afterwards, heals their HP. [The God King’s Blessing] is irremovable.",
+                    "cooldown": 12,
+                    "cost": 2
+                },
+                {
+                    "skillNumber": "s1_2",
+                    "name": "Kneel.",
+                    "description": "Cain deals P.DMG to the enemy with the highest ATK and casts [Sealing Technique of the Tyrant] that reduces the target's ATK Spd 350 and prevents the target from receiving any positive effects for 5 sec. After 5 sec, Cain deals P.DMG to the target and the enemies nearby, inflicting stun for 3 sec. [Sealing Technique of the Tyrant] is irremovable.",
+                    "cooldown": 12,
+                    "cost": 2
+                }
+            ],
+            "light": "[Tremble] The effect applies to 3 allies, but all the effects that activate after few will not be activated.",
+            "dark": "[Kneel] The effect apples to 3 enemies, but all the effects that activate after few will not be activated.",
+            "books": [
+                "Increases DMG and Heal Rate by 10%.",
+                "Increases DMG and Heal Rate by 15%.",
+                "Increases DMG and Heal Rate by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Rune of the Flow",
+                "effect": [
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 10%.\n[Kneel] Reduces Mana Cost by 1.",
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 12%.\n[Kneel] Reduces Mana Cost by 1.",
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 14%.\n[Kneel] Reduces Mana Cost by 1.",
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 17%.\n[Kneel] Reduces Mana Cost by 1.",
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 21%.\n[Kneel] Reduces Mana Cost by 1.",
+                    "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional 25%.\n[Kneel] Reduces Mana Cost by 1."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Behold My Might.",
+                    "description": "Cain turns into a [Tyrant] and constantly attacks the target, dealing P.DMG with each hit. While Cain is in [Tyrant] form, [Tremble!] and [Gaze Upon My Almighty Power!] change to [Kneel.] and [Now Die.]. Upon using the Skill again, he returns to [God King] form.\n[The God King’s Mercy] - While Cain is in God King form, reduces DMG all allies take 10%.\n[Dignity of the Tyrant] – While Cain is in Tyrant form, increases DMG all enemies take 10%.",
+                    "cooldown": 8,
+                    "cost": 2
+                }
+            ],
+            "light": "Each stack of [King of the Desert] increases the DMG of this Skill by 30%",
+            "dark": "Reduces Cooldown by 4 sec, and during Auto Battle, allows Cain to return to God King form after turning into Tyrant form.",
+            "books": [
+                "Increases DMG by 10%.",
+                "Increases DMG by 15%.",
+                "Increases DMG by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Eye of the God King",
+                "effect": [
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 10%.",
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 12%.",
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 14%.",
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 17%.",
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 21%.",
+                    "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by 25%."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Gaze Upon My Almighty Power!",
+                    "description": "Increases All DEF of allies nearby self by 4,630 for 10 sec 10 times. DEF Boost effect stacks up to 10 time(s), and if this Skill is cast on an ally with 10 stacks, increases the target’s ATK 133200 and grants immunity to CC for 10 sec.",
+                    "cooldown": 25,
+                    "cost": 3
+                },
+                {
+                    "skillNumber": "s3_2",
+                    "name": "Now Die",
+                    "description": "Places a [Gate of Hell] in frontal area of self for 3sec, dealing dealing P.DMG to enemies in range over 10 attack(s) and pulling them to the center. Afterwards, explodes the [Gate of hell], dealing P.DMG and stunning the enemies for 3 sec.",
+                    "cooldown": 25,
+                    "cost": 4
+                }
+            ],
+            "light": "[Gaze Upon My Almighty Power!] Increases the duration of the effect by 10 sec.",
+            "dark": "[Now Die.] Reduces mana cost by 1.",
+            "books": [
+                "Increases ATK Boost and DMG by 10%.",
+                "Increases ATK Boost and DMG by 15%.",
+                "Increases ATK Boost and DMG by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Chest of Integrity",
+                "effect": [
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 10% for 10 sec.",
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 12% for 10 sec.",
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 15% for 10 sec.",
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 17% for 10 sec.",
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 21% for 10 sec.",
+                    "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by 25% for 10 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "I Am the King of the Desert.",
+                    "description": "At the beginning of each battle, gains an irremoveable stack of [King of the Desert]. Each Stack of of [King of the Desert] increases the effect of [The God King's Mercy and [Dignity of the Tyrant] by 5%. Additionally, recovers 100 Mana every second, and increases ATK by 11591. If [King of the Desert] is stacked 3 time(s) or more, self deals 50% increased DMG to Bosses. [King of the Desert] can be stacked up to 5 times."
+                }
+            ],
+            "light": "DMG Boost against Bosses changes to 100%.",
+            "dark": "Mana recovery per sec changes to 150.",
+            "books": [
+                "Increases ATK boost by 10%.",
+                "Increases ATK boost by 15%.",
+                "Increases ATK boost by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Archive of Sekireinel",
+                "effect": [
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 20%.",
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 24%.",
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 29%.",
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 35%.",
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 42%.",
+                    "[I Am the King of the Desert.] Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by 50%."
+                ]
+            }
+        }
+    ],
+    "light": "HP +10%",
+    "dark": "At the beginning of each battle, consumes 20% of self's current HP and increases ATK of all allies by 20% for 20 sec. If there 3 or less allies, reduces DMG that all allies take by 30%",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "missing",
+            "dislikes": "missing"
+        },
+        "story": "missing",
+        "itemIntroductions": {
+            "weapon": "missing",
+            "treasures": [
+                "missing",
+                "missing",
+                "missing",
+                "missing"
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}
