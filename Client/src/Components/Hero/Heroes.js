@@ -8,7 +8,7 @@ import "./../styles/Heroes.css";
 let heroesClasses = [
   {
     name: "Knight",
-    heroes: ["Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia", "Aselica", "Sonia"]
+    heroes: ["Aselica", "Sonia"]
   },
   {
     name: "Warrior",
