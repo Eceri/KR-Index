@@ -1,1 +1,185 @@
-{"name":"Lilia","title":"The Daughter of Storm and Sea","class":"wizard","damageType":"physical","position":"Back","weapon":{"uniqueWeapon":{"name":"Infinite Spring, Cielamaha","effect":["Mana is recovered by 50 per each sec, and upon each ATK there is an 80% chance of dealing 20% of ATK as P.DMG.","Mana is recovered by 60 per each sec, and upon each ATK there is an 80% chance of dealing 24% of ATK as P.DMG.","Mana is recovered by 70 per each sec, and upon each ATK there is an 80% chance of dealing 28% of ATK as P.DMG.","Mana is recovered by 85 per each sec, and upon each ATK there is an 80% chance of dealing 34% of ATK as P.DMG.","Mana is recovered by 105 per each sec, and upon each ATK there is an 80% chance of dealing 42% of ATK as P.DMG.","Mana is recovered by 125 per each sec, and upon each ATK there is an 80% chance of dealing 50% of ATK as P.DMG."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Aqua Tempest","description":"For 8 sec, summons Aqua Tempest to a random target and enemies in target's range and deals ??? P.DMG every 0.5 sec. If the target is killed, Aqua Tempest is summoned to attack another random target for the remaining time.","cooldown":8,"cost":3}],"light":"Hit target's ATK Spd is decreased by 250 for 10 sec.","dark":"Each use increases DMG by 20%. Stacks 15 times max.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Whisper of Sea","effect":["[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 10% increased P.DMG.","[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 12% increased P.DMG.","[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 14% increased P.DMG.","[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 17% increased P.DMG.","[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 21% increased P.DMG.","[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 25% increased P.DMG."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Everlasting Oasis","description":"When activated, turns into the Everlasting Oasis state for 15 sec. During the Everlasting Oasis state, mana recovery rate per sec is increased by 150% and ATK is increased by ???. Additionally, all DEF is increased by ???.","cooldown":20,"cost":3}],"light":"Mana cost is increased by 1 and is additionally activated on the ally with the highest ATK excluding self.","dark":"Skill duration is decreased by 5 sec and all effects are increased by 100%.","books":["Mana recovery and ATK boost are increased by 10%.","Mana recovery and ATK boost are increased by 15%.","Mana recovery and ATK boost are increased by 25%."],"uniqueTreasure":{"name":"Heart of Flow","effect":["[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 20% during skill duration.","[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 24% during skill duration.","[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 29% during skill duration.","[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 35% during skill duration.","[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 42% during skill duration.","[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 50% during skill duration."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Celestial Cataract","description":"Throws water drops 15 times to random enemies, dealing a total of ??? P.DMG. Additionally, throws big water drops 5 times to target and other enemies in target's range, dealing ??? P.DMG. Enemies hit by the big water drop are inflicted by Stun for 2 sec. Per each water drop thrown, ??? mana is consumed, and mana consumption rate is increased by ???. Stops use when mana becomes 0.","cooldown":12,"cost":3}],"light":"While in use, gain immunity to CC.","dark":"Per each water drop thrown, mana cost and mana consumption rate are increased by 100%, and per each water drop thrown, there is a 50% chance of throwing an extra water drop.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Bottomless Kettle of Elementals","effect":["[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2% for 7 sec.","[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2.4% for 7 sec.","[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2.9% for 7 sec.","[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 3.5% for 7 sec.","[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 4.2% for 7 sec.","[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 5% for 7 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Aqua Purification","description":"Mana recovery upon ATK is fixed, but own ATK is increased by ??? and mana recovery per sec is increased to 120. Per 6 mana recovery per sec, ATK is increased by 1%."}],"light":"At the start of each battle, recovers 1000 mana.","dark":"Deals 15% increased DMG to Boss monsters.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Key of Purity","effect":["[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 30% for 5 sec.","[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 36% for 5 sec.","[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 43% for 5 sec.","[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 52% for 5 sec.","[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 63% for 5 sec.","[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 75% for 5 sec."]}}],"light":"ATK, DEF, HP+15% / Crit DMG +20%","dark":"ATK is increased by 15% per 1 orb of mana.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Laias, sweet drinks, people in the desert","dislikes":"Those flirting with her sister (Neraxis, Cain)"},"story":"A God Dragon of the Oasis and a sister of the Priestess of Water. Laias. She is still a young Blue Dragon who loves her sister who is much older than her. When Laias fell into a deep sleep after exhausting her powers in the battle 100 years ago, Lilia defended the Shrine of Flow on her own. It was when she heard the children of the desert making desperate prayers that she finally woke up the Priestess of Water to protect them. Unlike her mild and thoughtful sister, she is somewhat strict, and the way she controls the power of flow and water is more aggressive, too. She feels the need to protect her beautiful sister against flirting, unworthy men.","itemIntroductions":{"weapon":"An infinite spring that endlessly spouts water. It is a jar made by the first Blue Dragon, who ruled all waters on earth. It reacts to the imagination of the user. To a young, sensitive and creative girl like Lilia, it is the greatest treasure and weapon.","treasures":["A hairpin, made with gemstones and coral stones from the Sea of Eternity, that Laias gave to Lilia. It looks like a simple hairpin for a child, but the materials from the Sea of Eternity contain the energy of Water Dragons, making Lilia's Aqua Tempest much more powerful.","A gold necklace for girls that Laias crafted for Lilia with a Gem of Protection. It gleams with the energy of water elementals in it. It is a symbol of Laias's care for her little sister.","A kettle that Lilia's old cacti friends made for her on her birthday. The kettle infinitely produces the cleanest and purest water there is. However, if too much water is used at once, it shuts its spout, which is a featured added by the Cacti to help Lilia stay in control of the water until she becomes more skilled at it.","A sacred key found in the center of the oasis. When the tribe was performing an evil-purging ritual for the First Water Dragon, a strange chest floated up in the center of oasis. No one could open it until Lilia came, summoned by her tribespeople. The chest started shaking as soon as Lilia approached, and it opened on its own after releasing a bright light. Inside the chest was a key. Lilia knew as soon as she saw it that it was not an ordinary key and has been keeping it safe until now. What it opens is still unknown, but it is certain that the key maximizes Lilia's purifying powers."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Lilia",
+    "title": "The Daughter of Storm and Sea",
+    "class": "wizard",
+    "damageType": "physical",
+    "position": "Back",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Infinite Spring, Cielamaha",
+            "effect": [
+                "Mana is recovered by 50 per each sec, and upon each ATK there is an 80% chance of dealing 20% of ATK as P.DMG.",
+                "Mana is recovered by 60 per each sec, and upon each ATK there is an 80% chance of dealing 24% of ATK as P.DMG.",
+                "Mana is recovered by 70 per each sec, and upon each ATK there is an 80% chance of dealing 28% of ATK as P.DMG.",
+                "Mana is recovered by 85 per each sec, and upon each ATK there is an 80% chance of dealing 34% of ATK as P.DMG.",
+                "Mana is recovered by 105 per each sec, and upon each ATK there is an 80% chance of dealing 42% of ATK as P.DMG.",
+                "Mana is recovered by 125 per each sec, and upon each ATK there is an 80% chance of dealing 50% of ATK as P.DMG."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "Summons the soul of Infinite Spring, Cielamaha for 12 sec. Normal and Skill attacks have a 10% chance to deal xxx additional P.DMG.",
+            "advancement1": "Fully recovers Mana for the duration of Skill.",
+            "advancement2": "Increases DMG by 100%.",
+            "activation": "Charges up upon dealing DMG 70 times.",
+            "cd": 22,
+            "charges": 6
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Aqua Tempest",
+                    "description": "For 8 sec, summons Aqua Tempest to a random target and enemies in target's range and deals ??? P.DMG every 0.5 sec. If the target is killed, Aqua Tempest is summoned to attack another random target for the remaining time.",
+                    "cooldown": 8,
+                    "cost": 3
+                }
+            ],
+            "light": "Hit target's ATK Spd is decreased by 250 for 10 sec.",
+            "dark": "Each use increases DMG by 20%. Stacks 15 times max.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Whisper of Sea",
+                "effect": [
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 10% increased P.DMG.",
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 12% increased P.DMG.",
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 14% increased P.DMG.",
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 17% increased P.DMG.",
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 21% increased P.DMG.",
+                    "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take 25% increased P.DMG."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Everlasting Oasis",
+                    "description": "When activated, turns into the Everlasting Oasis state for 15 sec. During the Everlasting Oasis state, mana recovery rate per sec is increased by 150% and ATK is increased by ???. Additionally, all DEF is increased by ???.",
+                    "cooldown": 20,
+                    "cost": 3
+                }
+            ],
+            "light": "Mana cost is increased by 1 and is additionally activated on the ally with the highest ATK excluding self.",
+            "dark": "Skill duration is decreased by 5 sec and all effects are increased by 100%.",
+            "books": [
+                "Mana recovery and ATK boost are increased by 10%.",
+                "Mana recovery and ATK boost are increased by 15%.",
+                "Mana recovery and ATK boost are increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Heart of Flow",
+                "effect": [
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 20% during skill duration.",
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 24% during skill duration.",
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 29% during skill duration.",
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 35% during skill duration.",
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 42% during skill duration.",
+                    "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by 50% during skill duration."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Celestial Cataract",
+                    "description": "Throws water drops 15 times to random enemies, dealing a total of ??? P.DMG. Additionally, throws big water drops 5 times to target and other enemies in target's range, dealing ??? P.DMG. Enemies hit by the big water drop are inflicted by Stun for 2 sec. Per each water drop thrown, ??? mana is consumed, and mana consumption rate is increased by ???. Stops use when mana becomes 0.",
+                    "cooldown": 12,
+                    "cost": 3
+                }
+            ],
+            "light": "While in use, gain immunity to CC.",
+            "dark": "Per each water drop thrown, mana cost and mana consumption rate are increased by 100%, and per each water drop thrown, there is a 50% chance of throwing an extra water drop.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Bottomless Kettle of Elementals",
+                "effect": [
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2% for 7 sec.",
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2.4% for 7 sec.",
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 2.9% for 7 sec.",
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 3.5% for 7 sec.",
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 4.2% for 7 sec.",
+                    "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by 5% for 7 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Aqua Purification",
+                    "description": "Mana recovery upon ATK is fixed, but own ATK is increased by ??? and mana recovery per sec is increased to 120. Per 6 mana recovery per sec, ATK is increased by 1%."
+                }
+            ],
+            "light": "At the start of each battle, recovers 1000 mana.",
+            "dark": "Deals 15% increased DMG to Boss monsters.",
+            "books": [
+                "ATK boost is increased by 10%.",
+                "ATK boost is increased by 15%.",
+                "ATK boost is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Key of Purity",
+                "effect": [
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 30% for 5 sec.",
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 36% for 5 sec.",
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 43% for 5 sec.",
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 52% for 5 sec.",
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 63% for 5 sec.",
+                    "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by 75% for 5 sec."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / Crit DMG +20%",
+    "dark": "ATK is increased by 15% per 1 orb of mana.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Laias, sweet drinks, people in the desert",
+            "dislikes": "Those flirting with her sister (Neraxis, Cain)"
+        },
+        "story": "A God Dragon of the Oasis and a sister of the Priestess of Water. Laias. She is still a young Blue Dragon who loves her sister who is much older than her. When Laias fell into a deep sleep after exhausting her powers in the battle 100 years ago, Lilia defended the Shrine of Flow on her own. It was when she heard the children of the desert making desperate prayers that she finally woke up the Priestess of Water to protect them. Unlike her mild and thoughtful sister, she is somewhat strict, and the way she controls the power of flow and water is more aggressive, too. She feels the need to protect her beautiful sister against flirting, unworthy men.",
+        "itemIntroductions": {
+            "weapon": "An infinite spring that endlessly spouts water. It is a jar made by the first Blue Dragon, who ruled all waters on earth. It reacts to the imagination of the user. To a young, sensitive and creative girl like Lilia, it is the greatest treasure and weapon.",
+            "treasures": [
+                "A hairpin, made with gemstones and coral stones from the Sea of Eternity, that Laias gave to Lilia. It looks like a simple hairpin for a child, but the materials from the Sea of Eternity contain the energy of Water Dragons, making Lilia's Aqua Tempest much more powerful.",
+                "A gold necklace for girls that Laias crafted for Lilia with a Gem of Protection. It gleams with the energy of water elementals in it. It is a symbol of Laias's care for her little sister.",
+                "A kettle that Lilia's old cacti friends made for her on her birthday. The kettle infinitely produces the cleanest and purest water there is. However, if too much water is used at once, it shuts its spout, which is a featured added by the Cacti to help Lilia stay in control of the water until she becomes more skilled at it.",
+                "A sacred key found in the center of the oasis. When the tribe was performing an evil-purging ritual for the First Water Dragon, a strange chest floated up in the center of oasis. No one could open it until Lilia came, summoned by her tribespeople. The chest started shaking as soon as Lilia approached, and it opened on its own after releasing a bright light. Inside the chest was a key. Lilia knew as soon as she saw it that it was not an ordinary key and has been keeping it safe until now. What it opens is still unknown, but it is certain that the key maximizes Lilia's purifying powers."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

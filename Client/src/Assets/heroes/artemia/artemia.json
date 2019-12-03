@@ -17,13 +17,13 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
-        }
+            "advancement0": "Summons the soul of Brilliant Praise, Brauxio for 8 sec, increasing all allies' ATK by 40% and DEF by 40%.",
+            "advancement1": "Reduces DMG all allies take from enemies by 30% for the duration of the Skill.",
+            "advancement2": "Dispels negative effects from all allies and dispels positive effects from all enemies every 1 sec for the duration of the Skill.",
+            "activation": "Charges up upon dealing DMG 150 times.",
+            "cd": 24,
+            "charges": 6
+}
     },
     "skills": [
         {

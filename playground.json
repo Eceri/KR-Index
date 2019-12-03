@@ -1,0 +1,9 @@
+Glenwys:
+"soulWeapon": {
+            "advancement0": "Summons the soul of The Counterattack, Maxithea, healing all allies' HP by 33224 and increasing DEF by 50% for 10 sec. Afterward, sends the sould charging to the front, dealing xxx P.DMG to enemies within range and knocking them down for 5 sec.",
+            "advancement1": "For the duration of Skill, increases own DEF by 50%, and increases ATK of all allies except for self by 40%.",
+            "advancement2": "Upon activation, dispels negative effects from all allies. When the soul charges, it dispels positive effects from all enemies within range, and increases P.DMG the target takes by 25% for 10 sec.",
+            "activation": "Charges up every sec and every time self takes DMG. This Skill can be cast upon gaining 80 charges.",
+            "cd": 20,
+            "charges": 6
+}  
