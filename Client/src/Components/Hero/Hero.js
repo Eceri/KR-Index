@@ -21,6 +21,7 @@ export const Hero = props => {
     <Helmet>
       <title>{`${heroInfo.name}`}</title>
       <meta name="description" content={`${heroInfo.name} - ${heroInfo.title}`} />
+      <link rel="icon" href={`/Assets/heroes/${heroPath}portrait.png`} sizes="124x124" />
     </Helmet>
   );
   return <>
