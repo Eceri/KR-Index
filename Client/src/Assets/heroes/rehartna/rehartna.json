@@ -32,7 +32,7 @@
                 {
                     "skillNumber": "s1",
                     "name": "Release! Ultrasonic Wave!",
-                    "description": "Attacks frontal enemies in a straight line, dealing P.DMG over 4 times. Each hit inflicts stun for 3 sec, and reduces enemies atk by 25% for 10 sec.",
+                    "description": "Attacks frontal enemies in a straight line, dealing a total of ??? P.DMG over 4 times. Each hit inflicts stun for 3 sec, and reduces enemies atk by 25% for 10 sec.",
                     "cooldown": 13,
                     "cost": 2
                 }
@@ -62,7 +62,7 @@
                 {
                     "skillNumber": "s2",
                     "name": "Crystal Clear, Matimaruma!",
-                    "description": "Immediately heals HP of the ally with the lowest HP, creating a shield that absorbs DMG and grants immunity to CC for 10 sec. While the shield is active, heals HP of all allies near the target every sec, and increases All DEF. Enemies take DMG and ahve their ATK Spd reduced by 250.",
+                    "description": "Immediately heals HP of the ally with the lowest HP by ???, creating a shield that absorbs ??? DMG and grants immunity to CC for 10 sec. While the shield is active, heals HP of all allies near the target by ??? every sec, and increases All DEF by ???. Enemies take DMG and ahve their ATK Spd reduced by 250.",
                     "cooldown": 17,
                     "cost": 2
                 }
@@ -92,7 +92,7 @@
                 {
                     "skillNumber": "s3",
                     "name": "You've Never Seen a Weapon Like This!",
-                    "description": "Reduces 4 random allies' Cooldown of all skills by 4 sec. For 15 sec, recovers allies Mana by 150 every sec and increases ATK. Upon every use, ATK Boost effect is increased."
+                    "description": "Reduces 4 random allies' Cooldown of all skills by 4 sec. For 15 sec, recovers allies Mana by 150 every sec and increases ATK by ???. Upon every use, ATK Boost effect is increased by ???."
                 }
             ],
             "light": "The effect applies to 6 allies.",
@@ -120,7 +120,7 @@
                 {
                     "skillNumber": "s4",
                     "name": "Battle March Melody",
-                    "description": "At the beginning of each battle, heals HP of all allies, and increases Heal Rate by 10%. Heal Boost effect can be stacked up to max 3 times, and is irremovable."
+                    "description": "At the beginning of each battle, heals HP of all allies by ???, and increases Heal Rate by 10%. Heal Boost effect can be stacked up to max 3 times, and is irremovable."
                 }
             ],
             "light": "At the beginning of each battle, recovers own mana by 1000.",
