@@ -17,7 +17,7 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "Summons the Soul of The Seductress, Guillotine, and increases own ATK by 40% for 8 sec. For the duration of Skill, Normal and Skill attacks have a 20% chance to deal xxx M.DMG that ignores DEF to a target. If [Absorbing Blow] hits a target, this effect will activate with a 100% chance.",
+            "advancement0": "Summons the Soul of The Seductress, Guillotine, and increases own ATK by 40% for 8 sec. For the duration of Skill, Normal and Skill attacks have a 20% chance to deal ??? M.DMG that ignores DEF to a target. If [Absorbing Blow] hits a target, this effect will activate with a 100% chance.",
             "advancement1": "Activation chance changes to 30%, and DMG increases by 50%.",
             "advancement2": "The M.DMG now ignores Block, and hit enemy takes 30% increased M.DMG for 7 sec.",
             "activation": "Charges up over 18 sec.",

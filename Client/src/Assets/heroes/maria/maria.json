@@ -17,7 +17,7 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "Summons the Soul of Lea's Messenger, Cocytus, dealing xxx M.DMG to frontral enemies in a straight line, knocking them back far away for 3 sec, and inflicting 'Raven Catastrophe' for 10 sec. Targets inflicted with 'Raven Catastrophe' have their ATK reduced by 40%.",
+            "advancement0": "Summons the Soul of Lea's Messenger, Cocytus, dealing ??? M.DMG to frontral enemies in a straight line, knocking them back far away for 3 sec, and inflicting 'Raven Catastrophe' for 10 sec. Targets inflicted with 'Raven Catastrophe' have their ATK reduced by 40%.",
             "advancement1": "Reduces Heal Rate of the target inflicted with Raven Catastrophe by 50%.",
             "advancement2": "Reduces Skill Activation Requirements to 3 times.",
             "activation": "Charges up upon using Skills 4 times.",

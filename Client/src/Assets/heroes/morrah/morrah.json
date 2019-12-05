@@ -17,7 +17,7 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "Deals M.DMG to nearby enemies within a circular range of self and knocks them down for 3 sec. Afterwards, summons Flame of Victory, Carprain for 13 sec, increasing self's ATK by 60%.",
+            "advancement0": "Deals ??? M.DMG to nearby enemies within a circular range of self and knocks them down for 3 sec. Afterwards, summons Flame of Victory, Carprain for 13 sec, increasing self's ATK by 60%.",
             "advancement1": "For the duration of Skill, reduces M.DMG all allies take by 50%.",
             "advancement2": "For the duration of Skill, increases M.DMG all nearby enemies take by 40%. The effect is increased by 80% against Bosses.",
             "activation": "Charges up over 18 sec.",

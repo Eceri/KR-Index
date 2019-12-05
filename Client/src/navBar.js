@@ -72,8 +72,8 @@ export const NavBar = () => {
     <nav>
       <Link to={"/"} className={"navLink"}>
         <img
-          src={require("./Assets/iconTest.png")}
-          alt={"nagatoro.jpg"}
+          src={"/iconTest.png"}
+          alt={"nagatoro.png"}
           style={{ width: 24, border: "none" }}
         />
       </Link>

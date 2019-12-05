@@ -17,7 +17,7 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "Summons the soul of Specter's Breath, Redeal for 12 sec, increasing own Crit DMG by 80%. Each time Roi casts Blade Claw, the soul of Specter's Breath, Redeal deals xxx additional DMG.",
+            "advancement0": "Summons the soul of Specter's Breath, Redeal for 12 sec, increasing own Crit DMG by 80%. Each time Roi casts Blade Claw, the soul of Specter's Breath, Redeal deals ??? additional DMG.",
             "advancement1": "Reduces Cooldown by 7 sec.",
             "advancement2": "Inflicts 1 stack(s) of Bleed on the hit enemy.",
             "activation": "Charges up over 22 sec.",

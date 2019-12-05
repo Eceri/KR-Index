@@ -17,7 +17,7 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "Summons the soul of Infinite Spring, Cielamaha for 12 sec. Normal and Skill attacks have a 10% chance to deal xxx additional P.DMG.",
+            "advancement0": "Summons the soul of Infinite Spring, Cielamaha for 12 sec. Normal and Skill attacks have a 10% chance to deal ??? additional P.DMG.",
             "advancement1": "Fully recovers Mana for the duration of Skill.",
             "advancement2": "Increases DMG by 100%.",
             "activation": "Charges up upon dealing DMG 70 times.",
