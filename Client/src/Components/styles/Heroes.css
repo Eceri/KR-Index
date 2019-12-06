@@ -1,11 +1,16 @@
 .heroIcon{
-    width: 96px;
+    width: 95px;
 }
 .heroesContainer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 .heroesContainer > a{
     margin: 0.25rem;
+}
+.classIcon{
+    border: none;
+    width: 20px; 
+    margin-right: .5rem;
 }

@@ -6,63 +6,13 @@ import { Link } from "react-router-dom";
 import "./../styles/Heroes.css";
 
 let heroesClasses = {
-  Knight: [
-    'Phillop', 'Clause',
-    'Demia',   'Morrah',
-    'Jane',    'Ricardo',
-    'Aselica', 'Neraxis',
-    'Sonia',   'Glenwys',
-    'Loman',   'Dosarta'
-  ],
-  Warrior: [
-    'Kasel',    'Gau',
-    'Naila',    'Theo',
-    'Viska',    'Priscilla',
-    'Seria',    'Scarlet',
-    'Kirze',    'Chase',
-    'Bernheim', 'Nicky'
-  ],
-  Assassin: [
-    'Roi',      'Epis',
-    'Reina',    'Fluss',
-    'Tanya',    'Ezekiel',
-    'Erze',     'Laudia',
-    'Mirianne', 'Nia',
-    'Gladi'
-  ],
-  Archer: [
-    'Selene',   'Dimael',
-    'Luna',     'Arch',
-    'Yanne',    'Zafir',
-    'Yuria',    'Requina',
-    'Shamilla'
-  ],
-  Mechanic: [
-    'Lakrak', 'Miruru',
-    'Rodina', 'Annette',
-    'Mitra',  'Oddy',
-    'Crow',   'Chrisha',
-    'Kara',   'Cecilia',
-    'Hanus'
-  ],
-  Wizard: [
-    'Cleo',     'Maria',
-    'Lorraine', 'Pavel',
-    'Aisha',    'Lewisia',
-    'Nyx',      'Ophelia',
-    'Lilia',    'Artemia',
-    'Esker',    'Dakaris',
-    'Veronica', 'Cain'
-  ],
-  Priest: [
-    'Frey',      'Kaulah',
-    'Rephy',     'Baudouin',
-    'Leo',       'Laias',
-    'Cassandra', 'Mediana',
-    'Lavril',    'Lucias',
-    'Shea',      'May',
-    'Juno',      'Rehartna'
-  ]
+  Knight: ['Phillop', 'Clause', 'Demia', 'Morrah', 'Jane', 'Ricardo', 'Aselica', 'Neraxis', 'Sonia', 'Glenwys', 'Loman', 'Dosarta'],
+  Warrior: ['Kasel', 'Gau', 'Naila', 'Theo', 'Viska', 'Priscilla', 'Seria', 'Scarlet', 'Kirze', 'Chase', 'Bernheim', 'Nicky'],
+  Assassin: ['Roi', 'Epis', 'Reina', 'Fluss', 'Tanya', 'Ezekiel', 'Erze', 'Laudia', 'Mirianne', 'Nia', 'Gladi'],
+  Archer: ['Selene', 'Dimael', 'Luna', 'Arch', 'Yanne', 'Zafir', 'Yuria', 'Requina', 'Shamilla'],
+  Mechanic: ['Lakrak', 'Miruru', 'Rodina', 'Annette', 'Mitra', 'Oddy', 'Crow', 'Chrisha', 'Kara', 'Cecilia', 'Hanus'],
+  Wizard: ['Cleo', 'Maria', 'Lorraine', 'Pavel', 'Aisha', 'Lewisia', 'Nyx', 'Ophelia', 'Lilia', 'Artemia', 'Esker', 'Dakaris', 'Veronica', 'Cain'],
+  Priest: ['Frey', 'Kaulah', 'Rephy', 'Baudouin', 'Leo', 'Laias', 'Cassandra', 'Mediana', 'Lavril', 'Lucias', 'Shea', 'May', 'Juno', 'Rehartna']
 }
 // TODO: change the routing to accomodate a heroes overview.
 export const Heroes = () => {
@@ -78,7 +28,9 @@ export const Heroes = () => {
   return <>
     {title}
     {Object.keys(heroesClasses).map(key => <div key={key}>
-      <h2>{key}</h2>
+      <h2>
+        <Image src={`classes/${key.toLowerCase()}.png`} className="classIcon" />
+        {key}s</h2>
       <div className="heroesContainer">
         {heroesClasses[key].sort().map(hero => (
           <Link to={`/heroes/${hero}`} key={hero}>

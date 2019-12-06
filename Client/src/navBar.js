@@ -77,7 +77,7 @@ export const NavBar = () => {
           style={{ width: 24, border: "none" }}
         />
       </Link>
-      <Link to={"/heroes"} className="navLink">
+      <Link to={"/heroes/"} className="navLink">
         Heroes
       </Link>
       <Link to={"/artifacts"} className={"navLink"}>
