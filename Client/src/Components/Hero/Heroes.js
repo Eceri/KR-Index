@@ -10,7 +10,7 @@ let heroesClasses = {
   Warrior: ['Kasel', 'Gau', 'Naila', 'Theo', 'Viska', 'Priscilla', 'Seria', 'Scarlet', 'Kirze', 'Chase', 'Bernheim', 'Nicky'],
   Assassin: ['Roi', 'Epis', 'Reina', 'Fluss', 'Tanya', 'Ezekiel', 'Erze', 'Laudia', 'Mirianne', 'Nia', 'Gladi'],
   Archer: ['Selene', 'Dimael', 'Luna', 'Arch', 'Yanne', 'Zafir', 'Yuria', 'Requina', 'Shamilla'],
-  Mechanic: ['Lakrak', 'Miruru', 'Rodina', 'Annette', 'Mitra', 'Oddy', 'Crow', 'Chrisha', 'Kara', 'Cecilia', 'Hanus'],
+  Mechanic: ['Lakrak', 'Miruru', 'Rodina', 'Annette', 'Mitra', 'Oddy', 'Crow', 'Chrisha', 'Kara', 'Cecilia', 'Hanus', 'Pansirone'],
   Wizard: ['Cleo', 'Maria', 'Lorraine', 'Pavel', 'Aisha', 'Lewisia', 'Nyx', 'Ophelia', 'Lilia', 'Artemia', 'Esker', 'Dakaris', 'Veronica', 'Cain'],
   Priest: ['Frey', 'Kaulah', 'Rephy', 'Baudouin', 'Leo', 'Laias', 'Cassandra', 'Mediana', 'Lavril', 'Lucias', 'Shea', 'May', 'Juno', 'Rehartna']
 }

@@ -8,7 +8,7 @@ body {
   text-align: justify;
   letter-spacing: 0.5px;
 }
-hr{
+hr {
   margin-bottom: 1.5rem;
 }
 h1,
@@ -21,7 +21,7 @@ h3{
 img {
   border: solid lightgrey 1px;
 }
-nav{
+nav {
   width: 100%;
   max-width: inherit;
   position: fixed;
@@ -33,17 +33,17 @@ nav{
   z-index: 2000;
   height: 3rem;
 }
-nav > a{
+nav > a {
 padding: .75rem;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
 nav a:hover{
   background: black;
 }
-p{
+p {
   margin: 0
 }
 footer {
@@ -68,7 +68,7 @@ footer {
 #pageContainer > div {
   margin: 1rem 1rem 1rem 1rem;
 }
-#pageContainer:empty{
+#pageContainer:empty {
   background-color: pink;
 }
 .flexBox {
