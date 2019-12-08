@@ -1,0 +1,185 @@
+{
+    "name": "Rehartna",
+    "title": "title of the hero.",
+    "class": "priest",
+    "damageType": "physical",
+    "position": "Middle",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Anthem of a New Road, Matimaruma",
+            "effect": [
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 10% for 10 sec.",
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 12% for 10 sec.",
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 14% for 10 sec.",
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 17% for 10 sec.",
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 21% for 10 sec.",
+                "Upon using Skills 3 times, dispels negative effects from all allies and reduces all DMG they take by 25% for 10 sec."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "missing",
+            "advancement1": "missing",
+            "advancement2": "missing",
+            "activation": "missing",
+            "cd": 0,
+            "charges": 0
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Release! Ultrasonic Wave!",
+                    "description": "Attacks frontal enemies in a straight line, dealing a total of ??? P.DMG over 4 times. Each hit inflicts stun for 3 sec, and reduces enemies atk by 25% for 10 sec.",
+                    "cooldown": 13,
+                    "cost": 2
+                }
+            ],
+            "light": "Increases mana cost by 1 and dispels positiv effects from the target.",
+            "dark": "Reduces DEF Penetration of the hit target by 250 for 10 sec.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Classified Resistance Document",
+                "effect": [
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 140.",
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 170.",
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 210.",
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 250.",
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 300.",
+                    "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by 360."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Crystal Clear, Matimaruma!",
+                    "description": "Immediately heals HP of the ally with the lowest HP by ???, creating a shield that absorbs ??? DMG and grants immunity to CC for 10 sec. While the shield is active, heals HP of all allies near the target by ??? every sec, and increases All DEF by ???. Enemies take DMG and ahve their ATK Spd reduced by 250.",
+                    "cooldown": 17,
+                    "cost": 2
+                }
+            ],
+            "light": "Reduces mana cost by 1.",
+            "dark": "For the Duration of the skill, enemies within range take 25% increased P.DMG.",
+            "books": [
+                "Shield is increased by 10%.",
+                "Shield is increased by 15%.",
+                "Shield is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Ultrasonic Wave Generator",
+                "effect": [
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 100 and recovers their mana by 150 every sec.",
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 120 and recovers their mana by 150 every sec.",
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 140 and recovers their mana by 150 every sec.",
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 170 and recovers their mana by 150 every sec.",
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 210 and recovers their mana by 150 every sec.",
+                    "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by 250 and recovers their mana by 150 every sec."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "You've Never Seen a Weapon Like This!",
+                    "description": "Reduces 4 random allies' Cooldown of all skills by 4 sec. For 15 sec, recovers allies Mana by 150 every sec and increases ATK by ???. Upon every use, ATK Boost effect is increased by ???."
+                }
+            ],
+            "light": "The effect applies to 6 allies.",
+            "dark": "Reduces Cooldown by 7 sec.",
+            "books": [
+                "ATK Boost is increased by 10%.",
+                "ATK Boost is increased by 15%.",
+                "ATK Boost is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Madley Sheet",
+                "effect": [
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 1 sec, and grants immunity to CC to the target for 5 sec.",
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 1.2 sec, and grants immunity to CC to the target for 5 sec.",
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 1.4 sec, and grants immunity to CC to the target for 5 sec.",
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 1.7 sec, and grants immunity to CC to the target for 5 sec.",
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 2.1 sec, and grants immunity to CC to the target for 5 sec.",
+                    "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all skills by an additional 2.5 sec, and grants immunity to CC to the target for 5 sec."
+                    ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Battle March Melody",
+                    "description": "At the beginning of each battle, heals HP of all allies by ???, and increases Heal Rate by 10%. Heal Boost effect can be stacked up to max 3 times, and is irremovable."
+                }
+            ],
+            "light": "At the beginning of each battle, recovers own mana by 1000.",
+            "dark": "Each stack increases Crit DMG of all allies by 12%.",
+            "books": [
+                "Heal Rate is increased by 10%.",
+                "Heal Rate is increased by 15%.",
+                "Heal Rate is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Dragon Drawing",
+                "effect": [
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 3%",
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 3.6%",
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 4.3%",
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 5.2%",
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 6.2%",
+                    "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by 7.5%"
+                ]
+            }
+        }
+    ],
+    "light": "CC Resist +100",
+    "dark": "Upon every skill use, increases 4 random allies' ATK by 3% and All DEF by 3%. This effect can be stacked up to max 10 times, and is irremovable.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "missing",
+            "dislikes": "missing"
+        },
+        "story": "missing",
+        "itemIntroductions": {
+            "weapon": "missing",
+            "treasures": [
+                "missing",
+                "missing",
+                "missing",
+                "missing"
+            ]
+        }
+    },
+    "skins": [
+        "a collection of skin names"
+    ],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

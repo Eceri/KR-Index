@@ -20,7 +20,8 @@ export const Hero = props => {
   const title = (
     <Helmet>
       <title>{`${heroInfo.name}`}</title>
-      <meta name="description" content="Helmet application" />
+      <meta name="description" content={`${heroInfo.name} - ${heroInfo.title}`} />
+      <link rel="icon" href={`/Assets/heroes/${heroPath}portrait.png`} sizes="124x124" />
     </Helmet>
   );
   return <>
@@ -45,11 +46,11 @@ export const Hero = props => {
             alt={"dmg type"}
             style={{ border: "none" }}
             dataTip={heroInfo.damageType}
-           />
+          />
           <p>{heroInfo.position}</p>
         </div>
       </div>
-        <ReactTooltip border={true} />
+      <ReactTooltip border={true} />
     </div>
     <Tabs>
       <TabList>

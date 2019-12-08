@@ -1,1 +1,185 @@
-{"name":"Priscilla","title":"Maid of Steel","class":"warrior","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"Tumultuous Dance, Excilius","effect":["When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.","When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.2 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.","When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.4 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.","When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.7 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.","When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 2 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.","When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 2.5 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Vital Strike","description":"Deals ??? P.DMG to frontal enemies in range and stuns them for 1 sec. This attack always inflicts a Crit Hit.","cooldown":8,"cost":2}],"light":"Stun duration is increased by 2 sec.","dark":"No longer Crits unconditionally, and Crit DMG is increased by 150%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Weight of Fierce Attack","effect":["[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 200.","[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 240.","[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 290.","[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 350.","[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 420.","[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 500."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Coordination","description":"For 20 sec, places Priscilla and an ally with the highest ATK in 'Coordination' state, and dispels Negative Effects. Priscilla and the ally in Coordination State get an ATK boost equal to 15% of Priscilla's ATK + ???.","cooldown":15,"cost":3}],"light":"Crit DMG is increased by 80%.","dark":"While in Co-Op state, auto attacks increase the target's received DMG from all sources by 30%.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Fancy Tea Set","effect":["[Coordination] Increases ATK Boost by 20% and reduces Cooldown of the Hero with the highest ATK by 30%.","[Coordination] Increases ATK Boost by 24% and reduces Cooldown of the Hero with the highest ATK by 30%.","[Coordination] Increases ATK Boost by 29% and reduces Cooldown of the Hero with the highest ATK by 30%.","[Coordination] Increases ATK Boost by 35% and reduces Cooldown of the Hero with the highest ATK by 30%.","[Coordination] Increases ATK Boost by 42% and reduces Cooldown of the Hero with the highest ATK by 30%.","[Coordination] Increases ATK Boost by 50% and reduces Cooldown of the Hero with the highest ATK by 30%."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Turbulent Dance","description":"Deals ??? P.DMG to nearby enemies in a circular range and draws them towards herself. If activated while in the 'Coordination' state, hit enemies take 30% extra P.DMG and M. DMG for 10 sec.","cooldown":22,"cost":3}],"light":"Upon a Crit hit, cooldown is reduced by 10%.","dark":"When there is only 1 enemy, DMG is increased by 100%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Magical Stone of Gravity","effect":["[Turbulent Dance] DMG is increased by 20% and target is inflicted by Stun for 3 sec.","[Turbulent Dance] DMG is increased by 24% and target is inflicted by Stun for 3 sec.","[Turbulent Dance] DMG is increased by 29% and target is inflicted by Stun for 3 sec.","[Turbulent Dance] DMG is increased by 35% and target is inflicted by Stun for 3 sec.","[Turbulent Dance] DMG is increased by 42% and target is inflicted by Stun for 3 sec.","[Turbulent Dance] DMG is increased by 50% and target is inflicted by Stun for 3 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Weapon Mastery","description":"Own ATK is increased by ??? , and Penetration is increased by 100."}],"light":"ATK boost is increased by 40%.","dark":"Crit Chance is increased by 250.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","Crit DMG is increased by 30%."],"uniqueTreasure":{"name":"Beginning of Turbulence","effect":["[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 10%.","[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 12%.","[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 14%.","[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 17%.","[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 21%.","[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 25%."]}}],"light":"ATK, DEF, HP+15% / CC Resist +100","dark":"Increase all allies' ATK and P.DEF by 3% of own ATK and P.DEF.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Comrades in arms, her lady, cute outfits for her lady","dislikes":"Untidiness, injustice"},"story":"A former officer of Orvelia's armed forces. After a failed attempt to reveal the corruption of military leaders, she was driven out from her position. Wanting to conceal their corruption, the military leaders constantly sent out assassins to eliminate her. The long and lonely fight was beginning to take its toll on her, physically and mentally. One day, the aristocratic von Daphnel family offered her protection in exchange for her service. She accepted, and has been working as Aisha's maid in the Tower of Sage ever since. To this day, she faithfully carries out her duties as a maid bodyguard. However, she sends all her payments to an undisclosed recipient.","itemIntroductions":{"weapon":"During her military career, Priscilla felled countless enemies with her halberd. Although the halberd fell into a state of disrepair following her retirement, it was later resurrected as Exilius. This upgrade was a part of the order sent to Annette to create Mahitra for Aisha. This razor-sharp and incredibly durable new weapon even has the magical power to draw its enemies in. Those who have seen Priscilla slaughtering her Demon foes using this halberd claim that it was like watching an unstoppable storm.","treasures":["A weight attached to the bottom of Exilius's grip. It provides Priscilla with better balance, allowing for more stable, precise attacks. When Annette enhanced her halberd into Exilius, she replaced its weight, too. Through Technomagical enhancement, the hardness of the weight was significantly increased with an upgrade that allows her to perform attacks with high precision.","Aisha's favorite ceramic tea cups that Priscilla has ready at all times. Luxurious tea cups made from the best clay of the eastern continent across the sea. It's mostly used for tea time with Aisha, but it is also used when using Coordination with Priscilla.","The first magic tool made by a wizard of Purple. The first gift that Aisha gave. Aisha created this magic tool because she felt bad that Priscilla used up so much power when using Turbulent Dance. The Mana Stone of Gravity relieves the pressure from the body when using Turbulent Dance, and it increases its effect.","A halberd that Priscilla used for practice. The storm of war started from this shabby old spear. She would take it out occasionally to be reminded of her training days. This is how she could always stay true to his way of life, protecting her Lady against all harms."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Priscilla",
+    "title": "Maid of Steel",
+    "class": "warrior",
+    "damageType": "physical",
+    "position": "Front",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Tumultuous Dance, Excilius",
+            "effect": [
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.",
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.2 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.",
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.4 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.",
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 1.7 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.",
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 2 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max.",
+                "When attacking the enemy with 'Vital Strike' or 'Turbulent Dance', per every hit enemy, corresponding skill's cooldown is reduced by 2.5 sec and ATK Spd is increased by 50 for 5 sec. ATK Spd boost can be stacked up to 10 times max."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "No info yet.",
+            "advancement1": "No info yet.",
+            "advancement2": "No info yet.",
+            "activation": "No info yet.",
+            "cd": 0,
+            "charges": 0
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Vital Strike",
+                    "description": "Deals ??? P.DMG to frontal enemies in range and stuns them for 1 sec. This attack always inflicts a Crit Hit.",
+                    "cooldown": 8,
+                    "cost": 2
+                }
+            ],
+            "light": "Stun duration is increased by 2 sec.",
+            "dark": "No longer Crits unconditionally, and Crit DMG is increased by 150%.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Weight of Fierce Attack",
+                "effect": [
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 200.",
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 240.",
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 290.",
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 350.",
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 420.",
+                    "[Vital Strike] Increases DMG by 50%, and for 10 sec, reduces the target's P.Block chance by 500."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Coordination",
+                    "description": "For 20 sec, places Priscilla and an ally with the highest ATK in 'Coordination' state, and dispels Negative Effects. Priscilla and the ally in Coordination State get an ATK boost equal to 15% of Priscilla's ATK + ???.",
+                    "cooldown": 15,
+                    "cost": 3
+                }
+            ],
+            "light": "Crit DMG is increased by 80%.",
+            "dark": "While in Co-Op state, auto attacks increase the target's received DMG from all sources by 30%.",
+            "books": [
+                "ATK boost is increased by 10%.",
+                "ATK boost is increased by 15%.",
+                "ATK boost is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Fancy Tea Set",
+                "effect": [
+                    "[Coordination] Increases ATK Boost by 20% and reduces Cooldown of the Hero with the highest ATK by 30%.",
+                    "[Coordination] Increases ATK Boost by 24% and reduces Cooldown of the Hero with the highest ATK by 30%.",
+                    "[Coordination] Increases ATK Boost by 29% and reduces Cooldown of the Hero with the highest ATK by 30%.",
+                    "[Coordination] Increases ATK Boost by 35% and reduces Cooldown of the Hero with the highest ATK by 30%.",
+                    "[Coordination] Increases ATK Boost by 42% and reduces Cooldown of the Hero with the highest ATK by 30%.",
+                    "[Coordination] Increases ATK Boost by 50% and reduces Cooldown of the Hero with the highest ATK by 30%."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Turbulent Dance",
+                    "description": "Deals ??? P.DMG to nearby enemies in a circular range and draws them towards herself. If activated while in the 'Coordination' state, hit enemies take 30% extra P.DMG and M. DMG for 10 sec.",
+                    "cooldown": 22,
+                    "cost": 3
+                }
+            ],
+            "light": "Upon a Crit hit, cooldown is reduced by 10%.",
+            "dark": "When there is only 1 enemy, DMG is increased by 100%.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Magical Stone of Gravity",
+                "effect": [
+                    "[Turbulent Dance] DMG is increased by 20% and target is inflicted by Stun for 3 sec.",
+                    "[Turbulent Dance] DMG is increased by 24% and target is inflicted by Stun for 3 sec.",
+                    "[Turbulent Dance] DMG is increased by 29% and target is inflicted by Stun for 3 sec.",
+                    "[Turbulent Dance] DMG is increased by 35% and target is inflicted by Stun for 3 sec.",
+                    "[Turbulent Dance] DMG is increased by 42% and target is inflicted by Stun for 3 sec.",
+                    "[Turbulent Dance] DMG is increased by 50% and target is inflicted by Stun for 3 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Weapon Mastery",
+                    "description": "Own ATK is increased by ??? , and Penetration is increased by 100."
+                }
+            ],
+            "light": "ATK boost is increased by 40%.",
+            "dark": "Crit Chance is increased by 250.",
+            "books": [
+                "ATK boost is increased by 10%.",
+                "ATK boost is increased by 15%.",
+                "Crit DMG is increased by 30%."
+            ],
+            "uniqueTreasure": {
+                "name": "Beginning of Turbulence",
+                "effect": [
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 10%.",
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 12%.",
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 14%.",
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 17%.",
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 21%.",
+                    "[Weapon Mastery] Increases ATK boost by 50% and All DEF for self by 25%."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / CC Resist +100",
+    "dark": "Increase all allies' ATK and P.DEF by 3% of own ATK and P.DEF.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Comrades in arms, her lady, cute outfits for her lady",
+            "dislikes": "Untidiness, injustice"
+        },
+        "story": "A former officer of Orvelia's armed forces. After a failed attempt to reveal the corruption of military leaders, she was driven out from her position. Wanting to conceal their corruption, the military leaders constantly sent out assassins to eliminate her. The long and lonely fight was beginning to take its toll on her, physically and mentally. One day, the aristocratic von Daphnel family offered her protection in exchange for her service. She accepted, and has been working as Aisha's maid in the Tower of Sage ever since. To this day, she faithfully carries out her duties as a maid bodyguard. However, she sends all her payments to an undisclosed recipient.",
+        "itemIntroductions": {
+            "weapon": "During her military career, Priscilla felled countless enemies with her halberd. Although the halberd fell into a state of disrepair following her retirement, it was later resurrected as Exilius. This upgrade was a part of the order sent to Annette to create Mahitra for Aisha. This razor-sharp and incredibly durable new weapon even has the magical power to draw its enemies in. Those who have seen Priscilla slaughtering her Demon foes using this halberd claim that it was like watching an unstoppable storm.",
+            "treasures": [
+                "A weight attached to the bottom of Exilius's grip. It provides Priscilla with better balance, allowing for more stable, precise attacks. When Annette enhanced her halberd into Exilius, she replaced its weight, too. Through Technomagical enhancement, the hardness of the weight was significantly increased with an upgrade that allows her to perform attacks with high precision.",
+                "Aisha's favorite ceramic tea cups that Priscilla has ready at all times. Luxurious tea cups made from the best clay of the eastern continent across the sea. It's mostly used for tea time with Aisha, but it is also used when using Coordination with Priscilla.",
+                "The first magic tool made by a wizard of Purple. The first gift that Aisha gave. Aisha created this magic tool because she felt bad that Priscilla used up so much power when using Turbulent Dance. The Mana Stone of Gravity relieves the pressure from the body when using Turbulent Dance, and it increases its effect.",
+                "A halberd that Priscilla used for practice. The storm of war started from this shabby old spear. She would take it out occasionally to be reminded of her training days. This is how she could always stay true to his way of life, protecting her Lady against all harms."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

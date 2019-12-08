@@ -1,1 +1,185 @@
-{"name":"Aisha","title":"The Violet Princess","class":"wizard","damageType":"magical","position":"Middle","weapon":{"uniqueWeapon":{"name":"Noble Fate, Mahitra","effect":["Each attack has a 35% chance of dealing 40% of ATK as extra M.DMG.","Each attack has a 35% chance of dealing 48% of ATK as extra M.DMG.","Each attack has a 35% chance of dealing 57% of ATK as extra M.DMG.","Each attack has a 35% chance of dealing 69% of ATK as extra M.DMG.","Each attack has a 35% chance of dealing 83% of ATK as extra M.DMG.","Each attack has a 35% chance of dealing 100% of ATK as extra M.DMG."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Mystic Barrage","description":"Deals ??? M.DMG to enemies within a small range. Upon a Crit Hit, cooldown is reduced by 1 sec.","cooldown":8,"cost":2}],"light":"If there is 1 enemy, DMG is increased by 100%.","dark":"Upon a Crit Hit, recovers 300 mana.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Flower of Purple","effect":["[Mystic Barrage] Reduces Cooldown by 1 sec, and for 10 sec, increases M.DMG target receives by 25%.","[Mystic Barrage] Reduces Cooldown by 1.2 sec, and for 10 sec, increases M.DMG target receives by 25%.","[Mystic Barrage] Reduces Cooldown by 1.4 sec, and for 10 sec, increases M.DMG target receives by 25%.","[Mystic Barrage] Reduces Cooldown by 1.7 sec, and for 10 sec, increases M.DMG target receives by 25%.","[Mystic Barrage] Reduces Cooldown by 2.1 sec, and for 10 sec, increases M.DMG target receives by 25%.","[Mystic Barrage] Reduces Cooldown by 2.5 sec, and for 10 sec, increases M.DMG target receives by 25%."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Destruction Ray","description":"Every 0.5 sec, deals ??? M.DMG to enemies in a straight line. After 5 sec, consumes 3% of mana every 0.5 sec while DMG is increased by 100%. Max duration is 10 sec.","cooldown":13,"cost":2}],"light":"The mana cost of the Boosted Ray is half.","dark":"The mana cost of the Boosted Ray is doubled and the DMG increase is boosted from 100% to 200%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Noble Hand Mirror","effect":["[Destruction Ray] Increases DMG by 50% and recovers 500 MP immediately upon use.","[Destruction Ray] Increases DMG by 50% and recovers 600 MP immediately upon use.","[Destruction Ray] Increases DMG by 50% and recovers 720 MP immediately upon use.","[Destruction Ray] Increases DMG by 50% and recovers 860 MP immediately upon use.","[Destruction Ray] Increases DMG by 50% and recovers 1040 MP immediately upon use.","[Destruction Ray] Increases DMG by 50% and recovers 1250 MP immediately upon use."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Torrential Rainfall","description":"Deals ??? M.DMG to random enemies for 3 sec, and reduces target's M.DEF by 5%. Can be stacked up to max 5 times.","cooldown":17,"cost":3}],"light":"Deals AoE DMG.","dark":"M.DEF reduction effect now stacks up to 10 times max.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Ring of Infinite Mana","effect":["[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 30 mana.","[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 36 mana.","[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 43 mana.","[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 52 mana.","[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 62 mana.","[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 75 mana."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Mystic Boost","description":"Upon a Crit Hit, deals extra ??? M.DMG to the enemy."}],"light":"DMG is increased by 40%.","dark":"Ignores enemy Block.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Eyes of Truth","effect":["[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1%. This effect can be stacked up to max 20 times.","[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.2%. This effect can be stacked up to max 20 times.","[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.4%. This effect can be stacked up to max 20 times.","[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.7%. This effect can be stacked up to max 20 times.","[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 2.1%. This effect can be stacked up to max 20 times.","[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 2.5%. This effect can be stacked up to max 20 times."]}}],"light":"ATK, DEF, HP+15% / Crit Chance +100","dark":"Upon using a Skill, increases Mana Recovery/Sec by 10% and Crit DMG by 7%. This effect stacks up to 20 times and is irremovable.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Tea time with Priscilla","dislikes":"Rude people"},"story":"A daughter of a noble family from Orvel. As one of the most talented wizards in the Tower of Sage, she has been granted the title of 'Purple' in recognition of her magic capability. She was raised in the Tower of Sage since childhood at her parents' request, but she still retains her dignity as an aristocrat. As a child, she never realized why her parents sent her away on her own, but now she understands their reasons. Now, she is back home, and is always attended by her handmaiden, who is like another member of the family to her.","itemIntroductions":{"weapon":"In the Tower of Sage, the title of Purple indicates the pinnacle of mana capacity. Aisha's seemingly endless mana was simply too much for regular means of output. For this reason, the von Daphnel family bought out all the best mana stones they could find, and took them to Annette, the best technomagi in Orvel Castle. Annette gladly agreed to take on this new project. Soon after, she created Mahitra, a beautiful umbrella befitting an aristocratic wizard of noble destiny.","treasures":["It is one of the items that the Tower of Sage granted with the title of Purple. It makes a set with the Ring of Mana. Purple represents an abundance of mana, and staying true to its name, the Flower of Purple has a crystal ball on it that boosts Aisha's mana and makes it explode. Since its power was too great, Priscilla made Aisha promise that she would only use it when absolutely necessary.","A sacred treasure passed down through generations of the von Daphnel family. It was a shaman tool to save mana in ancient times. After Aisha embedded the Noble Purple gem with her mana, its power came out. Now it shines brilliantly.","A ring that was given along with the title of Purple from the Tower of Sage. It is an artifact of witch Eucaletus, who lived in the Swamp of Wisdom. The power it displays depends on the owner's ability. For some, it could be a source of unlimited mana. It's perfect for Aisha, who uses powerful magic cannons.","A mysterious pendant found in ancient ruins. It was found in the tomb of someone known as the God of Wisdom and Ancient Knowledge. Aisha bought it at a shop in a back alley, fascinated by its purple jewel. After she realized that it reinforced her Mystic powers, she named it the Eyes of Truth and has been wearing it often."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Aisha",
+    "title": "The Violet Princess",
+    "class": "wizard",
+    "damageType": "magical",
+    "position": "Middle",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Noble Fate, Mahitra",
+            "effect": [
+                "Each attack has a 35% chance of dealing 40% of ATK as extra M.DMG.",
+                "Each attack has a 35% chance of dealing 48% of ATK as extra M.DMG.",
+                "Each attack has a 35% chance of dealing 57% of ATK as extra M.DMG.",
+                "Each attack has a 35% chance of dealing 69% of ATK as extra M.DMG.",
+                "Each attack has a 35% chance of dealing 83% of ATK as extra M.DMG.",
+                "Each attack has a 35% chance of dealing 100% of ATK as extra M.DMG."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "Summons the soul of Noble Fate, Mahitra for 8 sec. While the soul is summoned, increases own Crit DMG by 50%, deals DMG to enemy every 0.5 sec, and increases M.DMG the target takes by 25% for 5 sec.",
+            "advancement1": "No info yet.",
+            "advancement2": "No info yet.",
+            "activation": "Charges up upon Dealing DMG 120 times.",
+            "cd": 0,
+            "charges": 0
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Mystic Barrage",
+                    "description": "Deals ??? M.DMG to enemies within a small range. Upon a Crit Hit, cooldown is reduced by 1 sec.",
+                    "cooldown": 8,
+                    "cost": 2
+                }
+            ],
+            "light": "If there is 1 enemy, DMG is increased by 100%.",
+            "dark": "Upon a Crit Hit, recovers 300 mana.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Flower of Purple",
+                "effect": [
+                    "[Mystic Barrage] Reduces Cooldown by 1 sec, and for 10 sec, increases M.DMG target receives by 25%.",
+                    "[Mystic Barrage] Reduces Cooldown by 1.2 sec, and for 10 sec, increases M.DMG target receives by 25%.",
+                    "[Mystic Barrage] Reduces Cooldown by 1.4 sec, and for 10 sec, increases M.DMG target receives by 25%.",
+                    "[Mystic Barrage] Reduces Cooldown by 1.7 sec, and for 10 sec, increases M.DMG target receives by 25%.",
+                    "[Mystic Barrage] Reduces Cooldown by 2.1 sec, and for 10 sec, increases M.DMG target receives by 25%.",
+                    "[Mystic Barrage] Reduces Cooldown by 2.5 sec, and for 10 sec, increases M.DMG target receives by 25%."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Destruction Ray",
+                    "description": "Every 0.5 sec, deals ??? M.DMG to enemies in a straight line. After 5 sec, consumes 3% of mana every 0.5 sec while DMG is increased by 100%. Max duration is 10 sec.",
+                    "cooldown": 13,
+                    "cost": 2
+                }
+            ],
+            "light": "The mana cost of the Boosted Ray is half.",
+            "dark": "The mana cost of the Boosted Ray is doubled and the DMG increase is boosted from 100% to 200%.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Noble Hand Mirror",
+                "effect": [
+                    "[Destruction Ray] Increases DMG by 50% and recovers 500 MP immediately upon use.",
+                    "[Destruction Ray] Increases DMG by 50% and recovers 600 MP immediately upon use.",
+                    "[Destruction Ray] Increases DMG by 50% and recovers 720 MP immediately upon use.",
+                    "[Destruction Ray] Increases DMG by 50% and recovers 860 MP immediately upon use.",
+                    "[Destruction Ray] Increases DMG by 50% and recovers 1040 MP immediately upon use.",
+                    "[Destruction Ray] Increases DMG by 50% and recovers 1250 MP immediately upon use."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Torrential Rainfall",
+                    "description": "Deals ??? M.DMG to random enemies for 3 sec, and reduces target's M.DEF by 5%. Can be stacked up to max 5 times.",
+                    "cooldown": 17,
+                    "cost": 3
+                }
+            ],
+            "light": "Deals AoE DMG.",
+            "dark": "M.DEF reduction effect now stacks up to 10 times max.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Ring of Infinite Mana",
+                "effect": [
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 30 mana.",
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 36 mana.",
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 43 mana.",
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 52 mana.",
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 62 mana.",
+                    "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers 75 mana."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Mystic Boost",
+                    "description": "Upon a Crit Hit, deals extra ??? M.DMG to the enemy."
+                }
+            ],
+            "light": "DMG is increased by 40%.",
+            "dark": "Ignores enemy Block.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Eyes of Truth",
+                "effect": [
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1%. This effect can be stacked up to max 20 times.",
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.2%. This effect can be stacked up to max 20 times.",
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.4%. This effect can be stacked up to max 20 times.",
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 1.7%. This effect can be stacked up to max 20 times.",
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 2.1%. This effect can be stacked up to max 20 times.",
+                    "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by 2.5%. This effect can be stacked up to max 20 times."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / Crit Chance +100",
+    "dark": "Upon using a Skill, increases Mana Recovery/Sec by 10% and Crit DMG by 7%. This effect stacks up to 20 times and is irremovable.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Tea time with Priscilla",
+            "dislikes": "Rude people"
+        },
+        "story": "A daughter of a noble family from Orvel. As one of the most talented wizards in the Tower of Sage, she has been granted the title of 'Purple' in recognition of her magic capability. She was raised in the Tower of Sage since childhood at her parents' request, but she still retains her dignity as an aristocrat. As a child, she never realized why her parents sent her away on her own, but now she understands their reasons. Now, she is back home, and is always attended by her handmaiden, who is like another member of the family to her.",
+        "itemIntroductions": {
+            "weapon": "In the Tower of Sage, the title of Purple indicates the pinnacle of mana capacity. Aisha's seemingly endless mana was simply too much for regular means of output. For this reason, the von Daphnel family bought out all the best mana stones they could find, and took them to Annette, the best technomagi in Orvel Castle. Annette gladly agreed to take on this new project. Soon after, she created Mahitra, a beautiful umbrella befitting an aristocratic wizard of noble destiny.",
+            "treasures": [
+                "It is one of the items that the Tower of Sage granted with the title of Purple. It makes a set with the Ring of Mana. Purple represents an abundance of mana, and staying true to its name, the Flower of Purple has a crystal ball on it that boosts Aisha's mana and makes it explode. Since its power was too great, Priscilla made Aisha promise that she would only use it when absolutely necessary.",
+                "A sacred treasure passed down through generations of the von Daphnel family. It was a shaman tool to save mana in ancient times. After Aisha embedded the Noble Purple gem with her mana, its power came out. Now it shines brilliantly.",
+                "A ring that was given along with the title of Purple from the Tower of Sage. It is an artifact of witch Eucaletus, who lived in the Swamp of Wisdom. The power it displays depends on the owner's ability. For some, it could be a source of unlimited mana. It's perfect for Aisha, who uses powerful magic cannons.",
+                "A mysterious pendant found in ancient ruins. It was found in the tomb of someone known as the God of Wisdom and Ancient Knowledge. Aisha bought it at a shop in a back alley, fascinated by its purple jewel. After she realized that it reinforced her Mystic powers, she named it the Eyes of Truth and has been wearing it often."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

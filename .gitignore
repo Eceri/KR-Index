@@ -31,3 +31,4 @@ node_modules
 # Server logs
 /Server/logs
 /Server/.env
+playground.json

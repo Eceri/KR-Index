@@ -1,1 +1,185 @@
-{"name":"Glenwys","title":"Shield of Empire","class":"knight","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"The Counterattack, Maxithea","effect":["Whenever a Skill is cast, increases ATK of all allies by 1% and Crit DMG by 2%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.","Whenever a Skill is cast, increases ATK of all allies by 1.2% and Crit DMG by 2.4%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.","Whenever a Skill is cast, increases ATK of all allies by 1.4% and Crit DMG by 2.8%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.","Whenever a Skill is cast, increases ATK of all allies by 1.7% and Crit DMG by 3.4%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.","Whenever a Skill is cast, increases ATK of all allies by 2% and Crit DMG by 4.2%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.","Whenever a Skill is cast, increases ATK of all allies by 2.5% and Crit DMG by 5%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"That Is It","description":"Deals a total of ??? P.DMG over 7 attacks to frontal enemies. Each attack increases P.DMG the enemies take by 4% for 10 sec. This effect stacks up to max 7 times. Deals additional ??? P.DMG to Non-Hero target.","cooldown":9,"cost":2}],"light":"Mana Cost increases by 1. DMG dealt to Non-Hero enemies now ignores DEF.","dark":"Reduces target's ATK Spd by 250 for 10 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Alpha Leader Badge","effect":["[That Is it] Increases DMG by 50% and reduces Cooldown by 1% on upon a Critical Hit.","[That Is it] Increases DMG by 50% and reduces Cooldown by 1.2% on upon a Critical Hit.","[That Is it] Increases DMG by 50% and reduces Cooldown by 1.4% on upon a Critical Hit.","[That Is it] Increases DMG by 50% and reduces Cooldown by 1.7% on upon a Critical Hit.","[That Is it] Increases DMG by 50% and reduces Cooldown by 2% on upon a Critical Hit.","[That Is it] Increases DMG by 50% and reduces Cooldown by 2.5% on upon a Critical Hit."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"I Will Not Stay My Hand","description":"Deals ??? P.DMG over 10 attacks to nearby enemies in a circular range of self and stuns them for 1 sec. The final attack deals ??? P.DMG to frontal enemies and stuns them for 3 sec.","cooldown":15,"cost":3}],"light":"Increases the amount of P.DMG that a target takes by 25% for 10 sec.","dark":"The duration of Stun increases by 0.5 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Praise of Dandelion","effect":["[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 20%.","[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 24%.","[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 28%.","[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 34%.","[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 42%.","[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 50%."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Time For Counterattack","description":"Calling upon the strength of the Imperial Shield, deals ??? P.DMG to nearby enemies in a large circular range of self and knocks them down for 3 sec. Dispels negative effects from all allies, increases ATK by ??? for 20 sec, and increases DEF by ???.","cooldown":17,"cost":4}],"light":"Reduces target's P.Crit Resistance by 250 for 10 sec.","dark":"Mana Cost is increases by 1 and the amount of ATK and DEF boost increases by 100%.","books":["Increases ATK Boost and DEF Boost by 10%.","Increases ATK Boost and DEF Boost by 15%.","Increases ATK Boost and DEF Boost by 25%."],"uniqueTreasure":{"name":"Ballas Ruby","effect":["[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 10% increased P.DMG for 10 sec.","[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 12% increased P.DMG for 10 sec.","[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 14% increased P.DMG for 10 sec.","[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 17% increased P.DMG for 10 sec.","[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 21% increased P.DMG for 10 sec.","[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 25% increased P.DMG for 10 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Pride of Imperial Knights","description":"Increases ATK of all allies by ???. At the beginning of each battle, increases DMG to Non-Hero enemies by 10% for 20 sec, reducing DMG received by 10%."}],"light":"DMG effect dealt to Non-Hero enemies is now 20%.","dark":"DMG effect received from Non-Hero enemies is now 20%.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Golden Glory","effect":["[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 30% for 20 sec, and increases DMG to Non-Hero enemies by 10%.","[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 36% for 20 sec, and increases DMG to Non-Hero enemies by 12%.","[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 42% for 20 sec, and increases DMG to Non-Hero enemies by 14%.","[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 50% for 20 sec, and increases DMG to Non-Hero enemies by 17%.","[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 63% for 20 sec, and increases DMG to Non-Hero enemies by 21%.","[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 75% for 20 sec, and increases DMG to Non-Hero enemies by 25%."]}}],"light":"ATK, DEF, HP+15% / All DEF + 10%","dark":"Increases ATK of all allies by 8% of self's All DEF.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Training, smiles of Empire Citizens, lively atmosphere, apple pies.","dislikes":"Citizens suffering, social gatherings and parties of nobles."},"story":"If you ask the citizens of the Empire to pick a knight that they love the most, Glenwys's name will be on the top of the list. She is a Vice Captain in Empire Capital Guard Knights, the highest post taken by a knight with a background as a commoner. With her fierce combat skills along with her modesty and strong sense of responsibility, being a knight is her calling of life. There's no doubt that Glenwys is the hope for all commoners of the Empire, considering that she earned her way to the position of Vice Captain and that she won the 3 fighting tournaments that the Emperor held himself. As a symbol of the belief that anyone with skills can achieve success in the Empire, she is receiving a lot of attention from many.","itemIntroductions":{"weapon":"A shield and a gunblade crafted with the cutting-edge mechanical engineering of the Empire. The gunblade is a prototype made by the Department of Mechanical Engineering of Magos Le'Flamme, and it is a deadly weapon designed to attack multiple enemies at close range. The shield was designed to parry and counterattack enemy strikes, and its ability to absorb and mitigate shock is unmatched. It was a gift awarded by the royal family of the Empire in recognition of Glenwys's achievements after joining the Knights.","treasures":["It's the symbol of the Capital Guard Knights. It's a badge bestowed upon the Alpha Leader, who has the authority to impose summary justice to secure public safety of the Empire. Elected with unanimous consent, the post of Alpha Leader is for a knight who has unmatched fighting techniques and a high reputation among their fellow knights.","The Annual Imperial Colosseum Tournament was where all the courageous fighter could compete to prove their worth, regardless of their origins and social ranks, but the winner was always a well-equipped nobleman, knight, or soldier sponsored by noble families. Everyone knew it was no longer fair, but no one would dare say it out loud. However, Glenwys, a 16-year-old commoner girl who had no strings to pull, won the tournament 4 years ago and the noble purpose of the competition was regained. On the day of her victory, the Colosseum was filled with thundering applause of the audience who were longing to see haughty aristocrats lose what they thought belonged to them. Glenwys became a new idol of the Empire, and people were buying gifts for her. Glenwys, however, had to turn down all the gifts. Not only was the national attention too much for her, but she also knew that those with power would never take joy in seeing commoners rally around a hero like her. Nevertheless, she could not say no to a timid little girl that came holding a paperweight made of dandelions in her small hands, and it became the only present that she kept for herself.","The last present from an anonymous supporter. Glenwys became the first tournament winner with a commoner's background, but what she needed to pay to defend her position in the following Imperial Colosseum Tournaments was far above an ordinary commoner's income. Most of her participation fee would come from the donations of citizens, but the time eventually came when the cost got too expensive for her to carry on competing. However, to her surprise, help came for her from an anonymous supporter every time she was desperate for it, enabling her to continue fighting. On the day that she became the winner of 3 consecutive tournaments, the 'Ballas Ruby,' a jewel of a knight, was delivered to her, which became the last gesture of support she ever got from the nameless helper. Since then, this ruby became her charm of victory that she always carries with her, grateful, but curious about who the supporter might be.","A golden trophy awarded to Glenwys for winning 3 consecutive Imperial Colosseum Tournaments. It's the Emperor's gift to the true hero of the Colosseum. The third championship match was the last tournament match in which Glenwys fought in. Her last opponent was a mysterious man with a mask who defeated all his opponents throughout the tournament in less than a few seconds. Glenwys was nervous when she saw him fight in the semi-final match. As expected, the fight was one-sided. A man swung a pair of red swords at Glenwys like a red storm. She waited for an opportunity while blocking his fierce attacks. The man finally seemed to let his guard down, and Glenwys launched a powerful strike. But to her surprise, the man dodged it simply by taking a few steps back. However, the explosion caused by Glenwys's attack made the man's mask crack, revealing his handsome face. She then saw, through the breaking mask, that the man was smiling. Noticing that her attack didn't leave a scratch on him, Glenwys raised her shield up again, appalled, but the man suddenly threw the towel. Soon, the smoke around the two people cleared, and there was another mask on the man's face. Shocked and astonished, Glenwys could not understand what had happened until the Emperor handed her the trophy, until she saw the man standing behind the Emperor with the Royal Guard Captain, giving her a warm applause."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Glenwys",
+    "title": "Shield of Empire",
+    "class": "knight",
+    "damageType": "physical",
+    "position": "Front",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "The Counterattack, Maxithea",
+            "effect": [
+                "Whenever a Skill is cast, increases ATK of all allies by 1% and Crit DMG by 2%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.",
+                "Whenever a Skill is cast, increases ATK of all allies by 1.2% and Crit DMG by 2.4%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.",
+                "Whenever a Skill is cast, increases ATK of all allies by 1.4% and Crit DMG by 2.8%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.",
+                "Whenever a Skill is cast, increases ATK of all allies by 1.7% and Crit DMG by 3.4%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.",
+                "Whenever a Skill is cast, increases ATK of all allies by 2% and Crit DMG by 4.2%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled.",
+                "Whenever a Skill is cast, increases ATK of all allies by 2.5% and Crit DMG by 5%. This effect stacks up to 4 times, and all effects are doubled at max stack. This effect cannot be dispelled."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "Summons the soul of The Counterattack, Maxithea, healing all allies' HP by 33224 and increasing DEF by 50% for 10 sec. Afterward, sends the sould charging to the front, dealing ??? P.DMG to enemies within range and knocking them down for 5 sec.",
+            "advancement1": "For the duration of Skill, increases own DEF by 50%, and increases ATK of all allies except for self by 40%.",
+            "advancement2": "Upon activation, dispels negative effects from all allies. When the soul charges, it dispels positive effects from all enemies within range, and increases P.DMG the target takes by 25% for 10 sec.",
+            "activation": "Charges up every sec and every time self takes DMG. This Skill can be cast upon gaining 80 charges.",
+            "cd": 20,
+            "charges": 6
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "That Is It",
+                    "description": "Deals a total of ??? P.DMG over 7 attacks to frontal enemies. Each attack increases P.DMG the enemies take by 4% for 10 sec. This effect stacks up to max 7 times. Deals additional ??? P.DMG to Non-Hero target.",
+                    "cooldown": 9,
+                    "cost": 2
+                }
+            ],
+            "light": "Mana Cost increases by 1. DMG dealt to Non-Hero enemies now ignores DEF.",
+            "dark": "Reduces target's ATK Spd by 250 for 10 sec.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Alpha Leader Badge",
+                "effect": [
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 1% on upon a Critical Hit.",
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 1.2% on upon a Critical Hit.",
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 1.4% on upon a Critical Hit.",
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 1.7% on upon a Critical Hit.",
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 2% on upon a Critical Hit.",
+                    "[That Is it] Increases DMG by 50% and reduces Cooldown by 2.5% on upon a Critical Hit."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "I Will Not Stay My Hand",
+                    "description": "Deals ??? P.DMG over 10 attacks to nearby enemies in a circular range of self and stuns them for 1 sec. The final attack deals ??? P.DMG to frontal enemies and stuns them for 3 sec.",
+                    "cooldown": 15,
+                    "cost": 3
+                }
+            ],
+            "light": "Increases the amount of P.DMG that a target takes by 25% for 10 sec.",
+            "dark": "The duration of Stun increases by 0.5 sec.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Praise of Dandelion",
+                "effect": [
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 20%.",
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 24%.",
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 28%.",
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 34%.",
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 42%.",
+                    "[I Will Not Stay My Hand] Reduces Cooldown by 4.5 sec and enemy Heal Rate by 50%."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Time For Counterattack",
+                    "description": "Calling upon the strength of the Imperial Shield, deals ??? P.DMG to nearby enemies in a large circular range of self and knocks them down for 3 sec. Dispels negative effects from all allies, increases ATK by ??? for 20 sec, and increases DEF by ???.",
+                    "cooldown": 17,
+                    "cost": 4
+                }
+            ],
+            "light": "Reduces target's P.Crit Resistance by 250 for 10 sec.",
+            "dark": "Mana Cost is increases by 1 and the amount of ATK and DEF boost increases by 100%.",
+            "books": [
+                "Increases ATK Boost and DEF Boost by 10%.",
+                "Increases ATK Boost and DEF Boost by 15%.",
+                "Increases ATK Boost and DEF Boost by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Ballas Ruby",
+                "effect": [
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 10% increased P.DMG for 10 sec.",
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 12% increased P.DMG for 10 sec.",
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 14% increased P.DMG for 10 sec.",
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 17% increased P.DMG for 10 sec.",
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 21% increased P.DMG for 10 sec.",
+                    "[Time for Counterattack] Increases the amount of ATK and DEF Boost by 50% and causes the hit target to take 25% increased P.DMG for 10 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Pride of Imperial Knights",
+                    "description": "Increases ATK of all allies by ???. At the beginning of each battle, increases DMG to Non-Hero enemies by 10% for 20 sec, reducing DMG received by 10%."
+                }
+            ],
+            "light": "DMG effect dealt to Non-Hero enemies is now 20%.",
+            "dark": "DMG effect received from Non-Hero enemies is now 20%.",
+            "books": [
+                "ATK boost is increased by 10%.",
+                "ATK boost is increased by 15%.",
+                "ATK boost is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Golden Glory",
+                "effect": [
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 30% for 20 sec, and increases DMG to Non-Hero enemies by 10%.",
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 36% for 20 sec, and increases DMG to Non-Hero enemies by 12%.",
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 42% for 20 sec, and increases DMG to Non-Hero enemies by 14%.",
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 50% for 20 sec, and increases DMG to Non-Hero enemies by 17%.",
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 63% for 20 sec, and increases DMG to Non-Hero enemies by 21%.",
+                    "[Pride of Imperial Knights] Increases ATK Boost by 50%. At the beginning of each battle, increases Crit DMG of self and an ally with the highest ATK besides self by 75% for 20 sec, and increases DMG to Non-Hero enemies by 25%."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / All DEF + 10%",
+    "dark": "Increases ATK of all allies by 8% of self's All DEF.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Training, smiles of Empire Citizens, lively atmosphere, apple pies.",
+            "dislikes": "Citizens suffering, social gatherings and parties of nobles."
+        },
+        "story": "If you ask the citizens of the Empire to pick a knight that they love the most, Glenwys's name will be on the top of the list. She is a Vice Captain in Empire Capital Guard Knights, the highest post taken by a knight with a background as a commoner. With her fierce combat skills along with her modesty and strong sense of responsibility, being a knight is her calling of life. There's no doubt that Glenwys is the hope for all commoners of the Empire, considering that she earned her way to the position of Vice Captain and that she won the 3 fighting tournaments that the Emperor held himself. As a symbol of the belief that anyone with skills can achieve success in the Empire, she is receiving a lot of attention from many.",
+        "itemIntroductions": {
+            "weapon": "A shield and a gunblade crafted with the cutting-edge mechanical engineering of the Empire. The gunblade is a prototype made by the Department of Mechanical Engineering of Magos Le'Flamme, and it is a deadly weapon designed to attack multiple enemies at close range. The shield was designed to parry and counterattack enemy strikes, and its ability to absorb and mitigate shock is unmatched. It was a gift awarded by the royal family of the Empire in recognition of Glenwys's achievements after joining the Knights.",
+            "treasures": [
+                "It's the symbol of the Capital Guard Knights. It's a badge bestowed upon the Alpha Leader, who has the authority to impose summary justice to secure public safety of the Empire. Elected with unanimous consent, the post of Alpha Leader is for a knight who has unmatched fighting techniques and a high reputation among their fellow knights.",
+                "The Annual Imperial Colosseum Tournament was where all the courageous fighter could compete to prove their worth, regardless of their origins and social ranks, but the winner was always a well-equipped nobleman, knight, or soldier sponsored by noble families. Everyone knew it was no longer fair, but no one would dare say it out loud. However, Glenwys, a 16-year-old commoner girl who had no strings to pull, won the tournament 4 years ago and the noble purpose of the competition was regained. On the day of her victory, the Colosseum was filled with thundering applause of the audience who were longing to see haughty aristocrats lose what they thought belonged to them. Glenwys became a new idol of the Empire, and people were buying gifts for her. Glenwys, however, had to turn down all the gifts. Not only was the national attention too much for her, but she also knew that those with power would never take joy in seeing commoners rally around a hero like her. Nevertheless, she could not say no to a timid little girl that came holding a paperweight made of dandelions in her small hands, and it became the only present that she kept for herself.",
+                "The last present from an anonymous supporter. Glenwys became the first tournament winner with a commoner's background, but what she needed to pay to defend her position in the following Imperial Colosseum Tournaments was far above an ordinary commoner's income. Most of her participation fee would come from the donations of citizens, but the time eventually came when the cost got too expensive for her to carry on competing. However, to her surprise, help came for her from an anonymous supporter every time she was desperate for it, enabling her to continue fighting. On the day that she became the winner of 3 consecutive tournaments, the 'Ballas Ruby,' a jewel of a knight, was delivered to her, which became the last gesture of support she ever got from the nameless helper. Since then, this ruby became her charm of victory that she always carries with her, grateful, but curious about who the supporter might be.",
+                "A golden trophy awarded to Glenwys for winning 3 consecutive Imperial Colosseum Tournaments. It's the Emperor's gift to the true hero of the Colosseum. The third championship match was the last tournament match in which Glenwys fought in. Her last opponent was a mysterious man with a mask who defeated all his opponents throughout the tournament in less than a few seconds. Glenwys was nervous when she saw him fight in the semi-final match. As expected, the fight was one-sided. A man swung a pair of red swords at Glenwys like a red storm. She waited for an opportunity while blocking his fierce attacks. The man finally seemed to let his guard down, and Glenwys launched a powerful strike. But to her surprise, the man dodged it simply by taking a few steps back. However, the explosion caused by Glenwys's attack made the man's mask crack, revealing his handsome face. She then saw, through the breaking mask, that the man was smiling. Noticing that her attack didn't leave a scratch on him, Glenwys raised her shield up again, appalled, but the man suddenly threw the towel. Soon, the smoke around the two people cleared, and there was another mask on the man's face. Shocked and astonished, Glenwys could not understand what had happened until the Emperor handed her the trophy, until she saw the man standing behind the Emperor with the Royal Guard Captain, giving her a warm applause."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

@@ -1,1 +1,185 @@
-{"name":"Naila","title":"Wind's Fighter","class":"warrior","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"Cursed Claws, Baroro","effect":["Upon a Crit Hit, deals 150% of ATK as P.DMG over time for 10sec. Target takes 20% increased P.DMG for the duration of skill.","Upon a Crit Hit, deals 180% of ATK as P.DMG over time for 10sec. Target takes 24% increased P.DMG for the duration of skill.","Upon a Crit Hit, deals 216% of ATK as P.DMG over time for 10sec. Target takes 28% increased P.DMG for the duration of skill.","Upon a Crit Hit, deals 258% of ATK as P.DMG over time for 10sec. Target takes 34% increased P.DMG for the duration of skill.","Upon a Crit Hit, deals 310% of ATK as P.DMG over time for 10sec. Target takes 41% increased P.DMG for the duration of skill.","Upon a Crit Hit, deals 500% of ATK as P.DMG over time for 10sec. Target takes 50% increased P.DMG for the duration of skill."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Fierce Winds","description":"Dashes toward the enemy 2 times, dealing ??? P.DMG to enemies in range, knocking them down for 3 sec. If the target is not a Hero, deals ??? additional P.DMG.","cooldown":8,"cost":2}],"light":"If there is 1 enemy, DMG is increased by 100%.","dark":"Target changes to the enemy with the highest ATK.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Soul of Gust","effect":["[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 200 for 10 sec.","[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 240 for 10 sec.","[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 290 for 10 sec.","[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 350 for 10 sec.","[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 420 for 10 sec.","[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 500 for 10 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Wind Reading","description":"All allies' P.Dodge Chance is increased by 250 for 15 sec, and ATK is increased by ???.","cooldown":15,"cost":3}],"light":"Mana cost is reduced by 1.","dark":"Increases Naila's DMG dealt on non-Hero enemies by 30% for the duration of skill.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Himmullis's Scarf","effect":["[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 100.","[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 120.","[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 140.","[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 170.","[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 210.","[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 250."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Dive Bomb","description":"Flies up and strikes ??? P.DMG to enemies in range. Knocked down enemies take 50% increased DMG. If the target is not a Hero, deals ??? additional P.DMG.","cooldown":12,"cost":3}],"light":"DMG is increased by 40%.","dark":"Reduces cooldown by 10% per each enemy that takes Critical DMG.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Hit enemies are stunned for 3 sec."],"uniqueTreasure":{"name":"Tempest Pride","effect":["[Dive Bomb] Skill cooldown is reduced by 30% and target takes 10% more P.DMG for 10 sec.","[Dive Bomb] Skill cooldown is reduced by 30% and target takes 12% more P.DMG for 10 sec.","[Dive Bomb] Skill cooldown is reduced by 30% and target takes 14% more P.DMG for 10 sec.","[Dive Bomb] Skill cooldown is reduced by 30% and target takes 17% more P.DMG for 10 sec.","[Dive Bomb] Skill cooldown is reduced by 30% and target takes 21% more P.DMG for 10 sec.","[Dive Bomb] Skill cooldown is reduced by 30% and target takes 25% more P.DMG for 10 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Tornado Strike","description":"Every 5th normal attack has a 40% chance to deal ??? additional P.DMG to the target. The target takes 30% increased P.DMG for 10 sec and is knocked down for 3 sec."}],"light":"Activation chance changes to 60%.","dark":"Atk Spd is boosted by 300 when effect takes place.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Green Ribbon","effect":["[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 200 for 10 sec.","[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 240 for 10 sec.","[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 290 for 10 sec.","[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 350 for 10 sec.","[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 420 for 10 sec.","[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 500 for 10 sec."]}}],"light":"ATK, DEF, HP+15% / P.Dodge +100","dark":"Upon dodging, all skill cooldowns are reduced by 2%. Also, ATK is boosted by 3%, and Atk Spd is boosted by 30. The ATK and Atk Spd Boosts can stack up to 10 times.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Fellow kinsmen, those who possess a warrior's pride","dislikes":"Cowards, hypocrites"},"story":"A stout and honorable warrior of the Harpies, the wielders of the power of wind. Her dignity as a Harpy warrior is more important to her than anything else in the world. She draws upon her willpower and desire to uphold her warrior's honor to bring down any enemy. Her skills are exceptional, even among her peers, and she is the ideal role model for younger Harpy warriors.","itemIntroductions":{"weapon":"A cursed pair of gauntlets crafted from the claws of the Mad Demon Baroro, which was defeated during the war. Several times the size of the average human hands, these gauntlets directly connect to the nerves of the wearer, allowing the wielder to control them effortlessly. Although they grant immense power, they also break into the mind of the wearer, slowing eating away at the soul. Only a true warrior of noble conviction, strong will and undying spirit may handle these cursed weapons. They are the perfect weapons for a warrior with a strong will that shines even in the darkness of the abyss.","treasures":["This piece of amber containing a giant tornado is a treasure of the Harpies. According to myth, a gust of wind that Divine Beast Tyrfas raised out of rage hit the sap of the holy tree, solidified, and turned into amber. Time passed, and now it's divided into several fragments, but the gust inside has not died out. Harpies consider it to be divine and call it the Soul of Gust.","The scarf that the dead Himmullis had on. Naila always has it on her. Himmullis use to always tell Naila to be proud of being a Harpy. The scarf contains the sadness of losing family, and this makes Naila furious.","A ritual offering of ancient religious people who worshipped the wind. It is a precious treasure among the Harpies, and it is said to be given to the most powerful Harpy warrior. The moment one wears this mask, they'll be able to freely use the wind. They can also attack at the speed of light.","A ribbon that holds the grace of a Wind Elemental. Selene gave this green ribbon to Naila, who wanted high speed. It contains a spell of Notos, the Wind Elemental, and it grants Naila rapid and powerful attacks."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Naila",
+    "title": "Wind's Fighter",
+    "class": "warrior",
+    "damageType": "physical",
+    "position": "Front",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Cursed Claws, Baroro",
+            "effect": [
+                "Upon a Crit Hit, deals 150% of ATK as P.DMG over time for 10sec. Target takes 20% increased P.DMG for the duration of skill.",
+                "Upon a Crit Hit, deals 180% of ATK as P.DMG over time for 10sec. Target takes 24% increased P.DMG for the duration of skill.",
+                "Upon a Crit Hit, deals 216% of ATK as P.DMG over time for 10sec. Target takes 28% increased P.DMG for the duration of skill.",
+                "Upon a Crit Hit, deals 258% of ATK as P.DMG over time for 10sec. Target takes 34% increased P.DMG for the duration of skill.",
+                "Upon a Crit Hit, deals 310% of ATK as P.DMG over time for 10sec. Target takes 41% increased P.DMG for the duration of skill.",
+                "Upon a Crit Hit, deals 500% of ATK as P.DMG over time for 10sec. Target takes 50% increased P.DMG for the duration of skill."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "Summons the soul of Cursed Claws, Baroro, increasing own ATK by 40% for 10 sec. For the duration of Skill, deals ??? P.DMG to frontral enemies every 3 sec. Hit enemies are inflicted with Curse of Baroro for 5 sex, taking 30% increased P.DMG and having their Heal Rate reduced by 30%. If the target is a Boss, the Curse of Baroro effect increases by 1.5 times.",
+            "advancement1": "Petrifies the hit enemy for 3 sec.",
+            "advancement2": "Changes Skill Activation Requirements to 4 times and increases the duration of the soul by 3 sec.",
+            "activation": "Charges up upon using Skill 5 times.",
+            "cd": 23,
+            "charges": 6
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Fierce Winds",
+                    "description": "Dashes toward the enemy 2 times, dealing ??? P.DMG to enemies in range, knocking them down for 3 sec. If the target is not a Hero, deals ??? additional P.DMG.",
+                    "cooldown": 8,
+                    "cost": 2
+                }
+            ],
+            "light": "If there is 1 enemy, DMG is increased by 100%.",
+            "dark": "Target changes to the enemy with the highest ATK.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Soul of Gust",
+                "effect": [
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 200 for 10 sec.",
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 240 for 10 sec.",
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 290 for 10 sec.",
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 350 for 10 sec.",
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 420 for 10 sec.",
+                    "[Fierce Winds] Increases DMG by 50%, and reduces the target's P.Dodge chance by 500 for 10 sec."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Wind Reading",
+                    "description": "All allies' P.Dodge Chance is increased by 250 for 15 sec, and ATK is increased by ???.",
+                    "cooldown": 15,
+                    "cost": 3
+                }
+            ],
+            "light": "Mana cost is reduced by 1.",
+            "dark": "Increases Naila's DMG dealt on non-Hero enemies by 30% for the duration of skill.",
+            "books": [
+                "ATK boost is increased by 10%.",
+                "ATK boost is increased by 15%.",
+                "ATK boost is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Himmullis's Scarf",
+                "effect": [
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 100.",
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 120.",
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 140.",
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 170.",
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 210.",
+                    "[Wind Reading] Increases ATK Boost by 50% and M.Dodge by 250."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Dive Bomb",
+                    "description": "Flies up and strikes ??? P.DMG to enemies in range. Knocked down enemies take 50% increased DMG. If the target is not a Hero, deals ??? additional P.DMG.",
+                    "cooldown": 12,
+                    "cost": 3
+                }
+            ],
+            "light": "DMG is increased by 40%.",
+            "dark": "Reduces cooldown by 10% per each enemy that takes Critical DMG.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "Hit enemies are stunned for 3 sec."
+            ],
+            "uniqueTreasure": {
+                "name": "Tempest Pride",
+                "effect": [
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 10% more P.DMG for 10 sec.",
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 12% more P.DMG for 10 sec.",
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 14% more P.DMG for 10 sec.",
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 17% more P.DMG for 10 sec.",
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 21% more P.DMG for 10 sec.",
+                    "[Dive Bomb] Skill cooldown is reduced by 30% and target takes 25% more P.DMG for 10 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Tornado Strike",
+                    "description": "Every 5th normal attack has a 40% chance to deal ??? additional P.DMG to the target. The target takes 30% increased P.DMG for 10 sec and is knocked down for 3 sec."
+                }
+            ],
+            "light": "Activation chance changes to 60%.",
+            "dark": "Atk Spd is boosted by 300 when effect takes place.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Green Ribbon",
+                "effect": [
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 200 for 10 sec.",
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 240 for 10 sec.",
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 290 for 10 sec.",
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 350 for 10 sec.",
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 420 for 10 sec.",
+                    "[Tornado Strike] Reduces the target's P.Block by 500 and P.Dodge by 500 for 10 sec."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / P.Dodge +100",
+    "dark": "Upon dodging, all skill cooldowns are reduced by 2%. Also, ATK is boosted by 3%, and Atk Spd is boosted by 30. The ATK and Atk Spd Boosts can stack up to 10 times.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Fellow kinsmen, those who possess a warrior's pride",
+            "dislikes": "Cowards, hypocrites"
+        },
+        "story": "A stout and honorable warrior of the Harpies, the wielders of the power of wind. Her dignity as a Harpy warrior is more important to her than anything else in the world. She draws upon her willpower and desire to uphold her warrior's honor to bring down any enemy. Her skills are exceptional, even among her peers, and she is the ideal role model for younger Harpy warriors.",
+        "itemIntroductions": {
+            "weapon": "A cursed pair of gauntlets crafted from the claws of the Mad Demon Baroro, which was defeated during the war. Several times the size of the average human hands, these gauntlets directly connect to the nerves of the wearer, allowing the wielder to control them effortlessly. Although they grant immense power, they also break into the mind of the wearer, slowing eating away at the soul. Only a true warrior of noble conviction, strong will and undying spirit may handle these cursed weapons. They are the perfect weapons for a warrior with a strong will that shines even in the darkness of the abyss.",
+            "treasures": [
+                "This piece of amber containing a giant tornado is a treasure of the Harpies. According to myth, a gust of wind that Divine Beast Tyrfas raised out of rage hit the sap of the holy tree, solidified, and turned into amber. Time passed, and now it's divided into several fragments, but the gust inside has not died out. Harpies consider it to be divine and call it the Soul of Gust.",
+                "The scarf that the dead Himmullis had on. Naila always has it on her. Himmullis use to always tell Naila to be proud of being a Harpy. The scarf contains the sadness of losing family, and this makes Naila furious.",
+                "A ritual offering of ancient religious people who worshipped the wind. It is a precious treasure among the Harpies, and it is said to be given to the most powerful Harpy warrior. The moment one wears this mask, they'll be able to freely use the wind. They can also attack at the speed of light.",
+                "A ribbon that holds the grace of a Wind Elemental. Selene gave this green ribbon to Naila, who wanted high speed. It contains a spell of Notos, the Wind Elemental, and it grants Naila rapid and powerful attacks."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}

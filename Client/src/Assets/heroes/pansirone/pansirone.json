@@ -1,0 +1,194 @@
+{
+  "name": "Pansirone",
+  "title": "Psychotic Flame",
+  "class": "mechanic",
+  "damageType": "physical",
+  "position": "Middle",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Roar of Raging Heat, Tersia",
+      "effect": [
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 1%, and DMG dealt from Eternal Blaze by 1%. This effect can be stacked up to max 20 times.",
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 1.2%, and DMG dealt from Eternal Blaze by 1.2%. This effect can be stacked up to max 20 times.",
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 1.4%, and DMG dealt from Eternal Blaze by 1.4%. This effect can be stacked up to max 20 times.",
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 1.7%, and DMG dealt from Eternal Blaze by 1.7%. This effect can be stacked up to max 20 times.",
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 2.1%, and DMG dealt from Eternal Blaze by 2.1%. This effect can be stacked up to max 20 times.",
+        "Each attack on an enemy inflicted with Eternal Blaze increases own ATK and DEF by 2.5%, and DMG dealt from Eternal Blaze by 2.5%. This effect can be stacked up to max 20 times."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "advancement 0, base sw, effect",
+      "advancement1": "advancement 1 effect",
+      "advancement2": "advancement 2 effect.",
+      "activation": "activation requirement",
+      "cd": 0,
+      "charges": 0
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "A Present For You!",
+          "description": "Attacks the enemy and enemies neraby within a wide range, dealing ??? P.DMG and inflicting them with 'Eternal Blaze'. Enemies inflicted with 'Eternal Blaze' take a total of ??? P.DMG over 10 sec and their Heal Rate reduced by 25%. after use of this skill, [Now D.I.E!] can be used within 10 sec.",
+          "cooldown": 22,
+          "cost": 2
+        },
+        {
+          "skillNumber": "s1_2",
+          "name": "Now D.I.E!",
+          "description": "Attacks enemies in a wide frontal range 7 times, dealing ??? P.DMG each hit. If the target is not a Hero, deals ??? additional P.DMG. Enemies inflicted with 'Eternal Blaze' take ??? additional P.DMG each hit.",
+          "cost": 2,
+          "linked": "s1"
+        }
+      ],
+      "light": "[A Present for You!] Hit enemy takes 25% increased P.DMG for 10 sec.",
+      "dark": "[Now D.I.E!] Gains immunity to CC for the duration of the skill.",
+      "books": [
+        "Increases DMG by 10%",
+        "Increases DMG by 15%",
+        "Increases DMG by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Incomprehensible Framed Painting",
+        "effect": [
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 20%.",
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 24%.",
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 29%.",
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 35%.",
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 42%.",
+          "[A Present For You!] Reduces Mana Cost by 1.\n[Now D.I.E!] Increases DMG by 50%."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "The Thrill! How Exciting!!",
+          "description": "Hit enemies within range of self 12 times, dealing a total of ??? P.DMG, and increasing own ATK by ??? and DEF Penetration by 500 for 15 sec.",
+          "cooldown": 20,
+          "cost": 2
+        }
+      ],
+      "light": "Reduces Mana Cost by 1.",
+      "dark": "Upon activation, HP does not fall below 10% for 5 sec.",
+      "books": [
+        "Increases DMG by 10%",
+        "Increases DMG by 15%",
+        "Increases DMG by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Special Fuel Tank",
+        "effect": [
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 4 sec up activation.",
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 4.8 sec up activation.",
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 5.8 sec up activation.",
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 7 sec up activation.",
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 8.4 sec up activation.",
+          "[The Thrill! How Exciting!!] Upon using the Skill, dispels negative effects from self and gains immunity to CC for 10 sec up activation."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Don't You Dare Run!",
+          "description": "Attacks a random enemy 10 times, dealing a total of ??? P.DMG. Attack the same target icnreases DMG by ??? each hit.",
+          "cooldown": 21,
+          "cost": 3
+        } 
+      ],
+      "light": "Inflicts stun on the hit enemy for 2 sec.",
+      "dark": "Increases Mana Cost by 2, and changes of targets to 3.",
+      "books": [
+        "Increases DMG by 10%",
+        "Increases DMG by 15%",
+        "Increases DMG by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Elemtal's Cottage",
+        "effect": [
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 2% for 10 sec. This effect can be stacked up to max 20 times.",
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 2.4% for 10 sec. This effect can be stacked up to max 20 times.",
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 2.9% for 10 sec. This effect can be stacked up to max 20 times.",
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 3.5% for 10 sec. This effect can be stacked up to max 20 times.",
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 4.2% for 10 sec. This effect can be stacked up to max 20 times.",
+          "[Don't You Dare Run!] Increases DMG by 50%, and each hit increases Crit DMG by 5% for 10 sec. This effect can be stacked up to max 20 times"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Cruel Delight",
+          "description": "Increawses ATK by ???, and DMG dealt to Non-Hero enemies by 30%. Attacking enemies inflicted with 'Eternal Blaze' reignites 'Eternal Blaze'."
+        }
+      ],
+      "light": "Eternal Blaze becomes irremovable.",
+      "dark": "Attacking the enemy inflicted with 'Eternal Blaze' 70 Mana each hit.",
+      "books": [
+        "Increases ATK Boost by 10%.",
+        "Increases ATK Boost by 15%.",
+        "Increases ATK Boost by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "UT name",
+        "effect": [
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 3 sec.",
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 3.6 sec.",
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 4.3 sec.",
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 5.2 sec.",
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 6.2 sec.",
+          "[Cruel Delight] Increases Crit DMG by 50%, and reduces self's Cooldown of all Skills by 7.5 sec."
+        ]
+      }
+    }
+  ],
+  "light": "Crit DMG +20%",
+  "dark": "For 200 sec after the beginning of the battle, ATK increases by 5% for 15 sec every 10 sec. This effect can be stacked up to max 20 times.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "missing",
+      "dislikes": "missing"
+    },
+    "story": "missing",
+    "itemIntroductions": {
+      "weapon": "missing",
+      "treasures": [
+        "missing",
+        "missing",
+        "missing",
+        "missing"
+      ]
+    }
+  },
+  "skins": [
+    "a collection of skin names"
+  ],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

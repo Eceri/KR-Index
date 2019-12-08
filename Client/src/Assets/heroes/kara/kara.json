@@ -1,1 +1,201 @@
-{"name":"Kara","title":"Epitome of Ancient Technomagic","class":"mechanic","damageType":"magical","position":"Middle","weapon":{"uniqueWeapon":{"name":"0-Form Perpetual Motion Cannon, Heaven Shatterer","effect":["Increases ATK by 1% every second. Can be stacked up to 30 times.","Increases ATK by 1% every second. Can be stacked up to 40 times.","Increases ATK by 1% every second. Can be stacked up to 50 times.","Increases ATK by 1% every second. Can be stacked up to 60 times.","Increases ATK by 1% every second. Can be stacked up to 70 times.","Increases ATK by 1% every second. Can be stacked up to 80 times."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Anti-personnel Laser","description":"Attacks the target 4 times, dealing a total of ??? M.DMG and inflicting knockback. Attacks all enemies with the last blow, dealing ??? M.DMG and blowing them away for 3 seconds.","cooldown":8,"cost":2},{"skillNumber":"s1_2","name":"Siege Laser","description":"Attacks the target inflicting ??? M.DMG. Crit DMG is applied 200% higher.","cooldown":0,"cost":1,"linked":"s1_0"}],"light":"[Anti-personnel Laser] - Recovers 200 MP upon a Crit Hit. [Siege Laser] - Increases Mana Cost by 1 and DMG by 100%.","dark":"[Anti-personnel Laser] - Reduces 300 MP of the enemy that took the DMG. [Siege Laser] - Reduces Mana Cost by 1.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Optical Lens - MF002","effect":["[Anti-personnel Laser] Increases DMG by 20% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 20% and ignores target's P.Block and M.Block.","[Anti-personnel Laser] Increases DMG by 24% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 24% and ignores target's P.Block and M.Block.","[Anti-personnel Laser] Increases DMG by 29% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 29% and ignores target's P.Block and M.Block.","[Anti-personnel Laser] Increases DMG by 35% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 35% and ignores target's P.Block and M.Block.","[Anti-personnel Laser] Increases DMG by 42% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 42% and ignores target's P.Block and M.Block.","[Anti-personnel Laser] Increases DMG by 50% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 50% and ignores target's P.Block and M.Block."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Wide-area Cannon","description":"Attacks a random target and nearby enemies in range 4 times, inflicting a total of ??? M.DMG and stunning them for 4 seconds.","cooldown":14,"cost":4},{"skillNumber":"s2_2","name":"Focused Fire","description":"Attacks a random target 15 times, inflicting a total of ??? M.DMG, and inflicts Focused Fire for 20 seconds. Inflicts ??? extra M.DMG with each stack of Focused Fire on the enemy. Focused Fire can be stacked up to 30 times.","cooldown":0,"cost":1,"linked":"s2_0"}],"light":"[Wide-area Cannon] - Increases the Stun duration by 1 second. [Focused Fire] - Stacks 1 additional Focused Fire.","dark":"[Wide-area Cannon] - Reduces Mana Cost by 1. [Focused Fire] - Increases the Max Stack of Focused Fire to 60.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Recording Device KARA-00XX","effect":["[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 100 for 10 sec. [Focused Fire] Reduces Cooldown by 2% upon a Crit Hit and recovers 150 Mana.","[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 120 for 10 sec. [Focused Fire] Reduces Cooldown by 2.4% upon a Crit Hit and recovers 150 Mana.","[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 140 for 10 sec. [Focused Fire] Reduces Cooldown by 2.9% upon a Crit Hit and recovers 150 Mana.","[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 170 for 10 sec. [Focused Fire] Reduces Cooldown by 3.5% upon a Crit Hit and recovers 150 Mana.","[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 210 for 10 sec. [Focused Fire] Reduces Cooldown by 4.2% upon a Crit Hit and recovers 150 Mana.","[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 250 for 10 sec. [Focused Fire] Reduces Cooldown by 5% upon a Crit Hit and recovers 150 Mana."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Release Siege Weapon","description":"Kara turns into Siege Weapon mode and attacks the enemy, inflicting ??? M.DMG with each hit. When in Siege Weapon mode, changes Anti-personnel Laser and Wide-area Cannon skills to Siege Laser and Focused Fire skills. When the skill is used again, returns to Anti-personnel Weapon mode.","cooldown":null,"cost":2}],"light":"Increases DMG by 100% when there is only 1 enemy.","dark":"Reduces all skill cooldown by 3% upon a Crit Hit.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Ancient Power Source","effect":["[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 20 times.","[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 24 times.","[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 29 times.","[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 35 times.","[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 42 times.","[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 50 times."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Essence of Technomagic","description":"When in Anti-personnel Weapon mode, increases all DEF by ??? , and when in Siege Weapon mode, increases ATK by ??? , takes 30% more DMG, and gains Immunity to CC. Recovers 60 MP each time DMG is dealt to an enemy."}],"light":"MP Recovery triples when there is only one enemy.","dark":"[Anti-personnel Weapon] - Decreases ATK by 20%, but increases MP Recovery/Sec by 100%. [Siege Weapon] - Decreases all DEF by 60%, but increases Crit DMG by 140%.","books":["ATK and DEF boosts are increased by 10%.","ATK and DEF boosts are increased by 15%.","ATK and DEF boosts are increased by 25%."],"uniqueTreasure":{"name":"Drawing of Ancient Research","effect":["[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 20%.","[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 24%.","[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 29%.","[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 35%.","[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 42%.","[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 50%."]}}],"light":"ATK, DEF, HP+15% / Crit DMG +20%","dark":"[Anti-personnel Weapon] - Increases CC ACC by 400. [Siege Weapon] - Increases ACC by 400.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Energy charge, Master","dislikes":"Orders that cannot be carried out, inefficient way of doing things"},"story":"A human-type Golem that was made with ancient technomagic, but her appearance is just like that of a human girl. But she's an ancient weapon that has no feelings and was just made to be a tool. She was asleep in the ruins of an ancient civilization, deep underground in Galluah Plains. She was excavated by Annette, a technomagi in the Kingdom of Orvel, during her research and awakened in a new era with a new civilization...","itemIntroductions":{"weapon":"An artifact from an ancient civilization that has an engine that provides unlimited power. It's a mighty weapon with the power of a siege weapon, and its power comes close to that of the highest-rank magic. This weapon was found in the ruins of the old Republic of Gray, but it remained in storage since no one knew how to use it. Long after that, Kara was excavated and once she awakened, it teleported to her side. The highest-ranking technomagic weapon that was made in a similar way as the Mountain Fortress.","treasures":["An optical Lens Annette made for Kara. She made it based on the blueprint she discovered while digging Kara out of the ground. The blueprint revealed technology that was far beyond modern engineering, but she managed to interpret some of its content. The result of her study on the blueprint was this lens, which had a similar structure to the eyes of dragonflies. The lens enables the wearer to detect the tiniest of motions and catch sight of the target from hundreds of different angles. She equipped the lens on Kara, the pinnacle of Technomagic, and it resulted in a massive improvement in her attack mode change.","A recording device and processor that works as Kara's brain. It's a treasure that is filled with ancient wisdom, and its capacity far surpasses that of humans. Despite being such an incredible device, it has a hard time recording and replicating emotions.","Kara's source of power and one of the greatest masterpieces of an ancient civilization that has been long forgotten. It's the basic technology that Annette used to make the Rascal, but not even she has been able to figure out everything about this special technology. A permanent engine that continuously creates unlimited magic power.","When Annette excavated Kara, she found this drawing with the blueprint of the optical lens. On the old and worn piece of parchment was a drawing of different mechanical structures, annotated with an unknown language. With Leo's help, she could vaguely translate the content of the drawing. Over the years of research, she could finally complete 'Kara,' the product of the most advanced technomagic."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+    "name": "Kara",
+    "title": "Epitome of Ancient Technomagic",
+    "class": "mechanic",
+    "damageType": "magical",
+    "position": "Middle",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "0-Form Perpetual Motion Cannon, Heaven Shatterer",
+            "effect": [
+                "Increases ATK by 1% every second. Can be stacked up to 30 times.",
+                "Increases ATK by 1% every second. Can be stacked up to 40 times.",
+                "Increases ATK by 1% every second. Can be stacked up to 50 times.",
+                "Increases ATK by 1% every second. Can be stacked up to 60 times.",
+                "Increases ATK by 1% every second. Can be stacked up to 70 times.",
+                "Increases ATK by 1% every second. Can be stacked up to 80 times."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "No info yet.",
+            "advancement1": "No info yet.",
+            "advancement2": "No info yet.",
+            "activation": "No info yet.",
+            "cd": 0,
+            "charges": 0
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Anti-personnel Laser",
+                    "description": "Attacks the target 4 times, dealing a total of ??? M.DMG and inflicting knockback. Attacks all enemies with the last blow, dealing ??? M.DMG and blowing them away for 3 seconds.",
+                    "cooldown": 8,
+                    "cost": 2
+                },
+                {
+                    "skillNumber": "s1_2",
+                    "name": "Siege Laser",
+                    "description": "Attacks the target inflicting ??? M.DMG. Crit DMG is applied 200% higher.",
+                    "cooldown": 11,
+                    "cost": 3,
+                    "linked": "s1_0"
+                }
+            ],
+            "light": "[Anti-personnel Laser] - Recovers 200 MP upon a Crit Hit. [Siege Laser] - Increases Mana Cost by 1 and DMG by 100%.",
+            "dark": "[Anti-personnel Laser] - Reduces 300 MP of the enemy that took the DMG. [Siege Laser] - Reduces Mana Cost by 1.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Optical Lens - MF002",
+                "effect": [
+                    "[Anti-personnel Laser] Increases DMG by 20% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 20% and ignores target's P.Block and M.Block.",
+                    "[Anti-personnel Laser] Increases DMG by 24% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 24% and ignores target's P.Block and M.Block.",
+                    "[Anti-personnel Laser] Increases DMG by 29% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 29% and ignores target's P.Block and M.Block.",
+                    "[Anti-personnel Laser] Increases DMG by 35% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 35% and ignores target's P.Block and M.Block.",
+                    "[Anti-personnel Laser] Increases DMG by 42% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 42% and ignores target's P.Block and M.Block.",
+                    "[Anti-personnel Laser] Increases DMG by 50% and for 10 sec, increases M.DMG target receives by 25%. [Siege Laser] Increases DMG by 50% and ignores target's P.Block and M.Block."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s2",
+                    "name": "Wide-area Cannon",
+                    "description": "Attacks a random target and nearby enemies in range 4 times, inflicting a total of ??? M.DMG and stunning them for 4 seconds.",
+                    "cooldown": 14,
+                    "cost": 4
+                },
+                {
+                    "skillNumber": "s2_2",
+                    "name": "Focused Fire",
+                    "description": "Attacks a random target 15 times, inflicting a total of ??? M.DMG, and inflicts Focused Fire for 20 seconds. Inflicts ??? extra M.DMG with each stack of Focused Fire on the enemy. Focused Fire can be stacked up to 30 times.",
+                    "cooldown": 22,
+                    "cost": 4,
+                    "linked": "s2_0"
+                }
+            ],
+            "light": "[Wide-area Cannon] - Increases the Stun duration by 1 second. [Focused Fire] - Stacks 1 additional Focused Fire.",
+            "dark": "[Wide-area Cannon] - Reduces Mana Cost by 1. [Focused Fire] - Increases the Max Stack of Focused Fire to 60.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Recording Device KARA-00XX",
+                "effect": [
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 100 for 10 sec. [Focused Fire] Reduces Cooldown by 2% upon a Crit Hit and recovers 150 Mana.",
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 120 for 10 sec. [Focused Fire] Reduces Cooldown by 2.4% upon a Crit Hit and recovers 150 Mana.",
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 140 for 10 sec. [Focused Fire] Reduces Cooldown by 2.9% upon a Crit Hit and recovers 150 Mana.",
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 170 for 10 sec. [Focused Fire] Reduces Cooldown by 3.5% upon a Crit Hit and recovers 150 Mana.",
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 210 for 10 sec. [Focused Fire] Reduces Cooldown by 4.2% upon a Crit Hit and recovers 150 Mana.",
+                    "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by 250 for 10 sec. [Focused Fire] Reduces Cooldown by 5% upon a Crit Hit and recovers 150 Mana."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Release Siege Weapon",
+                    "description": "Kara turns into Siege Weapon mode and attacks the enemy, inflicting ??? M.DMG with each hit. When in Siege Weapon mode, changes Anti-personnel Laser and Wide-area Cannon skills to Siege Laser and Focused Fire skills. When the skill is used again, returns to Anti-personnel Weapon mode.",
+                    "cooldown": null,
+                    "cost": 2
+                }
+            ],
+            "light": "Increases DMG by 100% when there is only 1 enemy.",
+            "dark": "Reduces all skill cooldown by 3% upon a Crit Hit.",
+            "books": [
+                "DMG is increased by 10%.",
+                "DMG is increased by 15%.",
+                "DMG is increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Ancient Power Source",
+                "effect": [
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 20 times.",
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 24 times.",
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 29 times.",
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 35 times.",
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 42 times.",
+                    "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to 50 times."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Essence of Technomagic",
+                    "description": "When in Anti-personnel Weapon mode, increases all DEF by ??? , and when in Siege Weapon mode, increases ATK by ??? , takes 30% more DMG, and gains Immunity to CC. Recovers 60 MP each time DMG is dealt to an enemy."
+                }
+            ],
+            "light": "MP Recovery triples when there is only one enemy.",
+            "dark": "[Anti-personnel Weapon] - Decreases ATK by 20%, but increases MP Recovery/Sec by 100%. [Siege Weapon] - Decreases all DEF by 60%, but increases Crit DMG by 140%.",
+            "books": [
+                "ATK and DEF boosts are increased by 10%.",
+                "ATK and DEF boosts are increased by 15%.",
+                "ATK and DEF boosts are increased by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Drawing of Ancient Research",
+                "effect": [
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 20%.",
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 24%.",
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 29%.",
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 35%.",
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 42%.",
+                    "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by 50%."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / Crit DMG +20%",
+    "dark": "[Anti-personnel Weapon] - Increases CC ACC by 400. [Siege Weapon] - Increases ACC by 400.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "Energy charge, Master",
+            "dislikes": "Orders that cannot be carried out, inefficient way of doing things"
+        },
+        "story": "A human-type Golem that was made with ancient technomagic, but her appearance is just like that of a human girl. But she's an ancient weapon that has no feelings and was just made to be a tool. She was asleep in the ruins of an ancient civilization, deep underground in Galluah Plains. She was excavated by Annette, a technomagi in the Kingdom of Orvel, during her research and awakened in a new era with a new civilization...",
+        "itemIntroductions": {
+            "weapon": "An artifact from an ancient civilization that has an engine that provides unlimited power. It's a mighty weapon with the power of a siege weapon, and its power comes close to that of the highest-rank magic. This weapon was found in the ruins of the old Republic of Gray, but it remained in storage since no one knew how to use it. Long after that, Kara was excavated and once she awakened, it teleported to her side. The highest-ranking technomagic weapon that was made in a similar way as the Mountain Fortress.",
+            "treasures": [
+                "An optical Lens Annette made for Kara. She made it based on the blueprint she discovered while digging Kara out of the ground. The blueprint revealed technology that was far beyond modern engineering, but she managed to interpret some of its content. The result of her study on the blueprint was this lens, which had a similar structure to the eyes of dragonflies. The lens enables the wearer to detect the tiniest of motions and catch sight of the target from hundreds of different angles. She equipped the lens on Kara, the pinnacle of Technomagic, and it resulted in a massive improvement in her attack mode change.",
+                "A recording device and processor that works as Kara's brain. It's a treasure that is filled with ancient wisdom, and its capacity far surpasses that of humans. Despite being such an incredible device, it has a hard time recording and replicating emotions.",
+                "Kara's source of power and one of the greatest masterpieces of an ancient civilization that has been long forgotten. It's the basic technology that Annette used to make the Rascal, but not even she has been able to figure out everything about this special technology. A permanent engine that continuously creates unlimited magic power.",
+                "When Annette excavated Kara, she found this drawing with the blueprint of the optical lens. On the old and worn piece of parchment was a drawing of different mechanical structures, annotated with an unknown language. With Leo's help, she could vaguely translate the content of the drawing. Over the years of research, she could finally complete 'Kara,' the product of the most advanced technomagic."
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}
