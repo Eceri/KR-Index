@@ -1,6 +1,6 @@
-## King's Raid Compendium
+## King's Raid Index
 
-WIP
+This is a Site consolidating information on the Game 'King's Raid'. It is still very much wip.
 
 ## Docker Setup
 
