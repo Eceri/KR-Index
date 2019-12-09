@@ -28,7 +28,7 @@ export const Heroes = () => {
   return <>
     {title}
     {Object.keys(heroesClasses).map(key => <div key={key}>
-      <h2>
+      <h2 className={"classHeadline"}>
         <Image src={`classes/${key.toLowerCase()}.png`} className="classIcon" />
         {key}s</h2>
       <div className="heroesContainer">

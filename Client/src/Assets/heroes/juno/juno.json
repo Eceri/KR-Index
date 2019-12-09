@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the Soul of Hundred-Flavor Banquet, Tempora Fyrr for 10 sec and gains additional effects accourding to Juno's status.\nWhile in [Cook from Heaven], increases all allies' All DEF by 50% + euqal to 3% of Juno's ATK.\nWhile in [Cook from Hell], increases all allies' ATK by 30% + euqal to 3% of Juno's ATK.\nUpon using the Skill at 2 or more stacks of [Excellent Ingredient], consumes 2 stacks and increases all effect by 50%.",
+            "advancement1": "Reduces Skill Activation Requirement to 5 times.",
+            "advancement2": "While in [Cook from Heaven], reduces All DMG all allies take by 20%.\nWhile in [Cook from Hell], increases All DMG all enemies take by 15%.\nThe effect of Excellent Ingredient stacks applies to these effects.",
+            "activation": "Charges up upon using Skills 7 times.",
+            "cd": 22,
+            "charges": 5
         }
     },
     "skills": [
