@@ -72,8 +72,8 @@ export const NavBar = () => {
     <nav>
       <Link to={"/"} className={"navLink"}>
         <img
-          src={"/iconTest.png"}
-          alt={"nagatoro.png"}
+          src={"/favicon.png"}
+          alt={"favicon.png"}
           style={{ width: 24, border: "none" }}
         />
       </Link>

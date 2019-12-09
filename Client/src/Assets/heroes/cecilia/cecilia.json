@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Supersonic Tempest, Gigantix for 12 sec. Normal and Skill attacks have a 10% chance to deal ??? P.DMG to the target and enemies within a small range of it, inflicting stun for 1 sec.",
+            "advancement1": "Increases own ATK by 40% for the duration of Skill.",
+            "advancement2": "Activation chance is increased to 20%.",
+            "activation": "Charges up upon using Skills 7 times.",
+            "cd": 22,
+            "charges": 7
         }
     },
     "skills": [
