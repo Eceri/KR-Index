@@ -41,8 +41,7 @@
                     "name": "Juno's Spicy Special",
                     "description": "Removes positive effects from all enemies, deals a total of ??? P.DMG over 10 second(s), and enemies take 20% increased P.DMG. When there are 2 stacks or more [Excellent Ingredient], consumes 2 stacks to double the P.DMG that enemies take.",
                     "cooldown": 9,
-                    "cost": 2,
-                    "linked": "s1_0"
+                    "cost": 2
                 }
             ],
             "light": "[Best Dish] Increases ATK of the target by 15% for the duration of skill. [Juno's Spicy Special] Target takes 25% increased P.DMG for 10 sec.",
@@ -79,8 +78,7 @@
                     "name": "Help Yourself, Then Get Lost!",
                     "description": "Attacks the target and nearby enemies around it, dealing ??? P.DMG and reducing their Mana by 1 orb. If the target is not a Hero, inflicts ??? additional P.DMG that ignores DEF. When there are 2 stacks or more [Excellent Ingredient], consumes 2 stacks to double the Mana Reduction.",
                     "cooldown": 8,
-                    "cost": 2,
-                    "linked": "s2_0"
+                    "cost": 2
                 }
             ],
             "light": "[Power-up] Increases Mana Cost by 1, but casts shields on 2 targets. [Help Yourself, Then Get Lost!] Reduces ATK Spd of hit enemy by 200 for 10 seconds.",

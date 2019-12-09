@@ -41,8 +41,7 @@
                     "name": "Siege Laser",
                     "description": "Attacks the target inflicting ??? M.DMG. Crit DMG is applied 200% higher.",
                     "cooldown": 11,
-                    "cost": 3,
-                    "linked": "s1_0"
+                    "cost": 3
                 }
             ],
             "light": "[Anti-personnel Laser] - Recovers 200 MP upon a Crit Hit. [Siege Laser] - Increases Mana Cost by 1 and DMG by 100%.",
@@ -79,8 +78,7 @@
                     "name": "Focused Fire",
                     "description": "Attacks a random target 15 times, inflicting a total of ??? M.DMG, and inflicts Focused Fire for 20 seconds. Inflicts ??? extra M.DMG with each stack of Focused Fire on the enemy. Focused Fire can be stacked up to 30 times.",
                     "cooldown": 22,
-                    "cost": 4,
-                    "linked": "s2_0"
+                    "cost": 4
                 }
             ],
             "light": "[Wide-area Cannon] - Increases the Stun duration by 1 second. [Focused Fire] - Stacks 1 additional Focused Fire.",
