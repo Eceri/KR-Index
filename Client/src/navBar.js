@@ -24,11 +24,117 @@ const SearchListElement = styled.li`
   }
 `;
 
-const artifactNamesfilter = (names, query) => {
+let heroesClasses = {
+  Knight: [
+    "Phillop",
+    "Clause",
+    "Demia",
+    "Morrah",
+    "Jane",
+    "Ricardo",
+    "Aselica",
+    "Neraxis",
+    "Sonia",
+    "Glenwys",
+    "Loman",
+    "Dosarta"
+  ],
+  Warrior: [
+    "Kasel",
+    "Gau",
+    "Naila",
+    "Theo",
+    "Viska",
+    "Priscilla",
+    "Seria",
+    "Scarlet",
+    "Kirze",
+    "Chase",
+    "Bernheim",
+    "Nicky"
+  ],
+  Assassin: [
+    "Roi",
+    "Epis",
+    "Reina",
+    "Fluss",
+    "Tanya",
+    "Ezekiel",
+    "Erze",
+    "Laudia",
+    "Mirianne",
+    "Nia",
+    "Gladi"
+  ],
+  Archer: [
+    "Selene",
+    "Dimael",
+    "Luna",
+    "Arch",
+    "Yanne",
+    "Zafir",
+    "Yuria",
+    "Requina",
+    "Shamilla"
+  ],
+  Mechanic: [
+    "Lakrak",
+    "Miruru",
+    "Rodina",
+    "Annette",
+    "Mitra",
+    "Oddy",
+    "Crow",
+    "Chrisha",
+    "Kara",
+    "Cecilia",
+    "Hanus",
+    "Pansirone"
+  ],
+  Wizard: [
+    "Cleo",
+    "Maria",
+    "Lorraine",
+    "Pavel",
+    "Aisha",
+    "Lewisia",
+    "Nyx",
+    "Ophelia",
+    "Lilia",
+    "Artemia",
+    "Esker",
+    "Dakaris",
+    "Veronica",
+    "Cain"
+  ],
+  Priest: [
+    "Frey",
+    "Kaulah",
+    "Rephy",
+    "Baudouin",
+    "Leo",
+    "Laias",
+    "Cassandra",
+    "Mediana",
+    "Lavril",
+    "Lucias",
+    "Shea",
+    "May",
+    "Juno",
+    "Rehartna"
+  ]
+};
+
+const searchFilter = (names, query) => {
+  const heroeNames = Object.values(heroesClasses).flat();
   const artifactNames = names.map(artifact => artifact.name);
-  return artifactNames.filter(v =>
+  const artifactResults = artifactNames.filter(v =>
     v.toLowerCase().includes(query.toLowerCase())
   );
+  const heroeResults = heroeNames.filter(v =>
+    v.toLowerCase().includes(query.toLowerCase())
+  );
+  return [...artifactResults, ...heroeResults].sort();
 };
 
 export const NavBar = () => {
@@ -125,7 +231,7 @@ const renderSearchBox = (search, artifacts, ref, searchQuery) =>
   search && (
     <SearchBox ref={ref}>
       <ul style={{ margin: 0, padding: 0 }}>
-        {artifactNamesfilter(artifacts, searchQuery).map(name => (
+        {searchFilter(artifacts, searchQuery).map(name => (
           <SearchListElement
             key={name}
             onClick={() => window.open(`/artifacts/${name}`, "_self")}

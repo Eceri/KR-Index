@@ -136,7 +136,7 @@ router.delete("/delete/:id", async (req, res, next) => {
   Logger.info("End DELETE Route /artifact/delete/:id", id);
 });
 
-router.delete("/delete/all", async (req, res, next) => {
+router.delete("/empty/", async (req, res, next) => {
   Logger.info("DELETE ALL Route /artifact/delete/all");
   try {
     await Data.deleteMany({});

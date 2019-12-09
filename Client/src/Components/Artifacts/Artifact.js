@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { stars } from "../atoms/Stars/stars";
 
 const ArtifactStory = styled.section`
@@ -11,15 +12,33 @@ const NameAndStars = styled.section`
   padding-bottom: 1rem;
 `;
 
+// const SmallTab = styled(props => <Tab {...props} />)`
+//   width: 50%;
+//   list-style: none;
+
+// `;
+
+// SmallTab.tabsRole = "Tab";
 const Artifact = artifact => {
   const [star, setStar] = useState(0);
   return (
-    <React.Fragment key={artifact.name}>
+    <>
       {renderTop(artifact, star, setStar)}
-      <p>{artifact.description[star]}</p>
+      <Tabs key={artifact.name}>
+        <TabList>
+          <Tab>Effect</Tab>
+          <Tab>Story</Tab>
+        </TabList>
 
-      <ArtifactStory>{artifact.story}</ArtifactStory>
-    </React.Fragment>
+        <TabPanel>
+          <p>{artifact.description[star]}</p>
+        </TabPanel>
+
+        <TabPanel>
+          <ArtifactStory>{artifact.story}</ArtifactStory>
+        </TabPanel>
+      </Tabs>
+    </>
   );
 };
 
@@ -29,7 +48,7 @@ const renderTop = (artifact, star, setStar) => (
       src={require(`../../Assets/artifacts/${artifact.name}.png`)}
       alt="Pic"
       align="left"
-      style={{ marginRight: "1rem", width: "96px" }}
+      style={{ marginRight: "1rem", width: "96px", marginBottom: "2rem" }}
     />
     <NameAndStars>
       <h1>{artifact.name}</h1>
