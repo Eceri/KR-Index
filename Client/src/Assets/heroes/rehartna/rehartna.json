@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "missing",
-            "advancement1": "missing",
-            "advancement2": "missing",
-            "activation": "missing",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Anthem of a New Road, Matimaruma, increasing all allies ATK by 50% for 10 sec. After 10 sec, deals ??? P.DMG to frontal enemies in a straight line, knocking them down for 3 sec.",
+            "advancement1": "Increases ATK Spd of all allies by 400 for the duration of the Skill.",
+            "advancement2": "increases P.DMG the enemy takes by 50% for 15 sec.",
+            "activation": "Charges up upon using Skills 5 times.",
+            "cd": 24,
+            "charges": 6
         }
     },
     "skills": [
