@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of 0-Form Perpetual Motion Cannon, Heaven Shatterer for 12 sec. The summoned soul attacks the target continuously, dealing ??? M.DMG every 0.5 sec. If the attack hits the same target for more than 5 sec, the effect is enhanced, increasing DMG by 100%.",
+            "advancement1": "Increases the duration of the soul by 6 sec.",
+            "advancement2": "The enhanced attack stuns the enemy for 1 sec, and increases its DMG by an additional 100%.",
+            "activation": "Charges up over 20 sec.",
+            "cd": 24,
+            "charges": 7
         }
     },
     "skills": [
