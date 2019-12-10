@@ -101,7 +101,28 @@
       "Roi",
       "Tanya"
     ],
-    "classTranscendencePerks": []
+    "classTranscendencePerks": [
+      {
+        "name": "Target Weakness",
+        "effect": "ATK rises by 20% and DEF Penetration rises by 200."
+      },
+      {
+        "name": "Swift and Nible",
+        "effect": "Per every sec, Dodge rate is increased by 100. This effect can be stacked up to max 5 times, and resets upon dodging an Attack."
+      },
+      {
+        "name": "Tactical Foresight",
+        "effect": "Dodge rate is increased by 200 and takes 10% reduced DMG."
+      },
+      {
+        "name": "Opportune Strike",
+        "effect": "Crit Chance is increased by 150 and Crit DMG is increased by 30%."
+      },
+      {
+        "name": "Vital Detection",
+        "effect": "Upon attack, causes the target to take 10% increased All DMG and have their ATK Spd reduced by 100 for 10 sec. This effect activates once every 3 sec."
+      }
+    ]
   },
   {
     "name": "Archer",
@@ -116,7 +137,28 @@
       "Yuria",
       "Zafir"
     ],
-    "classTranscendencePerks": []
+    "classTranscendencePerks": [
+      {
+        "name": "Precision Shot",
+        "effect": "ATK rises by 20% and ACC rises by 400%."
+      },
+      {
+        "name": "Eagle Eye",
+        "effect": "Increases all allies DEF Penetration by 150 and ACC by 75. If the ally uses the same Perk, only 50 additional DEF Penetration and 25 additional ACC apply."
+      },
+      {
+        "name": "Mortal Wound",
+        "effect": "Successful Crit Attack reduces enemy recovery rate by 50% and deal Physical continuous DMG every second equal to 20% ATK. Does not stack."
+      },
+      {
+        "name": "Opportune Strike",
+        "effect": "Crit Chance is increased by 150 and Crit DMG is increased by 30%."
+      },
+      {
+        "name": "Concentration",
+        "effect": "Every 5 sec, increases own Crit DMG by 4%. This effect can be stacked up to max 25 times and is irremovable."
+      }
+    ]
   },
   {
     "name": "Mechanic",
@@ -152,7 +194,8 @@
       },
       {
         "name": "Amplified Gunpowder",
-        "effect": "Increases Crit DMG of all allies by 30%. If the ally uses the same Perk, only 10% additional Crit DMG is applied."}
+        "effect": "Increases Crit DMG of all allies by 30%. If the ally uses the same Perk, only 10% additional Crit DMG is applied."
+      }
     ]
   },
   {
@@ -173,7 +216,28 @@
       "Pavel",
       "Veronica"
     ],
-    "classTranscendencePerks": []
+    "classTranscendencePerks": [
+      {
+        "name": "Deception",
+        "effect": "When receiving DMG, becomes immune to the next 3 hit of DMG. This effect is activated every 40 sec."
+      },
+      {
+        "name": "Moral Rise",
+        "effect": "Increases ATK of all allies by 15%. If the ally uses the same Perk, only 3% additional ATK applies."
+      },
+      {
+        "name": "Blessing of Mana",
+        "effect": "Mana recovery per second rises by 250%."
+      },
+      {
+        "name": "Curcuit Burst",
+        "effect": "Receives 15% more DMG but gains 40% ATK. ACC is increases by 200."
+      },
+      {
+        "name": "Destruction",
+        "effect": "Increases Crit Chance by 200 and DEF Penetration by 200."
+      }
+    ]
   },
   {
     "name": "Priest",
@@ -193,6 +257,27 @@
       "Rephy",
       "Shea"
     ],
-    "classTranscendencePerks": []
+    "classTranscendencePerks": [
+      {
+        "name": "Vengeful Curse",
+        "effect": "When hit by an enemy, attacker's DMG is reduced by 70% for 3 sec. This effect only activates once in 40 sec, and cannot be dispelled."
+      },
+      {
+        "name": "Goddess Blessing",
+        "effect": "Increases Crit Chance of all allies by 150. If the ally uses the same Perk, only 50 additional Crit Chance applies."
+      },
+      {
+        "name": "Inner Peace",
+        "effect": "Heal all allies by 1% every sec and increases CC Resist by 75. If the ally uses the same Perk, only 0.3% additional healing per sec and 25 additional CC Resist apply."
+      },
+      {
+        "name": "Blessing of Mana",
+        "effect": "Mana recovery per second rises by 250%."
+      },
+      {
+        "name": "Swiftness",
+        "effect": "Increases ATK Spd of all allies by 150. If the ally uses the same Perk, only 50 additional ATK Spd applies."
+      }
+    ]
   }
 ]
