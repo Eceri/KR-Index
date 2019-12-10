@@ -107,7 +107,7 @@
         "effect": "ATK rises by 20% and DEF Penetration rises by 200."
       },
       {
-        "name": "Swift and Nible",
+        "name": "Swift and Nimble",
         "effect": "Per every sec, Dodge rate is increased by 100. This effect can be stacked up to max 5 times, and resets upon dodging an Attack."
       },
       {
