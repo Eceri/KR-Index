@@ -36,17 +36,18 @@ nav {
 nav > a {
 padding: .75rem;
 }
+nav a:hover{
+  background: black;
+}
 a {
   text-decoration: none;
   color: white;
-}
-nav a:hover{
-  background: black;
 }
 p {
   margin: 0
 }
 footer {
+  bottom: 0;
   text-align: center;
   margin: 3rem 0 0 0;
 }
@@ -55,18 +56,25 @@ footer {
 *:before {
   box-sizing: border-box;
 }
+footer{
+  padding: .5rem;
+}
+footer,
 #pageContainer {
   margin: auto;
   background: #404040;
   white-space: pre-line;
-  min-height: calc(100vh);
   min-width: 360px;
   max-width: 860px;
   width: 100%;
-  margin-top: 3rem;
+}
+#pageContainer{
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  min-height: calc(100vh);
 }
 #pageContainer > div {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
 }
 #pageContainer:empty {
   background-color: pink;

@@ -9,6 +9,7 @@ import {
 } from "./../components";
 import ReactTooltip from "react-tooltip";
 import { createHelmet } from "../../helpers/helpers.index";
+
 //import css
 import "../styles/hero.css";
 import "../styles/tabStyles.css";
@@ -16,13 +17,12 @@ import "../styles/tabStyles.css";
 export const Hero = props => {
   let heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
   const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
-
+  window.scrollTo(0, 0)
   return (
     <>
       {createHelmet(
         heroInfo.name,
-        `${heroInfo.name} - ${heroInfo.title}`,
-        `/Assets/heroes/${heroPath}portrait.png`
+        `${heroInfo.name} - ${heroInfo.title}`
       )}
       <div className="flexBox" id="hero">
         <Image src={`${heroPath}portrait.png`} id={"portrait"} />

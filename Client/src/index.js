@@ -7,22 +7,35 @@ import NavBar from "./navBar";
 import "./Components/styles/base.css";
 
 render(
-  <div id="pageContainer">
-    <BrowserRouter>
-      <NavBar key={"components.js"} />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/heroes/" component={Heroes} />
-        <Route push={true} path="/heroes/:hero" component={Hero} />
-        <Route path="/artifact/:artifact" component={Artifacts} />
-        <Route path="/artifacts/" component={Artifacts} />
-        <Route path="/etc" component={Etc} />
-        <Route path="/Maya" component={Maya} />
-      </Switch>
-      <footer id={"footer"}>
-        <p>Everything is under construction.</p>
-      </footer>
-    </BrowserRouter>
-  </div>,
+  <>
+    <div id="pageContainer">
+      <BrowserRouter>
+        <NavBar key={"components.js"} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/heroes/" component={Heroes} />
+          <Route push={true} path="/heroes/:hero" component={Hero} />
+          <Route path="/artifact/:artifact" component={Artifacts} />
+          <Route path="/artifacts/" component={Artifacts} />
+          <Route path="/etc" component={Etc} />
+          <Route path="/Maya" component={Maya} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+    <footer id={"footer"}>
+      <a
+        href="https://github.com/Eceri/KR-Index"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ alignItems: "center" }}
+      >
+        <img
+          src="GitHub-Mark-Light-32px.png"
+          alt="github"
+          style={{ border: "none" }}
+        />
+      </a>
+    </footer>
+  </>,
   document.getElementById("root")
 );

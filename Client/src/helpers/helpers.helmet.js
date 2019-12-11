@@ -11,6 +11,5 @@ export const createHelmet = (title, content, link) => (
   <Helmet>
     <title>{title}</title>
     <meta name="description" content={content} />
-    <link rel="icon" href={link} sizes="124x124"></link>
   </Helmet>
 );

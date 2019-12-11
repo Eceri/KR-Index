@@ -1,1 +1,185 @@
-{"name":"Gau","title":"Barbarian of Frozen Lands","class":"warrior","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"Holy Bird, Numinu","effect":["Increases own Max HP by {0}%. Per every 1% of HP missing, ATK is increased by {1}% and ATK Spd is increased by {2}.","Per every 1% of HP lost, ATK is increased by 1% and ATK Spd is increased by 10.","Per every 1% of HP lost, ATK is increased by 1.2% and ATK Spd is increased by 12.","Per every 1% of HP lost, ATK is increased by 1.4% and ATK Spd is increased by 14.","Per every 1% of HP lost, ATK is increased by 1.7% and ATK Spd is increased by 17.","Per every 1% of HP lost, ATK is increased by 2% and ATK Spd is increased by 20."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Smash","description":"Deals ??? P.DMG to enemies within range, and the first attack knocks them down for 3 sec and reduces their ATK Spd by 250 for 10 sec.","cooldown":8,"cost":2}],"light":"Mana cost is reduced by 1.","dark":"Each use increases DMG by 15%. Stacks 10 times max.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"King of Frost Helmet","effect":["[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 10% for 10 sec.","[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 12% for 10 sec.","[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 14% for 10 sec.","[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 17% for 10 sec.","[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 21% for 10 sec.","[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 25% for 10 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Battle Roar","description":"All allies' ATK is increased by ??? for 15 sec. Upon activation, dispels all negative effects from allies.","cooldown":15,"cost":2}],"light":"ATK boost is increased by 40%.","dark":"ATK Spd boost of 200 is added to the effect.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Fighter's Horn","effect":["[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 20%.","[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 24%.","[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 29%.","[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 35%.","[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 42%.","[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 50%."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Vortex","description":"Deals ??? P.DMG to nearby enemies. If the target is not a Hero, deals ??? P.DMG. The last attack freezes nearby enemies for 4 sec. Gains immunity to CC for the duration of Skill.","cooldown":20,"cost":4}],"light":"Cooldown reduced by 3 sec.","dark":"Immune to all types of DMG while in use.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Draws in nearby enemies while casting."],"uniqueTreasure":{"name":"Barbarian Mug","effect":["[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 5% more DMG for 10 sec.","[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 6% more DMG for 10 sec.","[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 7% more DMG for 10 sec.","[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 8.5% more DMG for 10 sec.","[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 10.5% more DMG for 10 sec.","[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 12.5% more DMG for 10 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Enrage","description":"Upon attacking, increases ATK by ??? for 5 sec, and DMG to Non-Hero enemies by 3%. This effect can be stacked up to max 10 times."}],"light":"ATK boost is increased by 40%.","dark":"Takes 5% more DMG per each stack, but gains a boost of 50 Crit Chance and Lifesteal per each stack as well.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","CC resistance increases by 50 with each stack."],"uniqueTreasure":{"name":"Snowdrop Bracelet","effect":["[Enrage] Increases the max number of stacks by 1. Each stack increases DEF Penetration by 10.","[Enrage] Increases the max number of stacks by 2. Each stack increases DEF Penetration by 10.","[Enrage] Increases the max number of stacks by 3. Each stack increases DEF Penetration by 10.","[Enrage] Increases the max number of stacks by 4. Each stack increases DEF Penetration by 10.","[Enrage] Increases the max number of stacks by 5. Each stack increases DEF Penetration by 10.","[Enrage] Increases the max number of stacks by 6. Each stack increases DEF Penetration by 10."]}}],"light":"ATK, DEF, HP+15% / P. Block +200","dark":"Heals HP worth 10% of ATK every second, and every 1% of HP lost reduces received DMG by 0.6%.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Children, animals","dislikes":"Destructive and violent people"},"story":"Gau is a powerful warrior from the Barbarian Kingdom. Whenever he swung his twin axes, a bloodbath would follow. As a warrior, he was feared for his peerless ferocity. However, he suddenly disappeared for 10 years. When he returned, he was a completely changed man. His violent Barbarian tendencies were all gone, even when others criticized him. Instead, he now faces them with smiles and jolly laughter. The kind, warm gaze he now shows to children and animals is especially surprising.","itemIntroductions":{"weapon":"It is said that there lives a sacred beast protecting the Barbarians in the Windland Snow Mountain. This beast, capable of dispelling the power of darkness, is supposed to be a blue phoenix composed of ice. Created in the shape of this beast is Numinu, its name means 'holy.' It has been crafted from enchanted ice that never melts. Considered a holy relic among Barbarians, this weapon is bestowed to their mightiest warrior. The wielder of this weapon is the most powerful warrior among Barbarians, and may be considered their king.","treasures":["A worn-out helmet of Frost Giant King. It was last used by the darkness-ridden Frost Giant King. Gau, hoping that the tragedy of Windland Snow Mountain won't repeat itself, keeps this broken helmet to mourn the fallen hero.","Trumpet made with the horn of the guardian beast of Windland Snow Mountain, Orox. Orox of the Snowy Mountain grants noble warriors great power and the ability to see the truth. When a warrior who has received the blessing of Orox blows this horn, it will boost the morale of comrades and bring clarity to their minds.","Mug of the Barbarian King who first settled down in the snowy mountains. When the first Barbarian King settled down in Windland, he swore to become the guardian of the snowy mountains and shared this mug with the holy beings of the mountains. The protect magic of the frost wolf imbued in the Barbarian Mug increases the ATK of Vortex and the effect of Freeze.","A bracelet made with a Snowdrop Flower. Although it was made with clumsy hands, the children at the orphanage made this bracelet as a birthday gift for Gau after seeing him grieve for his fallen Barbarian tribes. A Snowdrop means hope and comfort in the language of flowers."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Gau",
+  "title": "Barbarian of Frozen Lands",
+  "class": "warrior",
+  "damageType": "physical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Holy Bird, Numinu",
+      "effect": [
+        "Increases own Max HP by 12%. Per every 1% of HP missing, ATK is increased by 0.8% and ATK Spd is increased by 8.",
+        "Increases own Max HP by 14%. Per every 1% of HP missing, ATK is increased by 1% and ATK Spd is increased by 10.",
+        "Increases own Max HP by 17%. Per every 1% of HP missing, ATK is increased by 1.2% and ATK Spd is increased by 12.",
+        "Increases own Max HP by 21%. Per every 1% of HP missing, ATK is increased by 1.4% and ATK Spd is increased by 14.",
+        "Increases own Max HP by 25%. Per every 1% of HP missing, ATK is increased by 1.7% and ATK Spd is increased by 17.",
+        "Increases own Max HP by 30%. Per every 1% of HP missing, ATK is increased by 2% and ATK Spd is increased by 20."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "No info yet.",
+      "advancement1": "No info yet.",
+      "advancement2": "No info yet.",
+      "activation": "No info yet.",
+      "cd": 0,
+      "charges": 0
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Smash",
+          "description": "Deals ??? P.DMG to enemies within range, and the first attack knocks them down for 3 sec and reduces their ATK Spd by 250 for 10 sec.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "Each use increases DMG by 15%. Stacks 10 times max.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "King of Frost Helmet",
+        "effect": [
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 10% for 10 sec.",
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 12% for 10 sec.",
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 14% for 10 sec.",
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 17% for 10 sec.",
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 21% for 10 sec.",
+          "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by 25% for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Battle Roar",
+          "description": "All allies' ATK is increased by ??? for 15 sec. Upon activation, dispels all negative effects from allies.",
+          "cooldown": 15,
+          "cost": 2
+        }
+      ],
+      "light": "ATK boost is increased by 40%.",
+      "dark": "ATK Spd boost of 200 is added to the effect.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "ATK boost is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Fighter's Horn",
+        "effect": [
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 20%.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 24%.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 29%.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 35%.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 42%.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 50%."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Vortex",
+          "description": "Deals ??? P.DMG to nearby enemies. If the target is not a Hero, deals ??? P.DMG. The last attack freezes nearby enemies for 4 sec. Gains immunity to CC for the duration of Skill.",
+          "cooldown": 20,
+          "cost": 4
+        }
+      ],
+      "light": "Cooldown reduced by 3 sec.",
+      "dark": "Immune to all types of DMG while in use.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "Draws in nearby enemies while casting."
+      ],
+      "uniqueTreasure": {
+        "name": "Barbarian Mug",
+        "effect": [
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 5% more DMG for 10 sec.",
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 6% more DMG for 10 sec.",
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 7% more DMG for 10 sec.",
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 8.5% more DMG for 10 sec.",
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 10.5% more DMG for 10 sec.",
+          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 12.5% more DMG for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Enrage",
+          "description": "Upon attacking, increases ATK by ??? for 5 sec, and DMG to Non-Hero enemies by 3%. This effect can be stacked up to max 10 times."
+        }
+      ],
+      "light": "ATK boost is increased by 40%.",
+      "dark": "Takes 5% more DMG per each stack, but gains a boost of 50 Crit Chance and Lifesteal per each stack as well.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "CC resistance increases by 50 with each stack."
+      ],
+      "uniqueTreasure": {
+        "name": "Snowdrop Bracelet",
+        "effect": [
+          "[Enrage] Increases the max number of stacks by 1. Each stack increases DEF Penetration by 10.",
+          "[Enrage] Increases the max number of stacks by 2. Each stack increases DEF Penetration by 10.",
+          "[Enrage] Increases the max number of stacks by 3. Each stack increases DEF Penetration by 10.",
+          "[Enrage] Increases the max number of stacks by 4. Each stack increases DEF Penetration by 10.",
+          "[Enrage] Increases the max number of stacks by 5. Each stack increases DEF Penetration by 10.",
+          "[Enrage] Increases the max number of stacks by 6. Each stack increases DEF Penetration by 10."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / P. Block +200",
+  "dark": "Heals HP worth 10% of ATK every second, and every 1% of HP lost reduces received DMG by 0.6%.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Children, animals",
+      "dislikes": "Destructive and violent people"
+    },
+    "story": "Gau is a powerful warrior from the Barbarian Kingdom. Whenever he swung his twin axes, a bloodbath would follow. As a warrior, he was feared for his peerless ferocity. However, he suddenly disappeared for 10 years. When he returned, he was a completely changed man. His violent Barbarian tendencies were all gone, even when others criticized him. Instead, he now faces them with smiles and jolly laughter. The kind, warm gaze he now shows to children and animals is especially surprising.",
+    "itemIntroductions": {
+      "weapon": "It is said that there lives a sacred beast protecting the Barbarians in the Windland Snow Mountain. This beast, capable of dispelling the power of darkness, is supposed to be a blue phoenix composed of ice. Created in the shape of this beast is Numinu, its name means 'holy.' It has been crafted from enchanted ice that never melts. Considered a holy relic among Barbarians, this weapon is bestowed to their mightiest warrior. The wielder of this weapon is the most powerful warrior among Barbarians, and may be considered their king.",
+      "treasures": [
+        "A worn-out helmet of Frost Giant King. It was last used by the darkness-ridden Frost Giant King. Gau, hoping that the tragedy of Windland Snow Mountain won't repeat itself, keeps this broken helmet to mourn the fallen hero.",
+        "Trumpet made with the horn of the guardian beast of Windland Snow Mountain, Orox. Orox of the Snowy Mountain grants noble warriors great power and the ability to see the truth. When a warrior who has received the blessing of Orox blows this horn, it will boost the morale of comrades and bring clarity to their minds.",
+        "Mug of the Barbarian King who first settled down in the snowy mountains. When the first Barbarian King settled down in Windland, he swore to become the guardian of the snowy mountains and shared this mug with the holy beings of the mountains. The protect magic of the frost wolf imbued in the Barbarian Mug increases the ATK of Vortex and the effect of Freeze.",
+        "A bracelet made with a Snowdrop Flower. Although it was made with clumsy hands, the children at the orphanage made this bracelet as a birthday gift for Gau after seeing him grieve for his fallen Barbarian tribes. A Snowdrop means hope and comfort in the language of flowers."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

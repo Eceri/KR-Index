@@ -147,28 +147,28 @@
     "dark": "Upon every skill use, increases 4 random allies' ATK by 3% and All DEF by 3%. This effect can be stacked up to max 10 times, and is irremovable.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
-            "likes": "missing",
-            "dislikes": "missing"
+            "gender": "Female",
+            "race": "Human",
+            "age": "18 Years",
+            "height": "159 cm",
+            "birthday": "4(Month) 26(Day), Month of Life",
+            "constellation": "Amil the Saint",
+            "likes": "Family, friends, orange pound cake, high quality materials",
+            "dislikes": "Her borther who keep raiding her snacks, blueprints wiht late-found errors, irresponsible poeple, tangled ribbons"
         },
-        "story": "missing",
+        "story": "The owner and artisan of 'Aselerando', an instrument atelier located at the Empire's capital. Her cheerful personality, along with her gentle tone and diligence, is well-received by the customers. With her excellent customer service towards her regulars along with her great crafting skills, Rehartna is known as an accomplished entrepreneur even at a young age. She appears to be just an ordinary artisan, but in reality, she is actually a member of the Resistance.\nShe works as an intel collector who also arranges contacts, and she mostly performs her duty while traveling around the Empire, disguised as a trader Rehartna is very punctual and heavy-mouthed individual who has earned great trust from her fellow Resistance comrades.\nMoreover, her atelier's backroom serves as one of the hideouts of the Resistance, providing space for Resistance members from different places to exchange information.",
         "itemIntroductions": {
-            "weapon": "missing",
+            "weapon": "On the surface, its just a big, complicated instrument. However, there's more to this instrument than meets the eye. Just a slight change to the sound generator component, this instrument transforms into a weapon that discharges special ultrasonic waves.",
             "treasures": [
-                "missing",
-                "missing",
-                "missing",
-                "missing"
+                "A small letter with a sealing wax stamped on it. It's a telegram containing info or news sent out to the outer base from the capital base, or from outer base to the capital base.\nDue to the nature of their organization, the Resistance prefers to convey information verbally, but there are cases when the info must be scribed and sent in a document form.\nThis is when Rehartna, who is also a contact, makes her move. Rehartna is best suited for this job because she can move in and out of the capital freely to do 'business' for her atelier. Rehartna gives excuses such as arranging a deal that involves expensive instruments, and sometimes, she even disguises the letter as a of commission from the customer.\nTo make the disguise look even more convincing, Rehartna uses expensive envelopes and premium sealing wax.",
+                "The core component of Matimaruma. It replaces the sound-generating component of Matimaruma to transform it into a weapon. Since the effect of each ultrasonic wave is different, Rehartna gave a different color to each of them to tell them apart.\nBack when Rehartna was busy making Matimaruma, she crafted all other parts with ease, but she could not craft the most essential part to way she wanted to.\nWorried about Rehartna stressing over the solution, her comrades helped her out by collecting every resources they could find through research.\nThey did not forget to place a note between a book, which said: 'You don't have to do everything by yourself. It's okay to ask for help'. Upon readin the note, Rehartna felt a surge of energy from within and managed to finish crafting the ultrasonic wave generator.\nThe part was made by utilizing the arts of technomagic, and the colors of each wave are Rehartna's tribute to her comrades.",
+                "A night concert is held once every few evenings at the backroom of Aselerando, Rehartna's atelier.\nIn reality, it is actually an information-gathering session for the Resistance.\nThe reason they are holding a concert rather than a party is because the sound of music covers the sound of Resistance members exchanging information. The concert itself also does not draw suspicion becuase it is held in a place of musical instruments.\nOnly long medleys, handpicked by Rehartna, are played at the concert to prevent conversations from being interrupted by paises between the pieces.",
+                "A dragon drawn on paper. The edge of the papar is wrinkled due to the paper's age. It Happened not too long after Rehartna was forced to take a break because she was suffering from a nightmare which occured every night. In the dream, she was being chased by someone. When Rehartna was cleaning the storeroom to keep herself busy, she found an old drawing. Ever since she was a child, Rehartna would suffer from nightmares whenever she was under extreme stress. one day, when Rehartna was crying after waking up from the nightmare, her brother gave her the drawing and said, 'This dragon is super strong. It will protect you even in your dreams!' Upon seein the drawing, Rehartna remembered the reason why she joined the Resistance. As for the drawing, Rehartna put it up above her bed, and Rehartna never suffered from a nightmare again."
             ]
         }
     },
     "skins": [
-        "a collection of skin names"
+        ""
     ],
     "voice": {
         "actor": {
