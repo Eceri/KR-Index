@@ -28,7 +28,7 @@ const NameAndStars = styled.section`
 `;
 
 const SmallTab = styled(props => <Tab {...props} />)`
-  width: 50%;
+  width: 6rem;
   list-style: none;
   padding: 0.3rem;
   text-align: center;
