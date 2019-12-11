@@ -156,28 +156,28 @@
   "dark": "For 200 sec after the beginning of the battle, ATK increases by 5% for 15 sec every 10 sec. This effect can be stacked up to max 20 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
-      "likes": "missing",
-      "dislikes": "missing"
+      "gender": "Female",
+      "race": "Human",
+      "age": "19 Year",
+      "height": "167 cm",
+      "birthday": "8(Month) 1(Day), Month of Vitality",
+      "constellation": "Kandala the Conquorer",
+      "likes": "Tersia, Crispy Chips (chocolate-flavored), Deadly Sweet Laughing Strike Force (Next Level Humor Edition, Collector's Eddition)",
+      "dislikes": "Tiresome things, powdered medicine"
     },
-    "story": "missing",
+    "story": "A girl that used to be a member of the Hound Unit. She shows no mercy even to those who surrendered and abandoned their weapons. She displays madness and wishes to burn everything in sight. As of right now, only Crow can control her madness.\nAfter the disbandment of the Hound Unit, she was reinstated as an officer at the Machine Division of the Empire and had been wandering from ruin to ruin, completing her assignments.\nShe is infamous for not listening to her superiors or the system, making her known as a troublesome superior to other soldiers. The higher-ups regard her as a threat that may explode anytime.\nWhen it comes to her past endeavors, she becomes very protective. Thankfully, her colleagues from the Hound Unit do not try to pry into her past.",
     "itemIntroductions": {
-      "weapon": "missing",
+      "weapon": "A new weapon provided by the army for Pansirone as she was assigned to the Hound Unit.\nNot satisfied with the standard flame-thrower, Pansirone upgraded her weapon on her with a fuel tank twice the size of a standard fuel tank and custome exhaust system that emits flames to no end.\nBlinded by the urge of wantign to burn everything in her sight, Pansirone ended up with a rather lousy upgrade. Looking at the finished so-called upgraded product, Valance clicked her tounge in disapproval.\nUnable to let it go, Valance then took Pansirone's upgraded weapon and came back with a weapon that can spout scorching flames that can burn enything it thouches through the amazing technology of Magos Le'Flamme. Dissatisfied with the appearance of her new weapon, Pansirone customized her weapon to her likign and decided to name it Tersia after her friend.",
       "treasures": [
-        "missing",
-        "missing",
-        "missing",
-        "missing"
+        "A painting obtained by Pansirone half-threatening steet artists.\nAccourding to Pansirone, the flames of the picture are how her mysterious friend that always stays by her side looks like when is angry.\nBut all it seems like is something on fire to others.\nOne wonders what the other members of the Hound Unit were thinking when Pansirone happily introduced her friend with her finished painting...\nIt looks like they decided to believe her words for now, seeing that they ask about how her friend is doing from time to time.",
+        "A special fuel tank made by Valance for more firepower.\nThe core of the fuel tank is the liquid inside, It carries a scent that Tersia likes, making her excited so that she can create stronger flames than usual.\nThe problem is, this liquid can be only obtain from a specific monster on the outskirts of the Empire, and it has a strong acidic property that corrodes metal. Therefore, requiring a special coating that can withstand the liquid's acidic property. Valance pitched in to help. However, as it is a highly flammable and easily spoiled, it was decided to store it in smaller doses. Thus, this special tank was designed more efficiently, reducing size by one-third.",
+        "Where Tersia, the elemental of fire that protects Pansirone, rests. It is made of heat-blocking steel so that it does not become hot even if Tersia is inside.\nPansirone wanted to show her little friend resting in her birdcage, but unfortunately, since people from the Empire are unable to see elementals, all they see is an empty birdcage.",
+        "A letter of appointment presented by and presented to herself, Pansirone, after she was deployed to the Hound Unit.\nShe stole one of the templates from the empire to create it.\n\n 'I hereby appoint myself as the Team Leader of the Hound Unit Team 2! I am the Team Leader! No Buts!\n- Pansirone'"
       ]
     }
   },
   "skins": [
-    "a collection of skin names"
+    ""
   ],
   "voice": {
     "actor": {
