@@ -56,19 +56,22 @@ footer {
 *:before {
   box-sizing: border-box;
 }
+footer{
+  padding: .5rem;
+}
+footer,
 #pageContainer {
   margin: auto;
   background: #404040;
   white-space: pre-line;
-  min-height: calc(100vh);
   min-width: 360px;
   max-width: 860px;
   width: 100%;
-  padding-top: 3rem;
 }
-footer{
-  position: relative;
-  align-self: baseline;
+#pageContainer{
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  min-height: calc(100vh);
 }
 #pageContainer > div {
   margin: 1rem;

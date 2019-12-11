@@ -22,8 +22,7 @@ export const Hero = props => {
     <>
       {createHelmet(
         heroInfo.name,
-        `${heroInfo.name} - ${heroInfo.title}`,
-        `/Assets/heroes/${heroPath}portrait.png`
+        `${heroInfo.name} - ${heroInfo.title}`
       )}
       <div className="flexBox" id="hero">
         <Image src={`${heroPath}portrait.png`} id={"portrait"} />
