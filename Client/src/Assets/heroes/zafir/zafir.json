@@ -1,1 +1,185 @@
-{"name":"Zafir","title":"Prince of Sandstorms","class":"archer","damageType":"physical","position":"Middle","weapon":{"uniqueWeapon":{"name":"Glory of the God King, Zaries","effect":["Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 4% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.","Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 4.8% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.","Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 5.6% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.","Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 6.8% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.","Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 8.4% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.","Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 10% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Judgment of the Desert","description":"Deals ??? P.DMG to enemies in a wide range, and per each enemies hit, reduces Cooldown by 1 sec. Deals ??? P.DMG to enemies inflicted by [Mark of Desert] and removes 1 stack of [Mark of Desert]. Upon each Skill use, Crit DMG is increased by 5%. This effect can be stacked up to max 18 times and is irremovable.","cooldown":5,"cost":2}],"light":"Crit DMG boost per use changes to 10%.","dark":"Stuns the hit enemy for 1 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Sandstorm Arrow","effect":["[Judgment of the Desert] Increases DMG by 2% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.","[Judgment of the Desert] Increases DMG by 2.4% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.","[Judgment of the Desert] Increases DMG by 2.9% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.","[Judgment of the Desert] Increases DMG by 3.5% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.","[Judgment of the Desert] Increases DMG by 4.2% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.","[Judgment of the Desert] Increases DMG by 5% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Blessing of the Sand Spirit","description":"Creates a shield around the ally with the lowest HP that absorbs ??? DMG for 5 sec. Gains immunity to CC while the shield lasts. When the shield duration is over, 'Sand Storm' is activated and deals ??? P.DMG to enemies in a wide range, inflicting 2 stacks of [Mark of Desert]. If the shield is dispelled or destroyed, 'Sand Storm' does not activate.","cooldown":14,"cost":2}],"light":"If there are 3 or less allies, applies shield to all allies. Sand Storm does not activate during this time.","dark":"At the beginning of each battle, casts shield on self for 5 sec. Sand Storm does not activate during this time.","books":["DMG and Shield are increased by 10%.","DMG and Shield are increased by 15%.","DMG and Shield are increased by 25%."],"uniqueTreasure":{"name":"Sand of Mirage","effect":["[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 80 Mana every sec while the shield is active.","[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 100 Mana every sec while the shield is active.","[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 120 Mana every sec while the shield is active.","[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 140 Mana every sec while the shield is active.","[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 170 Mana every sec while the shield is active.","[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 200 Mana every sec while the shield is active."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Doom of the Desert","description":"Deals ??? P.DMG to frontal enemies in a wide range and inflicts 1 stack of [Mark of Desert]. Then summons 'Pit of Sand' for 5 sec, dealing ??? P.DMG every 0.5 sec, and decreasing their P.DEF by 30% for 10 sec. 'Pit of Sand' has a 25% chance of inflicting 1 stack of [Mark of Desert] and draws in all enemies in range to the center.","cooldown":20,"cost":3}],"light":"Gains immunity to CC while in use.","dark":"Duration of 'Pit of Sand' is increased by 2 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Soul of Oasis","effect":["[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 8%.","[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 9.6%.","[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 11.5%.","[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 13.8%.","[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 16.5%.","[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 20%."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Calling of the Guardian","description":"Each auto attack has a 15% chance of dealing ??? P.DMG that ignores DEF to all enemies, inflicting 1 stack of [Mark of Desert]. [Mark of Desert] can be stacked up to max 10 times."}],"light":"Inflicts Mark of Desert to all enemies every second if there are more than 5 enemies.","dark":"Activation chance changes to 30%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Black Cat, Hoabis","effect":["[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 10% for 10 sec.","[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 12% for 10 sec.","[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 14% for 10 sec.","[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 17% for 10 sec.","[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 21% for 10 sec.","[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 25% for 10 sec."]}}],"light":"ATK, DEF, HP+15% / Crit Chance +100","dark":"Upon Skill use, recovers 700 Mana. If there are 5 or more enemies, Mana Recovery is doubled, and ATK Spd is increased by 500 for 5 sec. This effect does not stack.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Cats, sand art, people in the desert","dislikes":"Those who try to harm the people that he cares for"},"story":"A Prince and successor to the God King of the ancient desert kingdom who possesses the power to control desert sand. As the young leader of the Mauhata tribe of Desert Warriors, he has been trained and educated to be the worthy successor to the great king. When the Trovatia tribe, their sworn brothers, were praying at the Shrine of Flow to awake the God Dragon, he led his warriors to defeat all demons approaching the oasis. Assisted by the God Dragon and Laudia, her priestess, he is fulfilling his role as a Desert Warrior defending his home. He hopes that his efforts make the late God King proud.","itemIntroductions":{"weapon":"An ancient Weapon forged for the most glorious being on earth. Only permitted to the successor to the God King, one should undergo tremendous ordeals to prove his worth as its owner. This bow, allowed only for the chosen successor to the God King, has absolute power in the desert.","treasures":["A treasure that Zafir received from the Mauhata tribe. It's an arrow made with the tail feather of an animal regarded as holy in the ancient kingdom. Its radiance is blinding, as if representing the honor and glory of the ancient kingdom. Normally, it's hung on a wall and used in ceremonies, but it's actually one of the best defense weapons used by the royal family. Enemies shot by this arrow face the Judgment of the Desert within a massive sandstorm.","An hourglass that was buried underground for a long time by an enormous sandstorm that struck Aegina Desert. When the sand in the hourglass moves, it calls for the mirage of an ancient city coming back to life. The high priest of the ancient kingdom used this to show the glory of the kingdom to its people in the past. Seeing their city shining in gold, people grew proud of their kingdom.","A magical sword passed down through the God King's descendants. The name 'Oasis' comes from how it was used to serve the people in dire times. After the kingdom fell, its whereabouts was unknown to the world until Zafir saw it among Kumuro's art collections and bought it at an incredibly high price. With the sword finally returning to the worthy descendant, Zafir was able to inherit his forefather's spirits, maximizing his potentials.","It is known that a black cat always stayed next to the God King in the Ancient Desert Kingdom as a symbol of peace and prosperity. No one knows how the sacred black cat appears generation after generation. When the same black cat came to Zafir, he named it 'Hoabis,' and he has been taking care of it wholeheartedly."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Zafir",
+  "title": "Prince of Sandstorms",
+  "class": "archer",
+  "damageType": "physical",
+  "position": "Middle",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Glory of the God King, Zaries",
+      "effect": [
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 4% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.",
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 4.8% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.",
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 5.6% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.",
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 6.8% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.",
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 8.4% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled.",
+        "Upon using a skill, gains a stack of 'Will of Desert.' 'Will of Desert' increases ATK and Crit DMG by 10% for 30 sec, and can be stacked up to max 8 times. This effect cannot be dispelled."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Glory of the God King, Zaries for 10 sec, increasing P.DMG all enemies take by 25%, and increases ATK Spd of self by 500 for the duration of the skill.",
+      "advancement1": "Increases DEF Penetration of self by 500 for the duration of the Skill.",
+      "advancement2": "Increases the duration by 4 sec, and becomes immune to CC for the duration of the Skill.",
+      "activation": "Charges up upon using Skills 6 times.",
+      "cd": 25,
+      "charges": 6
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Judgment of the Desert",
+          "description": "Deals ??? P.DMG to enemies in a wide range, and per each enemies hit, reduces Cooldown by 1 sec. Deals ??? P.DMG to enemies inflicted by [Mark of Desert] and removes 1 stack of [Mark of Desert]. Upon each Skill use, Crit DMG is increased by 5%. This effect can be stacked up to max 18 times and is irremovable.",
+          "cooldown": 5,
+          "cost": 2
+        }
+      ],
+      "light": "Crit DMG boost per use changes to 10%.",
+      "dark": "Stuns the hit enemy for 1 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Sandstorm Arrow",
+        "effect": [
+          "[Judgment of the Desert] Increases DMG by 2% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+          "[Judgment of the Desert] Increases DMG by 2.4% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+          "[Judgment of the Desert] Increases DMG by 2.9% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+          "[Judgment of the Desert] Increases DMG by 3.5% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+          "[Judgment of the Desert] Increases DMG by 4.2% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+          "[Judgment of the Desert] Increases DMG by 5% upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Blessing of the Sand Spirit",
+          "description": "Creates a shield around the ally with the lowest HP that absorbs ??? DMG for 5 sec. Gains immunity to CC while the shield lasts. When the shield duration is over, 'Sand Storm' is activated and deals ??? P.DMG to enemies in a wide range, inflicting 2 stacks of [Mark of Desert]. If the shield is dispelled or destroyed, 'Sand Storm' does not activate.",
+          "cooldown": 14,
+          "cost": 2
+        }
+      ],
+      "light": "If there are 3 or less allies, applies shield to all allies. Sand Storm does not activate during this time.",
+      "dark": "At the beginning of each battle, casts shield on self for 5 sec. Sand Storm does not activate during this time.",
+      "books": [
+        "DMG and Shield are increased by 10%.",
+        "DMG and Shield are increased by 15%.",
+        "DMG and Shield are increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Sand of Mirage",
+        "effect": [
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 80 Mana every sec while the shield is active.",
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 100 Mana every sec while the shield is active.",
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 120 Mana every sec while the shield is active.",
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 140 Mana every sec while the shield is active.",
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 170 Mana every sec while the shield is active.",
+          "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers 200 Mana every sec while the shield is active."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Doom of the Desert",
+          "description": "Deals ??? P.DMG to frontal enemies in a wide range and inflicts 1 stack of [Mark of Desert]. Then summons 'Pit of Sand' for 5 sec, dealing ??? P.DMG every 0.5 sec, and decreasing their P.DEF by 30% for 10 sec. 'Pit of Sand' has a 25% chance of inflicting 1 stack of [Mark of Desert] and draws in all enemies in range to the center.",
+          "cooldown": 20,
+          "cost": 3
+        }
+      ],
+      "light": "Gains immunity to CC while in use.",
+      "dark": "Duration of 'Pit of Sand' is increased by 2 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Soul of Oasis",
+        "effect": [
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 8%.",
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 9.6%.",
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 11.5%.",
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 13.8%.",
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 16.5%.",
+          "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by 20%."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Calling of the Guardian",
+          "description": "Each auto attack has a 15% chance of dealing ??? P.DMG that ignores DEF to all enemies, inflicting 1 stack of [Mark of Desert]. [Mark of Desert] can be stacked up to max 10 times."
+        }
+      ],
+      "light": "Inflicts Mark of Desert to all enemies every second if there are more than 5 enemies.",
+      "dark": "Activation chance changes to 30%.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Black Cat, Hoabis",
+        "effect": [
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 10% for 10 sec.",
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 12% for 10 sec.",
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 14% for 10 sec.",
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 17% for 10 sec.",
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 21% for 10 sec.",
+          "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by 25% for 10 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / Crit Chance +100",
+  "dark": "Upon Skill use, recovers 700 Mana. If there are 5 or more enemies, Mana Recovery is doubled, and ATK Spd is increased by 500 for 5 sec. This effect does not stack.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Cats, sand art, people in the desert",
+      "dislikes": "Those who try to harm the people that he cares for"
+    },
+    "story": "A Prince and successor to the God King of the ancient desert kingdom who possesses the power to control desert sand. As the young leader of the Mauhata tribe of Desert Warriors, he has been trained and educated to be the worthy successor to the great king. When the Trovatia tribe, their sworn brothers, were praying at the Shrine of Flow to awake the God Dragon, he led his warriors to defeat all demons approaching the oasis. Assisted by the God Dragon and Laudia, her priestess, he is fulfilling his role as a Desert Warrior defending his home. He hopes that his efforts make the late God King proud.",
+    "itemIntroductions": {
+      "weapon": "An ancient Weapon forged for the most glorious being on earth. Only permitted to the successor to the God King, one should undergo tremendous ordeals to prove his worth as its owner. This bow, allowed only for the chosen successor to the God King, has absolute power in the desert.",
+      "treasures": [
+        "A treasure that Zafir received from the Mauhata tribe. It's an arrow made with the tail feather of an animal regarded as holy in the ancient kingdom. Its radiance is blinding, as if representing the honor and glory of the ancient kingdom. Normally, it's hung on a wall and used in ceremonies, but it's actually one of the best defense weapons used by the royal family. Enemies shot by this arrow face the Judgment of the Desert within a massive sandstorm.",
+        "An hourglass that was buried underground for a long time by an enormous sandstorm that struck Aegina Desert. When the sand in the hourglass moves, it calls for the mirage of an ancient city coming back to life. The high priest of the ancient kingdom used this to show the glory of the kingdom to its people in the past. Seeing their city shining in gold, people grew proud of their kingdom.",
+        "A magical sword passed down through the God King's descendants. The name 'Oasis' comes from how it was used to serve the people in dire times. After the kingdom fell, its whereabouts was unknown to the world until Zafir saw it among Kumuro's art collections and bought it at an incredibly high price. With the sword finally returning to the worthy descendant, Zafir was able to inherit his forefather's spirits, maximizing his potentials.",
+        "It is known that a black cat always stayed next to the God King in the Ancient Desert Kingdom as a symbol of peace and prosperity. No one knows how the sacred black cat appears generation after generation. When the same black cat came to Zafir, he named it 'Hoabis,' and he has been taking care of it wholeheartedly."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

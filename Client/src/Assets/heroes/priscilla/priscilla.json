@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Tumultuous Dance, Excilius for 12 sec, increasing ATK of self and the ally with the highest ATK by 40%, and Crit DMG by 40%. Additionally grants immunity to CC effect to an ally with the highest ATK.",
+            "advancement1": "Reduces Skill Activation Requirements by 4 sec.",
+            "advancement2": "For the duration of Skill, increases DMG dealth of the ally with the highest ATK by 30%.",
+            "activation": "Charges up over 19 sec.",
+            "cd": 18,
+            "charges": 6
         }
     },
     "skills": [

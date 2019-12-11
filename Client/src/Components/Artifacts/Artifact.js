@@ -3,39 +3,60 @@ import styled from "styled-components";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { stars } from "../atoms/Stars/stars";
 
-const ArtifactStory = styled.section`
-  padding: 1rem;
+const ArtifactText = styled.section`
+  height: 7rem;
+  overflow: auto;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
 `;
 
 const NameAndStars = styled.section`
   margin-top: 0;
-  padding-bottom: 1rem;
 `;
 
-// const SmallTab = styled(props => <Tab {...props} />)`
-//   width: 50%;
-//   list-style: none;
+const SmallTab = styled(props => <Tab {...props} />)`
+  width: 50%;
+  list-style: none;
+  padding: 0.3rem;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
-// `;
+SmallTab.tabsRole = "Tab";
 
-// SmallTab.tabsRole = "Tab";
 const Artifact = artifact => {
   const [star, setStar] = useState(0);
+
   return (
     <>
       {renderTop(artifact, star, setStar)}
       <Tabs key={artifact.name}>
         <TabList>
-          <Tab>Effect</Tab>
-          <Tab>Story</Tab>
+          <SmallTab>Effect</SmallTab>
+          <SmallTab>Story</SmallTab>
         </TabList>
 
         <TabPanel>
-          <p>{artifact.description[star]}</p>
+          <ArtifactText>{artifact.description[star]}</ArtifactText>
         </TabPanel>
 
         <TabPanel>
-          <ArtifactStory>{artifact.story}</ArtifactStory>
+          <ArtifactText>{artifact.story}</ArtifactText>
         </TabPanel>
       </Tabs>
     </>

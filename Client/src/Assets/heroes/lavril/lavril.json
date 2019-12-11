@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Void Soul, Dunn Nemecia, dealing ??? M.DMG to all enemies and inflicting them with 'Soul Mischief'. Enemies inflicted with 'Soul Mischief' take 8% increased M.DMG and have their Heal Rate reduced by 8% for 7 sec. Afterward, every time Lavril uses a Skill for 10 sec, she inflicts ??? M.DMG to all enemies and inflicts them with 'Soul Mischief'. The 'Soul Mischief' effect can be stacked up to max 3 times.",
+            "advancement1": "Changes the max number of stacks of 'Soul Mischief' to 4.",
+            "advancement2": "Increases the effect of 'Soul Mischief' by 50%.",
+            "activation": "Charges up over 22 sec.",
+            "cd": 25,
+            "charges": 5
         }
     },
     "skills": [

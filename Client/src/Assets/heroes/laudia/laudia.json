@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons Whispering Sands, Arlaq for 6 sec, recovering own Mana by 500 every sec, and reducing ATK Spd of enemies within circular range of self by 120. The ATK Spd Reduction effect stacks up to 5 times, and enemies inflicted with 5 stacks take 50% increased M.DMG for 7 sec, and become Petrified.",
+            "advancement1": "Increases own ATK by 40% for the duration of the Skill.",
+            "advancement2": "For every sec, dispels positiv effects from an enemy within range and deals ??? M.DMG.",
+            "activation": "Charges up over 21 sec.",
+            "cd": 22,
+            "charges": 6
         }
     },
     "skills": [

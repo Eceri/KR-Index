@@ -29,7 +29,7 @@ export const HeroGeneral = props => {
         alt={"light"}
         className={"perkIcon"}
       />
-      <p>ATK, DEF, HP+15% / {heroInfo.light} </p>
+      <p>{heroInfo.light}</p>
     </div>
     <div className="flexBox transcendance">
       <Image

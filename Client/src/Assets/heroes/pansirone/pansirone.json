@@ -17,12 +17,12 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "advancement 0, base sw, effect",
-      "advancement1": "advancement 1 effect",
-      "advancement2": "advancement 2 effect.",
-      "activation": "activation requirement",
-      "cd": 0,
-      "charges": 0
+      "advancement0": "Summons the soul of Roar of Raging heat, Tersia, increasing Pansirone's ATK Spd by 500 for 8 sec. Afterward, attacks enemies in a wide frontal range 3 times, dealing total of ??? P.DMG. The last hit places 'Tersia's Prank' on a wide frontal range for 8 sec, dealing ??? P.DMG every 1 sec and increasin P.DMG the targets take by 25%. If the target is inflicted with 'Eternal Blaze', the increased P.DMG the target takes changes to 35%.",
+      "advancement1": "Increases DMG by 100%.",
+      "advancement2": "The duration of the ATK Spd Boost effect and 'Teria's Prank' increases by 4 sec.",
+      "activation": "Charges up upon dealing DMG 85 times.",
+      "cd": 18,
+      "charges": 5
     }
   },
   "skills": [
@@ -152,7 +152,7 @@
       }
     }
   ],
-  "light": "Crit DMG +20%",
+  "light": " ATK, DEF, HP+15% / Crit DMG +20%",
   "dark": "For 200 sec after the beginning of the battle, ATK increases by 5% for 15 sec every 10 sec. This effect can be stacked up to max 20 times.",
   "background": {
     "profile": {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
@@ -38,7 +38,7 @@ const ClickedArtifact = styled.section`
   padding-left: 0;
   background-color: #404040;
   width: 52rem;
-  height: 14rem;
+  height: 17rem;
 `;
 
 const FilterBox = styled.input`
@@ -64,6 +64,7 @@ const FilterBox = styled.input`
 
 // TODO: Refactore into own file
 // FIXME: Make me generic!!!
+
 export const sortNames = (data, direction) => {
   if (direction === "ASC") {
     return data.sort((a, b) => {
@@ -83,6 +84,8 @@ const filterArtifacts = (artifacts, query) => {
   );
 };
 
+const scrollToRef = ref => window.scrollTo(0, ref.offsetTop);
+
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
@@ -94,6 +97,12 @@ export const Artifacts = () => {
   );
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
+  const scrollRef = useRef(null);
+  const executeScroll = () => scrollToRef(scrollRef);
+
+  useEffect(() => {
+    executeScroll();
+  }, [artifactName]);
 
   useEffect(() => {
     try {
@@ -118,7 +127,7 @@ export const Artifacts = () => {
     artifacts.filter(artifact => artifact.name === name)[0];
 
   return (
-    <div id="content">
+    <div id="content" ref={scrollRef}>
       {createHelmet()}
       <ClickedArtifact>
         {Artifact(

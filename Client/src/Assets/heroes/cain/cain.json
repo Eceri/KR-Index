@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Might of the God King, Tyrannicus, dealing ??? P.DMG to enemies within range of self, and inflicting time stop for 4 sec. Afterwards, increases own ATK by 50% for 10 sec. While time stop is active, Normal and Skill attacks cannot be used, and Cooldown is fixed.",
+            "advancement1": "Heals HP of allies within range by ??? over 10 sec.",
+            "advancement2": "Dispels positiv effects of all enemies in range.",
+            "activation": "Charges up upon using Skills 5 times.",
+            "cd": 22,
+            "charges": 5
         }
     },
     "skills": [
@@ -159,7 +159,7 @@
             }
         }
     ],
-    "light": "HP +10%",
+    "light": " ATK, DEF, HP+15% / HP +10%",
     "dark": "At the beginning of each battle, consumes 20% of self's current HP and increases ATK of all allies by 20% for 20 sec. If there 3 or less allies, reduces DMG that all allies take by 30%",
     "background": {
         "profile": {

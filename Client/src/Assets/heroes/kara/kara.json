@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of 0-Form Perpetual Motion Cannon, Heaven Shatterer for 12 sec. The summoned soul attacks the target continuously, dealing ??? M.DMG every 0.5 sec. If the attack hits the same target for more than 5 sec, the effect is enhanced, increasing DMG by 100%.",
+            "advancement1": "Increases the duration of the soul by 6 sec.",
+            "advancement2": "The enhanced attack stuns the enemy for 1 sec, and increases its DMG by an additional 100%.",
+            "activation": "Charges up over 20 sec.",
+            "cd": 24,
+            "charges": 7
         }
     },
     "skills": [
@@ -41,8 +41,7 @@
                     "name": "Siege Laser",
                     "description": "Attacks the target inflicting ??? M.DMG. Crit DMG is applied 200% higher.",
                     "cooldown": 11,
-                    "cost": 3,
-                    "linked": "s1_0"
+                    "cost": 3
                 }
             ],
             "light": "[Anti-personnel Laser] - Recovers 200 MP upon a Crit Hit. [Siege Laser] - Increases Mana Cost by 1 and DMG by 100%.",
@@ -79,8 +78,7 @@
                     "name": "Focused Fire",
                     "description": "Attacks a random target 15 times, inflicting a total of ??? M.DMG, and inflicts Focused Fire for 20 seconds. Inflicts ??? extra M.DMG with each stack of Focused Fire on the enemy. Focused Fire can be stacked up to 30 times.",
                     "cooldown": 22,
-                    "cost": 4,
-                    "linked": "s2_0"
+                    "cost": 4
                 }
             ],
             "light": "[Wide-area Cannon] - Increases the Stun duration by 1 second. [Focused Fire] - Stacks 1 additional Focused Fire.",
