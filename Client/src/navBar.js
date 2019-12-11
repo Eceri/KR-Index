@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { sortNames } from "./Components/components";
 import styled from "styled-components";
+import classes from "./Assets/classes/classes.json";
 
 const SearchBox = styled.div`
   width: 15rem;
@@ -24,117 +25,35 @@ const SearchListElement = styled.li`
   }
 `;
 
-let heroesClasses = {
-  Knight: [
-    "Phillop",
-    "Clause",
-    "Demia",
-    "Morrah",
-    "Jane",
-    "Ricardo",
-    "Aselica",
-    "Neraxis",
-    "Sonia",
-    "Glenwys",
-    "Loman",
-    "Dosarta"
-  ],
-  Warrior: [
-    "Kasel",
-    "Gau",
-    "Naila",
-    "Theo",
-    "Viska",
-    "Priscilla",
-    "Seria",
-    "Scarlet",
-    "Kirze",
-    "Chase",
-    "Bernheim",
-    "Nicky"
-  ],
-  Assassin: [
-    "Roi",
-    "Epis",
-    "Reina",
-    "Fluss",
-    "Tanya",
-    "Ezekiel",
-    "Erze",
-    "Laudia",
-    "Mirianne",
-    "Nia",
-    "Gladi"
-  ],
-  Archer: [
-    "Selene",
-    "Dimael",
-    "Luna",
-    "Arch",
-    "Yanne",
-    "Zafir",
-    "Yuria",
-    "Requina",
-    "Shamilla"
-  ],
-  Mechanic: [
-    "Lakrak",
-    "Miruru",
-    "Rodina",
-    "Annette",
-    "Mitra",
-    "Oddy",
-    "Crow",
-    "Chrisha",
-    "Kara",
-    "Cecilia",
-    "Hanus",
-    "Pansirone"
-  ],
-  Wizard: [
-    "Cleo",
-    "Maria",
-    "Lorraine",
-    "Pavel",
-    "Aisha",
-    "Lewisia",
-    "Nyx",
-    "Ophelia",
-    "Lilia",
-    "Artemia",
-    "Esker",
-    "Dakaris",
-    "Veronica",
-    "Cain"
-  ],
-  Priest: [
-    "Frey",
-    "Kaulah",
-    "Rephy",
-    "Baudouin",
-    "Leo",
-    "Laias",
-    "Cassandra",
-    "Mediana",
-    "Lavril",
-    "Lucias",
-    "Shea",
-    "May",
-    "Juno",
-    "Rehartna"
-  ]
-};
-
 const searchFilter = (names, query) => {
-  const heroeNames = Object.values(heroesClasses).flat();
   const artifactNames = names.map(artifact => artifact.name);
   const artifactResults = artifactNames.filter(v =>
     v.toLowerCase().includes(query.toLowerCase())
   );
-  const heroeResults = heroeNames.filter(v =>
-    v.toLowerCase().includes(query.toLowerCase())
-  );
-  return [...artifactResults, ...heroeResults].sort();
+  const resultArray = [
+    ...artifactResults.map(artifact => ({
+      type: "artifacts",
+      name: artifact,
+      meta: {}
+    })),
+    ...classes
+      .map(v =>
+        v.heroes.map(h => ({
+          type: "heroes",
+          heroClass: v.name,
+          name: h,
+          meta: {}
+        }))
+      )
+      .flat(1)
+      .filter(v =>
+        v.heroClass.toLowerCase().includes(query.toLowerCase())
+          ? v.heroClass.toLowerCase() === query.toLowerCase()
+          : v.name.toLowerCase().includes(query.toLowerCase())
+      )
+  ];
+  console.log(resultArray);
+  return resultArray;
 };
 
 export const NavBar = () => {
@@ -214,7 +133,7 @@ const renderSearch = (
   <React.Fragment>
     {renderSearchBox(search, artifacts, ref, searchQuery)}
     <input
-      placeholder="Filter..."
+      placeholder="Search..."
       onChange={e => {
         setSearchQuery(e.currentTarget.value);
         setSeach(true);
@@ -231,12 +150,12 @@ const renderSearchBox = (search, artifacts, ref, searchQuery) =>
   search && (
     <SearchBox ref={ref}>
       <ul style={{ margin: 0, padding: 0 }}>
-        {searchFilter(artifacts, searchQuery).map(name => (
+        {searchFilter(artifacts, searchQuery).map(item => (
           <SearchListElement
-            key={name}
-            onClick={() => window.open(`/artifacts/${name}`, "_self")}
+            key={item.name}
+            onClick={() => window.open(`/${item.type}/${item.name}`, "_self")}
           >
-            {name}
+            {item.name}
           </SearchListElement>
         ))}
       </ul>
