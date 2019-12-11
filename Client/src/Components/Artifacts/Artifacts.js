@@ -20,7 +20,6 @@ import { Button } from "../atoms/atoms.index";
 
 const ArtifactContainer = styled.div`
   position: relative;
-  padding-top: 15rem;
   padding-left: 1.5rem;
 `;
 
@@ -37,11 +36,9 @@ const ArtifactImage = styled.img`
 const ClickedArtifact = styled.section`
   padding: 1rem;
   padding-left: 0;
-  position: fixed;
   background-color: #404040;
   width: 52rem;
   height: 14rem;
-  z-index: 2;
 `;
 
 const FilterBox = styled.input`
