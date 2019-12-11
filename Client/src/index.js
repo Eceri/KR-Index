@@ -32,7 +32,7 @@ render(
         style={{ alignItems: "center" }}
       >
         <img
-          src="GitHub-Mark-Light-32px.png"
+          src="/GitHub-Mark-Light-32px.png"
           alt="github"
           style={{ border: "none" }}
         />
