@@ -128,7 +128,7 @@ export const Artifacts = () => {
 
   return (
     <div id="content" ref={scrollRef}>
-      {createHelmet()}
+      {createHelmet(artifactName, getFirstArtifactMatches(artifactName))}
       <ClickedArtifact>
         {Artifact(
           getFirstArtifactMatches(artifactName) === undefined
