@@ -1,12 +1,14 @@
 .genericPerk{
     display: flex;
-    margin: 10px 0;
+    margin-top: .75rem;
     align-items: flex-start;
+}
+.genericPerk > div {
+    margin: 0;
 }
 .genericPerkIcon{
     width: 45px;
     height: 45px;
-    margin-top: 7px;
-    margin-right: 10px;
-
+    margin-top: 4px;
+    margin-right: .75rem;
 }

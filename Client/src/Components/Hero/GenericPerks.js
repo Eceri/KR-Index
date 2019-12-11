@@ -6,7 +6,7 @@ export const GenericPerks = props => {
   let perks = props.perks;
   return <div>
     {perks.map(perk => (
-      <div className={"genericPerk flexBox"} key={perk.name}>
+      <div className={"genericPerk"} key={perk.name}>
         <Image
           src={`genericPerks/${perk.name}.png`}
           className={"genericPerkIcon"}

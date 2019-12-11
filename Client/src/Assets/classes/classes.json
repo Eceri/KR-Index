@@ -167,6 +167,7 @@
       "Cecilia",
       "Chrisha",
       "Crow",
+      "Hanus",
       "Kara",
       "Lakrak",
       "Miruru",
@@ -230,7 +231,7 @@
         "effect": "Mana recovery per second rises by 250%."
       },
       {
-        "name": "Curcuit Burst",
+        "name": "Circuit Burst",
         "effect": "Receives 15% more DMG but gains 40% ATK. ACC is increases by 200."
       },
       {

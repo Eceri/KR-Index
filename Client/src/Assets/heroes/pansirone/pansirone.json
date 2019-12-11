@@ -152,7 +152,7 @@
       }
     }
   ],
-  "light": "Crit DMG +20%",
+  "light": " ATK, DEF, HP+15% / Crit DMG +20%",
   "dark": "For 200 sec after the beginning of the battle, ATK increases by 5% for 15 sec every 10 sec. This effect can be stacked up to max 20 times.",
   "background": {
     "profile": {

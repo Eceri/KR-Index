@@ -159,7 +159,7 @@
             }
         }
     ],
-    "light": "HP +10%",
+    "light": " ATK, DEF, HP+15% / HP +10%",
     "dark": "At the beginning of each battle, consumes 20% of self's current HP and increases ATK of all allies by 20% for 20 sec. If there 3 or less allies, reduces DMG that all allies take by 30%",
     "background": {
         "profile": {
