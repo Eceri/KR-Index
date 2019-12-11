@@ -130,9 +130,7 @@ export const Artifacts = () => {
     <div id="content" ref={scrollRef}>
       {createHelmet(
         artifactName,
-        require(`../../Assets/artifacts/${
-          getFirstArtifactMatches(artifactName).name
-        }.png`)
+        require(`../../Assets/artifacts/${artifactName}.png`)
       )}
       <ClickedArtifact>
         {Artifact(
