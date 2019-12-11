@@ -163,23 +163,23 @@
     "dark": "At the beginning of each battle, consumes 20% of self's current HP and increases ATK of all allies by 20% for 20 sec. If there 3 or less allies, reduces DMG that all allies take by 30%",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
-            "likes": "missing",
-            "dislikes": "missing"
+            "gender": "Male",
+            "race": "Human",
+            "age": "28 Years",
+            "height": "191 cm",
+            "birthday": "2(Month), 1(Day), Month of Wisdom",
+            "constellation": "Satua the Sage",
+            "likes": "Laias, Clowns",
+            "dislikes": "Darkness, backstabbing subjects, flatterers, those who are disloyal"
         },
-        "story": "missing",
+        "story": "Ancient Sekireinel was a kingdom blessed with eternal prosperity under the rule of Cain, the greatest king that has ever ruled Sekireinel. Descendants of the desert addess Cain as the God King, as  it was their way of expressing their respect to the flawless, god-like king.\nThe people of the desert praised and followed Cain's overwhelming charisma, and Cain in return, gifted them with the fairest rule, and showed endless generosity and benevolence to his people. In Contrast, against those who would threaten his kingdom, Cain did not show any mercy. He ruthlessly tracked down and killed all those who threatened the peace of his kingdom, causing fear within the nations outside.\nHowever, deep inside the majestic, ruthless God King who asserted his reign over the kingdom, there lied a deep loneliness. When alone, the God King would contemplate endlessly. It was Laias who held Cain's hands when he was most vulnerable, and Cain fell in love with Laias who sang for him. Cain has since strongly expressed his love to Laias, eager to help Laias fulfill anything she wants.",
         "itemIntroductions": {
-            "weapon": "missing",
+            "weapon": "Atermos was one the kings who ruled the Kingdom of Sekireinel, known as the king of insight for his great wisdom. One Day, he received a revelation from the heavens and gathered holy materials to handcraft a weapon. The legend says that as this weapon was wielded by the king of insight, Tyrannicus has the ability to look through the mind of anyone who tries to wield it. If deemed unworthy, Tyrannicus will not even let them hold itself; rather, it will serve the unworthy their death.\nAfter the passing of Atermos, Tyrannicus was used as a decoration that shined upon the throne from its behind, symbolizing the competence and authority of the king that ruled Sekireinel. Then, the day before Cain's enthronement, when cain reached his hand out to Tyrannicus, it immediately became the sun that shines upon Cain, as if it was overjoyed to find it true master.",
             "treasures": [
-                "missing",
-                "missing",
-                "missing",
-                "missing"
+                "A gold ring which  was equipped to Cain's body for ritualistic purpose, when Cain's soul-bound body entered a deep slumber called death.\nThe ring, imbued with the blessing of flow by Laias herself, was put onto Cain's ring finger, so that Cain can enjoy his eternal glory in the afterlife as the God King.\nAltough ut was unexpected for Cain to be awakened by a trivial being, thousands of years have already passed when he awoke. The ring was wrapped in sand and dust, but the jewel imbued with the Blue God Dragon's blessing was still shining brightly as ever.",
+                "A coffin with an eye decoration, the symbol of the God King.\nThe symbol carries a message that since the almighty God King watches all over the ancient Sekireinel, the poeple of the desert should fear and praise him.",
+                "A sealed container which cannot be opened no matter how hard one exerts strength.\nIt contains a gift from Skakmeh, Cain's brother who left behind his settled life in a foreign nation and returned to Sekireinel following Cain's command.\nCain had cherished his loyal, kind brother's gift, but the day when Shakmeh became the darkness that covered Sekireinel and became Cain's nemesis, Cain used his brother's gift as a medium to seal Shakmeh.\nCain, after awakening from his long slumber, grabbed the open container that was rolling on the ground and placed it somewhere he can see clearly to reflect upon old memories.",
+                "A historical archive that contains the history of Sekireinel.\nAfter the awakening, curious of how the story of ancient Sekireinel and his brother were passed down to the future generations, Cain asked Zafir to bring him the historical records. The archive which Zafir brought to the God King is known as the most accurate record among other records of the tribes, since it is the record written and updated by the generations of the archivist family of Sekireinel, which they guarded with their life in the times of war and turmoil."
             ]
         }
     },
