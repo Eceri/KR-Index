@@ -7,7 +7,7 @@ export const HeroSkins = props => {
   let heroSkins = [];
   heroSkins.push({
     file: `${heroPath}Loading Screen.png`,
-    title: "Loading Screen"
+    title: "Base"
   });
   skins.map(skin =>
     heroSkins.push({
