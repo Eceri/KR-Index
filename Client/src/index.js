@@ -5,9 +5,11 @@ import Home from "./home";
 import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
+import {createHelmet} from "./helpers/helpers.helmet"
 
 render(
   <>
+    {createHelmet("Home", "frontpage", "./favicon")}
     <div id="pageContainer">
       <BrowserRouter>
         <NavBar key={"components.js"} />
