@@ -52,7 +52,6 @@ const searchFilter = (names, query) => {
           : v.name.toLowerCase().includes(query.toLowerCase())
       )
   ];
-  console.log(resultArray);
   return resultArray;
 };
 
