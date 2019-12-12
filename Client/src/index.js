@@ -15,12 +15,12 @@ render(
         <NavBar key={"components.js"} />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/heroes/" component={Heroes} />
+          <Route path="/heroes/Maya" component={Maya} />
           <Route push={true} path="/heroes/:hero" component={Hero} />
+          <Route path="/heroes/" component={Heroes} />
           <Route path="/artifact/:artifact" component={Artifacts} />
           <Route path="/artifacts/" component={Artifacts} />
           <Route path="/etc" component={Etc} />
-          <Route path="/Maya" component={Maya} />
         </Switch>
       </BrowserRouter>
     </div>
