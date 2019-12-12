@@ -5,20 +5,22 @@ import Home from "./home";
 import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
+import {createHelmet} from "./helpers/helpers.helmet"
 
 render(
   <>
+    {createHelmet("Home", "frontpage", "./favicon")}
     <div id="pageContainer">
       <BrowserRouter>
         <NavBar key={"components.js"} />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/heroes/" component={Heroes} />
+          <Route path="/heroes/Maya" component={Maya} />
           <Route push={true} path="/heroes/:hero" component={Hero} />
+          <Route path="/heroes/" component={Heroes} />
           <Route path="/artifact/:artifact" component={Artifacts} />
           <Route path="/artifacts/" component={Artifacts} />
           <Route path="/etc" component={Etc} />
-          <Route path="/Maya" component={Maya} />
         </Switch>
       </BrowserRouter>
     </div>
@@ -30,7 +32,7 @@ render(
         style={{ alignItems: "center" }}
       >
         <img
-          src="GitHub-Mark-Light-32px.png"
+          src="/GitHub-Mark-Light-32px.png"
           alt="github"
           style={{ border: "none" }}
         />

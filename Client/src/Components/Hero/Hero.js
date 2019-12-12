@@ -1,5 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Redirect } from "react-router-dom";
 import {
   Image,
   HeroGeneral,
@@ -15,15 +16,17 @@ import "../styles/hero.css";
 import "../styles/tabStyles.css";
 
 export const Hero = props => {
-  let heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
+  let heroInfo;
+  try {//temporary solution to invalid heroes. Will change once heroes go into the DB.
+    heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
+  } catch (e) {
+    return <Redirect to="/heroes/" />
+  }
   const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
   return (
     <>
-      {createHelmet(
-        heroInfo.name,
-        `${heroInfo.name} - ${heroInfo.title}`
-      )}
+      {createHelmet(heroInfo.name, `${heroInfo.name} - ${heroInfo.title}`)}
       <div className="flexBox" id="hero">
         <Image src={`${heroPath}portrait.png`} id={"portrait"} />
         <div>
