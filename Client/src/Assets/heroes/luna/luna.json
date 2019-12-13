@@ -1,1 +1,185 @@
-{"name":"Luna","title":"Child of Moonlight","class":"archer","damageType":"magical","position":"Back","weapon":{"uniqueWeapon":{"name":"Flower of Eternity, Hyacinth","effect":["Increases DMG of normal attacks by 20% and the Range by 6%.","Increases DMG of normal attacks by 24% and the Range by 7.2%.","]Increases DMG of normal attacks by 29% and the Range by 8.6%.","Increases DMG of normal attacks by 35% and the Range by 10.5%.","Increases DMG of normal attacks by 42% and the Range by 12.5%.","Increases DMG of normal attacks by 50% and the Range by 15%."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Pew!","description":"Deals ??? M.DMG by shooting a bouncing projectile which bounces 3 times starting from the nearest enemy. The further the enemy, the more DMG inflicted.","cooldown":8,"cost":2}],"light":"If there is 1 enemy, DMG is increased by 100%.","dark":"Stuns the hit enemy for 2 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Golden Bell of Luck","effect":["[Pew!] Increases DMG by 20%, and upon Critical Hit, recovers Mana by 200.","[Pew!] Increases DMG by 24%, and upon Critical Hit, recovers Mana by 200.","[Pew!] Increases DMG by 29%, and upon Critical Hit, recovers Mana by 200.","[Pew!] Increases DMG by 35%, and upon Critical Hit, recovers Mana by 200.","[Pew!] Increases DMG by 42%, and upon Critical Hit, recovers Mana by 200.","[Pew!] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 200."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Look out above!","description":"Deals ??? M.DMG to enemies furthest away in a small range, and stuns them for 3 sec. The further the enemy, the more DMG they will take.","cooldown":12,"cost":2}],"light":"In exchange for 2 additional Mana Cost, attacks random enemies 3 times.","dark":"Ignores enemy Block.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Moonlight Carrot","effect":["[Look Out Above!] Increases DMG by 20% and reduces Cooldown by 10% upon a Crit Hit.","[Look Out Above!] Increases DMG by 24% and reduces Cooldown by 10% upon a Crit Hit.","[Look Out Above!] Increases DMG by 29% and reduces Cooldown by 10% upon a Crit Hit.","[Look Out Above!] Increases DMG by 35% and reduces Cooldown by 10% upon a Crit Hit.","[Look Out Above!] Increases DMG by 42% and reduces Cooldown by 10% upon a Crit Hit.","[Look Out Above!] Increases DMG by 50% and reduces Cooldown by 10% upon a Crit Hit."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Twinkle Twinkle","description":"Deals ??? M.DMG to target enemies in range, and reduces target's Crit Chance by 100% for 7 sec.","cooldown":15,"cost":1}],"light":"Reduces ACC of hit enemies by 150 for 7 sec.","dark":"In exchange for 1 additional Mana Cost, knock back the enemy over a long distance.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Never-Melting Snow Flower","effect":["[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2 sec.","[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2.4 sec.","[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2.9 sec.","[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 3.5 sec.","[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 4.2 sec.","[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 5 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Gotcha!","description":"When inflicted by CC, dispels negative effects from self and attacks the farthest enemy, dealing ??? M.DMG and knocking it away for 2 sec."}],"light":"Removes positive effects from the target.","dark":"Number of targets changes to 2.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Carrot Cake","effect":["[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2 sec.","[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2.4 sec.","[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2.9 sec.","[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 3.5 sec.","[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 4.2 sec.","[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 5 sec."]}}],"light":"ATK, DEF, HP+15% / Crit DMG +20%","dark":"At the beginning of each battle, grants Blessing of the Carrot for 20 sec. Blessing of the Carrot increases DMG dealt to Non-Hero enemies by 30%, and reduces DMG received by 30%.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Carrots, friends","dislikes":"Hunger"},"story":"Lulus, very rarely sighted and often considered mythical, are a race of animal hybrids. They live in an extremely cold region, and are very fearful of contacting the outside world. One day, a Lulu child was born with the exact opposite personality that is typical her race. That child is Luna. It's not that she was unhappy with the ways of her people. Nor did she have any grand purpose of experiencing the world outside. She was simply picking flowers, one step at a time. Another step to pick up some frozen branches for her slingshot. And another step to follow the scent of some sweet, red fruit. Before she knew it, she was outside, running toward a carrot field away from the mountain.","itemIntroductions":{"weapon":"A slingshot made from hyacinth, a silver tree that only grows in extremely cold regions. It is said that hyacinths have been blessed by the Queen of Ice, and are able to bear bright red fruits even in the coldest weather. Simply holding onto a hyacinth branch allows one to ignore the coldness around the holder. These blessed trees also have the power to call upon snowstorms and frost. Needless to say, these powers are best harnessed by a weapon carved from one of these trees.","treasures":["A golden bell that brings luck. It's Luna's second favorite thing after carrots, and it brightly glitters when she walks and trots. The sound of the golden bell has a mystical power that summons luck from her homeland.","A carrot that grew from receiving moonlight a thousand times. Those hit by this carrot will have all evil stripped away from them, and they'll be able to tell apart good from bad.","A legendary snowfield flower that blossomed from the never melting land of Windland Snow Mountain. It is said that it makes the energy of its master's body flow clearly and beautifully. An item that makes Luna's pure energy shine even brighter.","Juno's special carrot cake. This special carrot cake was made especially for Luna, who misses her family back in her hometown and the carrots she used to eat. As it has the exact same taste like the ones Luna would eat back at home, the cake has become Luna's new soul food."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Luna",
+  "title": "Child of Moonlight",
+  "class": "archer",
+  "damageType": "magical",
+  "position": "Back",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Flower of Eternity, Hyacinth",
+      "effect": [
+        "Increases DMG of normal attacks by 20% and the Range by 6%.",
+        "Increases DMG of normal attacks by 24% and the Range by 7.2%.",
+        "]Increases DMG of normal attacks by 29% and the Range by 8.6%.",
+        "Increases DMG of normal attacks by 35% and the Range by 10.5%.",
+        "Increases DMG of normal attacks by 42% and the Range by 12.5%.",
+        "Increases DMG of normal attacks by 50% and the Range by 15%."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Flower of Eternity, Hyacinth, dealing ??? M.DMG to nearby enemies within a circular range of self, freezing them for 5 sec and knocking them back. Afterward, the Soul of Hyacinth deals ??? additional M.DMG to frozen enemies and increases own Crit DMG by 100% for 10 sec.",
+      "advancement1": "Hit targets tkae increased M.DMG by 40% for 10 sec.",
+      "advancement2": "For the duration of Skill, increases the number of targets that Normal attacks hit by 3. The range of Normal attacks increases by 30%, knocking back the hit target.",
+      "activation": "Charges up over 17 sec.",
+      "cd": 17,
+      "charges": 5
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Pew!",
+          "description": "Deals ??? M.DMG by shooting a bouncing projectile which bounces 3 times starting from the nearest enemy. The further the enemy, the more DMG inflicted.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "If there is 1 enemy, DMG is increased by 100%.",
+      "dark": "Stuns the hit enemy for 2 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Golden Bell of Luck",
+        "effect": [
+          "[Pew!] Increases DMG by 20%, and upon Critical Hit, recovers Mana by 200.",
+          "[Pew!] Increases DMG by 24%, and upon Critical Hit, recovers Mana by 200.",
+          "[Pew!] Increases DMG by 29%, and upon Critical Hit, recovers Mana by 200.",
+          "[Pew!] Increases DMG by 35%, and upon Critical Hit, recovers Mana by 200.",
+          "[Pew!] Increases DMG by 42%, and upon Critical Hit, recovers Mana by 200.",
+          "[Pew!] Increases DMG by 50%, and upon Critical Hit, recovers Mana by 200."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Look out above!",
+          "description": "Deals ??? M.DMG to enemies furthest away in a small range, and stuns them for 3 sec. The further the enemy, the more DMG they will take.",
+          "cooldown": 12,
+          "cost": 2
+        }
+      ],
+      "light": "In exchange for 2 additional Mana Cost, attacks random enemies 3 times.",
+      "dark": "Ignores enemy Block.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Moonlight Carrot",
+        "effect": [
+          "[Look Out Above!] Increases DMG by 20% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Look Out Above!] Increases DMG by 24% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Look Out Above!] Increases DMG by 29% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Look Out Above!] Increases DMG by 35% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Look Out Above!] Increases DMG by 42% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Look Out Above!] Increases DMG by 50% and reduces Cooldown by 10% upon a Crit Hit."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Twinkle Twinkle",
+          "description": "Deals ??? M.DMG to target enemies in range, and reduces target's Crit Chance by 100% for 7 sec.",
+          "cooldown": 15,
+          "cost": 1
+        }
+      ],
+      "light": "Reduces ACC of hit enemies by 150 for 7 sec.",
+      "dark": "In exchange for 1 additional Mana Cost, knock back the enemy over a long distance.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Never-Melting Snow Flower",
+        "effect": [
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2 sec.",
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2.4 sec.",
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 2.9 sec.",
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 3.5 sec.",
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 4.2 sec.",
+          "[Twinkle Twinkle] Crit Chance Reduction effect becomes irremovable, and its duration is increased by 5 sec."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Gotcha!",
+          "description": "When inflicted by CC, dispels negative effects from self and attacks the farthest enemy, dealing ??? M.DMG and knocking it away for 2 sec."
+        }
+      ],
+      "light": "Removes positive effects from the target.",
+      "dark": "Number of targets changes to 2.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Carrot Cake",
+        "effect": [
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2 sec.",
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2.4 sec.",
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 2.9 sec.",
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 3.5 sec.",
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 4.2 sec.",
+          "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by 5 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / Crit DMG +20%",
+  "dark": "At the beginning of each battle, grants Blessing of the Carrot for 20 sec. Blessing of the Carrot increases DMG dealt to Non-Hero enemies by 30%, and reduces DMG received by 30%.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Carrots, friends",
+      "dislikes": "Hunger"
+    },
+    "story": "Lulus, very rarely sighted and often considered mythical, are a race of animal hybrids. They live in an extremely cold region, and are very fearful of contacting the outside world. One day, a Lulu child was born with the exact opposite personality that is typical her race. That child is Luna. It's not that she was unhappy with the ways of her people. Nor did she have any grand purpose of experiencing the world outside. She was simply picking flowers, one step at a time. Another step to pick up some frozen branches for her slingshot. And another step to follow the scent of some sweet, red fruit. Before she knew it, she was outside, running toward a carrot field away from the mountain.",
+    "itemIntroductions": {
+      "weapon": "A slingshot made from hyacinth, a silver tree that only grows in extremely cold regions. It is said that hyacinths have been blessed by the Queen of Ice, and are able to bear bright red fruits even in the coldest weather. Simply holding onto a hyacinth branch allows one to ignore the coldness around the holder. These blessed trees also have the power to call upon snowstorms and frost. Needless to say, these powers are best harnessed by a weapon carved from one of these trees.",
+      "treasures": [
+        "A golden bell that brings luck. It's Luna's second favorite thing after carrots, and it brightly glitters when she walks and trots. The sound of the golden bell has a mystical power that summons luck from her homeland.",
+        "A carrot that grew from receiving moonlight a thousand times. Those hit by this carrot will have all evil stripped away from them, and they'll be able to tell apart good from bad.",
+        "A legendary snowfield flower that blossomed from the never melting land of Windland Snow Mountain. It is said that it makes the energy of its master's body flow clearly and beautifully. An item that makes Luna's pure energy shine even brighter.",
+        "Juno's special carrot cake. This special carrot cake was made especially for Luna, who misses her family back in her hometown and the carrots she used to eat. As it has the exact same taste like the ones Luna would eat back at home, the cake has become Luna's new soul food."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

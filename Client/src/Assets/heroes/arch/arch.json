@@ -1,1 +1,185 @@
-{"name":"Arch","title":"Arrow of Purity","class":"archer","damageType":"magical","position":"Middle","weapon":{"uniqueWeapon":{"name":"Clear Blue Sky, Sherrkyle","effect":["Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 200% of ATK. Ignores DEF if the target is not a Hero.","Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 240% of ATK. Ignores DEF if the target is not a Hero.","Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 290% of ATK. Ignores DEF if the target is not a Hero.","Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 350% of ATK. Ignores DEF if the target is not a Hero.","Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 420% of ATK. Ignores DEF if the target is not a Hero.","Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 500% of ATK. Ignores DEF if the target is not a Hero."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Celestial Arrow","description":"Deals ??? M.DMG to 3 enemies and push them back, leaving a Judgment Sigil on them for 15 sec. Deals additional ??? M.DMG to Non-Hero enemies and causes them to take 25% increased M.DMG for 10 sec.","cooldown":6,"cost":2}],"light":"If there is 1 enemy, DMG is increased by 100%.","dark":"Stuns enemies with a Sigil for 1 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Holy Golden Arrow","effect":["[Celestial Arrow] Increases DMG by 20% and the number of targets by 1.","[Celestial Arrow] Increases DMG by 24% and the number of targets by 1.","[Celestial Arrow] Increases DMG by 29% and the number of targets by 1.","[Celestial Arrow] Increases DMG by 35% and the number of targets by 1.","[Celestial Arrow] Increases DMG by 42% and the number of targets by 1.","[Celestial Arrow] Increases DMG by 50% and the number of targets by 1."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Purifying Blaze","description":"Deals ??? M.DMG to frontal enemies in a straight line. Deals additional ??? M.DMG that ignores DEF to targets with Judgment Sigil, and reduces their Heal Rate by 50% for 10 sec.","cooldown":15,"cost":3}],"light":"Crit Chance is increased by 40%.","dark":"Cooldown is reduced by 3 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Magic Square of Pursuit","effect":["[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 20%.","[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 24%.","[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 29%.","[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 35%.","[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 42%.","[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 50%."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Arbiter","description":"Deals ??? M.DMG to the target and enemies in a nearby range. Enemies with Judgment Sigil take 50% increased M.DMG and become silenced for 5 sec. Afterward, grants immunity to M.DMG to all allies for 5 sec.","cooldown":25,"cost":4}],"light":"Inflicts a sigil upon damaged enemies.","dark":"M.DMG increase and Silence effect occur to enemies with no Sigil as well.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Eye of Heaven","effect":["[Arbiter] DMG is increased by 20% and all allies' ATK is increased by 30% for the duration of M.Shield.","[Arbiter] DMG is increased by 24% and all allies' ATK is increased by 30% for the duration of M.Shield.","[Arbiter] DMG is increased by 29% and all allies' ATK is increased by 30% for the duration of M.Shield.","[Arbiter] DMG is increased by 35% and all allies' ATK is increased by 30% for the duration of M.Shield.","[Arbiter] DMG is increased by 42% and all allies' ATK is increased by 30% for the duration of M.Shield.","[Arbiter] DMG is increased by 50% and all allies' ATK is increased by 30% for the duration of M.Shi"]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"The Last Judgment","description":"Every 15 sec, deals ??? M.DMG ignoring DEF to enemies inflicted by Judgement Sigil. Once during every battle, upon reaching near death HP, deals ??? M.DMG to enemies inflicted by Judgement Sigils and stuns them for 3 sec, while casting a shield that blocks ??? DMG to all allies for 5 sec. Gains immunity to CC while the shield is in effect. When the shield effect takes place, consumes all mana, and all skill cooldown is increased by 50%."}],"light":"For 20 sec after activation, auto attacks target 2 enemies.","dark":"Effect occurs 3 sec faster.","books":["DMG and Shield are increased by 10%.","DMG and Shield are increased by 15%.","DMG and Shield are increased by 25%."],"uniqueTreasure":{"name":"Bell of Punishment","effect":["[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1 sec.","[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.2 sec.","[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.4 sec.","[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.7 sec.","[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 2.1 sec.","[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 2.5 sec."]}}],"light":"ATK, DEF, HP+15% / Crit Chance +100","dark":"At the beginning of each battle, self gains immunity to M.DMG for 5 sec.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Peace and stability","dislikes":"Demons"},"story":"An Angel warrior who descended from the Heavens to punish the Demons and stop the spread of chaos on earth. His delegated tasks include scouting, reconnaissance, and execution of any Demons found on earth. He has a strong sense of responsibility and is quick and decisive against any injustice. He truly loves Mankind and all the life forms that inhabit the earth. This is why he strives to prevent the Demons from defiling this world.","itemIntroductions":{"weapon":"A powerful weapon of light that can take the form of a spear, a dagger, or a bow. One of the divine treasures of the Angels blessed by an archangel. It is said to be capable of incinerating evil. Due to its versatility, it has traditionally been given to the most talented scout. The number of Demons who perished under its light during the war is too high to count.","treasures":["A golden arrow created by the divine power of Arch. It summons and materializes the purest and holiest light from heaven, its power increasing according to the amount of divine power given to it. For the good of heart, it's merely a beautiful scene to watch, but if evil creatures are shot by it, they become mutilated and slammed into some non-material dimension.","The symbol of Fire Arbiter Army that fought a fierce battle against Ancient Demons. When using the Magic Square of Pursuit blessed by Lua, the Goddess of Light, Arch becomes a merciless arbiter.","Angel Arbiter Pilier's soul egg. Pilier was born from Lua's first flame, and is Arch's master. Pilier was the best Angel warrior and was the one to end the war against the Demons. But after using all of his power, he went back to being an Eye of Heaven, which is the soul egg form, and Arch is holding onto his master's soul.","A heavenly bell that rings in the morning star. The bell rings to warn the Angel warriors whenever the earth faces great trouble, letting them know that divine punishment will be needed. Upon hearing the bell, warriors realize that the time has come for them to slit the throats of the bringers of apocalypse under Lua's name."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Arch",
+  "title": "Arrow of Purity",
+  "class": "archer",
+  "damageType": "magical",
+  "position": "Middle",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Clear Blue Sky, Sherrkyle",
+      "effect": [
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 200% of ATK. Ignores DEF if the target is not a Hero.",
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 240% of ATK. Ignores DEF if the target is not a Hero.",
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 290% of ATK. Ignores DEF if the target is not a Hero.",
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 350% of ATK. Ignores DEF if the target is not a Hero.",
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 420% of ATK. Ignores DEF if the target is not a Hero.",
+        "Every 10 sec, marks Judgment Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to 500% of ATK. Ignores DEF if the target is not a Hero."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summon the soul of Clear Blue Sky, Sherrkyle, dealing ??? M.DMG to all enemies and marks Judgement Sigil for 15 sec. Afterward, increases own Crit DMG by 100% for 11 sec.",
+      "advancement1": "For the Duration of Skill, reduces Cooldown of self's all Skills by 1 sec every sec.",
+      "advancement2": "For the duration of Skill, attacks a random enemy, dealing ??? M.DMG every 1 sec and marking Judgement Sigil for 15 sec. If the target is already marked with a Judgement Sigil, dealing ??? additional M.DMG that ignores DEF.",
+      "activation": "Charges up over 18 sec.",
+      "cd": 20,
+      "charges": 6
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Celestial Arrow",
+          "description": "Deals ??? M.DMG to 3 enemies and push them back, leaving a Judgment Sigil on them for 15 sec. Deals additional ??? M.DMG to Non-Hero enemies and causes them to take 25% increased M.DMG for 10 sec.",
+          "cooldown": 6,
+          "cost": 2
+        }
+      ],
+      "light": "If there is 1 enemy, DMG is increased by 100%.",
+      "dark": "Stuns enemies with a Sigil for 1 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Holy Golden Arrow",
+        "effect": [
+          "[Celestial Arrow] Increases DMG by 20% and the number of targets by 1.",
+          "[Celestial Arrow] Increases DMG by 24% and the number of targets by 1.",
+          "[Celestial Arrow] Increases DMG by 29% and the number of targets by 1.",
+          "[Celestial Arrow] Increases DMG by 35% and the number of targets by 1.",
+          "[Celestial Arrow] Increases DMG by 42% and the number of targets by 1.",
+          "[Celestial Arrow] Increases DMG by 50% and the number of targets by 1."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Purifying Blaze",
+          "description": "Deals ??? M.DMG to frontal enemies in a straight line. Deals additional ??? M.DMG that ignores DEF to targets with Judgment Sigil, and reduces their Heal Rate by 50% for 10 sec.",
+          "cooldown": 15,
+          "cost": 3
+        }
+      ],
+      "light": "Crit Chance is increased by 40%.",
+      "dark": "Cooldown is reduced by 3 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Magic Square of Pursuit",
+        "effect": [
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 20%.",
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 24%.",
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 29%.",
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 35%.",
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 42%.",
+          "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by 50%."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Arbiter",
+          "description": "Deals ??? M.DMG to the target and enemies in a nearby range. Enemies with Judgment Sigil take 50% increased M.DMG and become silenced for 5 sec. Afterward, grants immunity to M.DMG to all allies for 5 sec.",
+          "cooldown": 25,
+          "cost": 4
+        }
+      ],
+      "light": "Inflicts a sigil upon damaged enemies.",
+      "dark": "M.DMG increase and Silence effect occur to enemies with no Sigil as well.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Eye of Heaven",
+        "effect": [
+          "[Arbiter] DMG is increased by 20% and all allies' ATK is increased by 30% for the duration of M.Shield.",
+          "[Arbiter] DMG is increased by 24% and all allies' ATK is increased by 30% for the duration of M.Shield.",
+          "[Arbiter] DMG is increased by 29% and all allies' ATK is increased by 30% for the duration of M.Shield.",
+          "[Arbiter] DMG is increased by 35% and all allies' ATK is increased by 30% for the duration of M.Shield.",
+          "[Arbiter] DMG is increased by 42% and all allies' ATK is increased by 30% for the duration of M.Shield.",
+          "[Arbiter] DMG is increased by 50% and all allies' ATK is increased by 30% for the duration of M.Shi"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "The Last Judgment",
+          "description": "Every 15 sec, deals ??? M.DMG ignoring DEF to enemies inflicted by Judgement Sigil. Once during every battle, upon reaching near death HP, deals ??? M.DMG to enemies inflicted by Judgement Sigils and stuns them for 3 sec, while casting a shield that blocks ??? DMG to all allies for 5 sec. Gains immunity to CC while the shield is in effect. When the shield effect takes place, consumes all mana, and all skill cooldown is increased by 50%."
+        }
+      ],
+      "light": "For 20 sec after activation, auto attacks target 2 enemies.",
+      "dark": "Effect occurs 3 sec faster.",
+      "books": [
+        "DMG and Shield are increased by 10%.",
+        "DMG and Shield are increased by 15%.",
+        "DMG and Shield are increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Bell of Punishment",
+        "effect": [
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1 sec.",
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.2 sec.",
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.4 sec.",
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 1.7 sec.",
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 2.1 sec.",
+          "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for 2.5 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / Crit Chance +100",
+  "dark": "At the beginning of each battle, self gains immunity to M.DMG for 5 sec.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Peace and stability",
+      "dislikes": "Demons"
+    },
+    "story": "An Angel warrior who descended from the Heavens to punish the Demons and stop the spread of chaos on earth. His delegated tasks include scouting, reconnaissance, and execution of any Demons found on earth. He has a strong sense of responsibility and is quick and decisive against any injustice. He truly loves Mankind and all the life forms that inhabit the earth. This is why he strives to prevent the Demons from defiling this world.",
+    "itemIntroductions": {
+      "weapon": "A powerful weapon of light that can take the form of a spear, a dagger, or a bow. One of the divine treasures of the Angels blessed by an archangel. It is said to be capable of incinerating evil. Due to its versatility, it has traditionally been given to the most talented scout. The number of Demons who perished under its light during the war is too high to count.",
+      "treasures": [
+        "A golden arrow created by the divine power of Arch. It summons and materializes the purest and holiest light from heaven, its power increasing according to the amount of divine power given to it. For the good of heart, it's merely a beautiful scene to watch, but if evil creatures are shot by it, they become mutilated and slammed into some non-material dimension.",
+        "The symbol of Fire Arbiter Army that fought a fierce battle against Ancient Demons. When using the Magic Square of Pursuit blessed by Lua, the Goddess of Light, Arch becomes a merciless arbiter.",
+        "Angel Arbiter Pilier's soul egg. Pilier was born from Lua's first flame, and is Arch's master. Pilier was the best Angel warrior and was the one to end the war against the Demons. But after using all of his power, he went back to being an Eye of Heaven, which is the soul egg form, and Arch is holding onto his master's soul.",
+        "A heavenly bell that rings in the morning star. The bell rings to warn the Angel warriors whenever the earth faces great trouble, letting them know that divine punishment will be needed. Upon hearing the bell, warriors realize that the time has come for them to slit the throats of the bringers of apocalypse under Lua's name."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

@@ -1,1 +1,185 @@
-{"name":"Phillop","title":"King of Dwarves","class":"knight","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"Dragon's Ruins, Atein","effect":["Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 0.8%. Can be stacked up to 100 times max.","Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1%. Can be stacked up to 100 times max.","Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.2%. Can be stacked up to 100 times max.","Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.4%. Can be stacked up to 100 times max.","Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.7%. Can be stacked up to 100 times max.","Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 2%. Can be stacked up to 100 times max."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Collision","description":"Deals ??? P.DMG and knocks down the enemy for 3 sec.","cooldown":12,"cost":3}],"light":"Mana cost is reduced by 1.","dark":"Cooldown is reduced by 10% per each enemy hit.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Reduces hit enemies' P.DEF by 50% for 10 sec."],"uniqueTreasure":{"name":"Mad Dragon Shield Decoration","effect":["[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 200 for 10 sec.","[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 240 for 10 sec.","[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 290 for 10 sec.","[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 350 for 10 sec.","[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 420 for 10 sec.","[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 500 for 10 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Headbutt","description":"Dashes toward the enemy and deals ??? P.DMG, knocking them back. Hit enemy's Attack Spd is reduced by 20% for 10 sec.","cooldown":8,"cost":2}],"light":"Deals extra P.DMG equal to 10% of max HP.","dark":"Effect changes to a 3 sec Stun to nearby enemies.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Reduces target's ATK by 25%."],"uniqueTreasure":{"name":"Dwarfish Capricorn Helmet","effect":["[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 200 for 10 sec.","[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 240 for 10 sec.","[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 290 for 10 sec.","[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 350 for 10 sec.","[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 420 for 10 sec.","[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 500 for 10 sec."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Earth Incarnate","description":"Increases P.DEF and M.DEF by ??? for 15 sec and heals 15% of HP. Gains CC immunity.","cooldown":22,"cost":3}],"light":"Deals 1% of Max HP as DMG per sec to nearby enemies.","dark":"Stuns nearby enemies for 3 sec.","books":["P.DEF boost is increased by 10%.","P.DEF boost is increased by 15%.","DMG Reduction is increased by 250."],"uniqueTreasure":{"name":"Dwarven Ceremonial Hammer","effect":["[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 20%.","[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 24%.","[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 29%.","[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 35%.","[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 42%.","[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 50%."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Destroy Armor","description":"Upon attacking, weakens enemy P.DEF by ??? for 15 sec. Can be stacked up to 5 times max."}],"light":"Enemies with 5 stacks take 1% extra P.DMG based off Max HP per attack.","dark":"Upon attack, dispel all positive effects and target receives 20% increased P.DMG for 20 sec. Has a cooldown of 20 sec.","books":["P.DEF reduction is increased by 10%.","P.DEF reduction is increased by 15%.","Per every stack, enemy P. Dodge chance is reduced by 10%."],"uniqueTreasure":{"name":"Hammer of Titan","effect":["[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 4%.","[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 4.8%.","[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 5.8%.","[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 7%.","[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 8.4%.","[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 10%."]}}],"light":"ATK, DEF, HP+15% / P. Block +200","dark":"When auto attacking, there is a 10% chance to Stun the target for 2 sec and deal extra DMG worth 10% of own HP.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Drinks, sand bath, smithing, and crafting","dislikes":"Long conferences, the royal throne, Demons (especially the Dark Dragons)"},"story":"He is the stout and upright king of the Dwarves. He fought alongside the Warrior of the Holy Sword against the Demon Army 100 years ago. His heroism in defeating the Dark Dragon Legion, the core division of the Demon Army, is well known throughout the land. In reality, he only sits on the throne out of a sense of obligation. Even as he complains about the boredom of his royal duties, he continues to work diligently.","itemIntroductions":{"weapon":"The Dark Dragons are Demons created to slay the dragons, the arbitrators of the world. During the war 100 years ago, these Dark Dragons killed and devoured countless dragons. A few of the surviving dragons have gone insane from the rage and the shame, and they eventually turned into Mad Dragons. They are now nothing more than giant monsters powered by their destructive instincts. Phillop and his Dwarves have been hunting these Dark Dragons and Mad Dragons since the Demon War, gathering their remains to forge legendary items.","treasures":["A golden shield decoration that has the image of a Mad Dragon engraved on it. Dwarf master artisans gave it to King Phillop as a present for his remarkable work in hunting Mad Dragons. Phillop did not put it on his shield as it was a little too fancy to use in combat, but he always carries it as a charm to show his gratitude to the warm-hearted artisans.","Ancient Dwarf King's capricorn helmet. It is made from the gold of dragons that was obtained after defeating the greedy dark dragon Bokrug. The magnificent golden horn of the helmet is imbued with the dark dragon's magic that will slow down an enemy who is hit with Headbutt.","A hammer that the ancient Dwarven King received as a gift from the Earth Elemental. It was a gift that the King received for saving the Gnome Kingdom from the attacks of the evil Earth Dragon Azi Dahaka. Upon using Earth Incarnate, this ceremonial hammer, imbued with the blessing of the spirit of the earth, increases DEF with the power of the earth's spirit, and grants immunity to HP recovery and CC.","A hammer made of Titanium, the legendary metal forged by giants. It is powerful enough to crush through any legendary weapons and armor. After the Demon War, only 3 of them are known to exist in Orvelia."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Phillop",
+  "title": "King of Dwarves",
+  "class": "knight",
+  "damageType": "physical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Dragon's Ruins, Atein",
+      "effect": [
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 0.8%. Can be stacked up to 100 times max.",
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1%. Can be stacked up to 100 times max.",
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.2%. Can be stacked up to 100 times max.",
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.4%. Can be stacked up to 100 times max.",
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 1.7%. Can be stacked up to 100 times max.",
+        "Upon receiving DMG, stacks Dragon Rage for 10 sec. Per each stacked Dragon Rage, ATK and DEF are increased by 2%. Can be stacked up to 100 times max."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Dragon's Ruins, Atein for 10 sec. For the duratioin of the soul, increases own DEF by 60%, normal attacks deal additional P.DMG equal to 1% of own Max HP, enhancing own Skills.\n[Collision] Deals ??? additional P.DMG to the target and increases P.DMG the target takes by 20% for 10 sec.\n[Headbutt] Deals additional P.DMG 10% of own HP.\n[Earth Incarnate] Upon activation, immediately heals HP euqal to 20% own Max HP.",
+      "advancement1": "Increases the duration of soul by 5 sec.",
+      "advancement2": "Changes the additional P.DMG proportional to Max HP from normal attacks to 2%, and increases DEF Reduction effect of [Destroy Armor] by [MISSING]% for the duration of Skill.",
+      "activation": "Charges up over 23 sec.",
+      "cd": 24,
+      "charges": 6
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Collision",
+          "description": "Deals ??? P.DMG and knocks down the enemy for 3 sec.",
+          "cooldown": 12,
+          "cost": 3
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "Cooldown is reduced by 10% per each enemy hit.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "Reduces hit enemies' P.DEF by 50% for 10 sec."
+      ],
+      "uniqueTreasure": {
+        "name": "Mad Dragon Shield Decoration",
+        "effect": [
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 200 for 10 sec.",
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 240 for 10 sec.",
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 290 for 10 sec.",
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 350 for 10 sec.",
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 420 for 10 sec.",
+          "[Collision] Reduces the target's CC Resist by 250 and P.Block chance by 500 for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Headbutt",
+          "description": "Dashes toward the enemy and deals ??? P.DMG, knocking them back. Hit enemy's Attack Spd is reduced by 20% for 10 sec.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "Deals extra P.DMG equal to 10% of max HP.",
+      "dark": "Effect changes to a 3 sec Stun to nearby enemies.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "Reduces target's ATK by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Dwarfish Capricorn Helmet",
+        "effect": [
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 200 for 10 sec.",
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 240 for 10 sec.",
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 290 for 10 sec.",
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 350 for 10 sec.",
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 420 for 10 sec.",
+          "[Headbutt] Reduces Mana Cost by 1 and reduces P.Crit Resistance of the affected enemy by 500 for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Earth Incarnate",
+          "description": "Increases P.DEF and M.DEF by ??? for 15 sec and heals 15% of HP. Gains CC immunity.",
+          "cooldown": 22,
+          "cost": 3
+        }
+      ],
+      "light": "Deals 1% of Max HP as DMG per sec to nearby enemies.",
+      "dark": "Stuns nearby enemies for 3 sec.",
+      "books": [
+        "P.DEF boost is increased by 10%.",
+        "P.DEF boost is increased by 15%.",
+        "DMG Reduction is increased by 250."
+      ],
+      "uniqueTreasure": {
+        "name": "Dwarven Ceremonial Hammer",
+        "effect": [
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 20%.",
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 24%.",
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 29%.",
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 35%.",
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 42%.",
+          "[Earth Incarnate] For the duration of skill, ATK Spd and Crit chance is increased by 250, and DEF boost is increased by 50%."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Destroy Armor",
+          "description": "Upon attacking, weakens enemy P.DEF by ??? for 15 sec. Can be stacked up to 5 times max."
+        }
+      ],
+      "light": "Enemies with 5 stacks take 1% extra P.DMG based off Max HP per attack.",
+      "dark": "Upon attack, dispel all positive effects and target receives 20% increased P.DMG for 20 sec. Has a cooldown of 20 sec.",
+      "books": [
+        "P.DEF reduction is increased by 10%.",
+        "P.DEF reduction is increased by 15%.",
+        "Per every stack, enemy P. Dodge chance is reduced by 10%."
+      ],
+      "uniqueTreasure": {
+        "name": "Hammer of Titan",
+        "effect": [
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 4%.",
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 4.8%.",
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 5.8%.",
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 7%.",
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 8.4%.",
+          "[Destroy Armor] Upon attack, reduces the target's ATK by 20% and each stack reduces its Heal Rate by 10%."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / P. Block +200",
+  "dark": "When auto attacking, there is a 10% chance to Stun the target for 2 sec and deal extra DMG worth 10% of own HP.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Drinks, sand bath, smithing, and crafting",
+      "dislikes": "Long conferences, the royal throne, Demons (especially the Dark Dragons)"
+    },
+    "story": "He is the stout and upright king of the Dwarves. He fought alongside the Warrior of the Holy Sword against the Demon Army 100 years ago. His heroism in defeating the Dark Dragon Legion, the core division of the Demon Army, is well known throughout the land. In reality, he only sits on the throne out of a sense of obligation. Even as he complains about the boredom of his royal duties, he continues to work diligently.",
+    "itemIntroductions": {
+      "weapon": "The Dark Dragons are Demons created to slay the dragons, the arbitrators of the world. During the war 100 years ago, these Dark Dragons killed and devoured countless dragons. A few of the surviving dragons have gone insane from the rage and the shame, and they eventually turned into Mad Dragons. They are now nothing more than giant monsters powered by their destructive instincts. Phillop and his Dwarves have been hunting these Dark Dragons and Mad Dragons since the Demon War, gathering their remains to forge legendary items.",
+      "treasures": [
+        "A golden shield decoration that has the image of a Mad Dragon engraved on it. Dwarf master artisans gave it to King Phillop as a present for his remarkable work in hunting Mad Dragons. Phillop did not put it on his shield as it was a little too fancy to use in combat, but he always carries it as a charm to show his gratitude to the warm-hearted artisans.",
+        "Ancient Dwarf King's capricorn helmet. It is made from the gold of dragons that was obtained after defeating the greedy dark dragon Bokrug. The magnificent golden horn of the helmet is imbued with the dark dragon's magic that will slow down an enemy who is hit with Headbutt.",
+        "A hammer that the ancient Dwarven King received as a gift from the Earth Elemental. It was a gift that the King received for saving the Gnome Kingdom from the attacks of the evil Earth Dragon Azi Dahaka. Upon using Earth Incarnate, this ceremonial hammer, imbued with the blessing of the spirit of the earth, increases DEF with the power of the earth's spirit, and grants immunity to HP recovery and CC.",
+        "A hammer made of Titanium, the legendary metal forged by giants. It is powerful enough to crush through any legendary weapons and armor. After the Demon War, only 3 of them are known to exist in Orvelia."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

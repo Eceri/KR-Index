@@ -17,12 +17,12 @@
             ]
         },
         "soulWeapon": {
-            "advancement0": "No info yet.",
-            "advancement1": "No info yet.",
-            "advancement2": "No info yet.",
-            "activation": "No info yet.",
-            "cd": 0,
-            "charges": 0
+            "advancement0": "Summons the soul of Executioner of Domains, ELsion and deals ??? M.DMG to nearby enemies withing a circular range of self and increases M.DMG the enemies take 30% for 5 sec. Afterward, absorbs the soul of Executioner of Domains, Elsion for 10 sec and deals ??? M.DMG t one random enemy every 1 sec. If the target is not a Hero, the DMG increases by 100%.",
+            "advancement1": "For the duration of Skill, Seria's ATK is increased by 25%, and Crit DMG is increased by 50%.",
+            "advancement2": "DMG dealt every 1 sec now ignores target's DEF.",
+            "activation": "Charges up over 20 sec.",
+            "cd": 24,
+            "charges": 5
         }
     },
     "skills": [

@@ -20,7 +20,7 @@
       "advancement0": "Summons the soul of Ultimate Weapon, Leviathan, icnreasin own ATK by 30% for 10 sec, and dealing ??? P.DMG to all enemies every 3 sec. Each hit increases P.DMG the enemies take by 20% for 5 sec.",
       "advancement1": "Increases the P.DMG Boost effect by additional 20%.",
       "advancement2": "Reduces Cooldown by 7 sec.",
-      "activation": "No info yet.",
+      "activation": "Charges up over 22 sec.",
       "cd": 18,
       "charges": 8
     }

@@ -1,1 +1,185 @@
-{"name":"Gladi","title":"Beast of the Arena","class":"assassin","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"Beast Fist, Mastra","effect":["Upon a Crit Hit, Crit. DMG is increased by 20% for 5 sec. This effect can be stacked up to 7 times max.","Upon a Crit Hit, Crit. DMG is increased by 24% for 5 sec. This effect can be stacked up to 7 times max.","Upon a Crit Hit, Crit. DMG is increased by 29% for 5 sec. This effect can be stacked up to 7 times max.","Upon a Crit Hit, Crit. DMG is increased by 35% for 5 sec. This effect can be stacked up to 7 times max.","Upon a Crit Hit, Crit. DMG is increased by 42% for 5 sec. This effect can be stacked up to 7 times max.","Upon a Crit Hit, Crit. DMG is increased by 50% for 5 sec. This effect can be stacked up to 7 times max."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Quick Strikes","description":"Strikes the target 7 times, dealing a total of ??? P.DMG. The last hit increases the target's P.DMG taken by 25% for 10 sec.","cooldown":9,"cost":2}],"light":"When there is 1 enemy, DMG is boosted by 100%.","dark":"P.DMG taken increase effect amount is changed to 50%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Intolerable Feather","effect":["[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2 sec.","[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2.4 sec.","[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2.9 sec.","[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 3.5 sec.","[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 4.2 sec.","[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 5 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Advent of the War God","description":"Dispel all negative effects on self and deal ??? P.DMG to nearby enemies within a small radius, gaining the Status 'War God' for 10 sec. While in War God mode, ATK is boosted by ??? and all auto attacks have a 30% chance to consume 5% mana to deal an extra attack of ??? extra P.DMG. Upon taking M.DMG, dodge all M.DMG for 1 sec. Dodge effect only activates 1 time in every 2 sec.","cooldown":15,"cost":1}],"light":"War God state lasts 5 seconds longer.","dark":"Additional DMG hit chance rises by 20%.","books":["ATK boost and DMG is increased by 10%","ATK boost and DMG is increased by 15%","ATK boost and DMG is increased by 25%"],"uniqueTreasure":{"name":"Silvervine Box","effect":["[Advent of the War God] For the skill's duration, recovers 100 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.","[Advent of the War God] For the skill's duration, recovers 120 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.","[Advent of the War God] For the skill's duration, recovers 140 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.","[Advent of the War God] For the skill's duration, recovers 170 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.","[Advent of the War God] For the skill's duration, recovers 210 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.","[Advent of the War God] For the skill's duration, recovers 250 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Ultimate Punch!","description":"Charges energy and sprints toward frontal enemies, dealing ??? P.DMG to enemies in range and inflicting stun for 3 sec. If the target is a boss, attack ignores target DEF.","cooldown":20,"cost":4}],"light":"DMG is increased by 40%.","dark":"Mana cost is reduced by 1.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Champion's Laurel Wreath","effect":["[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 4%. This effect can be stacked max 10 times.","[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 4.8%. This effect can be stacked max 10 times.","[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 5.8%. This effect can be stacked max 10 times.","[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 7%. This effect can be stacked max 10 times.","[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 8.4%. This effect can be stacked max 10 times.","[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 10%. This effect can be stacked max 10 times."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"This will hurt!","description":"Upon hitting a single target with 5 auto attacks, deals ??? extra DMG that ignores DEF."}],"light":"When there is 1 enemy, DMG is boosted by 100%.","dark":"When activated in the Arena, deal 15% of the target's current HP as additional P.DMG that ignores DEF.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Elastic Bandage of Fighting Spirit","effect":["[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.","[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2.4% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.","[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2.9% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.","[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 3.5% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.","[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 4.2% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.","[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 5% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times."]}}],"light":"ATK, DEF, HP+15% / ATK.Spd +100","dark":"Increases all DEF by 8% of ATK.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Silvervine, powerful opponents","dislikes":"Gloomy people, indecisive people"},"story":"The man who conquered the Orvel Arena. Sitting on the throne of the champion, he is often feared by others. People refer to him as Beast Fist. However, he is actually a cheerful man with a positive and straightforward personality. As reflected by his fighting style, he is a bold man who does not hesitate to act upon his will. After his conquest, Gladi requested the right to run an Arena Shop. Supposedly, his real goal was to gain a monopoly on silvervines. It still remains a mystery as to who will actually buy these plants, but he seems happy enough. Curiously enough, he's currently not even selling any silvervines.","itemIntroductions":{"weapon":"A pair of gauntlets custom forged for Gladi. They are the proof of his winning the championship at the Orvel Arena. Supposedly, these were crafted from a legendary pair of gauntlets used by a man who was known as the War God hundreds of years ago. These gauntlets, specialized for smashing the opponent, greatly enhance the power of their wearer. However, the physical cost of using them is brutal, and no normal person can handle them. Unless the wearer is incredibly flexible, and physically capable of withstanding the impact of each blow, using them is almost suicidal. Nevertheless, Gladi's natural strength and flexibility allow him to use them freely.","treasures":["You just can't stop throwing punches! The mysterious feather wavering before the eyes pushes Gladi's concentration to its limit so that he can land strikes at a crazy speed. Gladi seems a bit too excited when he's looking at it.","Silvervine is used to exponentially boost physical ability. Nothing else, but this silvervine. Others may try chewing silvervine, drink it, boil it, but it won't work. Gladi just needs this silvervine to have the effect of the War God.","Wreath given to the strongest warrior of Orbis Continent. It's only given to the winner of the fighting tournament that happens every 4 years. Those who wear this wreath are said to be able to borrow the strength of the War God.","A roll of elastic bandage that Gladi wears around his fists when someone really needs a good punch to the face. It was a present that his master gave him a long time ago. Gladi rarely gets mad after he started to work at the shop in the Arena, but he would take the bandage out for nasty customers who keep whining that they need weapons that exceed their capabilities, or those who dishonor the War God, whom he respects dearly. Gladi is a big-hearted man who knows how to let things go with a good laugh, but if you see him wrapping the bandage around his fists silently, that could be your last day."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Gladi",
+  "title": "Beast of the Arena",
+  "class": "assassin",
+  "damageType": "physical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Beast Fist, Mastra",
+      "effect": [
+        "Upon a Crit Hit, Crit. DMG is increased by 20% for 5 sec. This effect can be stacked up to 7 times max.",
+        "Upon a Crit Hit, Crit. DMG is increased by 24% for 5 sec. This effect can be stacked up to 7 times max.",
+        "Upon a Crit Hit, Crit. DMG is increased by 29% for 5 sec. This effect can be stacked up to 7 times max.",
+        "Upon a Crit Hit, Crit. DMG is increased by 35% for 5 sec. This effect can be stacked up to 7 times max.",
+        "Upon a Crit Hit, Crit. DMG is increased by 42% for 5 sec. This effect can be stacked up to 7 times max.",
+        "Upon a Crit Hit, Crit. DMG is increased by 50% for 5 sec. This effect can be stacked up to 7 times max."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Beast Fist, Mastra, dealing ??? P.DMG that ignores DEF to the enemy with the highest ATK, and increasing own ATK by 50% for 10 sec. For the duration of Skill, increases DMG of [Ultimate Punch!] by 50%. Upon activating [This will hurt!], deals ??? additional P.DMG that ignores DEF.",
+      "advancement1": "Upon using [Ultimate Punch!] for the Duration of Skill, the DEF ignore DMG effect that only applies to Bosses applies to all targets.",
+      "advancement2": "[Ultimate Punch!] Changes DMG Boost to 100% and increaes additional P.DMG that ignores DEF by 100%.",
+      "activation": "Charges up upon using Skills 5 times.",
+      "cd": 20,
+      "charges": 6
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Quick Strikes",
+          "description": "Strikes the target 7 times, dealing a total of ??? P.DMG. The last hit increases the target's P.DMG taken by 25% for 10 sec.",
+          "cooldown": 9,
+          "cost": 2
+        }
+      ],
+      "light": "When there is 1 enemy, DMG is boosted by 100%.",
+      "dark": "P.DMG taken increase effect amount is changed to 50%.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Intolerable Feather",
+        "effect": [
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2 sec.",
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2.4 sec.",
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 2.9 sec.",
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 3.5 sec.",
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 4.2 sec.",
+          "[Quick Strikes] Increases DMG by 50%, and makes the target unable to recover Mana for 5 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Advent of the War God",
+          "description": "Dispel all negative effects on self and deal ??? P.DMG to nearby enemies within a small radius, gaining the Status 'War God' for 10 sec. While in War God mode, ATK is boosted by ??? and all auto attacks have a 30% chance to consume 5% mana to deal an extra attack of ??? extra P.DMG. Upon taking M.DMG, dodge all M.DMG for 1 sec. Dodge effect only activates 1 time in every 2 sec.",
+          "cooldown": 15,
+          "cost": 1
+        }
+      ],
+      "light": "War God state lasts 5 seconds longer.",
+      "dark": "Additional DMG hit chance rises by 20%.",
+      "books": [
+        "ATK boost and DMG is increased by 10%",
+        "ATK boost and DMG is increased by 15%",
+        "ATK boost and DMG is increased by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Silvervine Box",
+        "effect": [
+          "[Advent of the War God] For the skill's duration, recovers 100 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.",
+          "[Advent of the War God] For the skill's duration, recovers 120 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.",
+          "[Advent of the War God] For the skill's duration, recovers 140 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.",
+          "[Advent of the War God] For the skill's duration, recovers 170 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.",
+          "[Advent of the War God] For the skill's duration, recovers 210 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG.",
+          "[Advent of the War God] For the skill's duration, recovers 250 MP every second and stacks 1 [This will hurt!] upon inflicting additional P.DMG."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Ultimate Punch!",
+          "description": "Charges energy and sprints toward frontal enemies, dealing ??? P.DMG to enemies in range and inflicting stun for 3 sec. If the target is a boss, attack ignores target DEF.",
+          "cooldown": 20,
+          "cost": 4
+        }
+      ],
+      "light": "DMG is increased by 40%.",
+      "dark": "Mana cost is reduced by 1.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Champion's Laurel Wreath",
+        "effect": [
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 4%. This effect can be stacked max 10 times.",
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 4.8%. This effect can be stacked max 10 times.",
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 5.8%. This effect can be stacked max 10 times.",
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 7%. This effect can be stacked max 10 times.",
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 8.4%. This effect can be stacked max 10 times.",
+          "[Ultimate Punch!] Skill cooldown is reduced by 30% and per each activation DMG is increased by 10%. This effect can be stacked max 10 times."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "This will hurt!",
+          "description": "Upon hitting a single target with 5 auto attacks, deals ??? extra DMG that ignores DEF."
+        }
+      ],
+      "light": "When there is 1 enemy, DMG is boosted by 100%.",
+      "dark": "When activated in the Arena, deal 15% of the target's current HP as additional P.DMG that ignores DEF.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Elastic Bandage of Fighting Spirit",
+        "effect": [
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.",
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2.4% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.",
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 2.9% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.",
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 3.5% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.",
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 4.2% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times.",
+          "[This will hurt!] Increases DMG by 50%. Upon activation, a target takes 5% increased P.DMG for 10 sec. This effect can be stacked up to max 6 times."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / ATK.Spd +100",
+  "dark": "Increases all DEF by 8% of ATK.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Silvervine, powerful opponents",
+      "dislikes": "Gloomy people, indecisive people"
+    },
+    "story": "The man who conquered the Orvel Arena. Sitting on the throne of the champion, he is often feared by others. People refer to him as Beast Fist. However, he is actually a cheerful man with a positive and straightforward personality. As reflected by his fighting style, he is a bold man who does not hesitate to act upon his will. After his conquest, Gladi requested the right to run an Arena Shop. Supposedly, his real goal was to gain a monopoly on silvervines. It still remains a mystery as to who will actually buy these plants, but he seems happy enough. Curiously enough, he's currently not even selling any silvervines.",
+    "itemIntroductions": {
+      "weapon": "A pair of gauntlets custom forged for Gladi. They are the proof of his winning the championship at the Orvel Arena. Supposedly, these were crafted from a legendary pair of gauntlets used by a man who was known as the War God hundreds of years ago. These gauntlets, specialized for smashing the opponent, greatly enhance the power of their wearer. However, the physical cost of using them is brutal, and no normal person can handle them. Unless the wearer is incredibly flexible, and physically capable of withstanding the impact of each blow, using them is almost suicidal. Nevertheless, Gladi's natural strength and flexibility allow him to use them freely.",
+      "treasures": [
+        "You just can't stop throwing punches! The mysterious feather wavering before the eyes pushes Gladi's concentration to its limit so that he can land strikes at a crazy speed. Gladi seems a bit too excited when he's looking at it.",
+        "Silvervine is used to exponentially boost physical ability. Nothing else, but this silvervine. Others may try chewing silvervine, drink it, boil it, but it won't work. Gladi just needs this silvervine to have the effect of the War God.",
+        "Wreath given to the strongest warrior of Orbis Continent. It's only given to the winner of the fighting tournament that happens every 4 years. Those who wear this wreath are said to be able to borrow the strength of the War God.",
+        "A roll of elastic bandage that Gladi wears around his fists when someone really needs a good punch to the face. It was a present that his master gave him a long time ago. Gladi rarely gets mad after he started to work at the shop in the Arena, but he would take the bandage out for nasty customers who keep whining that they need weapons that exceed their capabilities, or those who dishonor the War God, whom he respects dearly. Gladi is a big-hearted man who knows how to let things go with a good laugh, but if you see him wrapping the bandage around his fists silently, that could be your last day."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

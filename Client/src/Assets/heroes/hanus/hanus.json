@@ -1,1 +1,185 @@
-{"name":"Hanus","title":"Instructor of Open Fire","class":"mechanic","damageType":"physical","position":"Back","weapon":{"uniqueWeapon":{"name":"The Playtime, HN-0","effect":["Increases Hanus' Crit DMG by 20%. Every 20 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 200% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.","Increases Hanus' Crit DMG by 24%. Every 17 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 240% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.","Increases Hanus' Crit DMG by 29%. Every 14 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 290% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.","Increases Hanus' Crit DMG by 35%. Every 12 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 350% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.","Increases Hanus' Crit DMG by 42%. Every 10 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 420% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.","Increases Hanus' Crit DMG by 50%. Every 8 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 500% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"I See Through Your Every Move!","description":"Throws a grenade, and fires a submachine gun, dealing ??? P.DMG to the target and the enemies nearby. Hanus gains 20 Ammo afterward. Hit enemies take 25% increased P.DMG for 10 sec, and are blinded for 4 sec. Ammo can be stacked up to max 300 times.","cooldown":12,"cost":2}],"light":"Removes positive effects from the target.","dark":"Hanus now gains 40 Ammo, increasing own ATK by 3% for 60 sec upon gaining an Ammo. The ATK Boost effect can be stacked up to max 5 times.","books":["Increases DMG by 10%.","Increases DMG by 15%.","Increases DMG by 25%."],"uniqueTreasure":{"name":"Worn Army Hat","effect":["[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 0.8 sec.","[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1 sec.","[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.2 sec.","[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.4 sec.","[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.7 sec.","[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 2 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Shoot You Full of Holes!","description":"Shoots a machine gun 10 times to frontal enemies in a wide area, dealing a total of ??? P.DMG. Afterwards, if Hanus is possessing Ammo, she consumes ??? Ammo per shot to attack enemies until she runs out of Ammo. While in this state, Hanus takes 25% additional DMG. Every 1 st shot increases DMG of this Skill by 8%. The DMG Boost effect can be stacked up to max 50 times.","cooldown":14,"cost":3}],"light":"Ammo usage is increased to 3 , but while Hanus is in the state of consuming Ammo, Hanus' Crit DMG is increased by 150%.","dark":"Hanus no longer takes additional DMG from enemies.","books":["Increases DMG by 10%.","Increases DMG by 15%.","Increases DMG by 25%."],"uniqueTreasure":{"name":"The Playstarter","effect":["[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.","[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.","[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.","[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.","[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.","[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Hide If You Can!","description":"Fires a mortar at a frontal area, dealing ??? P.DMG in a wide area. Hanus gains 50 Ammo afterwards. Hit enemies are stunned for 5 sec. This Skill ignores target's P.Block and M.Block.","cooldown":27,"cost":4}],"light":"Ignores the target's DMG Reduction effects in Guild War.","dark":"Hanus now gains 80 Ammo, increasing own DEF Penetration by 60 for 60 sec upon gaining an Ammo. The DEF Penetration Boost can be stacked up to max 5 times.","books":["Increases DMG by 10%.","Increases DMG by 15%.","Increases DMG by 25%."],"uniqueTreasure":{"name":"Mini Hanus","effect":["[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 20% for 5 sec.","[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 24% for 5 sec.","[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 29% for 5 sec.","[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 35% for 5 sec.","[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 42% for 5 sec.","[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 50% for 5 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"I Shall Train You Hard!","description":"Hanus is not affected by ATK Spd effects, and increases ATK of all allies by ??? + 5% of Hanus' ATK. If activated during Guild battles, this effect is amplified by 2 times. [Guild Battle] - Guild Raid, Guild Conquest, Guild War"}],"light":"At the beginning of a Guild War battle, reduces DMG that all allies take by 20% for 6 sec.","dark":"Hanus gains 30 Ammo every 10 sec.","books":["Increases ATK Boost by 10%.","Increases ATK Boost by 15%.","Increases ATK Boost by 25%."],"uniqueTreasure":{"name":"Medal of Honor","effect":["[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 10% and Crit DMG by 20% for 10 sec.","[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 12% and Crit DMG by 24% for 10 sec.","[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 14% and Crit DMG by 29% for 10 sec.","[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 17% and Crit DMG by 35% for 10 sec.","[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 21% and Crit DMG by 42% for 10 sec.","[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 25% and Crit DMG by 50% for 10 sec."]}}],"light":"ATK, DEF, HP +15% / Crit DMG +20%","dark":"At the beginning of a Guild War battle, reduces Mana of all enemies by 500 , and increases all DMG they take by 15% for 5 sec.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Assembling firearm, Mini Hanus, Butter cookies, Darts","dislikes":"Laziness, when someone gives her an unsolicited advice, prawn, vinegar"},"story":"Hanus was only 13 when the Guild Allied Forces recruited her. She is known as the legendary girl who was also called as the little giantess of the battlefield. As the daughter of the guild master of a weapon guild, Hanus used to play with discarded firearms and blades when she was young. This is when the others discovered her ingenuity in arms. The Guild Alliance decided that they cannot allow such profound talent to go to waste. The Alliance, after barely managing to convince Hanus' father who fiercely disagreed with the Alliance's decision, recruited her. Hanus was trained along with other soldiers, and just as the Guild had expected, she displaced her talent on battlefield. Hanus' revolutionary weapons were ridiculously strong enough to shift the paradigm of warfare. Her craftmanship, combined with her masterful tactics, marked the birth of an ultimate soldier of the Allied Forces. Moreover, Hanus herself vastly enjoyed her life in the army, as she could utilize her handcrafted weapons to their fullest. However, great talent meant more demands and battles to fight. During an operation, Hanus ended up being wounded. Upon hearing this news about her daughter's injury, Hanus' father who detested seeing his daughter in the army ever since the early days, raised his voice against the Alliance, and strongly demanded her daughter to be discharged from service at once. However, as people say, no parents are strong enough to bend their child's will. Hanus, who would rather die than be discharged from service, persistently persuaded her father. In the end, she managed to get her father's approval, under the condition that she stays in the military only as an instructor that doesn't participate in battles. Currently, Hanus thinks that her life as an instructor is not too bad at all, but deep inside, she still yearns to return to battlefields. Inside the Command Center, she silently awaits for the day when she will finally stand on the battlefield with comrades whom she taught.","itemIntroductions":{"weapon":"At one point, Hanus, in a greatly enraged state, utilized all of her knowledge and skills she possessed to craft this enigmatic firearm. She uses this weapon against a target who makes her angry. This deadly weapon named Hanus Type-0 is loaded with special bullets that corrodes the target's body upon hit. Not only that, this weapon also fires a tracking bullet now and then, making it impossible for a target to escape Hanus. If anyone could create this intricate firearm other than Hanus, perhaps it would be geniuses such as the head researcher of Magos Le'Flamme, or the one regarded as the famous genius technomagi of Orvel. The story behind the creation of this weapon is an interesting tale to tell. In the past, when Hanus was achieving much with her feat, she was assigned to a smuggler elimination operation. During the mission, the ringleader of the smuggling connection insulted Hanus whilst escaping the scene: 'The children's playground is over there. You should go and play a war game with your friends instead.' Enraged to the max, Hanus fought with everything she had, but Hanus had to retreat due to the sheer number of bodyguards protecting the ringleader. Hanus was enraged for days over the fact that she had allowed the criminal who insulted her to escape right in front of her. Then, on the day of the follow-up operation to eliminate the smuggling connection, Hanus brought this strange gun to the mission. On that very day, one shot from her gun concluded the elimination operation. As she shot her gun, she said to herself: 'It's play time.'","treasures":["A hat of Hanus' comrade who recognized Hanus as her comrade on the battlefield for the first time. Although Hanus had been recruited by the army due to her ingenious craftsmanship, she had to endure all sorts of insults and neglections that were directed to her, just because she was young. Amidst the hardships however, there was one person who recognized Hanus' ability for the first time. Starting from then, as time went by, more and more soldiers started to recognize Hanus as their comrades, or even something more than that. To Hanus, this person was someone precious, and grateful. However, their friendship came to a temporary halt when Hanus had to change position within the army. Seeing Hanus cry for the first time, this comrade smiled gently and gave her hat to Hanus which she had worn in battles as a token of friendship and respect. She promised to see each other again on the battlefield, where both of them fought so hard together.","The first firearm that Hanus modified in her earlier days. It is then when Hanus' ingenuity first surfaced. While playing with blades and firearms, she remembered her father's big gun which was kept inside her father's room. Hanus' father once told her that despite its great firepower, the gun was ultimately deemed unsuitable for combat due to its massive weight. When Hanus saw the gun however, she felt that the gun could be modified appropriately. After contemplating for some time, she sneaked the gun from her father's room. After a few days, the gun was successfully modified into a tiny gun that fits Hanus. Hanus' father scolded her harshly for touching his gun without permission, but he could not hide his surprise when he saw the modified gun. Even though the gun's weight had been dramatically decreased, its firepower remained the same. After seeing this insane weapon, Hanus' father felt that her daughter's craftmanship is something extraordinary. Even more amazing is the fact that all this took place when Hanus was just 5 years old.","Hanus' favorite limited edition doll. This doll, crafted by an Orvelian doll workshop with a deep historical background, is made after a mythical creature unseen in this world. This doll is extremely popular among children, but the extra-limited edition belongs to Hanus only. Everyday, Hanus changes the doll's highest-quality clothes, and equips the doll with her handcrafted toy gun. As it got fitted with more things, it started resembeling Hanus that people began calling the doll Mini Hanus. Some people asked Hanus if the doll has a name, but Hanus refuses to tell them, saying that she is the only one who gets to call the doll by its name.","A medal Hanus received for her numerous, remarkable achievements she accomplished during her time in the Guild Allied Forces. As a great tactician, Hanus always brought advantages in battles, and the army bestowed the medal to her in recognition of her achievements. Such recognition was unprecedented considering Hanus' age and experience, and those who did not know Hanus well complained to the higher ups in envy of her accomplishments. However, after seeing Hanus in battle once, they did not dare to complain about the army's decision. Hanus, even after being transferred to the instructor position due to her father, still keeps this medal, and reflects upon it whenever she wishes to go back to battlefields."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Hanus",
+  "title": "Instructor of Open Fire",
+  "class": "mechanic",
+  "damageType": "physical",
+  "position": "Back",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "The Playtime, HN-0",
+      "effect": [
+        "Increases Hanus' Crit DMG by 20%. Every 20 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 200% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.",
+        "Increases Hanus' Crit DMG by 24%. Every 17 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 240% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.",
+        "Increases Hanus' Crit DMG by 29%. Every 14 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 290% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.",
+        "Increases Hanus' Crit DMG by 35%. Every 12 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 350% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.",
+        "Increases Hanus' Crit DMG by 42%. Every 10 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 420% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250.",
+        "Increases Hanus' Crit DMG by 50%. Every 8 sec, Hanus fires [The Playtime, HN-Homing Missile] to a random enemy, dealing P.DMG equal to 500% of ATK and inflicting one of the following effects for 3 sec: Stun, Freeze, Petrification, Knockdown, ATK Spd Reduction by 250."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of The Playtime, HN-0, increasing Crit DMG by 30% for 60 sec. Afterward, commands 'Attack Order' 3 times every 3 sec, dealing ??? P.DMG to frontal enemies in a straight line and inflicting Stung for 2 sec. Upon activating this Skill in Guild Battles, additional effects apply, and Crit DMG Boost effect stacks up to 4 times.\n[Guild Conquest] - Every time 'Attack Order' activates, hit enemies take 30% increased P.DMG for 5 sec.\n[Guild War] - Reduces Skill Activation Requirements to 10 sec.\n[Guild Raid] - Upon activation of 'Attack Order', gains 50 Ammo.",
+      "advancement1": "Increases DMG by 30%, and changes the max number of stacks to 7 times.",
+      "advancement2": "Increases DMG by 70%. ATK increases by 6% per each stack.",
+      "activation": "Charges up over 21 sec.",
+      "cd": 21,
+      "charges": 7
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "I See Through Your Every Move!",
+          "description": "Throws a grenade, and fires a submachine gun, dealing ??? P.DMG to the target and the enemies nearby. Hanus gains 20 Ammo afterward. Hit enemies take 25% increased P.DMG for 10 sec, and are blinded for 4 sec. Ammo can be stacked up to max 300 times.",
+          "cooldown": 12,
+          "cost": 2
+        }
+      ],
+      "light": "Removes positive effects from the target.",
+      "dark": "Hanus now gains 40 Ammo, increasing own ATK by 3% for 60 sec upon gaining an Ammo. The ATK Boost effect can be stacked up to max 5 times.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Worn Army Hat",
+        "effect": [
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 0.8 sec.",
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1 sec.",
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.2 sec.",
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.4 sec.",
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 1.7 sec.",
+          "[I See Through Your Every Move!] Reduces Mana Cost by 1 and increases the duration of blind by 2 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Shoot You Full of Holes!",
+          "description": "Shoots a machine gun 10 times to frontal enemies in a wide area, dealing a total of ??? P.DMG. Afterwards, if Hanus is possessing Ammo, she consumes ??? Ammo per shot to attack enemies until she runs out of Ammo. While in this state, Hanus takes 25% additional DMG. Every 1 st shot increases DMG of this Skill by 8%. The DMG Boost effect can be stacked up to max 50 times.",
+          "cooldown": 14,
+          "cost": 3
+        }
+      ],
+      "light": "Ammo usage is increased to 3 , but while Hanus is in the state of consuming Ammo, Hanus' Crit DMG is increased by 150%.",
+      "dark": "Hanus no longer takes additional DMG from enemies.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "The Playstarter",
+        "effect": [
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.",
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.",
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.",
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.",
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times.",
+          "[Shoot You Full of Holes!] Upon using this Skill, Hanus gains 20 Ammo. While Hanus is consuming Ammo to shoot a machine gun, Hanus’ ATK is increased by {1}%. This effect can be stacked up to max 100 times."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Hide If You Can!",
+          "description": "Fires a mortar at a frontal area, dealing ??? P.DMG in a wide area. Hanus gains 50 Ammo afterwards. Hit enemies are stunned for 5 sec. This Skill ignores target's P.Block and M.Block.",
+          "cooldown": 27,
+          "cost": 4
+        }
+      ],
+      "light": "Ignores the target's DMG Reduction effects in Guild War.",
+      "dark": "Hanus now gains 80 Ammo, increasing own DEF Penetration by 60 for 60 sec upon gaining an Ammo. The DEF Penetration Boost can be stacked up to max 5 times.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Mini Hanus",
+        "effect": [
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 20% for 5 sec.",
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 24% for 5 sec.",
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 29% for 5 sec.",
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 35% for 5 sec.",
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 42% for 5 sec.",
+          "[Hide If You Can!] Hanus gains immunity to CC for the duration of Skill, and reduces Heal Rate of the hit target by 50% for 5 sec."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "I Shall Train You Hard!",
+          "description": "Hanus is not affected by ATK Spd effects, and increases ATK of all allies by ??? + 5% of Hanus' ATK. If activated during Guild battles, this effect is amplified by 2 times. [Guild Battle] - Guild Raid, Guild Conquest, Guild War"
+        }
+      ],
+      "light": "At the beginning of a Guild War battle, reduces DMG that all allies take by 20% for 6 sec.",
+      "dark": "Hanus gains 30 Ammo every 10 sec.",
+      "books": [
+        "Increases ATK Boost by 10%.",
+        "Increases ATK Boost by 15%.",
+        "Increases ATK Boost by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Medal of Honor",
+        "effect": [
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 10% and Crit DMG by 20% for 10 sec.",
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 12% and Crit DMG by 24% for 10 sec.",
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 14% and Crit DMG by 29% for 10 sec.",
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 17% and Crit DMG by 35% for 10 sec.",
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 21% and Crit DMG by 42% for 10 sec.",
+          "[I Shall Train You Hard!] At the beginning of a Guild War battle, reduces Mana Cost of Hanus' Skills by 1, only for one Skill use. Also increases all allies' ATK by 25% and Crit DMG by 50% for 10 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP +15% / Crit DMG +20%",
+  "dark": "At the beginning of a Guild War battle, reduces Mana of all enemies by 500 , and increases all DMG they take by 15% for 5 sec.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Assembling firearm, Mini Hanus, Butter cookies, Darts",
+      "dislikes": "Laziness, when someone gives her an unsolicited advice, prawn, vinegar"
+    },
+    "story": "Hanus was only 13 when the Guild Allied Forces recruited her. She is known as the legendary girl who was also called as the little giantess of the battlefield. As the daughter of the guild master of a weapon guild, Hanus used to play with discarded firearms and blades when she was young. This is when the others discovered her ingenuity in arms. The Guild Alliance decided that they cannot allow such profound talent to go to waste. The Alliance, after barely managing to convince Hanus' father who fiercely disagreed with the Alliance's decision, recruited her. Hanus was trained along with other soldiers, and just as the Guild had expected, she displaced her talent on battlefield. Hanus' revolutionary weapons were ridiculously strong enough to shift the paradigm of warfare. Her craftmanship, combined with her masterful tactics, marked the birth of an ultimate soldier of the Allied Forces. Moreover, Hanus herself vastly enjoyed her life in the army, as she could utilize her handcrafted weapons to their fullest. However, great talent meant more demands and battles to fight. During an operation, Hanus ended up being wounded. Upon hearing this news about her daughter's injury, Hanus' father who detested seeing his daughter in the army ever since the early days, raised his voice against the Alliance, and strongly demanded her daughter to be discharged from service at once. However, as people say, no parents are strong enough to bend their child's will. Hanus, who would rather die than be discharged from service, persistently persuaded her father. In the end, she managed to get her father's approval, under the condition that she stays in the military only as an instructor that doesn't participate in battles. Currently, Hanus thinks that her life as an instructor is not too bad at all, but deep inside, she still yearns to return to battlefields. Inside the Command Center, she silently awaits for the day when she will finally stand on the battlefield with comrades whom she taught.",
+    "itemIntroductions": {
+      "weapon": "At one point, Hanus, in a greatly enraged state, utilized all of her knowledge and skills she possessed to craft this enigmatic firearm. She uses this weapon against a target who makes her angry. This deadly weapon named Hanus Type-0 is loaded with special bullets that corrodes the target's body upon hit. Not only that, this weapon also fires a tracking bullet now and then, making it impossible for a target to escape Hanus. If anyone could create this intricate firearm other than Hanus, perhaps it would be geniuses such as the head researcher of Magos Le'Flamme, or the one regarded as the famous genius technomagi of Orvel. The story behind the creation of this weapon is an interesting tale to tell. In the past, when Hanus was achieving much with her feat, she was assigned to a smuggler elimination operation. During the mission, the ringleader of the smuggling connection insulted Hanus whilst escaping the scene: 'The children's playground is over there. You should go and play a war game with your friends instead.' Enraged to the max, Hanus fought with everything she had, but Hanus had to retreat due to the sheer number of bodyguards protecting the ringleader. Hanus was enraged for days over the fact that she had allowed the criminal who insulted her to escape right in front of her. Then, on the day of the follow-up operation to eliminate the smuggling connection, Hanus brought this strange gun to the mission. On that very day, one shot from her gun concluded the elimination operation. As she shot her gun, she said to herself: 'It's play time.'",
+      "treasures": [
+        "A hat of Hanus' comrade who recognized Hanus as her comrade on the battlefield for the first time. Although Hanus had been recruited by the army due to her ingenious craftsmanship, she had to endure all sorts of insults and neglections that were directed to her, just because she was young. Amidst the hardships however, there was one person who recognized Hanus' ability for the first time. Starting from then, as time went by, more and more soldiers started to recognize Hanus as their comrades, or even something more than that. To Hanus, this person was someone precious, and grateful. However, their friendship came to a temporary halt when Hanus had to change position within the army. Seeing Hanus cry for the first time, this comrade smiled gently and gave her hat to Hanus which she had worn in battles as a token of friendship and respect. She promised to see each other again on the battlefield, where both of them fought so hard together.",
+        "The first firearm that Hanus modified in her earlier days. It is then when Hanus' ingenuity first surfaced. While playing with blades and firearms, she remembered her father's big gun which was kept inside her father's room. Hanus' father once told her that despite its great firepower, the gun was ultimately deemed unsuitable for combat due to its massive weight. When Hanus saw the gun however, she felt that the gun could be modified appropriately. After contemplating for some time, she sneaked the gun from her father's room. After a few days, the gun was successfully modified into a tiny gun that fits Hanus. Hanus' father scolded her harshly for touching his gun without permission, but he could not hide his surprise when he saw the modified gun. Even though the gun's weight had been dramatically decreased, its firepower remained the same. After seeing this insane weapon, Hanus' father felt that her daughter's craftmanship is something extraordinary. Even more amazing is the fact that all this took place when Hanus was just 5 years old.",
+        "Hanus' favorite limited edition doll. This doll, crafted by an Orvelian doll workshop with a deep historical background, is made after a mythical creature unseen in this world. This doll is extremely popular among children, but the extra-limited edition belongs to Hanus only. Everyday, Hanus changes the doll's highest-quality clothes, and equips the doll with her handcrafted toy gun. As it got fitted with more things, it started resembeling Hanus that people began calling the doll Mini Hanus. Some people asked Hanus if the doll has a name, but Hanus refuses to tell them, saying that she is the only one who gets to call the doll by its name.",
+        "A medal Hanus received for her numerous, remarkable achievements she accomplished during her time in the Guild Allied Forces. As a great tactician, Hanus always brought advantages in battles, and the army bestowed the medal to her in recognition of her achievements. Such recognition was unprecedented considering Hanus' age and experience, and those who did not know Hanus well complained to the higher ups in envy of her accomplishments. However, after seeing Hanus in battle once, they did not dare to complain about the army's decision. Hanus, even after being transferred to the instructor position due to her father, still keeps this medal, and reflects upon it whenever she wishes to go back to battlefields."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

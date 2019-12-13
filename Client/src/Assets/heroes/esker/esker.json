@@ -1,1 +1,185 @@
-{"name":"Esker","title":"The Illusion Gambler","class":"wizard","damageType":"magical","position":"Back","weapon":{"uniqueWeapon":{"name":"Wanderer's Pleasure, Lu Etrona Dice","effect":["Upon a Critical Skill Hit, increases M.DMG that target receives by 20% for 10 sec and recovers own Mana by 100.","Upon a Critical Skill Hit, increases M.DMG that target receives by 24% for 10 sec and recovers own Mana by 120.","Upon a Critical Skill Hit, increases M.DMG that target receives by 29% for 10 sec and recovers own Mana by 140.","Upon a Critical Skill Hit, increases M.DMG that target receives by 35% for 10 sec and recovers own Mana by 170.","Upon a Critical Skill Hit, increases M.DMG that target receives by 42% for 10 sec and recovers own Mana by 210.","Upon a Critical Skill Hit, increases M.DMG that target receives by 50% for 10 sec and recovers own Mana by 250."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"This Is My Game","description":"Attacks a random enemy 3 times, dealing ??? M.DMG and stunning it for 3 sec. If the 3 attacks land on the same enemy, deals additional ??? M.DMG that ignores DEF.","cooldown":14,"cost":2}],"light":"Increases DMG by 100% when there is only 1 enemy left.","dark":"Reduces ATK Spd of the enemy by 200 for 10 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Mumbo Jumbo Runic Cube","effect":["[This Is My Game] Increases DMG by 20% and the number of hits by 1.","[This Is My Game] Increases DMG by 24% and the number of hits by 1.","[This Is My Game] Increases DMG by 29% and the number of hits by 1.","[This Is My Game] Increases DMG by 35% and the number of hits by 1.","[This Is My Game] Increases DMG by 42% and the number of hits by 1.","[This Is My Game] Increases DMG by 50% and the number of hits by 1."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"My Turn","description":"Rolls the dice and increases ATK and Crit DMG of 2 random allies by ??? and 7% respectively for 60 sec. This effect can be stacked up to max 10 times, and the number of targets increases by 1 per 1 pip on the rolled dice.","cooldown":18,"cost":2}],"light":"Increases Mana Cost by 1, but rolls 6 every time.","dark":"Reduces Mana Cost by 1.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Indispensable Chess Piece","effect":["[My Turn] The effect of My Turn becomes irremovable, and additionally grants 30 ATK Spd per stack to the ally with the highest ATK.","[My Turn] The effect of My Turn becomes irremovable, and additionally grants 36 ATK Spd per stack to the ally with the highest ATK.","[My Turn] The effect of My Turn becomes irremovable, and additionally grants 43 ATK Spd per stack to the ally with the highest ATK.","[My Turn] The effect of My Turn becomes irremovable, and additionally grants 52 ATK Spd per stack to the ally with the highest ATK.","[My Turn] The effect of My Turn becomes irremovable, and additionally grants 63 ATK Spd per stack to the ally with the highest ATK.","[My Turn] The effect of My Turn becomes irremovable, and additionally grants 75 ATK Spd per stack to the ally with the highest ATK."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Shall I Try My Luck?","description":"Attacks all enemies and deals ??? M.DMG, permanently reducing Cooldown of this skill by 2 sec or increasing its DMG by 30%, each with a 50% chance. This effect can be stacked up to max 10 times.","cooldown":22,"cost":4}],"light":"DMG increase effect will activate after the Cooldown Reduction effect activates at max stack first.","dark":"Changes the target to 4 enemies, but reduces Cooldown by 50% upon killing an enemy.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Old Fishing Rod","effect":["[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 10% for 10 sec.","[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 12% for 10 sec.","[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 14% for 10 sec.","[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 17% for 10 sec.","[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 21% for 10 sec.","[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 25% for 10 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"This Is Not a Trick","description":"Every 10 sec, increases own ATK by ??? and DEF by ???. This effect can be stacked up to max 10 times."}],"light":"Increases the max number of stacks by 3.","dark":"Increases DMG against Non-Hero enemies by 3% per stack.","books":["Increases ATK Boost and DEF Boost by 10%.","Increases ATK Boost and DEF Boost by 15%.","Increases ATK Boost and DEF Boost by 25%."],"uniqueTreasure":{"name":"Shady Chip","effect":["[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 20 per stack.","[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 24 per stack.","[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 29 per stack.","[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 35 per stack.","[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 42 per stack.","[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 50 per stack."]}}],"light":"ATK, DEF, HP+15% / ATK.Spd +100","dark":"Every 10 sec, gain up to 6 stacks of Blessing of the Dice. Reduces Cooldown of active skills by 5% per 1 Blessing of the Dice gained.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Mumbo Jumbo Runic Cube, Piano Concerto No. 7 of Hayedden, Silver Catfish Filet spiced with 4 drops of lemon juice.","dislikes":"Fishing, earthworms, con artists, everything that's spicy."},"story":"Born with the spirit of a wandering artist, Esker was a star magician of the Stardust, a wandering theater troupe, until he was framed by Prime Minister El Moriham of Orvelia and disappeared. Just when everyone started forgetting about him, he came out to the world as one of the most dangerous gamblers in the secret gambling world. 'The Illusion Gambler.' That was what his challengers called him, trembling in fear. The gamblers that played with him all described him in a similar manner. As soon as they faced Esker's unique laughter, his soft voice, and his empty eyes, they all felt nauseated by the suspicion that the man in the front was reading their every move.","itemIntroductions":{"weapon":"A pair dice once used by Hexipolia, the Wandering Illusion Clown. He was a renowned mage and artist in ancient times who traveled all across the continent to give joy to people and help them forget their troubles. His performance was a solace and hope to people living in confusing times, and they loved him to the extent that they made the Moon of Hexipolia after he passed away in honor of his noble spirit. However, the mentally demanding nature of Hexipolia's craft slowly gnawed into his soul, making him suffer from loneliness and depression. He wanted to give up on his natural gift, but the shadow cast upon people was just too deep; he knew too well what his performances meant to his audience. It was his destiny to amuse people. Lu Etrona Dice is what he made to amuse himself during his painful journey of entertainment. He condensed his Mana into the dice and gave it the power to form a dimensional illusion. When rolled, the dice opened up an imaginary world where Hexipolia could find some peace. The dice was passed down to the descendants of his life-long pursuit for clowning, but it disappeared when the ancient civilization collapsed. And now, the dice is in the hands of a man called the Illusion Gambler. Being used in a completely different way, against its maker's intentions... It is said that the dice appeared in Esker's hands with blinding lights when he desperately wanted to escape this world.","treasures":["A toy cube that Esker used to play with Ophelia when she was feeling down. The Cube lets out a gleaming light when the Runic letters are put together, and starts playing a beautiful melody when completely solved. Ophelia would often feel depressed that she didn't know what the man of her destiny she met in her dreams looked like. In such cases, Esker would, just as he did to calm his sister down, take this cube out and let her watch him solve the cube.","A chess piece that belonged to Esker's performance partner in Stardust. When the magic show was over, the duo would play chess and talk about their performance earlier. The day that the 'incident' happened and Esker decided to leave the troupe, no one but his partner knew what he had in mind. Handing this chess piece in Esker's hands, he told Esker not to forget Stardust and to come back when he could.","A fishing rod for kids that Esker's childhood friend gave him as a present. There was an annoying boy living in a town that Stardust would visit during annual tours. The boy, Lucias, would read the boring bible to Esker and frighten him with stag beetles. Esker hated him for always smiling like an idiot at first, but they soon became close friends. When Stardust came to visit Lucias's town on another tour, the two exchanged a token of friendship, and this fishing rod was what Lucias gave Esker. Since then, Esker had to go fishing with Lucias every time he would come to the town.","A strange gambling chip used in black market gambling houses. This is the most valuable chip of them all, and only the best adventurer in the secret gambling house could own it. It looks like a regular golden gambling chip, but it holds life forces of countless souls due to the spell of Dark Wizards cast on it."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Esker",
+  "title": "The Illusion Gambler",
+  "class": "wizard",
+  "damageType": "magical",
+  "position": "Back",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Wanderer's Pleasure, Lu Etrona Dice",
+      "effect": [
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 20% for 10 sec and recovers own Mana by 100.",
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 24% for 10 sec and recovers own Mana by 120.",
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 29% for 10 sec and recovers own Mana by 140.",
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 35% for 10 sec and recovers own Mana by 170.",
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 42% for 10 sec and recovers own Mana by 210.",
+        "Upon a Critical Skill Hit, increases M.DMG that target receives by 50% for 10 sec and recovers own Mana by 250."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Wanderer's Pleasure, Lu Etrona Dice, and rolls the dice. Depending on the number of the dice's dots, immediately reduces Cooldown of Esker's nect Soul Weapon use by 10% and increases ATK of all allies by 12% for 60 sec. The ATK Boost effect can be stacked up to max 5 times.",
+      "advancement1": "Changes the max number of stacks to 7.",
+      "advancement2": "Increases DEF Penetration of all allies by 50 per every stack.",
+      "activation": "Charges up upon using Skills 6 times.",
+      "cd": 18,
+      "charges": 7
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "This Is My Game",
+          "description": "Attacks a random enemy 3 times, dealing ??? M.DMG and stunning it for 3 sec. If the 3 attacks land on the same enemy, deals additional ??? M.DMG that ignores DEF.",
+          "cooldown": 14,
+          "cost": 2
+        }
+      ],
+      "light": "Increases DMG by 100% when there is only 1 enemy left.",
+      "dark": "Reduces ATK Spd of the enemy by 200 for 10 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Mumbo Jumbo Runic Cube",
+        "effect": [
+          "[This Is My Game] Increases DMG by 20% and the number of hits by 1.",
+          "[This Is My Game] Increases DMG by 24% and the number of hits by 1.",
+          "[This Is My Game] Increases DMG by 29% and the number of hits by 1.",
+          "[This Is My Game] Increases DMG by 35% and the number of hits by 1.",
+          "[This Is My Game] Increases DMG by 42% and the number of hits by 1.",
+          "[This Is My Game] Increases DMG by 50% and the number of hits by 1."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "My Turn",
+          "description": "Rolls the dice and increases ATK and Crit DMG of 2 random allies by ??? and 7% respectively for 60 sec. This effect can be stacked up to max 10 times, and the number of targets increases by 1 per 1 pip on the rolled dice.",
+          "cooldown": 18,
+          "cost": 2
+        }
+      ],
+      "light": "Increases Mana Cost by 1, but rolls 6 every time.",
+      "dark": "Reduces Mana Cost by 1.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "ATK boost is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Indispensable Chess Piece",
+        "effect": [
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 30 ATK Spd per stack to the ally with the highest ATK.",
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 36 ATK Spd per stack to the ally with the highest ATK.",
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 43 ATK Spd per stack to the ally with the highest ATK.",
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 52 ATK Spd per stack to the ally with the highest ATK.",
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 63 ATK Spd per stack to the ally with the highest ATK.",
+          "[My Turn] The effect of My Turn becomes irremovable, and additionally grants 75 ATK Spd per stack to the ally with the highest ATK."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Shall I Try My Luck?",
+          "description": "Attacks all enemies and deals ??? M.DMG, permanently reducing Cooldown of this skill by 2 sec or increasing its DMG by 30%, each with a 50% chance. This effect can be stacked up to max 10 times.",
+          "cooldown": 22,
+          "cost": 4
+        }
+      ],
+      "light": "DMG increase effect will activate after the Cooldown Reduction effect activates at max stack first.",
+      "dark": "Changes the target to 4 enemies, but reduces Cooldown by 50% upon killing an enemy.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Old Fishing Rod",
+        "effect": [
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 10% for 10 sec.",
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 12% for 10 sec.",
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 14% for 10 sec.",
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 17% for 10 sec.",
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 21% for 10 sec.",
+          "[Shall I Try My Luck?] Reduces Mana Cost by 1 and increases M.DMG target receives by 25% for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "This Is Not a Trick",
+          "description": "Every 10 sec, increases own ATK by ??? and DEF by ???. This effect can be stacked up to max 10 times."
+        }
+      ],
+      "light": "Increases the max number of stacks by 3.",
+      "dark": "Increases DMG against Non-Hero enemies by 3% per stack.",
+      "books": [
+        "Increases ATK Boost and DEF Boost by 10%.",
+        "Increases ATK Boost and DEF Boost by 15%.",
+        "Increases ATK Boost and DEF Boost by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Shady Chip",
+        "effect": [
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 20 per stack.",
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 24 per stack.",
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 29 per stack.",
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 35 per stack.",
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 42 per stack.",
+          "[This Is Not a Trick] Increases ATK and DEF boost by 50%. ATK Spd of self is increased by 50 per stack."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / ATK.Spd +100",
+  "dark": "Every 10 sec, gain up to 6 stacks of Blessing of the Dice. Reduces Cooldown of active skills by 5% per 1 Blessing of the Dice gained.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Mumbo Jumbo Runic Cube, Piano Concerto No. 7 of Hayedden, Silver Catfish Filet spiced with 4 drops of lemon juice.",
+      "dislikes": "Fishing, earthworms, con artists, everything that's spicy."
+    },
+    "story": "Born with the spirit of a wandering artist, Esker was a star magician of the Stardust, a wandering theater troupe, until he was framed by Prime Minister El Moriham of Orvelia and disappeared. Just when everyone started forgetting about him, he came out to the world as one of the most dangerous gamblers in the secret gambling world. 'The Illusion Gambler.' That was what his challengers called him, trembling in fear. The gamblers that played with him all described him in a similar manner. As soon as they faced Esker's unique laughter, his soft voice, and his empty eyes, they all felt nauseated by the suspicion that the man in the front was reading their every move.",
+    "itemIntroductions": {
+      "weapon": "A pair dice once used by Hexipolia, the Wandering Illusion Clown. He was a renowned mage and artist in ancient times who traveled all across the continent to give joy to people and help them forget their troubles. His performance was a solace and hope to people living in confusing times, and they loved him to the extent that they made the Moon of Hexipolia after he passed away in honor of his noble spirit. However, the mentally demanding nature of Hexipolia's craft slowly gnawed into his soul, making him suffer from loneliness and depression. He wanted to give up on his natural gift, but the shadow cast upon people was just too deep; he knew too well what his performances meant to his audience. It was his destiny to amuse people. Lu Etrona Dice is what he made to amuse himself during his painful journey of entertainment. He condensed his Mana into the dice and gave it the power to form a dimensional illusion. When rolled, the dice opened up an imaginary world where Hexipolia could find some peace. The dice was passed down to the descendants of his life-long pursuit for clowning, but it disappeared when the ancient civilization collapsed. And now, the dice is in the hands of a man called the Illusion Gambler. Being used in a completely different way, against its maker's intentions... It is said that the dice appeared in Esker's hands with blinding lights when he desperately wanted to escape this world.",
+      "treasures": [
+        "A toy cube that Esker used to play with Ophelia when she was feeling down. The Cube lets out a gleaming light when the Runic letters are put together, and starts playing a beautiful melody when completely solved. Ophelia would often feel depressed that she didn't know what the man of her destiny she met in her dreams looked like. In such cases, Esker would, just as he did to calm his sister down, take this cube out and let her watch him solve the cube.",
+        "A chess piece that belonged to Esker's performance partner in Stardust. When the magic show was over, the duo would play chess and talk about their performance earlier. The day that the 'incident' happened and Esker decided to leave the troupe, no one but his partner knew what he had in mind. Handing this chess piece in Esker's hands, he told Esker not to forget Stardust and to come back when he could.",
+        "A fishing rod for kids that Esker's childhood friend gave him as a present. There was an annoying boy living in a town that Stardust would visit during annual tours. The boy, Lucias, would read the boring bible to Esker and frighten him with stag beetles. Esker hated him for always smiling like an idiot at first, but they soon became close friends. When Stardust came to visit Lucias's town on another tour, the two exchanged a token of friendship, and this fishing rod was what Lucias gave Esker. Since then, Esker had to go fishing with Lucias every time he would come to the town.",
+        "A strange gambling chip used in black market gambling houses. This is the most valuable chip of them all, and only the best adventurer in the secret gambling house could own it. It looks like a regular golden gambling chip, but it holds life forces of countless souls due to the spell of Dark Wizards cast on it."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

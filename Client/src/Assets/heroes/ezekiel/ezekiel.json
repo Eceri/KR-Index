@@ -1,1 +1,185 @@
-{"name":"Ezekiel","title":"The Cursed Blood","class":"assassin","damageType":"magical","position":"Front","weapon":{"uniqueWeapon":{"name":"Jailer of Despair Barbatos","effect":["Fury duration is increased by 2 sec and when in Fury state, Crit DMG is increased by 80%.","Fury duration is increased by 3 sec and when in Fury state, Crit DMG is increased by 90%.","Fury duration is increased by 4 sec and when in Fury state, Crit DMG is increased by 100%.","Fury duration is increased by 5 sec and when in Fury state, Crit DMG is increased by 110%.","Fury duration is increased by 6 sec and when in Fury state, Crit DMG is increased by 120%.","Fury duration is increased by 7 sec and when in Fury state, Crit DMG is increased by 130%."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Destructive Instinct","description":"Swipes nearby enemies in a circular range and deals ??? M.DMG. Then strikes the ground, dealing ??? M.DMG and knocking down enemies for 3 sec. [Fury] - Consumes 15% of current HP to activate. Effect range increases and swipe attack draws in enemies.","cooldown":8,"cost":2}],"light":"DMG is increased by 40%.","dark":"After activation, ATK is increased by 40% for 5 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Wild Beast's Leather Belt","effect":["[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 10%.","[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 12%.","[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 14%.","[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 17%.","[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 21%.","[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 25%."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Dawning Despair","description":"Dashes to an enemy with the highest ATK and deals ??? M.DMG to enemies in range, reducing their ATK Spd by 300. [Fury] - Consumes 10% of current HP to activate. Effect range increases, Stuns target for 3 sec, and increases own ATK Spd by 300 for 10 sec.","cooldown":10,"cost":2}],"light":"Mana cost is reduced by 1.","dark":"When activated during Fury state, ignores target DEF.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Wild Beast's Choker","effect":["[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 100 for 10 sec.","[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 120 for 10 sec.","[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 140 for 10 sec.","[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 170 for 10 sec.","[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 210 for 10 sec.","[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 250 for 10 sec."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Strike of Doom","description":"Charges energy and attacks target enemy, dealing ??? M.DMG and inflicting Stun for 3 sec. [Fury] - Consumes 20% of current HP to activate. Attacks enemies in range of target and DMG is tripled.","cooldown":7,"cost":2}],"light":"Becomes immune to CC during activation.","dark":"If there is 1 enemy, DMG is increased by 100%.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Sealing Binds","effect":["[Strike of Doom] DMG is increased by 20% and gains 1 additional stack of Cursed Blood after using the skill.","[Strike of Doom] DMG is increased by 24% and gains 1 additional stack of Cursed Blood after using the skill.","[Strike of Doom] DMG is increased by 29% and gains 1 additional stack of Cursed Blood after using the skill.","[Strike of Doom] DMG is increased by 35% and gains 1 additional stack of Cursed Blood after using the skill.","[Strike of Doom] DMG is increased by 42% and gains 1 additional stack of Cursed Blood after using the skill.","[Strike of Doom] DMG is increased by 50% and gains 1 additional stack of Cursed Blood after using the skill."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Cursed Blood","description":"Ezekiel gains 1 stack of 'Cursed Blood' at the end of skill. Upon the 4th stack, consumes Cursed Blood to reset all skill cooldown, dealing ??? M.DMG to nearby enemies and knocking them down for 3 sec, while activating Fury for 10 sec, that cannot be dispelled. While in Fury state, goes into an auto-battle mode that cannot be controlled, and ATK is increased by ??? , auto attack DMG is doubled, and all Skill effect are reinforced. Cannot gain Cursed Blood during Fury state, except for when killing an enemy."}],"light":"When in Fury state, heal rate is increased by 50%.","dark":"Per every stacked 'Cursed Blood', takes 12% reduced DMG.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Sculpture of Blood","effect":["[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 20%.","[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 24%.","[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 29%.","[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 35%.","[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 42%.","[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 50%."]}}],"light":"ATK, DEF, HP+15% / ATK.Spd +100","dark":"When in Fury state, auto attack deals DMG that ignores DEF.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Caramel pudding, sweetened juice","dislikes":"Weaklings who act tough, idiots who think they know everything"},"story":"The son of Lucikiel is a powerful Demon officer who brought down the Republic of Gray. Usually considerate and careful, he is actually half Human. In battle, his Demon blood takes over, turning him arrogant and violent. He inherited this power from his father, whom he never even knew. However, he takes pride in his power and does not try to hide it. Since he is only partly Demon, only a single arm undergoes the transformation. However, even just this single arm contains immense power, and it's certainly not easy for him to fully control it yet. If he loses the control of the arm, the only wise decision is to immediately get as far away from him as possible.","itemIntroductions":{"weapon":"Ezekiel's father was one of the highest-ranking Demons. Although he does not know his father's name or face, he is aware of the tremendous power of the Demon blood he inherited. The Demon blood flowing within his veins also gave him a second personality. When his human blood prevails, Ezekiel is a young man of excellent character. At other times, he is an immensely powerful and arrogant Demon, just like his father. Barbatos, Jailer of Despair, manifests itself when Ezekiel's Demon blood is in full power. Taking the form of one of his arms, this weapon is powerful enough to slash through dimensions and sever the space itself. It is the physical representation of his father's power.","treasures":["When Ezekiel made a choker with Manticore's leather, he made a double-layered leather belt along with it. The leather has the unique quality of holding demonic energy and causing insanity, so this belt casts fear on the surrounding area when Ezekiel explodes his demonic power. This binds and immobilizes those with weak minds.","Choker made with the skin of a powerful beast. Loot that celebrates the manticore that Ezekiel hunted after a hard battle against the Demons when he was young. Ezekiel remembers the joy of killing the manticore every time he touches the violent beast's choker, just before he charges at the formidable enemy in front of him.","A bond containing the mana of an unknown priest. Young Ezekiel used to go berserk frequently. If anyone insulted his mom, he would allow his boiling demon blood to take over. Once he return to his senses, he would stare at his wounded arm and his terrified mom. When he was older, Ezekiel was getting rid of demons when he got into an argument with a bigger priest of Lua. He went berserk, just like any other day. Ezekiel was alone when he came to, and he was taken aback by the bond on his cursed arm. When he tried to take it off, he found that the priest's magic couldn't be shaken off so easily. However, he stopped going berserk and losing his consciousness after that. He's gained greater control over his mana, so it's now one of his most treasured items.","Sudden surges of energy on young Ezekiel's right arm left countless wounds and scars on his arms and hands. When the arm is calm and the blood drips on the floor, his mind would settle with his eyes fixated on the blood. Ezekiel would wait until the blood stops, pick up a stone soaked in his blue blood, and start carving a small sculpture that looks like his own right hand."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Ezekiel",
+  "title": "The Cursed Blood",
+  "class": "assassin",
+  "damageType": "magical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Jailer of Despair Barbatos",
+      "effect": [
+        "Fury duration is increased by 2 sec and when in Fury state, Crit DMG is increased by 80%.",
+        "Fury duration is increased by 3 sec and when in Fury state, Crit DMG is increased by 90%.",
+        "Fury duration is increased by 4 sec and when in Fury state, Crit DMG is increased by 100%.",
+        "Fury duration is increased by 5 sec and when in Fury state, Crit DMG is increased by 110%.",
+        "Fury duration is increased by 6 sec and when in Fury state, Crit DMG is increased by 120%.",
+        "Fury duration is increased by 7 sec and when in Fury state, Crit DMG is increased by 130%."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Jailer of Despair, Barbatos for 12 sec, dealing ??? M.DMG to nearby enemies within a circular range of self, increasing own ATK by 50%. For the duration of Skill, if Ezekiel is in Fury State, he can still be controlled and will not consume HP upon Skill use. After Skill use, gains 1 stack(s) of Cursed Blood. Cursed Blood stacks gained from this Skill can also be gained during Fury State.",
+      "advancement1": "Gains 1 additional Cursed Blood stack(s).",
+      "advancement2": "For the duration of Skill, increases own DMG dealt to enemies by 30%.",
+      "activation": "Charges up upon using Skills 6 times.",
+      "cd": 18,
+      "charges": 4
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Destructive Instinct",
+          "description": "Swipes nearby enemies in a circular range and deals ??? M.DMG. Then strikes the ground, dealing ??? M.DMG and knocking down enemies for 3 sec. [Fury] - Consumes 15% of current HP to activate. Effect range increases and swipe attack draws in enemies.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "DMG is increased by 40%.",
+      "dark": "After activation, ATK is increased by 40% for 5 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Wild Beast's Leather Belt",
+        "effect": [
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 10%.",
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 12%.",
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 14%.",
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 17%.",
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 21%.",
+          "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by 25%."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Dawning Despair",
+          "description": "Dashes to an enemy with the highest ATK and deals ??? M.DMG to enemies in range, reducing their ATK Spd by 300. [Fury] - Consumes 10% of current HP to activate. Effect range increases, Stuns target for 3 sec, and increases own ATK Spd by 300 for 10 sec.",
+          "cooldown": 10,
+          "cost": 2
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "When activated during Fury state, ignores target DEF.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Wild Beast's Choker",
+        "effect": [
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 100 for 10 sec.",
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 120 for 10 sec.",
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 140 for 10 sec.",
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 170 for 10 sec.",
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 210 for 10 sec.",
+          "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by 250 for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Strike of Doom",
+          "description": "Charges energy and attacks target enemy, dealing ??? M.DMG and inflicting Stun for 3 sec. [Fury] - Consumes 20% of current HP to activate. Attacks enemies in range of target and DMG is tripled.",
+          "cooldown": 7,
+          "cost": 2
+        }
+      ],
+      "light": "Becomes immune to CC during activation.",
+      "dark": "If there is 1 enemy, DMG is increased by 100%.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Sealing Binds",
+        "effect": [
+          "[Strike of Doom] DMG is increased by 20% and gains 1 additional stack of Cursed Blood after using the skill.",
+          "[Strike of Doom] DMG is increased by 24% and gains 1 additional stack of Cursed Blood after using the skill.",
+          "[Strike of Doom] DMG is increased by 29% and gains 1 additional stack of Cursed Blood after using the skill.",
+          "[Strike of Doom] DMG is increased by 35% and gains 1 additional stack of Cursed Blood after using the skill.",
+          "[Strike of Doom] DMG is increased by 42% and gains 1 additional stack of Cursed Blood after using the skill.",
+          "[Strike of Doom] DMG is increased by 50% and gains 1 additional stack of Cursed Blood after using the skill."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Cursed Blood",
+          "description": "Ezekiel gains 1 stack of 'Cursed Blood' at the end of skill. Upon the 4th stack, consumes Cursed Blood to reset all skill cooldown, dealing ??? M.DMG to nearby enemies and knocking them down for 3 sec, while activating Fury for 10 sec, that cannot be dispelled. While in Fury state, goes into an auto-battle mode that cannot be controlled, and ATK is increased by ??? , auto attack DMG is doubled, and all Skill effect are reinforced. Cannot gain Cursed Blood during Fury state, except for when killing an enemy."
+        }
+      ],
+      "light": "When in Fury state, heal rate is increased by 50%.",
+      "dark": "Per every stacked 'Cursed Blood', takes 12% reduced DMG.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Sculpture of Blood",
+        "effect": [
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 20%.",
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 24%.",
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 29%.",
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 35%.",
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 42%.",
+          "[Cursed Blood] At the beginning of first battle, Ezekiel gains 2 stacks of Cursed Blood. While under Fury, DMG dealt to bosses increases by 50%."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / ATK.Spd +100",
+  "dark": "When in Fury state, auto attack deals DMG that ignores DEF.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Caramel pudding, sweetened juice",
+      "dislikes": "Weaklings who act tough, idiots who think they know everything"
+    },
+    "story": "The son of Lucikiel is a powerful Demon officer who brought down the Republic of Gray. Usually considerate and careful, he is actually half Human. In battle, his Demon blood takes over, turning him arrogant and violent. He inherited this power from his father, whom he never even knew. However, he takes pride in his power and does not try to hide it. Since he is only partly Demon, only a single arm undergoes the transformation. However, even just this single arm contains immense power, and it's certainly not easy for him to fully control it yet. If he loses the control of the arm, the only wise decision is to immediately get as far away from him as possible.",
+    "itemIntroductions": {
+      "weapon": "Ezekiel's father was one of the highest-ranking Demons. Although he does not know his father's name or face, he is aware of the tremendous power of the Demon blood he inherited. The Demon blood flowing within his veins also gave him a second personality. When his human blood prevails, Ezekiel is a young man of excellent character. At other times, he is an immensely powerful and arrogant Demon, just like his father. Barbatos, Jailer of Despair, manifests itself when Ezekiel's Demon blood is in full power. Taking the form of one of his arms, this weapon is powerful enough to slash through dimensions and sever the space itself. It is the physical representation of his father's power.",
+      "treasures": [
+        "When Ezekiel made a choker with Manticore's leather, he made a double-layered leather belt along with it. The leather has the unique quality of holding demonic energy and causing insanity, so this belt casts fear on the surrounding area when Ezekiel explodes his demonic power. This binds and immobilizes those with weak minds.",
+        "Choker made with the skin of a powerful beast. Loot that celebrates the manticore that Ezekiel hunted after a hard battle against the Demons when he was young. Ezekiel remembers the joy of killing the manticore every time he touches the violent beast's choker, just before he charges at the formidable enemy in front of him.",
+        "A bond containing the mana of an unknown priest. Young Ezekiel used to go berserk frequently. If anyone insulted his mom, he would allow his boiling demon blood to take over. Once he return to his senses, he would stare at his wounded arm and his terrified mom. When he was older, Ezekiel was getting rid of demons when he got into an argument with a bigger priest of Lua. He went berserk, just like any other day. Ezekiel was alone when he came to, and he was taken aback by the bond on his cursed arm. When he tried to take it off, he found that the priest's magic couldn't be shaken off so easily. However, he stopped going berserk and losing his consciousness after that. He's gained greater control over his mana, so it's now one of his most treasured items.",
+        "Sudden surges of energy on young Ezekiel's right arm left countless wounds and scars on his arms and hands. When the arm is calm and the blood drips on the floor, his mind would settle with his eyes fixated on the blood. Ezekiel would wait until the blood stops, pick up a stone soaked in his blue blood, and start carving a small sculpture that looks like his own right hand."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

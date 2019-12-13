@@ -1,1 +1,185 @@
-{"name":"Cassandra","title":"Tempting Winds","class":"priest","damageType":"magical","position":"Back","weapon":{"uniqueWeapon":{"name":"Aurelian Whisper, Goldbreeze","effect":["Skill hits increase M.DMG that the target takes by 10% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 200% of own ATK and dispels all negative effects from the ally.","Skill hits increase M.DMG that the target takes by 12% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 240% of own ATK and dispels all negative effects from the ally.","Skill hits increase M.DMG that the target takes by 14% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 290% of own ATK and dispels all negative effects from the ally.","Skill hits increase M.DMG that the target takes by 17% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 350% of own ATK and dispels all negative effects from the ally.","Skill hits increase M.DMG that the target takes by 21% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 420% of own ATK and dispels all negative effects from the ally.","Skill hits increase M.DMG that the target takes by 25% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 500% of own ATK and dispels all negative effects from the ally."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Softly~","description":"Heals all allies by ??? HP and deals ??? M.DMG to all enemies. Hit enemies are inflicted by Silence for 2 sec.","cooldown":8,"cost":2}],"light":"Healed allies gain a 200 ATK Spd boost for 10 sec.","dark":"For 5 sec, hit enemies have their Mana reduced by 200 every second.","books":["DMG and Heal rate are increased by 10%.","DMG and Heal rate are increased by 15%.","Silence duration is increased by 0.5 sec."],"uniqueTreasure":{"name":"Feather Decoration of Crimson Bird","effect":["[Softly~] Increases Heal Rate by 50% and the duration of Silence by 0.8 sec.","[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1 sec.","[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.2 sec.","[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.4 sec.","[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.7 sec.","[Softly~] Increases Heal Rate by 50% and the duration of Silence by 2 sec."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Fiercely!","description":"For 15 sec, all allies' ATK is increased by ??? and Crit Chance is increased by 700.","cooldown":20,"cost":3}],"light":"ATK boost is increased by 40%.","dark":"Mana cost is reduced by 1.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Fancy Pendant","effect":["[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 20%.","[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 24%.","[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 29%.","[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 35%.","[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 42%.","[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 50%."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Tempting Wave","description":"Deals ??? M.DMG to an enemy with the highest ATK. If this skill is used in Arena, inflicts Charm on the target for 7 sec. If this skill is used outside the Arena, enemy takes 25% increased M.DMG. Charmed enemies cannot use any skills, and deals auto attack to own allies.","cooldown":22,"cost":4}],"light":"Target takes 25% increased M.DMG for 10 sec.","dark":"Mana cost is reduced by 1.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Charm duration is increased by 1 sec."],"uniqueTreasure":{"name":"Golden Fragrance","effect":["[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 1 sec.","[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 1.5 sec.","[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 2 sec.","[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 2.5 sec.","[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 3 sec.","[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 3.5 sec."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Gentle Touch","description":"At the start of each battle, reduces mana cost by 2 orbs for a single skill, and all allies' DEF is increased by ??? for 5 sec."}],"light":"All DMG upon allies is reduced by 20% for 5 sec.","dark":"DEF increase effect has its duration increased by 5 sec.","books":["DEF boost is increased by 10%.","DEF boost is increased by 15%.","DEF boost is increased by 25%."],"uniqueTreasure":{"name":"Reed Diffuser of Seduction","effect":["[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 100 for 10 sec.","[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 120 for 10 sec.","[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 140 for 10 sec.","[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 170 for 10 sec.","[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 210 for 10 sec.","[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 250 for 10 sec."]}}],"light":"ATK, DEF, HP+15% / ATK.Spd +100","dark":"At the beginning of each battle, a random ally is immune to DMG for 3 sec.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Red wine, nuts, flashy fans","dislikes":"Nasty customers Greasy hair Bad odor"},"story":"She's the owner of 'Gold Bar,' the biggest and the most luxurious tavern in Vespia. Beneath its flashy exterior, the tavern actually serves as a secret meeting place for the social elites, where invaluable secret information is constantly exchanged. Her natural charm and conversation skills can easily break down personal barriers and win the trust of others. Her true identity is a dealer of secret information and weapons.","itemIntroductions":{"weapon":"Cassandra works double as an arms dealer. One day, a stolen item came into her possession which immediately caught her attention. It was a beautiful fan adorned with gold decorations and precious gems. According to the rumors, every single lady who possessed this fan soon fell into great misfortune. It has been circulating the market as a cursed item. As soon as she bought it, Cassandra began investigating its origin. As it turned out, this fan, named Goldbreeze, had been created to serve as a concealed weapon. It shouldn't be too hard to guess as to what kind of misfortune the unaware owners of this fan might have suffered.","treasures":["A decoration made with a feather of the Crimson Bird, a beautiful yet dangerous evil beast. The feather usually exudes dark energy, but it illuminates the surrounding area with a red glow when exposed to light. The color is too splendid and brilliant for feeble minds to escape the hallucination it creates.","A luxurious accessory made by the greatest jeweler in the continent. A limited edition ornament created by jeweler Larik. Any person in high society on the Orbis Continent would love to have one. His work is said to be the epitome of art, and it is said to heal and grant courage. There are only 3 of the limited edition Fancy Ornaments, and one of them obviously belongs to the master of the Gold Bar.","A legendary gold flame necklace pendant. The legendary Gold King made this gold flame necklace pendant to get the attention of the Goddess of Love and Beauty. Its gold scent creates a Tempting Wave that makes anyone join their side and be loved by everyone.","A reed diffuser that Cassandra bought at a black market merchant from the east. It has a strong scent of azalea. The liquid inside contains a special substance that stirs people's minds, and those who smelt it for an extended period time would confess their deepest secrets. Unless there is a dire need of information, Cassandra does not use the diffuser because it is nearly impossible to buy it again."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Cassandra",
+  "title": "Tempting Winds",
+  "class": "priest",
+  "damageType": "magical",
+  "position": "Back",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Aurelian Whisper, Goldbreeze",
+      "effect": [
+        "Skill hits increase M.DMG that the target takes by 10% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 200% of own ATK and dispels all negative effects from the ally.",
+        "Skill hits increase M.DMG that the target takes by 12% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 240% of own ATK and dispels all negative effects from the ally.",
+        "Skill hits increase M.DMG that the target takes by 14% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 290% of own ATK and dispels all negative effects from the ally.",
+        "Skill hits increase M.DMG that the target takes by 17% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 350% of own ATK and dispels all negative effects from the ally.",
+        "Skill hits increase M.DMG that the target takes by 21% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 420% of own ATK and dispels all negative effects from the ally.",
+        "Skill hits increase M.DMG that the target takes by 25% for 10 sec. Every 8 sec, heals the ally with the lowest HP by 500% of own ATK and dispels all negative effects from the ally."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Aurelian Whisper, Goldbreeze for 10 sec, increasing ATK Spd of all allies by 300, dealing ??? M.DMG to all enemies, and increasing M.DMG they take 25% for 10 sec. Upon this Skill at the Arena, inflicts Charm to all enemies for 5 sec.",
+      "advancement1": "Changes Skill Activation Requirements to 3 times.",
+      "advancement2": "Upon activation, recovers Mana of all allies by 2000 and increases Crit DMG by 80% for the duration of Skill.",
+      "activation": "Charges up upon using Skills 4 times.",
+      "cd": 23,
+      "charges": 4
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Softly~",
+          "description": "Heals all allies by ??? HP and deals ??? M.DMG to all enemies. Hit enemies are inflicted by Silence for 2 sec.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "Healed allies gain a 200 ATK Spd boost for 10 sec.",
+      "dark": "For 5 sec, hit enemies have their Mana reduced by 200 every second.",
+      "books": [
+        "DMG and Heal rate are increased by 10%.",
+        "DMG and Heal rate are increased by 15%.",
+        "Silence duration is increased by 0.5 sec."
+      ],
+      "uniqueTreasure": {
+        "name": "Feather Decoration of Crimson Bird",
+        "effect": [
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 0.8 sec.",
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1 sec.",
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.2 sec.",
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.4 sec.",
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 1.7 sec.",
+          "[Softly~] Increases Heal Rate by 50% and the duration of Silence by 2 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Fiercely!",
+          "description": "For 15 sec, all allies' ATK is increased by ??? and Crit Chance is increased by 700.",
+          "cooldown": 20,
+          "cost": 3
+        }
+      ],
+      "light": "ATK boost is increased by 40%.",
+      "dark": "Mana cost is reduced by 1.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "ATK boost is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Fancy Pendant",
+        "effect": [
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 20%.",
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 24%.",
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 29%.",
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 35%.",
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 42%.",
+          "[Fiercely!] Increases duration by 5 sec and additionally increases Crit DMG by 50%."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Tempting Wave",
+          "description": "Deals ??? M.DMG to an enemy with the highest ATK. If this skill is used in Arena, inflicts Charm on the target for 7 sec. If this skill is used outside the Arena, enemy takes 25% increased M.DMG. Charmed enemies cannot use any skills, and deals auto attack to own allies.",
+          "cooldown": 22,
+          "cost": 4
+        }
+      ],
+      "light": "Target takes 25% increased M.DMG for 10 sec.",
+      "dark": "Mana cost is reduced by 1.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "Charm duration is increased by 1 sec."
+      ],
+      "uniqueTreasure": {
+        "name": "Golden Fragrance",
+        "effect": [
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 1 sec.",
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 1.5 sec.",
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 2 sec.",
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 2.5 sec.",
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 3 sec.",
+          "[Tempting Wave] Skill cooldown is reduced by 30% and Charm duration is increased by 3.5 sec."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Gentle Touch",
+          "description": "At the start of each battle, reduces mana cost by 2 orbs for a single skill, and all allies' DEF is increased by ??? for 5 sec."
+        }
+      ],
+      "light": "All DMG upon allies is reduced by 20% for 5 sec.",
+      "dark": "DEF increase effect has its duration increased by 5 sec.",
+      "books": [
+        "DEF boost is increased by 10%.",
+        "DEF boost is increased by 15%.",
+        "DEF boost is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Reed Diffuser of Seduction",
+        "effect": [
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 100 for 10 sec.",
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 120 for 10 sec.",
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 140 for 10 sec.",
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 170 for 10 sec.",
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 210 for 10 sec.",
+          "[Gentle Touch] DEF boost becomes irremovable. All allies have their All Crit Resistance increased by 250 for 10 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / ATK.Spd +100",
+  "dark": "At the beginning of each battle, a random ally is immune to DMG for 3 sec.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Red wine, nuts, flashy fans",
+      "dislikes": "Nasty customers Greasy hair Bad odor"
+    },
+    "story": "She's the owner of 'Gold Bar,' the biggest and the most luxurious tavern in Vespia. Beneath its flashy exterior, the tavern actually serves as a secret meeting place for the social elites, where invaluable secret information is constantly exchanged. Her natural charm and conversation skills can easily break down personal barriers and win the trust of others. Her true identity is a dealer of secret information and weapons.",
+    "itemIntroductions": {
+      "weapon": "Cassandra works double as an arms dealer. One day, a stolen item came into her possession which immediately caught her attention. It was a beautiful fan adorned with gold decorations and precious gems. According to the rumors, every single lady who possessed this fan soon fell into great misfortune. It has been circulating the market as a cursed item. As soon as she bought it, Cassandra began investigating its origin. As it turned out, this fan, named Goldbreeze, had been created to serve as a concealed weapon. It shouldn't be too hard to guess as to what kind of misfortune the unaware owners of this fan might have suffered.",
+      "treasures": [
+        "A decoration made with a feather of the Crimson Bird, a beautiful yet dangerous evil beast. The feather usually exudes dark energy, but it illuminates the surrounding area with a red glow when exposed to light. The color is too splendid and brilliant for feeble minds to escape the hallucination it creates.",
+        "A luxurious accessory made by the greatest jeweler in the continent. A limited edition ornament created by jeweler Larik. Any person in high society on the Orbis Continent would love to have one. His work is said to be the epitome of art, and it is said to heal and grant courage. There are only 3 of the limited edition Fancy Ornaments, and one of them obviously belongs to the master of the Gold Bar.",
+        "A legendary gold flame necklace pendant. The legendary Gold King made this gold flame necklace pendant to get the attention of the Goddess of Love and Beauty. Its gold scent creates a Tempting Wave that makes anyone join their side and be loved by everyone.",
+        "A reed diffuser that Cassandra bought at a black market merchant from the east. It has a strong scent of azalea. The liquid inside contains a special substance that stirs people's minds, and those who smelt it for an extended period time would confess their deepest secrets. Unless there is a dire need of information, Cassandra does not use the diffuser because it is nearly impossible to buy it again."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

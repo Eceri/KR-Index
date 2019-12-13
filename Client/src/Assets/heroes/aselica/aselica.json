@@ -1,1 +1,185 @@
-{"name":"Aselica","title":"Guardian of the Sun","class":"knight","damageType":"magical","position":"Front","weapon":{"uniqueWeapon":{"name":"Solar Halo, Ignisius","effect":["When a normal attack hits the enemy 5 times, the target takes 20% more M.DMG for 10 seconds and is stunned for 0.5 seconds.","When a normal attack hits the enemy 5 times, the target takes 24% more M.DMG for 10 seconds and is stunned for 0.5 seconds.","When a normal attack hits the enemy 5 times, the target takes 29% more M.DMG for 10 seconds and is stunned for 0.5 seconds.","When a normal attack hits the enemy 5 times, the target takes 35% more M.DMG for 10 seconds and is stunned for 0.5 seconds.","When a normal attack hits the enemy 5 times, the target takes 42% more M.DMG for 10 seconds and is stunned for 0.5 seconds.","When a normal attack hits the enemy 5 times, the target takes 50% more M.DMG for 10 seconds and is stunned for 0.5 seconds."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Sword of the Sun","description":"Deals ??? M.DMG to enemy and surrounding enemies within range, and inflicts Stun for 3 sec.","cooldown":9,"cost":2}],"light":"After activation, increases ATK Spd by 350 for 5 sec.","dark":"Reduces cooldown by 2 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","Stun duration is increased by 2 sec."],"uniqueTreasure":{"name":"Light of the Dawn","effect":["[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 200 upon hit.","[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 240 upon hit.","[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 290 upon hit.","[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 350 upon hit.","[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 420 upon hit.","[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 500 upon hit."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Blessing of the Sun","description":"Imbues the Blessing of the Sun to the ally with the highest ATK, reducing cooldown of all skills by 20% and increasing ATK by ??? for 15 sec.","cooldown":20,"cost":2}],"light":"Increases Mana Cost by 1, and grants the effect to the 2 allies with the highest ATK.","dark":"Used while ignoring negative effects on self and removes negative effects on the target ally.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","ATK boost is increased by 25%."],"uniqueTreasure":{"name":"Bracelet of the Sun","effect":["[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 10% decreased P.DMG for 10 sec.","[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 12% decreased P.DMG for 10 sec.","[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 14% decreased P.DMG for 10 sec.","[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 17% decreased P.DMG for 10 sec.","[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 21% decreased P.DMG for 10 sec.","[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 25% decreased P.DMG for 10 sec."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Judgment of the Sun","description":"Takes position, focuses to heal HP of nearby allies, excluding self, 8 times for a total of ??? , and increases their P.DEF by ??? for 5 sec. Deals a total of ??? M.DMG on enemies within range over 8 times, and decreases their M.DEF by ??? for 5 sec. After the end of the casting, heals HP of allies within range, excluding self, by ??? , and deals ??? M.DMG on enemies, and knocks them down for 3 sec.","cooldown":20,"cost":4}],"light":"Reduces Mana Cost by 1.","dark":"Increases the duration of M.DEF reduction effect by 5 sec.","books":["DMG and Heal rate are increased by 10%.","DMG and Heal rate are increased by 15%.","DMG and Heal rate are increased by 25%."],"uniqueTreasure":{"name":"Guardian's Trumpet","effect":["[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 20%.","[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 24%.","[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 29%.","[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 35%.","[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 42%.","[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 50%."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Curse of the Sun","description":"Upon attack, inflicts Curse of the Sun on the target for 10 sec. Enemies with 10 stacks of Curses of the Sun will consume the stack to receive ??? M.DMG, and become inflicted with Blind for 2 sec, having their ATK reduced by 20% for 10 sec."}],"light":"Changes ATK Reduction to 30%.","dark":"Activates the effect upon reaching the 7th stack of Curse of the Sun.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Will of Light","effect":["[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 10% increased M.DMG for 10 sec.","[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 12% increased M.DMG for 10 sec.","[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 14% increased M.DMG for 10 sec.","[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 17% increased M.DMG for 10 sec.","[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 21% increased M.DMG for 10 sec.","[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 25% increased M.DMG for 10 sec."]}}],"light":"ATK, DEF, HP+15% / P. Block +200","dark":"At the beginning of the first battle, increases P.DEF of the ally with the highest ATK by 20% of P.DEF. This effect cannot be dispelled.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Fellow kinsmen, enforcing order","dislikes":"Demons"},"story":"A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose divine light she uses to fight against darkness. She is tasked with the protection of the souls of other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again.","itemIntroductions":{"weapon":"Legends speak of a mysterious metal, gold as the glorious rays of the sun, blue as the pure sky, and white as the blinding light. This holy sword and shield set has been forged from that special metal that only Angels can handle. These are divine relics of protection, created to banish the darkness and fill the world with light. Bestowed only to the most righteous Guardian Knight of the Angels, these relics can instantly incinerate any Demon that faces their light.","treasures":["A fragment that fell out from the eternally shining Morning Star. Morning Star is the holy light that has existed since the beginning of time, guarding the heavens and protecting the swords of angels from losing their holy flame. The Archangel bestowed this upon Aselica along with the Sword of the Sun before she came down to earth.","Bracelet made by the Archangels to protect the Angels when they descend down to earth. It contains the sun, so it shines brilliantly. When the angels feel fear, it is said that the sunlight from the bracelet protects their souls. And the fates of the angels are intertwined in the bracelet, so when they feel like their lives are threatened, they can feel each other's pain instinctively.","The trumpet that is said to be blown by the leader of the Archangels when the catastrophe that will end the Material World arrives. It is said that once the guardians hear the sound of the trumpet, they wake up and come down to protect this land.","A hair accessory decorated with golden laurel leaves and the wing feather of Sacred Bird, 'Illaira'. It shines brightly even in complete darkness. It protects its wearer against curses and burns ominous energy with its light. It was bestowed upon Aselica by the Archangel when she was appointed as a guardian angel."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Aselica",
+  "title": "Guardian of the Sun",
+  "class": "knight",
+  "damageType": "magical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Solar Halo, Ignisius",
+      "effect": [
+        "When a normal attack hits the enemy 5 times, the target takes 20% more M.DMG for 10 seconds and is stunned for 0.5 seconds.",
+        "When a normal attack hits the enemy 5 times, the target takes 24% more M.DMG for 10 seconds and is stunned for 0.5 seconds.",
+        "When a normal attack hits the enemy 5 times, the target takes 29% more M.DMG for 10 seconds and is stunned for 0.5 seconds.",
+        "When a normal attack hits the enemy 5 times, the target takes 35% more M.DMG for 10 seconds and is stunned for 0.5 seconds.",
+        "When a normal attack hits the enemy 5 times, the target takes 42% more M.DMG for 10 seconds and is stunned for 0.5 seconds.",
+        "When a normal attack hits the enemy 5 times, the target takes 50% more M.DMG for 10 seconds and is stunned for 0.5 seconds."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Solar Halo, Ignisius, increasing own P.DEF by 60% for 10 sec. Afterward, attacks the target and the enemies nearby within a small range 20 times, dealing a total of ??? M.DMG. Each hit inflicts Judgement of Ignisius, increasing M.DMG the target takes by 2% for 5 sec. Judgement of Ignisius can be stack up to 10 times.",
+      "advancement1": "No info yet.",
+      "advancement2": "No info yet.",
+      "activation": "Charges up upon using Skills 5 times.",
+      "cd": 20,
+      "charges": 7
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Sword of the Sun",
+          "description": "Deals ??? M.DMG to enemy and surrounding enemies within range, and inflicts Stun for 3 sec.",
+          "cooldown": 9,
+          "cost": 2
+        }
+      ],
+      "light": "After activation, increases ATK Spd by 350 for 5 sec.",
+      "dark": "Reduces cooldown by 2 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "Stun duration is increased by 2 sec."
+      ],
+      "uniqueTreasure": {
+        "name": "Light of the Dawn",
+        "effect": [
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 200 upon hit.",
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 240 upon hit.",
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 290 upon hit.",
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 350 upon hit.",
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 420 upon hit.",
+          "[Sword of the Sun] Dispels all positive effects from enemies within range, and recovers own Mana by 500 upon hit."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Blessing of the Sun",
+          "description": "Imbues the Blessing of the Sun to the ally with the highest ATK, reducing cooldown of all skills by 20% and increasing ATK by ??? for 15 sec.",
+          "cooldown": 20,
+          "cost": 2
+        }
+      ],
+      "light": "Increases Mana Cost by 1, and grants the effect to the 2 allies with the highest ATK.",
+      "dark": "Used while ignoring negative effects on self and removes negative effects on the target ally.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "ATK boost is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Bracelet of the Sun",
+        "effect": [
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 10% decreased P.DMG for 10 sec.",
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 12% decreased P.DMG for 10 sec.",
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 14% decreased P.DMG for 10 sec.",
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 17% decreased P.DMG for 10 sec.",
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 21% decreased P.DMG for 10 sec.",
+          "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes 25% decreased P.DMG for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Judgment of the Sun",
+          "description": "Takes position, focuses to heal HP of nearby allies, excluding self, 8 times for a total of ??? , and increases their P.DEF by ??? for 5 sec. Deals a total of ??? M.DMG on enemies within range over 8 times, and decreases their M.DEF by ??? for 5 sec. After the end of the casting, heals HP of allies within range, excluding self, by ??? , and deals ??? M.DMG on enemies, and knocks them down for 3 sec.",
+          "cooldown": 20,
+          "cost": 4
+        }
+      ],
+      "light": "Reduces Mana Cost by 1.",
+      "dark": "Increases the duration of M.DEF reduction effect by 5 sec.",
+      "books": [
+        "DMG and Heal rate are increased by 10%.",
+        "DMG and Heal rate are increased by 15%.",
+        "DMG and Heal rate are increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Guardian's Trumpet",
+        "effect": [
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 20%.",
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 24%.",
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 29%.",
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 35%.",
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 42%.",
+          "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by 50%."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Curse of the Sun",
+          "description": "Upon attack, inflicts Curse of the Sun on the target for 10 sec. Enemies with 10 stacks of Curses of the Sun will consume the stack to receive ??? M.DMG, and become inflicted with Blind for 2 sec, having their ATK reduced by 20% for 10 sec."
+        }
+      ],
+      "light": "Changes ATK Reduction to 30%.",
+      "dark": "Activates the effect upon reaching the 7th stack of Curse of the Sun.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Will of Light",
+        "effect": [
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 10% increased M.DMG for 10 sec.",
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 12% increased M.DMG for 10 sec.",
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 14% increased M.DMG for 10 sec.",
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 17% increased M.DMG for 10 sec.",
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 21% increased M.DMG for 10 sec.",
+          "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take 25% increased M.DMG for 10 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / P. Block +200",
+  "dark": "At the beginning of the first battle, increases P.DEF of the ally with the highest ATK by 20% of P.DEF. This effect cannot be dispelled.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Fellow kinsmen, enforcing order",
+      "dislikes": "Demons"
+    },
+    "story": "A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose divine light she uses to fight against darkness. She is tasked with the protection of the souls of other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again.",
+    "itemIntroductions": {
+      "weapon": "Legends speak of a mysterious metal, gold as the glorious rays of the sun, blue as the pure sky, and white as the blinding light. This holy sword and shield set has been forged from that special metal that only Angels can handle. These are divine relics of protection, created to banish the darkness and fill the world with light. Bestowed only to the most righteous Guardian Knight of the Angels, these relics can instantly incinerate any Demon that faces their light.",
+      "treasures": [
+        "A fragment that fell out from the eternally shining Morning Star. Morning Star is the holy light that has existed since the beginning of time, guarding the heavens and protecting the swords of angels from losing their holy flame. The Archangel bestowed this upon Aselica along with the Sword of the Sun before she came down to earth.",
+        "Bracelet made by the Archangels to protect the Angels when they descend down to earth. It contains the sun, so it shines brilliantly. When the angels feel fear, it is said that the sunlight from the bracelet protects their souls. And the fates of the angels are intertwined in the bracelet, so when they feel like their lives are threatened, they can feel each other's pain instinctively.",
+        "The trumpet that is said to be blown by the leader of the Archangels when the catastrophe that will end the Material World arrives. It is said that once the guardians hear the sound of the trumpet, they wake up and come down to protect this land.",
+        "A hair accessory decorated with golden laurel leaves and the wing feather of Sacred Bird, 'Illaira'. It shines brightly even in complete darkness. It protects its wearer against curses and burns ominous energy with its light. It was bestowed upon Aselica by the Archangel when she was appointed as a guardian angel."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}
