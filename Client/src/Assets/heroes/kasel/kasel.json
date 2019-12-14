@@ -1,1 +1,185 @@
-{"name":"Kasel","title":"Warrior of the Holy Sword","class":"warrior","damageType":"physical","position":"Front","weapon":{"uniqueWeapon":{"name":"The Holy Sword, Aea","effect":["Each attack has a 35% chance of dealing 160% of ATK as P.DMG.","Each attack has a 35% chance of dealing 192% of ATK as P.DMG.","Each attack has a 35% chance of dealing 230% of ATK as P.DMG.","Each attack has a 35% chance of dealing 276% of ATK as P.DMG.","Each attack has a 35% chance of dealing 331% of ATK as P.DMG.","Each attack has a 35% chance of dealing 400% of ATK as P.DMG."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Judgment Blade","description":"Deals ??? P.DMG 2 times to frontal enemies in a circle and knocks them down for 2.5 sec.","cooldown":12,"cost":3}],"light":"Mana cost is reduced by 1.","dark":"Ignores DEF when there is only 1 enemy.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Crown of Light","effect":["[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 4% upon every use. This effect can be stacked up to max 10 times.","[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 4.8% upon every use. This effect can be stacked up to max 10 times.","[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 5.8% upon every use. This effect can be stacked up to max 10 times.","[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 7% upon every use. This effect can be stacked up to max 10 times.","[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 8.4% upon every use. This effect can be stacked up to max 10 times.","[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 10% upon every use. This effect can be stacked up to max 10 times."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Valiant Dash","description":"Attacks the target 3 times, and then charges behind them to deal ??? P.DMG.","cooldown":8,"cost":2}],"light":"Mana cost is reduced by 1.","dark":"Target takes 25% increased P.DMG for 10 sec.","books":["DMG is increased by 10%.","DMG is increased by 15%.","DMG is increased by 25%."],"uniqueTreasure":{"name":"Emperor's Gauntlet","effect":["[Valiant Dash] Increases DMG by 20% and reduces Cooldown by 10% upon a Crit Hit.","[Valiant Dash] Increases DMG by 24% and reduces Cooldown by 10% upon a Crit Hit.","[Valiant Dash] Increases DMG by 29% and reduces Cooldown by 10% upon a Crit Hit.","[Valiant Dash] Increases DMG by 35% and reduces Cooldown by 10% upon a Crit Hit.","[Valiant Dash] Increases DMG by 42% and reduces Cooldown by 10% upon a Crit Hit.","[Valiant Dash] Increases DMG by 50% and reduces Cooldown by 10% upon a Crit Hit."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Proxy of God","description":"Deals ??? P.DMG to nearby enemies and inflicts Stun for 3 sec. Additionally, for 20 sec, ATK is increased by ??? and Dodge Rate is increased by 250 , while gaining immunity to CC. This status cannot be dispelled.","cooldown":20,"cost":4}],"light":"Mana cost is reduced by 1.","dark":"Increases Mana Cost by 1 and DMG dealt to Non-Hero enemies by 100% for the duration of Skill.","books":["ATK boost is increased by 10%.","ATK boost is increased by 15%.","Increases Spd by 250 for the duration of skill."],"uniqueTreasure":{"name":"Proxy's Insignia","effect":["[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 100 for the duration of skill.","[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 120 for the duration of skill.","[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 140 for the duration of skill.","[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 170 for the duration of skill.","[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 210 for the duration of skill.","[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 250 for the duration of skill."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Goddess Strike","description":"Increases own All DEF by ??? , and Dodge Chance by 200. A successful dodge increases DMG of normal attacks by 50% for 5 sec."}],"light":"DMG Boost of normal attacks is changed to 100%.","dark":"Reduces DMG received from Heroes by 15%.","books":["Increases DEF Boost by 10%","Increases DEF Boost by 15%","Increases DEF Boost by 25%"],"uniqueTreasure":{"name":"Lua's Tear","effect":["[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.","[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.","[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.","[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.","[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.","[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%."]}}],"light":"ATK, DEF, HP+15% / P.Dodge +100","dark":"Upon attacking, deals additional DMG equal to 80% of ATK.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Food from the nature","dislikes":"Fatalism"},"story":"A squire of the Kingdom of Orvelia. Traumatized by witnessing the deaths of his parents at the hands of the Demons invading the village, and later, the assassination of his sword teacher, he fears the idea of anyone around him dying. His past has driven him to seek out his sworn brother from his early years in the orphanage, Clause, who joined an expedition, but never returned.","itemIntroductions":{"weapon":"A legendary Holy Sword given to the world by Lua. This legendary artifact materialized 100 years ago when the Demons invaded the Orbis Continent through the Dimensional Gate. According to the legend, the Hero King Kyle used this sword to pierce the heart of the Dark Lord Angmund and brought an end to the war. However, the two simply vanished, and only Aea remained.","treasures":["The crown of Kyle, the king of Orvelia and the Hero of Holy Sword. Worn by King Kyle during his expedition to kill Dark Lord Angmund 100 years ago, this golden grown contains the will of the Goddess of Light. After Angmund was defeated, the Crown of Light, along with the Holy Sword, Aea, was left in the place where the king disappeared.","Gauntlet imbued with the blessing of Lua, the Goddess of Light. Gauntlet passed down to the kings of the Orbis Continent. Contains the encouragement of the goddess that allows you to use Valiant Dash towards enemies without any fear.","A rune that proves that one is an agent of Lua, the Goddess of Light. The Rune of Proxy is an artifact of the Church of Lua, and it's given to the knight who wields the Aea, the Sword of Light. The Rune of Proxy pushes enemies with the power of light and increases ATK and morale.","An azure-colored jewel that adorns the Holy Sword, Aea. It is an intense condensation of sacred nature's spirit, bound by the teardrops of Lua, and has the mysterious power to guide the Guardian of Holy Sword on the path of light."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Kasel",
+  "title": "Warrior of the Holy Sword",
+  "class": "warrior",
+  "damageType": "physical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "The Holy Sword, Aea",
+      "effect": [
+        "Each attack has a 35% chance of dealing 160% of ATK as P.DMG.",
+        "Each attack has a 35% chance of dealing 192% of ATK as P.DMG.",
+        "Each attack has a 35% chance of dealing 230% of ATK as P.DMG.",
+        "Each attack has a 35% chance of dealing 276% of ATK as P.DMG.",
+        "Each attack has a 35% chance of dealing 331% of ATK as P.DMG.",
+        "Each attack has a 35% chance of dealing 400% of ATK as P.DMG."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of the Holy Sword, Aea for 10 sec, increasing own ATK by 30% and All DEF by 30%. The soul do of The Holy Sword, Aea follows Kasel around, healing HP of allies within range equal to 5% of their Max HP every sec.",
+      "advancement1": "Dispels negative effects from the healed ally.",
+      "advancement2": "Deals ??? P.DMG to enemies within range every sec.",
+      "activation": "Charges up over 19 sec.",
+      "cd": 24,
+      "charges": 5
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Judgment Blade",
+          "description": "Deals ??? P.DMG 2 times to frontal enemies in a circle and knocks them down for 2.5 sec.",
+          "cooldown": 12,
+          "cost": 3
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "Ignores DEF when there is only 1 enemy.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Crown of Light",
+        "effect": [
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 4% upon every use. This effect can be stacked up to max 10 times.",
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 4.8% upon every use. This effect can be stacked up to max 10 times.",
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 5.8% upon every use. This effect can be stacked up to max 10 times.",
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 7% upon every use. This effect can be stacked up to max 10 times.",
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 8.4% upon every use. This effect can be stacked up to max 10 times.",
+          "[Judgment Blade] Reduces Cooldown by 30% and increases DMG by 10% upon every use. This effect can be stacked up to max 10 times."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Valiant Dash",
+          "description": "Attacks the target 3 times, and then charges behind them to deal ??? P.DMG.",
+          "cooldown": 8,
+          "cost": 2
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "Target takes 25% increased P.DMG for 10 sec.",
+      "books": [
+        "DMG is increased by 10%.",
+        "DMG is increased by 15%.",
+        "DMG is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Emperor's Gauntlet",
+        "effect": [
+          "[Valiant Dash] Increases DMG by 20% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Valiant Dash] Increases DMG by 24% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Valiant Dash] Increases DMG by 29% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Valiant Dash] Increases DMG by 35% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Valiant Dash] Increases DMG by 42% and reduces Cooldown by 10% upon a Crit Hit.",
+          "[Valiant Dash] Increases DMG by 50% and reduces Cooldown by 10% upon a Crit Hit."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Proxy of God",
+          "description": "Deals ??? P.DMG to nearby enemies and inflicts Stun for 3 sec. Additionally, for 20 sec, ATK is increased by ??? and Dodge Rate is increased by 250 , while gaining immunity to CC. This status cannot be dispelled.",
+          "cooldown": 20,
+          "cost": 4
+        }
+      ],
+      "light": "Mana cost is reduced by 1.",
+      "dark": "Increases Mana Cost by 1 and DMG dealt to Non-Hero enemies by 100% for the duration of Skill.",
+      "books": [
+        "ATK boost is increased by 10%.",
+        "ATK boost is increased by 15%.",
+        "Increases Spd by 250 for the duration of skill."
+      ],
+      "uniqueTreasure": {
+        "name": "Proxy's Insignia",
+        "effect": [
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 100 for the duration of skill.",
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 120 for the duration of skill.",
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 140 for the duration of skill.",
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 170 for the duration of skill.",
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 210 for the duration of skill.",
+          "[Proxy of God] Additionally, Dodge Rate is increased by 250, and ATK Spd is increased by 250 for the duration of skill."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Goddess Strike",
+          "description": "Increases own All DEF by ??? , and Dodge Chance by 200. A successful dodge increases DMG of normal attacks by 50% for 5 sec."
+        }
+      ],
+      "light": "DMG Boost of normal attacks is changed to 100%.",
+      "dark": "Reduces DMG received from Heroes by 15%.",
+      "books": [
+        "Increases DEF Boost by 10%",
+        "Increases DEF Boost by 15%",
+        "Increases DEF Boost by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Lua's Tear",
+        "effect": [
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.",
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.",
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.",
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.",
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%.",
+          "[Goddess Strike] Increases DEF Boost by {0}%, and own DMG dealt to bosses by {1}%."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / P.Dodge +100",
+  "dark": "Upon attacking, deals additional DMG equal to 80% of ATK.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Food from the nature",
+      "dislikes": "Fatalism"
+    },
+    "story": "A squire of the Kingdom of Orvelia. Traumatized by witnessing the deaths of his parents at the hands of the Demons invading the village, and later, the assassination of his sword teacher, he fears the idea of anyone around him dying. His past has driven him to seek out his sworn brother from his early years in the orphanage, Clause, who joined an expedition, but never returned.",
+    "itemIntroductions": {
+      "weapon": "A legendary Holy Sword given to the world by Lua. This legendary artifact materialized 100 years ago when the Demons invaded the Orbis Continent through the Dimensional Gate. According to the legend, the Hero King Kyle used this sword to pierce the heart of the Dark Lord Angmund and brought an end to the war. However, the two simply vanished, and only Aea remained.",
+      "treasures": [
+        "The crown of Kyle, the king of Orvelia and the Hero of Holy Sword. Worn by King Kyle during his expedition to kill Dark Lord Angmund 100 years ago, this golden grown contains the will of the Goddess of Light. After Angmund was defeated, the Crown of Light, along with the Holy Sword, Aea, was left in the place where the king disappeared.",
+        "Gauntlet imbued with the blessing of Lua, the Goddess of Light. Gauntlet passed down to the kings of the Orbis Continent. Contains the encouragement of the goddess that allows you to use Valiant Dash towards enemies without any fear.",
+        "A rune that proves that one is an agent of Lua, the Goddess of Light. The Rune of Proxy is an artifact of the Church of Lua, and it's given to the knight who wields the Aea, the Sword of Light. The Rune of Proxy pushes enemies with the power of light and increases ATK and morale.",
+        "An azure-colored jewel that adorns the Holy Sword, Aea. It is an intense condensation of sacred nature's spirit, bound by the teardrops of Lua, and has the mysterious power to guide the Guardian of Holy Sword on the path of light."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

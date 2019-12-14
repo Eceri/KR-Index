@@ -17,9 +17,9 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Solar Halo, Ignisius, increasing own P.DEF by 60% for 10 sec. Afterward, attacks the target and the enemies nearby within a small range 20 times, dealing a total of ??? M.DMG. Each hit inflicts Judgement of Ignisius, increasing M.DMG the target takes by 2% for 5 sec. Judgement of Ignisius can be stack up to 10 times.",
-      "advancement1": "No info yet.",
-      "advancement2": "No info yet.",
+      "advancement0": "Summons the soul of Solar Halo, Ignisius, increasing own P.DEF by 60% for 10 sec. Afterward, attacks the target and the enemies nearby within a small range 20 times, dealing a total of ??? M.DMG. Each hit inflicts 'Judgement of Ignisius', increasing M.DMG the target takes by 2% for 5 sec. 'Judgement of Ignisius' can be stack up to 10 times.",
+      "advancement1": "Each stack of 'Judgement of Ignisius' also reduces the target's M.DEF by 2%.",
+      "advancement2": "Increases the duration of 'Judgement of Ignisius' by 5 sec, and changes the max number of stacks to 20 times.",
       "activation": "Charges up upon using Skills 5 times.",
       "cd": 20,
       "charges": 7
@@ -161,6 +161,7 @@
     "story": "A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose divine light she uses to fight against darkness. She is tasked with the protection of the souls of other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again.",
     "itemIntroductions": {
       "weapon": "Legends speak of a mysterious metal, gold as the glorious rays of the sun, blue as the pure sky, and white as the blinding light. This holy sword and shield set has been forged from that special metal that only Angels can handle. These are divine relics of protection, created to banish the darkness and fill the world with light. Bestowed only to the most righteous Guardian Knight of the Angels, these relics can instantly incinerate any Demon that faces their light.",
+      "soul": "A weapon given to the most righteous guardian angels of heaven.\n\nAselica received this weapon from the archangels as she was descending upon the world to watch the Warrior of the Holy Sword, and swore to only use the weapon to deliver Lua's justice.\nHowever, the power of darkness was becoming stronger over-time, and Aselica had to fight stronger enemies.\nShe had to fight the Demons, Draconics, and even entities of darkness.\nShe fought them with her life, but it was impossible for her to handle all the enemies at once.\nThat time when her power and courage reached the limit, to Aselica's suprise, her weapon started shining brilliantly, and after whispering to Aselica to deliver justice, the weapon bestowed incremental strength and courage to her.\nThat's when the will of all guardian knights that was stored inside the weapon became one and awakened as a mighty being.",
       "treasures": [
         "A fragment that fell out from the eternally shining Morning Star. Morning Star is the holy light that has existed since the beginning of time, guarding the heavens and protecting the swords of angels from losing their holy flame. The Archangel bestowed this upon Aselica along with the Sword of the Sun before she came down to earth.",
         "Bracelet made by the Archangels to protect the Angels when they descend down to earth. It contains the sun, so it shines brilliantly. When the angels feel fear, it is said that the sunlight from the bracelet protects their souls. And the fates of the angels are intertwined in the bracelet, so when they feel like their lives are threatened, they can feel each other's pain instinctively.",
