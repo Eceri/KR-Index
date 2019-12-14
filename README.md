@@ -1,6 +1,6 @@
 ## King's Raid Index
 
-This is a Site consolidating information on the Game 'King's Raid'. It is still very much wip.
+A Webpage collecting info for the mobile game 'King's Raid'. It is still very much a wip. The Page is being hosted at https://krindex.netlify.com/.
 
 ## Docker Setup
 
