@@ -89,7 +89,7 @@ const scrollToRef = ref => window.scrollTo(0, ref.offsetTop);
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
-    chosenArtifactName !== undefined && chosenArtifactName.replace(/%20/g, " ");
+    chosenArtifactName !== undefined && decodeURIComponent(chosenArtifactName);
   const ARTIFACTS = "Artifacts";
   const [artifactName, setArtifactName] = useState(replaceChosenArtifactName);
   const [artifacts, setArtifacts] = useState(
@@ -186,7 +186,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
         window.history.pushState(
           `artifact/${item.name}`,
           item.name,
-          `/artifacts/${item.name}`
+          `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
       src={require(`../../Assets/artifacts/${item.name}.png`)}

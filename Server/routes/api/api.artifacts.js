@@ -7,6 +7,7 @@ const router = express.Router();
 
 /**
  * @api {get} artifacts/
+ * searches for all Artifacts
  */
 router.get("/", async (req, res, next) => {
   const childLogger = Logger.child({ requestId: "451" });
@@ -44,7 +45,12 @@ router.post("/post", async (req, res, next) => {
   Logger.info("End POST Route /artifact/post");
 });
 
-// Get one Artifact by ID or Name
+/**
+ * @api {get} artifacts/:id
+ * @apiSuccessExample {json} Success-Response:
+ *  HTTP/1.1 200 OK
+ *  {"description": [String], "name": String, "story": String, metaData: Object }
+ */
 router.get("/:id", async (req, res, next) => {
   Logger.info("GET Route /artifact/");
 
