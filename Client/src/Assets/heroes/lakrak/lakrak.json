@@ -17,12 +17,12 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "No info yet.",
-      "advancement1": "No info yet.",
-      "advancement2": "No info yet.",
-      "activation": "No info yet.",
-      "cd": 0,
-      "charges": 0
+      "advancement0": "Summons the soul of Lakrak MK-1, increasing own ATK by 50% for 12 sec. Afterward, deals a total of ??? P.DMG to enemies within range of a random enemy over 5 times every 4 sec, stunning them for 2 sec and increasing P.DMG they take by 30% for 8 sec.",
+      "advancement1": "Reduces Skill Activation Requirements by 5 sec and gains immunity to CC for 12 sec.",
+      "advancement2": "Reduces Skill Activation Requirements by an additional 6 sec, and immediately reduces Cooldown of all Skills by 3 sec every 4 sec.",
+      "activation": "Charges up over 18 sec.",
+      "cd": 18,
+      "charges": 6
     }
   },
   "skills": [

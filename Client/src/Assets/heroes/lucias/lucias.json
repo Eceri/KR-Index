@@ -1,1 +1,185 @@
-{"name":"Lucias","title":"Saint of Blessings","class":"priest","damageType":"physical","position":"Middle","weapon":{"uniqueWeapon":{"name":"Blessing of Light, Benedicia","effect":["For 30 sec after the battle starts, allies take 10% reduced P.DMG while having their ATK Spd increased by 100 and DMG to Non-Hero enemies increased by 6%.","For 30 sec after the battle starts, allies take 12% reduced P.DMG while having their ATK Spd increased by 120 and DMG to Non-Hero enemies increased by 7.2%.","For 30 sec after the battle starts, allies take 14% reduced P.DMG while having their ATK Spd increased by 140 and DMG to Non-Hero enemies increased by 8.6%.","For 30 sec after the battle starts, allies take 17% reduced P.DMG while having their ATK Spd increased by 170 and DMG to Non-Hero enemies increased by 10.4%.","For 30 sec after the battle starts, allies take 21% reduced P.DMG while having their ATK Spd increased by 210 and DMG to Non-Hero enemies increased by 12.5%.","For 30 sec after the battle starts, allies take 25% reduced P.DMG while having their ATK Spd increased by 250 and DMG to Non-Hero enemies increased by 15%."]},"soulWeapon":{"advancement0":"No info yet.","advancement1":"No info yet.","advancement2":"No info yet.","activation":"No info yet.","cd":0,"charges":0}},"skills":[{"id":1,"skillInfo":[{"skillNumber":"s1","name":"Path of Blessings","description":"Heals 4 allies with the lowest HP by ??? and targets take ???% reduced P.DMG for 7 sec.","cooldown":10,"cost":2}],"light":"Increases Heal Rate by 40%.","dark":"Recovers target's Mana by 500.","books":["Heal rate is increased by 10%.","Heal rate is increased by 15%.","Heal rate is increased by 25%."],"uniqueTreasure":{"name":"Book of Blessings","effect":["[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 12%.","[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 14%.","[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 17%.","[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 21%.","[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 25%.","[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 30%."]}},{"id":2,"skillInfo":[{"skillNumber":"s2","name":"Zone of Faith","description":"Sets up the [Zone of Faith] at the own location for 4 sec. Increases ATK of allies in [Zone of Faith] by ??? and dispels negative effects on them continuously. Heals allies in area by ??? every second. Deals P.DMG of ??? on enemies within [Zone of Faith] every second, and stuns them for ??? sec.","cooldown":15,"cost":5}],"light":"Recovers Mana for allies within range by 200 per sec.","dark":"Continuously dispels positive effects from enemies within range.","books":["DMG and Heal rate are increased by 10%.","DMG and Heal rate are increased by 15%.","DMG and Heal rate are increased by 25%."],"uniqueTreasure":{"name":"Dice of Remembrance","effect":["[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 200 per sec.","[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 240 per sec.","[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 290 per sec.","[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 350 per sec.","[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 420 per sec.","[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 500 per sec."]}},{"id":3,"skillInfo":[{"skillNumber":"s3","name":"Stigmata","description":"Increases P.Dodge of all allies by 250 and their ATK by ??? for 15 sec. Effects will be dispelled when the self dies. Normal attacks deal additional P.DMG of ??? to targets for 15 sec, and increases the P.DMG taken by target by 25% for 5 sec.","cooldown":30,"cost":3}],"light":"Additional P.DMG from [Stigmata] decreases the target's ACC by 150 for 5 sec.","dark":"Gains immunity to CC for the duration of skill.","books":["ATK boost and DMG is increased by 10%","ATK boost and DMG is increased by 15%","ATK boost and DMG is increased by 25%"],"uniqueTreasure":{"name":"Guidance of Morning Star","effect":["[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 12%.","[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 14%.","[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 17%.","[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 21%.","[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 25%.","[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 30%."]}},{"id":4,"skillInfo":[{"skillNumber":"s4","name":"Holy Sacrifice","description":"Casting Path of Blessings and Zone of Faith consumes 20% of self's current HP. Upon healing an ally with these spells, the amount of healing is increased by ??? and the target gains ??? additional DEF for 10 sec."}],"light":"Increases Heal Rate by 40%.","dark":"No longer consumes HP.","books":["Heal rate is increased by 10%.","Heal rate is increased by 15%.","Heal rate is increased by 25%."],"uniqueTreasure":{"name":"Sword of Sacrifice","effect":["[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 8% for 5 sec.","[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 10% for 5 sec.","[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 12% for 5 sec.","[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 14% for 5 sec.","[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 17% for 5 sec.","[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 20% for 5 sec."]}}],"light":"ATK, DEF, HP+15% / CC Resist +100","dark":"Increases own Mana Recovery/Sec by 300% for 3 sec upon casting an active skill.","background":{"profile":{"gender":"missing","race":"missing","age":"missing","height":"missing","birthday":"missing","constellation":"missing","likes":"Dishes made with apple, fishing, prayer, helping people, mysterious magic shows and performances.","dislikes":"Rude ones, undelivered promises, taking human life lightly."},"story":"Lucias was a member of Lua's Holy Knights before awakening as the Saint of Blessings. Under the command of the Living Legend, Ricardo, he protected Orvel and neighboring towns from Demons. However, stigmata started to appear on his body when he was 19, and by the call of Lua, the holy knight became the Saint of Blessings. His mission is to travel around the world and bring the light of Lua to those in need. He stayed true to his duties, wandering the world to share blessings. Now, he holds a weapon in his hand again to defeat the power of darkness that has been growing in strength over the past 100 years.","itemIntroductions":{"weapon":"A blessed flag representing the Sun, Moon, and the entire sky. It contains the power and teachings of the Creator, Lua. The power of light spreads when he waves the flag, bringing peace to his allies' minds, defeating the powers of darkness. A halidom bestowed upon Lucias, who used to be a flag bearer in Lua's Holy Knights.","treasures":["The bible of infinity that a line of Sages of Blessings used to record their works. The title of a sage is passed down with the memories of its predecessor, so it would seem that there is no reason for them to write anything down. However, the danger of the accumulated memories erasing the identity of the present sage made writing this bible necessary.","Lucias had a cherished friend back when he was young. This friend was a member of a troupe named Stardust. He had very nimble hands despite his young age and used to pickpocket countless wallets from gamblers. However, Stardust would only visit Lucias's town once a year, and so the two friends gave each other something they treasured to remember their friendship. This dice is the special trick dice made by Lucias's friend, Esker.","Research materials about the stigmata of the Saint of Blessings. Although Lucias has the memories of the saints, they did not know everything. Lua's priests left this document after researching the secret behind the stigmata, but it was impossible for them to bring everything to light.","The holy sword that Lucias used when he was under Ricardo's command as a Holy Knight. High priests of Lua blessed it directly, imbuing it with strong holy energy. Lucia was later chosen as the Saint of Blessings, and his blessings are actually much more powerful than the blessing invested in the sword. He always carries the sword to remember his days as the Holy Knight, but he never draws it. Gossipers say that it is because he fears he would not look like a saint if he is to be seen wielding a sword..."]}},"skins":[],"voice":{"actor":{"jp":"N/A","kr":"N/A","en":"N/A"},"lines":{"jp":[],"kr":[],"en":[]}}}
+{
+  "name": "Lucias",
+  "title": "Saint of Blessings",
+  "class": "priest",
+  "damageType": "physical",
+  "position": "Middle",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Blessing of Light, Benedicia",
+      "effect": [
+        "For 30 sec after the battle starts, allies take 10% reduced P.DMG while having their ATK Spd increased by 100 and DMG to Non-Hero enemies increased by 6%.",
+        "For 30 sec after the battle starts, allies take 12% reduced P.DMG while having their ATK Spd increased by 120 and DMG to Non-Hero enemies increased by 7.2%.",
+        "For 30 sec after the battle starts, allies take 14% reduced P.DMG while having their ATK Spd increased by 140 and DMG to Non-Hero enemies increased by 8.6%.",
+        "For 30 sec after the battle starts, allies take 17% reduced P.DMG while having their ATK Spd increased by 170 and DMG to Non-Hero enemies increased by 10.4%.",
+        "For 30 sec after the battle starts, allies take 21% reduced P.DMG while having their ATK Spd increased by 210 and DMG to Non-Hero enemies increased by 12.5%.",
+        "For 30 sec after the battle starts, allies take 25% reduced P.DMG while having their ATK Spd increased by 250 and DMG to Non-Hero enemies increased by 15%."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Blessing of Light, Benedicia for 10 sec, increasing all allies Heal Rate by 35% and ATK Spd by 350.",
+      "advancement1": "Activation Requirement is changed to 4 skill use(s).",
+      "advancement2": "Every 1 sec, Skill Cooldown of self is reduced by 1 sec for the duration of Skill.",
+      "activation": "Charges up upon using Skills 6 times.",
+      "cd": 24,
+      "charges": 7
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Path of Blessings",
+          "description": "Heals 4 allies with the lowest HP by ??? and targets take ???% reduced P.DMG for 7 sec.",
+          "cooldown": 10,
+          "cost": 2
+        }
+      ],
+      "light": "Increases Heal Rate by 40%.",
+      "dark": "Recovers target's Mana by 500.",
+      "books": [
+        "Heal rate is increased by 10%.",
+        "Heal rate is increased by 15%.",
+        "Heal rate is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Book of Blessings",
+        "effect": [
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 12%.",
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 14%.",
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 17%.",
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 21%.",
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 25%.",
+          "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by 30%."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Zone of Faith",
+          "description": "Sets up the [Zone of Faith] at the own location for 4 sec. Increases ATK of allies in [Zone of Faith] by ??? and dispels negative effects on them continuously. Heals allies in area by ??? every second. Deals P.DMG of ??? on enemies within [Zone of Faith] every second, and stuns them for ??? sec.",
+          "cooldown": 15,
+          "cost": 5
+        }
+      ],
+      "light": "Recovers Mana for allies within range by 200 per sec.",
+      "dark": "Continuously dispels positive effects from enemies within range.",
+      "books": [
+        "DMG and Heal rate are increased by 10%.",
+        "DMG and Heal rate are increased by 15%.",
+        "DMG and Heal rate are increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Dice of Remembrance",
+        "effect": [
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 200 per sec.",
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 240 per sec.",
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 290 per sec.",
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 350 per sec.",
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 420 per sec.",
+          "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by 500 per sec."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Stigmata",
+          "description": "Increases P.Dodge of all allies by 250 and their ATK by ??? for 15 sec. Effects will be dispelled when the self dies. Normal attacks deal additional P.DMG of ??? to targets for 15 sec, and increases the P.DMG taken by target by 25% for 5 sec.",
+          "cooldown": 30,
+          "cost": 3
+        }
+      ],
+      "light": "Additional P.DMG from [Stigmata] decreases the target's ACC by 150 for 5 sec.",
+      "dark": "Gains immunity to CC for the duration of skill.",
+      "books": [
+        "ATK boost and DMG is increased by 10%",
+        "ATK boost and DMG is increased by 15%",
+        "ATK boost and DMG is increased by 25%"
+      ],
+      "uniqueTreasure": {
+        "name": "Guidance of Morning Star",
+        "effect": [
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 12%.",
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 14%.",
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 17%.",
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 21%.",
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 25%.",
+          "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by 30%."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Holy Sacrifice",
+          "description": "Casting Path of Blessings and Zone of Faith consumes 20% of self's current HP. Upon healing an ally with these spells, the amount of healing is increased by ??? and the target gains ??? additional DEF for 10 sec."
+        }
+      ],
+      "light": "Increases Heal Rate by 40%.",
+      "dark": "No longer consumes HP.",
+      "books": [
+        "Heal rate is increased by 10%.",
+        "Heal rate is increased by 15%.",
+        "Heal rate is increased by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Sword of Sacrifice",
+        "effect": [
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 8% for 5 sec.",
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 10% for 5 sec.",
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 12% for 5 sec.",
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 14% for 5 sec.",
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 17% for 5 sec.",
+          "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by 20% for 5 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / CC Resist +100",
+  "dark": "Increases own Mana Recovery/Sec by 300% for 3 sec upon casting an active skill.",
+  "background": {
+    "profile": {
+      "gender": "missing",
+      "race": "missing",
+      "age": "missing",
+      "height": "missing",
+      "birthday": "missing",
+      "constellation": "missing",
+      "likes": "Dishes made with apple, fishing, prayer, helping people, mysterious magic shows and performances.",
+      "dislikes": "Rude ones, undelivered promises, taking human life lightly."
+    },
+    "story": "Lucias was a member of Lua's Holy Knights before awakening as the Saint of Blessings. Under the command of the Living Legend, Ricardo, he protected Orvel and neighboring towns from Demons. However, stigmata started to appear on his body when he was 19, and by the call of Lua, the holy knight became the Saint of Blessings. His mission is to travel around the world and bring the light of Lua to those in need. He stayed true to his duties, wandering the world to share blessings. Now, he holds a weapon in his hand again to defeat the power of darkness that has been growing in strength over the past 100 years.",
+    "itemIntroductions": {
+      "weapon": "A blessed flag representing the Sun, Moon, and the entire sky. It contains the power and teachings of the Creator, Lua. The power of light spreads when he waves the flag, bringing peace to his allies' minds, defeating the powers of darkness. A halidom bestowed upon Lucias, who used to be a flag bearer in Lua's Holy Knights.",
+      "treasures": [
+        "The bible of infinity that a line of Sages of Blessings used to record their works. The title of a sage is passed down with the memories of its predecessor, so it would seem that there is no reason for them to write anything down. However, the danger of the accumulated memories erasing the identity of the present sage made writing this bible necessary.",
+        "Lucias had a cherished friend back when he was young. This friend was a member of a troupe named Stardust. He had very nimble hands despite his young age and used to pickpocket countless wallets from gamblers. However, Stardust would only visit Lucias's town once a year, and so the two friends gave each other something they treasured to remember their friendship. This dice is the special trick dice made by Lucias's friend, Esker.",
+        "Research materials about the stigmata of the Saint of Blessings. Although Lucias has the memories of the saints, they did not know everything. Lua's priests left this document after researching the secret behind the stigmata, but it was impossible for them to bring everything to light.",
+        "The holy sword that Lucias used when he was under Ricardo's command as a Holy Knight. High priests of Lua blessed it directly, imbuing it with strong holy energy. Lucia was later chosen as the Saint of Blessings, and his blessings are actually much more powerful than the blessing invested in the sword. He always carries the sword to remember his days as the Holy Knight, but he never draws it. Gossipers say that it is because he fears he would not look like a saint if he is to be seen wielding a sword..."
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

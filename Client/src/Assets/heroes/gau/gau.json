@@ -17,12 +17,12 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "No info yet.",
-      "advancement1": "No info yet.",
-      "advancement2": "No info yet.",
-      "activation": "No info yet.",
-      "cd": 0,
-      "charges": 0
+      "advancement0": "Summons the soul of Holy Bird, Numinu, increasing own ATK by 60% for 8 sec. Upon activation, summons the Storn of Numinu in the front for 8 sec, dealing ??? P.DMG every 0.5 sec to enemies within range and reducing the target's ATK Spd by 100 for 5 sec. The ATK Spd Reduction effect can be stacked up to max 10 times, enemies with 10 stacks are inflicted with Freeze adnt ake 30% increases P.DMG for 5 sec.",
+      "advancement1": "Increases the duration of Storm of Numinu and soul by 4 sec.",
+      "advancement2": "Changed the P.DMG Boost effect to 50%, and every hit dispels positiv effects from the enemy [MISSING...]",
+      "activation": "Charges up upon using Skills 4 times.",
+      "cd": 22,
+      "charges": 6
     }
   },
   "skills": [
