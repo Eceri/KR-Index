@@ -31,4 +31,5 @@ node_modules
 # Server logs
 /Server/logs
 /Server/.env
+/Server/apidoc
 playground.json

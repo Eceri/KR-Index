@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "node -r esm app.js",
-    "docs": "apidoc -i .\\routes\\api\\ -o apidoc/"
+    "docs": "apidoc -i .\\routes\\api\\ -o apidoc/",
+    "dev": "nodemon -r esm app.js"
   },
   "dependencies": {
     "apidoc": "^0.18.0",
@@ -21,5 +22,9 @@
     "version": "0.0.2",
     "title": "KRC API for Artifacts",
     "url": "https://krc-api.herokuapp.com/api/"
-  }
+  },
+  "devDependencies": {
+    "uuid": "^3.3.3"
+  },
+  "license": "MIT"
 }
