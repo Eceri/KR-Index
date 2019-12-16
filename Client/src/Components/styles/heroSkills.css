@@ -36,6 +36,7 @@ p:hover {
     align-items: center;
     margin: 0 .5rem;
     flex: 1;
+    font-size: .85rem;
 }
 .bookEffects:first-child{
     margin: 0 .5rem 0 0;
@@ -44,7 +45,7 @@ p:hover {
     margin: 0 0 0 .5rem;
 }
 .bookEffects > img{
-    height: 30px;
+    height: 25px;
     margin-right: .5rem;
 }
 .perkIcon{
