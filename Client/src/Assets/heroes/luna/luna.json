@@ -18,8 +18,8 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of Flower of Eternity, Hyacinth, dealing ??? M.DMG to nearby enemies within a circular range of self, freezing them for 5 sec and knocking them back. Afterward, the Soul of Hyacinth deals ??? additional M.DMG to frozen enemies and increases own Crit DMG by 100% for 10 sec.",
-      "advancement1": "Hit targets tkae increased M.DMG by 40% for 10 sec.",
-      "advancement2": "For the duration of Skill, increases the number of targets that Normal attacks hit by 3. The range of Normal attacks increases by 30%, knocking back the hit target.",
+      "advancement1": "Hit targets take 40% increased M.DMG for 10 sec.",
+      "advancement2": "For the duration of Skill, Normal attacks hit 3 targets, and its range increases by 30%. Hit targets will be knocked back.",
       "activation": "Charges up over 17 sec.",
       "cd": 17,
       "charges": 5
@@ -161,6 +161,7 @@
     "story": "Lulus, very rarely sighted and often considered mythical, are a race of animal hybrids. They live in an extremely cold region, and are very fearful of contacting the outside world. One day, a Lulu child was born with the exact opposite personality that is typical her race. That child is Luna. It's not that she was unhappy with the ways of her people. Nor did she have any grand purpose of experiencing the world outside. She was simply picking flowers, one step at a time. Another step to pick up some frozen branches for her slingshot. And another step to follow the scent of some sweet, red fruit. Before she knew it, she was outside, running toward a carrot field away from the mountain.",
     "itemIntroductions": {
       "weapon": "A slingshot made from hyacinth, a silver tree that only grows in extremely cold regions. It is said that hyacinths have been blessed by the Queen of Ice, and are able to bear bright red fruits even in the coldest weather. Simply holding onto a hyacinth branch allows one to ignore the coldness around the holder. These blessed trees also have the power to call upon snowstorms and frost. Needless to say, these powers are best harnessed by a weapon carved from one of these trees.",
+      "soul": "The flower never withered. No matter how hard the rain fell. no matter how much snow poured, it stayed strong. Like Luna's endless innocence, the flower did not wither but showed off its presence instead... The flower abolished the cold of the steep snow mountain, and quelled the raging snowstorm for the tiny, weak girl, and followed wherever she went. Eventually, when the innocent girl's curiosity touched the flower, it showed the girl its true form.\n'You have finally found me, dear little girl.'",
       "treasures": [
         "A golden bell that brings luck. It's Luna's second favorite thing after carrots, and it brightly glitters when she walks and trots. The sound of the golden bell has a mystical power that summons luck from her homeland.",
         "A carrot that grew from receiving moonlight a thousand times. Those hit by this carrot will have all evil stripped away from them, and they'll be able to tell apart good from bad.",
