@@ -111,16 +111,14 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    if (GET_LOCALSTORAGE(ARTIFACTS) === null) {
-      fetch(`${API_URL}${ARTIFACT_URL}`)
-        .then(res => {
-          return res.json();
-        })
-        .then(data => {
-          setArtifacts(sortNames(data, "ASC"));
-          SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(data, "ASC")));
-        });
-    }
+    fetch(`${API_URL}${ARTIFACT_URL}`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        setArtifacts(sortNames(data, "ASC"));
+        SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(data, "ASC")));
+      });
   }, []);
 
   const getFirstArtifactMatches = name =>
