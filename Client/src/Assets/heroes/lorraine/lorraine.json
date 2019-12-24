@@ -19,7 +19,7 @@
     "soulWeapon": {
       "advancement0": "Summons the soul of World Tree's Will, Roburu for 10 sec, dealing ??? M.DMG on a random enemy every 2 sec, increasing M.DMG it takes by 30% for 10 sec and inflicting Shackle for 2 sec. Also recovers own mana by 500 and reduces Cooldown of all Skills by 1 sec every 2 sec.",
       "advancement1": "Increases own ATK by 50% for the duration of soul.",
-      "advancement2": "Increases the duration of CC effects applied upon enemies by 30% and reduces their M.DEF by 25% for the duration of soul.",
+      "advancement2": "Increases the duration of CC effects applied upon all enemies by 30% and reduces their M.DEF by 25% for the duration of soul.",
       "activation": "Charges up over 17 sec.",
       "cd": 21,
       "charges": 7
@@ -161,6 +161,7 @@
     "story": "The Great Sage of Elidora is the wisest of the Druids. As one of the heroes who fought against the Demon invaders 100 years ago, she is often considered the wisest person on the entire Orbis Continent. She has taught and trained countless Elves, and possesses keen insight and mystic powers befitting her age. It is said that even the current king of Elidora as well as his children were all once her students. Having recently sensed a strange disturbance from the Elidora Forest, she is preparing the path for the wielder of the Holy Sword.",
     "itemIntroductions": {
       "weapon": "The legend has it that, once every 100 years, the World Tree bestows one of its branches to a chosen one. The branch radiates with eternal life, granting immense power and knowledge to its owner. Fusing the branch with the Stone of the Forest, an Elven treasure, Lorraine created this staff. Now, she can call upon the forces of nature and remain connected to the World Tree wherever she goes.",
+      "soul": "A World Tree branch is the core of Roburu, and it has a strong lifeforce which it inherited from the world tree.\n\nThe infinite lifeforce amplifies Lorraine's magic, while also imbuing Roburu with the characteristic of 'growing staff'. The branch stayed inside the weapon, and watched Lorraine silently over time. As a druid, as a mentor of the royal family, as a friend and advisor to the old hero. Lorraine went through many processes of agony, and at the end of everything, when the time to make a choice approached, the branch chose Lorraine as its rightful master.\nThe branch chose to grow as a staff, together with Lorraine instead of growing into a new World Tree.\nRoburu now draws power and potential from the World Tree, and together with Lorraine, they will protect the forest together.",
       "treasures": [
         "The Book containing knowledge about all life in the forest. A magical book passed down among the guardians of the World Tree since ancient times. After being in the hands of Elidoran sages for a long time, Lorraine now has it in safekeeping.",
         "The beautiful but poisonous Belladonna. It's a dangerous plant that only the Great Sage can handle. The little Belladonna that is mixed up with vines poisons enemies and makes them defenseless against magic attacks.",
