@@ -18,7 +18,7 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of Blood Lancer Monolith, dealing ??? P.DMG to nearby enemies of self and knocking them down for 4 sec. Afterward, recovers own HP equal to 40% of Max HP, increasing ATK by 30% and Heal Rate by 30% for 10 sec.",
-      "advancement1": "Changes the duratio of the effect to 15 sec.",
+      "advancement1": "Changes the duration of the effect to 15 sec.",
       "advancement2": "For the duration of Skill, increases own DMG dealt to enemies by 20%. Normal attacks have a 10% chance to stun the target for 1.5 sec.",
       "activation": "Charges up upon dealing DMG 60 times.",
       "cd": 22,
