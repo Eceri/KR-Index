@@ -149,12 +149,12 @@
   "dark": "Normal attacks have a 15% chance to activate Stealth mode that lasts for 10 sec. While in Stealth mode, normal attacks deal 50% increased DMG.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Half-Elf",
+      "age": "18 (Physical age: 18)",
+      "height": "169 cm",
+      "birthday": "1(Month) 8(Day), Month of Protection",
+      "constellation": "Guardian Mertis",
       "likes": "Roi",
       "dislikes": "Roi, Laughing Mask, Half-Elf blood"
     },

@@ -149,12 +149,12 @@
   "dark": "At the beginning of a Guild War battle, reduces Mana of all enemies by 500 , and increases all DMG they take by 15% for 5 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "13 Years",
+      "height": "128 cm",
+      "birthday": "2(Month) 5(Day), Month of Wisdom",
+      "constellation": "Satua the Sage",
       "likes": "Assembling firearm, Mini Hanus, Butter cookies, Darts",
       "dislikes": "Laziness, when someone gives her an unsolicited advice, prawn, vinegar"
     },

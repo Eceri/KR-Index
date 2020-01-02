@@ -149,12 +149,12 @@
   "dark": "Every 5 sec, targets all enemies and attacks with 'Thornbush Forest' with 30% chance on each enemy.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Elf",
+      "age": "???",
+      "height": "168 cm",
+      "birthday": "5(Month) 25(Day), Month of Hope",
+      "constellation": "Graham the Thief",
       "likes": "Tranquil forest, beautiful songs",
       "dislikes": "Anything that harms nature"
     },

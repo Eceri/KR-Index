@@ -149,12 +149,12 @@
   "dark": "When an ally other than this hero is hit by an attack, increase all allies P.DEF by 20% and P.Crit Resist by 20%. (10 sec Cooldown)",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "20 Years",
+      "height": "195 cm",
+      "birthday": "10(Month) 22(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "His new family",
       "dislikes": "Causing harm to friends"
     },

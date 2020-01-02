@@ -165,12 +165,12 @@
     "dark": "At the start of each battle, gains immunity to CC for 7 sec, and ACC, CC ACC are increased by 300 for 10 sec.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "22 Years",
+            "height": "169 cm",
+            "birthday": "10(Month) 11(Day), Month of Friendship",
+            "constellation": "Asiphia the Empress",
             "likes": "Laias, Lilia, people in the desert",
             "dislikes": "Watching people suffer"
         },

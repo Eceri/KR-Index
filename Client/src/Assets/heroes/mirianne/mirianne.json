@@ -149,12 +149,12 @@
   "dark": "Upon killing an enemy, all skill cooldown is reduced by 50%, and recovers 1 orb of mana.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Half-Elf",
+      "age": "12 (Physical age: 18)",
+      "height": "162 cm",
+      "birthday": "10(Month) 5(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "Sonia, and everyone at the orphanage",
       "dislikes": "Bugs with many legs"
     },

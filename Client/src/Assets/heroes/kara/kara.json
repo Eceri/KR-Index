@@ -163,12 +163,12 @@
     "dark": "[Anti-personnel Weapon] - Increases CC ACC by 400. [Siege Weapon] - Increases ACC by 400.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Neutral (Female-Type)",
+            "race": "Human-Type Golem",
+            "age": "???",
+            "height": "161 cm",
+            "birthday": "5(Month) 30(Day), Month of Hope",
+            "constellation": "Graham the Thief",
             "likes": "Energy charge, Master",
             "dislikes": "Orders that cannot be carried out, inefficient way of doing things"
         },

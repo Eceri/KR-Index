@@ -149,12 +149,12 @@
   "dark": "Heals HP worth 10% of ATK every second, and every 1% of HP lost reduces received DMG by 0.6%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Barbarian",
+      "age": "33 Years",
+      "height": "231 cm",
+      "birthday": "9(Month) 23(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Children, animals",
       "dislikes": "Destructive and violent people"
     },

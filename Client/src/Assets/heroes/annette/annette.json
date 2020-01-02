@@ -149,17 +149,16 @@
     "dark": "When Overcharge activates, increase all allies Atk Spd by 200, and increase the ATK of all allies by 5% of Annette's ATK.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "17 Years",
+            "height": "158 cm",
+            "birthday": "4(Month) 16(day), Month of Life",
+            "constellation": "Amil the Saint",
             "likes": "Technomagic, research funds",
             "dislikes": "People who look down on Technomagic"
         },
         "story": "A genius technomagi from the Kingdom of Orvelia. She is highly optimistic, and failure never seems to bother her. She dreams of inventing a device that would allow anyone to handle magic one day. She has a magically engineered assistant whom she brought to life after years of research. Following the arrival of the Demons, she incorporated her research into developing weapons that would allow anyone to fight against the invaders.",
-       
         "itemIntroductions": {
             "weapon": "The essence of technomagic, created based on Annette's theory. Five of the highest-ranking court wizards of Orvel have poured their energy into creating this magical being. It has its own will, making it capable of making independent decisions and acting on them. While it shares its mana with Annette, it can also utilize any other available mana nearby. As such, it is the first great milestone in Annette's effort to make magic available to all.", 
             "soul": "Rascal is an autonomous technomagic lifeform with free will, and is one of the wonders of Orverl.\nHowever, Annette's success with the creation of a technomagic lifeform brought heated discussion among scholars.\nDiscussion soon turned into debates, and later into conflicts.\n\nSome clained that Rascal's existence is a treacherous act against the God, and that it should be elminated at once, while others viewed Rascal as a miracle, a grand discovery, a salvation to the future of mankind.\n\nAnnette did not appreciate this conflict. She only wished to invent items that would help, protect, and make humans happy.\nShe had zero intention of unmaking Rascal. Rascal was her friend, her inventor partner, and a great assistant.\nThe source of Annette's happiness was watching Rascal improve.\nThere was no way Annette would think about being separated from it.\nMeanwhile, Rascal strives to upgrade itself more and more to please Annette who always watched it with a grand expectation...",

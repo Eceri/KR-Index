@@ -149,12 +149,12 @@
   "dark": "Upon attacking, there is a 10% chance to reduce all DEF of the target by 20% and reduce all the hero's cooldowns by 5%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Tamia",
+      "age": "14 Years",
+      "height": "110 cm",
+      "birthday": "10(Month) 16(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "Souls, kind people",
       "dislikes": "Causing harm to others"
     },

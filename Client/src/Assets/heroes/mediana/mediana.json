@@ -149,12 +149,12 @@
   "dark": "When Mediana takes DMG, all allies gain 2% ATK. This effect stacks 20 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "21 Years",
+      "height": "170 cm",
+      "birthday": "4(Month) 7(Day), Month of Life",
+      "constellation": "Armil the Saint",
       "likes": "Medical science, test subjects",
       "dislikes": "Healing magic"
     },

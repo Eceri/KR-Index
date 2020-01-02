@@ -149,12 +149,12 @@
   "dark": "Upon attacking, deals additional DMG equal to 80% of ATK.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "18 Years",
+      "height": "185 cm",
+      "birthday": "10(Month) 15(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "Food from the nature",
       "dislikes": "Fatalism"
     },

@@ -149,12 +149,12 @@
   "dark": "When in Fury state, auto attack deals DMG that ignores DEF.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Demon (Half-Blood)",
+      "age": "19 Years",
+      "height": "195 cm",
+      "birthday": "6(Month) 6(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Caramel pudding, sweetened juice",
       "dislikes": "Weaklings who act tough, idiots who think they know everything"
     },

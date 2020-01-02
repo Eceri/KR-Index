@@ -149,12 +149,12 @@
   "dark": "Miruru stacks Darkness depending on the number of enemies she hits. When she reaches 50 stacks, she goes berserk, boosting her Atk Spd by 800 and her ATK by 20%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "27 (Mentally: 12)",
+      "height": "130 cm",
+      "birthday": "5(Month) 31(Day), Month of Hope",
+      "constellation": "Graham the Thief",
       "likes": "Treasures or anything that sparkles",
       "dislikes": "The Navy"
     },

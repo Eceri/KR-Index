@@ -149,12 +149,12 @@
   "dark": "Each auto-attack has a 30% chance of healing the ally with the lowest HP by 3% of their HP. Also provides 5% mana to the ally.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "15 Years",
+      "height": "146 cm",
+      "birthday": "11(Month 7(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
       "likes": "Gold",
       "dislikes": "Financial deficit"
     },

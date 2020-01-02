@@ -149,12 +149,12 @@
   "dark": "At the beginning of the first battle, increases P.DEF of the ally with the highest ATK by 20% of P.DEF. This effect cannot be dispelled.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Angel",
+      "age": "???",
+      "height": "170 cm",
+      "birthday": "9(Month) 22(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Fellow kinsmen, enforcing order",
       "dislikes": "Demons"
     },

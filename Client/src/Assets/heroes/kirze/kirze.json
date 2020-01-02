@@ -149,12 +149,12 @@
   "dark": "Every normal and Skill attack increases ATK Spd by 5. This effect can be stacked up to max 100 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Animal Hybrid (Cat)",
+      "age": "16 Years",
+      "height": "162 cm",
+      "birthday": "4(Month) 29(Day), Month of Life",
+      "constellation": "Armil the Saint",
       "likes": "Rag doll, cool riverbank, small animals, child's laughter",
       "dislikes": "Demons, nasty bugs, rude people"
     },

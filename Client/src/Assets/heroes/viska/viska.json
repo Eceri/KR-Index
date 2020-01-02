@@ -149,12 +149,12 @@
   "dark": "Per each stacked Soul, Crit Chance is increased by 50 and Crit DMG is increased by 30%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Demon (Possessed Human)",
+      "age": "14 (Demon:???)",
+      "height": "141 cm",
+      "birthday": "12(Month) 20(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Fighting powerful demons and devouring them afterward",
       "dislikes": "Weaklings"
     },

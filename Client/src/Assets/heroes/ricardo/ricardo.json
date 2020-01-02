@@ -149,12 +149,12 @@
   "dark": "When own HP goes below 40%, HP does not go under 10% for 6 sec, and all allies' ATK is increased by 50% of own M.DEF. This effect is activated once every 60 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "71 Years",
+      "height": "215 cm",
+      "birthday": "8(Month) 24(Day), Month of Vitality",
+      "constellation": "Kandala the Conqueror",
       "likes": "People, helping others",
       "dislikes": "Demons, especially those who attack people for no reason"
     },

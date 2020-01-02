@@ -149,12 +149,12 @@
     "dark": "Upon dodging, all skill cooldowns are reduced by 2%. Also, ATK is boosted by 3%, and Atk Spd is boosted by 30. The ATK and Atk Spd Boosts can stack up to 10 times.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Harpy",
+            "age": "19 Years",
+            "height": "180 cm",
+            "birthday": "12(Month) 16(Day), Month of Patience",
+            "constellation": "Hexipolia the Wanderer",
             "likes": "Fellow kinsmen, those who possess a warrior's pride",
             "dislikes": "Cowards, hypocrites"
         },

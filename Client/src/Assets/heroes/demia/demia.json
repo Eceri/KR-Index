@@ -149,12 +149,12 @@
   "dark": "At the beginning of every battle, decrease the ATK of all enemies by 20% for 6 sec. This effect cannot be dispelled.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "25 Years",
+      "height": "184 cm",
+      "birthday": "1(Month) 30(Day), Month of Protection",
+      "constellation": "Guardian Mertis",
       "likes": "A righteous monarch to serve",
       "dislikes": "Weak-minded people who betray others"
     },

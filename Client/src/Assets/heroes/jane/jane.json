@@ -149,12 +149,12 @@
   "dark": "Each hit of Jane's attacks increase her ATK and Recovery Rate by 1% each. (Maximum stack number is 50)",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Undead",
+      "age": "118 Years",
+      "height": "150 cm",
+      "birthday": "4(Month) 17(Day), Month of Life",
+      "constellation": "Armil the Saint",
       "likes": "I don't remember exactly... My...",
       "dislikes": "Large bones..."
     },

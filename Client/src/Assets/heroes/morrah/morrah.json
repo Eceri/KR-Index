@@ -149,12 +149,12 @@
     "dark": "Flame stack DMG is increased by 100%, and max stack number is changed to 120",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Demon (Dark Dragon)",
+            "age": "???",
+            "height": "178 cm",
+            "birthday": "4(Month) 9(Day), Month of Life",
+            "constellation": "Armil the Saint",
             "likes": "Formidable enemies, worthy fights",
             "dislikes": "Dragons"
         },

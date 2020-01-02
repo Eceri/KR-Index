@@ -149,12 +149,12 @@
   "dark": "When HP falls below 50%, gain 2 sec of immunity to all DMG. This effect activates only once every 30 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "19 Years",
+      "height": "165 cm",
+      "birthday": "3(Month) 22(Day), Moth of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Sweet cakes, the eyes of righteous knights",
       "dislikes": "Demons"
     },

@@ -149,12 +149,12 @@
   "dark": "Per every 1% of HP lost, Crit DMG is increased by 1% and ATK Spd is increased by 4.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "27 Years",
+      "height": "196 cm",
+      "birthday": "12(Month) 8(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Scarlet, Demia, Clause, and friends call him by this name",
       "dislikes": "Memory from the past, test subject number."
     },

@@ -149,12 +149,12 @@
     "dark": "Upon a Crit Hit, there is a 10% chance of ATK Spd increasing by 300 and Crit DMG increasing by 60% for 5 sec. Does not activate again during activation.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Male",
+            "race": "Human",
+            "age": "20 Years",
+            "height": "179 cm",
+            "birthday": "4(Month) 1(Day), Month of Life",
+            "constellation": "Armil the Saint",
             "likes": "Current self",
             "dislikes": "Past self"
         },

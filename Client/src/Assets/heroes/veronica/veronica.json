@@ -149,12 +149,12 @@
   "dark": "Reduces the cooldown of the caster's all skills by 15% every 20 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "22 Years",
+      "height": "165 cm",
+      "birthday": "3(Month) 10(Day), Month of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Smart people, fast results, clean documents",
       "dislikes": "Messy rooms, working inefficiently"
     },

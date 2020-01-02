@@ -149,12 +149,12 @@
   "dark": "Upon attacking, deal extra P.DMG equal to 20% of ATK to the enemy. There is also a 10% chance of dealing double P.DMG and dispelling positive effects.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "23 Years",
+      "height": "185 cm",
+      "birthday": "6(Month) 7(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Your eyes",
       "dislikes": "Those who do not understand romance"
     },

@@ -149,12 +149,12 @@
   "dark": "Upon using a Skill, increases Mana Recovery/Sec by 10% and Crit DMG by 7%. This effect stacks up to 20 times and is irremovable.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "16 Years",
+      "height": "155 cm",
+      "birthday": "11(Month) 1(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
       "likes": "Tea time with Priscilla",
       "dislikes": "Rude people"
     },

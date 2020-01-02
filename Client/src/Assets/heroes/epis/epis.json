@@ -149,12 +149,12 @@
     "dark": "All of Epis's attacks decrease the M.DEF of hit enemies by 20% for 10 sec. ATK rises by 2% per each enemy hit. Maximum stack number is 10.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Demon",
+            "age": "???",
+            "height": "164 cm",
+            "birthday": "8(Month) 13(Day), Month of Vitality",
+            "constellation": "Kandala the Conqueror",
             "likes": "Anything that strikes interest or curiosity",
             "dislikes": "Boring atmosphere"
         },

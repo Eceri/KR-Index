@@ -149,12 +149,12 @@
     "dark": "Increase all allies' ATK and P.DEF by 3% of own ATK and P.DEF.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "27 Years",
+            "height": "168 cm",
+            "birthday": "1(Month) 15(Day), Month of Protection",
+            "constellation": "Guardian Mertis",
             "likes": "Comrades in arms, her lady, cute outfits for her lady",
             "dislikes": "Untidiness, injustice"
         },

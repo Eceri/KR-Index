@@ -149,12 +149,12 @@
   "dark": "At the beginning of each battle, self gains immunity to M.DMG for 5 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Angel",
+      "age": "???",
+      "height": "193cm",
+      "birthday": "9(Month) 17(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Peace and stability",
       "dislikes": "Demons"
     },

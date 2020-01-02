@@ -149,12 +149,12 @@
   "dark": "Upon using a skill, there is a 7% chance that mana cost of all skill is reduced by 1 for 7 sec. This effect cannot be dispelled.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "19 Years",
+      "height": "165 cm",
+      "birthday": "7(Month) 7(Day), Month of Harmony",
+      "constellation": "Notmun the Tuner",
       "likes": "Romantic stories",
       "dislikes": "Flying insects"
     },

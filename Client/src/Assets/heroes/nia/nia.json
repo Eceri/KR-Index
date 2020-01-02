@@ -173,12 +173,12 @@
   "dark": "Normal attacks and [Enhanced Scar of Barbarism] deal additional P.DMG equal to 25% of ATK that ignores DEF.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human (Possessing Demon Blood)",
+      "age": "16 Years",
+      "height": "156 cm",
+      "birthday": "11(Month) 23(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
       "likes": "Meat, people who give her meat, resting her head on other people's lap, sunbathing",
       "dislikes": "Vegetable, people from Vespia Empire, Demons, Demonic Beasts, being tested, cold weather"
     },

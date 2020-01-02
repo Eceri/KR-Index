@@ -149,12 +149,12 @@
   "dark": "Increases ATK Spd of normal attack by 400 and additional 40 per every skill use. This effect cannot be dispelled, and can be stacked up to max 10 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "18 Years",
+      "height": "164 cm",
+      "birthday": "9(Month) 12(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Her Family, the knights, pride, creed and valor, chess, and smart people.",
       "dislikes": "Those disgraceful to the Empire, and the enemies that threaten peace of the Empire."
     },

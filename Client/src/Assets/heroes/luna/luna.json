@@ -149,12 +149,12 @@
   "dark": "At the beginning of each battle, grants Blessing of the Carrot for 20 sec. Blessing of the Carrot increases DMG dealt to Non-Hero enemies by 30%, and reduces DMG received by 30%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Animal Hybrid (Rabbit)",
+      "age": "???",
+      "height": "110 cm",
+      "birthday": "8(Month) 8(Day), Month of Vitality",
+      "constellation": "Kandala the Conqueror",
       "likes": "Carrots, friends",
       "dislikes": "Hunger"
     },

@@ -149,12 +149,12 @@
   "dark": "Upon successfully blocking M.DMG, all allies have their M.Block increased by 200 and M.DEF by 10% of Loman's M.DEF for 5 sec. This effect is activated only once every 5 seconds.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Loman",
+      "race": "Human",
+      "age": "24 Years",
+      "height": "187 cm",
+      "birthday": "1(Month) 12(Day), Month of Protection",
+      "constellation": "Guardian Mertis",
       "likes": "Clause, Demia, Jelly, Wood Carving",
       "dislikes": "Mint, Ginseng"
     },

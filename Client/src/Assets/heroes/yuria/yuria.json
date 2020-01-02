@@ -149,12 +149,12 @@
   "dark": "At the beginning of the first battle, Yuria gains 'Blessing of Foresight.' 'Blessing of Foresight' increases All Dodge Chance by 300 and reduces All DMG to self by 300 for 20 sec. This effect is irremovable. If Yuria is inflicted with CC while under 'Blessing of Foresight,' Yuria instantly dispels CC, removes 'Blessing of Foresight,' and recovers 1 orb of Mana.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "24 Years",
+      "height": "170 cm",
+      "birthday": "3(Month) 12(Day), Month of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Traveling, her job, warm baths, bard's poems and songs",
       "dislikes": "People who don't take clothes seriously, people who disrespect other's fates, lies"
     },

@@ -157,12 +157,12 @@
     "dark": "All of caster's attacks will be critical hits, but the caster becomes unable to block while taking 25% increased damage.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "19 Years",
+            "height": "172 cm",
+            "birthday": "7(Month) 6(Day), Month of Harmony",
+            "constellation": "Notmun the Tuner",
             "likes": "Her sister Erze, strawberry parfait, fine swords, the moon.",
             "dislikes": "Vampire Erze, spiders"
         },

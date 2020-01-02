@@ -149,12 +149,12 @@
     "dark": "Recovers 350 Mana of all allies every 3 sec.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Dragon",
+            "age": "???",
+            "height": "175 cm",
+            "birthday": "7(Month) 9(Day), Month of Harmony",
+            "constellation": "Notmun the Tuner",
             "likes": "Swimming, washing her hair",
             "dislikes": "Anything that disrupts the world's order"
         },

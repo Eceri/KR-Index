@@ -149,12 +149,12 @@
   "dark": "Upon attack, with 15% chance deals extra M.DMG by 10% of Max HP and injects 1 extra stack of Electricity.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Homunculus",
+      "age": "16 (No growth since creation)",
+      "height": "152 cm",
+      "birthday": "2(Month) 23(Day), Month of Wisdom",
+      "constellation": "Satua the Sage",
       "likes": "Mirianne, and everyone at the orphanage",
       "dislikes": "Wizards, alchemists"
     },

@@ -149,12 +149,12 @@
   "dark": "Upon auto attacking an enemy with 50 or more stacks of Tickle Tickle Potion, deals 200% of ATK as extra P.DMG that ignores DEF.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Animal Hybrid (Fox)",
+      "age": "14 Years",
+      "height": "130 cm",
+      "birthday": "11(Month) 19(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
       "likes": "Developing new poisons, those who understand the joy of developing new drugs",
       "dislikes": "People who are prejudiced against poisons"
     },

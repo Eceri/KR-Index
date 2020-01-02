@@ -163,12 +163,12 @@
     "dark": "At the beginning of every battle, gains 2 stacks of [Excellent Ingredient] and increases MP Recovery/Sec by 200% for 10 seconds.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "20 Years",
+            "height": "166 cm",
+            "birthday": "11(Month) 2(Day), Month of Fortune",
+            "constellation": "Gisla the Sharpshooter",
             "likes": "Eating, cooking, people who enjoy her dishes",
             "dislikes": "People who disparage her cooking"
         },

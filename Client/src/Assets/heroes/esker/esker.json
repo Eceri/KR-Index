@@ -149,12 +149,12 @@
   "dark": "Every 10 sec, gain up to 6 stacks of Blessing of the Dice. Reduces Cooldown of active skills by 5% per 1 Blessing of the Dice gained.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "23 Years",
+      "height": "184 cm",
+      "birthday": "12(Month 26(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Mumbo Jumbo Runic Cube, Piano Concerto No. 7 of Hayedden, Silver Catfish Filet spiced with 4 drops of lemon juice.",
       "dislikes": "Fishing, earthworms, con artists, everything that's spicy."
     },

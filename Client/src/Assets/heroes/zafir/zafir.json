@@ -149,12 +149,12 @@
   "dark": "Upon Skill use, recovers 700 Mana. If there are 5 or more enemies, Mana Recovery is doubled, and ATK Spd is increased by 500 for 5 sec. This effect does not stack.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "20 Years",
+      "height": "185 cm",
+      "birthday": "7(Month) 30(Day), Month of Harmony",
+      "constellation": "Notmun the Tuner",
       "likes": "Cats, sand art, people in the desert",
       "dislikes": "Those who try to harm the people that he cares for"
     },

@@ -149,12 +149,12 @@
   "dark": "All effects of curse are enhanced. [Curse of Petrification] Petrification duration is increased by 2 sec. [Curse of Time] Curse of Time duration is increased by 3 sec. [Curse of Pain] Curse of Pain DOT is increased by 50%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Demon",
+      "age": "???",
+      "height": "165 cm",
+      "birthday": "6(Month) 2(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Unexpected situations, people who fight against the flow of things",
       "dislikes": "Boring scenarios, obvious stories"
     },

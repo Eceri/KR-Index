@@ -149,12 +149,12 @@
   "dark": "When auto attacking, there is a 10% chance of stacking 1 stack of Blade. Nyx's ATK is boosted by 10% per each Blade Stack he holds.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "???",
+      "height": "186 cm",
+      "birthday": "9(Month) 3(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Interdimensional travel, magic experiments",
       "dislikes": "People who do not listen to others"
     },

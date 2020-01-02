@@ -149,12 +149,12 @@
   "dark": "At the beginning of each battle, a random ally is immune to DMG for 3 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "27 Years",
+      "height": "171 cm",
+      "birthday": "3(Month) 28(Day), Month of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Red wine, nuts, flashy fans",
       "dislikes": "Nasty customers Greasy hair Bad odor"
     },

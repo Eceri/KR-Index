@@ -149,12 +149,12 @@
   "dark": "At the start of every battle, adds 1 Trance stack recovers 500 MP.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "16 Years",
+      "height": "165 cm",
+      "birthday": "6(Month) 22(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Beautiful melody, soft breezes",
       "dislikes": "Ghosts, pumpkin ghouls"
     },

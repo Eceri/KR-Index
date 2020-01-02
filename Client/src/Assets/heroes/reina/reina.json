@@ -149,12 +149,12 @@
   "dark": "When auto attacking, there is a 10% chance to increase Crit DMG by 100% for 5 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "17 Years",
+      "height": "160 cm",
+      "birthday": "11(Month) 30(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
       "likes": "Attractive men",
       "dislikes": "Uninteresting men"
     },

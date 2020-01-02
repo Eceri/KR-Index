@@ -149,12 +149,12 @@
   "dark": "At the beginning of the first battle, gains [Ancestral Advice] that increases own CC Resist by 200 for 5 sec. If [Ancestral Advice] is still active after 5 sec, dispels negative effects from 3 random allies, and increases their DEF by 50% for 10 sec. DEF Boost is irremovable.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Lizardman",
+      "age": "53 Years",
+      "height": "242 cm",
+      "birthday": "2(Month) 7(Day), Month of Wisodm",
+      "constellation": "Satua the Sage",
       "likes": "His tribe, leisurely reading, fish & seafood dishes",
       "dislikes": "Freedom oppressor, disputer, violence"
     },

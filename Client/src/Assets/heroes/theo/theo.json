@@ -149,12 +149,12 @@
   "dark": "When 'God of Lightning' is activated, recovers half mana instead. When mana is full, ATK is increased by 50% for 10 sec. This effect only activates once every 20 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "123 Years",
+      "height": "194 cm",
+      "birthday": "4(Month), 15(Day), Month of Life",
+      "constellation": "Armil the Saint",
       "likes": "My lady, Jane",
       "dislikes": "Demons and their officers"
     },

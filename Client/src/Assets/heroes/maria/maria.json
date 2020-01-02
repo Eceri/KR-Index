@@ -149,12 +149,12 @@
     "dark": "Upon a Crit Hit, target's CC resistance is reduced by 250 for 10 sec, and all Skill Cooldown, excluding the skill in use, is reduced by 2% each.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "125 Years (Physically always 25 Years)",
+            "height": "168 cm",
+            "birthday": "7(Month) 19(Day), Month of Harmony",
+            "constellation": "Hotmun the Tuner",
             "likes": "Corrupting the believers of Lua",
             "dislikes": "Lua and her church"
         },

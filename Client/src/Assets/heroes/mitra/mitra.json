@@ -149,12 +149,12 @@
   "dark": "Upon a Critical Hit, increases own Crit DMG by 0.5% and ATK Spd by 5. This effect cannot be dispelled, and can be stacked up to max 100 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "17 Years",
+      "height": "192 cm",
+      "birthday": "12(Month) 17(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Battle, exciting fights, the smell of gunpowder",
       "dislikes": "Pretensions Hypocrisy"
     },

@@ -149,12 +149,12 @@
   "dark": "Increases ATK of all allies by 5% of own ATK.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "18 Years",
+      "height": "170 cm",
+      "birthday": "1(Month) 1(Day), Month of Protection",
+      "constellation": "Guardian Mertis",
       "likes": "Lua, current job",
       "dislikes": "Injustice"
     },

@@ -149,12 +149,12 @@
     "dark": "All skill HP consumption is increased by 50% but cooldowns are reduced by 20%.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Vampire",
+            "age": "???",
+            "height": "172 Years",
+            "birthday": "2(Month) 22(Day), Month of Wisdom",
+            "constellation": "Satua the Sage",
             "likes": "Traveling leisurely and comfortably",
             "dislikes": "War and disorder"
         },

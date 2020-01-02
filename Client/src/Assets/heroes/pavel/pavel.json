@@ -149,12 +149,12 @@
   "dark": "Every 3 sec, attacks all enemies and deals 50% of ATK as M.DMG, inflicting Frost with 50% chance. Enemies already inflicted with Frost takes 300% of ATK as M.DMG over time for 3 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male(+Female)",
+      "race": "Human (Possessing a dragon's soul)",
+      "age": "243 (Dragon: ???)",
+      "height": "172 cm",
+      "birthday": "12(Month) 2(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Peace, silence, reading",
       "dislikes": "Hot weather, loud things"
     },

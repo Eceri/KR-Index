@@ -149,12 +149,12 @@
   "dark": "When taking DMG, decreases ATK Spd of the attacking enemy by 300 for 5 sec. This effect is activated only once every 5 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Orc",
+      "age": "46 Years",
+      "height": "210 cm",
+      "birthday": "3(Month) 11(Day), Month of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Fellow kinsmen, world peace",
       "dislikes": "Malduk, war"
     },

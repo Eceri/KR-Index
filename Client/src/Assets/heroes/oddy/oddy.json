@@ -149,12 +149,12 @@
   "dark": "Every 10 sec, any skills on cooldown for 4 random allies have their cooldowns reduced by 1 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Redpur (Formerly Human)",
+      "age": "???",
+      "height": "125 cm",
+      "birthday": "10(Month) 4(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "Clocks",
       "dislikes": "Poachers"
     },

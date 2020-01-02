@@ -149,12 +149,12 @@
     "dark": "If a target has 10 stacks of Ember, increases the M.DMG the target takes by 30%, and adds 2 stacks of Ember per second to all non-hero enemies.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "17 Years",
+            "height": "156 cm",
+            "birthday": "8(Month) 1(day), Month of Vitality",
+            "constellation": "Kandala the Conqueror",
             "likes": "Campfire, pillows (?)",
             "dislikes": "Machines"
         },

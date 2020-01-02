@@ -149,12 +149,12 @@
   "dark": "Upon using a Skill, the self blocks all DMG for 2 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Elf",
+      "age": "???",
+      "height": "166 cm",
+      "birthday": "8(Month) 27(Day), Month of Vitality",
+      "constellation": "Kandala the Conqueror",
       "likes": "Whispers of Elementals, Selene, making friends",
       "dislikes": "Loneliness, boredom"
     },

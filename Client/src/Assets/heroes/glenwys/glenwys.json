@@ -149,12 +149,12 @@
     "dark": "Increases ATK of all allies by 8% of self's All DEF.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Human",
+            "age": "20 Years",
+            "height": "168 cm",
+            "birthday": "5(Month) 11(Day), Month of Hope",
+            "constellation": "Graham the Thief",
             "likes": "Training, smiles of Empire Citizens, lively atmosphere, apple pies.",
             "dislikes": "Citizens suffering, social gatherings and parties of nobles."
         },

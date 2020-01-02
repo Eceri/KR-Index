@@ -149,12 +149,12 @@
   "dark": "When attacking with Holy Nova and Spear of Light, deal extra M.DMG equal to 100% of ATK and reduce the used skill's cooldown by 20%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "28 Years",
+      "height": "190 cm",
+      "birthday": "9(Month) 12(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Lua",
       "dislikes": "Lua"
     },

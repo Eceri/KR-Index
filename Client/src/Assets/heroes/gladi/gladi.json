@@ -149,12 +149,12 @@
   "dark": "Increases all DEF by 8% of ATK.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Animal Hybrid(Lynx)",
+      "age": "27 Years",
+      "height": "184 cm",
+      "birthday": "8(Month) 30(Day), Month of Vitality",
+      "constellation": "Kandala the Conqueror",
       "likes": "Silvervine, powerful opponents",
       "dislikes": "Gloomy people, indecisive people"
     },

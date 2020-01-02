@@ -149,12 +149,12 @@
   "dark": "Upon auto attacking, deal extra M.DMG worth 80% of ATK and recover 100 mana. There is a 10% chance of dealing double DMG and recovering double mana.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Dark Elf",
+      "age": "163 (Human years: 16)",
+      "height": "189 cm",
+      "birthday": "6(Month) 13(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "His sister",
       "dislikes": "His fellow kinsmen who let his sister die"
     },

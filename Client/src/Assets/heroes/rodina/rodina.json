@@ -149,12 +149,12 @@
   "dark": "Increases ATK by 20% for 10 seconds and sets 3 random enemies as Rodina's target at the start of every battle.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "15 Years",
+      "height": "146 cm",
+      "birthday": "12(Month) 14(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Bears, polar bears, grizzly bears, small bears, large bears",
       "dislikes": "Those who do not value live"
     },

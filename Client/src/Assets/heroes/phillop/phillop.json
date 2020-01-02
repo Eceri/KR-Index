@@ -149,12 +149,12 @@
   "dark": "When auto attacking, there is a 10% chance to Stun the target for 2 sec and deal extra DMG worth 10% of own HP.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Dwarf",
+      "age": "328 Years",
+      "height": "156 cm",
+      "birthday": "8(Month) 5(Day), Month of Vitality",
+      "constellation": "Kandala  the Conqueror",
       "likes": "Drinks, sand bath, smithing, and crafting",
       "dislikes": "Long conferences, the royal throne, Demons (especially the Dark Dragons)"
     },

@@ -149,12 +149,12 @@
   "dark": "Increases own CC Resist by 500.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "24 Years",
+      "height": "183 cm",
+      "birthday": "6(Month) 23(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Simple things, orderly things",
       "dislikes": "Unruly troublemakers"
     },

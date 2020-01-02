@@ -157,12 +157,12 @@
     "dark": "Upon taking a hit, increases ATK of the ally bound by Soul Link by 3%. This effect can be stacked up to max 20 times.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female (The rabbit is a male)",
+            "race": "Ghost",
+            "age": "???",
+            "height": "131 cm",
+            "birthday": "5(Month) 30(Day), Month of Hope",
+            "constellation": "Graham the Thief",
             "likes": "People who could be friends, animals, lively villages",
             "dislikes": "Scary people, malice, being viewed as a monster"
         },

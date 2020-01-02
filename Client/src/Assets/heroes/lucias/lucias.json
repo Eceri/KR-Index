@@ -149,12 +149,12 @@
   "dark": "Increases own Mana Recovery/Sec by 300% for 3 sec upon casting an active skill.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "24 Years",
+      "height": "181 cm",
+      "birthday": "5(Month) 21(Day), Month of Hope",
+      "constellation": "Graham the Thief",
       "likes": "Dishes made with apple, fishing, prayer, helping people, mysterious magic shows and performances.",
       "dislikes": "Rude ones, undelivered promises, taking human life lightly."
     },

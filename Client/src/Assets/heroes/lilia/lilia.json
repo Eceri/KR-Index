@@ -149,12 +149,12 @@
     "dark": "ATK is increased by 15% per 1 orb of mana.",
     "background": {
         "profile": {
-            "gender": "missing",
-            "race": "missing",
-            "age": "missing",
-            "height": "missing",
-            "birthday": "missing",
-            "constellation": "missing",
+            "gender": "Female",
+            "race": "Dragon",
+            "age": "???",
+            "height": "120 cm",
+            "birthday": "9(Month) 14(Day), Month of Truth",
+            "constellation": "Judgment Layan",
             "likes": "Laias, sweet drinks, people in the desert",
             "dislikes": "Those flirting with her sister (Neraxis, Cain)"
         },

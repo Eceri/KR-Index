@@ -149,12 +149,12 @@
   "dark": "When receiving Critical DMG, there is a 5% chance the attacker is dispelled of all positive effects and is stunned for 1 sec. Skill cooldown is 8 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Human",
+      "age": "18 Years",
+      "height": "168 cm",
+      "birthday": "9(Month) 21(Day), Month of Truth",
+      "constellation": "Judgment Layan",
       "likes": "Honest people Just people",
       "dislikes": "Opportunists Oppressors of the weak"
     },

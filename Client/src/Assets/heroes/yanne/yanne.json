@@ -149,12 +149,12 @@
   "dark": "Auto-attacks ignore enemy Block effects.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Barbarian",
+      "age": "21 Years",
+      "height": "185 cm",
+      "birthday": "6(Month) 30(Day), Month of Love",
+      "constellation": "Mira the Minstrel",
       "likes": "Delicious dishes, cooking, monster hunting",
       "dislikes": "Monsters that cannot be defeated physically"
     },

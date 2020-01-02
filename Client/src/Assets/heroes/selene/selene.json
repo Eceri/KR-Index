@@ -149,12 +149,12 @@
   "dark": "Reduces own Crit Chance by 300 and increases Crit DMG by 150%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Elf",
+      "age": "???",
+      "height": "169 cm",
+      "birthday": "7(Month) 11(Day), Month of Harmony",
+      "constellation": "Notmun the Tuner",
       "likes": "Those who work in harmony and take responsibilities",
       "dislikes": "Those who abandon their own beliefs Those who flee from danger"
     },

@@ -149,12 +149,12 @@
   "dark": "Steals HP equal to 25% of DMG dealt by the final normal attack and gains 1 stack of [Sweet Blood].",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Female",
+      "race": "Vampire",
+      "age": "18 Years",
+      "height": "170 cm",
+      "birthday": "7(Month) 6(Day), Month of Harmony",
+      "constellation": "Notmun the Tuner",
       "likes": "Seria as a sister, chocolate parfait, blood of the corrupted",
       "dislikes": "Seria as a vampire hunter, spiders"
     },

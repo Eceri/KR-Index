@@ -149,12 +149,12 @@
   "dark": "Upon a Critical Hit, gain 5% Crit DMG and 30 CC Accuracy. Stacks up to 10 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Goblin",
+      "age": "19 Years",
+      "height": "120 cm",
+      "birthday": "5(Month) 12(Day), Month of Hope",
+      "constellation": "Graham the Thief",
       "likes": "Gunpowder, guns, cannons",
       "dislikes": "Foolish Goblins"
     },

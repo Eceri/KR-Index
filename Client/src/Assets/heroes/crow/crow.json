@@ -149,12 +149,12 @@
   "dark": "Increases Mana Cost of all skills by 1 and DMG by 75%.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "32 years",
+      "height": "193 cm",
+      "birthday": "7(Month) 8(Day), Month of Harmony",
+      "constellation": "Notmun the Tuner",
       "likes": "Candy canes, a pendant safeguarding a memory, the forgotten nagging of a loved one",
       "dislikes": "Pirates, Gods who have taken everything away from him. And now, tobacco"
     },

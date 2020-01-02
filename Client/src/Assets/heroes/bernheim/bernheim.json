@@ -149,12 +149,12 @@
   "dark": "Upon normal attack, causes the target to take 1% increased M.DMG and reduces their M.DEF by 1% for 10 sec. This effect stacks up to 20 times.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Human",
+      "age": "30 Years",
+      "height": "194 cm",
+      "birthday": "12(Month) 30(Day), Month of Patience",
+      "constellation": "Hexipolia the Wanderer",
       "likes": "Landscape back at home, leisurely reading, alone time, Queen Artemia",
       "dislikes": "Weaker self in the past, Targarios"
     },

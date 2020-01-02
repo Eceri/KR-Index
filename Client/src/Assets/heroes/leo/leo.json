@@ -149,12 +149,12 @@
   "dark": "Upon attacking, there is a 10% chance of dealing 120% of ATK as P.DMG to a random enemy, while also removing 300 mana and inflicting Silence for 1 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Gnome",
+      "age": "???",
+      "height": "144 cm",
+      "birthday": "3(Month) 23(Day), Month of Insight",
+      "constellation": "Lasiphil the Prophet",
       "likes": "Reading, writing, recording",
       "dislikes": "Loneliness"
     },

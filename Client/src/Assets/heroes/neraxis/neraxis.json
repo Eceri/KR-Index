@@ -149,12 +149,12 @@
   "dark": "At the beginning of every battle, reduces DMG that non-Hero enemies deal to all allies except Neraxis by 10% for 30 sec.",
   "background": {
     "profile": {
-      "gender": "missing",
-      "race": "missing",
-      "age": "missing",
-      "height": "missing",
-      "birthday": "missing",
-      "constellation": "missing",
+      "gender": "Male",
+      "race": "Dragon",
+      "age": "???",
+      "height": "161 cm",
+      "birthday": "10(Month) 28(Day), Month of Friendship",
+      "constellation": "Asiphia the Empress",
       "likes": "Laias",
       "dislikes": "Demons, Cain, Lilia, and everything that gets in his way."
     },
