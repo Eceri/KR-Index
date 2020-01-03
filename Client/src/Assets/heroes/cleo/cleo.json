@@ -173,8 +173,8 @@
     "skins": ["Magic Girl", "Beachside", "Witch", "Twinkle Pure", "Maid", "Smile of the Crimson Flames", "Beachside 2"],
     "voice": {
         "actor": {
-            "jp": "N/A",
-            "kr": "N/A",
+            "jp": "Ozawa Ari",
+            "kr": "Yeo Min Jeong",
             "en": "N/A"
         },
         "lines": {
