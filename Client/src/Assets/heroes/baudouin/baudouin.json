@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Chairman", "Beachside", "Winder's Mediator", "Gentleman of the Dark"],
   "voice": {
     "actor": {
       "jp": "N/A",

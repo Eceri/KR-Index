@@ -55,8 +55,8 @@ export const Hero = props => {
         <TabList>
           <Tab>General</Tab>
           <Tab>Story</Tab>
-          {/* <Tab>Skins</Tab>
-          <Tab>Voice</Tab> */}
+          <Tab>Skins</Tab>
+          {/*<Tab>Voice</Tab> */}
         </TabList>
         <TabPanel>
           <HeroGeneral heroPath={heroPath} heroInfo={heroInfo} />

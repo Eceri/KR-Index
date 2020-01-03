@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Volleyball Club", "Beachside", "Fallen Angel", "Halcyon Knights", "Heaven's Proposal",  "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "N/A",

@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Demon Archduke"],
   "voice": {
     "actor": {
       "jp": "N/A",

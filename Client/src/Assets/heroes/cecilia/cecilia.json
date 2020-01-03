@@ -194,7 +194,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Werewolf Girl", "Christmas of Justice"],
   "voice": {
     "actor": {
       "jp": "N/A",

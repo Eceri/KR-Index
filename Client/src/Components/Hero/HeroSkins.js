@@ -6,7 +6,7 @@ export const HeroSkins = props => {
   let { heroPath, skins } = props
   let heroSkins = [];
   heroSkins.push({
-    file: `${heroPath}base.png`,
+    file: `${heroPath}Base.png`,
     title: "Base"
   });
   skins.map(skin =>

@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Pirate", "The Noble March", "Soldier's Holiday", "Beachside", "Christmas of the Inquisitor"],
   "voice": {
     "actor": {
       "jp": "N/A",

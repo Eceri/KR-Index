@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Silver Courage", "Dark Knight", "Relaxing Day"],
   "voice": {
     "actor": {
       "jp": "N/A",

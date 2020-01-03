@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Cheshire Cat", "Twinkle Pure", "Science Club", "Maid", "Maid [alt]", "Space Age"],
     "voice": {
         "actor": {
             "jp": "N/A",

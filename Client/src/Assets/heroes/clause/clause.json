@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Student Council", "Beachside", "Halcyon Knights", "Ice Knight", "Butler", "Centurion", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "N/A",

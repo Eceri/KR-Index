@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Love Hearts", "Santa", "Student President", "Beachside", "Witch", "The Light's Company", "Queen's Excursion", "Beachside 2", "Artemia of Honor"],
   "voice": {
     "actor": {
       "jp": "N/A",

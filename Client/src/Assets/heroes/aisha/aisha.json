@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Tennis Club", "Beachside", "Beachside 2", "Maid", "Love Hearts", "Santa", "Yukata", "Flower of Nobility", "Fallen"],
   "voice": {
     "actor": {
       "jp": "N/A",
