@@ -10,7 +10,7 @@ export const Home = () => {
         <h1 style={{textAlign: "center"}}>Welcome to KR Index</h1>
         <p>This is a WIP. We're missing a bunch of info, but we are working on it!</p>
         <p>
-          If you have any suggestions or found errors, you can leave us a ticket over at  <Link href="https://github.com/Eceri/KR-Index" target="_blank" style={{color: "lightblue"}}>GitHub</Link>.
+          If you have any suggestions or found errors, you can leave us a ticket over at  <a href="https://github.com/Eceri/KR-Index" target="_blank" style={{color: "lightblue"}}>GitHub</a>.
         </p>
       </div>
     </React.Fragment>
