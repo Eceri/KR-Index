@@ -65,7 +65,7 @@ const Artifact = artifact => {
 
 const renderTop = (artifact, star, setStar) => (
   <div>
-    <Img
+    <img
       src={require(`../../Assets/artifacts/${artifact.name}.png`)}
       alt="Pic"
       align="left"
