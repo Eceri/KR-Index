@@ -17,9 +17,9 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Noble Fate, Mahitra for 8 sec. While the soul is summoned, increases own Crit DMG by 50%, deals DMG to enemy every 0.5 sec, and increases M.DMG the target takes by 25% for 5 sec.",
-      "advancement1": "Reacharges Mana to the mac for the duration of Skill.",
-      "advancement2": "Increases Skill duration by 4 sec, and grants CC immunity to self for the duration of Skill.",
+      "advancement0": "Summons the soul of Noble Fate, Mahitra for 8 sec. While the soul is summoned, increases own Crit DMG by 50%, deals ??? DMG to enemy every 0.5 sec, and increases M.DMG the target takes by 25% for 5 sec.",
+      "advancement1": "Fully recovers Mana for the duration of skill.",
+      "advancement2": "The duration of Skill increases by 4 sec, and self gains immunity to CC for the duration of Skill.",
       "activation": "Charges up upon Dealing DMG 120 times.",
       "cd": 22,
       "charges": 7

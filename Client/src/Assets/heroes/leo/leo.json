@@ -19,7 +19,7 @@
     "soulWeapon": {
       "advancement0": "Summons the soul of Pheonix Quill, Belisa, creating a shield on an ally wiht the highest ATK for 10 sec that absorbs ??? DMG, grants immunity to CC, and increases DMG dealt to enemies by 20% for 10 sec. Afterward, dispels positive effects of frontal enemies in a straight line and deals ??? P.DMG.",
       "advancement1": "Changes Skill Activation Requirements to 3 times.",
-      "advancement2": "Hit enemies cannot receive positive effects for 5 sec.",
+      "advancement2": "Prevents hit enemies from receiving positive effects for 5 sec.",
       "activation": "Charges up upon using Skills 5 times.",
       "cd": 23,
       "charges": 5
@@ -161,7 +161,7 @@
     "story": "In the royal palace of Orvel, there exists a library that is said to be infinite in space. Leo is a Gnome who has been protecting this library for a very long time. Having memorized every book in the library, he is the most knowledgeable person in the entire palace, and many visit the library, seeking his wisdom. However, he still seems to have difficulty interacting with others.",
     "itemIntroductions": {
       "weapon": "The phoenix is a holy beast that symbolizes eternal life. As elusive as the beast itself is, its feather is considered extremely rare as well. It is said that a quill crafted from a phoenix feather is a powerful magical tool in its own right. Runes drawn with this quill can serve as a powerful medium for Rune Magic.",
-      "soul": "",
+      "soul": "The Phoenix is the divine beast of flames as well as the symbol of eternity, just like Leo's infinite desire for academic knowledge.\nLeo is the grandmaster of ancient letters, whose wisdom is envied by other wizards. Yet, Leo still works incessantly to decipher the unknown signs, for he still yearns to learn the history and truth recorded in those letters.\nLeo kept on researching hard to uncover the meaning and purpose of the ancient letters, and this sense of duty to record ancient history eventually awakened the soul that was sleeping inside his favourite quill.\nBasila, now awakened as a phoenix, shares the memory of ancient times which its eons-old soul contains, and through this memory, it will give Leo the answers to the meaning and history of the ancient letters.",
       "treasures": [
         "Leo's favorite encyclopedia on the interpretation of ancient letters. It's actually a 3-volume set, but the second and third volumes were burnt purposely by someone, leaving [First - Letters for curses and healing] as the only book left. Leo always feels upset, thinking that the secrets of the ancient letters could have been revealed if he had the other two books. Meanwhile, the book is locked and bears a mystical spell, making it impossible to read unless the book allows itself to be read.",
         "Ink made by extracting young leaves from the World Tree. Only 10 droplets can be produced in a year. The magic spells written with this ink grant great vitality to the body. It's very precious and hard to obtain, so Leo doesn't use it unless it's for a special occasion.",
