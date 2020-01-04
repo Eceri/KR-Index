@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Dean", "Santa", "Beachside"],
   "voice": {
     "actor": {
       "jp": "Matsumoto Shinobu",

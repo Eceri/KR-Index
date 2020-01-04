@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Ghost Knight", "Principal", "Beachside", "Santa", "Legendary Center"],
   "voice": {
     "actor": {
       "jp": "Naomi Kusumi",

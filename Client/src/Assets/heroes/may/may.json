@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Little Demon", "High School", "Beachside"],
   "voice": {
     "actor": {
       "jp": "Toyota Moe",

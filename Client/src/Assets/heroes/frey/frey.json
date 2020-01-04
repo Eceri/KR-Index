@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Honor Student", "Beachside", "Witch", "Ao Dai", "Light's Blessing", "Vestal", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "Kakuma Ai",

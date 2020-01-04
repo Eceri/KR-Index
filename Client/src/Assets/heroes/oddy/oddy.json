@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Vampire", "Nutritionist", "Beachside", "Mariachi", "Christmas of a Divine Animal"],
   "voice": {
     "actor": {
       "jp": "Ito Kentaro",

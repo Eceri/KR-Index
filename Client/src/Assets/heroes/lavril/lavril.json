@@ -178,7 +178,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Hanbok", "Night of Carrot-filled Dreams", "Beachside", "Christmas of a Ghost"],
     "voice": {
         "actor": {
             "jp": "N/A",

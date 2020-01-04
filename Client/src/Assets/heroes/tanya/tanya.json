@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Beachside 2", "R.R. Hood", "Band Member", "Beautiful Silence"],
   "voice": {
     "actor": {
       "jp": "Iwami Manaka",

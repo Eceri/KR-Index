@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Dark Knight"],
     "voice": {
         "actor": {
             "jp": "N/A",

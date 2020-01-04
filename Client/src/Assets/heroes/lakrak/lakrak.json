@@ -169,7 +169,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Patch Style", "Clown", "Ice Demon", "Beachside", "Miner"],
   "voice": {
     "actor": {
       "jp": "N/A",

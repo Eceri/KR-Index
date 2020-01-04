@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Vampire", "Bolero", "Janitor", "Butler", "Infinite Shooting Guard"],
   "voice": {
     "actor": {
       "jp": "Imaruoka Atsushi",

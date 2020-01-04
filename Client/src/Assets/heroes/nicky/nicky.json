@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Viking", "Beachside", "Brutal Power Forward"],
   "voice": {
     "actor": {
       "jp": "N/A",

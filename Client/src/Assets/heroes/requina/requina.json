@@ -169,7 +169,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Grade School", "Beachside", "Serpent Tamer", "Little Witch of Poison"],
   "voice": {
     "actor": {
       "jp": "Tomita Miyu",

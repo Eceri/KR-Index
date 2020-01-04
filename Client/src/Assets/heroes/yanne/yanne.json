@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["March Hare", "Rudolph", "Native American", "Delinquent", "Beachside", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "Fujita Masayo",

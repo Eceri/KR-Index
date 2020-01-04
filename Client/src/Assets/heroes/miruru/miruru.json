@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Grade School", "Beachside", "Santa", "Viking", "Little Pumpkin Witch"],
   "voice": {
     "actor": {
       "jp": "N/A",

@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Troublemaker", "Beachside", "Cheshire Cat", "Love, the Curse Breaker", "Christmas of the Half-Demon"],
   "voice": {
     "actor": {
       "jp": "Watanabe Hiroshi",

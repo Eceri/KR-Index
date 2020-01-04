@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Butler", "General of the Guards", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "Tachibana Shinnosuke",

@@ -194,7 +194,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Goth", "Beachside", "Christmas of the Wild"],
   "voice": {
     "actor": {
       "jp": "N/A",

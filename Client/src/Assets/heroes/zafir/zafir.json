@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Breath of Warm Sand", "Evangelist of Love", "Prince's Dignity"],
   "voice": {
     "actor": {
       "jp": "N/A",

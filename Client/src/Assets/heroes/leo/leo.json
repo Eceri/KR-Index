@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Reading Club", "Beachside", "Lederhosen", "Magic that Conveys Love", "Magic that Conveys Love [alt]", "Christmas of the Scribe"],
   "voice": {
     "actor": {
       "jp": "Ishihara Kaori",

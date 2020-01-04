@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Halcyon Knights", "Rudolph", "Cowboy", "Student Council", "Wolf of Passion", "Mad Wolf"],
   "voice": {
     "actor": {
       "jp": "Majima Junji",

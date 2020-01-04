@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Student Pres.", "Beachside", "Love Hearts", "Snow Princess", "Santa", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "Nagatsuma Juri",

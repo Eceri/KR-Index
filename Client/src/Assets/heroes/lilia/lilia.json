@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Cheshire Cat", "Maid", "Caroler", "Cradle of Dragons"],
     "voice": {
         "actor": {
             "jp": "Ono Yuko",

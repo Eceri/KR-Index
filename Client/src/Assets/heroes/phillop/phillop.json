@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Vice-Principal", "Santa", "Beachside", "Pumpkin Head"],
   "voice": {
     "actor": {
       "jp": "Fukumatsu Shinya",

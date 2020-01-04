@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Princess of the Night"],
   "voice": {
     "actor": {
       "jp": "N/A",

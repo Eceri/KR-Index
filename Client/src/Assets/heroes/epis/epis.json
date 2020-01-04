@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Santa", "Samba", "Shackles of Seduction", "Angel", "Free Soul", "Nurse"],
     "voice": {
         "actor": {
             "jp": "Makino Yui",

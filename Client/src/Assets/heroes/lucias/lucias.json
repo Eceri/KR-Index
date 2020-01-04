@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Caroler", "Noble Grace", "Beachside"],
   "voice": {
     "actor": {
       "jp": "N/A",

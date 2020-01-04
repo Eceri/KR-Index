@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Principal", "Rudolph", "Beachside", "Starlight Lamp-Keeper", "Guide of Ghastly Spirits"],
   "voice": {
     "actor": {
       "jp": "Furuki Nozomi",

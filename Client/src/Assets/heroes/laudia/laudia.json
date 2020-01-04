@@ -186,7 +186,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Maid", "Another Busy Day"],
     "voice": {
         "actor": {
             "jp": "N/A",

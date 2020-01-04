@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Hairdresser"],
   "voice": {
     "actor": {
       "jp": "Kanda Akemi",

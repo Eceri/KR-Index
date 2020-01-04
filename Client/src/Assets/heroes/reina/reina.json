@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Fencing Club", "Beachside", "Love Hearts", "Gift of the Comet", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "N/A",

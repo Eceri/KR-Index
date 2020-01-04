@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Ice Mercenary", "Beachside", "Butler"],
   "voice": {
     "actor": {
       "jp": "Terashima Takuma",

@@ -169,7 +169,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside"],
   "voice": {
     "actor": {
       "jp": "N/A",

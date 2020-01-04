@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Witch of Destiny"],
   "voice": {
     "actor": {
       "jp": "N/A",

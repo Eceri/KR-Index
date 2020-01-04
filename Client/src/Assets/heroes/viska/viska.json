@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Twinkle Pure", "Snow Fairy", "Art Club", "Dark Lord", "Nine Tail Fox"],
   "voice": {
     "actor": {
       "jp": "Takamori Natsumi",

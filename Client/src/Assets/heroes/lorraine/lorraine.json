@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Professor", "Beachside", "Snow Sage", "Santa", "Beachside 2"],
   "voice": {
     "actor": {
       "jp": "Hirayama Emi",

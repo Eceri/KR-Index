@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside","Beachside [alt]", "Nurse", "Nurse [alt]", "Maid", "Maid [alt]", "Flight Attendant", "Flight Attendant [alt]"],
   "voice": {
     "actor": {
       "jp": "Nakamura Sakura",

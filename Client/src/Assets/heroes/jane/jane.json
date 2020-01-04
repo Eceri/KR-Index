@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Sailor Uniform", "Beachside", "Beachside 2", "Mummy", "Twinkle Pure", "Santa", "Hanbok", "Love Beyond Death", "Midsummer Travel", "Jane of Honor"],
   "voice": {
     "actor": {
       "jp": "Toyota Moe",

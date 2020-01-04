@@ -169,7 +169,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Exchange Student", "Beachside", "Snow Musketeer", "Bride of Spring Flower", "Christmas of a Sniper"],
   "voice": {
     "actor": {
       "jp": "Takayanagi Tomoyo",

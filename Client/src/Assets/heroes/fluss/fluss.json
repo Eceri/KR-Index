@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Drama Club", "Beachside", "Royal Guardian", "Demon Hunter", "Chistmas of the Imperial Guard"],
   "voice": {
     "actor": {
       "jp": "N/A",

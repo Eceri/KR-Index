@@ -169,7 +169,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Mafia"],
   "voice": {
     "actor": {
       "jp": "N/A",

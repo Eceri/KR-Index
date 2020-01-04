@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Love Hearts", "Santa", "Kebaya", "School Nurse", "Beachside", "Madame"],
   "voice": {
     "actor": {
       "jp": "Tokoi Miki",

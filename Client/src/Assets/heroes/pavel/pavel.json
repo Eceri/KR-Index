@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Professor", "Beachside", "Mad Hatter", "Caroler", "Kilt", "Soulbound Companion"],
   "voice": {
     "actor": {
       "jp": "Inoue Yuki",

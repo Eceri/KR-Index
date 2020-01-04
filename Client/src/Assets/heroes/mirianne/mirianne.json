@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Ice Assassin", "Pure Heart", "Beachside", "Butler", "Rudolph", "Fallen", "Sunflower's Scent", "Mirianne of Honor"],
   "voice": {
     "actor": {
       "jp": "Maeda Kaori",

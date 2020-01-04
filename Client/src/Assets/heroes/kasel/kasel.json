@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Disciplinary", "Halcyon Knights", "Ice Prince", "Pure-White Prince", "Beachside", "Royal Agent", "Pirate King"],
   "voice": {
     "actor": {
       "jp": "Ishikawa Kaito",

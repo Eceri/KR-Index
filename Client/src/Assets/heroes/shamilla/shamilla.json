@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Beachside", "Evangelist of Love", "Seduction in the Darkness", "Leisurely Demon"],
   "voice": {
     "actor": {
       "jp": "N/A",

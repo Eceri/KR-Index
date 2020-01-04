@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Delinquent", "Beachside", "Halcyon Knights", "Santa", "Bright Shadow", "Ninja", "Beachside 2"],
     "voice": {
         "actor": {
             "jp": "Kawanishi Kengo",

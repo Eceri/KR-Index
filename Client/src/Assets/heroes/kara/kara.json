@@ -184,7 +184,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Doll with Happiness", "Maid", "Space Age", "Ghostbuster"],
     "voice": {
         "actor": {
             "jp": "Yamamoto Nozomi",

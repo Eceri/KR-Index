@@ -184,7 +184,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Tender Touch of Spring", "Beachside", "Christmas of the Cook"],
     "voice": {
         "actor": {
             "jp": "Kuwahara Yuuki",

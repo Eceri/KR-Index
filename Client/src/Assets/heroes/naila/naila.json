@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Catpunch", "Beachside", "Wing of Northern Wind", "Breath of Spring Breeze", "Christmas of a Harpy"],
     "voice": {
         "actor": {
             "jp": "Watanabe Yurina",

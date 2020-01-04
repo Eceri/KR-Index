@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Whisper of the Fairies", "Beachside", "Witch", "DJ"],
   "voice": {
     "actor": {
       "jp": "N/A",

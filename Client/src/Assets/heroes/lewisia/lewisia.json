@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside (5 Star)", "Beachside (4 Star)", "Beachside (3 Star)", "Twinkle Pure", "Santa", "Snow Queen", "The Midnight Rose", "Magical Vampire"],
     "voice": {
         "actor": {
             "jp": "Ishigami Shizuka",

@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Disciplinary", "Frankenstein", "Beachside", "Warm Heart", "Christmas of a Gentleman"],
   "voice": {
     "actor": {
       "jp": "Shingaki Tarusuke",

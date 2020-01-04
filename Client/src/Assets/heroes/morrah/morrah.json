@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Punk Style", "Beachside", "Tunica", "Flame of Eternity", "Little Demon"],
     "voice": {
         "actor": {
             "jp": "Honda Mariko",

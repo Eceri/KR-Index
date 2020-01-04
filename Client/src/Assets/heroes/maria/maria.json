@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Teacher", "Beachside", "Beachside 2", "Ghost Bride", "Qipao"],
     "voice": {
         "actor": {
             "jp": "Nakamura Sakura",

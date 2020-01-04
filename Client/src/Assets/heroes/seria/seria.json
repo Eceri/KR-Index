@@ -178,7 +178,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Priestess", "A Resting Sword", "Beachside", "Christmas of an Exorcist"],
     "voice": {
         "actor": {
             "jp": "N/A",

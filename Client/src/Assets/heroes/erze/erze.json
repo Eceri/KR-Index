@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Maid", "Pharaoh", "The Blood Oath", "Beachside", "Dancer"],
   "voice": {
     "actor": {
       "jp": "N/A",

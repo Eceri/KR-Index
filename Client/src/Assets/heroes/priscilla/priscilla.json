@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Beachside", "Lady", "Chut Tai", "The Eternal Pledge", "The Storm of War", "Beachside 2"],
     "voice": {
         "actor": {
             "jp": "N/A",

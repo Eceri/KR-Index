@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": [],
+  "skins": ["Occult Club", "Beachside", "Beachside [alt]", "Mate of Fate", "Little Demon"],
   "voice": {
     "actor": {
       "jp": "Tanaka Takako",
