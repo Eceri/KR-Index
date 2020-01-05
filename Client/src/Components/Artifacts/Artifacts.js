@@ -37,7 +37,6 @@ const ClickedArtifact = styled.section`
   padding: 1rem;
   padding-left: 0;
   background-color: #404040;
-  width: 52rem;
   height: 17rem;
 `;
 
