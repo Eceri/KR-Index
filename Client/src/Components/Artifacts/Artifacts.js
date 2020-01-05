@@ -23,7 +23,7 @@ const ArtifactContainer = styled.div`
   padding-left: 1.5rem;
 `;
 
-const ArtifactImage = styled.Img`
+const ArtifactImage = styled.img`
   margin-right: 1rem;
   margin-bottom: 1rem;
   width: 96px;
