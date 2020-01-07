@@ -151,7 +151,7 @@
       }
     }
   ],
-  "light": "Crit DMG +20%",
+  "light": "ATK, DEF, HP+15% / Crit DMG +20%",
   "dark": "Every 20 sec, increases M.DMG all enemies take by 30% for 15 sec.",
   "background": {
     "profile": {
