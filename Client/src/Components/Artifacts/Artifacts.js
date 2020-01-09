@@ -90,7 +90,9 @@ export const Artifacts = () => {
   const replaceChosenArtifactName =
     chosenArtifactName !== undefined && decodeURIComponent(chosenArtifactName);
   const ARTIFACTS = "Artifacts";
-  const [artifactName, setArtifactName] = useState(replaceChosenArtifactName);
+  const [artifactName, setArtifactName] = useState(
+    replaceChosenArtifactName || "Abyssal Crown"
+  );
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
   );
