@@ -17,7 +17,7 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Unchanging Mind, Erekura for 10 sec, increasing Heal Rate of self by 50%. Every 0.5 secm causes 4 random enemies to take 8% increased M.DMG for 5 sec. This effect stacks up to 5 times. After 10 sec, removes the stack from target, dealing ??? M.DMG per stack.",
+      "advancement0": "Summons the soul of Unchanging Mind, Erekura for 10 sec, increasing Heal Rate of self by 50%. Every 0.5 sec causes 4 random enemies to take 8% increased M.DMG for 5 sec. This effect stacks up to 5 times. After 10 sec, removes the stack from target, dealing ??? M.DMG per stack.",
       "advancement1": "Reduces Activation Requirement to 60.",
       "advancement2": "Increases the max number of Stacks to 10.",
       "activation": "Charges up every sec and every time self takes DMG. This Skill can be cast upon gaining 80 charges.",
