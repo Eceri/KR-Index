@@ -55,7 +55,6 @@ const searchFilter = (names, query) => {
   const artifactResults = artifactNames.filter(v =>
     v.toLowerCase().includes(query.toLowerCase())
   );
-
   const classesResults =
     query !== ""
       ? classesSorted.filter(v =>
@@ -66,14 +65,20 @@ const searchFilter = (names, query) => {
       : classesSorted;
 
   const resultArray = [
-    ...classesResults,
+    ...sortNames(classesResults, "ASC"),
     ...artifactResults.map(artifact => ({
       type: "artifacts",
       name: artifact,
       meta: {}
     }))
   ];
-  return resultArray;
+
+  const posQuery = resultArray.map(v => v.name.toLowerCase().indexOf(query));
+  const resultArraySort = resultArray
+    .map((v, i) => ({ ...v, pos: posQuery[i] }))
+    .sort((a, b) => a.pos - b.pos);
+
+  return resultArraySort;
 };
 
 export const NavBar = () => {
