@@ -20,10 +20,10 @@ export const HeroGeneral = props => {
       <HeroSkill skill={heroInfo.skills[2]} heroPath={heroPath} />
       <HeroSkill skill={heroInfo.skills[3]} heroPath={heroPath} />
     </div>
-    <h2 className="subSectionHeadline">Transcendence</h2>
+    <h2 className="subSectionHeadline" >Transcendence</h2>
     <hr />
-    <h2>T5</h2>
-    <div className="flexBox transcendance">
+    <h2 id="t5-anchor" >T5</h2>
+    <div className="flexBox transcendance" >
       <Image
         src={`${heroPath}light.png`}
         alt={"light"}
@@ -41,10 +41,10 @@ export const HeroGeneral = props => {
     </div>
 
     <hr className="seperator" />
-    <h2>T1 - Generic</h2>
+    <h2 id="t1-anchor">T1 - Generic</h2>
     <TierOnePerks />
     <hr className="seperator" />
-    <h2>T2 - Class-Specific</h2>
+    <h2  id="t2-anchor">T2 - Class-Specific</h2>
     <ClassPerks heroClass={heroInfo.class} />
     </>
 };

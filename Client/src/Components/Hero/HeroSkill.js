@@ -13,7 +13,7 @@ export const HeroSkill = props => {
     return orbs;
   };
   return (
-    <div className="skill" key={skill.id}>
+    <div className="skill" key={skill.id} id={`s${skill.id}-anchor`} >
       {skill.skillInfo.map((skillInfo, index) => (
         <div key={skillInfo.skillNumber} className={skillInfo.linked && index > 0 && "linkedSkill"}>
           <div className="flexBox">

@@ -10,7 +10,7 @@ export const UniqueWeapon = props => {
   let sw = weapon.soulWeapon
   return (
     <div>
-      <div className="flexBox" id="uw">
+      <div className="flexBox" id="uw-anchor">
         <Image
           src={`${heroPath}uw.png`}
           alt="UW Icon"
@@ -21,7 +21,7 @@ export const UniqueWeapon = props => {
         </div>
       </div>
       <p className="description"> {uw.effect[star]} </p>
-      <div id={"sw"}>
+      <div id={"sw-anchor"}>
         <h2> Soul </h2>
         {sw ? (
           <>

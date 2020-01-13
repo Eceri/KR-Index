@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Redirect } from "react-router-dom";
 import {
@@ -17,13 +17,49 @@ import "../styles/tabStyles.css";
 
 export const Hero = props => {
   let heroInfo;
-  try {//temporary solution to invalid heroes. Will change once heroes go into the DB.
+  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
+
+  let hashFragments = window.location.hash.split("-");
+
+  let initalTabIndex = 0;
+  let scrollAnchor = hashFragments[1];
+  if (hashFragments[0] === "#story") initalTabIndex = 1;
+  else if (hashFragments[0] === "#skins") initalTabIndex = 2;
+  //else if(hashFragments[0] == "#voice") initalTabIndex = 3
+  else scrollAnchor = hashFragments[0];
+
+  useEffect(() => {
+    console.log(document.getElementById(`${scrollAnchor.slice(1)}-anchor`.toString()))
+    window.scrollTo({
+      top: document.getElementById(`${scrollAnchor.slice(1)}-anchor`).offsetTop - 60,
+      left: 0,
+      behavior: "smooth"
+    })
+    });
+
+  try {
+    //temporary solution to invalid heroes. Will change once heroes go into the DB.
     heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
   } catch (e) {
-    return <Redirect to="/heroes/" />
+    return <Redirect to="/heroes/" />;
   }
-  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
-  window.scrollTo(0, 0);
+
+  const tabSelected = (index, lastIndex) => {
+    if (index !== lastIndex) {
+      let url;
+      if (index === 1) {
+        url = "#story";
+      } else if (index === 2) {
+        url = "#skins";
+      } else url = `/heroes/${heroInfo.name}`;
+
+      props.history.push(url);
+
+      return true;
+    }
+    return false;
+  };
+
   return (
     <>
       {createHelmet(heroInfo.name, `${heroInfo.name} - ${heroInfo.title}`)}
@@ -51,7 +87,7 @@ export const Hero = props => {
         </div>
         <ReactTooltip border={true} />
       </div>
-      <Tabs>
+      <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>
           <Tab>Story</Tab>
