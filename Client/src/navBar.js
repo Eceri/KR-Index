@@ -4,55 +4,81 @@ import { sortNames } from "./Components/components";
 import styled from "styled-components";
 import classes from "./Assets/classes/classes.json";
 
+const searchWidth = "16rem";
+
 const SearchBox = styled.div`
-  width: 15rem;
+  width: ${searchWidth};
   background-color: white;
   color: black;
-  height: 15rem;
-  position: relative;
+  position: absolute;
   overflow: auto;
   z-index: 2;
-  left: 26.65rem;
+  right: 0;
   top: 3rem;
 `;
 
 const SearchListElement = styled.li`
   list-style-type: none;
   cursor: pointer;
+  padding-left: 0.5rem;
 
   &:hover {
     background-color: #71b9f5;
   }
 `;
 
+const SearchInput = styled.input`
+  margin-left: auto;
+  width: ${searchWidth};
+  padding-left: 0.5rem;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+const classesSorted = [
+  ...classes
+    .map(v =>
+      v.heroes.map(h => ({
+        type: "heroes",
+        heroClass: v.name,
+        name: h,
+        meta: {}
+      }))
+    )
+    .flat(1)
+];
+
 const searchFilter = (names, query) => {
   const artifactNames = names.map(artifact => artifact.name);
   const artifactResults = artifactNames.filter(v =>
     v.toLowerCase().includes(query.toLowerCase())
   );
+  const classesResults =
+    query !== ""
+      ? classesSorted.filter(v =>
+          v.heroClass.toLowerCase().includes(query.toLowerCase())
+            ? v.heroClass.toLowerCase() === query.toLowerCase()
+            : v.name.toLowerCase().includes(query.toLowerCase())
+        )
+      : classesSorted;
+
   const resultArray = [
+    ...sortNames(classesResults, "ASC"),
     ...artifactResults.map(artifact => ({
       type: "artifacts",
       name: artifact,
       meta: {}
-    })),
-    ...classes
-      .map(v =>
-        v.heroes.map(h => ({
-          type: "heroes",
-          heroClass: v.name,
-          name: h,
-          meta: {}
-        }))
-      )
-      .flat(1)
-      .filter(v =>
-        v.heroClass.toLowerCase().includes(query.toLowerCase())
-          ? v.heroClass.toLowerCase() === query.toLowerCase()
-          : v.name.toLowerCase().includes(query.toLowerCase())
-      )
+    }))
   ];
-  return resultArray;
+
+  const posQuery = resultArray.map(v => v.name.toLowerCase().indexOf(query));
+  const resultArraySort = resultArray
+    .map((v, i) => ({ ...v, pos: posQuery[i] }))
+    .sort((a, b) => a.pos - b.pos);
+
+  return resultArraySort;
 };
 
 export const NavBar = () => {
@@ -65,19 +91,17 @@ export const NavBar = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    if (localStorage.getItem("Artifacts") === null) {
-      fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
-        .then(res => {
-          return res.json();
-        })
-        .then(data => {
-          setArtifacts(sortNames(data, "ASC"));
-          localStorage.setItem(
-            "Artifacts",
-            JSON.stringify(sortNames(data, "ASC"))
-          );
-        });
-    }
+    fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        setArtifacts(sortNames(data, "ASC"));
+        localStorage.setItem(
+          "Artifacts",
+          JSON.stringify(sortNames(data, "ASC"))
+        );
+      });
   }, []);
 
   const handleClickOutside = event => {
@@ -106,9 +130,6 @@ export const NavBar = () => {
       <Link to={"/artifacts"} className={"navLink"}>
         Artifacts
       </Link>
-      {/* <Link to={"/etc"} className={"navLink"}>
-          Etc.
-          </Link> */}
       {renderSearch(
         search,
         ref,
@@ -131,14 +152,13 @@ const renderSearch = (
 ) => (
   <React.Fragment>
     {renderSearchBox(search, artifacts, ref, searchQuery)}
-    <input
+    <SearchInput
       placeholder="Search..."
       onChange={e => {
         setSearchQuery(e.currentTarget.value);
         setSeach(true);
       }}
       value={searchQuery}
-      style={{ marginLeft: "auto", width: "15rem" }}
       onClick={() => setSeach(true)}
       ref={ref}
     />
@@ -148,7 +168,7 @@ const renderSearch = (
 const renderSearchBox = (search, artifacts, ref, searchQuery) =>
   search && (
     <SearchBox ref={ref}>
-      <ul style={{ margin: 0, padding: 0 }}>
+      <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
         {searchFilter(artifacts, searchQuery).map(item => (
           <SearchListElement
             key={item.name}
