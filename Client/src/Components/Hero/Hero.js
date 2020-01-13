@@ -29,14 +29,15 @@ export const Hero = props => {
   else scrollAnchor = hashFragments[0];
 
   useEffect(() => {
+    if(scrollAnchor !== undefined) {
     let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
-    if (element !== null) {
+      if (element !== null) {
       window.scrollTo({
         top: element.offsetTop - 60,
         left: 0,
         behavior: "smooth"
       });
-    }
+    }}
   });
 
   try {
