@@ -29,13 +29,15 @@ export const Hero = props => {
   else scrollAnchor = hashFragments[0];
 
   useEffect(() => {
-    console.log(document.getElementById(`${scrollAnchor.slice(1)}-anchor`.toString()))
-    window.scrollTo({
-      top: document.getElementById(`${scrollAnchor.slice(1)}-anchor`).offsetTop - 60,
-      left: 0,
-      behavior: "smooth"
-    })
-    });
+    let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
+    if (element !== null) {
+      window.scrollTo({
+        top: element.offsetTop - 60,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
+  });
 
   try {
     //temporary solution to invalid heroes. Will change once heroes go into the DB.
