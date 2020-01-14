@@ -18,10 +18,10 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of Lakrak MK-1, increasing own ATK by 50% for 12 sec. Afterward, deals a total of ??? P.DMG to enemies within range of a random enemy over 5 times every 4 sec, stunning them for 2 sec and increasing P.DMG they take by 30% for 8 sec.",
-      "advancement1": "Reduces Skill Activation Requirements by 5 sec and gains immunity to CC for 12 sec.",
-      "advancement2": "Reduces Skill Activation Requirements by an additional 6 sec, and immediately reduces Cooldown of all Skills by 3 sec every 4 sec.",
+      "advancement1": "Reduces Skill Activation Requirements by 2 sec and gains immunity to CC for 12 sec.",
+      "advancement2": "Reduces Skill Activation Requirements by an additional 4 sec, and immediately reduces Cooldown of all Skills by 3 sec every 4 sec.",
       "activation": "Charges up over 18 sec.",
-      "cd": 18,
+      "cd": 19,
       "charges": 6
     }
   },
@@ -161,6 +161,7 @@
     "story": "This eccentric albino Goblin enjoys developing powerful weapons more than anything else. Having been harassed and ostracized by other Goblins due to his skin color, he feels no compassion toward his kind. He would gladly shoot, blow up, and smash even a fellow Goblin to test his weapons. However, he also expresses his gratitude to those who help him, and this is how he became Roi's friend. Unfortunately, he is terrible at remembering faces, so he often tries to shoot Roi before he recalls who he is.",
     "itemIntroductions": {
       "weapon": "The destructive yet artistic magnum opus of a quirky Goblin inventor. This single-hand cannon packs the maximum amount of firepower a single Goblin can physically handle. Despite the dangerous amount of gunpowder used, this weapon has fortunately not blown up yet.",
+      "soul" : "Lakrak had made many weapons, but nothing surpassed Lakrak MK-1. Not only did this weapon not malfunction even it was overloaded with excess black powder, but also consistently delivered powerful blasts which met Lakrak's standard for 'ideal' firepower.\nLakrak however, did not stop there.\nAltough Lakrak was a small, weak goblin, he never stopped with the development of the ultimate weapon, and it was his everything. In the end, Lakrak's endless desire to create the ultimate weapon awakened the soul accumulated within Lakrak MK-1.\nTo satiate its creator's needs, the soul of Lakrak MK-1 became obsessed with devastating firepower, but it seems to be neglecting the fact that its obession is potentially life-threatening to its master.",
       "treasures": [
         "A self-defense bullet with lower killing power. This bullet, whose design is based on Lakrak's knowledge in precise explosive engineering, is used to cause knock-back when using Rapid Fire. To minimize unnecessary killing, he makes it a point to label all his explosives.",
         "A high-performing mask that was made with special materials that Lakrak obtained from around the Orbis Continent. This mask is made from Harpy's first feather, a dragon's scales, a leaf from the World Tree, and the empire's mithril, which are all hard to find. This mask protects one from poisonous gas as well as the blinding effect of Smoke Bombs.",
