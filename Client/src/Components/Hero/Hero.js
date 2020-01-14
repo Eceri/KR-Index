@@ -28,25 +28,6 @@ export const Hero = props => {
   //else if(hashFragments[0] == "#voice") initalTabIndex = 3
   else scrollAnchor = hashFragments[0];
 
-  useEffect(() => {
-    if(scrollAnchor !== undefined) {
-    let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
-      if (element !== null) {
-      window.scrollTo({
-        top: element.offsetTop - 60,
-        left: 0,
-        behavior: "smooth"
-      });
-    }}
-  });
-
-  try {
-    //temporary solution to invalid heroes. Will change once heroes go into the DB.
-    heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
-  } catch (e) {
-    return <Redirect to="/heroes/" />;
-  }
-
   const tabSelected = (index, lastIndex) => {
     if (index !== lastIndex) {
       let url;
@@ -63,6 +44,24 @@ export const Hero = props => {
     return false;
   };
 
+  useEffect(() => {
+    if (scrollAnchor !== undefined) {
+      let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
+      if (element !== null) {
+        window.scrollTo({
+          top: element.offsetTop - 60,
+          left: 0,
+          behavior: "smooth"
+        });
+      }
+    }
+  })
+
+  try {//temporary solution to invalid heroes. Will change once heroes go into the DB.
+    heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
+  } catch (e) {
+    return <Redirect to="/heroes/" />;
+  }
   return (
     <>
       {createHelmet(heroInfo.name, `${heroInfo.name} - ${heroInfo.title}`)}
