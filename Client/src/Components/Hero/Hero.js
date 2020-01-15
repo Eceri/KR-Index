@@ -36,7 +36,6 @@ export const Hero = props => {
       } else if (index === 2) {
         url = "#skins";
       } else url = `/heroes/${heroInfo.name}`;
-
       props.history.push(url);
 
       return true;
@@ -47,13 +46,9 @@ export const Hero = props => {
   useEffect(() => {
     setTimeout(() => {
       if (scrollAnchor !== undefined) {
-        let element = document.getElementById(
-          `${scrollAnchor.slice(1)}-anchor`
-        );
+        let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
         let scrollToTopPosition = 0
-        if (element !== null) {
-          scrollToTopPosition = element.offsetTop - 60
-        }
+        if (element !== null) scrollToTopPosition = element.offsetTop - 60
         window.scrollTo({
           top: scrollToTopPosition,
           left: 0,
