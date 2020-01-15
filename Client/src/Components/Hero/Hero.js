@@ -45,19 +45,24 @@ export const Hero = props => {
   };
 
   useEffect(() => {
-    if (scrollAnchor !== undefined) {
-      let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
-      if (element !== null) {
-        window.scrollTo({
-          top: element.offsetTop - 60,
-          left: 0,
-          behavior: "smooth"
-        });
+    setTimeout(() => {
+      if (scrollAnchor !== undefined) {
+        let element = document.getElementById(
+          `${scrollAnchor.slice(1)}-anchor`
+        );
+        if (element !== null) {
+          window.scrollTo({
+            top: element.offsetTop - 60,
+            left: 0,
+            behavior: "smooth"
+          });
+        }
       }
-    }
-  })
+    });
+  });
 
-  try {//temporary solution to invalid heroes. Will change once heroes go into the DB.
+  try {
+    //temporary solution to invalid heroes. Will change once heroes go into the DB.
     heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
   } catch (e) {
     return <Redirect to="/heroes/" />;
