@@ -50,13 +50,15 @@ export const Hero = props => {
         let element = document.getElementById(
           `${scrollAnchor.slice(1)}-anchor`
         );
+        let scrollToTopPosition = 0
         if (element !== null) {
-          window.scrollTo({
-            top: element.offsetTop - 60,
-            left: 0,
-            behavior: "smooth"
-          });
+          scrollToTopPosition = element.offsetTop - 60
         }
+        window.scrollTo({
+          top: scrollToTopPosition,
+          left: 0,
+          behavior: "smooth"
+        });
       }
     });
   });
