@@ -17,7 +17,7 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the sould of Cards of Destiny Del Acana, discarding all currently owned cards. Afterward, acquires the [Star] card, increasing ATK by 60% for 10 sec. Upon using a Skill while owning the [Star] card, the effects of [Death], [Love], and [Fortune] will be activated and [Star] card will be consumed.",
+      "advancement0": "Summons the soul of Cards of Destiny Del Acana, discarding all currently owned cards. Afterward, acquires the [Star] card, increasing ATK by 60% for 10 sec. Upon using a Skill while owning the [Star] card, the effects of [Death], [Love], and [Fortune] will be activated and [Star] card will be consumed.",
       "advancement1": "Upon activation, self recovers 3 orbs of Mana.",
       "advancement2": "Changes Skill Activation Requirements to 4 time(s).",
       "activation": "Charges up upon using Skills 6 times.",
