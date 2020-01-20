@@ -58,9 +58,7 @@ const searchFilter = (names, query) => {
   const classesResults =
     query !== ""
       ? classesSorted.filter(v =>
-          v.heroClass.toLowerCase().includes(query.toLowerCase())
-            ? v.heroClass.toLowerCase() === query.toLowerCase()
-            : v.name.toLowerCase().includes(query.toLowerCase())
+            v.name.toLowerCase().includes(query.toLowerCase())
         )
       : classesSorted;
 
