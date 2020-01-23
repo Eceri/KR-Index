@@ -177,6 +177,9 @@ const renderArtifactContainer = (
   </ArtifactContainer>
 );
 
+// TODO: placeholder into DB
+const dropPlaceholder = "dropPlaceholder";
+const datePlaceholder = 2017;
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
     <ArtifactImage
@@ -194,7 +197,10 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
       data-tip
       data-for={item.name}
     />
-    <ReactTooltip id={item.name}>{item.name}</ReactTooltip>
+    <ReactTooltip id={item.name}>
+      {item.name}
+      {`\n Drop: ${dropPlaceholder} \n Release: ${datePlaceholder}`}
+    </ReactTooltip>
   </React.Fragment>
 );
 
