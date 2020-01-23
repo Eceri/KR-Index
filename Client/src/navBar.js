@@ -22,9 +22,9 @@ const SearchListElement = styled.li`
   cursor: pointer;
   padding-left: 0.5rem;
 
-  &:hover {
-    background-color: #71b9f5;
-  }
+  background-color: ${props => props.navigation && "#71b9f5"};
+
+  color: ${props => (props.active ? "lightgrey" : "black")};
 `;
 
 const SearchInput = styled.input`
@@ -58,7 +58,7 @@ const searchFilter = (names, query) => {
   const classesResults =
     query !== ""
       ? classesSorted.filter(v =>
-            v.name.toLowerCase().includes(query.toLowerCase())
+          v.name.toLowerCase().includes(query.toLowerCase())
         )
       : classesSorted;
 
@@ -85,6 +85,8 @@ export const NavBar = () => {
     JSON.parse(localStorage.getItem("Artifacts")) || []
   );
   const [search, setSeach] = useState(false);
+  const [keyPressed, setKeyPressed] = useState({ cursor: 0 });
+  const [mouseOverIndex, setMouseOverIndex] = useState(0);
 
   const ref = useRef(null);
 
@@ -113,6 +115,36 @@ export const NavBar = () => {
     };
   });
 
+  const handleKey = ({ key }) => {
+    if (key === "ArrowUp") {
+      setKeyPressed(prevState =>
+        prevState.cursor > 0 ? { cursor: prevState.cursor - 1 } : { cursor: 0 }
+      );
+    }
+    const itemArayLength = searchFilter(artifacts, searchQuery).length - 1;
+    if (key === "ArrowDown") {
+      setKeyPressed(prevState =>
+        prevState.cursor < itemArayLength
+          ? { cursor: prevState.cursor + 1 }
+          : { cursor: itemArayLength }
+      );
+    }
+    if (key === "Enter") {
+      setKeyPressed(prevState => ({ ...prevState, key }));
+    }
+  };
+
+  useEffect(() => {
+    setKeyPressed({ cursor: mouseOverIndex });
+  }, [mouseOverIndex]);
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKey);
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+    };
+  }, []);
+
   return (
     <nav>
       <Link to={"/"} className={"navLink"}>
@@ -129,6 +161,8 @@ export const NavBar = () => {
         Artifacts
       </Link>
       {renderSearch(
+        setMouseOverIndex,
+        keyPressed,
         search,
         ref,
         artifacts,
@@ -141,6 +175,8 @@ export const NavBar = () => {
 };
 
 const renderSearch = (
+  setMouseOverIndex,
+  keyPressed,
   search,
   ref,
   artifacts,
@@ -148,8 +184,15 @@ const renderSearch = (
   setSearchQuery,
   setSeach
 ) => (
-  <React.Fragment>
-    {renderSearchBox(search, artifacts, ref, searchQuery)}
+  <>
+    {renderSearchBox(
+      setMouseOverIndex,
+      keyPressed,
+      search,
+      artifacts,
+      ref,
+      searchQuery
+    )}
     <SearchInput
       placeholder="Search..."
       onChange={e => {
@@ -159,19 +202,41 @@ const renderSearch = (
       value={searchQuery}
       onClick={() => setSeach(true)}
       ref={ref}
+      aria-label="Search"
+      aria-required="true"
     />
-  </React.Fragment>
+  </>
 );
 
-const renderSearchBox = (search, artifacts, ref, searchQuery) =>
+const activeItem = () => {
+  const name = window.location.pathname.split("/");
+  const lastPart = name[name.length - 1];
+  return lastPart;
+};
+
+const renderSearchBox = (
+  setMouseOverIndex,
+  keyPressed,
+  search,
+  artifacts,
+  ref,
+  searchQuery
+) =>
   search && (
     <SearchBox ref={ref}>
       <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
-        {searchFilter(artifacts, searchQuery).map(item => (
+        {searchFilter(artifacts, searchQuery).map((item, index) => (
           <SearchListElement
+            navigation={keyPressed.cursor === index}
+            active={item.name === activeItem()}
             key={item.name}
             onClick={() => window.open(`/${item.type}/${item.name}`, "_self")}
+            onMouseEnter={() => setMouseOverIndex(index)}
+            onMouseLeave={() => setMouseOverIndex(0)}
           >
+            {keyPressed.cursor === index &&
+              keyPressed.key === "Enter" &&
+              window.open(`/${item.type}/${item.name}`, "_self")}
             {item.name}
           </SearchListElement>
         ))}
