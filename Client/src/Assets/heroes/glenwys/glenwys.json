@@ -170,7 +170,7 @@
             ]
         }
     },
-    "skins": ["Beachside", "Dark Knight"],
+    "skins": ["Beachside", "Dark Knight", "Glenwys of Glaring Honor"],
     "voice": {
         "actor": {
             "jp": "N/A",
