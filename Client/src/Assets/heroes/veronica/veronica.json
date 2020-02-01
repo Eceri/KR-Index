@@ -18,7 +18,7 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of Infinte Charter, Accordio and immediately acquires 2 stacks of 'Top Financier's Knowledge', increasing Crit DMG of the ally with the highest ATK by 50% and DMG dealt to Bosses by 20% for 10 sec.",
-      "advancement1": "Increase the duratio of the Skill by 4 sec.",
+      "advancement1": "Increase the duration of the Skill by 4 sec.",
       "advancement2": "Increases Boost effect that ally with the highest ATK receives by 100%.",
       "activation": "Charges up upon using Skills 5 times.",
       "cd": 21,
