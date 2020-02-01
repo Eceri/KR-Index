@@ -62,14 +62,17 @@ const searchFilter = (names, query) => {
         )
       : classesSorted;
 
-  const resultArray = [
-    ...sortNames(classesResults, "ASC"),
-    ...artifactResults.map(artifact => ({
-      type: "artifacts",
-      name: artifact,
-      meta: {}
-    }))
-  ];
+  const resultArray = sortNames(
+    [
+      ...classesResults,
+      ...artifactResults.map(artifact => ({
+        type: "artifacts",
+        name: artifact,
+        meta: {}
+      }))
+    ],
+    "ASC"
+  );
 
   const posQuery = resultArray.map(v => v.name.toLowerCase().indexOf(query));
   const resultArraySort = resultArray
@@ -89,6 +92,7 @@ export const NavBar = () => {
   const [mouseOverIndex, setMouseOverIndex] = useState(0);
 
   const ref = useRef(null);
+  const listRef = useRef(null);
 
   useEffect(() => {
     fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
@@ -110,8 +114,10 @@ export const NavBar = () => {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("keydown", handleKey);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("keydown", handleKey);
     };
   });
 
@@ -132,18 +138,13 @@ export const NavBar = () => {
     if (key === "Enter") {
       setKeyPressed(prevState => ({ ...prevState, key }));
     }
+    listRef.current !== null &&
+      listRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
   useEffect(() => {
     setKeyPressed({ cursor: mouseOverIndex });
   }, [mouseOverIndex]);
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKey);
-    return () => {
-      window.removeEventListener("keydown", handleKey);
-    };
-  }, []);
 
   return (
     <nav>
@@ -161,6 +162,7 @@ export const NavBar = () => {
         Artifacts
       </Link>
       {renderSearch(
+        listRef,
         setMouseOverIndex,
         keyPressed,
         search,
@@ -175,6 +177,7 @@ export const NavBar = () => {
 };
 
 const renderSearch = (
+  listRef,
   setMouseOverIndex,
   keyPressed,
   search,
@@ -186,11 +189,12 @@ const renderSearch = (
 ) => (
   <>
     {renderSearchBox(
+      listRef,
       setMouseOverIndex,
       keyPressed,
       search,
-      artifacts,
       ref,
+      artifacts,
       searchQuery
     )}
     <SearchInput
@@ -215,11 +219,12 @@ const activeItem = () => {
 };
 
 const renderSearchBox = (
+  listRef,
   setMouseOverIndex,
   keyPressed,
   search,
-  artifacts,
   ref,
+  artifacts,
   searchQuery
 ) =>
   search && (
@@ -227,6 +232,7 @@ const renderSearchBox = (
       <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
         {searchFilter(artifacts, searchQuery).map((item, index) => (
           <SearchListElement
+            ref={keyPressed.cursor === index ? listRef : null}
             navigation={keyPressed.cursor === index}
             active={item.name === activeItem()}
             key={item.name}
