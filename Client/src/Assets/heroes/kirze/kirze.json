@@ -18,7 +18,7 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of Judgment Edge, Elicipira, changing the activation chance of the additional M.DMG effect of Judgment Edge, Elicipira to 10% and reducing All DMG taken by 40% for 10 sec.",
-      "advancement1": "For the duration of Skill, increases ATK by 50.",
+      "advancement1": "For the duration of Skill, increases ATK by ???.",
       "advancement2": "Increases the duration of the effect by 5 sec and changes the activation chance of Judgment Edge, Elicipira to 15%.",
       "activation": "Charges up upon dealing DMG 60 times.",
       "cd": 25,
