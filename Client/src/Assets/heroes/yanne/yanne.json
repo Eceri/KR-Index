@@ -92,7 +92,7 @@
         {
           "skillNumber": "s3",
           "name": "No Holding Back!",
-          "description": "Removes all negative effects on self. For 30 sec, ATK is increased by ??? and Penetration is increased by 500. For the duration of skill, auto attacks are changed to consuming 3% mana to deal DMG to all enemies in a straight line and deals ??? extra P.DMG to Dragons ignoring DEF.",
+          "description": "Dispels all negative effects from self. For 30 sec, ATK is increased by ??? and Penetration by 500. For the duration of skill, normal attacks consume 3% mana to deal DMG to all enemies in a straight line and deals ??? additional P.DMG that ignores DEF to Dragons. This effect is irremovable.",
           "cooldown": 25,
           "cost": 4
         }
@@ -122,11 +122,11 @@
         {
           "skillNumber": "s4",
           "name": "Dragon Slayer",
-          "description": "ATK is increased by ??? , and Max HP is increased by 30%. Also, DMG dealt to Dragons is increased by 50%."
+          "description": "ATK is increased by ??? , and Max HP is increased by 30%. Also, DMG dealt to Dragons is increased by 100%."
         }
       ],
       "light": "Reduces DMG that all allies take from Dragons by 20%.",
-      "dark": "Changes own DMG Boost against Dragons to 80%.",
+      "dark": "Changes self's DMG Boost against Dragons to 130%.",
       "books": [
         "ATK boost is increased by 10%.",
         "ATK boost is increased by 15%.",

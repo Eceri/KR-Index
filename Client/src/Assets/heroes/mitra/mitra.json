@@ -122,10 +122,10 @@
         {
           "skillNumber": "s4",
           "name": "You're Next!!",
-          "description": "Normal attacks inflict an irremovable stack of Mark of Death on the enemy. Whenever a normal attack or Bang! Bang! hits the target, deals ??? additional P.DMG. Each stack of Mark of Death deals ??? additional P.DMG. Mark of Death can be stacked up to max 150 times."
+          "description": "Normal attacks inflict an irremovable stack of Mark of Death on the enemy. Whenever a normal attack or Bang! Bang! hits the target, deals ??? additional P.DMG. Each stack of Mark of Death deals ??? additional P.DMG. Mark of Death can be stacked up to max 200 times."
         }
       ],
-      "light": "Mark maximum is changed to 200.",
+      "light": "Mark maximum is changed to 300.",
       "dark": "All cooldowns are reduced by 0.3 when hitting a target with 100 stacks.",
       "books": [
         "DMG is increased by 10%.",
@@ -146,7 +146,7 @@
     }
   ],
   "light": "ATK, DEF, HP+15% / Crit DMG +20%",
-  "dark": "Upon a Critical Hit, increases own Crit DMG by 0.5% and ATK Spd by 5. This effect cannot be dispelled, and can be stacked up to max 100 times.",
+  "dark": "Upon a Critical Hit, increases own Crit DMG by 0.5% and ATK Spd by 5. This can be stacked up to max 120 times and is irremovable.",
   "background": {
     "profile": {
       "gender": "Male",

@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Flower of Eternity, Hyacinth",
       "effect": [
-        "Increases DMG of normal attacks by 20% and the Range by 6%.",
-        "Increases DMG of normal attacks by 24% and the Range by 7.2%.",
-        "]Increases DMG of normal attacks by 29% and the Range by 8.6%.",
-        "Increases DMG of normal attacks by 35% and the Range by 10.5%.",
-        "Increases DMG of normal attacks by 42% and the Range by 12.5%.",
-        "Increases DMG of normal attacks by 50% and the Range by 15%."
+        "Increases Crit DMG by 40%, DMG of normal attacks by 20% and the Range by 6%.",
+        "Increases Crit DMG by 48%, DMG of normal attacks by 24% and the Range by 7.2%.",
+        "Increases Crit DMG by 58%, DMG of normal attacks by 29% and the Range by 8.6%.",
+        "Increases Crit DMG by 70%, DMG of normal attacks by 35% and the Range by 10.5%.",
+        "Increases Crit DMG by 84%, DMG of normal attacks by 42% and the Range by 12.5%.",
+        "Increases Crit DMG by 100%, DMG of normal attacks by 50% and the Range by 15%."
       ]
     },
     "soulWeapon": {
@@ -37,7 +37,7 @@
           "cost": 2
         }
       ],
-      "light": "If there is 1 enemy, DMG is increased by 100%.",
+      "light": "Gains immunity to CC for the duration of Skill.",
       "dark": "Stuns the hit enemy for 2 sec.",
       "books": [
         "DMG is increased by 10%.",
@@ -146,7 +146,7 @@
     }
   ],
   "light": "ATK, DEF, HP+15% / Crit DMG +20%",
-  "dark": "At the beginning of each battle, grants Blessing of the Carrot for 20 sec. Blessing of the Carrot increases DMG dealt to Non-Hero enemies by 30%, and reduces DMG received by 30%.",
+  "dark": "Being granted with blessing of the carrot, Luna increases DMG dealt to Non-Hero enemies by 30%, and takes 30% reduced DMG.",
   "background": {
     "profile": {
       "gender": "Female",

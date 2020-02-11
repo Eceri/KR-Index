@@ -8,12 +8,12 @@
         "uniqueWeapon": {
             "name": "Might of the God King, Tyrannicus",
             "effect": [
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 20% chance.\n[Tyrant] Increases P.DMG the target takes by 20% for 3 sec.",
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 2$% chance.\n[Tyrant] Increases P.DMG the target takes by 2$% for 3 sec.",
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 29% chance.\n[Tyrant] Increases P.DMG the target takes by 29% for 3 sec.",
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 35% chance.\n[Tyrant] Increases P.DMG the target takes by 35% for 3 sec.",
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 42% chance.\n[Tyrant] Increases P.DMG the target takes by 42% for 3 sec.",
-                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 50% chance.\n[Tyrant] Increases P.DMG the target takes by 50% for 3 sec."
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 20% chance.\n[Tyrant] Increases P.DMG the target takes by 20% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 2$% chance.\n[Tyrant] Increases P.DMG the target takes by 2$% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 29% chance.\n[Tyrant] Increases P.DMG the target takes by 29% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 35% chance.\n[Tyrant] Increases P.DMG the target takes by 35% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 42% chance.\n[Tyrant] Increases P.DMG the target takes by 42% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+                "Depending on which form Cain is in, Normal and Skill attacks grant additional effects.\n[God King] Stuns the target for 1 sec with a 50% chance.\n[Tyrant] Increases P.DMG the target takes by 50% for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec."
             ]
         },
         "soulWeapon": {
@@ -32,7 +32,7 @@
                 {
                     "skillNumber": "s1",
                     "name": "Tremble!",
-                    "description": "Cain heals the ally with the lowest HP by ??? and grants the ally with [The God King’s Blessing] for 5 seconds, which reduces All DMG the ally receives 30% and grants immunity to CC. After 5 seconds, Cain dispels negative effects from the target and the allies nearby. Afterwards, heals their HP by ???. [The God King’s Blessing] is irremovable.",
+                    "description": "Cain heals the ally with the lowest HP by ??? and grants the ally with [The God King’s Blessing], which reduces All DMG the ally receives 35% and grants immunity to CC for 3.5 sec. After 3.5 seconds, Cain dispels negative effects from the target and the allies nearby. Afterwards, heals their HP by ???. [The God King’s Blessing] is irremovable.",
                     "cooldown": 12,
                     "cost": 2
                 },

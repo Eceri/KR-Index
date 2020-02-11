@@ -62,12 +62,12 @@
         {
           "skillNumber": "s2",
           "name": "Let me help you.",
-          "description": "Grants a Rune to all allies to increase their ATK by ??? and any DMG to bosses by 15% for 10 sec.",
+          "description": "Grants a Rune to all allies to increase their ATK by ??? and any DMG to bosses by 15% for 12 sec.",
           "cooldown": 25,
           "cost": 4
         }
       ],
-      "light": "ATK Boost is increased by 40%.",
+      "light": "After the beginning of the first battle, changes the DMG Boost effect against Bosses to 25% for 3 Skill uses.",
       "dark": "Reduces cooldown by 5 sec.",
       "books": [
         "ATK boost is increased by 10%.",

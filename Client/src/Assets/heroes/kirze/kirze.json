@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Judgment Edge, Elicipira",
       "effect": [
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 500% of ATK. DMG is doubled against Bosses.",
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 600% of ATK. DMG is doubled against Bosses.",
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 720% of ATK. DMG is doubled against Bosses.",
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 860% of ATK. DMG is doubled against Bosses.",
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 1000% of ATK. DMG is doubled against Bosses.",
-        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 1250% of ATK. DMG is doubled against Bosses."
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 500% of ATK. DMG is increased by 2 times against Bosses.",
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 600% of ATK. DMG is increased by 2 times against Bosses.",
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 720% of ATK. DMG is increased by 2 times against Bosses.",
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 860% of ATK. DMG is increased by 2 times against Bosses.",
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 1000% of ATK. DMG is increased by 2 times against Bosses.",
+        "Amplifies the power of Arcane Crystals and greatly increases the effect range of [Bloom, Crimson Flower!]. Normal and Skill attacks have a 4% chance to deal additional M.DMG equal to 1250% of ATK. DMG is increased by 2 times against Bosses."
       ]
     },
     "soulWeapon": {
@@ -37,7 +37,7 @@
           "cost": 2
         }
       ],
-      "light": "Reduces Cooldown by ???% per each enemy hit.",
+      "light": "Reduces Cooldown by 3% per each enemy hit.",
       "dark": "If there is only 1 enemy, DMG is increased by 100%.",
       "books": [
         "Increases DMG by 10%.",
@@ -62,12 +62,12 @@
         {
           "skillNumber": "s2",
           "name": "Disperse, Crystal Haze!",
-          "description": "Unleashes the power of Arcane Crystals within to deal ??? M.DMG to all enemies and stun them for 1 sec. Upon casting, activates [Arcane Crystal Awakening] for 15 sec, which increases ATK Spd of all allies by 300 and releases a shockwave every 2 sec to enemies in range of self, dealing ??? M.DMG and stunning them for 0.5 sec.",
-          "cooldown": 20,
+          "description": "Unleashes the power of Arcane Crystals within to deal ??? M.DMG to all enemies and stun them for 2 sec. Upon casting, activates [Arcane Crystal Awakening] for 15 sec, which increases ATK Spd of all allies by 300 and releases a shockwave every 2 sec to enemies in range of self, dealing ??? M.DMG and stunning them for 1 sec.",
+          "cooldown": 17,
           "cost": 3
         }
       ],
-      "light": "The duration of stun from the shockwave increases by 0.5 sec against Non-Hero enemies.",
+      "light": "Reduces Mana Cost by 1.",
       "dark": "While under [Arcane Crystal Awakening], self deals 20% increased DMG to Non-Hero enemies.",
       "books": [
         "Increases DMG by 10%.",
@@ -77,12 +77,12 @@
       "uniqueTreasure": {
         "name": "Remnant of Hobby",
         "effect": [
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 100 and the duration of [Arcane Crystal Awakening] by 7 sec.",
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 120 and the duration of [Arcane Crystal Awakening] by 7 sec.",
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 140 and the duration of [Arcane Crystal Awakening] by 7 sec.",
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 170 and the duration of [Arcane Crystal Awakening] by 7 sec.",
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 210 and the duration of [Arcane Crystal Awakening] by 7 sec.",
-          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 250 and the duration of [Arcane Crystal Awakening] by 7 sec."
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 100 and DEF Penetration of all allies by 250 for the duration of Skill.",
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 120 and DEF Penetration of all allies by 250 for the duration of Skill.",
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 140 and DEF Penetration of all allies by 250 for the duration of Skill.",
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 170 and DEF Penetration of all allies by 250 for the duration of Skill.",
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 210 and DEF Penetration of all allies by 250 for the duration of Skill.",
+          "[Disperse, Crystal Haze!] Increases ATK Spd by an additional 250 and DEF Penetration of all allies by 250 for the duration of Skill."
         ]
       }
     },
@@ -92,13 +92,13 @@
         {
           "skillNumber": "s3",
           "name": "Bloom, Crimson Flower!",
-          "description": "Summons Arcane Crystals and deals ??? M.DMG to frontal enemies in a straight line. Shortly afterward, causes an explosion that deals ??? additional M.DMG and inflicts [Arcane Crystal Curse] upon enemies for 10 sec, reducing their ATK Spd by 200. Attacking enemies under [Arcane Crystal Curse] inflicts a stack of [Arcane Crystal Energy]. [Arcane Crystal Curse] explodes after 10 sec, dealing M.DMG equal to ??? + ??? per stack of Arcane Crystal Energy.",
+          "description": "Summons Arcane Crystals and deals ??? M.DMG to frontal enemies in a straight line. Shortly afterward, causes an explosion that deals ??? additional M.DMG and inflicts [Arcane Crystal Curse] upon enemies for 5 sec, reducing their ATK Spd by 200. Attacking enemies under [Arcane Crystal Curse] inflicts a stack of [Arcane Crystal Energy].\n[Arcane Crystal Curse] explodes after 5 sec, dealing M.DMG equal to ??? + ??? per stack of [Arcane Crystal Energy].",
           "cooldown": 20,
           "cost": 4
         }
       ],
       "light": "Increases ATK Spd reduction by 300.",
-      "dark": "If there is only 1 enemy, inflicts 2 stacks of Arcane Crystal Energy.",
+      "dark": "Inflicts 2 stacks of Arcane Crystal Energy.",
       "books": [
         "Increases DMG by 10%.",
         "Increases DMG by 15%.",
@@ -122,7 +122,7 @@
         {
           "skillNumber": "s4",
           "name": "End to Evil Deeds!",
-          "description": "Increases own ATK by ??? and Crit Chance by 200 , while increasing the duration of CCs that all allies inflict to Bosses by ???%."
+          "description": "Increases own ATK by ??? and Crit Chance by 200, while increasing the duration of CCs that all allies inflict to Bosses by 30%."
         }
       ],
       "light": "At the beginning of each battle, self deals 25% increased DMG to Non-Hero enemies for 20 sec.",
@@ -135,18 +135,18 @@
       "uniqueTreasure": {
         "name": "Moment of Peace",
         "effect": [
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 30%.",
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 32%.",
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 34%.",
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 37%.",
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 41%.",
-          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 45%."
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 40%.",
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 42%.",
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 44%.",
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 47%.",
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 51%.",
+          "[End to Evil Deeds!] Increases Crit Chance by an additional 250 and the effect of the duration of CC increase changes to 55%."
         ]
       }
     }
   ],
   "light": "ATK, DEF, HP+15% / ATK Spd +100",
-  "dark": "Every normal and Skill attack increases ATK Spd by 5. This effect can be stacked up to max 100 times.",
+  "dark": "Increases Crit DMG by 40% and DEF Penetration by 150. This effect increases by 2 times after Kirze attack the enemy 100 times.",
   "background": {
     "profile": {
       "gender": "Female",

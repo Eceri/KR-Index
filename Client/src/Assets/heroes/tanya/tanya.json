@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Demon of the Calm, Caethasis",
       "effect": [
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 30% for 10 sec.",
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 36% for 10 sec.",
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 43% for 10 sec.",
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 52% for 10 sec.",
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 62% for 10 sec.",
-        "Turns into Stealth mode for 10 sec at the beginning of each battle. While in Stealth mode, own Crit DMG will be increased by 75% for 10 sec."
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 2 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 30% for 10 sec.",
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 2.4 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 36% for 10 sec.",
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 2.9 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 43% for 10 sec.",
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 3.5 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 52% for 10 sec.",
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 4.2 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 62% for 10 sec.",
+        "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for 5 sec. Every time Tanya becomes Stealth, her Crit DMG increases by 75% for 10 sec."
       ]
     },
     "soulWeapon": {
@@ -32,7 +32,7 @@
         {
           "skillNumber": "s1",
           "name": "Target Sighted",
-          "description": "Moves behind the enemy with the lowest P.DEF and increase their P.DMG taken by 30%, while knocking them down and inflicting ??? P.DMG. If in a Stealth state, stun said enemy for 6 sec. If not, gain Stealth for 10 sec. While in a Stealth State, Crit Rate and Dodge Rate rises by 50.",
+          "description": "Increases P.DMG the enemy with the lowest P.DEF takes by 30% for 10 sec, and moves behind the target, dealing ??? P.DMG and knocking it down for 2 sec. If used during Stealth, 150% increased Crit DMG applies, and Stealth is dispelled. If Skill is used while not in Stealth, becomes Stealth for 10 sec.",
           "cooldown": 8,
           "cost": 2
         }
@@ -42,7 +42,7 @@
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Crit Chance is increased by 250."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Copied Codex of Stealth",
@@ -62,7 +62,7 @@
         {
           "skillNumber": "s2",
           "name": "Blade Tornado",
-          "description": "Attacks nearby enemies 3 times and deals a total of ??? P.DMG, inflicting 1 stack of Bleed per each hit. If used in a Stealth state, target's heal rate is reduced by 70%, and Stealth is dispelled. If not, turns into Stealth mode for 10 sec. [Stealth] Crit Rate and Dodge Rate are increased by 50.",
+          "description": "Attacks nearby enemies 3 times and deals a total of ??? P.DMG, inflicting 1 stack of Bleed per each hit. If used in a Stealth state, target's heal rate is reduced by 70%, and Stealth is dispelled. If Skill is used while not in Stealth, becomes Stealth for 10 sec.",
           "cooldown": 14,
           "cost": 2
         }
@@ -72,7 +72,7 @@
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Crit Chance is increased by 250."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Laughing Mask All-round Belt",
@@ -92,7 +92,7 @@
         {
           "skillNumber": "s3",
           "name": "Whisper of Death",
-          "description": "Attacks random enemies 6 times and deals a total of ??? P.DMG, then deals one additional attack of ??? extra P.DMG. If used in Stealth state, dispels all enemies' buffs. If not, turns into Stealth mode for 10 sec. [Stealth] Crit Rate and Dodge Rate are increased by 50.",
+          "description": "Attacks a random enemy 6 times and deals a total of ??? P.DMG, then deals an extra that deals ??? P.DMG. If used during Stealth, dispels positive effects from the Target, and Stealth is dispelled. If Skill is used while not in Stealth, becomes Stealth for 10 sec.",
           "cooldown": 18,
           "cost": 3
         }
@@ -102,7 +102,7 @@
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Crit Chance is increased by 250."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Dagger of Silence",
@@ -122,7 +122,7 @@
         {
           "skillNumber": "s4",
           "name": "Silent Ambush",
-          "description": "Deals ??? additional P.DMG to the enemy and silences them for 1 sec upon a Critical Hit with the skill. If the target is not a Hero, deals ??? additional P.DMG that ignores DEF and reduces the target's ATK Spd by 200 for 10 sec."
+          "description": "Increases Crit Chance by 150 and Dodge by 150 during Stealth. Upon a Critical Skill Hit, deals ??? additional P.DMG to the enemy and inflicts Silence for 1.5 sec. If the target is not a Hero, deals ??? additional P.DMG that ignores DEF and reduces the target's ATK Spd by 200 for 10 sec."
         }
       ],
       "light": "Increases additional DMG against non-Hero enemies by 100%.",
@@ -130,7 +130,7 @@
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Silence duration is increased by 0.5 sec."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Needle of Silence",

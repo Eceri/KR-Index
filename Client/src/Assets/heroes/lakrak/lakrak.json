@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Lakrak MK-1",
       "effect": [
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 3%, ATK Spd by 30, and DMG to non-Hero enemies by 3%. Gunpowder stacks up to 7 times and cannot be removed.",
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 3.6%, ATK Spd by 36, and DMG to non-Hero enemies by 3.6%. Gunpowder stacks up to 7 times and cannot be removed.",
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 4.3%, ATK Spd by 43, and DMG to non-Hero enemies by 4.3%. Gunpowder stacks up to 7 times and cannot be removed.",
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 5.1%, ATK Spd by 51, and DMG to non-Hero enemies by 5.1%. Gunpowder stacks up to 7 times and cannot be removed.",
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 6.2%, ATK Spd by 62, and DMG to non-Hero enemies by 6.2%. Gunpowder stacks up to 7 times and cannot be removed.",
-        "Gains a 25% chance to obtain a stack of Gunpowder upon attacking. Each stack of Gunpowder increases ATK by 7.5%, ATK Spd by 75, and DMG to non-Hero enemies by 7.5%. Gunpowder stacks up to 7 times and cannot be removed."
+        "Increases the success rate of an experiment by 20%, and every time Lakrak has a successful experiment, increases ATK by 6%, ATK Spd by 60, and DMG to Non-Hero enemies by 6%. This effect can be stacked up to max 4 times and is irremovable.",
+        "Increases the success rate of an experiment by 24%, and every time Lakrak has a successful experiment, increases ATK by 7.2%, ATK Spd by 72, and DMG to Non-Hero enemies by 7.2%. This effect can be stacked up to max 4 times and is irremovable.",
+        "Increases the success rate of an experiment by 29%, and every time Lakrak has a successful experiment, increases ATK by 8.6%, ATK Spd by 86, and DMG to Non-Hero enemies by 8.6%. This effect can be stacked up to max 4 times and is irremovable.",
+        "Increases the success rate of an experiment by 35%, and every time Lakrak has a successful experiment, increases ATK by 10.5%, ATK Spd by 105, and DMG to Non-Hero enemies by 10.5%. This effect can be stacked up to max 4 times and is irremovable.",
+        "Increases the success rate of an experiment by 42%, and every time Lakrak has a successful experiment, increases ATK by 12.5%, ATK Spd by 125, and DMG to Non-Hero enemies by 12.5%. This effect can be stacked up to max 4 times and is irremovable.",
+        "Increases the success rate of an experiment by 50%, and every time Lakrak has a successful experiment, increases ATK by 15%, ATK Spd by 150, and DMG to Non-Hero enemies by 15%. This effect can be stacked up to max 4 times and is irremovable."
       ]
     },
     "soulWeapon": {
@@ -32,13 +32,13 @@
         {
           "skillNumber": "s1",
           "name": "Rapid Fire",
-          "description": "Attacks all frontal enemies in a straight line, dealing ??? P.DMG and pushing them back. If the target is not a Hero, deals ??? additional P.DMG and stuns them for 5 sec.",
+          "description": "Attacks all frontal enemies in a straight line, dealing ??? P.DMG and inflicting Stun for 3 sec. If the target is not a Hero, deals ??? additional P.DMG.\n[Experiment Success!] Removes Cooldown.",
           "cooldown": 8,
           "cost": 2
         }
       ],
       "light": "DMG is increased by 40%.",
-      "dark": "Stuns the enemy for 3 sec.",
+      "dark": "Reduces the Mana of hit target by 700.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -47,12 +47,12 @@
       "uniqueTreasure": {
         "name": "Cudgel Bullet",
         "effect": [
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 10% for 10 sec.",
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 12% for 10 sec.",
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 14% for 10 sec.",
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 17% for 10 sec.",
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 21% for 10 sec.",
-          "[Rapid Fire] Increases DMG by 50%, and increases P.DMG target receives by 25% for 10 sec."
+          "[Rapid Fire] Increases DMG by 50%, and recovers 200 mana on critical hit",
+          "[Rapid Fire] Increases DMG by 50%, and recovers 240 mana on critical hit",
+          "[Rapid Fire] Increases DMG by 50%, and recovers 290 mana on critical hit",
+          "[Rapid Fire] Increases DMG by 50%, and recovers 350 mana on critical hit",
+          "[Rapid Fire] Increases DMG by 50%, and recovers 420 mana on critical hit",
+          "[Rapid Fire] Increases DMG by 50%, and recovers 500 mana on critical hit"
         ]
       }
     },
@@ -62,7 +62,7 @@
         {
           "skillNumber": "s2",
           "name": "Smoke Bomb",
-          "description": "Deals ??? P.DMG to enemies in range. Target takes 20% increased P.DMG for 10 sec and is inflicted with Blind for 4 sec.",
+          "description": "Deals ??? P.DMG to target and nearby enemies within range and inflicts them with [Explosive Material] for 10 sec, causing them to take 20% increased P.DMG and additionally inflicting Blind for 4 sec.\n[Experiment Success!] Dispels positive effects from enemies within range.",
           "cooldown": 15,
           "cost": 2
         }
@@ -92,13 +92,13 @@
         {
           "skillNumber": "s3",
           "name": "Glue Bomb",
-          "description": "Attaches a Glue Bomb to a random enemy that explodes in 3 sec. The explosion deals max ??? P.DMG proportional to enemy's current HP to enemies in range, and inflicts Stun for 3 sec. Upon attaching the Glue Bomb, target is inflicted with Stun for 2 sec.",
+          "description": "Attaches a Glue Bomb to a random enemy that explodes in 3 sec to a random enemy, dealing ??? P.DMG to the target and nearby enemies and inflicting Stun for 3 sec. If the target is inflicted with [Explosive Material], deals ??? additional P.DMG.\n[Experiment Success!] Glue Bomb explodes immediately after attachment.",
           "cooldown": 12,
-          "cost": 3
+          "cost": 2
         }
       ],
-      "light": "Mana cost is increased by 1, and attacks a random target 2 times.",
-      "dark": "Mana cost is reduced by 1.",
+      "light": "Mana cost is increased by 1, and attaches the bomb on a random enemy twice.",
+      "dark": "Changes the target to the enemy with the highest ATK.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -107,12 +107,12 @@
       "uniqueTreasure": {
         "name": "Goblincraft Special High-Density Gunpowder",
         "effect": [
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 200 mana.",
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 240 mana.",
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 290 mana.",
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 350 mana.",
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 420 mana.",
-          "[Glue Bomb] DMG is increased by 50%, and upon Crit Hit, recovers 500 mana."
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 20% for 7 sec.",
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 24% for 7 sec.",
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 29% for 7 sec.",
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 35% for 7 sec.",
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 32% for 7 sec.",
+          "[Glue Bomb] DMG is increased by 50% and reduces the Heal Rate of the hit target by 50% for 7 sec."
         ]
       }
     },
@@ -122,11 +122,11 @@
         {
           "skillNumber": "s4",
           "name": "Load Cannon",
-          "description": "Each auto attack has a 15% chance of firing a bomb that deals ??? P.DMG to enemies in range and stuns them for 2 sec."
+          "description": "Normal attacks have a 15% chance of firing a bomb that deals ??? P.DMG to enemies within range and inflicting Stun for 2 sec. After each Skill use, Lakrak conducts and experiment. The experiment has a 50% success rate. Upon success, enhances the effects of the next skill use. Experiment does not occur when Lakrak uses the enhanced Skill."
         }
       ],
-      "light": "Activation chance is boosted by 10%.",
-      "dark": "Target takes 25% increased P.DMG for 10 sec.",
+      "light": "Increases the activation chance of the bomb by 10% and the duration of Stun by 1 sec.",
+      "dark": "Upon a successful experiment, recovers 500 Mana.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -146,7 +146,7 @@
     }
   ],
   "light": "ATK, DEF, HP+15% / Crit DMG +20%",
-  "dark": "Upon a Critical Hit, gain 5% Crit DMG and 30 CC Accuracy. Stacks up to 10 times.",
+  "dark": "Each successful experiment increases own ATK Spd by 300 and CC ACC by 300 for 10 sec.",
   "background": {
     "profile": {
       "gender": "Male",
