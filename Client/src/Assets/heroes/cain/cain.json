@@ -45,7 +45,7 @@
                 }
             ],
             "light": "[Tremble!] The effect applies to 3 allies, but all the effects that activate after 3.5 sec will not be activated.",
-            "dark": "[Kneel.] The effect applies to 3 enemies, but all the effects that activate after 3.5 sec will not be activated.",
+            "dark": "[Kneel.] The effect applies to 3 enemies, but all the effects that activate after 5 sec will not be activated.",
             "books": [
                 "Increases DMG and Heal Rate by 10%.",
                 "Increases DMG and Heal Rate by 15%.",
