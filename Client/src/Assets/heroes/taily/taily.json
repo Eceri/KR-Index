@@ -1,0 +1,187 @@
+{
+  "name": "Taily",
+  "title": "Valiant Knight Commander",
+  "class": "knight",
+  "damageType": "physical",
+  "position": "Front",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Rock of Perseverance, Prochika",
+      "effect": [
+        "Increases own Max HP by 8%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 200 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe].",
+        "Increases own Max HP by 10%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 240 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe].",
+        "Increases own Max HP by 12%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 290 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe].",
+        "Increases own Max HP by 14%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 350 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe].",
+        "Increases own Max HP by 17%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 420 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe].",
+        "Increases own Max HP by 20%, and after taking DMG 50 times, becomes [Fury of da Shuti Tribe] state. Upon becoming [Fury of da Shuti Tribe] state, immediately dispels negative effects from self, gains immunity to CC, and increases DEF Penetration by 500 for 5 sec. This effect is irremovable, and taking DMG while [Fury of da Shuti Tribe] is active will not reactivate the effects of [Fury of da Shuti Tribe]."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Dispels all positive effects from frontal enemies in a circular range, dealing ??? P.DMG, and summons the Soul of Rock of Perseverance, Prochika. The soul of Prochika disappears after activating an additional effect on the next Skill use.\n[BOOM! Here Goes!] Deals ??? P.DMG to enemies within range and increases All DMG they take by 40% for 8 sec.\n[Protection! Was dat Lucky Stone?] While charging energy, recovers target's Mana by a total of 2 orbs over 4 times. Afterward, increases the target's ATK by 50% for 10 sec.\n[Charge! Knight Commander Power!] Deals ??? P.DMG to the frontal enemy in range and instantly reduces the target's Mana by 3 orbs. Deals ??? additional P.DMG to Non-Hero enemies.     ",
+      "advancement1": "Changes Skill Activation Requirements to [X] times.",
+      "advancement2": "Reduces Cooldown by [X] sec, and after summoning the soul, increases own DEF Penetration by [X] for [X] sec.",
+      "activation": "Charges up upon using Skills 4 times",
+      "cd": 0,
+      "charges": 0
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "BOOM! Here Goes!",
+          "description": "Attacks frontal enemies in a straight line, dealing ??? P.DMG, inflicting Stun for 2 sec, and reducing All Block Chance by 350 for 8 sec. Afterward, deals ??? P.DMG to enemies within range and knocks them down for 3 sec.",
+          "cost": 2,
+          "cooldown": 13
+        }
+      ],
+      "light": "The All Block Chance Reduction effect on the target becomes irremovable.",
+      "dark": "Reduces Mana Cost by 1.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Shuti Tribe Advertising Poster",
+        "effect": [
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 20% for 10 sec.",
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 24% for 10 sec.",
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 29% for 10 sec.",
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 35% for 10 sec.",
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 42% for 10 sec.",
+          "[BOOM! Here Goes!] The Block Chance Reduction effect becomes fixed to 0. After using the Skill, increases Crit DMG of 4 allies by 50% for 10 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Protection! Was dat Lucky Stone?",
+          "description": "Dispels negative effects from self, and while charging energy, Taily takes 50% reduced DMG. When fully charged, increases own Heal Rate by 25% and All DEF by ??? for 10 sec. If this Skill is activated with 50 or more [Emblem of Courage] stacks, applies the effect to all allies and consumes all of the [Emblem of Courage] stacks.",
+          "cost": 3,
+          "cooldown": 22
+        }
+      ],
+      "light": "While charging energy, Taily gains immunity to All DMG.",
+      "dark": "Reduces Mana Cost by 1.",
+      "books": [
+        "Increases DEF Boost by 10%.",
+        "Increases DEF Boost by 15%.",
+        "Increases DEF Boost by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Emergency Snack",
+        "effect": [
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 10% of Max HP.",
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 12% of Max HP.",
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 14% of Max HP.",
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 17% of Max HP.",
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 21% of Max HP.",
+          "[Protection! Was dat Lucky Stone?] Reduces Cooldown by 6 sec, and once Taily fully charges energy, heals own HP equal to 25% of Max HP."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Charge! Knight Commander Power!",
+          "description": "Deals ??? P.DMG over 5 times to nearby enemies in a circular range of self and gains [Power of da Shuti Tribe] stacks. Afterward, gathers strength and delivers a final blow, dealing ??? P.DMG and increases All DMG the target takes by 30%+[2% per stack of Power of da Shuti Tribe] for 10 sec, and inflicts Stun for 3 sec. [Power of da Shuti Tribe] can be stacked up to max 30 times.",
+          "cost": 3,
+          "cooldown": 15
+        }
+      ],
+      "light": "When there is 1 enemy, increases stack gain of [Power of da Shuti Tribe] by 3 times.",
+      "dark": "Gains immunity to CC for the duration of Skill.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Fuzzy Jumbly Book",
+        "effect": [
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 0.5% per stack of [Power of da Shuti Tribe].",
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 0.6% per stack of [Power of da Shuti Tribe].",
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 0.7% per stack of [Power of da Shuti Tribe].",
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 0.8% per stack of [Power of da Shuti Tribe].",
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 0.9% per stack of [Power of da Shuti Tribe].",
+          "[Charge! Knight Commander Power!] Every hit besides the final blow inflicts Stun on the enemy for 2 sec. The final blow increases All DMG the target takes by an additional 1% per stack of [Power of da Shuti Tribe]."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Blessing of da Shuti Tribe!",
+          "description": "When HP percentage is 30% or above, attacks nearby enemies in range every sec, dealing ??? P.DMG. Taily gains an irremovable stack of [Emblem of Courage] each hit. Each stack of [[Emblem of Courage] increases All DEF of all allies by ???. [Emblem of Courage] can be stacked up to max 50 times. When HP percentage is 30% or below, increases own All Block Chance by 700."
+        }
+      ],
+      "light": "Reduces ATK of the hit target by 20% for 3 sec.",
+      "dark": "Upon hitting an enemy at the Arena, Taily deals additional P.DMG equal to 2% of the target's Max HP. This effect does not inflict a Crit Hit, but its DMG increases proportionally to DEF Penetration.",
+      "books": [
+        "Increases DEF Boost by 10%.",
+        "Increases DEF Boost by 15%.",
+        "Increases DEF Boost by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Best Knight Medal",
+        "effect": [
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 0.5% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable.",
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 0.6% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable.",
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 0.7% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable.",
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 0.8% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable.",
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 0.9% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable.",
+          "[Blessing of da Shuti Tribe!] Each hit reduces the target's Heal Rate by 1% and DEF Penetration by 10. This effect can be stacked up to max 25 times and is irremovable."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / CC Resist +100",
+  "dark": "At the beginning of the first battle, reduces 100 Mana every sec for 5 sec, but gains immunity to All DMG.",
+  "background": {
+    "profile": {
+      "gender": "Female",
+      "race": "Shuti",
+      "age": "11 Years",
+      "height": "87 cm",
+      "birthday": "11(Month), 13(Day), Month of Fortune",
+      "constellation": "Gisla the Sharpshooter",
+      "likes": "Going out for a walk, Compliments, Doing a forward roll, Somebody's snack, Junk food (Especially a slice of Koko)",
+      "dislikes": "Garlic, Octopus legs, Rivals featured in the 'popular' page of the animal hybrid encyclopedia"
+    },
+    "story": "There exist many animal hybrids in the world, but even among those animal hybrids, the origin of the Shuti tribe is considered extraordinary.\n\nIt is told that once upon a time, a valiant canine used a stone of supernatural power to create a technique that allows one to transcend the limits of the physical body temporarily. That technique was passed down to several successors, and they gathered to form the 'Shuti' tribe.\n\nThey then promptly sanctified the stone that started it all, and called it the 'Lucky Stone.' They cherished the stone in their hearts, and whenever they would use the technique, they would even chant and shout the name 'Lucky Stone.'\nBut for some unknown reason, the Lucky Stone vanished without leaving a trace, and this caused the Shuti tribe to wander endlessly in search of the stone.\nEven now, the Shuti tribe leads a nomadic lifestyle, moving from one place in another, to find the stone.\n\nThe recovery of the stone has become the long-cherished desire of the Shuti tribe.\n\nRecently, the Shuti tribe was blessed with the advent of young Taily, a Valiant Knight Commander who has stepped up to represent her tribe, and fulfill their greatest wish.\nWhen Taily managed to inscribe the strongest seal in history onto Prochika, the iconic hammer of the Shuti tribe, Taily rose to become the hero who will finally fulfill the long-lingering wish of the tribe.\n\nCarrying the wish of her tribe on her shoulders, brave Taily sets off to find the Lucky Stone that is hiding out there in the world somewhere.\n\nThough it should be noted that Taily's journey is often interrupted by all kinds of animal hybrids who want to sabotage her journey, and Taily often finds herself straying away from the main objective because of that.",
+    "itemIntroductions": {
+      "weapon": "The hammer of the Shuti tribe which is given to the bravest warrior.\nThe legends say that the day the progenitor attained the truth from the Lucky Stone after a series of harsh training, he carved his meditation rock in a shape of his own footprint to commemorate the historical day.\n\nAfter a long time had passed, his descendants noticed that there was enigmatic energy emitted from the meditation rock of the progenitor.\nThe descendants researched the rock for a great deal of time, and after countless trials and errors, they managed to transform the rock into a hammer.\n\nThe research was a great success.\nJust as the descendants expected, the hammer proved to be extremely powerful, and synergized perfectly with the unique technique of the Shuti tribe.\nIt was the birth of the legendary weapon, Prochika.\n\nHowever, they soon found themselves agonizing over a question...\nWho would wield such an overwhelming weapon?\n\nAfter undergoing many agonizing discussions, the members of the Shuti tribe decided to host a contest to find the one worthy of wielding the hammer. The contenders would charge their energy and engrave a footprint-shaped seal onto the hammer, and the one with the strongest seal would be the owner of the hammer.\nIt was deemed fair and just since once the engraved seal disappeared, the owner would then retire, and the Shuti tribe members would gather again to hold a new contest.\nYoung Taily won the latest contest by engraving the strongest footprint seal in history, and became the rightful owner of Prochika.\n\nAs a side note, there are many on-going discussions about the etymology of the name 'Prochika,' but it is widely accepted that it was the word which the Shuti ancestors used to describe their moments of enlightenment.",
+      "soul": "Even after becoming the wielder of Prochika, Taily swore something to herself every day.\nRather than relying on the power that her ancestors left behind, she vowed that she would become a great hero with just her strength alone.\n\nTo achieve that, not only did she need to search for the Lucky Stone, she also had to give her blood, sweat, and tears as the wielder of Prochika.\nSustaining the secret technique as long as she can, winning the staring contest, complimenting other animal hybrids... etc. \nNothing was easy, but Taily did not give up.\n\nHer prayers and hard work were finally paid off.\nAfter the endless training, Taily was finally able to draw out the highest point of her strength!\n\nWhen Taily charged her energy and struck down the earth with Prochika, it was that moment when Prochika felt Taily's aura was very similar to that of its first master.\n\nProchika, impressed with Taily's prowess, released the brilliant, blue light.\nThe light was a fragment of Prochika's memory and also the form of the ideal hero that Taily has always dreamed of.\n\nThe hero with an overwhelming presence, intimidating gaze, and overpowering might!\n\n- I have seen your blood, sweat, and tears, and I have to say that I am impressed!\nYou truly are the one who will succeed my will! Hahaha!",
+      "treasures": [
+        "The new issue of the World of Animal Hybrids is out now! To celebrate Puppy Day, we're featuring the Shuti tribe!\nWe have the Knight Commander herself who's eager to share the epic goal of her people! Her passionate interview has impressed us!\nIf you are someone who's always been curious about the brave Shuti tribe, then this issue is for you!\nYou can check out all the goodies just for 1,000 Gold!",
+        "A highly popular snack among the Shuti tribe, known for its blissful taste. The members of the Shuti tribe keep them and eat them only when they are famished.\nIt seems that a certain individual makes these snacks and gives it away to any Shuti tribe they come across.\nThe Shuti folks would form a line to receive this snack, and once they get one, they quickly store it in their pocket and stand at the back of the line again.",
+        "A book considered magical by the Shuti tribe that contains several coordinates of hidden treasures.\nOriginally, the book was given to the ancestors of the Shuti tribe by Idrian, and the Shuti tribe have been safekeeping it until present.\nThe Shuti tribe, however, could not decipher the difficult clusters of unfathomable characters present in the book, and could only recognize the drawings.\nThe Shuti tribe managed to find some treasures with the coordinates, but unfortunately, none of them was the Lucky Stone. Still, it has been confirmed that the treasures do exist in the places of the coordinates.",
+        "The decoration awarded to Taily the day she became the Knight Commander of the Shuti tribe.\nTaily was specially appointed as the High Knight Commander after winning the contest and becoming the wielder of Prochika.\nWith the decoration shining ever gloriously on her head, she marches on to find the Lucky Stone."
+      ]
+    }
+  },
+  "skins": [
+  ],
+  "voice": {
+    "actor": {
+      "jp": "Fukuo Yui",
+      "kr": "Lee Sae Ah",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}
