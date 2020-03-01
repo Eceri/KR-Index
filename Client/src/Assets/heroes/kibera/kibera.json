@@ -17,12 +17,12 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Midnight Demonic Swords, Night Sky & Dark Shadow & Veil, launching a blow to all enemies within wide frontal range of self that deals ??? M.DMG, inflicting Stun for [X] sec, and reducing their Mana by [x]. Afterward, increases own ATK by [X]% for [X] sec and deals a total of ??? M.DMG to [?] over [X] hits every [X] sec. Additional effects will be applied depending on Kibera's selected sword.\n[Nocturnal Demonic Sword, Night Sky] - Increases DMG dealt to enemies by [X]% for [X] sec.\n[Umbral Demonic Blade, Dark Shadow] - Reduces ATK of hit enemies by [X]% for [X] sec.\n[Darkslayer Demonic Sword, Veil] - DMG ignores DEF.",
-      "advancement1": "Reduces Skill Activation Requirements by [X] sec and increases DMG by [X]%.",
-      "advancement2": "Reduces Skill Activation Requirements by an additional [X] sec and dispels positive effects of the target.",
-      "activation": "Charges up over [X] sec.",
-      "cd": 0,
-      "charges": 0
+      "advancement0": "Summons the soul of Midnight Demonic Swords, Night Sky & Dark Shadow & Veil, launching a blow to all enemies within wide frontal range of self that deals ??? M.DMG, inflicting Stun for 3 sec, and reducing their Mana by 2000. Afterward, increases own ATK by 30% for 10 sec and deals a total of ??? M.DMG to 1 random enemy over 4 hits every 3 sec. Additional effects will be applied depending on Kibera's selected sword.\n[Nocturnal Demonic Sword, Night Sky] - Increases DMG dealt to enemies by 30% for 10 sec.\n[Umbral Demonic Blade, Dark Shadow] - Reduces ATK of hit enemies by 40% for 10 sec.\n[Darkslayer Demonic Sword, Veil] - DMG ignores DEF.",
+      "advancement1": "Reduces Skill Activation Requirements by 2 sec and increases DMG by 50%.",
+      "advancement2": "Reduces Skill Activation Requirements by an additional 4 sec and dispels positive effects of the target.",
+      "activation": "Charges up over 19 sec.",
+      "cd": 20,
+      "charges": 7
     }
   },
   "skills": [
@@ -74,7 +74,7 @@
         }
       ],
       "light": "Upon using [Ha! Full of Openings], inflicts silence on all enemies for 2 sec.",
-      "dark": "When there are [X] allies or less, the effect of [Shadow Dominion] applies to all allies.",
+      "dark": "When there are 3 allies or less, the effect of [Shadow Dominion] applies to all allies.",
       "books": [
         "Increases ATK Boost by 10%.",
         "Increases ATK Boost by 15%.",
