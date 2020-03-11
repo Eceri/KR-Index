@@ -18,7 +18,7 @@
     },
     "soulWeapon": {
       "advancement0": "Summons the soul of The Box of Fragrance, Etalia, healing a total of ??? HP of all allies over 10 sec and increasing ATK of the ally with the highest ATK by 4% for 120 sec every 3 sec. The ATK Boost effect can be stacked up to 15 times, and upon activation, there is a 30% chance to stack 2 times at once.",
-      "advancement1": "Changes the max numver of stacks to 20 times.",
+      "advancement1": "Changes the max number of stacks to 20 times.",
       "advancement2": "Increases Heal Rate by 100%, and increases the chance to stack 2 times at once to 50%.",
       "activation": "Charges up over 15 sec.",
       "cd": 20,
