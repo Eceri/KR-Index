@@ -1,5 +1,7 @@
 ## King's Raid Index
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e43fa059-54e1-45ba-b0f8-def2bab99950/deploy-status)](https://app.netlify.com/sites/krindex/deploys)
+
 A Webpage collecting info for the mobile game 'King's Raid'. It is still very much a wip. The Page is being hosted at https://krindex.netlify.com/.
 
 ## Docker Setup
