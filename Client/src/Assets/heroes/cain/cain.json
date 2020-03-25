@@ -44,8 +44,8 @@
                     "cost": 2
                 }
             ],
-            "light": "[Tremble] The effect applies to 3 allies, but all the effects that activate after few will not be activated.",
-            "dark": "[Kneel] The effect apples to 3 enemies, but all the effects that activate after few will not be activated.",
+            "light": "[Tremble!] The effect applies to 3 allies, but all the effects that activate after 3.5 sec will not be activated.",
+            "dark": "[Kneel.] The effect applies to 3 enemies, but all the effects that activate after 5 sec will not be activated.",
             "books": [
                 "Increases DMG and Heal Rate by 10%.",
                 "Increases DMG and Heal Rate by 15%.",
@@ -136,7 +136,7 @@
                 {
                     "skillNumber": "s4",
                     "name": "I Am the King of the Desert.",
-                    "description": "At the beginning of each battle, gains an irremoveable stack of [King of the Desert]. Each Stack of of [King of the Desert] increases the effect of [The God King's Mercy and [Dignity of the Tyrant] by 5%. Additionally, recovers 100 Mana every second, and increases ATK by ???. If [King of the Desert] is stacked 3 time(s) or more, self deals 50% increased DMG to Bosses. [King of the Desert] can be stacked up to 5 times."
+                    "description": "At the beginning of each battle, gains an irremoveable stack of [King of the Desert]. Each Stack of of [King of the Desert] increases the effect of [The God King's Mercy] and [Dignity of the Tyrant] by 5%. Additionally, recovers 100 Mana every second, and increases ATK by ???. If [King of the Desert] is stacked 3 time(s) or more, self deals 50% increased DMG to Bosses. [King of the Desert] can be stacked up to 5 times."
                 }
             ],
             "light": "DMG Boost against Bosses changes to 100%.",

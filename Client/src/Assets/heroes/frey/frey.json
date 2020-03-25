@@ -17,7 +17,7 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul Oof God's Authority, Rosmarta for 12 sec. Healing HP of 1 ally with the lowest HP by ??? every sec. Additionally, attack the enemy with the highest ATK and enemies nearby it every 1 sec, dealing ??? M.DMG and inflicting stun for 1 sec.",
+      "advancement0": "Summons the soul of God's Authority, Rosmarta for 12 sec. Healing HP of 1 ally with the lowest HP by ??? every sec. Additionally, attack the enemy with the highest ATK and enemies nearby it every 1 sec, dealing ??? M.DMG and inflicting stun for 1 sec.",
       "advancement1": "Duration of the soul is changed to 15 sec.",
       "advancement2": "Increases Heal Rate by 50%, and healed target block all incoming attacks for 5 sec.",
       "activation": "Charges up upon using Skills 5 times.",
@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": ["Honor Student", "Beachside", "Witch", "Ao Dai", "Light's Blessing", "Vestal", "Beachside 2"],
+  "skins": ["Honor Student", "Beachside", "Witch", "Ao Dai", "Light's Blessing", "Vestal", "Beachside 2", "Chocolate Ice Cream Dreams"],
   "voice": {
     "actor": {
       "jp": "Kakuma Ai",
