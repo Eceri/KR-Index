@@ -177,10 +177,6 @@ const renderArtifactContainer = (
   </ArtifactContainer>
 );
 
-// TODO: placeholder into DB
-const dropPlaceholder = "dropPlaceholder";
-const datePlaceholder = 2017;
-
 const picURL = name => {
   try {
     return require(`../../Assets/artifacts/${name}.png`);
@@ -207,7 +203,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
     />
     <ReactTooltip id={item.name}>
       {item.name}
-      {`\n Drop: ${dropPlaceholder} \n Release: ${datePlaceholder}`}
+      {`\n Drop: ${item.drop} \n Release: ${item.release}`}
     </ReactTooltip>
   </React.Fragment>
 );
