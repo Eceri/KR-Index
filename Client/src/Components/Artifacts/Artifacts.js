@@ -180,6 +180,14 @@ const renderArtifactContainer = (
 // TODO: placeholder into DB
 const dropPlaceholder = "dropPlaceholder";
 const datePlaceholder = 2017;
+
+const picURL = name => {
+  try {
+    return require(`../../Assets/artifacts/${name}.png`);
+  } catch (error) {
+    console.error(`Picture for ${name} is missing`);
+  }
+};
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
     <ArtifactImage
@@ -191,7 +199,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
           `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
-      src={require(`../../Assets/artifacts/${item.name}.png`)}
+      src={picURL(item.name)}
       alt={`Picture of ${item.name}`}
       align="left"
       data-tip

@@ -13,7 +13,7 @@ const DataSchema = new Schema(
     description: { required: true, type: [String] },
     story: String,
     drop: String,
-    release: Number
+    release: String
   },
   { timestamps: true, collection: "artifacts" }
 );
