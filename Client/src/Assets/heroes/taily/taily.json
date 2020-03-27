@@ -18,11 +18,11 @@
     },
     "soulWeapon": {
       "advancement0": "Dispels all positive effects from frontal enemies in a circular range, dealing ??? P.DMG, and summons the Soul of Rock of Perseverance, Prochika. The soul of Prochika disappears after activating an additional effect on the next Skill use.\n[BOOM! Here Goes!] Deals ??? P.DMG to enemies within range and increases All DMG they take by 40% for 8 sec.\n[Protection! Was dat Lucky Stone?] While charging energy, recovers target's Mana by a total of 2 orbs over 4 times. Afterward, increases the target's ATK by 50% for 10 sec.\n[Charge! Knight Commander Power!] Deals ??? P.DMG to the frontal enemy in range and instantly reduces the target's Mana by 3 orbs. Deals ??? additional P.DMG to Non-Hero enemies.     ",
-      "advancement1": "Changes Skill Activation Requirements to [X] times.",
-      "advancement2": "Reduces Cooldown by [X] sec, and after summoning the soul, increases own DEF Penetration by [X] for [X] sec.",
+      "advancement1": "Changes Skill Activation Requirements to 3 times.",
+      "advancement2": "Reduces Cooldown by 5 sec, and after summoning the soul, increases own DEF Penetration by 300 for 15 sec.",
       "activation": "Charges up upon using Skills 4 times",
-      "cd": 0,
-      "charges": 0
+      "cd": 18,
+      "charges": 6
     }
   },
   "skills": [

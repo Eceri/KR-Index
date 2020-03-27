@@ -1,0 +1,194 @@
+{
+  "name": "Xerah",
+  "title": "Herald of the Blood Moon",
+  "class": "wizard",
+  "damageType": "magical",
+  "position": "Middle",
+  "weapon": {
+    "uniqueWeapon": {
+      "name": "Crest of Extortion, Kaliosk",
+      "effect": [
+        "Increases Crit DMG by 20%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 500 and recovers own Mana by 500.",
+        "Increases Crit DMG by 24%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 600 and recovers own Mana by 600.",
+        "Increases Crit DMG by 29%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 700 and recovers own Mana by 700.",
+        "Increases Crit DMG by 35%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 800 and recovers own Mana by 800.",
+        "Increases Crit DMG by 42%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 900 and recovers own Mana by 900.",
+        "Increases Crit DMG by 50%, and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by 1000 and recovers own Mana by 1000."
+      ]
+    },
+    "soulWeapon": {
+      "advancement0": "Summons the soul of Crest of Extortion, Kaliosk, for 10 sec, dealing ??? M.DMG to an enemy with the highest ATK. For the duration of the soul, reduces target's ATK by 20%, Mana by 250 every sec, and increases own ATK by 30%.",
+      "advancement1": "Changes Skill Activation Requirements to 4 times, reduces ATK Reduction effect to 30%, and Boost effect to 50%.",
+      "advancement2": "Upon use, immediately enters Darkness Awakened state for 10 sec.",
+      "activation": "Charges up upon using Skills 5 times.",
+      "cd": 22,
+      "charges": 6
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "skillInfo": [
+        {
+          "skillNumber": "s1",
+          "name": "Orbs of Darkness",
+          "description": "Throws 6 orbs of darkness, dealing a total of ??? M.DMG to a random enemy and enemies in a circular range of the target. When Xerah is in [Darkness Awakened] state, increases DMG of [Orbs of Darkness] by x2, and reduces Cooldown by 100%.\n[Crest of Extortion Level 1 Effect] Destroys shield from the target.",
+          "cost": 2,
+          "cooldown": 5
+        }
+      ],
+      "light": "Upon use, recovers 1 orb of Mana.",
+      "dark": "Increases Mana Cost by 1 and changes the target to the enemy with the highest ATK.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Astral Orb",
+        "effect": [
+          "[Orbs of Darkness] Increases DMG by 20% and inflicts Stun on the hit enemy for 1 sec.",
+          "[Orbs of Darkness] Increases DMG by 24% and inflicts Stun on the hit enemy for 1 sec.",
+          "[Orbs of Darkness] Increases DMG by 29% and inflicts Stun on the hit enemy for 1 sec.",
+          "[Orbs of Darkness] Increases DMG by 35% and inflicts Stun on the hit enemy for 1 sec.",
+          "[Orbs of Darkness] Increases DMG by 42% and inflicts Stun on the hit enemy for 1 sec.",
+          "[Orbs of Darkness] Increases DMG by 50% and inflicts Stun on the hit enemy for 1 sec."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "skillInfo": [
+        {
+          "skillNumber": "s2",
+          "name": "Crest of Extortion",
+          "description": "Dispels negative effects from self and casts Crest of Extortion that lasts permanently on self. If Xerah already possesses a Crest of Extortion, the level of Crest of Extortion increases instead.\n[Crest of Extortion] Deals ??? M.DMG to a random enemy every 5 sec.\nLevel 1: Adds an additional effect to [Orbs of Darkness] Skill.\nLevel 2: Effect activation interval changes to 4 sec, and adds an additional effect to [Blood Moon] Skill.\nLevel 3: Effect activation interval changes to 3 sec, and [Crest of Extortion] Skill changes to [Crest Bestowal] Skill.",
+          "cost": 3,
+          "cooldown": 17
+        },
+        {
+          "skillNumber": "s2_2",
+          "name": "Crest Bestowal",
+          "description": "Upon use, dispels negative effects from self and bestows the power of the Crest of Extortion to an ally with the lowest HP. The ally instantly recovers 1 orb of Mana, heals its HP by a total of ??? for 5 sec, and gains Immunity to CC.",
+          "cost": 2,
+          "cooldown": 17,
+          "linked": "s2"
+        }
+      ],
+      "light": "[Crest of Extortion / Crest Bestowal] Gains Immunity to All DMG while in use.",
+      "dark": "For the duration of the [Crest Bestowal] effect, the ally takes 20% reduced DMG.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Blood Moon Amulet",
+        "effect": [
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 2 sec.",
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 2.4 sec.",
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 2.9 sec.",
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 3.5 sec.",
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 4.2 sec.",
+          "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by 5 sec."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "skillInfo": [
+        {
+          "skillNumber": "s3",
+          "name": "Blood Moon",
+          "description": "Creates a [Blood Moon] for 10 sec. For the duration of Blood Moon, increases ATK of all allies by ???, reduces DMG taken by 20%, deals a total of ??? M.DMG to all enemies, and reduces their Heal Rate by 50%.\n[Crest of Extortion Level 2 Effect] Boosts the effect all allies receive by x2.",
+          "cost": 4,
+          "cooldown": 25
+        }
+      ],
+      "light": "Increases Mana Cost by 1. Upon use, dispels negative effects from self, and for the duration of the Skill, continuously dispels negative effects from all allies.",
+      "dark": "Increases M.DMG the enemy takes by 30% for the duration of Skill.",
+      "books": [
+        "Increases DMG by 10%.",
+        "Increases DMG by 15%.",
+        "Increases DMG by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Puppet Doll",
+        "effect": [
+          "[Blood Moon] Recovers Mana of all allies by 100 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+          "[Blood Moon] Recovers Mana of all allies by 120 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+          "[Blood Moon] Recovers Mana of all allies by 140 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+          "[Blood Moon] Recovers Mana of all allies by 170 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+          "[Blood Moon] Recovers Mana of all allies by 210 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+          "[Blood Moon] Recovers Mana of all allies by 250 every sec for the duration of Skill, and changes Heal Rate Reduction effect inflicted upon hit enemy to 80%."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "skillInfo": [
+        {
+          "skillNumber": "s4",
+          "name": "Darkness Awakened",
+          "description": "Upon using a Skill, if Xerah is not in Darkness Awakened state, gains an irremovable stack of [Darkness].\nUpon gaining 4 [Darkness] stacks, Xerah consumes the stacks to enter [Darkness Awakened] state that is irremovable for 10 sec, increasing Lifesteal by 200 and dealing 50% increased DMG to Non-Hero enemies. When Xerah takes fatal DMG while in [Darkness Awakened] state, [Darkness Awakened] becomes deactivated, consumes entire Mana of self, and heals HP by 30%. Afterward, Xerah cannot gain any Darkness stacks for 10 sec."
+        }
+      ],
+      "light": "While in [Darkness Awakened] state, changes the DMG Boost effect against Non-Hero enemies to 100%.",
+      "dark": "At the beginning of every battle, enters [Darkness Awakened] state, and becomes unable to gain [Darkness] stacks for 40 sec.",
+      "books": [
+        "Increases HP Recovery by 10%.",
+        "Increases HP Recovery by 15%.",
+        "Increases HP Recovery by 25%."
+      ],
+      "uniqueTreasure": {
+        "name": "Portrait of an Unknown Girl",
+        "effect": [
+          "[Darkness Awakened] Increases the duration by 2 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+          "[Darkness Awakened] Increases the duration by 2.4 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+          "[Darkness Awakened] Increases the duration by 2.9 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+          "[Darkness Awakened] Increases the duration by 3.5 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+          "[Darkness Awakened] Increases the duration by 4.2 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+          "[Darkness Awakened] Increases the duration by 5 sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec."
+        ]
+      }
+    }
+  ],
+  "light": "ATK, DEF, HP+15% / Crit Chance +100",
+  "dark": "Dealing DMG with normal or Skill attacks increases M.DMG the target takes by 2% for 10 sec and reduces its Heal Rate by 2%. This effect can be stacked up to max 10 times.",
+  "background": {
+    "profile": {
+      "gender": "Female",
+      "race": "??? (Humanoid)",
+      "age": "??? (Human years: 17)",
+      "height": "165",
+      "birthday": "4(Month) 19(Day), Month of Life",
+      "constellation": "Armil the Saint",
+      "likes": "Darkness, the moon, puppet show, history book (very old), people with negative emotions",
+      "dislikes": "Angels, Demons, humans, animals, plants, basically everything in this world, and innocent child-like beings"
+    },
+    "story": "A girl that the Tidhar created to discretely impose their will on the world.\nShe hides her identity, conceiling herself amidst the shadows, operating among regular people.\nHer main purpose is to gather the power of darkness for the advent and find a vessel to contain it.\nShe did find an ideal vessel from the ancient kingdom of Sekireinel and a certain mighty-being thwarted her plans.\nBut Xerah was not frustrated nor disappointed.\nThe longer it took, the more she'll enjoy destroying this world.",
+    "itemIntroductions": {
+      "weapon": "missing",
+      "soul": "missing",
+      "treasures": [
+        "missing",
+        "missing",
+        "missing",
+        "missing"
+      ]
+    }
+  },
+  "skins": [],
+  "voice": {
+    "actor": {
+      "jp": "N/A",
+      "kr": "N/A",
+      "en": "N/A"
+    },
+    "lines": {
+      "jp": [],
+      "kr": [],
+      "en": []
+    }
+  }
+}

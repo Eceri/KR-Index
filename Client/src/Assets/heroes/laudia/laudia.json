@@ -186,7 +186,7 @@
             ]
         }
     },
-    "skins": ["Beachside", "Maid", "Another Busy Day"],
+    "skins": ["Beachside", "Maid", "Another Busy Day", "Ice Skating Team"],
     "voice": {
         "actor": {
             "jp": "N/A",
