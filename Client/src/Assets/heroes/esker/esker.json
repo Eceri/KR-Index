@@ -17,7 +17,7 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Wanderer's Pleasure, Lu Etrona Dice, and rolls the dice. Depending on the number of the dice's dots, immediately reduces Cooldown of Esker's nect Soul Weapon use by 10% and increases ATK of all allies by 12% for 60 sec. The ATK Boost effect can be stacked up to max 5 times.",
+      "advancement0": "Summons the soul of Wanderer's Pleasure, Lu Etrona Dice, and rolls the dice. Depending on the number of the dice's dots, immediately reduces Cooldown of Esker's next Soul Weapon use by 10% and increases ATK of all allies by 12% for 60 sec. The ATK Boost effect can be stacked up to max 5 times.",
       "advancement1": "Changes the max number of stacks to 7.",
       "advancement2": "Increases DEF Penetration of all allies by 50 per every stack.",
       "activation": "Charges up upon using Skills 6 times.",
