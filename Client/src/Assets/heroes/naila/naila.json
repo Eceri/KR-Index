@@ -17,7 +17,7 @@
       ]
     },
     "soulWeapon": {
-      "advancement0": "Summons the soul of Cursed Claws, Baroro, increasing own ATK by 40% for 10 sec. For the duration of Skill, deals ??? P.DMG to frontral enemies every 3 sec. Hit enemies are inflicted with Curse of Baroro for 5 sex, taking 30% increased P.DMG and having their Heal Rate reduced by 30%. If the target is a Boss, the Curse of Baroro effect increases by 1.5 times.",
+      "advancement0": "Summons the soul of Cursed Claws, Baroro, increasing own ATK by 40% for 10 sec. For the duration of Skill, deals ??? P.DMG to frontral enemies every 3 sec. Hit enemies are inflicted with Curse of Baroro for 5 secs, taking 30% increased P.DMG and having their Heal Rate reduced by 30%. If the target is a Boss, the Curse of Baroro effect increases by 1.5 times.",
       "advancement1": "Petrifies the hit enemy for 3 sec.",
       "advancement2": "Changes Skill Activation Requirements to 4 times and increases the duration of the soul by 3 sec.",
       "activation": "Charges up upon using Skill 5 times.",
