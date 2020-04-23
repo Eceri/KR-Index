@@ -1,0 +1,206 @@
+{
+    "name": "Evan",
+    "title": "Forest of Knowledge",
+    "class": "priest",
+    "damageType": "physical",
+    "position": "Middle",
+    "weapon": {
+        "uniqueWeapon": {
+            "name": "Small Synthesized Darkness, Naav Gehen",
+            "effect": [
+                "Whenever Evan uses a Skill, recovers own Mana by 400, reduces P.DMG all allies take by 10% for 5 sec, and increases P.DMG all enemies take by 10% for 5 sec.",
+                "Whenever Evan uses a Skill, recovers own Mana by 480, reduces P.DMG all allies take by 12% for 5 sec, and increases P.DMG all enemies take by 12% for 5 sec.",
+                "Whenever Evan uses a Skill, recovers own Mana by 580, reduces P.DMG all allies take by 14% for 5 sec, and increases P.DMG all enemies take by 14% for 5 sec.",
+                "Whenever Evan uses a Skill, recovers own Mana by 700, reduces P.DMG all allies take by 17% for 5 sec, and increases P.DMG all enemies take by 17% for 5 sec.",
+                "Whenever Evan uses a Skill, recovers own Mana by 840, reduces P.DMG all allies take by 21% for 5 sec, and increases P.DMG all enemies take by 21% for 5 sec.",
+                "Whenever Evan uses a Skill, recovers own Mana by 1000, reduces P.DMG all allies take by 25% for 5 sec, and increases P.DMG all enemies take by 25% for 5 sec."
+            ]
+        },
+        "soulWeapon": {
+            "advancement0": "Summons the soul of Small Synthesized Darkness, Naav Gehen for 10 sec, periodically healing HP of all allies by ??? and recovering Mana of all allies by 300 over 7 times.",
+            "advancement1": "Increases Heal Rate by 40% and changes Mana Recovery to 500.",
+            "advancement2": "Periodically reduces Evan's Skill Cooldown by 2 sec.",
+            "activation": "Charges up over 20 sec.",
+            "cd": 20,
+            "charges": 6
+        }
+    },
+    "skills": [
+        {
+            "id": 1,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Purification of Life",
+                    "description": "Heals HP of all allies by ??? and increases Heal Rate of healed allies by 25% for 15 sec.",
+                    "cooldown": 12,
+                    "cost": 2
+                },
+                {
+                    "skillNumber": "s1_2",
+                    "name": "Uproar of Naav Gehen",
+                    "description": "Deals ??? P.DMG to all enemies and increases P.DMG the hit enemies take by 25% for 10 sec.",
+                    "cooldown": 12,
+                    "cost": 2
+                }
+            ],
+            "light": "[Purification of Life] Reduces Cooldown of the Skill by 5 sec.",
+            "dark": "[Uproar of Naav Gehen] Changes the duration of the P.DMG Boost effect to 20 sec.",
+            "books": [
+                "Increases Heal Rate and DMG by 10%.",
+                "Increases Heal Rate and DMG by 15%.",
+                "Increases Heal Rate and DMG by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Rough Edged Rune Stone",
+                "effect": [
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 10% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 10% for 15 sec.",
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 12% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 12% for 15 sec.",
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 14% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 14% for 15 sec.",
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 17% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 17% for 15 sec.",
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 21% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 21% for 15 sec.",
+                    "[Purification of Life] Increases Heal Rate by 50% and reduces P.DMG healed allies take by 25% for 15 sec.\n[Uproar of Naav Gehen] Increases DMG by 50% and reduces enemy's Heal Rate by 25% for 15 sec."
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "skillInfo": [
+                {
+                    "skillNumber": "s1",
+                    "name": "Magic Circle of Life",
+                    "description": "Places a magic circle in a wide range of self for 12 sec, healing HP of all allies within range by ??? every sec and increasing their ATK Spd by 500.",
+                    "cooldown": 19,
+                    "cost": 3
+                },
+                {
+                    "skillNumber": "s2_2",
+                    "name": "Naav Gehen of Gluttony",
+                    "description": "Deals ??? P.DMG to the enemy and enemies within a wide range of the target, dispelling positiv effects from hit enemies and places a magic circle for 12 sec. The magic circle deals ??? P.DMG to enemies within range and reduces ATK by 20% every sec.",
+                    "cooldown": 19,
+                    "cost": 3
+                }
+            ],
+            "light": "[Magic Circle of Life] Increases CC Resist by 500 for the duration of the magic circle.",
+            "dark": "[Naav Gehen of Gluttony] Reduces Mana Cost by 1.",
+            "books": [
+                "Increases Heal Rate and DMG by 10%.",
+                "Increases Heal Rate and DMG by 15%.",
+                "Increases Heal Rate and DMG by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Evan's All-Purpose Bag",
+                "effect": [
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 12%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 120.",
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 14%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 140.",
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 17%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 170.",
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 21%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 210.",
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 25%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 250.",
+                    "[Magic Circle of Life] Reduces Mana Cost by 1 and increases ATK of allies within the range of the magic circle by 30%.\n[Naav Gehen of Gluttony] Reduces Cooldown by 7 sec and reduces ATK Spd of enemies within the range of the magic circle by 300."
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "skillInfo": [
+                {
+                    "skillNumber": "s3",
+                    "name": "Origin of Life",
+                    "description": "Creates a shield that absorbs ??? DMG and recovers 100 mana every sec for 15 sec on all allies. For the duration of the Shield, gains immmunity to CC.",
+                    "cooldown": 25,
+                    "cost": 4
+                },
+                {
+                    "skillNumber": "s3_2",
+                    "name": "Rampage of Naav Gehen",
+                    "description": "Deals a total of ??? P.DMG over 6 times to enemies within a wide range of the target and inflicts Stun for 2 sec. The last hit deals ??? P.DMG and inflicts Stun for 5 sec.",
+                    "cooldown": 19,
+                    "cost": 3    
+                }
+            ],
+            "light": "[Origin of Life] The Shield becomes irremovable, but reduces the shield to 50%.",
+            "dark": "[Rampage of Naav Gehen] Each hit reduces the target's Mana by 300.",
+            "books": [
+                "Increases shield and DMG by 10%.",
+                "Increases shield and DMG by 15%.",
+                "Increases shield and DMG by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Navigating Dowsing Pendulum",
+                "effect": [
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 20%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 200 for 10 sec.",
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 24%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 240 for 10 sec.",
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 29%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 290 for 10 sec.",
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 35%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 350 for 10 sec.",
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 42%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 420 for 10 sec.",
+                    "[Origin of Life] Upon use, dispels negative effects from self and increaes shield by 50%.\n[Rampage of Naav Gehen] While using the Skill, Evan gains immunity to CC, and the last hit reduces enemy's All Block Chance by 500 for 10 sec."
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "skillInfo": [
+                {
+                    "skillNumber": "s4",
+                    "name": "Alchemy of Green",
+                    "description": "At the beginning of each battle, heals HP of all allies by ??? and reduces P.DMG they take by 15% for 20 sec.\n[Alchemist of the Green Evan] Purification of Life, Magic Circle of Life, and Origin of Life become available for use. After Skill use, Evan turns into 'Alchemist of the Dark Evan.'\n[Alchemist of the Dark Evan] Uproar of Naav Gehen, Naav Gehen of Gluttony, and Rampage of Naav Gehen become available for use. After skill use, Evan turns into 'Alchemist of the Green Evan.'"
+                }
+            ],
+            "light": "Changes P.DMG Reduction to 25%.",
+            "dark": "At the beginning of the first battle, Evan starts as 'Alchemist of the Dark Evan' and gains immunity to CC for 5 sec.",
+            "books": [
+                "Increases Heal Rate by 10%.",
+                "Increases Heal Rate by 15%.",
+                "Increases Heal Rate by 25%."
+            ],
+            "uniqueTreasure": {
+                "name": "Naav's First Flask",
+                "effect": [
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 10% for 7 sec.",
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 12% for 7 sec.",
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 14% for 7 sec.",
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 17% for 7 sec.",
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 21% for 7 sec.",
+                    "[Alchemy of Green] Changes the duration of the P.DMG Reduction effect to 40 sec, and whenever Evan uses a Skill, increases P.DMG all enemies take by 25% for 7 sec."
+                ]
+            }
+        }
+    ],
+    "light": "ATK, DEF, HP+15% / HP +10%",
+    "dark": "Whenever Evan changes his alchemist form, increases ATK of all allies by 1% and ATK Spd by 10. This effect can be stacked up to max 30 times and is irremovable.",
+    "background": {
+        "profile": {
+            "gender": "missing",
+            "race": "missing",
+            "age": "missing",
+            "height": "missing",
+            "birthday": "missing",
+            "constellation": "missing",
+            "likes": "missing",
+            "dislikes": "missing"
+        },
+        "story": "missing",
+        "itemIntroductions": {
+            "weapon": "missing",
+            "treasures": [
+                "missing",
+                "missing",
+                "missing",
+                "missing"
+            ]
+        }
+    },
+    "skins": [],
+    "voice": {
+        "actor": {
+            "jp": "N/A",
+            "kr": "N/A",
+            "en": "N/A"
+        },
+        "lines": {
+            "jp": [],
+            "kr": [],
+            "en": []
+        }
+    }
+}
