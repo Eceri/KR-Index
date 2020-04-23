@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "The Bluewind, Coventina",
       "effect": [
-        "Grants a 10% chance to deal M.DMG equal to 100% of ATK and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
-        "Grants a 12% chance to deal M.DMG equal to 120% of ATK stat and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
-        "Grants a 14% chance to deal M.DMG equal to 140% of ATK stat and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
-        "Grants a 17% chance to deal M.DMG equal to 170% of ATK stat and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
-        "Grants a 21% chance to deal M.DMG equal to 210% of ATK stat and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
-        "Grants a 25% chance to deal M.DMG equal to 250% of ATK stat and inflicts Electric Shock on 2 random enemies through a normal attack. If the target is already inflicted with Electric Shock, stuns the target for 2 sec."
+        "Normal attack have a 12% chance to deal M.DMG equal to 100% of ATK against 2 random enemies and reuce their ATK by 10% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec.",
+        "Normal attack have a 14% chance to deal M.DMG equal to 120% of ATK against 2 random enemies and reuce their ATK by 12% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec.",
+        "Normal attack have a 17% chance to deal M.DMG equal to 140% of ATK against 2 random enemies and reuce their ATK by 14% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec.",
+        "Normal attack have a 21% chance to deal M.DMG equal to 170% of ATK against 2 random enemies and reuce their ATK by 17% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec.",
+        "Normal attack have a 25% chance to deal M.DMG equal to 210% of ATK against 2 random enemies and reuce their ATK by 21% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec.",
+        "Normal attack have a 30% chance to deal M.DMG equal to 250% of ATK against 2 random enemies and reuce their ATK by 25% for 10 sec. If the target is inflicted with Electric Shock inflicts Stun for 2 sec."
       ]
     },
     "soulWeapon": {
@@ -62,17 +62,17 @@
         {
           "skillNumber": "s2",
           "name": "Healing Rain",
-          "description": "HP of all allies is healed by ??? for 5 sec.",
+          "description": "Heals ??? HP of all allies over 5 times. For the duration of Skill, Kaulah gains immunity to CC and takes 50% reduced All DMG.",
           "cooldown": 11,
           "cost": 2
         }
       ],
       "light": "Allies take 25% less DMG while skill is in effect.",
-      "dark": "In exchange for 1 additional Mana Cost, additionally heal allies by 5% of their Max HP.",
+      "dark": "Increases Mana Cost by 1 and additionally heals 5% of the target's Max HP each heal.",
       "books": [
         "Heal rate is increased by 10%.",
         "Heal rate is increased by 15%.",
-        "While in use, DMG Reduction is increased by 500 , and gains CC immunity."
+        "Heal rate is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Thunderbird Mask",
@@ -92,17 +92,17 @@
         {
           "skillNumber": "s3",
           "name": "Swift Wind",
-          "description": "For 15 sec, all allies' ATK is increased by ??? , and ATK Spd is increased by 350.",
-          "cooldown": 20,
+          "description": "For 15 sec, increases all allies' ATK by ???, ATK Spd by 350, and Crit Chance by 350.",
+          "cooldown": 15,
           "cost": 4
         }
       ],
       "light": "Recovers 1 orb of Mana for all allies.",
-      "dark": "Cooldown is reduced by 3 sec.",
+      "dark": "All effects become irremovable.",
       "books": [
         "ATK boost is increased by 10%.",
         "ATK boost is increased by 15%.",
-        "Crit Chance is increased by 350 for the duration of skill."
+        "ATK boost is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Skywind Feather Decoration",
@@ -146,7 +146,7 @@
     }
   ],
   "light": "ATK, DEF, HP+15% / Crit Chance +100",
-  "dark": "When taking DMG, decreases ATK Spd of the attacking enemy by 300 for 5 sec. This effect is activated only once every 5 sec.",
+  "dark": "When Kaulah takes DMG, reduces ATK Spd of the attacker by 300 for 5 sec and its Mana by 200 every sec. This effect is only activated once every 5 sec.",
   "background": {
     "profile": {
       "gender": "Male",

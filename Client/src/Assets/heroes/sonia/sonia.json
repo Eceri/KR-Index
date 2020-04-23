@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": ["Ice Guardian", "Blushing Smile", "Beachside", "Maid", "Santa", "Swift Point Guard"],
+  "skins": ["Ice Guardian", "Blushing Smile", "Beachside", "Maid", "Santa", "Swift Point Guard", "Science Club"],
   "voice": {
     "actor": {
       "jp": "Kubota Risa",

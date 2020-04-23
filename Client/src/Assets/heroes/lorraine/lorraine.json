@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "World Tree's Will, Roburu",
       "effect": [
-        "Every 7 sec, deals 40% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 10%. Per every stacked Poison, DMG is increased by 20%.",
-        "Every 7 sec, deals 48% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 12%. Per every stacked Poison, DMG is increased by 20%.",
-        "Every 7 sec, deals 57% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 14%. Per every stacked Poison, DMG is increased by 20%.",
-        "Every 7 sec, deals 69% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 17%. Per every stacked Poison, DMG is increased by 20%.",
-        "Every 7 sec, deals 83% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 20%. Per every stacked Poison, DMG is increased by 20%.",
-        "Every 7 sec, deals 100% of ATK as M.DMG to enemies inflicted with Poison, and reduces enemy M.DEF by 25%. Per every stacked Poison, DMG is increased by 20%."
+        "Deals M.DMG equal to 100% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 10% and increasing M.DMG the target takes by 10% for 10 sec.",
+        "Deals M.DMG equal to 120% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 12% and increasing M.DMG the target takes by 12% for 10 sec.",
+        "Deals M.DMG equal to 140% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 14% and increasing M.DMG the target takes by 14% for 10 sec.",
+        "Deals M.DMG equal to 170% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 17% and increasing M.DMG the target takes by 17% for 10 sec.",
+        "Deals M.DMG equal to 210% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 21% and increasing M.DMG the target takes by 21% for 10 sec.",
+        "Deals M.DMG equal to 250% of ATK to enemies inflicted with Poison every 7 sec, reducing M.DEF by 25% and increasing M.DMG the target takes by 25% for 10 sec."
       ]
     },
     "soulWeapon": {
@@ -32,27 +32,27 @@
         {
           "skillNumber": "s1",
           "name": "Thornbush Forest",
-          "description": "Attacks 3 times at random, dealing ??? M.DMG to enemies in range and inflicting 1 stack of Poison with each attack.",
+          "description": "Attacks a random enemy and its nearby enemies 3 times, dealing a total of ??? M.DMG and inflicting Stun for 3 sec.",
           "cooldown": 7,
           "cost": 2
         }
       ],
-      "light": "Hit count is increased by 1.",
-      "dark": "Enemies with 5 or more stacks of Poison are shackled for 3 sec upon hit.",
+      "light": "Reduces Mana of the hit target by 250. If the target is a boss, reduces Mana by 500.",
+      "dark": "Recovers 250 Mana upon Critical Hit.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Leaves 2 stacks of Poison upon a Critical Hit."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Book of Life",
         "effect": [
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 0.8 sec.",
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 1 sec.",
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 1.2 sec.",
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 1.4 sec.",
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 1.7 sec.",
-          "[Thornbush Forest] Reduces Mana Cost by 1 and Cooldown by 2 sec."
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 1.2 sec.",
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 1.4 sec.",
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 1.7 sec.",
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 2.1 sec.",
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 2.5 sec.",
+          "[Thornbush Forest] Increases DMG by 50% and reduces Cooldown by 3 sec."
         ]
       }
     },
@@ -61,28 +61,28 @@
       "skillInfo": [
         {
           "skillNumber": "s2",
-          "name": "Tangled Vine",
-          "description": "Deals ??? M.DMG to enemies in a straight line, stacking 2 Poison and shackling them for 4 sec. After some time, deals a large amount of DMG based on the number of Poison stacks.",
-          "cooldown": 10,
+          "name": "Seed of Belladonna",
+          "description": "Creates a Seed of Belladonna around the target for 10 sec. The seed deals ??? M.DMG to nearby enemies every 2 sec, increasing M.DMG the target takes by 30% and reducing Heal Rate by 30% for 5 sec.",
+          "cooldown": 15,
           "cost": 3
         }
       ],
-      "light": "DMG is increased by 40%.",
-      "dark": "Enemies hit by the final explosion effect are stunned for 2 sec.",
+      "light": "Increases DMG by 40%.",
+      "dark": "Increases the duration of the CC inflicted upon hit enemies by 30% for 5 sec.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Target takes 25% increased M.DMG for the duration of skill."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Deadly Belladonna",
         "effect": [
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 200 MP from the affected enemy.",
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 240 MP from the affected enemy.",
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 290 MP from the affected enemy.",
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 350 MP from the affected enemy.",
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 420 MP from the affected enemy.",
-          "[Tangled Vine] Reduces Mana Cost by 1 and drains 500 MP from the affected enemy."
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 200, and recovers own Mana by 100.",
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 240, and recovers own Mana by 120.",
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 290, and recovers own Mana by 140.",
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 350, and recovers own Mana by 170.",
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 420, and recovers own Mana by 210.",
+          "[Seed of Belladonna] Reduces Mana Cost by 1, Mana of hit enemies by 500, and recovers own Mana by 250."
         ]
       }
     },
@@ -92,13 +92,13 @@
         {
           "skillNumber": "s3",
           "name": "Wrath of the Forest",
-          "description": "Deals ??? M.DMG to enemies in range and knocks them down for 3 sec. Enemies inflicted by Poison takes 20% more DMG per every stack.",
-          "cooldown": 23,
+          "description": "Attacks enemies within a wide frontal range of self 6 times, dealign a total of ??? M.DMG and knocking them down for 3 sec.",
+          "cooldown": 18,
           "cost": 3
         }
       ],
       "light": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
-      "dark": "Enemies with 5 or more stacks of Poison lose their positive effects.",
+      "dark": "Dispels positive effects of enemies within Range.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -121,12 +121,12 @@
       "skillInfo": [
         {
           "skillNumber": "s4",
-          "name": "Blade Leaf",
-          "description": "When dealing a normal attack, attacks a random enemy 3 times with a 30% chance of inflicting ??? M.DMG and 1 stack of Poison for 20 seconds. Poison inflicts a total of ??? M.DMG over 20 seconds."
+          "name": "Poison",
+          "description": "Normal and Skill attacks inflict Poison on a target, dealing a total of ??? continuous M.DMG and reducing Heal Rate by 5% over 20 sec. Poison can be stacked up to max 5 times."
         }
       ],
-      "light": "Poison stack maximum is changed to 6.",
-      "dark": "There is a 20% chance that hit enemies are shackled for 2 sec.",
+      "light": "Reduces target's ATK by 5% per stack of Poison.",
+      "dark": "If the target is a boss, increases DMG of Poison by x3.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -135,18 +135,18 @@
       "uniqueTreasure": {
         "name": "Terrarium of Circulation",
         "effect": [
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 10% increased M.DMG for 10 sec.",
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 12% increased M.DMG for 10 sec.",
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 14% increased M.DMG for 10 sec.",
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 17% increased M.DMG for 10 sec.",
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 21% increased M.DMG for 10 sec.",
-          "[Blade Leaf] Increases activation chance by 20%. Targets take 25% increased M.DMG for 10 sec."
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 10% increased M.DMG.",
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 12% increased M.DMG.",
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 14% increased M.DMG.",
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 17% increased M.DMG.",
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 21% increased M.DMG.",
+          "[Poison] Poison effect becomes irremovable and for the duration of the Poison, target takes 25% increased M.DMG."
         ]
       }
     }
   ],
   "light": "ATK, DEF, HP+15% / Crit Chance +100",
-  "dark": "Every 5 sec, targets all enemies and attacks with 'Thornbush Forest' with 30% chance on each enemy.",
+  "dark": "At the beginning of each battle, immediately reduces self's Cooldown of all Skills by 30% and increases DMG dealt to Non-Hero enemies by 20% for 90 sec. DMG Boost effect can be stacked up to max 5 times and is irremovable.",
   "background": {
     "profile": {
       "gender": "Female",

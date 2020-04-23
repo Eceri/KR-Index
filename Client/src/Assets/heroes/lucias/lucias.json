@@ -170,7 +170,7 @@
       ]
     }
   },
-  "skins": ["Caroler", "Noble Grace", "Beachside"],
+  "skins": ["Caroler", "Noble Grace", "Beachside", "High School"],
   "voice": {
     "actor": {
       "jp": "N/A",

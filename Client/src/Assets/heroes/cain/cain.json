@@ -33,14 +33,14 @@
                     "skillNumber": "s1",
                     "name": "Tremble!",
                     "description": "Cain heals the ally with the lowest HP by ??? and grants the ally with [The God King’s Blessing], which reduces All DMG the ally receives 35% and grants immunity to CC for 3.5 sec. After 3.5 seconds, Cain dispels negative effects from the target and the allies nearby. Afterwards, heals their HP by ???. [The God King’s Blessing] is irremovable.",
-                    "cooldown": 12,
+                    "cooldown": 14,
                     "cost": 2
                 },
                 {
                     "skillNumber": "s1_2",
                     "name": "Kneel.",
                     "description": "Cain deals ??? P.DMG to the enemy with the highest ATK and casts [Sealing Technique of the Tyrant] that reduces the target's ATK Spd 350 and prevents the target from receiving any positive effects for 5 sec. After 5 sec, Cain deals ??? P.DMG to the target and the enemies nearby, inflicting stun for 3 sec. [Sealing Technique of the Tyrant] is irremovable.",
-                    "cooldown": 12,
+                    "cooldown": 14,
                     "cost": 2
                 }
             ],
@@ -71,7 +71,7 @@
                     "name": "Behold My Might.",
                     "description": "Cain turns into a [Tyrant] and constantly attacks the target, dealing ??? P.DMG with each hit. While Cain is in [Tyrant] form, [Tremble!] and [Gaze Upon My Almighty Power!] change to [Kneel.] and [Now Die.]. Upon using the Skill again, he returns to [God King] form.\n[The God King’s Mercy] - While Cain is in God King form, reduces DMG all allies take 10%.\n[Dignity of the Tyrant] – While Cain is in Tyrant form, increases DMG all enemies take 10%.",
                     "cooldown": 8,
-                    "cost": 2
+                    "cost": 3
                 }
             ],
             "light": "Each stack of [King of the Desert] increases the DMG of this Skill by 30%",

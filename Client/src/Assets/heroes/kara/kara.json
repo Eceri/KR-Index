@@ -8,12 +8,12 @@
         "uniqueWeapon": {
             "name": "0-Form Perpetual Motion Cannon, Heaven Shatterer",
             "effect": [
-                "Increases ATK by 1% every second. Can be stacked up to 30 times.",
-                "Increases ATK by 1% every second. Can be stacked up to 40 times.",
-                "Increases ATK by 1% every second. Can be stacked up to 50 times.",
-                "Increases ATK by 1% every second. Can be stacked up to 60 times.",
-                "Increases ATK by 1% every second. Can be stacked up to 70 times.",
-                "Increases ATK by 1% every second. Can be stacked up to 80 times."
+                "Increases ATK by 2% every second. Can be stacked up to 15 times.",
+                "Increases ATK by 2% every second. Can be stacked up to 20 times.",
+                "Increases ATK by 2% every second. Can be stacked up to 25 times.",
+                "Increases ATK by 2% every second. Can be stacked up to 30 times.",
+                "Increases ATK by 2% every second. Can be stacked up to 35 times.",
+                "Increases ATK by 2% every second. Can be stacked up to 40 times."
             ]
         },
         "soulWeapon": {
@@ -136,7 +136,7 @@
                 {
                     "skillNumber": "s4",
                     "name": "Essence of Technomagic",
-                    "description": "When in Anti-personnel Weapon mode, increases all DEF by ??? , and when in Siege Weapon mode, increases ATK by ??? , takes 30% more DMG, and gains Immunity to CC. Recovers 60 MP each time DMG is dealt to an enemy."
+                    "description": "While in [Anti-personnel Weapon] mode, increases All DEF by ???, and while in [Siege Weapon] mode, increases DMG against bosses by 25%, takes 30% increased DMG from enemies, and gains immunity to CC. Dealing DMG to an enemy recovers 70 Mana each hit."
                 }
             ],
             "light": "MP Recovery triples when there is only one enemy.",

@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Holy Bird, Numinu",
       "effect": [
-        "Increases own Max HP by 12%. Per every 1% of HP missing, ATK is increased by 0.8% and ATK Spd is increased by 8.",
-        "Increases own Max HP by 14%. Per every 1% of HP missing, ATK is increased by 1% and ATK Spd is increased by 10.",
-        "Increases own Max HP by 17%. Per every 1% of HP missing, ATK is increased by 1.2% and ATK Spd is increased by 12.",
-        "Increases own Max HP by 21%. Per every 1% of HP missing, ATK is increased by 1.4% and ATK Spd is increased by 14.",
-        "Increases own Max HP by 25%. Per every 1% of HP missing, ATK is increased by 1.7% and ATK Spd is increased by 17.",
-        "Increases own Max HP by 30%. Per every 1% of HP missing, ATK is increased by 2% and ATK Spd is increased by 20."
+        "Increases own Max HP by 12%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 200% of ATK and freezing the enemy for 2 sec.",
+        "Increases own Max HP by 14%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 240% of ATK and freezing the enemy for 2 sec.",
+        "Increases own Max HP by 17%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 290% of ATK and freezing the enemy for 2 sec.",
+        "Increases own Max HP by 21%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 350% of ATK and freezing the enemy for 2 sec.",
+        "Increases own Max HP by 25%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 420% of ATK and freezing the enemy for 2 sec.",
+        "Increases own Max HP by 30%. Normal attacks have a 15% chance of dealing additional P.DMG equal to 500% of ATK and freezing the enemy for 2 sec."
       ]
     },
     "soulWeapon": {
@@ -62,12 +62,12 @@
         {
           "skillNumber": "s2",
           "name": "Battle Roar",
-          "description": "All allies' ATK is increased by ??? for 15 sec. Upon activation, dispels all negative effects from allies.",
+          "description": "Dispels negative effects from all allies and increases their ATK by ??? and ATK Spd by 300 for 15 sec.",
           "cooldown": 15,
           "cost": 2
         }
       ],
-      "light": "ATK boost is increased by 40%.",
+      "light": "All effects become irremovable.",
       "dark": "ATK Spd boost of 200 is added to the effect.",
       "books": [
         "ATK boost is increased by 10%.",
@@ -77,12 +77,12 @@
       "uniqueTreasure": {
         "name": "Fighter's Horn",
         "effect": [
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 20%.",
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 24%.",
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 29%.",
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 35%.",
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 42%.",
-          "[Battle Roar] Reduces Mana Cost by 1 and increases ATK Boost by 50%."
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 20% for the duration of Skill.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 24% for the duration of Skill.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 29% for the duration of Skill.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 35% for the duration of Skill.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 42% for the duration of Skill.",
+          "[Battle Roar] Reduces Mana Cost by 1 and increases targets' Crit DMG by 50% for the duration of Skill."
         ]
       }
     },
@@ -92,7 +92,7 @@
         {
           "skillNumber": "s3",
           "name": "Vortex",
-          "description": "Deals ??? P.DMG to nearby enemies. If the target is not a Hero, deals ??? P.DMG. The last attack freezes nearby enemies for 4 sec. Gains immunity to CC for the duration of Skill.",
+          "description": "Deals ??? P.DMG over 12 times to nearby enemies within a circular range of self and draws them in while use. While using the Skill, gains immunity to CC. The last attack freezes the enemy for 4 sec.",
           "cooldown": 20,
           "cost": 4
         }
@@ -102,17 +102,17 @@
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
-        "Draws in nearby enemies while casting."
+        "DMG is increased by 25%."
       ],
       "uniqueTreasure": {
         "name": "Barbarian Mug",
         "effect": [
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 5% more DMG for 10 sec.",
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 6% more DMG for 10 sec.",
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 7% more DMG for 10 sec.",
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 8.5% more DMG for 10 sec.",
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 10.5% more DMG for 10 sec.",
-          "[Vortex] DMG is increased by 50%, and enemies hit by the last attack takes 12.5% more DMG for 10 sec."
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 8% for 10 sec.",
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 10% for 10 sec.",
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 12% for 10 sec.",
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 14% for 10 sec.",
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 17% for 10 sec.",
+          "[Vortex] Increases DMG by 50%, and the last hit increases All DMG the target takes by 20% for 10 sec."
         ]
       }
     },
@@ -122,11 +122,11 @@
         {
           "skillNumber": "s4",
           "name": "Enrage",
-          "description": "Upon attacking, increases ATK by ??? for 5 sec, and DMG to Non-Hero enemies by 3%. This effect can be stacked up to max 10 times."
+          "description": "Increases own ATK by ???, CC Resist by 20, and DMG dealt to Non-Hero enemies by 1% every sec. This effect can be stacked up to max 30 times. At 20 stacks or more, increases DMG of normal attacks by 100%."
         }
       ],
-      "light": "ATK boost is increased by 40%.",
-      "dark": "Takes 5% more DMG per each stack, but gains a boost of 50 Crit Chance and Lifesteal per each stack as well.",
+      "light": "All effects become irremovable.",
+      "dark": "Reduces own DEF by 3% per stack, and changes DMG dealt to Non-Hero enemies to 1.5%.",
       "books": [
         "ATK boost is increased by 10%.",
         "ATK boost is increased by 15%.",
@@ -135,12 +135,12 @@
       "uniqueTreasure": {
         "name": "Snowdrop Bracelet",
         "effect": [
-          "[Enrage] Increases the max number of stacks by 1. Each stack increases DEF Penetration by 10.",
-          "[Enrage] Increases the max number of stacks by 2. Each stack increases DEF Penetration by 10.",
-          "[Enrage] Increases the max number of stacks by 3. Each stack increases DEF Penetration by 10.",
-          "[Enrage] Increases the max number of stacks by 4. Each stack increases DEF Penetration by 10.",
-          "[Enrage] Increases the max number of stacks by 5. Each stack increases DEF Penetration by 10.",
-          "[Enrage] Increases the max number of stacks by 6. Each stack increases DEF Penetration by 10."
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 100.",
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 120.",
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 140.",
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 170.",
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 210.",
+          "[Enrage] Changes the max numver of stacks to 40 and upon gaining 30 or more stacks, increases own DEF Penetration by 250."
         ]
       }
     }

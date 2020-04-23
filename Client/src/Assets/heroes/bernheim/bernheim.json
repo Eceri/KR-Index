@@ -32,12 +32,11 @@
         {
           "skillNumber": "s1",
           "name": "Circle of Futility",
-          "description": "Attacks the target and nearby enemies within range, dealing ??? M.DMG and placing the Circle of Futility. Circle of Futility deals ??? M.DMG, reduces ATK Spd by 300 , and prevents enemies from receiving positive effects over 4 sec. A 4 -sec Cooldown will be applied at the beginning of the first battle.",
-          "cooldown": 15,
-          "cost": null
+          "description": "Attacks the target and nearby enemies within range, dealing ??? M.DMG and placing the Circle of Futility. Circle of Futility deals ??? M.DMG, reduces ATK Spd by 300 , and prevents enemies from receiving positive effects over 4 sec.\nA 4-sec Cooldown will be applied at the beginning of the first battle.",
+          "cooldown": 15
         }
       ],
-      "light": "Reduces the initial Cooldown by 3 sec.",
+      "light": "Increases M.DMG the enemies within [Circle of Futility] take by 25%.",
       "dark": "If [Circle of Futility] is cast while [Battle Initiation] is active, its duration will be increased by 4 sec.",
       "books": [
         "DMG is increased by 10%.",
@@ -62,13 +61,12 @@
         {
           "skillNumber": "s2",
           "name": "Battle Initiation",
-          "description": "Attacks enemies within frontal range, dealing ??? M.DMG and knocking them back. Then, increases own All Block by ??? and DEF by ??? , and gains immunity to CC for 8 sec. A 8 -sec Cooldown will be applied at the beginning of the first battle.",
-          "cooldown": 22,
-          "cost": null
+          "description": "Attacks enemies within frontal range, dealing ??? M.DMG and knocking them back. Then, increases own All DMG Reduction by 200 and DEF by ???, and gains immunity to CC for 15 sec.\nA 8-sec Cooldown will be applied at the beginning of the first battle.",
+          "cooldown": 22
         }
       ],
       "light": "Dispels all negative effects from self upon use.",
-      "dark": "The duration of the effect is increased by 8 sec.",
+      "dark": "Increases Heal Rate by 30% for the duration of the effect.",
       "books": [
         "DEF boost is increased by 10%.",
         "DEF boost is increased by 15%.",
@@ -92,9 +90,8 @@
         {
           "skillNumber": "s3",
           "name": "Destroyer",
-          "description": "Deals ??? M.DMG over 10 attacks to nearby enemies in a circular range around self. Then, attacks enemies in a wide surrounding area, dealing ??? M.DMG and stunning them for 5 sec. If the target is not a Hero, each attack will deal additional ??? M.DMG. A 10 -sec Cooldown will be applied at the beginning of the first battle.",
-          "cooldown": 22,
-          "cost": null
+          "description": "Deals ??? M.DMG over 10 attacks to nearby enemies in a circular range around self. Then, attacks enemies in a wide surrounding area, dealing ??? M.DMG and stunning them for 5 sec. If the target is not a Hero, each attack will deal additional ??? M.DMG.\nA 10-sec Cooldown will be applied at the beginning of the first battle.",
+          "cooldown": 22
         }
       ],
       "light": "Ignores the target's P.Block and M.Block.",
@@ -146,7 +143,7 @@
     }
   ],
   "light": "ATK, DEF, HP +15% / Crit Chance +100",
-  "dark": "Upon normal attack, causes the target to take 1% increased M.DMG and reduces their M.DEF by 1% for 10 sec. This effect stacks up to 20 times.",
+  "dark": "At the beginnign of the first battle, reduces self's Cooldown of Skills by 5 sec. When this effect is activated during Guild War, the effect is doubled.",
   "background": {
     "profile": {
       "gender": "Male",

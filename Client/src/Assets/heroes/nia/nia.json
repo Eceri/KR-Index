@@ -45,8 +45,8 @@
           "linked": "s1_0"
         }
       ],
-      "light": "Increases DMG by 40%.",
-      "dark": "Recovers own Mana by 50 upon every hit.",
+      "light": "Each hit reduces the target's Mana by 100.",
+      "dark": "Each hit recovers own mana by 100.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -83,7 +83,7 @@
           "linked": "s2_0"
         }
       ],
-      "light": "Stuns targets for 1 sec when [Hunt Mark] is inflicted, and for 3 sec when [Enhanced Hunt Mark] is inflicted.",
+      "light": "Reduces Mana Cost by 1.",
       "dark": "[Hunt Mark] and [Enhanced Hunt Mark] cannot be dispelled by skills that remove negative effects.",
       "books": [
         "DMG is increased by 10%.",
@@ -108,14 +108,14 @@
         {
           "skillNumber": "s3",
           "name": "Demonic Eyes of Petrification",
-          "description": "Deals ??? P.DMG to frontal enemies ??? times, and petrifies them for 3 sec.",
+          "description": "Deals ??? P.DMG to frontal enemies ??? times, and petrifies them for 3 sec, reducing their All Dodge Chance by 200 for 10 sec.",
           "cooldown": 30,
-          "cost": 4
+          "cost": 3
         },
         {
           "skillNumber": "s3_2",
           "name": "Enhanced Demonic Eyes of Petrification",
-          "description": "Deals ??? P.DMG that ignores DEF to frontal enemies in a wider range ??? times, and petrifies them for 5 sec.",
+          "description": "Deals ??? P.DMG that ignores DEF to frontal enemies in a wider range ??? times, and petrifies them for 5 sec, reducing their All Dodge Chance by 200 for 10 sec.",
           "cooldown": 0,
           "cost": 1,
           "linked": "s3_0"
@@ -146,11 +146,11 @@
         {
           "skillNumber": "s4",
           "name": "Demonic Blood",
-          "description": "Gains 1 stack of [Demonic Blood] upon casting a skill. It can be stacked up to max 4 times, and upon gaining 4 stacks, Cooldown of all skills is reset and [Enhanced Skill] becomes available. Removes [Demonic Blood] stacks when [Enhanced Skill] is used. Upon gaining each stack of [Demonic Blood], increases own ATK by ??? and All Dodge Chance by 20 for 20 sec. This effect can be stacked up to max 10 times."
+          "description": "Gains 1 stack of [Demonic Blood] upon using a skill. It can be stacked up to max 4 times, and upon gaining 4 stacks, reset Cooldown of all Skills and [Enhanced Skill] becomes available. Using [Enhanced Skill] removes [Demonic Blood] stacks. Upon gaining each stack of [Demonic Blood], increases own ATK by ??? and All Dodge chance by 40 for 20 sec. This effect can be stacked up to max 5 times."
         }
       ],
-      "light": "Increases ATK Boost and All Dodge Chance Boost by 50%.",
-      "dark": "Dispels own negative effects upon gaining 4 stacks of [Demonic Blood].",
+      "light": "Whenever Nia gains a stack of [Demonic Blood], heals own HP equal to 8% of Max HP.",
+      "dark": "Upon gaining 4 stacks of [Demonic Blood], recovers 2 orbs of Mana and increases own ATK by 50% for 5 sec.",
       "books": [
         "ATK boost is increased by 10%.",
         "ATK boost is increased by 15%.",
@@ -194,7 +194,7 @@
       ]
     }
   },
-  "skins": ["Goth", "Beachside", "Christmas of the Wild"],
+  "skins": ["Goth", "Beachside", "Christmas of the Wild", "Middle School"],
   "voice": {
     "actor": {
       "jp": "N/A",

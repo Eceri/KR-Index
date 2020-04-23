@@ -8,12 +8,12 @@
     "uniqueWeapon": {
       "name": "Jailer of Despair Barbatos",
       "effect": [
-        "Fury duration is increased by 2 sec and when in Fury state, Crit DMG is increased by 80%.",
-        "Fury duration is increased by 3 sec and when in Fury state, Crit DMG is increased by 90%.",
-        "Fury duration is increased by 4 sec and when in Fury state, Crit DMG is increased by 100%.",
-        "Fury duration is increased by 5 sec and when in Fury state, Crit DMG is increased by 110%.",
-        "Fury duration is increased by 6 sec and when in Fury state, Crit DMG is increased by 120%.",
-        "Fury duration is increased by 7 sec and when in Fury state, Crit DMG is increased by 130%."
+        "Fury duration is increased by 2 sec. While in Fury state, increases Crit DMG by 80% and CC Resist by 200.",
+        "Fury duration is increased by 3 sec. While in Fury state, increases Crit DMG by 90% and CC Resist by 240.",
+        "Fury duration is increased by 4 sec. While in Fury state, increases Crit DMG by 100% and CC Resist by 290.",
+        "Fury duration is increased by 5 sec. While in Fury state, increases Crit DMG by 110% and CC Resist by 350.",
+        "Fury duration is increased by 6 sec. While in Fury state, increases Crit DMG by 120% and CC Resist by 420.",
+        "Fury duration is increased by 7 sec. While in Fury state, increases Crit DMG by 130% and CC Resist by 500."
       ]
     },
     "soulWeapon": {
@@ -22,7 +22,7 @@
       "advancement2": "For the duration of Skill, increases own DMG dealt to enemies by 30%.",
       "activation": "Charges up upon using Skills 6 times.",
       "cd": 18,
-      "charges": 4
+      "charges": 6
     }
   },
   "skills": [
@@ -32,13 +32,13 @@
         {
           "skillNumber": "s1",
           "name": "Destructive Instinct",
-          "description": "Swipes nearby enemies in a circular range and deals ??? M.DMG. Then strikes the ground, dealing ??? M.DMG and knocking down enemies for 3 sec. [Fury] - Consumes 15% of current HP to activate. Effect range increases and swipe attack draws in enemies.",
+          "description": "Swipes nearby enemies in a circular range and deals ??? M.DMG. Then strikes the ground, dealing ??? M.DMG and knocking down enemies for 3 sec.\n[Fury] - Consumes 15% of current HP to activate. Effect range increases and swipe attack draws in enemies.",
           "cooldown": 8,
           "cost": 2
         }
       ],
       "light": "DMG is increased by 40%.",
-      "dark": "After activation, ATK is increased by 40% for 5 sec.",
+      "dark": "After Skill use, increases ATK by 40% for 10 sec.",
       "books": [
         "DMG is increased by 10%.",
         "DMG is increased by 15%.",
@@ -62,7 +62,7 @@
         {
           "skillNumber": "s2",
           "name": "Dawning Despair",
-          "description": "Dashes to an enemy with the highest ATK and deals ??? M.DMG to enemies in range, reducing their ATK Spd by 300. [Fury] - Consumes 10% of current HP to activate. Effect range increases, Stuns target for 3 sec, and increases own ATK Spd by 300 for 10 sec.",
+          "description": "Dashes to an enemy with the highest ATK and deals ??? M.DMG to enemies in range, reducing their ATK Spd by 300.\n[Fury] - Consumes 10% of current HP to activate. Effect range increases, Stuns target for 3 sec, and increases own ATK Spd by 300 for 10 sec.",
           "cooldown": 10,
           "cost": 2
         }
@@ -92,7 +92,7 @@
         {
           "skillNumber": "s3",
           "name": "Strike of Doom",
-          "description": "Charges energy and attacks target enemy, dealing ??? M.DMG and inflicting Stun for 3 sec. [Fury] - Consumes 20% of current HP to activate. Attacks enemies in range of target and DMG is tripled.",
+          "description": "Charges energy and attacks the enemy, dealing ??? M.DMG and inflicting Stun for 3 sec. This DMG ignores the target's DMG Reduction effect.\n[Fury] - Consumes 20% of current HP to activate. Attacks enemies in range of target and DMG is tripled.",
           "cooldown": 7,
           "cost": 2
         }
@@ -122,7 +122,7 @@
         {
           "skillNumber": "s4",
           "name": "Cursed Blood",
-          "description": "Ezekiel gains 1 stack of 'Cursed Blood' at the end of skill. Upon the 4th stack, consumes Cursed Blood to reset all skill cooldown, dealing ??? M.DMG to nearby enemies and knocking them down for 3 sec, while activating Fury for 10 sec, that cannot be dispelled. While in Fury state, goes into an auto-battle mode that cannot be controlled, and ATK is increased by ??? , auto attack DMG is doubled, and all Skill effect are reinforced. Cannot gain Cursed Blood during Fury state, except for when killing an enemy."
+          "description": "Ezekiel gains 1 stack of 'Cursed Blood' at the end of Skill. At 3 stacks, consumes Cursed Blood to reset Cooldown of all Skills, dealing ??? M.DMG to nearby enemies, knocking them down for 3 sec, and activating Fury for 10 sec. Fury is irremovable. While in Fury state, Ezekiel goes into auto-battle mdoe that cannot be controlled, increasing ATK by ???, DMG of normal attacks by x2, and enhancing all Skill effects. During Fury state, Skill use does not grant a stack of Cursed Blood, but killing an enemy will grant a stack."
         }
       ],
       "light": "When in Fury state, heal rate is increased by 50%.",

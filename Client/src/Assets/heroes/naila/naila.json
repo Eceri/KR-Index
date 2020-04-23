@@ -63,7 +63,7 @@
           "skillNumber": "s2",
           "name": "Wind Reading",
           "description": "Dispels negative effects from self, and casts [Wind Reading] to all allies for 15 sec, increasing their ATK by ??? and P.Dodge by 250. If an ally under [Wind Reading] successfully dodges an attack, their Crit DMG increases by 5% for 10 sec. The Crit DMG Boost effect can be stacked up to max 10 times.",
-          "cooldown": 15,
+          "cooldown": 20,
           "cost": 1
         }
       ],
