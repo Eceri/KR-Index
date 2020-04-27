@@ -31,11 +31,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/preset-react": "^7.0.0",
-    "babel-plugin-styled-components": "^1.10.6",
-    "file-loader": "^4.3.0",
-    "image-webpack-loader": "^5.0.0"
-  }
+  ]
 }

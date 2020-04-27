@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import expressWinston from "express-winston";
 import Logger from "./logger";
+require("dotenv").config();
 
 // Absolute Imports
 import apiRoutes from "../routes/api/index";
@@ -14,20 +15,14 @@ const app = express();
 // TODO: Settings.json ?
 const PORT = process.env.PORT || 5000;
 
-let MONGOLAB_URI;
-
-if (process.env.MONGOLAB_URI_ADMIN)
-  MONGOLAB_URI = process.env.MONGOLAB_URI_ADMIN;
-if (process.env.MONGOLAB_URI_USER) MONGOLAB_URI = process.env.MONGOLAB_URI_USER;
-
 try {
   // TODO: create process.ENV with URL
   mongoose.connect(
-    `mongodb+srv://${MONGOLAB_URI}@krc-hinbo.mongodb.net/test?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.MONGOLAB_URI_ADMIN}@krc-hinbo.mongodb.net/test?retryWrites=true&w=majority`,
     { useUnifiedTopology: true }
   );
 } catch (error) {
-  mongoose.connection.on("error", error => {
+  mongoose.connection.on("error", (error) => {
     Logger.error("Database connection error:", error);
   });
 }
@@ -47,9 +42,9 @@ app.use(
       new winston.transports.Console({
         json: true,
         colorize: true,
-        format: new winston.format.prettyPrint()
-      })
-    ]
+        format: new winston.format.prettyPrint(),
+      }),
+    ],
   })
 );
 
