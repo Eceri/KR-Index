@@ -22,9 +22,9 @@ const SearchListElement = styled.li`
   cursor: pointer;
   padding-left: 0.5rem;
 
-  background-color: ${props => props.navigation && "#71b9f5"};
+  background-color: ${(props) => props.navigation && "#71b9f5"};
 
-  color: ${props => (props.active ? "lightgrey" : "black")};
+  color: ${(props) => (props.active ? "lightgrey" : "black")};
 `;
 
 const SearchInput = styled.input`
@@ -39,25 +39,25 @@ const SearchInput = styled.input`
 
 const classesSorted = [
   ...classes
-    .map(v =>
-      v.heroes.map(h => ({
+    .map((v) =>
+      v.heroes.map((h) => ({
         type: "heroes",
         heroClass: v.name,
         name: h,
-        meta: {}
+        meta: {},
       }))
     )
-    .flat(1)
+    .flat(1),
 ];
 
 const searchFilter = (names, query) => {
-  const artifactNames = names.map(artifact => artifact.name);
-  const artifactResults = artifactNames.filter(v =>
+  const artifactNames = names.map((artifact) => artifact.name);
+  const artifactResults = artifactNames.filter((v) =>
     v.toLowerCase().includes(query.toLowerCase())
   );
   const classesResults =
     query !== ""
-      ? classesSorted.filter(v =>
+      ? classesSorted.filter((v) =>
           v.name.toLowerCase().includes(query.toLowerCase())
         )
       : classesSorted;
@@ -65,16 +65,16 @@ const searchFilter = (names, query) => {
   const resultArray = sortNames(
     [
       ...classesResults,
-      ...artifactResults.map(artifact => ({
+      ...artifactResults.map((artifact) => ({
         type: "artifacts",
         name: artifact,
-        meta: {}
-      }))
+        meta: {},
+      })),
     ],
     "ASC"
   );
 
-  const posQuery = resultArray.map(v => v.name.toLowerCase().indexOf(query));
+  const posQuery = resultArray.map((v) => v.name.toLowerCase().indexOf(query));
   const resultArraySort = resultArray
     .map((v, i) => ({ ...v, pos: posQuery[i] }))
     .sort((a, b) => a.pos - b.pos);
@@ -95,11 +95,11 @@ export const NavBar = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
-    fetch(`https://krc-api.herokuapp.com/api/artifacts/`)
-      .then(res => {
+    fetch(`${process.env.REACT_APP_SERVER}/artifacts/`)
+      .then((res) => {
         return res.json();
       })
-      .then(data => {
+      .then((data) => {
         setArtifacts(sortNames(data, "ASC"));
         localStorage.setItem(
           "Artifacts",
@@ -108,7 +108,7 @@ export const NavBar = () => {
       });
   }, []);
 
-  const handleClickOutside = event => {
+  const handleClickOutside = (event) => {
     if (ref.current && !ref.current.contains(event.target)) setSeach(false);
   };
 
@@ -123,20 +123,20 @@ export const NavBar = () => {
 
   const handleKey = ({ key }) => {
     if (key === "ArrowUp") {
-      setKeyPressed(prevState =>
+      setKeyPressed((prevState) =>
         prevState.cursor > 0 ? { cursor: prevState.cursor - 1 } : { cursor: 0 }
       );
     }
     const itemArayLength = searchFilter(artifacts, searchQuery).length - 1;
     if (key === "ArrowDown") {
-      setKeyPressed(prevState =>
+      setKeyPressed((prevState) =>
         prevState.cursor < itemArayLength
           ? { cursor: prevState.cursor + 1 }
           : { cursor: itemArayLength }
       );
     }
     if (key === "Enter") {
-      setKeyPressed(prevState => ({ ...prevState, key }));
+      setKeyPressed((prevState) => ({ ...prevState, key }));
     }
     listRef.current !== null &&
       listRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
@@ -199,7 +199,7 @@ const renderSearch = (
     )}
     <SearchInput
       placeholder="Search..."
-      onChange={e => {
+      onChange={(e) => {
         setSearchQuery(e.currentTarget.value);
         setSeach(true);
       }}

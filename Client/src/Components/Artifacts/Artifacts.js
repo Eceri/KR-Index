@@ -7,12 +7,12 @@ import Artifact from "./Artifact";
 import {
   LOADING_ARTIFACT,
   API_URL,
-  ARTIFACT_URL
+  ARTIFACT_URL,
 } from "../../Constants/constants.index";
 import {
   createHelmet,
   GET_LOCALSTORAGE,
-  SET_LOCALSTORAGE
+  SET_LOCALSTORAGE,
 } from "../../helpers/helpers.index";
 import { Button } from "../atoms/atoms.index";
 
@@ -78,12 +78,12 @@ export const sortNames = (data, direction) => {
 };
 
 const filterArtifacts = (artifacts, query) => {
-  return artifacts.filter(v =>
+  return artifacts.filter((v) =>
     v.name.toLowerCase().includes(query.toLowerCase())
   );
 };
 
-const scrollToRef = ref => window.scrollTo(0, ref.offsetTop);
+const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
 
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
@@ -112,18 +112,18 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    fetch(`${API_URL}${ARTIFACT_URL}`)
-      .then(res => {
+    fetch(`${process.env.REACT_APP_SERVER}${ARTIFACT_URL}`)
+      .then((res) => {
         return res.json();
       })
-      .then(data => {
+      .then((data) => {
         setArtifacts(sortNames(data, "ASC"));
         SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(data, "ASC")));
       });
   }, []);
 
-  const getFirstArtifactMatches = name =>
-    artifacts.filter(artifact => artifact.name === name)[0];
+  const getFirstArtifactMatches = (name) =>
+    artifacts.filter((artifact) => artifact.name === name)[0];
 
   return (
     <div id="content" ref={scrollRef}>
@@ -164,7 +164,7 @@ const renderArtifactContainer = (
       </Button>
       <FilterBox
         placeholder="Filter..."
-        onChange={e => setSearchQuery(e.currentTarget.value)}
+        onChange={(e) => setSearchQuery(e.currentTarget.value)}
         value={searchQuery}
       />
     </div>
@@ -177,7 +177,7 @@ const renderArtifactContainer = (
   </ArtifactContainer>
 );
 
-const picURL = name => {
+const picURL = (name) => {
   try {
     return require(`../../Assets/artifacts/${name}.png`);
   } catch (error) {
