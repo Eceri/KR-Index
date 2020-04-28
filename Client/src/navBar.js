@@ -95,7 +95,7 @@ export const NavBar = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_SERVER}/artifacts/`)
+    fetch(`${process.env.REACT_APP_SERVER}artifacts/`)
       .then((res) => {
         return res.json();
       })
