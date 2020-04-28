@@ -19,7 +19,7 @@ try {
   // TODO: create process.ENV with URL
   mongoose.connect(
     `mongodb+srv://${process.env.MONGOLAB_URI_ADMIN}@krc-hinbo.mongodb.net/test?retryWrites=true&w=majority`,
-    { useUnifiedTopology: true }
+    { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
   );
 } catch (error) {
   mongoose.connection.on("error", (error) => {

@@ -10,6 +10,7 @@ const router = express.Router();
  * searches for all Artifacts
  */
 router.get("/", async (req, res, next) => {
+  console.log("Get");
   const childLogger = Logger.child({ requestId: "451" });
   childLogger.info("GET Route /");
   try {
@@ -31,8 +32,8 @@ router.get("/", async (req, res, next) => {
 router.post("/post", async (req, res, next) => {
   const body = req.body;
   Logger.info("POST Route /artifact/post");
-  await body.map(async v => {
-    Data.create({ ...v }, error => {
+  await body.map(async (v) => {
+    Data.create({ ...v }, (error) => {
       if (error) {
         Logger.error(error);
         res.status(400).send(error);
@@ -113,8 +114,8 @@ router.put("/update/:id", async (req, res, next) => {
           description: body.description
             ? body.description
             : compareData.description,
-          story: body.story ? body.story : compareData.story
-        }
+          story: body.story ? body.story : compareData.story,
+        },
       }
     );
   } catch (error) {
@@ -129,7 +130,7 @@ router.delete("/delete/:id", async (req, res, next) => {
   Logger.info("DELETE Route /artifact/delete/:id");
   const id = req.params.id;
   try {
-    await Data.deleteOne({ _id: id }, error => {
+    await Data.deleteOne({ _id: id }, (error) => {
       if (error) {
         Logger.error(error);
         res.status(400).send(`No Artifact found with ${id} as an id`);

@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start": "node -r esm app.js",
+    "start": "node setup.js",
     "docs": "apidoc -i .\\routes\\api\\ -o apidoc/",
-    "dev": "nodemon -r esm app.js"
+    "dev": "nodemon setup.js"
   },
   "dependencies": {
     "apidoc": "^0.18.0",
