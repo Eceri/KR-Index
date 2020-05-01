@@ -4,11 +4,11 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "babel-plugin-root-import": "^6.1.0",
+    "babel-plugin-root-import": "^6.5.0",
     "path-to-regex": "^1.3.1",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
@@ -20,8 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "file-loader": "^6.0.0"
+  }
 }
