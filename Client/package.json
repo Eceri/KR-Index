@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "babel-preset-react": "^6.24.1",
     "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -19,9 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "webpackDev": "webpack-dev-server --open --mode development",
-    "webpack": "webpack",
+    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

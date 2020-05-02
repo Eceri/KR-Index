@@ -41,6 +41,9 @@ module.exports = {
   },
   devtool: "source-map",
   resolve: {
+    /**
+     * @todo place relative paths here
+     */
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),
     },
