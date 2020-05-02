@@ -4,8 +4,8 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "babel-plugin-root-import": "^6.5.0",
-    "path-to-regex": "^1.3.1",
+    "babel-preset-react": "^6.24.1",
+    "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -14,11 +14,14 @@
     "react-scripts": "^2.1.8",
     "react-tabs": "^3.0.0",
     "react-tooltip": "^3.10.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "webpack": "^4.43.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "webpackDev": "webpack-dev-server --open --mode development",
+    "webpack": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,6 +35,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "file-loader": "^6.0.0"
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

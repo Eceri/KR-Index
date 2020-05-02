@@ -1,14 +1,14 @@
 import React from "react";
 
-export const Image = props => {
+export const Image = (props) => {
   let { src, alt, className, id, style, dataTip } = props;
   let trySource = () => {
     let source = "";
     try {
-       source = require(`./../Assets/${src}`);
+      source = require(`Assets/${src}`);
     } catch (error) {
-      console.log("failed loading an image: Error: " + error)
-    };
+      console.log("failed loading an image: Error: " + error);
+    }
     return source;
   };
   return (
@@ -22,4 +22,3 @@ export const Image = props => {
     />
   );
 };
-export default Image;

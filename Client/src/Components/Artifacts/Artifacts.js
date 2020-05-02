@@ -179,7 +179,7 @@ const renderArtifactContainer = (
 
 const picURL = (name) => {
   try {
-    return require(`../../Assets/artifacts/${name}.png`);
+    return require(`Assets/artifacts/${name}.png`);
   } catch (error) {
     console.error(`Picture for ${name} is missing`);
   }
