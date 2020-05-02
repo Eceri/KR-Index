@@ -5,7 +5,7 @@ import Home from "./home";
 import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
-import {createHelmet} from "./helpers/helpers.helmet"
+import { createHelmet } from "./helpers/helpers.helmet";
 
 render(
   <>
@@ -32,7 +32,7 @@ render(
         style={{ alignItems: "center" }}
       >
         <img
-          src="/GitHub-Mark-Light-32px.png"
+          src={`${require("Assets/icons/GitHub-Mark-Light-32px.png")}`}
           alt="github"
           style={{ border: "none" }}
         />

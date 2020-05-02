@@ -5,9 +5,8 @@ import Helmet from "react-helmet";
  *
  * @param {*} title
  * @param {*} content
- * @param {*} link
  */
-export const createHelmet = (title, content, link) => (
+export const createHelmet = (title, content) => (
   <Helmet>
     <title>{title}</title>
     <meta name="description" content={content} />

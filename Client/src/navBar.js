@@ -150,7 +150,7 @@ export const NavBar = () => {
     <nav>
       <Link to={"/"} className={"navLink"}>
         <img
-          src={"/favicon.png"}
+          src={`${require("Assets/icons/favicon.png")}`}
           alt={"favicon.png"}
           style={{ width: 24, border: "none" }}
         />

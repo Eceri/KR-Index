@@ -1,12 +1,13 @@
 const path = require("path");
 const { DefinePlugin } = require("webpack");
 const dotenv = require("dotenv");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "",
     filename: "bundle.js",
   },
   module: {
@@ -19,7 +20,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp)$/,
         use: [
           {
             loader: "file-loader",
@@ -36,9 +37,6 @@ module.exports = {
       },
     ],
   },
-  stats: {
-    colors: true,
-  },
   devtool: "source-map",
   resolve: {
     /**
@@ -49,12 +47,18 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "public"),
+    contentBase: path.resolve(__dirname, "build"),
     hot: true,
   },
   plugins: [
     new DefinePlugin({
       "process.env": JSON.stringify(dotenv.config().parsed),
+    }),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+    new FaviconsWebpackPlugin({
+      logo: "./src/Assets/icons/favicon.png",
     }),
   ],
 };
