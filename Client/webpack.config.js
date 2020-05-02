@@ -7,8 +7,9 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, "/build"),
+    filename: "[name].[hash].js",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -49,6 +50,9 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "build"),
     hot: true,
+    historyApiFallback: true,
+    compress: true,
+    index: "index.html",
   },
   plugins: [
     new DefinePlugin({

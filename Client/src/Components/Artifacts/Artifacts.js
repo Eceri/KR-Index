@@ -192,7 +192,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
         window.history.pushState(
           `artifact/${item.name}`,
           item.name,
-          `/artifacts/${encodeURIComponent(item.name)}`
+          `artifacts/${encodeURIComponent(item.name)}`
         );
       }}
       src={picURL(item.name)}
