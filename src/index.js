@@ -1,19 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import { ExternalRedirect } from "./redirect";
-import { heroes } from "./heroes";
-import { artifacts } from "./artifacts";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+const Redirect = (first, second) => {
+  const _second = second !== undefined ? `/${second}` : "";
+  window.location.href = `https://www.krindex.net/${first}${_second}`;
+};
 
 ReactDOM.render(
   <div>
     <BrowserRouter>
       <Switch>
-        <Route path="/heroes/:hero" component={heroes} />
-        <Route path="/heroes" component={heroes} />
-        <Route path="/artifacts/:artifact" component={artifacts} />
-        <Route path="/artifacts" component={artifacts} />
-        <Route exact path="/" component={ExternalRedirect} />
+        <Route
+          path="/*"
+          component={Redirect(
+            window.location.pathname.split("/")[1],
+            window.location.pathname.split("/")[2]
+          )}
+        />
       </Switch>
     </BrowserRouter>
   </div>,
