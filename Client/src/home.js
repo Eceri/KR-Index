@@ -1,10 +1,110 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { createHelmet } from "./helpers/helpers.helmet";
 import ReactTooltip from "react-tooltip";
+import styled from "styled-components";
 
 import "./Components/styles/home.css";
 
+const Announcement = styled.div`
+  min-height: 10rem;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  &:hover {
+    box-shadow: 2px 2px 3px black;
+    cursor: pointer;
+  }
+`;
+const Author = styled.div`
+  width: 7rem;
+  display: flex;
+  flex-direction: row;
+  &:hover {
+    cursor: pointer;
+    color: #71b9f5;
+  }
+`;
+const AuthorPic = styled.img`
+  height: 1.5rem;
+  border: 0px solid transparent;
+`;
+
+const _dataObj = {
+  title: "",
+  description: "",
+  url: "",
+  timestamp: "",
+  author: {
+    name: "",
+    url: "",
+    icon_url: "",
+  },
+  thumbnail: "",
+};
+const PlugGame = (swap) => {
+  const [notices, setNotices] = useState([_dataObj]);
+  const [patchNotes, setPathNotes] = useState([_dataObj]);
+  const [gameContents, setGameContents] = useState([_dataObj]);
+  const [active, setActive] = useState([_dataObj]);
+  const [shouldFetch, setShouldFetch] = useState(true);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/api/pug?id=${swap}`)
+      .then((res) => res.json())
+      .then((resJSON) => setActive(resJSON));
+  }, [shouldFetch, swap]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/api/pug?id=1")
+  //     .then((res) => res.json())
+  //     .then((resJSON) => setNotices(resJSON));
+  // }, [shouldFetch]);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/api/pug?id=9")
+  //     .then((res) => res.json())
+  //     .then((resJSON) => setPathNotes(resJSON));
+  // }, [shouldFetch]);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/api/pug?id=32")
+  //     .then((res) => res.json())
+  //     .then((resJSON) => setGameContents(resJSON));
+  // }, [shouldFetch]);
+
+  // useEffect(() => {
+  //   const v = {
+  //     notices: [...notices],
+  //     patchNotes: [...patchNotes],
+  //     gameContents: [...gameContents],
+  //   };
+  //   setActive(v[swap]);
+  // }, [swap, notices, patchNotes, gameContents]);
+  return (
+    <>
+      {active.map((_data) => (
+        <Announcement
+          key={_data.url}
+          onClick={() => window.open(_data.url, "_blank")}
+        >
+          <div>
+            <h3>{_data.title}</h3>
+            <img style={{ maxHeight: "8rem" }} src={_data.thumbnail} />
+            <div>{_data.description}</div>
+            <div>{_data.timestamp}</div>
+          </div>
+          <Author onClick={() => window.open(_data.author.url, "_blank")}>
+            <AuthorPic src={_data.author.icon_url} />
+            <p style={{ paddingLeft: "0.2rem", cursor: "pointer" }}>
+              {_data.author.name}
+            </p>
+          </Author>
+        </Announcement>
+      ))}
+    </>
+  );
+};
+
 export const Home = () => {
+  const [notes, setNotes] = useState("1");
   return (
     <React.Fragment>
       {createHelmet("Home", "Homepage")}
@@ -61,6 +161,10 @@ export const Home = () => {
             </a>
           </div>
         </div>
+        <button onClick={() => setNotes("1")}>Notices</button>
+        <button onClick={() => setNotes("9")}>Patch Notes</button>
+        <button onClick={() => setNotes("32")}>Game Content</button>
+        {PlugGame(notes)}
         <ReactTooltip border={true} />
       </div>
     </React.Fragment>
