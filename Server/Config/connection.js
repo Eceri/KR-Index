@@ -5,6 +5,7 @@ import expressWinston from "express-winston";
 import socketIo from "socket.io";
 import http from "http";
 import winston from "winston";
+import Amplify, { API } from "aws-amplify";
 require("dotenv").config();
 
 // Relative Imports
