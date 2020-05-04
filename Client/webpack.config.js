@@ -3,6 +3,7 @@ const { DefinePlugin } = require("webpack");
 const dotenv = require("dotenv");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const { HashedModuleIdsPlugin } = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -44,6 +45,25 @@ module.exports = {
     ],
   },
   devtool: "eval-source-map",
+  optimization: {
+    runtimeChunk: "single",
+    splitChunks: {
+      chunks: "all",
+      maxInitialRequests: Infinity,
+      minSize: 0,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+            return `npm.${packageName.replace("@", "")}`;
+          },
+        },
+      },
+    },
+  },
   resolve: {
     /**
      * @todo place relative paths here
@@ -70,5 +90,6 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: "./src/Assets/icons/favicon.png",
     }),
+    new HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
   ],
 };
