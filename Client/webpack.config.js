@@ -45,6 +45,7 @@ module.exports = {
      */
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),
+      Settings: path.resolve(__dirname, "./settings.js"),
     },
   },
   devServer: {

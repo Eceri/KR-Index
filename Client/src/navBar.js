@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
+import styled from "styled-components";
+
+// Relative imports
 import { Link } from "react-router-dom";
 import { sortNames } from "./Components/components";
-import styled from "styled-components";
 import classes from "./Assets/classes/classes.json";
+import { settings } from "Settings";
 
+// Styling
 const searchWidth = "16rem";
 
 const SearchBox = styled.div`
@@ -95,7 +99,7 @@ export const NavBar = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_SERVER}artifacts/`)
+    fetch(`${settings().api}artifacts/`)
       .then((res) => {
         return res.json();
       })

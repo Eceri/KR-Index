@@ -11,12 +11,33 @@ router.get("/", async (req, res, next) => {
    * https://www.plug.game/kingsraid/1030449/posts?menuId=32 Game Contents
    *
    */
-  const data = await fetch(
-    `https://www.plug.game/kingsraid/1030449/posts?menuId=${req.query.id}`
-  )
-    .then((res) => res.text())
-    .then((data) => parse(data))
-    .then((_html) => _html.querySelectorAll(".frame_plug"));
+  let data = [];
+  for (let i = 0; i < 3; i++) {
+    let id = 0;
+    switch (i) {
+      case 0:
+        id = 1;
+        break;
+      case 1:
+        id = 9;
+        break;
+      case 2:
+        id = 32;
+        break;
+
+      default:
+        break;
+    }
+    data = [
+      ...data,
+      ...(await fetch(
+        `https://www.plug.game/kingsraid/1030449/posts?menuId=${id}`
+      )
+        .then((res) => res.text())
+        .then((data) => parse(data))
+        .then((_html) => _html.querySelectorAll(".frame_plug"))),
+    ];
+  }
 
   let _obj = [];
 
@@ -34,7 +55,7 @@ router.get("/", async (req, res, next) => {
       url: `https://www.plug.game/kingsraid/1030449/posts/${_data.getAttribute(
         "data-articleid"
       )}`,
-      timestamp: _data.querySelectorAll(".time")[1].rawText,
+      timestamp: _data.querySelectorAll(".time")[1].structuredText,
       author: {
         name: _data.querySelector(".name").rawText,
         url: `https://plug.game${_data
@@ -49,9 +70,16 @@ router.get("/", async (req, res, next) => {
         .replace(")", ""),
     })
   );
-  // console.log(_obj);
 
-  res.status(200).send(_obj);
+  const hrs = _obj
+    .filter((v) => v.timestamp.includes("hrs"))
+    .sort((a, b) => a.timestamp < b.timestamp);
+  const sortData = _obj
+    .filter((v) => !v.timestamp.includes("hrs"))
+    .sort((a, b) => a.timestamp < b.timestamp);
+
+  req.app.io.emit("Fetch");
+  res.status(200).send([...hrs, ...sortData].slice(0, 5));
   console.log("End GET Route /");
 });
 

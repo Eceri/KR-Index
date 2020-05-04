@@ -9,6 +9,7 @@ import {
   API_URL,
   ARTIFACT_URL,
 } from "../../Constants/constants.index";
+import { settings } from "Settings";
 import {
   createHelmet,
   GET_LOCALSTORAGE,
@@ -112,7 +113,7 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_SERVER}${ARTIFACT_URL}`)
+    fetch(`${settings().api}${ARTIFACT_URL}`)
       .then((res) => {
         return res.json();
       })

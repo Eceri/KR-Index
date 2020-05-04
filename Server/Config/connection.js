@@ -1,19 +1,27 @@
-// Relative imports
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import expressWinston from "express-winston";
-import Logger from "./logger";
+import socketIo from "socket.io";
+import http from "http";
+import winston from "winston";
 require("dotenv").config();
 
-// Absolute Imports
+// Relative Imports
+import Logger from "./logger";
 import apiRoutes from "../routes/api/index";
-import winston from "winston";
 
 const router = express.Router();
 const app = express();
 // TODO: Settings.json ?
 const PORT = process.env.PORT || 8080;
+const server = http.createServer(app);
+const io = socketIo(server);
+
+io.on("connection", (socket) => {
+  socket.emit("connected", "Connected");
+  console.log("Socket connected to", socket.id);
+});
 
 try {
   // TODO: create process.ENV with URL
@@ -31,7 +39,7 @@ mongoose.connection.once("open", () => {
   Logger.info("Connected to Database!");
 });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   Logger.info(`App is running on port ${PORT}`);
 });
 
@@ -52,6 +60,9 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
+
+app.io = io;
+
 app.use("/api", apiRoutes);
 
 export default router;
