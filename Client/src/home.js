@@ -49,7 +49,7 @@ const PlugGame = (swap) => {
   const [shouldFetch, setShouldFetch] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/pug?id=${swap}`)
+    fetch(`${process.env.REACT_APP_SERVER}pug?id=${swap}`)
       .then((res) => res.json())
       .then((resJSON) => setActive(resJSON));
   }, [shouldFetch, swap]);
