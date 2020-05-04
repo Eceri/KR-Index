@@ -5,7 +5,6 @@ import expressWinston from "express-winston";
 import socketIo from "socket.io";
 import http from "http";
 import winston from "winston";
-import Amplify, { API } from "aws-amplify";
 require("dotenv").config();
 
 // Relative Imports
@@ -25,7 +24,6 @@ io.on("connection", (socket) => {
 });
 
 try {
-  // TODO: create process.ENV with URL
   mongoose.connect(
     `mongodb+srv://${process.env.MONGOLAB_URI_ADMIN}@krc-hinbo.mongodb.net/test?retryWrites=true&w=majority`,
     { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }

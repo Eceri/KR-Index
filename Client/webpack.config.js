@@ -36,9 +36,14 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.ext$/,
+        use: ["cache-lodaer", "css-loader", "file-loader"],
+        include: path.resolve("src"),
+      },
     ],
   },
-  devtool: "source-map",
+  devtool: "eval-source-map",
   resolve: {
     /**
      * @todo place relative paths here
