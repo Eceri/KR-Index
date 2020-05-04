@@ -69,7 +69,7 @@ const PlugGame = (swap) => {
 
   return (
     <>
-      {active.length > 1 &&
+      {active.length > 1 ? (
         active.map((_data) => (
           <Announcement
             key={_data.url}
@@ -88,7 +88,10 @@ const PlugGame = (swap) => {
               </p>
             </Author>
           </Announcement>
-        ))}
+        ))
+      ) : (
+        <div className="loader"></div>
+      )}
     </>
   );
 };
@@ -150,6 +153,7 @@ export const Home = () => {
             </a>
           </div>
         </div>
+        <h2>News</h2>
         {PlugGame()}
         <ReactTooltip border={true} />
       </div>
