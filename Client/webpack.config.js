@@ -94,6 +94,5 @@ module.exports = {
       logo: "./src/Assets/icons/favicon.png",
     }),
     new HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
-    new BundleAnalyzerPlugin(),
   ],
 };
