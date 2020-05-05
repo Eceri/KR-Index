@@ -61,6 +61,7 @@ app.use((req, res, next) => {
 });
 
 app.io = io;
+// app.client = client;
 
 app.use("/api", apiRoutes);
 

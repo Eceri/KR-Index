@@ -3,10 +3,10 @@ import { render } from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Relative Imports
-import Home from "./home";
-import { Hero, Heroes, Maya, Artifacts, Etc } from "./Components/components";
+import { Artifacts, Home, Hero, Heroes } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
+import "./Components/styles/home.css";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 render(
@@ -17,12 +17,11 @@ render(
         <NavBar key={"components.js"} />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/heroes/Maya" component={Maya} />
+          {/* <Route path="/heroes/Maya" component={Maya} /> */}
           <Route push={true} path="/heroes/:hero" component={Hero} />
           <Route path="/heroes/" component={Heroes} />
-          <Route path="/artifact/:artifact" component={Artifacts} />
           <Route path="/artifacts/" component={Artifacts} />
-          <Route path="/etc" component={Etc} />
+          {/* <Route path="/etc" component={Etc} /> */}
         </Switch>
       </BrowserRouter>
     </div>

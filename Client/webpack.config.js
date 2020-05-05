@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   entry: "./src/index.js",
@@ -11,6 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "[name].[hash].js",
     publicPath: "/",
+    chunkFilename: "[name].[hash].js",
   },
   module: {
     rules: [
@@ -91,5 +94,6 @@ module.exports = {
       logo: "./src/Assets/icons/favicon.png",
     }),
     new HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
+    new BundleAnalyzerPlugin(),
   ],
 };
