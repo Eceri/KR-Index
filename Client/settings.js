@@ -1,3 +1,7 @@
+import Amplify from "aws-amplify";
+import dotenv from "dotenv";
+dotenv.config();
+
 export const settings = () => ({
   api:
     process.env.NODE_ENV === "production" ? "" : "http://localhost:8080/api/",
@@ -6,7 +10,6 @@ export const settings = () => ({
       ? "https://ropatr.com"
       : "http://localhost:8080",
 });
-import Amplify from "aws-amplify";
 export const aws = () => {
   const config = {
     // ...
