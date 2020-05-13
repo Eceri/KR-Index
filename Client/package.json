@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "aws-amplify": "^3.0.10",
     "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -19,8 +20,8 @@
     "webpack": "^4.43.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack -p",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack -config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,16 +36,20 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
     "favicons-webpack-plugin": "^3.0.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "webpack-bundle-analyzer": "^3.7.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
   }
 }

@@ -1,14 +1,15 @@
 const path = require("path");
-const { DefinePlugin } = require("webpack");
 const dotenv = require("dotenv");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const { HashedModuleIdsPlugin } = require("webpack");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+const { DefinePlugin, HashedModuleIdsPlugin } = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    app: "./src/index.js",
+  },
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "[name].[hash].js",
@@ -38,7 +39,10 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          { loader: MiniCssExtractPlugin.loader, options: { publicPath: "/" } },
+          "css-loader",
+        ],
       },
       {
         test: /\.ext$/,
@@ -47,12 +51,21 @@ module.exports = {
       },
     ],
   },
-  devtool: "eval-source-map",
+  resolve: {
+    /**
+     * @todo place relative paths here
+     */
+    alias: {
+      Assets: path.resolve(__dirname, "src/Assets/"),
+      Settings: path.resolve(__dirname, "./settings.js"),
+      Helpers: path.resolve(__dirname, "src/helpers/helpers.index.js"),
+    },
+  },
   optimization: {
     runtimeChunk: "single",
     splitChunks: {
       chunks: "all",
-      maxInitialRequests: Infinity,
+      maxInitialRequests: 20,
       minSize: 0,
       cacheGroups: {
         vendor: {
@@ -67,32 +80,18 @@ module.exports = {
       },
     },
   },
-  resolve: {
-    /**
-     * @todo place relative paths here
-     */
-    alias: {
-      Assets: path.resolve(__dirname, "src/Assets/"),
-      Settings: path.resolve(__dirname, "./settings.js"),
-    },
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, "build"),
-    hot: true,
-    historyApiFallback: true,
-    compress: true,
-    index: "index.html",
-  },
   plugins: [
     new DefinePlugin({
       "process.env": JSON.stringify(dotenv.config().parsed),
     }),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
     new FaviconsWebpackPlugin({
       logo: "./src/Assets/icons/favicon.png",
     }),
-    new HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
+    new HashedModuleIdsPlugin(),
+    new MiniCssExtractPlugin(),
   ],
 };

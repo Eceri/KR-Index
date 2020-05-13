@@ -19,6 +19,7 @@ krc.code-workspace
 .env.development.local
 .env.test.local
 .env.production.local
+/Client/.env
 
 npm-debug.log*
 yarn-debug.log*

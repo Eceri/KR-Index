@@ -25,9 +25,8 @@ router.get("/", (req, res, next) => {
         method: "POST",
         headers: {
           "x-api-key": "da2-jffl545h5rbhvedvunyv44e44a",
-          "Content-Type": "application/graphql",
+          "Content-Type": "application/json",
           Host: req.headers.host,
-          "User-Agent": req.headers["user-agent"],
           Connection: "keep-alive",
         },
         body: query(d.name, d.description, d.story, d.release, d.drop),

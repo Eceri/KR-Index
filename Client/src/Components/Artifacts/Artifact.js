@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
+// Relative Imports
 import { stars } from "../atoms/Stars/stars";
+import { AWSoperation, getArtifact } from "Helpers";
+import { LOADING_ARTIFACT } from "../../Constants/constants.index";
 
 const ArtifactText = styled.section`
   height: 7rem;
@@ -27,7 +31,7 @@ const NameAndStars = styled.section`
   margin-top: 0;
 `;
 
-const SmallTab = styled(props => <Tab {...props} />)`
+const SmallTab = styled((props) => <Tab {...props} />)`
   width: 6rem;
   list-style: none;
   padding: 0.3rem;
@@ -39,8 +43,15 @@ const SmallTab = styled(props => <Tab {...props} />)`
 
 SmallTab.tabsRole = "Tab";
 
-const Artifact = artifact => {
+const Artifact = (name) => {
   const [star, setStar] = useState(0);
+  const [artifact, setArtifact] = useState(LOADING_ARTIFACT);
+
+  useEffect(() => {
+    AWSoperation(getArtifact, { name: name }).then((res) =>
+      setArtifact(res.data.getArtifact)
+    );
+  }, [name]);
 
   return (
     <>

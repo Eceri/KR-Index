@@ -4,17 +4,19 @@ import ReactTooltip from "react-tooltip";
 
 // Relative imports ---------------------------------------------------------------------------------------------------
 import Artifact from "./Artifact";
-import {
-  LOADING_ARTIFACT,
-  ARTIFACT_URL,
-} from "../../Constants/constants.index";
-import { settings } from "Settings";
+import { LOADING_ARTIFACT } from "../../Constants/constants.index";
+import { aws } from "Settings";
 import {
   createHelmet,
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE,
-} from "../../helpers/helpers.index";
+  AWSoperation,
+  listArtifacts,
+} from "Helpers";
 import { Button } from "../atoms/atoms.index";
+
+// Settings
+aws();
 
 // Styled Components --------------------------------------------------------------------------------------------------
 const ArtifactContainer = styled.div`
@@ -87,7 +89,9 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
-    chosenArtifactName !== undefined && decodeURIComponent(chosenArtifactName);
+    chosenArtifactName !== undefined
+      ? decodeURIComponent(chosenArtifactName)
+      : LOADING_ARTIFACT.name;
   const ARTIFACTS = "Artifacts";
   const [artifactName, setArtifactName] = useState(
     replaceChosenArtifactName || "Abyssal Crown"
@@ -106,39 +110,24 @@ export const Artifacts = () => {
 
   useEffect(() => {
     try {
-      setArtifactName(replaceChosenArtifactName);
-    } catch (error) {}
+      if (chosenArtifactName !== "") {
+        setArtifactName(replaceChosenArtifactName);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    // `${settings().api}${ARTIFACT_URL}`
-
-    fetch("https://ocpdrguslb.execute-api.eu-central-1.amazonaws.com/test/")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        return JSON.parse(data.body);
-      })
-      .then((result) => {
-        setArtifacts(sortNames(result, "ASC"));
-        SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(result, "ASC")));
-      });
+    AWSoperation(listArtifacts, { next: "" }).then((artifacts) =>
+      setArtifacts(artifacts.data.listArtifacts.items)
+    );
   }, []);
-
-  const getFirstArtifactMatches = (name) =>
-    artifacts.filter((artifact) => artifact.name === name)[0];
 
   return (
     <div id="content" ref={scrollRef}>
       {createHelmet(artifactName)}
-      <ClickedArtifact>
-        {Artifact(
-          getFirstArtifactMatches(artifactName) === undefined
-            ? LOADING_ARTIFACT[0]
-            : getFirstArtifactMatches(artifactName)
-        )}
-      </ClickedArtifact>
+      <ClickedArtifact>{Artifact(artifactName)}</ClickedArtifact>
       <ArtifactContainer>
         <div style={{ marginBottom: "1rem" }}>
           <Button
