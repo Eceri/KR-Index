@@ -1,0 +1,1178 @@
+[
+  {
+    "name": "Burning Brazier of Elf",
+    "description": [
+      "Upon attacking an enemy, there is a 10% chance to recover 1 MP.",
+      "Upon attacking an enemy, there is a 12% chance to recover 1 MP.",
+      "Upon attacking an enemy, there is a 14% chance to recover 1 MP.",
+      "Upon attacking an enemy, there is a 17% chance to recover 1 MP.",
+      "Upon attacking an enemy, there is a 20% chance to recover 1 MP.",
+      "Upon attacking an enemy, there is a 25% chance to recover 1 MP."
+    ],
+    "story": "A mysterious brazier crafted by ancient Elves to honor the mother nature. It is the pinnacle of their magic, capable of producing an infinite amount of mana.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Drinking Horn of Ancient Cow",
+    "description": [
+      "Upon auto attacking, there is a 10% chance that ATK rises by 10% and ATK Speed rises by 100.",
+      "Upon auto attacking, there is a 10% chance that ATK rises by 12% and ATK Speed rises by 120.",
+      "Upon auto attacking, there is a 10% chance that ATK rises by 14% and ATK Speed rises by 140.",
+      "Upon auto attacking, there is a 10% chance that ATK rises by 17% and ATK Speed rises by 170.",
+      "Upon auto attacking, there is a 10% chance that ATK rises by 20% and ATK Speed rises by 200.",
+      "Upon auto attacking, there is a 10% chance that ATK rises by 25% and ATK Speed rises by 250."
+    ],
+    "story": "A glass made from the horn of a sacred bull that roams the sky. It is a magical drinking horn that embodies the essence of abundance.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Dice of Magical Letters",
+    "description": [
+      "Upon attacking an enemy, deal 400% M. DMG for a 3% chance.",
+      "Upon attacking an enemy, deal 480% M. DMG for a 3% chance.",
+      "Upon attacking an enemy, deal 575% M. DMG for a 3% chance.",
+      "Upon attacking an enemy, deal 690% M. DMG for a 3% chance.",
+      "Upon attacking an enemy, deal 830% M. DMG for a 3% chance.",
+      "Upon attacking an enemy, deal 1000% M. DMG for a 3% chance."
+    ],
+    "story": "A die used in an ancient civilization for divination. Each face is engraved with mysterious illegible letters.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Golden Cat Statue",
+    "description": [
+      "Every Battle, Spd increases by 400 for the first 15 secs.",
+      "Every Battle, Spd increases by 480 for the first 15 secs.",
+      "Every Battle, Spd increases by 570 for the first 15 secs.",
+      "Every Battle, Spd increases by 690 for the first 15 secs.",
+      "Every Battle, Spd increases by 830 for the first 15 secs.",
+      "Every Battle, Spd increases by 1000 for the first 15 secs."
+    ],
+    "story": "A curious golden statue in the shape of a golden cat, the symbol of good fortune. Sometimes it seems as if the cat is waving its paw.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Pocket Watch of Ancient Civilization",
+    "description": [
+      "Every 10 sec, reduce all cooldowns by 1 sec and increase ATK Spd by 80 for 5 sec.",
+      "Every 10 sec, reduce all cooldowns by 1.2 sec and increase ATK Spd by 96 for 5 sec.",
+      "Every 10 sec, reduce all cooldowns by 1.4 sec and increase ATK Spd by 115 for 5 sec.",
+      "Every 10 sec, reduce all cooldowns by 1.7 sec and increase ATK Spd by 138 for 5 sec.",
+      "Every 10 sec, reduce all cooldowns by 2 sec and increase ATK Spd by 165 for 5 sec.",
+      "Every 10 sec, reduce all cooldowns by 2.5 sec and increase ATK Spd by 200 for 5 sec."
+    ],
+    "story": "A pocket watch that can fast-forward time slightly to provide a quick glimpse of one's destiny. Excessive use may prove to be quite dangerous.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Primer for the Heroes",
+    "description": [
+      "When HP falls below 20%, ATK rises by 30% while Speed and all DMG Reduction is increased by 300.",
+      "When HP falls below 20%, ATK rises by 36% while Speed and all DMG Reduction is increased by 360.",
+      "When HP falls below 20%, ATK rises by 43% while Speed and all DMG Reduction is increased by 430.",
+      "When HP falls below 20%, ATK rises by 51% while Speed and all DMG Reduction is increased by 510.",
+      "When HP falls below 20%, ATK rises by 62% while Speed and all DMG Reduction is increased by 620.",
+      "When HP falls below 20%, ATK rises by 75% while Speed and all DMG Reduction is increased by 750."
+    ],
+    "story": "This primer, which chronicles the stories of past heroes, is considered a bible for any new hero. It's written in ancient letters.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "The Ancient Scope",
+    "description": [
+      "When MP is at 100%, Crit Chance and ACC rise by 400 for 10 sec. Has a cooldown of 20 sec.",
+      "When MP is at 100%, Crit Chance and ACC rise by 480 for 10 sec. Has a cooldown of 20 sec.",
+      "When MP is at 100%, Crit Chance and ACC rise by 570 for 10 sec. Has a cooldown of 20 sec.",
+      "When MP is at 100%, Crit Chance and ACC rise by 690 for 10 sec. Has a cooldown of 20 sec.",
+      "When MP is at 100%, Crit Chance and ACC rise by 830 for 10 sec. Has a cooldown of 20 sec.",
+      "When MP is at 100%, Crit Chance and ACC rise by 1000 for 10 sec. Has a cooldown of 20 sec."
+    ],
+    "story": "A scope created by an ancient technomagi. A useful tool that can zoom into a faraway object to a good level of detail.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Roaring Tiger Statue",
+    "description": [
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 14% ATK and 140 ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 16% ATK and 160 ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 20% ATK and 200 ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 24% ATK and 240 ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 29% ATK and 290 ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+      "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose 35% ATK and 350 ATK Speed for 10 sec. Has a cooldown of 30 sec."
+    ],
+    "story": "An eerie gold statue designed after a roaring tiger. Under the right conditions, the tiger wakes up and makes everything around it tremble in fear.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Golden Apple of a Goddess",
+    "description": [
+      "When the hero's HP falls below 25%, recover 30% of max HP and dispel all negative effects. Activates 1 time only.",
+      "When the hero's HP falls below 25%, recover 36% of max HP and dispel all negative effects. Activates 1 time only.",
+      "When the hero's HP falls below 25%, recover 43% of max HP and dispel all negative effects. Activates 1 time only.",
+      "When the hero's HP falls below 25%, recover 51% of max HP and dispel all negative effects. Activates 1 time only.",
+      "When the hero's HP falls below 25%, recover 62% of max HP and dispel all negative effects. Activates 1 time only.",
+      "When the hero's HP falls below 25%, recover 75% of max HP and dispel all negative effects. Activates 1 time only."
+    ],
+    "story": "It's said to be one of the sacred artifacts bestowed by the goddess. A miraculous remedy said to heal any injury.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Golden Mask of Ancient King",
+    "description": [
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 3 sec. Has a cooldown of 5 sec.",
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 3.5 sec. Has a cooldown of 5 sec.",
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 4 sec. Has a cooldown of 5 sec.",
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 5 sec. Has a cooldown of 5 sec.",
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 6 sec. Has a cooldown of 5 sec.",
+      "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for 7.5 sec. Has a cooldown of 5 sec."
+    ],
+    "story": "A golden mask once worn by God King of the desert. It is enchanted with the spell of absolute authority to protect its owner.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Madame's Bronze Mirrors",
+    "description": [
+      "Raises own M.Block Chance by 300, and M.DMG Reduction is increased by 100.",
+      "Raises own M.Block Chance by 330, and M.DMG Reduction is increased by 110.",
+      "Raises own M.Block Chance by 360, and M.DMG Reduction is increased by 120.",
+      "Raises own M.Block Chance by 400, and M.DMG Reduction is increased by 140.",
+      "Raises own M.Block Chance by 440, and M.DMG Reduction is increased by 160.",
+      "Raises own M.Block Chance by 500, and M.DMG Reduction is increased by 200."
+    ],
+    "story": "A bronze mirror of an Ancient Technomagic Kingdom that a genius wizard gifted to his wife. It is inscribed with a rune for protecting a loved one.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Sealed Chain of Ancient God",
+    "description": [
+      "Every 20 sec, cast Silence to a random enemy for 3 sec and remove positive effects.",
+      "Every 19 sec, cast Silence to a random enemy for 3.5 sec and remove positive effects.",
+      "Every 18 sec, cast Silence to a random enemy for 4 sec and remove positive effects.",
+      "Every 17 sec, cast Silence to a random enemy for 4.5 sec and remove positive effects.",
+      "Every 16 sec, cast Silence to a random enemy for 5 sec and remove positive effects.",
+      "Every 15 sec, cast Silence to a random enemy for 6 sec and remove positive effects."
+    ],
+    "story": "A chain said to be once used by the God King of the desert to fetter his slaves. Those who are restrained by this chain cannot resist at all.",
+    "drop": "-",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Goblin",
+    "description": [
+      "ATK upon Goblins increase by 40%, and DMG resistance against Goblins increases by 20%",
+      "ATK upon Goblins increase by 48%, and DMG resistance against Goblins increases by 24%",
+      "ATK upon Goblins increase by 57%, and DMG resistance against Goblins increases by 28%",
+      "ATK upon Goblins increase by 69%, and DMG resistance against Goblins increases by 34%",
+      "ATK upon Goblins increase by 83%, and DMG resistance against Goblins increases by 41%",
+      "ATK upon Goblins increase by 100%, and DMG resistance against Goblins increases by 50%"
+    ],
+    "story": "A mask modeled after the face of a Goblin. It's actually kind of cute.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Harpy",
+    "description": [
+      "ATK upon Harpies increase by 40%, and DMG resistance against Harpies increases by 20%",
+      "ATK upon Harpies increase by 48%, and DMG resistance against Harpies increases by 24%",
+      "ATK upon Harpies increase by 57%, and DMG resistance against Harpies increases by 28%",
+      "ATK upon Harpies increase by 69%, and DMG resistance against Harpies increases by 34%",
+      "ATK upon Harpies increase by 83%, and DMG resistance against Harpies increases by 41%",
+      "ATK upon Harpies increase by 100%, and DMG resistance against Harpies increases by 50%"
+    ],
+    "story": "A mask modeled after the face of a Harpy. The sound of a brisk wind can be heard.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Orc",
+    "description": [
+      "ATK upon Orcs increase by 40%, and DMG resistance against Orcs increases by 20%",
+      "ATK upon Orcs increase by 48%, and DMG resistance against Orcs increases by 24%",
+      "ATK upon Orcs increase by 57%, and DMG resistance against Orcs increases by 28%",
+      "ATK upon Orcs increase by 69%, and DMG resistance against Orcs increases by 34%",
+      "ATK upon Orcs increase by 83%, and DMG resistance against Orcs increases by 41%",
+      "ATK upon Orcs increase by 100%, and DMG resistance against Orcs increases by 50%"
+    ],
+    "story": "A mask modeled after the face of an Orc. It inspires a brutish desire for combat.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Dark Elf",
+    "description": [
+      "ATK upon Dark Elves increase by 40%, and DMG resistance against Dark Elves increases by 20%",
+      "ATK upon Dark Elves increase by 48%, and DMG resistance against Dark Elves increases by 24%",
+      "ATK upon Dark Elves increase by 57%, and DMG resistance against Dark Elves increases by 28%",
+      "ATK upon Dark Elves increase by 69%, and DMG resistance against Dark Elves increases by 34%",
+      "ATK upon Dark Elves increase by 83%, and DMG resistance against Dark Elves increases by 41%",
+      "ATK upon Dark Elves increase by 100%, and DMG resistance against Dark Elves increases by 50%"
+    ],
+    "story": "A mask modeled after the face of a Dark Elf. It gives off an aura of the soft moonlight.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Undead Mask",
+    "description": [
+      "Increases DMG to Undead by 40% and Resistance against Undead by 20%.",
+      "Increases DMG to Undead by 48% and Resistance against Undead by 24%.",
+      "Increases DMG to Undead by 57% and Resistance against Undead by 28%.",
+      "Increases DMG to Undead by 69% and Resistance against Undead by 34%.",
+      "Increases DMG to Undead by 83% and Resistance against Undead by 41%.",
+      "Increases DMG to Undead by 100% and Resistance against Undead by 50%."
+    ],
+    "story": "A mask modeled after the face of a Skeleton. It smells like death.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Soul Spring Water",
+    "description": [
+      "At the beginning of each battle, recover 24% HP and 12% mana.",
+      "At the beginning of each battle, recover 28% HP and 14% mana.",
+      "At the beginning of each battle, recover 34% HP and 17% mana.",
+      "At the beginning of each battle, recover 42% HP and 21% mana.",
+      "At the beginning of each battle, recover 50% HP and 25% mana.",
+      "At the beginning of each battle, recover 60% HP and 30% mana."
+    ],
+    "story": "One drop of it is said to become available every hundred years at the Soul Spring. A very rare and effective panacea.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Talismans of Resistance",
+    "description": [
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 1 sec. Has a Cooldown of 20 sec.",
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 1.5 sec. Has a Cooldown of 19 sec.",
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 2 sec. Has a Cooldown of 18 sec.",
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 2.5 sec. Has a Cooldown of 17 sec.",
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 3 sec. Has a Cooldown of 16 sec.",
+      "Upon receiving a negative effect, removes all negative effects. Afterward, gains immunity to CC for 3.5 sec. Has a Cooldown of 15 sec."
+    ],
+    "story": "A pile of old exotic talismans that drives away harmful spirits. They are rendered useless for a while once used.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Judgment of Light Bracelet",
+    "description": [
+      "ACC and CC ACC rise by 300.",
+      "ACC and CC ACC rise by 360.",
+      "ACC and CC ACC rise by 430.",
+      "ACC and CC ACC rise by 520.",
+      "ACC and CC ACC rise by 630.",
+      "ACC and CC ACC rise by 750."
+    ],
+    "story": "A blessed bracelet once created by the Holy Knights of the Church of Lua. It's an antique magic tool, and only a few like this remain today.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Lizardman",
+    "description": [
+      "ATK upon Lizardmen increase by 40%, and DMG resistance against Lizardmen increase by 20%",
+      "ATK upon Lizardmen increase by 48%, and DMG resistance against Lizardmen increase by 24%",
+      "ATK upon Lizardmen increase by 57%, and DMG resistance against Lizardmen increase by 28%",
+      "ATK upon Lizardmen increase by 69%, and DMG resistance against Lizardmen increase by 34%",
+      "ATK upon Lizardmen increase by 83%, and DMG resistance against Lizardmen increase by 41%",
+      "ATK upon Lizardmen increase by 100%, and DMG resistance against Lizardmen increase by 50%"
+    ],
+    "story": "A mask modeled after the face of a Lizardman. The aura of a sage can be felt from it.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Earth Protection",
+    "description": [
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 8 sec.",
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 10 sec.",
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 12 sec.",
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 14 sec.",
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 17 sec.",
+      "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for 20 sec."
+    ],
+    "story": "A miniature version of one of the 'faces' of the Mountain Fortress. A keen intellect can be felt from this taciturn face.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Blessing of Earth",
+    "description": [
+      "When there is 1 enemy, ATK is boosted by 40%.",
+      "When there is 1 enemy, ATK is boosted by 48%.",
+      "When there is 1 enemy, ATK is boosted by 58%.",
+      "When there is 1 enemy, ATK is boosted by 69%.",
+      "When there is 1 enemy, ATK is boosted by 83%.",
+      "When there is 1 enemy, ATK is boosted by 100%."
+    ],
+    "story": "A miniature version of one of the 'faces' of the Mountain Fortress. The rage and bellicose nature of this angry face can be felt.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Earth Core",
+    "description": [
+      "ATK, HP and all DEF are increased by 10%.",
+      "ATK, HP and all DEF are increased by 12%.",
+      "ATK, HP and all DEF are increased by 14%.",
+      "ATK, HP and all DEF are increased by 17%.",
+      "ATK, HP and all DEF are increased by 20%.",
+      "ATK, HP and all DEF are increased by 25%."
+    ],
+    "story": "A miniature version of the core of the Mountain Fortress. As a source of infinite energy, it boosts the power of the owner.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Frost Giant Mask",
+    "description": [
+      "ATK upon Frost Giants increases by 40%, and DMG resistance against Frost Giants increases by 20%.",
+      "ATK upon Frost Giants increases by 48%, and DMG resistance against Frost Giants increases by 24%.",
+      "ATK upon Frost Giants increases by 57%, and DMG resistance against Frost Giants increases by 28%.",
+      "ATK upon Frost Giants increases by 69%, and DMG resistance against Frost Giants increases by 34%.",
+      "ATK upon Frost Giants increases by 83%, and DMG resistance against Frost Giants increases by 41%.",
+      "ATK upon Frost Giants increases by 100%, and DMG resistance against Frost Giants increases by 50%."
+    ],
+    "story": "A mask modeled after the face of a Frost Giant. The power of a snow mountain can be felt from it.",
+    "drop": "Artifact Restoration, Special Item Summon, Tower of Ordeals Achievement Award",
+    "release": "-"
+  },
+  {
+    "name": "Insignia of Iron Conviction",
+    "description": [
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 480% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 580% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 690% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 830% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 1000% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+      "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth 1200% of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects."
+    ],
+    "story": "The crest used by the Guardian Knights of Orvelia prior to the Demon War. The stalwart resolve of the knights can be felt from it.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Sorcerous Black Dagger",
+    "description": [
+      "Upon auto-attacking, there is a 10% chance to reduce the enemy's mana by 600. Has a cooldown of 6 sec.",
+      "Upon auto-attacking, there is a 12% chance to reduce the enemy's mana by 700. Has a cooldown of 6 sec.",
+      "Upon auto-attacking, there is a 14% chance to reduce the enemy's mana by 800. Has a cooldown of 6 sec.",
+      "Upon auto-attacking, there is a 16% chance to reduce the enemy's mana by 1000. Has a cooldown of 6 sec.",
+      "Upon auto-attacking, there is a 18% chance to reduce the enemy's mana by 1200. Has a cooldown of 6 sec.",
+      "Upon auto-attacking, there is a 20% chance to reduce the enemy's mana by 1500. Has a cooldown of 6 sec."
+    ],
+    "story": "An ancient sorcerous dagger thought to be used for assassinations. It is enchanted with a vile spell that disrupts mana.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Tarot Card of Loss",
+    "description": [
+      "Reduces Crit Chance by 150 and increases ATK by 30%.",
+      "Reduces Crit Chance by 180 and increases ATK by 36%.",
+      "Reduces Crit Chance by 210 and increases ATK by 43%.",
+      "Reduces Crit Chance by 260 and increases ATK by 52%.",
+      "Reduces Crit Chance by 310 and increases ATK by 63%.",
+      "Reduces Crit Chance by 375 and increases ATK by 75%."
+    ],
+    "story": "A deck of Tarot Card containing unfathomable magic. Appears to be a lost property of someone. It is said to be crafted by Eucalytus the witch to honor the death of her loved one.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Solar Stone",
+    "description": [
+      "Deals P.DMG equal to 20% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 30% for 5 sec.",
+      "Deals P.DMG equal to 24% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 36% for 5 sec.",
+      "Deals P.DMG equal to 29% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 43% for 5 sec.",
+      "Deals P.DMG equal to 35% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 52% for 5 sec.",
+      "Deals P.DMG equal to 42% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 62% for 5 sec.",
+      "Deals P.DMG equal to 50% of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by 75% for 5 sec."
+    ],
+    "story": "A magic tool sculpted into the shape of the Sun. Made from a stone embodying the essence of fire, it has the power to cleanse and purify all evil energy surrounding its wearer.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Orbs of Contract",
+    "description": [
+      "Every 7 sec, increase M.DEF by 1% of ATK. This effect stacks up to 6 times.",
+      "Every 7 sec, increase M.DEF by 1.2% of ATK. This effect stacks up to 6 times.",
+      "Every 7 sec, increase M.DEF by 1.4% of ATK. This effect stacks up to 6 times.",
+      "Every 7 sec, increase M.DEF by 1.7% of ATK. This effect stacks up to 6 times.",
+      "Every 7 sec, increase M.DEF by 2% of ATK. This effect stacks up to 6 times.",
+      "Every 7 sec, increase M.DEF by 2.5% of ATK. This effect stacks up to 6 times."
+    ],
+    "story": "Orbs shared between two lovers. They represent the eternal companionship of two souls even when they are apart.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Tome of Black Magic",
+    "description": [
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 2% of current HP each second for 5 sec, and reduces Mana by 200. This skill is effective only in the Arena.",
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 2.4% of current HP each second for 5 sec, and reduces Mana by 240. This skill is effective only in the Arena.",
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 2.9% of current HP each second for 5 sec, and reduces Mana by 290. This skill is effective only in the Arena.",
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 3.5% of current HP each second for 5 sec, and reduces Mana by 350. This skill is effective only in the Arena.",
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 4.2% of current HP each second for 5 sec, and reduces Mana by 420. This skill is effective only in the Arena.",
+      "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to 5% of current HP each second for 5 sec, and reduces Mana by 500. This skill is effective only in the Arena."
+    ],
+    "story": "A book with evil black magic. It is filled with many spells that the devil has taught to mankind.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Mask of Draconic",
+    "description": [
+      "ATK upon Draconics increase by 40%, and DMG resistance against Draconics increase by 20%.",
+      "ATK upon Draconics increase by 48%, and DMG resistance against Draconics increase by 24%.",
+      "ATK upon Draconics increase by 57%, and DMG resistance against Draconics increase by 28%.",
+      "ATK upon Draconics increase by 69%, and DMG resistance against Draconics increase by 34%.",
+      "ATK upon Draconics increase by 83%, and DMG resistance against Draconics increase by 41%.",
+      "ATK upon Draconics increase by 100%, and DMG resistance against Draconics increase by 50%."
+    ],
+    "story": "A mask modeled after the face of a Draconic. It resonates with the roar of smoldering evil.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Ring of Spirit Morph",
+    "description": [
+      "At the beginning of every battle, HP does not fall below 10% for 4 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+      "At the beginning of every battle, HP does not fall below 10% for 5 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+      "At the beginning of every battle, HP does not fall below 10% for 6 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+      "At the beginning of every battle, HP does not fall below 10% for 7 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+      "At the beginning of every battle, HP does not fall below 10% for 8 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+      "At the beginning of every battle, HP does not fall below 10% for 9 sec. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable."
+    ],
+    "story": "An ominous ring inhabited by evil spirits from your worst nightmare. When enchanted by this ring, you lose control over your body while your soul becomes trapped within an endless dream.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Feather of Sacrifice",
+    "description": [
+      "For 120 sec after the battle starts, takes 10% extra DMG and increases all DMG taken by the enemy boss by 10%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "For 120 sec after the battle starts, takes 12% extra DMG and increases all DMG taken by the enemy boss by 12%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "For 120 sec after the battle starts, takes 14% extra DMG and increases all DMG taken by the enemy boss by 14%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "For 120 sec after the battle starts, takes 17% extra DMG and increases all DMG taken by the enemy boss by 17%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "For 120 sec after the battle starts, takes 21% extra DMG and increases all DMG taken by the enemy boss by 21%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "For 120 sec after the battle starts, takes 25% extra DMG and increases all DMG taken by the enemy boss by 25%. This effect cannot be dispelled, and it does not stack with other effects for allies."
+    ],
+    "story": "A feather containing an alchemy equation of the exchange of equivalents. The equation will activate when the enemy's name is engraved on the user's body, weakening the enemy and its owner for a short period of time.",
+    "drop": "Artifact REstoration, Special Summon",
+    "release": "-"
+  },
+  {
+    "name": "Vase of Sacrifice",
+    "description": [
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 200% of My ATK and increases the target's ATK by 30% for 10 seconds.",
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 240% of My ATK and increases the target's ATK by 36% for 10 seconds.",
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 290% of My ATK and increases the target's ATK by 43% for 10 seconds.",
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 350% of My ATK and increases the target's ATK by 51% for 10 seconds.",
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 420% of My ATK and increases the target's ATK by 63% for 10 seconds.",
+      "Upon taking DMG 50 times, heals HP of 1 random ally by 500% of My ATK and increases the target's ATK by 75% for 10 seconds."
+    ],
+    "story": "A vase dedicated to the tomb of a fallen general from the Demon War. Within it flows water from the river of Eden, glistening brilliantly.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Assassin's Veil",
+    "description": [
+      "Increases P.Dodge by 100. Each successful dodge increases ATK by 1%, stacking up to max 20 times.",
+      "Increases P.Dodge by 120. Each successful dodge increases ATK by 1.2%, stacking up to max 20 times.",
+      "Increases P.Dodge by 140. Each successful dodge increases ATK by 1.4%, stacking up to max 20 times.",
+      "Increases P.Dodge by 170. Each successful dodge increases ATK by 1.7%, stacking up to max 20 times.",
+      "Increases P.Dodge by 210. Each successful dodge increases ATK by 2.1%, stacking up to max 20 times.",
+      "Increases P.Dodge by 250. Each successful dodge increases ATK by 2.5%, stacking up to max 20 times."
+    ],
+    "story": "A veil that may seem too eccentric and florid to be used by an assassin, but is, in fact, a magic tool that dulls the target's senses.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Trident of the Deep",
+    "description": [
+      "Dealing DMG to enemies 100 times increases ATK by 30% and Crit Chance by 200 for 15 sec. This effect cannot be dispelled.",
+      "Dealing DMG to enemies 100 times increases ATK by 36% and Crit Chance by 240 for 15 sec. This effect cannot be dispelled.",
+      "Dealing DMG to enemies 100 times increases ATK by 44% and Crit Chance by 290 for 15 sec. This effect cannot be dispelled.",
+      "Dealing DMG to enemies 100 times increases ATK by 53% and Crit Chance by 350 for 15 sec. This effect cannot be dispelled.",
+      "Dealing DMG to enemies 100 times increases ATK by 63% and Crit Chance by 420 for 15 sec. This effect cannot be dispelled.",
+      "Dealing DMG to enemies 100 times increases ATK by 75% and Crit Chance by 500 for 15 sec. This effect cannot be dispelled."
+    ],
+    "story": "A mystical weapon designed after the trident of Protianus. It bears the power of water like a tsunami.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Spellbound Ring of the Deep",
+    "description": [
+      "Upon the start of a battle for 8 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 20%.",
+      "Upon the start of a battle for 10 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 24%.",
+      "Upon the start of a battle for 12 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 29%.",
+      "Upon the start of a battle for 14 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 35%.",
+      "Upon the start of a battle for 17 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 42%.",
+      "Upon the start of a battle for 20 sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by 50%."
+    ],
+    "story": "A miniature version of the ring that Protianus was wearing. It is enchanted with a spell that curses and neutralizes foes.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Guardian Crystal of the Deep",
+    "description": [
+      "When there is 1 enemy, all DEF is increased by 50%.",
+      "When there is 1 enemy, all DEF is increased by 60%.",
+      "When there is 1 enemy, all DEF is increased by 72%.",
+      "When there is 1 enemy, all DEF is increased by 86%.",
+      "When there is 1 enemy, all DEF is increased by 103%.",
+      "When there is 1 enemy, all DEF is increased by 125%."
+    ],
+    "story": "A blue gem that was once set on the crown of Protianus. A clear gem that represents protection.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Infernal Greatsword",
+    "description": [
+      "Own heal rate decreases by 30%, while Penetration increases by 300 and Crit DMG increases by 30%",
+      "Own heal rate decreases by 30%, while Penetration increases by 360 and Crit DMG increases by 36%",
+      "Own heal rate decreases by 30%, while Penetration increases by 430 and Crit DMG increases by 43%",
+      "Own heal rate decreases by 30%, while Penetration increases by 520 and Crit DMG increases by 52%",
+      "Own heal rate decreases by 30%, while Penetration increases by 630 and Crit DMG increases by 63%",
+      "Own heal rate decreases by 30%, while Penetration increases by 750 and Crit DMG increases by 75%"
+    ],
+    "story": "A blazing greatsword of Velkazar, the Hellspawn Torturer. Its flame seems powerful enough to engulf anything.",
+    "drop": "Conquest Assembly",
+    "release": "-"
+  },
+  {
+    "name": "Infernal Whip",
+    "description": [
+      "Every 8 sec, attacks all enemies and deals 20% of ATK as M.DMG. Targets take 10% increased DMG for the next 5 sec. DMG boost effect increases by 0.4% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+      "Every 8 sec, attacks all enemies and deals 24% of ATK as M.DMG. Targets take 12% increased DMG for the next 5 sec. DMG boost effect increases by 0.5% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+      "Every 8 sec, attacks all enemies and deals 29% of ATK as M.DMG. Targets take 14% increased DMG for the next 5 sec. DMG boost effect increases by 0.6% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+      "Every 8 sec, attacks all enemies and deals 35% of ATK as M.DMG. Targets take 17% increased DMG for the next 5 sec. DMG boost effect increases by 0.7% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+      "Every 8 sec, attacks all enemies and deals 42% of ATK as M.DMG. Targets take 21% increased DMG for the next 5 sec. DMG boost effect increases by 0.8% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+      "Every 8 sec, attacks all enemies and deals 50% of ATK as M.DMG. Targets take 25% increased DMG for the next 5 sec. DMG boost effect increases by 1% with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies."
+    ],
+    "story": "A blazing tail of Velkazar, the Hellspawn Torturer. It looks like a serpent shrouded in flame.",
+    "drop": "Conquest Assembly",
+    "release": "-"
+  },
+  {
+    "name": "Infernal Bond",
+    "description": [
+      "At the start of every battle, increases all skill cooldown by 2.5 sec of one random enemy.",
+      "At the start of every battle, increases all skill cooldown by 3 sec of one random enemy.",
+      "At the start of every battle, increases all skill cooldown by 3.5 sec of one random enemy.",
+      "At the start of every battle, increases all skill cooldown by 4 sec of one random enemy.",
+      "At the start of every battle, increases all skill cooldown by 5 sec of one random enemy.",
+      "At the start of every battle, increases all skill cooldown by 6 sec of one random enemy."
+    ],
+    "story": "A blazing bond of Velkazar, the Hellspawn Torturer. It's enchanted with Black Magic to control the overflowing power.",
+    "drop": "Conquest Assembly",
+    "release": "-"
+  },
+  {
+    "name": "Book of the Mad",
+    "description": [
+      "Every second, own Mana is reduced by 100, but own DMG to enemies is increased by 14%.",
+      "Every second, own Mana is reduced by 120, but own DMG to enemies is increased by 17%.",
+      "Every second, own Mana is reduced by 140, but own DMG to enemies is increased by 21%.",
+      "Every second, own Mana is reduced by 170, but own DMG to enemies is increased by 25%.",
+      "Every second, own Mana is reduced by 210, but own DMG to enemies is increased by 30%.",
+      "Every second, own Mana is reduced by 250, but own DMG to enemies is increased by 35%."
+    ],
+    "story": "Book of a mad wizard who wandered about the wilderness. The cursed book created from human blood and skin. It consumes mana to grant berserk status to the owner without compromising their sanity. However, it continues to consume mana, ultimately bringing destruction to its owner as it depletes their mana.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Magical Flute",
+    "description": [
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 100 for 4 sec.",
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 120 for 4 sec.",
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 140 for 4 sec.",
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 170 for 4 sec.",
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 210 for 4 sec.",
+      "Every 8 sec, increases ATK Spd of 2 random allies and the caster by 250 for 4 sec."
+    ],
+    "story": "Ancient flute made from the bones of Orox, the guardian beast of snow mountains. It contains the charm of gales, which boosts the morale of warriors. Warriors may experience a slight increase in their speed when they hear its sound.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Lion of Protection",
+    "description": [
+      "Increases own P.DEF by 20%, and P.Block by 100.",
+      "Increases own P.DEF by 24%, and P.Block by 120.",
+      "Increases own P.DEF by 29%, and P.Block by 140.",
+      "Increases own P.DEF by 35%, and P.Block by 170.",
+      "Increases own P.DEF by 42%, and P.Block by 210.",
+      "Increases own P.DEF by 50%, and P.Block by 250."
+    ],
+    "story": "Lion made from silver. It is the symbol of Orvel Royal family, and its eyes are made from blue sapphire. It is imbued with the longing to safeguard the kingdom, protecting the owner from evil.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Cross Pumpkin Head",
+    "description": [
+      "Max HP is increased by 20% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range.",
+      "Max HP is increased by 24% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range.",
+      "Max HP is increased by 29% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range.",
+      "Max HP is increased by 35% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range.",
+      "Max HP is increased by 42% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range.",
+      "Max HP is increased by 50% and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range."
+    ],
+    "story": "A mysterious object shaped like a sad pumpkin. It is said to make an eerie noise while hovering near the owner.",
+    "drop": "Halloween Event",
+    "release": "2017"
+  },
+  {
+    "name": "Angry Pumpkin Head",
+    "description": [
+      "All DMG taken is reduced by 10% and deal 10% more DMG to enemies.",
+      "All DMG taken is reduced by 12% and deal 12% more DMG to enemies.",
+      "All DMG taken is reduced by 14% and deal 14% more DMG to enemies.",
+      "All DMG taken is reduced by 17% and deal 17% more DMG to enemies.",
+      "All DMG taken is reduced by 20% and deal 20% more DMG to enemies.",
+      "All DMG taken is reduced by 25% and deal 25% more DMG to enemies."
+    ],
+    "story": "A mysterious object shaped like a mad pumpkin. It huffs angrily while hovering near the owner.",
+    "drop": "Halloween Event",
+    "release": "2017"
+  },
+  {
+    "name": "Well-Done Turkey Roast",
+    "description": [
+      "Every 15 sec, recover HP equal to 1% of Max HP for 3 sec.",
+      "Every 15 sec, recover HP equal to 1.2% of Max HP for 3 sec.",
+      "Every 15 sec, recover HP equal to 1.4% of Max HP for 3 sec.",
+      "Every 15 sec, recover HP equal to 1.7% of Max HP for 3 sec.",
+      "Every 15 sec, recover HP equal to 2% of Max HP for 3 sec.",
+      "Every 15 sec, recover HP equal to 2.5% of Max HP for 3 sec."
+    ],
+    "story": "An exotic specialty that comes from a faraway land across the sea. It is said to be eaten during the celebration of harvest.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Christmas Star Ornament",
+    "description": [
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 260%. Also, Crit Resistance is increased by 100. This effect cannot be dispelled.",
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 310%. Also, Crit Resistance is increased by 120. This effect cannot be dispelled.",
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 370%. Also, Crit Resistance is increased by 140. This effect cannot be dispelled.",
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 450%. Also, Crit Resistance is increased by 170. This effect cannot be dispelled.",
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 540%. Also, Crit Resistance is increased by 210. This effect cannot be dispelled.",
+      "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by 650%. Also, Crit Resistance is increased by 250. This effect cannot be dispelled."
+    ],
+    "story": "A star ornament that blesses the sacred nights. It rises up to the sky and shines.",
+    "drop": "Christmas Event",
+    "release": "2017"
+  },
+  {
+    "name": "New Year's Fireworks",
+    "description": [
+      "ATK is increased by 5% for 60 sec at the start of each battle.",
+      "ATK is increased by 6% for 60 sec at the start of each battle.",
+      "ATK is increased by 7.2% for 60 sec at the start of each battle.",
+      "ATK is increased by 8.6% for 60 sec at the start of each battle.",
+      "ATK is increased by 10.4% for 60 sec at the start of each battle.",
+      "ATK is increased by 12.5% for 60 sec at the start of each battle."
+    ],
+    "story": "An item to blow away the worries of 2017 for a fresh new start in 2018.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Fancy Traditional Pendant",
+    "description": [
+      "Crit Chance is increased by 100 and Crit DMG is increased by 20%.",
+      "Crit Chance is increased by 120 and Crit DMG is increased by 24%.",
+      "Crit Chance is increased by 140 and Crit DMG is increased by 29%.",
+      "Crit Chance is increased by 170 and Crit DMG is increased by 35%.",
+      "Crit Chance is increased by 210 and Crit DMG is increased by 42%.",
+      "Crit Chance is increased by 250 and Crit DMG is increased by 50%."
+    ],
+    "story": "A mystical charm said to get rid of bad luck and bring good luck. It's created by a famous foreign designer of magical goods.",
+    "drop": "Lunar New Year Event",
+    "release": "2018"
+  },
+  {
+    "name": "Kiddy Chick",
+    "description": [
+      "ATK Spd is increased by 80",
+      "ATK Spd is increased by 96",
+      "ATK Spd is increased by 115",
+      "ATK Spd is increased by 138",
+      "ATK Spd is increased by 165",
+      "ATK Spd is increased by 200"
+    ],
+    "story": "A small chick figure toy that represents the innocence of children.",
+    "drop": "Children's Day Event",
+    "release": "2018"
+  },
+  {
+    "name": "Cooling Delicacy in the Summer",
+    "description": [
+      "When the battle begins, reduces DMG from non-Hero enemies by 20% for 30 second(s), and recovers 100 MP every 2 second(s).",
+      "When the battle begins, reduces DMG from non-Hero enemies by 24% for 30 second(s), and recovers 120 MP every 2 second(s).",
+      "When the battle begins, reduces DMG from non-Hero enemies by 28% for 30 second(s), and recovers 140 MP every 2 second(s).",
+      "When the battle begins, reduces DMG from non-Hero enemies by 34% for 30 second(s), and recovers 170 MP every 2 second(s).",
+      "When the battle begins, reduces DMG from non-Hero enemies by 42% for 30 second(s), and recovers 210 MP every 2 second(s).",
+      "When the battle begins, reduces DMG from non-Hero enemies by 50% for 30 second(s), and recovers 250 MP every 2 second(s)."
+    ],
+    "story": "This delicacy of Orvel is a must for anyone who can't stand the blazing summer heat. One sip of it brings down the heat, another makes the heat go away.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "LuLu's Necklace",
+    "description": [
+      "When the battle starts, increases DMG to Non-Hero enemies by 20% for 30 sec, and recovers Mana by 200 every 5 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 24% for 30 sec, and recovers Mana by 240 every 5 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 28% for 30 sec, and recovers Mana by 280 every 5 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 34% for 30 sec, and recovers Mana by 340 every 5 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 42% for 30 sec, and recovers Mana by 420 every 5 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 50% for 30 sec, and recovers Mana by 500 every 5 sec."
+    ],
+    "story": "A brilliant necklace befitting Moon Rabbit LuLu. It is made from the refined fragments of a full moon. The magical power of the full moon seeps into the wearer's entire body the moment it is worn.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Happy Pumpkin Head",
+    "description": [
+      "Every 7 sec, increases Heal Rate by 2% and heals HP by 100% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+      "Every 7 sec, increases Heal Rate by 2.4% and heals HP by 120% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+      "Every 7 sec, increases Heal Rate by 2.8% and heals HP by 140% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+      "Every 7 sec, increases Heal Rate by 3.4% and heals HP by 170% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+      "Every 7 sec, increases Heal Rate by 4.2% and heals HP by 210% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+      "Every 7 sec, increases Heal Rate by 5% and heals HP by 250% of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed."
+    ],
+    "story": "A mysterious item shaped like a happy-looking pumpkin. It boosts the energy of the owner.",
+    "drop": "Halloween Event",
+    "release": "-"
+  },
+  {
+    "name": "Surprised Pumpkin Head",
+    "description": [
+      "When inflicted by CC, immediately recovers Mana by 12% and increases ATK Spd by 200 for 5 sec. This effect activates once every 30 sec.",
+      "When inflicted by CC, immediately recovers Mana by 14% and increases ATK Spd by 240 for 5 sec. This effect activates once every 30 sec.",
+      "When inflicted by CC, immediately recovers Mana by 17% and increases ATK Spd by 290 for 5 sec. This effect activates once every 30 sec.",
+      "When inflicted by CC, immediately recovers Mana by 21% and increases ATK Spd by 350 for 5 sec. This effect activates once every 30 sec.",
+      "When inflicted by CC, immediately recovers Mana by 25% and increases ATK Spd by 420 for 5 sec. This effect activates once every 30 sec.",
+      "When inflicted by CC, immediately recovers Mana by 30% and increases ATK Spd by 500 for 5 sec. This effect activates once every 30 sec."
+    ],
+    "story": "A peculiar item shaped like a pumpkin with a surprised look. Its eerie ambiance startles those who look at it too.",
+    "drop": "Halloween Event",
+    "release": "-"
+  },
+  {
+    "name": "Fantastic Hybrid Animals",
+    "description": [
+      "When the battle starts, increases DMG to Non-Hero enemies by 12% and takes 12% reduced DMG for 200 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 14% and takes 14% reduced DMG for 200 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 17% and takes 17% reduced DMG for 200 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 21% and takes 21% reduced DMG for 200 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 25% and takes 25% reduced DMG for 200 sec.",
+      "When the battle starts, increases DMG to Non-Hero enemies by 30% and takes 30% reduced DMG for 200 sec."
+    ],
+    "story": "Encyclopedia for Hybrid Animals in Orvelia Continent. As a limited edition copy, it has a silhouette of Hybrid Animals embroidered with golden thread.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Perfume of the Queen",
+    "description": [
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 4 sec.",
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 4.8 sec.",
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 5.8 sec.",
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 7 sec.",
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 8.4 sec.",
+      "When inflicted by CC for 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for 10 sec."
+    ],
+    "story": "Perfume used by legendary Golden Queen. It is the legendary perfume which can tempt anyone who smells the scent.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Crystal Music Box",
+    "description": [
+      "Increases DMG to Hero by 20% and takes 10% increased DMG.",
+      "Increases DMG to Hero by 24% and takes 12% increased DMG.",
+      "Increases DMG to Hero by 29% and takes 14% increased DMG.",
+      "Increases DMG to Hero by 35% and takes 17% increased DMG.",
+      "Increases DMG to Hero by 42% and takes 21% increased DMG.",
+      "Increases DMG to Hero by 50% and takes 25% increased DMG."
+    ],
+    "story": "Crystal Music Box found in the ruins of Republic of Galluah. It has a beautiful yet sad melody.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Amethyst Pendulum",
+    "description": [
+      "Increases All Crit Resistance by 200 for 7 sec every 10 sec.",
+      "Increases All Crit Resistance by 240 for 7 sec every 10 sec.",
+      "Increases All Crit Resistance by 290 for 7 sec every 10 sec.",
+      "Increases All Crit Resistance by 350 for 7 sec every 10 sec.",
+      "Increases All Crit Resistance by 420 for 7 sec every 10 sec.",
+      "Increases All Crit Resistance by 500 for 7 sec every 10 sec."
+    ],
+    "story": "An amethyst pendulum that has the power to drive away the dark energy, and detect negative energy.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Goddess of Glory",
+    "description": [
+      "Increases ATK Spd of 4 allies by 100 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+      "Increases ATK Spd of 4 allies by 120 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+      "Increases ATK Spd of 4 allies by 140 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+      "Increases ATK Spd of 4 allies by 170 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+      "Increases ATK Spd of 4 allies by 210 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+      "Increases ATK Spd of 4 allies by 250 for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies."
+    ],
+    "story": "A golden statue of a goddess holding a laurel branch. It brings victory to its owner.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Fragment of an Ancient Kingdom",
+    "description": [
+      "Increases CC Resist by 200 and CC ACC by 200.",
+      "Increases CC Resist by 240 and CC ACC by 240.",
+      "Increases CC Resist by 290 and CC ACC by 290.",
+      "Increases CC Resist by 350 and CC ACC by 350.",
+      "Increases CC Resist by 420 and CC ACC by 420.",
+      "Increases CC Resist by 500 and CC ACC by 500."
+    ],
+    "story": "A component found from an ancient and mysterious machine. It is suspected to be a part of a teleportation device.",
+    "drop": "Artifact Restoration, Special Item Summon",
+    "release": "-"
+  },
+  {
+    "name": "Abyssal Eye",
+    "description": [
+      "Upon taking damage, deals M.DMG of 50% own ATK to the target and reduces ATK Spd of the target by 400 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 2 sec. This effect will be activated only once every 30 sec.",
+      "Upon taking damage, deals M.DMG of 60% own ATK to the target and reduces ATK Spd of the target by 480 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 2.4 sec. This effect will be activated only once every 30 sec.",
+      "Upon taking damage, deals M.DMG of 72% own ATK to the target and reduces ATK Spd of the target by 580 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 2.9 sec. This effect will be activated only once every 30 sec.",
+      "Upon taking damage, deals M.DMG of 86% own ATK to the target and reduces ATK Spd of the target by 700 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 3.5 sec. This effect will be activated only once every 30 sec.",
+      "Upon taking damage, deals M.DMG of 105% own ATK to the target and reduces ATK Spd of the target by 840 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 4.2 sec. This effect will be activated only once every 30 sec.",
+      "Upon taking damage, deals M.DMG of 125% own ATK to the target and reduces ATK Spd of the target by 1000 for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for 5 sec. This effect will be activated only once every 30 sec."
+    ],
+    "story": "The Power source of Abyssal Goddess Xanadus. It looks like the its pupil moves, even though it's been severed from its body.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Abyssal Crown",
+    "description": [
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 30%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 36%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 43%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 52%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 63%. This effect cannot be dispelled, and it does not stack with other effects for allies.",
+      "30 sec after the battle starts, increases ATK of the ally with the highest ATK by 75%. This effect cannot be dispelled, and it does not stack with other effects for allies."
+    ],
+    "story": "Hair accessory of Abyssal Goddess Xanadus. The serpent-shaped crown gives off a deadly scent.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Abyssal Nail Ornament",
+    "description": [
+      "Upon attack, deals P.DMG equal to 4% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+      "Upon attack, deals P.DMG equal to 4.8% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+      "Upon attack, deals P.DMG equal to 5.8% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+      "Upon attack, deals P.DMG equal to 7% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+      "Upon attack, deals P.DMG equal to 8.4% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+      "Upon attack, deals P.DMG equal to 10% of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec."
+    ],
+    "story": "nail ornament of the Abyssal Goddess Xanadus. It is made from an alloy of unknown but special metals.",
+    "drop": "World Boss Shop",
+    "release": "-"
+  },
+  {
+    "name": "Warm Turkey Dish",
+    "description": [
+      "Increases own Max HP by 10% and All Block Chance by 100.",
+      "Increases own Max HP by 12% and All Block Chance by 120.",
+      "Increases own Max HP by 14% and All Block Chance by 140.",
+      "Increases own Max HP by 17% and All Block Chance by 170.",
+      "Increases own Max HP by 21% and All Block Chance by 210.",
+      "Increases own Max HP by 25% and All Block Chance by 250."
+    ],
+    "story": "It is the must-try food for Thanksgiving. The freshly roasted turkey dish goes well with Hero's Inn special gravy sauce.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Christmas Tree of Holy Night",
+    "description": [
+      "Crit DMG is increased by 50%.",
+      "Crit DMG is increased by 60%.",
+      "Crit DMG is increased by 72%.",
+      "Crit DMG is increased by 87%.",
+      "Crit DMG is increased by 105%.",
+      "Crit DMG is increased by 125%."
+    ],
+    "story": "A miniature of the legendary Christmas tree. It does not grant wishes anymore, but it still has the finest quality that makes the holy night beautiful.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "New Year's Fanfare",
+    "description": [
+      "Increases ATK of 4 allies by 5% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of 4 allies by 6% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of 4 allies by 7.2% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of 4 allies by 8.6% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of 4 allies by 10.4% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of 4 allies by 12.5% for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies."
+    ],
+    "story": "This uplifting fanfare of trumpets spreads the blessing of the newly rising sun.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Academic Achievement Award",
+    "description": [
+      "Increases ATK of all allies by 8%, and All DEF of self by 10%. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of all allies by 10%, and All DEF of self by 12%. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of all allies by 12%, and All DEF of self by 14%. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of all allies by 14%, and All DEF of self by 17%. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of all allies by 17%, and All DEF of self by 21%. This effect will not stack with other similar effects cast by allies.",
+      "Increases ATK of all allies by 20%, and All DEF of self by 25%. This effect will not stack with other similar effects cast by allies."
+    ],
+    "story": "In recognition of your outstanding excellence, superior performance, and good conduct, we hereby confer this medal to you. - Principal Rephy",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Heart Cotton Candy",
+    "description": [
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 10% for 20 sec. This effect will not stack with other similar effects cast by allies.",
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 12% for 20 sec. This effect will not stack with other similar effects cast by allies.",
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 14% for 20 sec. This effect will not stack with other similar effects cast by allies.",
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 17% for 20 sec. This effect will not stack with other similar effects cast by allies.",
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 21% for 20 sec. This effect will not stack with other similar effects cast by allies.",
+      "When the battle starts, increases ATK of self and the ally with the highest ATK by 25% for 20 sec. This effect will not stack with other similar effects cast by allies."
+    ],
+    "story": "Heart Cotton Candy, a must-have item for outings! It melts in your mouth in no time!",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Ancient God King's Coin",
+    "description": [
+      "Increases ATK and Crit DMG by 20%.",
+      "Increases ATK and Crit DMG by 24%.",
+      "Increases ATK and Crit DMG by 29%.",
+      "Increases ATK and Crit DMG by 35%.",
+      "Increases ATK and Crit DMG by 42%.",
+      "Increases ATK and Crit DMG by 50%."
+    ],
+    "story": "During ancient times, God King Cain led the desert kingdom of Sekireinel to a golden age. This is a commemorative coin crafted from the gold he extracted from the desert. It holds mysterious power that makes one feel the sun's power and heat when held.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Pendulum of Fantasy",
+    "description": [
+      "At the beginning of each battle, ATK is permanently increased by 10%. This effect stacks up to max 5 times, and is irremovable.",
+      "At the beginning of each battle, ATK is permanently increased by 12%. This effect stacks up to max 5 times, and is irremovable.",
+      "At the beginning of each battle, ATK is permanently increased by 14%. This effect stacks up to max 5 times, and is irremovable.",
+      "At the beginning of each battle, ATK is permanently increased by 17%. This effect stacks up to max 5 times, and is irremovable.",
+      "At the beginning of each battle, ATK is permanently increased by 21%. This effect stacks up to max 5 times, and is irremovable.",
+      "At the beginning of each battle, ATK is permanently increased by 25%. This effect stacks up to max 5 times, and is irremovable."
+    ],
+    "story": "An artifact told to have been in Hexipolia's possession before he used the dice. If you watch the pendulum move left and right, it feels as if the pendulum will suck you into a world of fantasy.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Master Chef’s Recipe Book",
+    "description": [
+      "Increases self's All DEF by 10%, and Heal Rate by 10%.",
+      "Increases self's All DEF by 12%, and Heal Rate by 12%.",
+      "Increases self's All DEF by 14%, and Heal Rate by 14%.",
+      "Increases self's All DEF by 17%, and Heal Rate by 17%.",
+      "Increases self's All DEF by 21%, and Heal Rate by 21%.",
+      "Increases self's All DEF by 25%, and Heal Rate by 25%."
+    ],
+    "story": "They say there are those who go by the title, Master Chef. It is a title given only to the best chefs who created a new paradigm in the history of cooking. This rare book not only contains the best recipes in the world, but also contains information on how one can obtain the ingredients that are used in those recipes. The book of course, also explains how challenging and dangerous it is to find those ingredients... One interesting fact is that the signature dish of the first master chef who wrote this book is a sandwich.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Juno's Special Vitality Stew",
+    "description": [
+      "Upon normal attack, deals P.DMG equal to 200% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon normal attack, deals P.DMG equal to 240% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon normal attack, deals P.DMG equal to 290% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon normal attack, deals P.DMG equal to 350% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon normal attack, deals P.DMG equal to 420% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon normal attack, deals P.DMG equal to 500% of ATK over time for 5sec. This effect cannot be used with other similar effects cast by allies."
+    ],
+    "story": "A healthy stew made with the healthy ingredients all over from Orbis. Having full of minerals and other nutrients, it is a powerful dish that can restore the vitality of anyone who eats it. The price is not too expensive, which makes it available for everyone. This is Juno's specialty dish full of love and her pride for the weary ones visiting the Hero's Inn.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Juno's Special Dessert",
+    "description": [
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 10% for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 12% for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 14% for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 17% for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 21% for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+      "Upon taking a hit, there is a 20% chance to increase All DMG  the target takes by 25% for 5 sec. This effect cannot be used with other similar effects cast by allies."
+    ],
+    "story": "A dessert made by using the gelatin of a Slime. Mixed with the juice of fruit, sugar, and other sweeteners, all it takes to finish it is to heat the mixture and cool it down. Juno did not want the dessert to be named after her since it was made of monsters, but Yanne has secretly added Juno's name on the menu... Beware- this dessert may turn back to a slime if left unattended.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Forge Hammer MK-II",
+    "description": [
+      "Normal attacks have a 5% chance to increase ATK Spd by 400 for 5sec.",
+      "Normal attacks have a 5% chance to increase ATK Spd by 480 for 5sec.",
+      "Normal attacks have a 5% chance to increase ATK Spd by 570 for 5sec.",
+      "Normal attacks have a 5% chance to increase ATK Spd by 690 for 5sec.",
+      "Normal attacks have a 5% chance to increase ATK Spd by 830 for 5sec.",
+      "Normal attacks have a 5% chance to increase ATK Spd by 1000 for 5sec."
+    ],
+    "story": "A replica of the Hammer of Titan, Jin's favorite tool. It's durability is on par with the Hammer of Titan which only 3 of its kind still remain. It is too heavy for humans to wield since it was miniaturized in Dragon standard.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Pumpkin-Stuck Evil Spirit",
+    "description": [
+      "Increases own Max HP by 20%. When there is 1 enemy, increases ATK of all allies by 20%. This effect will not stack with other similar effects cast by allies.",
+      "Increases own Max HP by 24%. When there is 1 enemy, increases ATK of all allies by 24%. This effect will not stack with other similar effects cast by allies.",
+      "Increases own Max HP by 29%. When there is 1 enemy, increases ATK of all allies by 29%. This effect will not stack with other similar effects cast by allies.",
+      "Increases own Max HP by 35%. When there is 1 enemy, increases ATK of all allies by 35%. This effect will not stack with other similar effects cast by allies.",
+      "Increases own Max HP by 42%. When there is 1 enemy, increases ATK of all allies by 42%. This effect will not stack with other similar effects cast by allies.",
+      "Increases own Max HP by 50%. When there is 1 enemy, increases ATK of all allies by 50%. This effect will not stack with other similar effects cast by allies."
+    ],
+    "story": "Lavril, who had decided to follow Lewisia, wandered around the shopping district of Orvel with Lewisia to enjoy the Halloween carnival event. After all, to live among humans, one must take matters into their own hands and find a large crowd to blend in. While Lavril was absent-mindedly warching the people enjoy the carnival, their gaze was caught upon a cute doll that resembled them on a selling stand. Lavril stood still and looked at the doll for a long time. They were eventually swept by the crowd, and Lavril lost the sight of the doll. But Lewisia noticed Lavril's interest and managed to purchase it. After buying the doll, Lewisia cast a protection spell on it, so that it will hide the presence of the holder to protect the Little Darkness from danger. She then gave the doll to Lavril.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "New-Type Thruster",
+    "description": [
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 5 sec and recovers 500 Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 6 sec and recovers 600 Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 7 sec and recovers 700 Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 8 sec and recovers 800 Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 9 sec and recovers 900 Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+      "When inflicted by CC, reduces self's Cooldown of all Skills by 10 sec and recovers 1000 Mana every sec for 3 sec. Has a Cooldown of 20 sec."
+    ],
+    "story": "The latest model of the thrusters that the Selva Company provided to the empire. It's designed as the special Christmas Edition. It looks like a regular sleigh, but it is capable of extreme speed. If the durability issue is fixed, it coud become a great invention.",
+    "drop": "Event",
+    "release": "-"
+  },
+  {
+    "name": "Otherworldly Sword",
+    "description": [
+      "Consumes 4% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 50 times. This effect automatically deactivates when HP falls below 25%.",
+      "Consumes 4.8% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 60 times. This effect automatically deactivates when HP falls below 25%.",
+      "Consumes 5.7% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 70 times. This effect automatically deactivates when HP falls below 25%.",
+      "Consumes 6.9% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 80 times. This effect automatically deactivates when HP falls below 25%.",
+      "Consumes 8.3% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 90 times. This effect automatically deactivates when HP falls below 25%.",
+      "Consumes 10% of self's current HP every sec and disables Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max 100 times. This effect automatically deactivates when HP falls below 25%."
+    ],
+    "story": "A fragment of darkness carried by Shakmeh. It shifts its size depending on the user, making it available for petite people to use it whith ease. The dark feelings of Shakmeh swirling inside the sword pains the body and spirit of anyone who wields it, but great power can be guaranteed to anyone who endures that pain.",
+    "drop": "The Shadow of Aegina",
+    "release": "24.03.2020"
+  },
+  {
+    "name": "Otherworldly Helm",
+    "description": [
+      "Increases self's Max HP by 20%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 50% for 5sec. This effect is irremoveable and has a 30 sec Cooldown.",
+      "Increases self's Max HP by 24%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 55% for 5sec. This effect is irremoveable and has a 30 sec Cooldown.",
+      "Increases self's Max HP by 29%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 60% for 5sec. This effect is irremoveable and has a 30 sec Cooldown.",
+      "Increases self's Max HP by 35%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 65% for 5sec. This effect is irremoveable and has a 30 sec Cooldown.",
+      "Increases self's Max HP by 42%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 70% for 5sec. This effect is irremoveable and has a 30 sec Cooldown.",
+      "Increases self's Max HP by 50%, and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by 75% for 5sec. This effect is irremoveable and has a 30 sec Cooldown."
+    ],
+    "story": "A fragment of hatred carried by Shakmeh. This helm that takes the shape of a beast has a terrifying glare that makes anyone who looks into its eyes feel the terror of being prey. The terror that takes away the will to fight is deeply engraved within the helm, affecting the user as well.",
+    "drop": "The Shadow of Aegina",
+    "release": "24.03.2020"
+  },
+  {
+    "name": "Otherworldly Radiance",
+    "description": [
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 20% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 800. DMG Reduction effect is irremoveable.",
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 24% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 1000. DMG Reduction effect is irremoveable.",
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 29% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 1200. DMG Reduction effect is irremoveable.",
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 35% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 1400. DMG Reduction effect is irremoveable.",
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 42% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 1700. DMG Reduction effect is irremoveable.",
+      "At the beginning of the first battle, and every 10 sec, gains [Otherworldly Radiance] that lasts for 5 sec. If [Otherworldly Radiance] is still active after 5 sec, dispels negative effects from self and reduces All DMG taken by 50% for 5sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by 2000. DMG Reduction effect is irremoveable."
+    ],
+    "story": "A fragment of spite carried by Shakmeh. It lends its power to those who pay the price with the fervor toward otherworldly darkness. The radiance of evil can overwhelm the enemy's appearence just with its aura, and paralyzes the user's logic, arousing them. Whether this will result in a courageous warriot or blood-crazed madman is up to how they use it.",
+    "drop": "The Shadow of Aegina",
+    "release": "24.03.2020"
+  },
+  {
+    "name": "Earth Storm",
+    "description": [
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 12% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 14% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 17% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 21% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 25% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+      "When inflicted by CC, recovers Mana by 600 and gains [Earth Storm] for 10 sec, increasing all DMG nearby enemies take by 30% every sec.If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's Max HP to nearby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec."
+    ],
+    "story": "A miniature version of one of the 'faces' of the Mountain Fortress. This lively and flamboyant face feels sentimental and looks beautiful.",
+    "drop": "World Boss Shop",
+    "release": "21.04.2020"
+  },
+  {
+    "name": "Nail Ornament of the Deep",
+    "description": [
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 20% for 200 sec. This effect is irremovable.",
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 24% for 200 sec. This effect is irremovable.",
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 29% for 200 sec. This effect is irremovable.",
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 35% for 200 sec. This effect is irremovable.",
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 42% for 200 sec. This effect is irremovable.",
+      "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by 50% for 200 sec. This effect is irremovable."
+    ],
+    "story": "A miniature version of the fingernail ornament that Protianus was wearing. A highly expensive magical artifact made from enchanted Gold.",
+    "drop": "World Boss Shop",
+    "release": "21.04.2020"
+  },
+  {
+    "name": "Heart of the Abyss",
+    "description": [
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 8% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 10% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 12% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 14% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 17% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+      "At the beginning of every battle, increases ATK of the ally with the highest ATK by 20% and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable."
+    ],
+    "story": "The Core of the power source that the Abyssal Goddess Xanadus summons. This mass of magical energy glows with a dazzling light, luring victims to their death.",
+    "drop": "World Boss Shop",
+    "release": "21.04.2020"
+  }
+]

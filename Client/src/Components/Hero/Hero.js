@@ -73,8 +73,13 @@ export const Hero = (props) => {
   } catch (e) {
     return <Redirect to="/heroes/" />;
   }
+  const str = (obj) => {
+    const json = JSON.stringify(obj);
+    return json.replace(/"([^"]+)/g, "$1:");
+  };
   return (
     <>
+      {console.log(str(heroInfo))}
       {Object.keys(heroInfo).length > 1 ? (
         <>
           {createHelmet(heroInfo.name, `${heroInfo.name} - ${heroInfo.title}`)}

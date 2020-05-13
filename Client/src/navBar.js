@@ -219,7 +219,7 @@ const renderSearch = (
 const activeItem = () => {
   const name = window.location.pathname.split("/");
   const lastPart = name[name.length - 1];
-  return lastPart;
+  return decodeURIComponent(lastPart);
 };
 
 const renderSearchBox = (

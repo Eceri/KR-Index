@@ -6,7 +6,6 @@ import ReactTooltip from "react-tooltip";
 import Artifact from "./Artifact";
 import {
   LOADING_ARTIFACT,
-  API_URL,
   ARTIFACT_URL,
 } from "../../Constants/constants.index";
 import { settings } from "Settings";
@@ -18,7 +17,6 @@ import {
 import { Button } from "../atoms/atoms.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
-
 const ArtifactContainer = styled.div`
   position: relative;
   padding-left: 1.5rem;
@@ -113,13 +111,18 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    fetch(`${settings().api}${ARTIFACT_URL}`)
+    // `${settings().api}${ARTIFACT_URL}`
+
+    fetch("https://ocpdrguslb.execute-api.eu-central-1.amazonaws.com/test/")
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setArtifacts(sortNames(data, "ASC"));
-        SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(data, "ASC")));
+        return JSON.parse(data.body);
+      })
+      .then((result) => {
+        setArtifacts(sortNames(result, "ASC"));
+        SET_LOCALSTORAGE(ARTIFACTS, JSON.stringify(sortNames(result, "ASC")));
       });
   }, []);
 
@@ -136,47 +139,26 @@ export const Artifacts = () => {
             : getFirstArtifactMatches(artifactName)
         )}
       </ClickedArtifact>
-      {renderArtifactContainer(
-        artifacts,
-        searchQuery,
-        direction,
-        setArtifactName,
-        setDirection,
-        setSearchQuery
-      )}
+      <ArtifactContainer>
+        <div style={{ marginBottom: "1rem" }}>
+          <Button
+            onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
+          >
+            {direction}
+          </Button>
+          <FilterBox
+            placeholder="Filter..."
+            onChange={(e) => setSearchQuery(e.currentTarget.value)}
+            value={searchQuery}
+          />
+        </div>
+        {filterArtifacts(artifacts, searchQuery).map((item, index) =>
+          renderArtifactPictures(item, index, setArtifactName)
+        )}
+      </ArtifactContainer>
     </div>
   );
 };
-
-const renderArtifactContainer = (
-  artifacts,
-  searchQuery,
-  direction,
-  setArtifactName,
-  setDirection,
-  setSearchQuery
-) => (
-  <ArtifactContainer>
-    <div style={{ marginBottom: "1rem" }}>
-      <Button
-        onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
-      >
-        {direction}
-      </Button>
-      <FilterBox
-        placeholder="Filter..."
-        onChange={(e) => setSearchQuery(e.currentTarget.value)}
-        value={searchQuery}
-      />
-    </div>
-    {sortNames(
-      filterArtifacts(artifacts, searchQuery),
-      direction
-    ).map((item, index) =>
-      renderArtifactPictures(item, index, setArtifactName)
-    )}
-  </ArtifactContainer>
-);
 
 const picURL = (name) => {
   try {
@@ -193,7 +175,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
         window.history.pushState(
           `artifact/${item.name}`,
           item.name,
-          `artifacts/${encodeURIComponent(item.name)}`
+          `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
       src={picURL(item.name)}
