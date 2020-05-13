@@ -1,6 +1,4 @@
 import Amplify from "aws-amplify";
-import dotenv from "dotenv";
-dotenv.config();
 
 export const settings = () => ({
   api:
@@ -17,7 +15,7 @@ export const aws = () => {
       "https://gd3mlj54t5d4dmsodj4zmkwbyy.appsync-api.eu-central-1.amazonaws.com/graphql",
     aws_appsync_region: "eu-central-1",
     aws_appsync_authenticationType: "API_KEY",
-    aws_appsync_apiKey: process.env.API_KEY,
+    aws_appsync_apiKey: process.env.REACT_APP_API_KEY,
     // ...
   };
   Amplify.configure(config);
