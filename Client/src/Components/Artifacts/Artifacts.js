@@ -97,7 +97,7 @@ export const Artifacts = () => {
     replaceChosenArtifactName || "Abyssal Crown"
   );
   const [artifacts, setArtifacts] = useState(
-    JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || LOADING_ARTIFACT
+    JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || [LOADING_ARTIFACT]
   );
   const [direction, setDirection] = useState("ASC");
   const [searchQuery, setSearchQuery] = useState("");
@@ -119,9 +119,10 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    AWSoperation(listArtifacts, { next: "" }).then((artifacts) =>
-      setArtifacts(artifacts.data.listArtifacts.items)
-    );
+    AWSoperation(listArtifacts, { next: "" }).then((artifacts) => {
+      setArtifacts(artifacts.data.listArtifacts.items);
+      SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
+    });
   }, []);
 
   return (
