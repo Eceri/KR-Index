@@ -1,9 +1,8 @@
 const path = require("path");
-const dotenv = require("dotenv");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const { DefinePlugin, HashedModuleIdsPlugin } = require("webpack");
+const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -81,9 +80,6 @@ module.exports = {
     },
   },
   plugins: [
-    new DefinePlugin({
-      "process.env": JSON.stringify(dotenv.config().parsed),
-    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
