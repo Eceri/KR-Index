@@ -11,9 +11,9 @@ import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
 import Amplify from "aws-amplify";
-import config from "./aws-exports";
+// import config from "./aws-exports";
 
-Amplify.configure(config);
+// Amplify.configure(config);
 
 render(
   <>
