@@ -8,9 +8,6 @@ import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { createHelmet } from "./helpers/helpers.helmet";
-import { aws } from "Settings";
-
-aws();
 
 render(
   <>

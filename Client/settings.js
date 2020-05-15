@@ -15,7 +15,7 @@ export const aws = () => {
       "https://gd3mlj54t5d4dmsodj4zmkwbyy.appsync-api.eu-central-1.amazonaws.com/graphql",
     aws_appsync_region: "eu-central-1",
     aws_appsync_authenticationType: "API_KEY",
-    aws_appsync_apiKey: process.env.API_KEY,
+    aws_appsync_apiKey: "da2-jffl545h5rbhvedvunyv44e44a",
     // ...
   };
   Amplify.configure(config);
