@@ -15,9 +15,9 @@ import { Auth } from "aws-amplify";
 
 // Amplify.configure(config);
 
-const user = await Auth.currentAuthenticatedUser();
+const user = async () => await Auth.currentAuthenticatedUser();
 
-user.signInUserSession.accessToken.payload["cognito:free"];
+user().signInUserSession.accessToken.payload["cognito:free"];
 
 render(
   <>
