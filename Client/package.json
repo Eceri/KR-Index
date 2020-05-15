@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.6",
     "aws-amplify": "^3.0.10",
     "dotenv": "^8.2.0",
     "prop-types": "^15.7.2",
