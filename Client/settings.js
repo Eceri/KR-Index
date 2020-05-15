@@ -1,5 +1,4 @@
 import Amplify from "aws-amplify";
-import configuration from "./aws-exports";
 
 export const settings = () => ({
   api:
@@ -19,5 +18,5 @@ export const aws = () => {
     aws_appsync_apiKey: process.env.API_KEY,
     // ...
   };
-  Amplify.configure(configuration);
+  Amplify.configure(config);
 };
