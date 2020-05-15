@@ -5,3 +5,96 @@ type Artifact @model @key(fields: ["name"]) {
   drop: String!
   release: String!
 }
+
+type Hero @model @key(fields : ["name"]) {
+  class: Classes!
+  damageType: DamageType!
+  dark: String!
+  itemIntroductions: ItemIntroductions
+  light: String!
+  name: String!
+  postion: Position!
+  profile: Profile
+  skills: [Skill!]
+  skins: [String]
+  story: String
+  sw: SoulWeapon
+  title: String!
+  uw: UniqueWeapon
+}
+
+type ItemIntroductions {
+  UT1: String
+  UT2: String
+  UT3: String
+  UT4: String
+  soulWeapon: String
+  weapon: String
+}
+
+
+type Profile {
+  age: String
+  birthday: String
+  constellation: String
+  dislikes: String
+  gender: String
+  height: String
+  likes: String
+  race: String
+}
+type Skill {
+  books: [String!]
+  dark: String!
+  id: Int!
+  light: String!
+  skillInfo: [SkillInfo!]
+  uniqueTreasure: UniqueTreasure!
+}
+
+type SkillInfo {
+  description: String!
+  name: String!
+  skillNumber: String!
+  cooldown: Int
+  cost: Int
+  linked: String
+}
+
+type SoulWeapon {
+  activation: String!
+  advancement0: String!
+  advancement1: String!
+  advancement2: String!
+  cd: Int!
+  charges: Int!
+}
+type UniqueTreasure {
+  effect: [String!]
+  name: String!
+}
+
+type UniqueWeapon {
+  effect: [String!]
+  name: String!
+}
+
+enum Classes {
+  Archer
+  Assassin
+  Knight
+  Mechanic
+  Priest
+  Warrior
+  Wizard
+}
+
+enum DamageType {
+  magical
+  physical
+}
+enum Position {
+  Front
+  Middle
+  Back
+}
