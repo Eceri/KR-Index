@@ -5,7 +5,6 @@ import ReactTooltip from "react-tooltip";
 // Relative imports ---------------------------------------------------------------------------------------------------
 import Artifact from "./Artifact";
 import { LOADING_ARTIFACT } from "../../Constants/constants.index";
-import { aws } from "Settings";
 import {
   createHelmet,
   GET_LOCALSTORAGE,
@@ -14,9 +13,6 @@ import {
   listArtifacts,
 } from "Helpers";
 import { Button } from "../atoms/atoms.index";
-
-// Settings
-aws();
 
 // Styled Components --------------------------------------------------------------------------------------------------
 const ArtifactContainer = styled.div`
