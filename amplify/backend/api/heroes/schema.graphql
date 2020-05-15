@@ -6,7 +6,7 @@ type Artifact @model @key(fields: ["name"]) {
   release: String!
 }
 
-type Hero @model @key(fields : ["name"]) {
+type Hero @model @key(fields: ["name"]) {
   class: Classes!
   damageType: DamageType!
   dark: String!
@@ -31,7 +31,6 @@ type ItemIntroductions {
   soulWeapon: String
   weapon: String
 }
-
 
 type Profile {
   age: String
