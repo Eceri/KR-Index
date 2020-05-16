@@ -2,14 +2,14 @@
     "providers": [
         "awscloudformation"
     ],
-    "projectName": "KR-Index",
+    "projectName": "KRIndex",
     "version": "3.0",
     "frontend": "javascript",
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "src",
-            "DistributionDir": "build",
+            "SourceDir": "Client/src",
+            "DistributionDir": "Client/build",
             "BuildCommand": "npm.cmd run-script build",
             "StartCommand": "npm.cmd run-script start"
         }
