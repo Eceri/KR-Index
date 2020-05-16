@@ -10,9 +10,12 @@ import "./Components/styles/home.css";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
-import Amplify from "aws-amplify";
+import Amplify, { Auth } from "aws-amplify";
 import config from "./aws-exports";
-Amplify.configure(config);
+
+const anonymousUser = async () => await Auth.currentCredentials();
+
+Amplify.configure({ ...config, ...anonymousUser() });
 
 render(
   <>

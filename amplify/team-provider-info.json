@@ -10,6 +10,11 @@
             "StackName": "amplify-kr-index-blame-150951",
             "StackId": "arn:aws:cloudformation:eu-central-1:901306675327:stack/amplify-kr-index-blame-150951/b7dbb7c0-96ad-11ea-bbbb-06d8413a1460",
             "AmplifyAppId": "djmpnewfvhj4r"
+        },
+        "categories": {
+            "auth": {
+                "krindex336ce248336ce248": {}
+            }
         }
     },
     "dev": {
