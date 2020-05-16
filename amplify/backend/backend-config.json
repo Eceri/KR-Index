@@ -1,22 +1,84 @@
 {
-	"api": {
-		"heroes": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "API_KEY",
-						"apiKeyConfig": {
-							"description": "heroes API key",
-							"apiKeyExpirationDays": "7"
-						}
-					}
-				}
-			}
-		}
-	},
-	"auth": {},
-	"function": {}
+    "api": {
+        "heroes": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "API_KEY",
+                        "apiKeyConfig": {
+                            "description": "heroes API key",
+                            "apiKeyExpirationDays": "7"
+                        }
+                    }
+                }
+            }
+        },
+        "AdminQueries": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "kriauth",
+                    "attributes": [
+                        "UserPoolId"
+                    ]
+                },
+                {
+                    "category": "function",
+                    "resourceName": "AdminQueries14cd7109",
+                    "attributes": [
+                        "Arn",
+                        "Name"
+                    ]
+                }
+            ]
+        }
+    },
+    "auth": {
+        "userPoolGroups": {
+            "service": "Cognito-UserPool-Groups",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "krindex336ce248336ce248",
+                    "attributes": [
+                        "UserPoolId",
+                        "AppClientIDWeb",
+                        "AppClientID"
+                    ]
+                }
+            ]
+        },
+        "kriauth": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        },
+        "krindex336ce248336ce248": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    },
+    "function": {
+        "AdminQueries14cd7109": {
+            "service": "Lambda",
+            "providerPlugin": "awscloudformation",
+            "build": true,
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "kriauth",
+                    "attributes": [
+                        "UserPoolId"
+                    ]
+                }
+            ]
+        }
+    }
 }
