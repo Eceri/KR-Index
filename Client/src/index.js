@@ -10,14 +10,8 @@ import "./Components/styles/home.css";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
-import { Auth } from "aws-amplify";
-// import config from "./aws-exports";
-
-// Amplify.configure(config);
-
-const user = async () => await Auth.currentAuthenticatedUser();
-
-user().signInUserSession.accessToken.payload["cognito:free"];
+import config from "./aws-exports";
+Amplify.configure(config);
 
 render(
   <>
