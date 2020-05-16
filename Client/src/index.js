@@ -10,6 +10,7 @@ import "./Components/styles/home.css";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
+import Amplify from "aws-amplify";
 import config from "./aws-exports";
 Amplify.configure(config);
 
