@@ -7,15 +7,16 @@ import { Artifacts, Home, Hero, Heroes } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
+import { Footer } from "./Components/Footer.js";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
-import Amplify, { Auth } from "aws-amplify";
-import config from "./aws-exports";
+// import Amplify from "aws-amplify";
+// import aws_exports from "./aws-exports";
+// import { withAuthenticator } from 'aws-amplify-react';
 
-const anonymousUser = async () => await Auth.currentCredentials();
 
-Amplify.configure({ ...config, ...anonymousUser() });
+// Amplify.configure(aws_exports);
 
 render(
   <>
@@ -30,23 +31,11 @@ render(
           <Route path="/heroes/" component={Heroes} />
           <Route path="/artifacts/" component={Artifacts} />
           {/* <Route path="/etc" component={Etc} /> */}
+          <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </div>
-    <footer id={"footer"}>
-      <a
-        href="https://github.com/Eceri/KR-Index"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ alignItems: "center" }}
-      >
-        <img
-          src={`${require("Assets/icons/GitHub-Mark-Light-32px.png")}`}
-          alt="github"
-          style={{ border: "none" }}
-        />
-      </a>
-    </footer>
   </>,
   document.getElementById("root")
 );
