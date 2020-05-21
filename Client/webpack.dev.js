@@ -16,9 +16,17 @@ module.exports = (env) => {
       compress: true,
       index: "index.html",
     },
-    plugins: [
-      env.analyze ? new BundleAnalyzerPlugin() : "",
-      new HashedModuleIdsPlugin(),
-    ],
+    plugins: environmentPicker(env),
   });
+};
+
+const environmentPicker = (env) => {
+  // Is env defined ?
+  if (env) {
+    if (env.analyze) {
+      return [new BundleAnalyzerPlugin(), new HashedModuleIdsPlugin()];
+    }
+  } else {
+    return [new HashedModuleIdsPlugin()];
+  }
 };
