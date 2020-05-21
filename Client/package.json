@@ -21,6 +21,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
+    "analyze": "webpack-dev-server --open --config webpack.dev.js --env.analyze",
     "build": "webpack --config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
