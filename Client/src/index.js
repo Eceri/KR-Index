@@ -11,12 +11,10 @@ import { Footer } from "./Components/Footer.js";
 import { createHelmet } from "./helpers/helpers.helmet";
 
 // Amplify Settings
-// import Amplify from "aws-amplify";
-// import aws_exports from "./aws-exports";
-// import { withAuthenticator } from 'aws-amplify-react';
+import Amplify from "aws-amplify";
+import aws_exports from "./aws-exports";
 
-
-// Amplify.configure(aws_exports);
+Amplify.configure(aws_exports);
 
 render(
   <>
