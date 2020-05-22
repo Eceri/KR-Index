@@ -9,7 +9,7 @@ import { settings } from "Settings";
 import "./Components/styles/home.css";
 
 // Settings
-const socket = socketIOClient(settings().socket);
+// const socket = socketIOClient(settings().socket);
 
 // Styling
 const Announcement = styled.div`
@@ -52,12 +52,12 @@ const PlugGame = (swap) => {
   const [active, setActive] = useState([_dataObj]);
   const [shouldFetch, setShouldFetch] = useState(true);
 
-  socket.on("Fetch", () => {
-    shouldFetch === false &&
-      setTimeout(() => {
-        setShouldFetch(true);
-      }, 60 * 10000);
-  });
+  // socket.on("Fetch", () => {
+  //   shouldFetch === false &&
+  //     setTimeout(() => {
+  //       setShouldFetch(true);
+  //     }, 60 * 10000);
+  // });
 
   useEffect(() => {
     shouldFetch === true &&
