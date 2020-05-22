@@ -9,14 +9,12 @@
 					"defaultAuthentication": {
 						"authenticationType": "API_KEY",
 						"apiKeyConfig": {
-							"description": "testapi",
-							"apiKeyExpirationDays": 7
+							"description": "heroes API key",
+							"apiKeyExpirationDays": "7"
 						}
 					}
 				}
 			}
 		}
-	},
-	"auth": {},
-	"function": {}
+	}
 }

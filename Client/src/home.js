@@ -9,6 +9,8 @@ import { settings } from "Settings";
 import "./Components/styles/home.css";
 
 // Settings
+// FIXME: Sockets are not needed anymore
+// TODO: remove
 // const socket = socketIOClient(settings().socket);
 
 // Styling
