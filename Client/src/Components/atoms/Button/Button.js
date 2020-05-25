@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
 
 const ButtonStyle = styled.button`
-  width: ${props => (props.size ? props.size : "3rem")};
+  width: ${(props) => (props.size ? props.size : "3rem")};
   margin-right: 2rem;
   background-color: #5e5e5e;
   color: white;
@@ -17,11 +16,6 @@ const ButtonStyle = styled.button`
   }
 `;
 
-export const Button = props => {
+export const Button = (props) => {
   return <ButtonStyle {...props} />;
-};
-
-Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired
 };

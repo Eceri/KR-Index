@@ -3,9 +3,13 @@ import styled from "styled-components";
 
 // Relative imports
 import { Link } from "react-router-dom";
-import { sortNames } from "./Components/components";
 import classes from "./Assets/classes/classes.json";
 import { settings } from "Settings";
+import {
+  AWSoperation,
+  listArtifacts,
+  sortedSearch,
+} from "./helpers/helpers.index";
 
 // Styling
 const searchWidth = "16rem";
@@ -66,7 +70,7 @@ const searchFilter = (names, query) => {
         )
       : classesSorted;
 
-  const resultArray = sortNames(
+  const resultArray = sortedSearch(
     [
       ...classesResults,
       ...artifactResults.map((artifact) => ({
@@ -75,7 +79,7 @@ const searchFilter = (names, query) => {
         meta: {},
       })),
     ],
-    "ASC"
+    "name"
   );
 
   const posQuery = resultArray.map((v) => v.name.toLowerCase().indexOf(query));
@@ -99,17 +103,9 @@ export const NavBar = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
-    fetch(`${settings().api}artifacts/`)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setArtifacts(sortNames(data, "ASC"));
-        localStorage.setItem(
-          "Artifacts",
-          JSON.stringify(sortNames(data, "ASC"))
-        );
-      });
+    AWSoperation(listArtifacts).then((artifacts) => {
+      setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
+    });
   }, []);
 
   const handleClickOutside = (event) => {
