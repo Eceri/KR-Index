@@ -1,12 +1,4 @@
-type Artifact @model @key(fields: ["name"]) {
-  name: String!
-  story: String!
-  description: [String]!
-  drop: String!
-  release: String!
-}
-
-type Hero @model @key(fields : ["name"]) {
+type Hero @model @key(fields: ["name"]) {
   class: Classes!
   damageType: DamageType!
   dark: String!
@@ -23,6 +15,17 @@ type Hero @model @key(fields : ["name"]) {
   uw: UniqueWeapon
 }
 
+type Artifact
+  @model
+  @auth(rules: [{ allow: public, operations: [read] }])
+  @key(fields: ["name"]) {
+  name: String!
+  story: String!
+  description: [String]!
+  drop: String!
+  release: String!
+}
+
 type ItemIntroductions {
   UT1: String
   UT2: String
@@ -31,7 +34,6 @@ type ItemIntroductions {
   soulWeapon: String
   weapon: String
 }
-
 
 type Profile {
   age: String

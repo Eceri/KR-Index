@@ -12,22 +12,9 @@
             "AmplifyAppId": "djmpnewfvhj4r"
         },
         "categories": {
-            "auth": {
-                "krindex336ce248336ce248": {}
+            "function": {
+                "kriauth": {}
             }
-        }
-    },
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-kri-dev-01657-authRole",
-            "UnauthRoleArn": "arn:aws:iam::901306675327:role/amplify-kri-dev-01657-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::901306675327:role/amplify-kri-dev-01657-authRole",
-            "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-kri-dev-01657-deployment",
-            "UnauthRoleName": "amplify-kri-dev-01657-unauthRole",
-            "StackName": "amplify-kri-dev-01657",
-            "StackId": "arn:aws:cloudformation:eu-central-1:901306675327:stack/amplify-kri-dev-01657/a3370ee0-8cc2-11ea-b2f9-0248cb00433a",
-            "AmplifyAppId": "djmpnewfvhj4r"
         }
     }
 }
