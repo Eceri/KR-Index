@@ -10,9 +10,11 @@ import {
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE,
   AWSoperation,
+  createArtifact,
   listArtifacts,
 } from "Helpers";
 import { Button } from "../atoms/atoms.index";
+import { getArtifact } from "../../helpers/helpers.index";
 
 // Styled Components --------------------------------------------------------------------------------------------------
 const ArtifactContainer = styled.div`
@@ -115,6 +117,15 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
+    // data.forEach((d) => {
+    //   AWSoperation(createArtifact, {
+    //     name: d.name,
+    //     story: d.story,
+    //     drop: d.drop,
+    //     description: d.description,
+    //     release: d.release,
+    //   });
+    // });
     AWSoperation(listArtifacts, { next: "" }).then((artifacts) => {
       setArtifacts(artifacts.data.listArtifacts.items);
       SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
