@@ -5,4 +5,5 @@ export {
   getArtifact,
   listArtifacts,
   AWSoperation,
+  listHeros,
 } from "./aws/aws.helpers";
