@@ -28,14 +28,22 @@ export const getArtifact = `query GetArtifact($name: String!){
   }
 }`;
 
-export const listArtifacts = `query ListArtifacts($next: String)
-  {listArtifacts(limit: 84 nextToken: $next){
+export const listArtifacts = `query ListArtifacts
+  {listArtifacts(limit: 84){
     items {
       name
       release
       drop
     }
     nextToken
+  }
+}`;
+
+export const listHeros = `query ListHeros
+  {listHeros(limit: 2){
+    items {
+      name
+    }
   }
 }`;
 
