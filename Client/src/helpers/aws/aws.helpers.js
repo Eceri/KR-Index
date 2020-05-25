@@ -38,14 +38,6 @@ export const listArtifacts = `query ListArtifacts
   }
 }`;
 
-export const listHeros = `query ListHeros
-  {listHeros(limit: 2){
-    items {
-      name
-    }
-  }
-}`;
-
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
     return await API.graphql(graphqlOperation(createEvent, eventDetails));
