@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
 import { Image } from "./../components";
 import { Link } from "react-router-dom";
 import "./../styles/Heroes.css";
 
+import { AWSoperation, listHeros } from "Helpers";
+
 export const Heroes = () => {
+  useEffect(() => {
+    AWSoperation(listHeros).then((d) => console.log(d));
+  }, []);
+
   let classes = require("./../../Assets/classes/classes.json");
   const title = (
     <Helmet>
