@@ -35,7 +35,6 @@ export const listArtifacts = `query ListArtifacts
       release
       drop
     }
-    nextToken
   }
 }`;
 
