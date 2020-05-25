@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { SearchBox, SearchInput, SearchListElement } from "Styles";
 
 // Relative imports
@@ -38,10 +38,29 @@ export const Searchbar = (props) => {
   const { artifacts } = props;
   const [searchQuery, setSearchQuery] = useState("");
   const [arrayCopy, setArrayCopy] = useState([]);
-  const [arraySearch, setArraySearch] = useState([...arrayCopy]);
+  const [arraySearch, setArraySearch] = useState([]);
+  const [search, setSearch] = useState(false);
+
+  const ref = useRef();
+
+  const handleClick = (e) => {
+    if (ref.current.contains(e.target)) {
+      return;
+    }
+    setSearch(false);
+  };
 
   useEffect(() => {
-    setArrayCopy(searchFilter(artifacts, ""));
+    document.addEventListener("mousedown", handleClick);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const _array = searchFilter(artifacts, "");
+    setArrayCopy(_array);
+    setArraySearch(_array);
   }, [artifacts]);
 
   useEffect(() => {
@@ -58,20 +77,23 @@ export const Searchbar = (props) => {
   }, [searchQuery]);
 
   return (
-    <>
-      <SearchBox>
-        <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
-          {arraySearch.map((item) => (
-            <SearchListElement
-              to={`/${item.type}/${item.name}`}
-              activeStyle={{ color: "lightgrey" }}
-              key={item.name}
-            >
-              {item.name}
-            </SearchListElement>
-          ))}
-        </ul>
-      </SearchBox>
+    <div ref={ref} style={{ height: "3rem", marginLeft: "auto" }}>
+      {search && (
+        <SearchBox>
+          <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
+            {arraySearch.map((item) => (
+              <SearchListElement
+                to={`/${item.type}/${item.name}`}
+                activeStyle={{ color: "lightgrey" }}
+                key={item.name}
+                onClick={() => setSearch(false)}
+              >
+                {item.name}
+              </SearchListElement>
+            ))}
+          </ul>
+        </SearchBox>
+      )}
       <SearchInput
         placeholder="Search..."
         onChange={(e) => {
@@ -80,7 +102,8 @@ export const Searchbar = (props) => {
         value={searchQuery}
         aria-label="Search"
         aria-required="true"
+        onClick={() => setSearch(true)}
       />
-    </>
+    </div>
   );
 };

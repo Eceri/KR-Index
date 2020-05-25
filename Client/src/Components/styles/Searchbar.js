@@ -29,6 +29,7 @@ export const SearchListElement = styled(NavLink)`
 export const SearchInput = styled.input`
   margin-left: auto;
   width: ${searchWidth};
+  height: 100%;
   padding-left: 0.5rem;
 
   &:focus {
