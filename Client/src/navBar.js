@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 // Relative imports
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   AWSoperation,
   listArtifacts,
@@ -13,16 +13,11 @@ export const NavBar = () => {
   const [artifacts, setArtifacts] = useState(
     JSON.parse(localStorage.getItem("Artifacts")) || []
   );
-
   useEffect(() => {
     AWSoperation(listArtifacts).then((artifacts) => {
       setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
     });
   }, []);
-
-  const handleClickOutside = (event) => {
-    if (ref.current && !ref.current.contains(event.target)) setSeach(false);
-  };
 
   return (
     <nav>
