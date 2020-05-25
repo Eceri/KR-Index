@@ -56,8 +56,9 @@ module.exports = {
      */
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),
-      Settings: path.resolve(__dirname, "./settings.js"),
       Helpers: path.resolve(__dirname, "src/helpers/helpers.index.js"),
+      Atoms: path.resolve(__dirname, "src/Components/atoms/atoms.index.js"),
+      Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
     },
   },
   optimization: {

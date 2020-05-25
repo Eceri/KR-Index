@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
-import { settings } from "Settings";
 import "./Components/styles/home.css";
 
 // Styling

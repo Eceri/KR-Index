@@ -10,7 +10,6 @@ import {
 } from "./../components";
 import ReactTooltip from "react-tooltip";
 import { createHelmet } from "../../helpers/helpers.index";
-import { settings } from "Settings";
 
 //import css
 import "../styles/hero.css";
@@ -61,11 +60,11 @@ export const Hero = (props) => {
     });
   });
 
-  useEffect(() => {
-    fetch(`${settings().api}?hero=${props.match.params.hero}`)
-      .then((res) => res.json())
-      .then((data) => setheroInfo(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`${settings().api}?hero=${props.match.params.hero}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setheroInfo(data));
+  // }, []);
 
   try {
     // temporary solution to invalid heroes. Will change once heroes go into the DB.
