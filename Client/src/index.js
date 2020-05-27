@@ -15,10 +15,6 @@ import Amplify from "aws-amplify";
 import aws_exports from "./aws-exports";
 
 Amplify.configure(aws_exports);
-
-
-import feedDB from "./feedDB"
-
 render(
   <>
     {createHelmet("Home", "frontpage", "./favicon")}
