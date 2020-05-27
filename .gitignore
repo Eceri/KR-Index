@@ -11,6 +11,7 @@
 # production
 /build
 /Client/build
+/Client/src/feedDB.js
 krc.code-workspace
 
 # misc

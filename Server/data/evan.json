@@ -67,7 +67,7 @@
             "id": 2,
             "skillInfo": [
                 {
-                    "skillNumber": "s1",
+                    "skillNumber": "s2",
                     "name": "Magic Circle of Life",
                     "description": "Places a magic circle in a wide range of self for 12 sec, healing HP of all allies within range by ??? every sec and increasing their ATK Spd by 500.",
                     "cooldown": 19,

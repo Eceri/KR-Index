@@ -4,5 +4,6 @@ export {
   createArtifact,
   getArtifact,
   listArtifacts,
+  getHeroHeadInfo,
   AWSoperation,
 } from "./aws/aws.helpers";
