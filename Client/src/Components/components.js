@@ -14,6 +14,5 @@ export { ClickReveal } from "./ClickReveal";
 export { Maya } from "./Hero/Maya";
 export { Heroes } from "./Hero/Heroes";
 export { Artifacts } from "./Artifacts/Artifacts";
-export { sortNames } from "./Artifacts/Artifacts";
 export { Etc } from "./../Etc";
 export { Home } from "./../home";

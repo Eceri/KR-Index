@@ -7,3 +7,4 @@ export {
   getHeroHeadInfo,
   AWSoperation,
 } from "./aws/aws.helpers";
+export { sortedSearch } from "./helpers.sortedSearch";
