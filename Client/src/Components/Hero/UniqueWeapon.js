@@ -5,9 +5,8 @@ import { stars } from "../atoms/Stars/stars";
 
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
-  let { heroPath, weapon } = props
-  let uw = weapon.uniqueWeapon
-  let sw = weapon.soulWeapon
+  let { heroPath, uniqueWeapon, soulWeapon } = props
+  
   return (
     <div>
       <div className="flexBox" id="uw-anchor">
@@ -16,14 +15,14 @@ export const UniqueWeapon = props => {
           alt="UW Icon"
           className={"uwIcon"} />
         <div>
-          <h2> {uw.name} </h2>
+          <h2> {uniqueWeapon.name} </h2>
           {stars(setStars, star)}
         </div>
       </div>
-      <p className="description"> {uw.effect[star]} </p>
+      <p className="description"> {uniqueWeapon.effect[star]} </p>
       <div id={"sw-anchor"}>
         <h2> Soul </h2>
-        {sw ? (
+        {soulWeapon ? (
           <>
             <div className="flexBox">
               <Image
@@ -32,19 +31,19 @@ export const UniqueWeapon = props => {
                 className="swIcon"
               />
               <div id="soulBasic">
-                <p>{sw.activation}</p>
-                <p>{sw.cd} secs cooldown</p>
-                <p>{sw.charges} charges</p>
+                <p>{soulWeapon.activation}</p>
+                <p>{soulWeapon.cd} secs cooldown</p>
+                <p>{soulWeapon.charges} charges</p>
               </div>
             </div>
-            <p className="description"> {sw.advancement0} </p>
+            <p className="description"> {soulWeapon.advancement0} </p>
             <div className="swAdvancement">
               <h3> Advancement 1 </h3>
-              {sw.advancement1}
+              {soulWeapon.advancement1}
             </div>
             <div className="swAdvancement">
               <h3> Advancement 2 </h3>
-              {sw.advancement2}
+              {soulWeapon.advancement2}
             </div>
           </>)
           : <> Not released yet </>

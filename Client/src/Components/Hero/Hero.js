@@ -19,12 +19,16 @@ import "../styles/tabStyles.css";
 import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
 export const Hero = (props) => {
-  const [heroInfo, setheroInfo] = useState({});
-  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
+  const [headInfo, setHeadInfo] = useState({});
+  const heroName = props.match.params.hero;
+  const heroPath = `heroes/${heroName.toLowerCase()}/`;
 
-  // const [headInfo, setHeadInfo] = useState({});
-  // const hero = props.match.params.hero;
-
+  useEffect(() => {
+    AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
+      setHeadInfo(res.data.getHero)
+    );
+  }, []);
+  
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
   let initalTabIndex = 0;
@@ -42,7 +46,7 @@ export const Hero = (props) => {
         url = "#story";
       } else if (index === 2) {
         url = "#skins";
-      } else url = `/heroes/${heroInfo.name}`;
+      } else url = `/heroes/${headInfo.name}`;
       props.history.push(url);
 
       return true;
@@ -68,42 +72,31 @@ export const Hero = (props) => {
     });
   });
 
-  // useEffect(() => {
-  //   fetch(`${settings().api}?hero=${props.match.params.hero}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setheroInfo(data));
-  // }, []);
-
-  const str = (obj) => {
-    const json = JSON.stringify(obj);
-    return json.replace(/"([^"]+)/g, "$1:");
-  };
   return (
     <>
-      {console.log(str(heroInfo))}
-      {Object.keys(heroInfo).length > 1 ? (
+      {Object.keys(headInfo).length > 1 ? (
         <>
-          {createHelmet(heroInfo.name, `${heroInfo.name} - ${heroInfo.title}`)}
+          {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)}
           <div className="flexBox" id="hero">
             <Image src={`${heroPath}portrait.png`} id={"portrait"} />
             <div>
-              <h1>{heroInfo.name}</h1>
-              <h2>{heroInfo.title}</h2>
+              <h1>{headInfo.name}</h1>
+              <h2>{headInfo.title}</h2>
               <div id="heroType" className="flexBox">
                 <Image
-                  src={`classes/${heroInfo.class}.png`}
+                  src={`classes/${headInfo.class.toLowerCase()}.png`}
                   id={"heroClassIcon"}
                   style={{ border: "none" }}
-                  dataTip={heroInfo.class}
+                  dataTip={headInfo.class}
                 />
                 <Image
-                  src={`${heroInfo.damageType}.png`}
+                  src={`${headInfo.damageType}.png`}
                   id={"damageType"}
                   alt={"dmg type"}
                   style={{ border: "none" }}
-                  dataTip={heroInfo.damageType}
+                  dataTip={headInfo.damageType}
                 />
-                <p>{heroInfo.position}</p>
+                <p>{headInfo.position}</p>
               </div>
             </div>
             <ReactTooltip border={true} />
@@ -113,29 +106,28 @@ export const Hero = (props) => {
               <Tab>General</Tab>
               <Tab>Story</Tab>
               <Tab>Skins</Tab>
-              {/*<Tab>Voice</Tab> */}
+              {/* <Tab>Voice</Tab> */}
             </TabList>
             <TabPanel>
-              <HeroGeneral heroPath={heroPath} heroInfo={heroInfo} />
+              <HeroGeneral heroPath={heroPath} heroName={heroName} />
             </TabPanel>
             <TabPanel>
               <HeroStory
                 heroPath={heroPath}
-                name={heroInfo.name}
-                backgroundData={heroInfo.background}
-                title={heroInfo.title}
+                heroName={heroName}
+                heroTitle={headInfo.title}
               />
             </TabPanel>
             <TabPanel>
-              <HeroSkins heroPath={heroPath} skins={heroInfo.skins} />
+              <HeroSkins heroPath={heroPath} heroName={heroName} />
             </TabPanel>
-            <TabPanel>
+            {/* <TabPanel>
               <HeroVoice heroPath={heroPath} voice={heroInfo.voice} />
-            </TabPanel>
+            </TabPanel> */}
           </Tabs>
         </>
       ) : (
-        <>{}</>
+        <></>
       )}
     </>
   );

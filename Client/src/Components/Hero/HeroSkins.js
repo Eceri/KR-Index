@@ -1,29 +1,44 @@
-import React from "react";
-import { Image } from "./../components"
-import "./../styles/HeroSkins.css"
+import React, { useState, useEffect } from "react";
+import { Image } from "./../components";
+import "./../styles/HeroSkins.css";
 
-export const HeroSkins = props => {
-  let { heroPath, skins } = props
-  let heroSkins = [];
-  heroSkins.push({
-    file: `${heroPath}Base.png`,
-    title: "Base"
-  });
-  skins.map(skin =>
-    heroSkins.push({
-      file: `${heroPath}${skin}.png`,
-      title: skin
-    })
+//Relative Imports
+import { AWSoperation, getHeroSkins } from "Helpers";
+
+export const HeroSkins = (props) => {
+  const [heroSkins, setHeroSkins] = useState({});
+  let { heroPath, heroName } = props;
+
+  useEffect(() => {
+    AWSoperation(getHeroSkins, { name: heroName }).then((res) =>
+      setHeroSkins(res.data.getHero.skins)
+    );
+  }, []);
+
+  const createSkinDiv = (name) => (
+    <div className="skin" key={name}>
+      {console.log("HeroSkin: ", name)}
+      {console.log("Path: ", `${heroPath}${name}.png`)}
+
+      <h2>{name}</h2>
+      <Image
+        src={`${heroPath}${name}.png`}
+        alt={name}
+        style={{ border: "none" }}
+        className="skin"
+      />
+    </div>
   );
-  return <>
-    {heroSkins.map(skin => (
-      <div className="skin" key={skin.title}>
-        <h2>{skin.title}</h2>
-        <Image src={skin.file}
-          alt={skin.title}
-          style={{ border: "none" }}
-          className="skin" />
-      </div>
-    ))}
-  </>
-}
+
+  console.log(heroSkins);
+  return (
+    <>
+      {createSkinDiv("Base")}
+      {Object.keys(heroSkins).length > 1 ? (
+        <>{heroSkins.map((skin) => createSkinDiv(skin))}</>
+      ) : (
+        <></>
+      )}
+    </>
+  );
+};
