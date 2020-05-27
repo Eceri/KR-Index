@@ -65,7 +65,6 @@ const Artifact = (name) => {
         <TabPanel>
           <ArtifactText>{artifact.description[star]}</ArtifactText>
         </TabPanel>
-
         <TabPanel>
           <ArtifactText>{artifact.story}</ArtifactText>
         </TabPanel>

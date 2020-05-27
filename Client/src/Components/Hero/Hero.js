@@ -16,14 +16,21 @@ import { settings } from "Settings";
 import "../styles/hero.css";
 import "../styles/tabStyles.css";
 
+//Relative Imports
+import { AWSoperation, getHeroHeadInfo } from "Helpers";
+
 export const Hero = (props) => {
   const [heroInfo, setheroInfo] = useState({});
   const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
 
-  let hashFragments = window.location.hash.split("-");
+  // const [headInfo, setHeadInfo] = useState({});
+  // const hero = props.match.params.hero;
 
+  //handling #-Fragments for Tabs
+  let hashFragments = window.location.hash.split("-");
   let initalTabIndex = 0;
   let scrollAnchor = hashFragments[1];
+
   if (hashFragments[0] === "#story") initalTabIndex = 1;
   else if (hashFragments[0] === "#skins") initalTabIndex = 2;
   //else if(hashFragments[0] == "#voice") initalTabIndex = 3
@@ -44,6 +51,7 @@ export const Hero = (props) => {
     return false;
   };
 
+  //scroll-To, needs to be manually done, due to timing with the page
   useEffect(() => {
     setTimeout(() => {
       if (scrollAnchor !== undefined) {
@@ -67,12 +75,6 @@ export const Hero = (props) => {
       .then((data) => setheroInfo(data));
   }, []);
 
-  try {
-    // temporary solution to invalid heroes. Will change once heroes go into the DB.
-    // heroInfo = require(`./../../Assets/heroes/${props.match.params.hero.toLowerCase()}/${props.match.params.hero.toLowerCase()}.json`);
-  } catch (e) {
-    return <Redirect to="/heroes/" />;
-  }
   const str = (obj) => {
     const json = JSON.stringify(obj);
     return json.replace(/"([^"]+)/g, "$1:");
@@ -134,7 +136,7 @@ export const Hero = (props) => {
           </Tabs>
         </>
       ) : (
-        <></>
+        <>{}</>
       )}
     </>
   );

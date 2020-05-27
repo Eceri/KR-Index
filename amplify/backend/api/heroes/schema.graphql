@@ -1,18 +1,23 @@
-type Hero @model @key(fields: ["name"]) {
+type Hero
+  @model
+  @key(fields: ["name"])
+  @auth(rules: [{ allow: public, operations: [read] }]) {
+  name: String!
+  title: String!
   class: Classes!
   damageType: DamageType!
+  position: Position!
+  profile: Profile!
+  uniqueWeapon: UniqueWeapon!
+  soulWeapon: SoulWeapon!
+  skill1: Skill!
+  skill2: Skill!
+  skill3: Skill!
+  skill4: Skill!
   dark: String!
-  itemIntroductions: ItemIntroductions
   light: String!
-  name: String!
-  postion: Position!
-  profile: Profile
-  skills: [Skill!]
+  story: String!
   skins: [String]
-  story: String
-  sw: SoulWeapon
-  title: String!
-  uw: UniqueWeapon
 }
 
 type Artifact
@@ -26,31 +31,22 @@ type Artifact
   release: String!
 }
 
-type ItemIntroductions {
-  UT1: String
-  UT2: String
-  UT3: String
-  UT4: String
-  soulWeapon: String
-  weapon: String
-}
-
 type Profile {
-  age: String
-  birthday: String
-  constellation: String
-  dislikes: String
-  gender: String
-  height: String
-  likes: String
-  race: String
+  age: String!
+  birthday: String!
+  constellation: String!
+  dislikes: String!
+  gender: String!
+  height: String!
+  likes: String!
+  race: String!
 }
 type Skill {
-  books: [String!]
-  dark: String!
   id: Int!
-  light: String!
+  books: [String!]
   skillInfo: [SkillInfo!]
+  dark: String!
+  light: String!
   uniqueTreasure: UniqueTreasure!
 }
 
@@ -70,15 +66,18 @@ type SoulWeapon {
   advancement2: String!
   cd: Int!
   charges: Int!
+  story: String!
 }
 type UniqueTreasure {
-  effect: [String!]
+  effect: [String]!
   name: String!
+  story: String!
 }
 
 type UniqueWeapon {
-  effect: [String!]
+  effect: [String]!
   name: String!
+  story: String!
 }
 
 enum Classes {

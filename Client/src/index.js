@@ -16,6 +16,9 @@ import aws_exports from "./aws-exports";
 
 Amplify.configure(aws_exports);
 
+
+import feedDB from "./feedDB"
+
 render(
   <>
     {createHelmet("Home", "frontpage", "./favicon")}
@@ -23,17 +26,19 @@ render(
       <BrowserRouter>
         <NavBar key={"components.js"} />
         <Switch>
-          <Route exact path="/" component={Home} />
           {/* <Route path="/heroes/Maya" component={Maya} /> */}
           <Route push={true} path="/heroes/:hero" component={Hero} />
           <Route path="/heroes/" component={Heroes} />
           <Route path="/artifacts/" component={Artifacts} />
-          {/* <Route path="/etc" component={Etc} /> */}
+          
+          <Route path="/DB/" component={feedDB} /> 
+          
+          <Route exact path="/" component={Home} />
           <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
       </BrowserRouter>
-      <Footer />
     </div>
+    <Footer />
   </>,
   document.getElementById("root")
 );
