@@ -5,6 +5,9 @@ export {
   getArtifact,
   listArtifacts,
   getHeroHeadInfo,
+  getHeroGeneralInfo,
+  getHeroStories,
+  getHeroSkins,
   AWSoperation,
 } from "./aws/aws.helpers";
 export { sortedSearch } from "./helpers.sortedSearch";
