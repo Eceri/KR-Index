@@ -29,10 +29,7 @@ render(
           {/* <Route path="/heroes/Maya" component={Maya} /> */}
           <Route push={true} path="/heroes/:hero" component={Hero} />
           <Route path="/heroes/" component={Heroes} />
-          <Route path="/artifacts/" component={Artifacts} />
-          
-          <Route path="/DB/" component={feedDB} /> 
-          
+          <Route path="/artifacts/" component={Artifacts} />          
           <Route exact path="/" component={Home} />
           <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
