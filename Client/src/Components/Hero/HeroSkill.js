@@ -12,6 +12,7 @@ export const HeroSkill = props => {
     }
     return orbs;
   };
+
   return (
     <div className="skill" key={skill.id} id={`s${skill.id}-anchor`} >
       {skill.skillInfo.map((skillInfo, index) => (
