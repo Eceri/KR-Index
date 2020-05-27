@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
 import { Image } from "./../components";
 import { Link } from "react-router-dom";
 import "./../styles/Heroes.css";
+
+//AWS 
+import { AWSoperation } from "Helpers";
 
 export const Heroes = () => {
   let classes = require("./../../Assets/classes/classes.json");
@@ -13,6 +16,8 @@ export const Heroes = () => {
       <meta name="description" content="Heroes overview" />
     </Helmet>
   );
+
+
   return (
     <>
       {title}
