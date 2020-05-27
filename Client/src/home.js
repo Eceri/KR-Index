@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
-import socketIOClient from "socket.io-client";
 
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
-import { settings } from "Settings";
 import "./Components/styles/home.css";
-
-// Settings
-// FIXME: Sockets are not needed anymore
-// TODO: remove
-// const socket = socketIOClient(settings().socket);
 
 // Styling
 const Announcement = styled.div`
@@ -50,24 +43,18 @@ const _dataObj = {
   },
   thumbnail: "",
 };
-const PlugGame = (swap) => {
+const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
   const [shouldFetch, setShouldFetch] = useState(true);
 
-  // socket.on("Fetch", () => {
-  //   shouldFetch === false &&
-  //     setTimeout(() => {
-  //       setShouldFetch(true);
-  //     }, 60 * 10000);
-  // });
-
-  useEffect(() => {
-    shouldFetch === true &&
-      fetch(`${settings().api}pug`)
-        .then((res) => res.json())
-        .then((resJSON) => setActive(resJSON));
-    setShouldFetch(false);
-  }, [shouldFetch, swap]);
+  // TODO: Settings are not required anymore
+  // useEffect(() => {
+  //   shouldFetch === true &&
+  //     fetch(`${settings().api}pug`)
+  //       .then((res) => res.json())
+  //       .then((resJSON) => setActive(resJSON));
+  //   setShouldFetch(false);
+  // }, [shouldFetch]);
 
   return (
     <>

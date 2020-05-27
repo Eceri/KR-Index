@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
-// Relative imports ---------------------------------------------------------------------------------------------------
+// Relative imports
 import Artifact from "./Artifact";
 import { LOADING_ARTIFACT } from "../../Constants/constants.index";
 import {
@@ -10,13 +10,12 @@ import {
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE,
   AWSoperation,
-  createArtifact,
   listArtifacts,
+  sortedSearch,
 } from "Helpers";
 import { Button } from "../atoms/atoms.index";
-import { getArtifact } from "../../helpers/helpers.index";
 
-// Styled Components --------------------------------------------------------------------------------------------------
+// Styled Components
 const ArtifactContainer = styled.div`
   position: relative;
   padding-left: 1.5rem;
@@ -58,23 +57,7 @@ const FilterBox = styled.input`
   }
 `;
 
-// Implementation -----------------------------------------------------------------------------------------------------
-
-// TODO: Refactore into own file
-// FIXME: Make me generic!!!
-
-export const sortNames = (data, direction) => {
-  if (direction === "ASC") {
-    return data.sort((a, b) => {
-      if (a.name > b.name) return 1;
-      if (a.name < b.name) return -1;
-      return 0;
-    });
-  }
-  if (direction === "DESC") {
-    return data.reverse();
-  }
-};
+// Implementation
 
 const filterArtifacts = (artifacts, query) => {
   return artifacts.filter((v) =>
@@ -117,17 +100,8 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    // data.forEach((d) => {
-    //   AWSoperation(createArtifact, {
-    //     name: d.name,
-    //     story: d.story,
-    //     drop: d.drop,
-    //     description: d.description,
-    //     release: d.release,
-    //   });
-    // });
-    AWSoperation(listArtifacts, { next: "" }).then((artifacts) => {
-      setArtifacts(artifacts.data.listArtifacts.items);
+    AWSoperation(listArtifacts).then((artifacts) => {
+      setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
       SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
     });
   }, []);
