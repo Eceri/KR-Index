@@ -40,14 +40,30 @@ export const Searchbar = (props) => {
   const [arrayCopy, setArrayCopy] = useState([]);
   const [arraySearch, setArraySearch] = useState([]);
   const [search, setSearch] = useState(false);
+  const [selected, setSelected] = useState(0);
 
   const ref = useRef();
 
-  const handleClick = (e) => {
-    if (ref.current.contains(e.target)) {
+  const handleClick = (event) => {
+    if (ref.current.contains(event.target)) {
       return;
     }
     setSearch(false);
+  };
+
+  const handleKey = (event) => {
+    const key = event.keyCode;
+    if (key === 40) {
+      console.log("Down");
+      setSelected(selected + 1);
+    }
+    if (key === 38) {
+      console.log("UP");
+      setSelected(selected - 1);
+    }
+    if (key === 13) {
+      console.log("Enter");
+    }
   };
 
   useEffect(() => {
@@ -77,16 +93,26 @@ export const Searchbar = (props) => {
   }, [searchQuery]);
 
   return (
-    <div ref={ref} style={{ height: "3rem", marginLeft: "auto" }}>
+    <div
+      ref={ref}
+      style={{ height: "3rem", marginLeft: "auto" }}
+      onKeyDown={(event) => handleKey(event)}
+    >
       {search && (
         <SearchBox>
           <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
-            {arraySearch.map((item) => (
+            {arraySearch.map((item, index) => (
               <SearchListElement
                 to={`/${item.type}/${item.name}`}
                 activeStyle={{ color: "lightgrey" }}
                 key={item.name}
-                onClick={() => setSearch(false)}
+                onClick={() => {
+                  setSearch(false);
+                  setSearchQuery("");
+                }}
+                selected={selected === index}
+                onMouseOver={() => setSelected(index)}
+                tabIndex={index}
               >
                 {item.name}
               </SearchListElement>
