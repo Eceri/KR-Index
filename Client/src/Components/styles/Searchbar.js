@@ -24,6 +24,7 @@ export const SearchListElement = styled(NavLink)`
   &:hover {
     background-color: #71b9f5;
   }
+  background-color: ${(props) => props.selected && "#71b9f5"};
 `;
 
 export const SearchInput = styled.input`
