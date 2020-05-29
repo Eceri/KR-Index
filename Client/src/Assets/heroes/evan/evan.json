@@ -190,7 +190,7 @@
             ]
         }
     },
-    "skins": [],
+    "skins": ["Benevolent Forest"],
     "voice": {
         "actor": {
             "jp": "N/A",
