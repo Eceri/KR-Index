@@ -13,11 +13,10 @@ export const HeroSkins = (props) => {
     AWSoperation(getHeroSkins, { name: heroName }).then((res) =>
       setHeroSkins(res.data.getHero.skins)
     );
-  }, []);
+  }, [heroName]);
 
   const createSkinDiv = (name) => (
     <div className="skin" key={name}>
-
       <h2>{name}</h2>
       <Image
         src={`${heroPath}${name}.png`}
@@ -27,8 +26,6 @@ export const HeroSkins = (props) => {
       />
     </div>
   );
-
-  console.log(heroSkins);
   return (
     <>
       {createSkinDiv("Base")}

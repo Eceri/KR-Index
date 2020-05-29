@@ -27,8 +27,8 @@ export const Hero = (props) => {
     AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
       setHeadInfo(res.data.getHero)
     );
-  }, []);
-  
+  }, [heroName]);
+
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
   let initalTabIndex = 0;
