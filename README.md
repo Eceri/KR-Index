@@ -6,5 +6,5 @@ A Webpage collecting info for the mobile game 'King's Raid'. It is still very mu
 
 ## Frontend
 
-1. `cd Client | npm ci`
+1. `npm ci`
 2. `npm start`
