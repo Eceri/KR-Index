@@ -17,8 +17,6 @@ export const HeroSkins = (props) => {
 
   const createSkinDiv = (name) => (
     <div className="skin" key={name}>
-      {console.log("HeroSkin: ", name)}
-      {console.log("Path: ", `${heroPath}${name}.png`)}
 
       <h2>{name}</h2>
       <Image
@@ -34,7 +32,7 @@ export const HeroSkins = (props) => {
   return (
     <>
       {createSkinDiv("Base")}
-      {Object.keys(heroSkins).length > 1 ? (
+      {Object.keys(heroSkins).length > 0 ? (
         <>{heroSkins.map((skin) => createSkinDiv(skin))}</>
       ) : (
         <></>
