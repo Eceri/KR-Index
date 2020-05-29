@@ -4,6 +4,7 @@
 /*/node_modules
 /.pnp
 .pnp.js
+.vscode
 
 # testing
 /coverage
@@ -37,7 +38,6 @@ node_modules
 playground.json
 
 #amplify
-/amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
@@ -47,7 +47,6 @@ build/
 dist/
 node_modules/
 aws-exports.js
-team-provider-info.json
 awsconfiguration.json
 amplifyconfiguration.json
 amplify-build-config.json
