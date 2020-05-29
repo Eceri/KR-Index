@@ -13,7 +13,7 @@ export const HeroStory = (props) => {
     AWSoperation(getHeroStories, { name: heroName }).then((res) =>
       setHeroStories(res.data.getHero)
     );
-  }, []);
+  }, [heroName]);
 
   let createStoryDiv = (name, story, iconPathFragment) => (
     <div key={`${iconPathFragment}Story`}>
