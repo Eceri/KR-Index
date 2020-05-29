@@ -13,7 +13,7 @@ export const HeroGeneral = (props) => {
     AWSoperation(getHeroGeneralInfo, {
       name: heroName,
     }).then((res) => setHeroInfo(res.data.getHero));
-  }, []);
+  }, [heroName]);
 
   return <>
     {Object.keys(heroInfo).length > 1 ? ( 
