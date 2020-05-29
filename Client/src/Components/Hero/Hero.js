@@ -48,6 +48,7 @@ export const Hero = (props) => {
         url = "#skins";
       } else url = `/heroes/${headInfo.name}`;
       props.history.push(url);
+
       return true;
     }
     return false;
@@ -69,7 +70,7 @@ export const Hero = (props) => {
         });
       }
     });
-  }, []);
+  });
 
   return (
     <>

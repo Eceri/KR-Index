@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Relative Imports
-import { Artifacts, Home, Hero, Heroes, Maya } from "./Components/components";
+import { Artifacts, Home, Hero, Heroes } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
@@ -22,12 +22,12 @@ render(
       <BrowserRouter>
         <NavBar key={"components.js"} />
         <Switch>
-          <Route path="/heroes/Maya/" component={Maya} />
-          <Route exact path="/heroes/:hero" component={Hero} />
+          {/* <Route path="/heroes/Maya" component={Maya} /> */}
+          <Route push={true} path="/heroes/:hero" component={Hero} />
           <Route path="/heroes/" component={Heroes} />
-          <Route path="/artifacts/" component={Artifacts} />
+          <Route path="/artifacts/" component={Artifacts} />          
           <Route exact path="/" component={Home} />
-          <Route path="*" component={() => <Redirect to={`/`} />} />
+          <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
       </BrowserRouter>
     </div>
