@@ -4,13 +4,14 @@
 /*/node_modules
 /.pnp
 .pnp.js
+.vscode
 
 # testing
 /coverage
 
 # production
 /build
-/Client/build
+/src/feedDB.js
 krc.code-workspace
 
 # misc
@@ -19,6 +20,7 @@ krc.code-workspace
 .env.development.local
 .env.test.local
 .env.production.local
+/Client/.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -33,3 +35,21 @@ node_modules
 /Server/.env
 /Server/apidoc
 playground.json
+
+#amplify
+aws-exports.js
+team-provider-info.json
+/amplify
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+build/
+dist/
+node_modules/
+awsconfiguration.json
+amplifyconfiguration.json
+amplify-build-config.json
+amplify-gradle-config.json
+amplifyxc.config
