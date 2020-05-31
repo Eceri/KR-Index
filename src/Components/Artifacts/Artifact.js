@@ -48,7 +48,12 @@ const Artifact = (name) => {
   const [artifact, setArtifact] = useState(LOADING_ARTIFACT);
 
   useEffect(() => {
-    AWSoperation(getArtifact, { name: name }).then((res) =>
+    const correctName = name
+      .split(" ")
+      .map((v) => `${v.charAt(0).toUpperCase()}${v.slice(1)}`)
+      .join(" ");
+
+    AWSoperation(getArtifact, { name: correctName }).then((res) =>
       setArtifact(res.data.getArtifact)
     );
   }, [name]);
