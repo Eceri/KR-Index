@@ -3,7 +3,13 @@ import { render } from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Relative Imports
-import { Artifacts, Home, Hero, Heroes } from "./Components/components";
+import { 
+  Artifacts,
+  Home,
+  Hero,
+  Heroes,
+  StatCaps
+} from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
@@ -24,8 +30,9 @@ render(
         <Switch>
           {/* <Route path="/heroes/Maya" component={Maya} /> */}
           <Route push={true} path="/heroes/:hero" component={Hero} />
-          <Route path="/heroes/" component={Heroes} />
-          <Route path="/artifacts/" component={Artifacts} />          
+          <Route path="/heroes" component={Heroes} />
+          <Route path="/artifacts" component={Artifacts} />
+          <Route path="/caps" component={StatCaps} />
           <Route exact path="/" component={Home} />
           <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
