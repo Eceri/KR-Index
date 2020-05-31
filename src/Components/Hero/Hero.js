@@ -20,7 +20,7 @@ import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
 export const Hero = (props) => {
   const [headInfo, setHeadInfo] = useState({});
-  const heroName = props.match.params.hero;
+  const heroName = `${props.match.params.hero.charAt(0).toUpperCase()}${props.match.params.hero.slice(1)}`
   const heroPath = `heroes/${heroName.toLowerCase()}/`;
 
   useEffect(() => {
