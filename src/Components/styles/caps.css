@@ -1,0 +1,43 @@
+#caps table,
+#caps p {
+  margin: 10px auto;
+}
+#caps input{
+  height: 30px;
+  width: 100px;
+  background-color: #5d5d5d;
+  border: 1px solid #323232;
+  color: white;
+  padding-left: 5px;
+  font-size: large;
+}
+#statInput{
+  margin-right: 5px;
+}
+#caps table {
+  border-collapse: collapse;
+  width: 100%;
+  /* max-width: 400px; */
+  align-content: center;
+}
+#caps th{
+  background-color:#262626;
+}
+#caps th,
+#caps td{
+  margin: 0 20px;
+  min-width: 60px;
+  width: 33%;
+  padding: 4px 10px;
+  align-items: center;
+  text-align: center;
+}
+#caps tr:hover{
+  background-color: #262626;
+}
+#caps .selected{
+  background-color: #323232;
+}
+#thanks{
+  text-align: center;
+}
