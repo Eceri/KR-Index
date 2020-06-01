@@ -64,7 +64,7 @@ const skillRequest = `{
     name
     effect
   }
-}`
+}`;
 
 export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
   getHero(name: $name){
@@ -94,7 +94,7 @@ const utStoryRequest = `{
     name
     story
   }
-}`
+}`;
 export const getHeroStories = `query GetHeroStories($name: String!){
   getHero(name: $name){
     profile{
@@ -120,11 +120,23 @@ export const getHeroStories = `query GetHeroStories($name: String!){
     skill3${utStoryRequest}
     skill4${utStoryRequest}
   }
-}`
+}`;
 
 export const getHeroSkins = `query GetHeroSkins($name: String!){
   getHero(name: $name){
     skins
+  }
+}`;
+
+export const listPlugPosts = `query ListPlugPosts($nextToken: String!){
+  listPlugGames(filter: {timestamp: {gt: 24}} nextToken: $nextToken){
+    items {
+      timestamp
+      thumbnail
+      title
+      url
+    }
+    nextToken
   }
 }`;
 

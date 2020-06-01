@@ -4,6 +4,7 @@ export {
   createArtifact,
   getArtifact,
   listArtifacts,
+  listPlugPosts,
   getHeroHeadInfo,
   getHeroGeneralInfo,
   getHeroStories,
