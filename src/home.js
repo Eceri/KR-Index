@@ -24,6 +24,8 @@ const Announcement = styled.div`
     background-color: #262626;
   }
 `;
+
+// FIXME: cleanup!
 const Author = styled.div`
   width: 7rem;
   display: flex;
@@ -50,10 +52,10 @@ const _dataObj = {
   },
   thumbnail: "",
 };
+
 const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
 
-  // TODO: Settings are not required anymore
   useEffect(() => {
     let nextToken = "";
     let items = [];
@@ -156,8 +158,8 @@ export const Home = () => {
             </a>
           </div>
         </div>
-        {/* <h2>News</h2>
-        {PlugGame()} */}
+        <h2>News</h2>
+        {PlugGame()}
         <ReactTooltip border={true} />
       </div>
     </React.Fragment>
