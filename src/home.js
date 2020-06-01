@@ -156,8 +156,8 @@ export const Home = () => {
             </a>
           </div>
         </div>
-        <h2>News</h2>
-        {PlugGame()}
+        {/* <h2>News</h2>
+        {PlugGame()} */}
         <ReactTooltip border={true} />
       </div>
     </React.Fragment>
