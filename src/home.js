@@ -5,16 +5,23 @@ import styled from "styled-components";
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
+import { AWSoperation, listPlugPosts } from "Helpers";
 
 // Styling
 const Announcement = styled.div`
+  border-radius: 0.5rem;
   min-height: 10rem;
   border: 1px solid white;
+  background-color: #5d5d5d;
   padding: 0.5rem;
+  width: 70%;
   margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 3px black;
   &:hover {
-    box-shadow: 2px 2px 3px black;
     cursor: pointer;
+    background-color: #262626;
   }
 `;
 const Author = styled.div`
@@ -45,16 +52,23 @@ const _dataObj = {
 };
 const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
-  const [shouldFetch, setShouldFetch] = useState(true);
 
   // TODO: Settings are not required anymore
-  // useEffect(() => {
-  //   shouldFetch === true &&
-  //     fetch(`${settings().api}pug`)
-  //       .then((res) => res.json())
-  //       .then((resJSON) => setActive(resJSON));
-  //   setShouldFetch(false);
-  // }, [shouldFetch]);
+  useEffect(() => {
+    let nextToken = "";
+    let items = [];
+    const asyncFetch = async () => {
+      do {
+        const result = await AWSoperation(listPlugPosts, { nextToken });
+        nextToken = result.data.listPlugGames.nextToken;
+        items = items.concat(result.data.listPlugGames.items);
+      } while (nextToken);
+      return items;
+    };
+    asyncFetch().then((res) =>
+      setActive(res.sort((a, b) => b.timestamp - a.timestamp))
+    );
+  }, []);
 
   return (
     <>
@@ -67,15 +81,15 @@ const PlugGame = () => {
             <div style={{ paddingBottom: "0.5rem" }}>
               <h3 style={{ paddingBottom: "0.5rem" }}>{_data.title}</h3>
               <img style={{ maxHeight: "8rem" }} src={_data.thumbnail} />
-              <div>{_data.description}</div>
-              <div>{_data.timestamp}</div>
+              {/* <div>{_data.description}</div> */}
+              {/* <div>{_data.timestamp}</div> */}
             </div>
-            <Author onClick={() => window.open(_data.author.url, "_blank")}>
+            {/* <Author onClick={() => window.open(_data.author.url, "_blank")}>
               <AuthorPic src={_data.author.icon_url} />
               <p style={{ paddingLeft: "0.2rem", cursor: "pointer" }}>
                 {_data.author.name}
               </p>
-            </Author>
+            </Author> */}
           </Announcement>
         ))
       ) : (
