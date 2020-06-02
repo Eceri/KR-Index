@@ -25,21 +25,6 @@ const Announcement = styled.div`
   }
 `;
 
-// FIXME: cleanup!
-const Author = styled.div`
-  width: 7rem;
-  display: flex;
-  flex-direction: row;
-  &:hover {
-    cursor: pointer;
-    color: #71b9f5;
-  }
-`;
-const AuthorPic = styled.img`
-  height: 1.5rem;
-  border: 0px solid transparent;
-`;
-
 const _dataObj = {
   title: "",
   description: "",
@@ -68,7 +53,7 @@ const PlugGame = () => {
       return items;
     };
     asyncFetch().then((res) =>
-      setActive(res.sort((a, b) => b.timestamp - a.timestamp))
+      setActive(res.sort((a, b) => b.timestamp - a.timestamp).slice(0, 5))
     );
   }, []);
 
@@ -83,15 +68,7 @@ const PlugGame = () => {
             <div style={{ paddingBottom: "0.5rem" }}>
               <h3 style={{ paddingBottom: "0.5rem" }}>{_data.title}</h3>
               <img style={{ maxHeight: "8rem" }} src={_data.thumbnail} />
-              {/* <div>{_data.description}</div> */}
-              {/* <div>{_data.timestamp}</div> */}
             </div>
-            {/* <Author onClick={() => window.open(_data.author.url, "_blank")}>
-              <AuthorPic src={_data.author.icon_url} />
-              <p style={{ paddingLeft: "0.2rem", cursor: "pointer" }}>
-                {_data.author.name}
-              </p>
-            </Author> */}
           </Announcement>
         ))
       ) : (
