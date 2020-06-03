@@ -129,7 +129,7 @@ export const getHeroSkins = `query GetHeroSkins($name: String!){
 }`;
 
 export const listPlugPosts = `query ListPlugPosts($nextToken: String!){
-  listPlugGames(filter: {timestamp: {gt: 24}} nextToken: $nextToken){
+  listPlugGames(filter: {timestamp: {gt: 26}} nextToken: $nextToken){
     items {
       timestamp
       thumbnail
