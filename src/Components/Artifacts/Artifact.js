@@ -47,6 +47,7 @@ const Artifact = (name) => {
   const [star, setStar] = useState(0);
   const [artifact, setArtifact] = useState(LOADING_ARTIFACT);
 
+  console.log(name);
   useEffect(() => {
     AWSoperation(getArtifact, { name: name }).then((res) =>
       setArtifact(res.data.getArtifact)

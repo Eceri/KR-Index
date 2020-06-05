@@ -3,12 +3,13 @@ import { render } from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Relative Imports
-import { 
+import {
   Artifacts,
   Home,
   Hero,
   Heroes,
-  StatCaps
+  Guides,
+  StatCaps,
 } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
@@ -34,6 +35,7 @@ render(
           <Route path="/artifacts" component={Artifacts} />
           <Route path="/caps" component={StatCaps} />
           <Route exact path="/" component={Home} />
+          <Route exact path="/guides" component={Guides} />
           <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
       </BrowserRouter>
