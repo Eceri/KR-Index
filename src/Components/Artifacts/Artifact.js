@@ -59,7 +59,6 @@ const Artifact = (name) => {
       })
       .join(" ");
 
-    console.log(correctName);
     AWSoperation(getArtifact, { name: correctName }).then((res) =>
       setArtifact(res.data.getArtifact)
     );
