@@ -50,9 +50,16 @@ const Artifact = (name) => {
   useEffect(() => {
     const correctName = name
       .split(" ")
-      .map((v) => `${v.charAt(0).toUpperCase()}${v.slice(1)}`)
+      .map((v) => {
+        if (RegExp("[A-Z]", "g").test(v.charAt(0))) {
+          return `${v.charAt(0).toUpperCase()}${v.slice(1)}`;
+        } else {
+          return v;
+        }
+      })
       .join(" ");
 
+    console.log(correctName);
     AWSoperation(getArtifact, { name: correctName }).then((res) =>
       setArtifact(res.data.getArtifact)
     );
