@@ -53,13 +53,13 @@ const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
 
   useEffect(() => {
-    let nextToken = "";
+    let nextToken = null;
     let items = [];
     const asyncFetch = async () => {
       do {
         const result = await AWSoperation(listPlugPosts, { nextToken });
-        nextToken = result.data.listPlugGames.nextToken;
-        items = items.concat(result.data.listPlugGames.items);
+        nextToken = result.data.listPlugPosts.nextToken;
+        items = items.concat(result.data.listPlugPosts.items);
       } while (nextToken);
       return items;
     };
