@@ -37,9 +37,6 @@ node_modules
 playground.json
 
 #amplify
-aws-exports.js
-team-provider-info.json
-/amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
@@ -48,6 +45,7 @@ amplify/backend/awscloudformation
 build/
 dist/
 node_modules/
+aws-exports.js
 awsconfiguration.json
 amplifyconfiguration.json
 amplify-build-config.json
