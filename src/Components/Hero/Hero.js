@@ -20,7 +20,11 @@ import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
 export const Hero = (props) => {
   const [headInfo, setHeadInfo] = useState({});
-  const heroName = `${props.match.params.hero.charAt(0).toUpperCase()}${props.match.params.hero.slice(1)}`
+  const heroName = props.match.params.hero
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
   const heroPath = `heroes/${heroName.toLowerCase()}/`;
 
   useEffect(() => {
@@ -56,21 +60,21 @@ export const Hero = (props) => {
 
   //scroll-To, needs to be manually done, due to timing with the page
   useEffect(() => {
-    setTimeout(() => {
-      if (scrollAnchor !== undefined) {
-        let element = document.getElementById(
-          `${scrollAnchor.slice(1)}-anchor`
-        );
-        let scrollToTopPosition = 0;
-        if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-        window.scrollTo({
-          top: scrollToTopPosition,
-          left: 0,
-          behavior: "smooth",
-        });
-      }
-    });
   });
+      setTimeout(() => {
+        if (scrollAnchor !== undefined) {
+          let element = document.getElementById(
+            `${scrollAnchor.slice(1)}-anchor`
+          );
+          let scrollToTopPosition = 0;
+          if (element !== null) scrollToTopPosition = element.offsetTop - 60;
+          window.scrollTo({
+            top: scrollToTopPosition,
+            left: 0,
+            behavior: "smooth",
+          });
+        }
+      });
 
   return (
     <>

@@ -6,7 +6,7 @@ import "./../styles/HeroSkins.css";
 import { AWSoperation, getHeroSkins } from "Helpers";
 
 export const HeroSkins = (props) => {
-  const [heroSkins, setHeroSkins] = useState({});
+  const [heroSkins, setHeroSkins] = useState();
   let { heroPath, heroName } = props;
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export const HeroSkins = (props) => {
   return (
     <>
       {createSkinDiv("Base")}
-      {Object.keys(heroSkins).length > 0 ? (
+      {heroSkins !== undefined && heroSkins !== null ? (
         <>{heroSkins.map((skin) => createSkinDiv(skin))}</>
       ) : (
         <></>
