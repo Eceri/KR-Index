@@ -1,39 +1,49 @@
 import React, { useState, useEffect } from "react";
 import { Image } from "./../components";
 import "./../styles/HeroSkins.css";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 //Relative Imports
 import { AWSoperation, getHeroSkins } from "Helpers";
 
 export const HeroSkins = (props) => {
-  const [heroSkins, setHeroSkins] = useState();
+  const [heroSkins, setHeroSkins] = useState(["Base"]);
   let { heroPath, heroName } = props;
 
   useEffect(() => {
-    AWSoperation(getHeroSkins, { name: heroName }).then((res) =>
-      setHeroSkins(res.data.getHero.skins)
-    );
+    AWSoperation(getHeroSkins, { name: heroName }).then((res) => {
+      setHeroSkins(heroSkins.concat(res.data.getHero.skins));
+    });
   }, [heroName]);
 
-  const createSkinDiv = (name) => (
-    <div className="skin" key={name}>
-      <h2>{name}</h2>
-      <Image
-        src={`${heroPath}${name}.png`}
-        alt={name}
-        style={{ border: "none" }}
-        className="skin"
-      />
-    </div>
-  );
+  const tabSelected = (index, lastIndex) => {
+    if (index !== lastIndex) {
+      
+      return true;
+    }
+    return false;
+  };
+
+
   return (
     <>
-      {createSkinDiv("Base")}
-      {heroSkins !== undefined && heroSkins !== null ? (
-        <>{heroSkins.map((skin) => createSkinDiv(skin))}</>
-      ) : (
-        <></>
-      )}
+      <Tabs>
+        <TabList style={{ border: "none", flexWrap: "wrap" }}>
+          {heroSkins.map((skin) => (
+            <Tab key={`Tab-${skin}`}>{skin}</Tab>
+          ))}
+        </TabList>
+        {heroSkins.map((skin) => (
+          <TabPanel key={`TabPanel-${skin}`}>
+            <Image
+              src={`${heroPath}${skin}.png`}
+              alt={name}
+              style={{ border: "none" }}
+              className="skin"
+            />
+          </TabPanel>
+        ))}
+      </Tabs>
     </>
   );
 };

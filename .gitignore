@@ -36,8 +36,8 @@ node_modules
 /Server/apidoc
 playground.json
 
+/amplify
 #amplify
-amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
