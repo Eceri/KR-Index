@@ -54,7 +54,7 @@ export const Hero = (props) => {
     //   initalTabIndex = 3;
     //   break;
     default:
-      initalTabIndex = 0;
+      initalTabIndex = 0
       scrollAnchor = hashFragments[0];
       break;
   }
@@ -91,7 +91,7 @@ export const Hero = (props) => {
         });
       }
     });
-  });
+  }, [scrollAnchor]);
 
   return (
     <>
