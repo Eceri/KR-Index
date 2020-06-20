@@ -19,7 +19,13 @@ import "../styles/tabStyles.css";
 import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
 export const Hero = (props) => {
-  const [headInfo, setHeadInfo] = useState({});
+  const [headInfo, setHeadInfo] = useState({
+    name: "",
+    title: "",
+    class: "",
+    damageType: "",
+    position: "",
+  });
   const heroName = props.match.params.hero
     .toLowerCase()
     .split(" ")
@@ -35,14 +41,24 @@ export const Hero = (props) => {
 
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
-  let initalTabIndex = 0;
+  let initalTabIndex;
   let scrollAnchor = hashFragments[1];
-
-  if (hashFragments[0] === "#story") initalTabIndex = 1;
-  else if (hashFragments[0] === "#skins") initalTabIndex = 2;
-  //else if(hashFragments[0] == "#voice") initalTabIndex = 3
-  else scrollAnchor = hashFragments[0];
-
+  switch (hashFragments[0]) {
+    case "#story":
+      initalTabIndex = 1;
+      break;
+    case "#skins":
+      initalTabIndex = 2;
+      break;
+    // case "#voice":
+    //   initalTabIndex = 3;
+    //   break;
+    default:
+      initalTabIndex = 0;
+      scrollAnchor = hashFragments[0];
+      break;
+  }
+  //Change method for React-Tabs
   const tabSelected = (index, lastIndex) => {
     if (index !== lastIndex) {
       let url;
@@ -60,79 +76,76 @@ export const Hero = (props) => {
 
   //scroll-To, needs to be manually done, due to timing with the page
   useEffect(() => {
+    setTimeout(() => {
+      if (scrollAnchor !== undefined) {
+        let element = document.getElementById(
+          `${scrollAnchor.slice(1)}-anchor`
+        );
+        let scrollToTopPosition = 0;
+        if (element !== null) scrollToTopPosition = element.offsetTop - 60;
+        console.log("anchor: " + element.offsetTop)
+        window.scrollTo({
+          top: scrollToTopPosition,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+    });
   });
-      setTimeout(() => {
-        if (scrollAnchor !== undefined) {
-          let element = document.getElementById(
-            `${scrollAnchor.slice(1)}-anchor`
-          );
-          let scrollToTopPosition = 0;
-          if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-          window.scrollTo({
-            top: scrollToTopPosition,
-            left: 0,
-            behavior: "smooth",
-          });
-        }
-      });
 
   return (
     <>
-      {Object.keys(headInfo).length > 1 ? (
-        <>
-          {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)}
-          <div className="flexBox" id="hero">
-            <Image src={`${heroPath}portrait.png`} id={"portrait"} />
-            <div>
-              <h1>{headInfo.name}</h1>
-              <h2>{headInfo.title}</h2>
-              <div id="heroType" className="flexBox">
-                <Image
-                  src={`classes/${headInfo.class.toLowerCase()}.png`}
-                  id={"heroClassIcon"}
-                  style={{ border: "none" }}
-                  dataTip={headInfo.class}
-                />
-                <Image
-                  src={`${headInfo.damageType}.png`}
-                  id={"damageType"}
-                  alt={"dmg type"}
-                  style={{ border: "none" }}
-                  dataTip={headInfo.damageType}
-                />
-                <p>{headInfo.position}</p>
-              </div>
-            </div>
-            <ReactTooltip border={true} />
-          </div>
-          <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
-            <TabList>
-              <Tab>General</Tab>
-              <Tab>Story</Tab>
-              <Tab>Skins</Tab>
-              {/* <Tab>Voice</Tab> */}
-            </TabList>
-            <TabPanel>
-              <HeroGeneral heroPath={heroPath} heroName={heroName} />
-            </TabPanel>
-            <TabPanel>
-              <HeroStory
-                heroPath={heroPath}
-                heroName={heroName}
-                heroTitle={headInfo.title}
+      <>
+        {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)}
+        <div className="flexBox" id="hero">
+          <Image src={`${heroPath}portrait.png`} id={"portrait"} />
+          <div>
+            <h1>{headInfo.name}</h1>
+            <h2>{headInfo.title}</h2>
+            <div id="heroType" className="flexBox">
+              <Image
+                src={`classes/${headInfo.class.toLowerCase()}.png`}
+                id={"heroClassIcon"}
+                style={{ border: "none" }}
+                dataTip={headInfo.class}
               />
-            </TabPanel>
-            <TabPanel>
-              <HeroSkins heroPath={heroPath} heroName={heroName} />
-            </TabPanel>
-            {/* <TabPanel>
+              <Image
+                src={`${headInfo.damageType}.png`}
+                id={"damageType"}
+                alt={"dmg type"}
+                style={{ border: "none" }}
+                dataTip={headInfo.damageType}
+              />
+              <p>{headInfo.position}</p>
+            </div>
+          </div>
+          <ReactTooltip border={true} />
+        </div>
+        <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
+          <TabList>
+            <Tab>General</Tab>
+            <Tab>Story</Tab>
+            <Tab>Skins</Tab>
+            {/* <Tab>Voice</Tab> */}
+          </TabList>
+          <TabPanel>
+            <HeroGeneral heroPath={heroPath} heroName={heroName} />
+          </TabPanel>
+          <TabPanel>
+            <HeroStory
+              heroPath={heroPath}
+              heroName={heroName}
+              heroTitle={headInfo.title}
+            />
+          </TabPanel>
+          <TabPanel>
+            <HeroSkins heroPath={heroPath} heroName={heroName} />
+          </TabPanel>
+          {/* <TabPanel>
               <HeroVoice heroPath={heroPath} voice={heroInfo.voice} />
             </TabPanel> */}
-          </Tabs>
-        </>
-      ) : (
-        <></>
-      )}
+        </Tabs>
+      </>
     </>
   );
 };
