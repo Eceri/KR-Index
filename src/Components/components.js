@@ -15,3 +15,4 @@ export { Artifacts } from "./Artifacts/Artifacts";
 export { Etc } from "./../Etc";
 export { Home } from "./../home";
 export { StatCaps } from "./StatCaps";
+export { Guides } from "./Guides/Guides";

@@ -34,6 +34,9 @@ export const NavBar = () => {
       <Link to={"/artifacts"} className={"navLink"}>
         Artifacts
       </Link>
+      <Link to={"/guides"} className={"navLink"}>
+        Guides
+      </Link>
       <Searchbar artifacts={artifacts} />
     </nav>
   );

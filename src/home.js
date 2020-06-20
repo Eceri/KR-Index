@@ -9,32 +9,43 @@ import { AWSoperation, listPlugPosts } from "Helpers";
 
 // Styling
 const Announcement = styled.div`
-  border-radius: 0.5rem;
-  min-height: 10rem;
-  border: 1px solid white;
-  background-color: #5d5d5d;
-  padding: 0.5rem;
-  width: 70%;
-  margin: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 2px 2px 3px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
   &:hover {
     cursor: pointer;
     background-color: #262626;
   }
+  // background-color: #5d5d5d;
+`;
+
+const Title = styled.h3`
+  padding: 1rem;
+  padding-top: 1.2rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0px, #252525 400px);
+  z-index: 2;
+`;
+
+const News = styled.div`
+  padding: 1rem;
+`;
+
+const MovingImage = styled.img`
+  position: relative;
+  top: -4rem;
+  float: right;
+  // left: ${(props) => (props.big ? "71.3%" : "88%")};
+  height: 100%;
+  max-width: 112px;
 `;
 
 const _dataObj = {
   title: "",
-  description: "",
   url: "",
-  timestamp: "",
-  author: {
-    name: "",
-    url: "",
-    icon_url: "",
-  },
   thumbnail: "",
 };
 
@@ -42,39 +53,46 @@ const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
 
   useEffect(() => {
-    let nextToken = "";
+    let nextToken = null;
     let items = [];
     const asyncFetch = async () => {
       do {
         const result = await AWSoperation(listPlugPosts, { nextToken });
-        nextToken = result.data.listPlugGames.nextToken;
-        items = items.concat(result.data.listPlugGames.items);
+        nextToken = result.data.listPlugPosts.nextToken;
+        items = items.concat(result.data.listPlugPosts.items);
       } while (nextToken);
       return items;
     };
     asyncFetch().then((res) =>
-      setActive(res.sort((a, b) => b.timestamp - a.timestamp).slice(0, 5))
+      setActive(res.sort((a, b) => b.timestamp - a.timestamp).slice(0, 9))
     );
   }, []);
 
+  const eventImage = (thumbnail) => {
+    if (/(S_[\w]+_EN)/g.test(thumbnail)) return true;
+    return false;
+  };
+
   return (
-    <>
+    <News>
+      <h2 style={{ marginBottom: "1.5rem" }}>News</h2>
       {active.length > 1 ? (
         active.map((_data) => (
           <Announcement
             key={_data.url}
             onClick={() => window.open(_data.url, "_blank")}
           >
-            <div style={{ paddingBottom: "0.5rem" }}>
-              <h3 style={{ paddingBottom: "0.5rem" }}>{_data.title}</h3>
-              <img style={{ maxHeight: "8rem" }} src={_data.thumbnail} />
-            </div>
+            <Title>{_data.title}</Title>
+            <MovingImage
+              big={eventImage(_data.thumbnail)}
+              src={_data.thumbnail}
+            />
           </Announcement>
         ))
       ) : (
         <div className="loader"></div>
       )}
-    </>
+    </News>
   );
 };
 
@@ -135,7 +153,6 @@ export const Home = () => {
             </a>
           </div>
         </div>
-        <h2>News</h2>
         {PlugGame()}
         <ReactTooltip border={true} />
       </div>
