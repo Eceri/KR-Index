@@ -83,6 +83,7 @@ export const Hero = (props) => {
         );
         let scrollToTopPosition = 0;
         if (element !== null) scrollToTopPosition = element.offsetTop - 60;
+        console.log("anchor: " + element.offsetTop)
         window.scrollTo({
           top: scrollToTopPosition,
           left: 0,

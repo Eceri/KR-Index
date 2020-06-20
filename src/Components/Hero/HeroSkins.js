@@ -18,32 +18,28 @@ export const HeroSkins = (props) => {
 
   const tabSelected = (index, lastIndex) => {
     if (index !== lastIndex) {
-      
       return true;
     }
     return false;
   };
 
-
   return (
-    <>
-      <Tabs>
-        <TabList style={{ border: "none", flexWrap: "wrap" }}>
-          {heroSkins.map((skin) => (
-            <Tab key={`Tab-${skin}`}>{skin}</Tab>
-          ))}
-        </TabList>
+    <Tabs>
+      <TabList style={{ border: "none", flexWrap: "wrap" }}>
         {heroSkins.map((skin) => (
-          <TabPanel key={`TabPanel-${skin}`}>
-            <Image
-              src={`${heroPath}${skin}.png`}
-              alt={name}
-              style={{ border: "none" }}
-              className="skin"
-            />
-          </TabPanel>
+          <Tab key={`Tab-${skin}`}>{skin}</Tab>
         ))}
-      </Tabs>
-    </>
+      </TabList>
+      {heroSkins.map((skin) => (
+        <TabPanel key={`TabPanel-${skin}`}>
+          <Image
+            src={`${heroPath}${skin}.png`}
+            alt={name}
+            style={{ border: "none" }}
+            className="skin"
+          />
+        </TabPanel>
+      ))}
+    </Tabs>
   );
 };
