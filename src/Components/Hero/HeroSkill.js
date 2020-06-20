@@ -12,9 +12,28 @@ export const HeroSkill = props => {
     }
     return orbs;
   };
+  if(skill == undefined){
+    skill = {
+      id: 0,
+      skillInfo: [{
+        skillNumber: "",
+        id: 0,
+        cost: 0,
+        cooldown: 0,
+        description: ""
+      }],
+      books: [""],
+      light: "",
+      dark: "",
+      uniqueTreasure: {
+        name: "", 
+        effect: ""
+      }
+    }
+  }
 
   return (
-    <div className="skill" key={skill.id} id={`s${skill.id}-anchor`} >
+    <div className="skill" id={`s${skill.id}-anchor`} >
       {skill.skillInfo.map((skillInfo, index) => (
         <div key={skillInfo.skillNumber} className={skillInfo.linked && index > 0 && "linkedSkill"}>
           <div className="flexBox">

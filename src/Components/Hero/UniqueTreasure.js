@@ -7,6 +7,14 @@ export const UniqueTreasure = props => {
   const [star, setStars] = useState(0);
   const { heroPath, skill } = props;
   let utPath = `${heroPath}ut${skill.id}.png`;
+
+  if(skill == undefined){
+    skill = {
+      effect: ["","","","","",""],
+      name: ""
+    }
+  }
+
   return (
     <div className="ut">
       <div className="flexBox">
