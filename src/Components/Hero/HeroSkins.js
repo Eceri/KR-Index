@@ -16,13 +16,6 @@ export const HeroSkins = (props) => {
     });
   }, [heroName]);
 
-  const tabSelected = (index, lastIndex) => {
-    if (index !== lastIndex) {
-      return true;
-    }
-    return false;
-  };
-
   return (
     <Tabs>
       <TabList style={{ border: "none", flexWrap: "wrap" }}>
