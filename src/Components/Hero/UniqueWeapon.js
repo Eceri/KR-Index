@@ -6,7 +6,21 @@ import { stars } from "../atoms/Stars/stars";
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
   let { heroPath, uniqueWeapon, soulWeapon } = props
-  
+  if(uniqueWeapon == undefined || soulWeapon == undefined){
+    uniqueWeapon = {
+      effect: ["","","","","",""],
+      name: ""
+    }
+    soulWeapon = {
+      description: "", 
+      advancement0: "",
+      advancement1: "",
+      advancement2: "", 
+      charges: 0,
+      cd: 0,
+      activation: ""
+    }
+  }
   return (
     <div>
       <div className="flexBox" id="uw-anchor">
