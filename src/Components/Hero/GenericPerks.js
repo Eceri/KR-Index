@@ -4,6 +4,16 @@ import "../styles/genericPerks.css";
 
 export const GenericPerks = props => {
   let perks = props.perks;
+  if(perks == undefined) {
+    perks = [
+      {name: "", effect: ""},
+      {name: "", effect: ""},
+      {name: "", effect: ""},
+      {name: "", effect: ""},
+      {name: "", effect: ""},
+      {name: "", effect: ""}
+    ]
+  }
   return <div>
     {perks.map(perk => (
       <div className={"genericPerk"} key={perk.name}>

@@ -17,7 +17,6 @@ export const Heroes = () => {
     </Helmet>
   );
 
-
   return (
     <>
       {title}
