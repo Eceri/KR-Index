@@ -56,7 +56,7 @@ const Artifact = (name) => {
         }
         if (
           RegExp(
-            "^(of|Of|oF|OF|the|The|THE|tHe|thE|a|A|in|IN|In|iN)$",
+            "^(of|Of|oF|OF|the|The|THE|tHe|thE|a|A|in|IN|In|iN|an|An|aN|AN)$",
             "g"
           ).test(v)
         ) {
