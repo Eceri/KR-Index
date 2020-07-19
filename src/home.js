@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
 
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
-import { AWSoperation, listPlugPosts } from "Helpers";
+import { AWSoperation, listPlugPosts, AWSoperationLists } from "Helpers";
 
 // Styling
 const Announcement = styled.div`
@@ -51,22 +51,17 @@ const _dataObj = {
 
 const PlugGame = () => {
   const [active, setActive] = useState([_dataObj]);
+  const [error, setError] = useGlobal("error");
 
   useEffect(() => {
-    let nextToken = null;
-    let items = [];
-    const asyncFetch = async () => {
-      do {
-        const result = await AWSoperation(listPlugPosts, { nextToken });
-        nextToken = result.data.listPlugPosts.nextToken;
-        items = items.concat(result.data.listPlugPosts.items);
-      } while (nextToken);
-      return items;
-    };
-    asyncFetch().then((res) =>
+    AWSoperationLists(listPlugPosts).then((res) =>
       setActive(res.sort((a, b) => b.timestamp - a.timestamp).slice(0, 9))
     );
   }, []);
+
+  useEffect(() => {
+    console.log("ERROR:------", error);
+  }, [error]);
 
   const eventImage = (thumbnail) => {
     if (/(S_[\w]+_EN)/g.test(thumbnail)) return true;

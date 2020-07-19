@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Redirect } from "react-router-dom";
 import {
   Image,
   HeroGeneral,
@@ -33,10 +32,16 @@ export const Hero = (props) => {
     .join(" ");
   const heroPath = `heroes/${heroName.toLowerCase()}/`;
 
+  const [error, setError] = useGlobal("error");
+
   useEffect(() => {
-    AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
-      setHeadInfo(res.data.getHero)
-    );
+    try {
+      AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
+        setHeadInfo(res.data.getHero)
+      );
+    } catch (error) {
+      setError(error);
+    }
   }, [heroName]);
 
   //handling #-Fragments for Tabs
@@ -54,7 +59,7 @@ export const Hero = (props) => {
     //   initalTabIndex = 3;
     //   break;
     default:
-      initalTabIndex = 0
+      initalTabIndex = 0;
       scrollAnchor = hashFragments[0];
       break;
   }
@@ -83,7 +88,7 @@ export const Hero = (props) => {
         );
         let scrollToTopPosition = 0;
         if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-        console.log("anchor: " + element.offsetTop)
+        console.log("anchor: " + element.offsetTop);
         window.scrollTo({
           top: scrollToTopPosition,
           left: 0,

@@ -16,3 +16,4 @@ export { Etc } from "./../Etc";
 export { Home } from "./../home";
 export { StatCaps } from "./StatCaps";
 export { Guides } from "./Guides/Guides";
+export { PerkCalculator } from "./PerkCalculator/PerkCalculator";

@@ -37,3 +37,22 @@ export const SearchInput = styled.input`
     outline: none;
   }
 `;
+
+export const Filterbox = styled.input`
+  background-color: #303030;
+  padding: 0.3rem;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+  border: 1px solid transparent;
+
+  &:focus {
+    box-shadow: -1px -1px 9px white;
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: -1px -1px 9px #303030;
+  }
+`;

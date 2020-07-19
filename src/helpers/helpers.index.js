@@ -10,5 +10,8 @@ export {
   getHeroStories,
   getHeroSkins,
   AWSoperation,
+  AWSoperationLists,
+  getHeroSkills,
+  listHeros,
 } from "./aws/aws.helpers";
 export { sortedSearch } from "./helpers.sortedSearch";

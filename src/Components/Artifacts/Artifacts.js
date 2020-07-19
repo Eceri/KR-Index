@@ -14,6 +14,7 @@ import {
   sortedSearch,
 } from "Helpers";
 import { Button } from "../atoms/atoms.index";
+import { Filterbox } from "Styles";
 
 // Styled Components
 const ArtifactContainer = styled.div`
@@ -37,25 +38,6 @@ const ClickedArtifact = styled.section`
   padding-right: 0;
   background-color: #404040;
   height: 17rem;
-`;
-
-const FilterBox = styled.input`
-  background-color: #303030;
-  padding: 0.3rem;
-  color: white;
-  &::placeholder {
-    color: white;
-  }
-  border: 1px solid transparent;
-
-  &:focus {
-    box-shadow: -1px -1px 9px white;
-    outline: none;
-  }
-
-  &:hover {
-    box-shadow: -1px -1px 9px #303030;
-  }
 `;
 
 // Implementation
@@ -101,10 +83,14 @@ export const Artifacts = () => {
   }, [replaceChosenArtifactName]);
 
   useEffect(() => {
-    AWSoperation(listArtifacts).then((artifacts) => {
-      setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
-      SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
-    });
+    try {
+      AWSoperation(listArtifacts).then((artifacts) => {
+        setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
+        SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
+      });
+    } catch (error) {
+      history.pushState(error, "Error", "/404");
+    }
   }, []);
 
   return (
@@ -118,7 +104,7 @@ export const Artifacts = () => {
           >
             {direction}
           </Button>
-          <FilterBox
+          <Filterbox
             placeholder="Filter..."
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
             value={searchQuery}

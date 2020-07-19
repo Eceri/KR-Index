@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useGlobal, setGlobal, useEffect } from "reactn";
 import { render } from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 
 // Relative Imports
 import {
@@ -10,6 +10,7 @@ import {
   Heroes,
   Guides,
   StatCaps,
+  PerkCalculator,
 } from "./Components/components";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
@@ -22,25 +23,57 @@ import Amplify from "aws-amplify";
 import aws_exports from "./aws-exports";
 
 Amplify.configure(aws_exports);
-render(
-  <>
-    {createHelmet("Home", "frontpage", "./favicon")}
-    <div id="pageContainer">
-      <BrowserRouter>
-        <NavBar key={"components.js"} />
-        <Switch>
-          {/* <Route path="/heroes/Maya" component={Maya} /> */}
-          <Route push={true} path="/heroes/:hero" component={Hero} />
-          <Route path="/heroes" component={Heroes} />
-          <Route path="/artifacts" component={Artifacts} />
-          <Route path="/caps" component={StatCaps} />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/guides" component={Guides} />
-          <Route path="*" component={() => "404 NOT FOUND"} />
-        </Switch>
-      </BrowserRouter>
-    </div>
-    <Footer />
-  </>,
-  document.getElementById("root")
-);
+
+setGlobal({
+  error: "",
+  build: "00000-00000-0000-0000-00",
+  tp: 95,
+});
+
+const Page = () => {
+  const [error, setError] = useGlobal("error");
+
+  useEffect(() => {
+    if (error !== "") {
+      history.pushState("Error", "Error", "/404");
+    }
+  }, [error]);
+
+  const NotFound = () => {
+    return (
+      <div style={{ textAlign: "center", marginTop: "8rem" }}>
+        <h1 style={{ marginBottom: "3rem" }}>Something went wrong!</h1>
+        <NavLink to="/" onClick={() => setError("")}>
+          Back to landing page
+        </NavLink>
+      </div>
+    );
+  };
+
+  return (
+    <>
+      {createHelmet("Home", "frontpage", "./favicon")}
+      <div id="pageContainer">
+        <BrowserRouter>
+          <NavBar key={"components.js"} setError={setError} />
+
+          <Switch>
+            {/* <Route path="/heroes/Maya" component={Maya} /> */}
+            <Route push={true} path="/heroes/:hero" component={Hero} />
+            <Route path="/heroes" component={Heroes} />
+            <Route path="/artifacts" component={Artifacts} />
+            <Route path="/caps" component={StatCaps} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/guides" component={Guides} />
+            <Route path="/perks/:hero/:build" component={PerkCalculator} />
+            <Route path="/404" component={NotFound} />
+            <Route path="*" component={NotFound} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+render(<Page />, document.getElementById("root"));

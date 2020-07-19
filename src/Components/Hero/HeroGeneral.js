@@ -11,11 +11,8 @@ export const HeroGeneral = (props) => {
   useEffect(() => {
     AWSoperation(getHeroGeneralInfo, {
       name: heroName,
-    })
-      .then((res) => setHeroInfo(res.data.getHero))
+    }).then((res) => setHeroInfo(res.data.getHero));
   }, [heroName]);
-
-
   return (
     <>
       <>

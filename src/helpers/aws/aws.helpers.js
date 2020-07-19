@@ -89,6 +89,19 @@ export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
     dark
   }
 }`;
+
+export const getHeroSkills = `query GetHeroSkills($name: String!){
+  getHero(name: $name){
+    class
+    skill1${skillRequest}
+    skill2${skillRequest}
+    skill3${skillRequest}
+    skill4${skillRequest}
+    light
+    dark
+  }
+}`;
+
 const utStoryRequest = `{
   uniqueTreasure{
     name
@@ -128,6 +141,15 @@ export const getHeroSkins = `query GetHeroSkins($name: String!){
   }
 }`;
 
+export const listHeros = `query ListHeros($nextToken: String){
+  listHeros(nextToken: $nextToken){
+    items{
+      name
+    }
+    nextToken
+  }
+}`;
+
 export const listPlugPosts = `query ListPlugPosts($nextToken: String){
   listPlugPosts(filter: {timestamp: {gt: 40}} nextToken: $nextToken){
     items {
@@ -142,8 +164,36 @@ export const listPlugPosts = `query ListPlugPosts($nextToken: String){
 
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
-    return await API.graphql(graphqlOperation(createEvent, eventDetails));
+    let res = await API.graphql(graphqlOperation(createEvent, eventDetails));
+    const contextSplit = createEvent.split("{");
+    const contextName = contextSplit[1].split(/[{(]/g)[0];
+    if (res.data[contextName.trim()] === null) {
+      throw Error;
+    } else {
+      return res;
+    }
   } catch (error) {
-    console.log(error);
+    return new Error(error);
+  }
+};
+
+export const AWSoperationLists = async (listOperation) => {
+  let nextToken = null;
+  let items = [];
+
+  // Get operation name from query
+  const operationSplit = listOperation.split("{")[1];
+  const operationName = operationSplit.split("(")[0].trim();
+
+  try {
+    do {
+      const result = await AWSoperation(listOperation, { nextToken });
+      nextToken = result.data[operationName].nextToken;
+      items = items.concat(result.data[operationName].items);
+    } while (nextToken);
+    return items;
+  } catch (err) {
+    console.log(err);
+    return null;
   }
 };

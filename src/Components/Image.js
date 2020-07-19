@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Image = (props) => {
-  let { src, alt, className, id, style, dataTip } = props;
+  let { src, alt, className, id, style, dataTip, dataFor } = props;
   let trySource = () => {
     let source = "";
     try {
@@ -19,6 +19,7 @@ export const Image = (props) => {
       id={id}
       style={style}
       data-tip={dataTip}
+      data-for={dataFor}
     />
   );
 };

@@ -1,1 +1,6 @@
-export { SearchBox, SearchListElement, SearchInput } from "./Searchbar";
+export {
+  SearchBox,
+  SearchListElement,
+  SearchInput,
+  Filterbox,
+} from "./Searchbar";
