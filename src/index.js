@@ -16,7 +16,8 @@ import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { Footer } from "./Components/Footer.js";
-import { createHelmet } from "./helpers/helpers.helmet";
+import { createHelmet, ErrorHandler } from "Helpers";
+import { ErrorState, INIT_BUILD } from "Constants";
 
 // Amplify Settings
 import Amplify from "aws-amplify";
@@ -25,19 +26,13 @@ import aws_exports from "./aws-exports";
 Amplify.configure(aws_exports);
 
 setGlobal({
-  error: "",
-  build: "00000-00000-0000-0000-00",
+  error: ErrorState,
+  build: INIT_BUILD,
   tp: 95,
 });
 
 const Page = () => {
   const [error, setError] = useGlobal("error");
-
-  useEffect(() => {
-    if (error !== "") {
-      history.pushState("Error", "Error", "/404");
-    }
-  }, [error]);
 
   const NotFound = () => {
     return (
@@ -54,6 +49,7 @@ const Page = () => {
     <>
       {createHelmet("Home", "frontpage", "./favicon")}
       <div id="pageContainer">
+        <ErrorHandler />
         <BrowserRouter>
           <NavBar key={"components.js"} setError={setError} />
 
@@ -65,7 +61,7 @@ const Page = () => {
             <Route path="/caps" component={StatCaps} />
             <Route exact path="/" component={Home} />
             <Route exact path="/guides" component={Guides} />
-            <Route path="/perks/:hero/:build" component={PerkCalculator} />
+            <Route path="/perks/:hero?/:build?" component={PerkCalculator} />
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
           </Switch>

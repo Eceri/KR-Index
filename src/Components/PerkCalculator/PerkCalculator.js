@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
 import styles from "styled-components";
+import ReactTooltip from "react-tooltip";
 
 // Relative imports
 import {
@@ -7,37 +8,12 @@ import {
   getHeroSkills,
   listHeros,
   AWSoperationLists,
+  sortedSearch,
 } from "Helpers";
 import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
-import ReactTooltip from "react-tooltip";
-import { Filterbox, Button } from "Styles";
-
-const samplePerks = {
-  s1: {
-    light: "",
-    dark: "",
-    skillInfo: [],
-  },
-  s2: {
-    light: "",
-    dark: "",
-    skillInfo: [],
-  },
-  s3: {
-    light: "",
-    dark: "",
-    skillInfo: [],
-  },
-  s4: {
-    light: "",
-    dark: "",
-    skillInfo: [],
-  },
-  general: {
-    light: "",
-    dark: "",
-  },
-};
+import { Filterbox } from "Styles";
+import { INIT_BUILD, PERK_SAMPLE } from "Constants";
+import { Button } from "Atoms";
 
 // Styles
 const Row = styles.div`
@@ -54,7 +30,11 @@ const Container = styles.div`
 `;
 
 const PerkContainer = styles.div`
+  margin:auto;
   padding: 2rem;
+  @media only screen and (max-width: 650px) {
+    padding: 0;
+  }
 `;
 
 const HeroImage = styles.span`
@@ -102,9 +82,9 @@ const genericWrapper = (
   return (
     <PerkContainer>
       <Row style={{ justifyContent: "space-between" }}>
-        <div>{displayName}</div>
+        <div style={{ width: "10rem" }}>{displayName}</div>
         <TP value={tp}>TP: {tp}</TP>
-        <button onClick={() => setReset(true)}>Reset</button>
+        <Button onClick={() => setReset(true)}>Reset</Button>
       </Row>
       <Row>
         <h3>T1</h3>
@@ -135,11 +115,9 @@ const genericWrapper = (
             setCopySuccess(true);
           }}
         />
-        <button
+        <Button
           style={{
             height: "2rem",
-            backgroundColor: "transparent",
-            color: "white",
             marginTop: "0.8rem",
           }}
           onClick={() => {
@@ -148,7 +126,7 @@ const genericWrapper = (
           }}
         >
           Copy
-        </button>
+        </Button>
       </Row>
       {copySuccess && <div>Successfull copied link</div>}
     </PerkContainer>
@@ -164,26 +142,72 @@ const handleWheel = (event) => {
   });
 };
 
-const resetBuild = "00000-00000-0000-0000-00";
+const checkURL = (url, setError, name) => {
+  const urlSplit = url.split("-");
+  const checkObject = [
+    { length: 5, content: ["0", "1"] },
+    { length: 5, content: ["0", "1"] },
+    { length: 2, content: ["0", "l", "d"] },
+    { length: 2, content: ["0", "l", "d"] },
+    { length: 2, content: ["0", "1"] },
+  ];
+  const checkLength = urlSplit.map(
+    (split, index) => checkObject[index].length === split.length && true
+  );
+  const split = urlSplit.map((string) => string.split(""));
+
+  const checkContent = split
+    .map((v, index) =>
+      v.map((a) => checkObject[index].content.map((c) => a === c && true))
+    )
+    .flat();
+
+  const checkTrue = checkContent
+    .map((v, index) => !v.includes(true) && index)
+    .filter((v) => v !== false);
+
+  if (checkLength.includes(false) || checkTrue.length > 0) {
+    setError({
+      message: "disfunctional URL",
+      redirect: true,
+      url: `/perks/${name}/${INIT_BUILD}`,
+    });
+  }
+};
+
 export const PerkCalculator = (props) => {
   const [name, setName] = useState("Kasel");
   const [reset, setReset] = useState(false);
-  const [perks, setPerks] = useState(samplePerks);
+  const [perks, setPerks] = useState(PERK_SAMPLE);
   const [heros, setHeros] = useState([]);
   const [heroFilter, setHeroFilter] = useState("");
   const [link, setLink] = useState(location.href);
   const [globalBuild, setGlobalBuild] = useGlobal("build");
   const [tp, setTP] = useGlobal("tp");
   const [copySuccess, setCopySuccess] = useState(false);
+  const [error, setError] = useGlobal("error");
+  const [nextToken, setNextToken] = useState(null);
+  const [copyHeroes, setCopyHeroes] = useState(heros);
 
+  let { hero, build } = props.match.params;
+
+  if (hero === undefined || build === undefined) {
+    history.pushState("Redirect", "Redirect", `/perks/Kasel/${INIT_BUILD}`);
+    location.reload();
+  }
   useEffect(() => {
-    AWSoperationLists(listHeros).then((res) => setHeros(res));
-    setName(props.match.params.hero);
+    AWSoperationLists(listHeros, nextToken, 10).then((res) => {
+      setNextToken(res.nextToken);
+      const sorted = sortedSearch(res.items, "name", "");
+      setHeros(sorted);
+      setCopyHeroes(sorted);
+    });
+    setName(hero);
+    checkURL(build, setError, hero);
   }, []);
 
   useEffect(() => {
     AWSoperation(getHeroSkills, { name: name }).then((res) => {
-      console.log(res);
       const { dark, light, skill1, skill2, skill3, skill4 } = res.data.getHero;
       setPerks({
         s1: {
@@ -217,8 +241,8 @@ export const PerkCalculator = (props) => {
 
   useEffect(() => {
     if (reset) {
-      history.pushState(name, name, `/perks/${name}/${resetBuild}`);
-      setGlobalBuild(resetBuild);
+      history.pushState(name, name, `/perks/${name}/${INIT_BUILD}`);
+      setGlobalBuild(INIT_BUILD);
       setTP(95);
       setReset(false);
     }
@@ -236,6 +260,14 @@ export const PerkCalculator = (props) => {
     }
   }, [copySuccess]);
 
+  useEffect(() => {
+    if (heroFilter !== "") {
+      setHeros(sortedSearch(copyHeroes, "name", heroFilter));
+    } else {
+      setHeros(copyHeroes);
+    }
+  }, [heroFilter]);
+
   return (
     <>
       <Container>
@@ -249,41 +281,36 @@ export const PerkCalculator = (props) => {
             style={{
               overflow: "auto",
               marginTop: "1.5rem",
-              height: "8rem",
+              height: "7.4rem",
               display: "flex",
             }}
             id="verticalScroll"
             onWheel={(event) => handleWheel(event)}
           >
-            {heros
-              .sort((a, b) => {
-                if (a.name > b.name) return 1;
-                if (a.name < b.name) return -1;
-                return 0;
-              })
-              .map((hero) => (
-                <HeroImage
-                  key={hero.name}
-                  onClick={() => {
-                    setName(hero.name);
-                    setReset(true);
-                  }}
+            {heros.map((hero) => (
+              <HeroImage
+                key={hero.name}
+                onClick={() => {
+                  setName(hero.name);
+                  setReset(true);
+                }}
+              >
+                <Image
+                  src={`heroes/${hero.name.toLowerCase()}/portrait.png`}
+                  className="heroIcon"
+                  dataTip
+                  dataFor={hero.name}
+                />
+                <ReactTooltip
+                  globalEventOff="touchstart"
+                  border={true}
+                  id={hero.name}
+                  className="tooltip"
                 >
-                  <Image
-                    src={`heroes/${hero.name.toLowerCase()}/portrait.png`}
-                    className="heroIcon"
-                    dataTip
-                    dataFor={hero.name}
-                  />
-                  <ReactTooltip
-                    border={true}
-                    id={hero.name}
-                    className="tooltip"
-                  >
-                    {hero.name}
-                  </ReactTooltip>
-                </HeroImage>
-              ))}
+                  {hero.name}
+                </ReactTooltip>
+              </HeroImage>
+            ))}
           </div>
         </div>
       </Container>

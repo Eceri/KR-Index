@@ -60,6 +60,7 @@ module.exports = {
       Atoms: path.resolve(__dirname, "src/Components/atoms/atoms.index.js"),
       Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
       Components: path.resolve(__dirname, "src/Components/components.js"),
+      Constants: path.resolve(__dirname, "src/Constants/constants.index.js"),
     },
   },
   optimization: {

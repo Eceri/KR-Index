@@ -1,9 +1,10 @@
-import React, { useGlobal, useState, useEffect } from "reactn";
+import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
 import styles from "styled-components";
 
 // Relative Imports
 import { Image } from "../components";
+import { PERK_COSTS } from "Constants";
 import "../styles/genericPerks.css";
 
 const CheckImage = styles((props) => <Image {...props} />)`
@@ -11,9 +12,18 @@ const CheckImage = styles((props) => <Image {...props} />)`
   &:hover {
     cursor:pointer;
   }
+  width: 4rem;
+  height: auto;
+  min-height: 4rem;
+  margin-top: 0.3rem;
+  margin-right: 0.75rem;
+  @media only screen and (max-width: 650px) {
+    width: 3rem;
+    min-height: 3rem;
+    margin-top: 0.1rem;
+    margin-right: 0.4rem;
+  }
 `;
-
-const cost = { 0: 10, 1: 15, 2: 15, 3: 15, 4: 15 };
 
 const heroView = (perks) => {
   return perks.map((perk) => (
@@ -30,13 +40,27 @@ const heroView = (perks) => {
   ));
 };
 
-const isActive = (build, pos) => {
-  const active = build[pos];
-  if (active === "1") {
-    return true;
-  }
-  if (active === "0") {
-    return false;
+const isActive = (build, pos, tier) => {
+  if (tier === 2 || tier === 3) {
+    if (build[0] === "l" && pos === 0) {
+      return true;
+    }
+    if (build[0] === "d" && pos === 1) {
+      return true;
+    }
+    if (build[1] === "l" && pos === 2) {
+      return true;
+    }
+    if (build[1] === "d" && pos === 3) {
+      return true;
+    }
+  } else {
+    const active = build[pos];
+    if (active !== "0") {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 
@@ -49,35 +73,90 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
     let buildSplit = build.split("-");
     const buildTier = buildSplit[tier];
     let i = buildTier.split("");
-    const value = i[index];
+    let value = i[index];
+    let costs = PERK_COSTS[tier];
 
-    if (value === "1") {
-      i[index] = "0";
-      setTP(tp + cost[tier]);
-    }
-    if (value === "0") {
-      let costs = cost[tier];
-      i[index] = "1";
-      if (tier === 2 || tier === 3) {
-        if ((i[0] === "1" && i[1] === "1") || (i[2] === "1" && i[3] === "1")) {
-          if (index === 0) {
-            i[index + 1] = "0";
-          }
-          if (index === 1) {
-            i[index - 1] = "0";
-          }
-          if (index === 2) {
-            i[index + 1] = "0";
-          }
-          if (index === 3) {
-            i[index - 1] = "0";
-          }
-          costs = 0;
-        }
+    if (tier === 2 || tier === 3) {
+      let situation;
+      switch (index) {
+        case 0:
+          situation = 0;
+          break;
+        case 1:
+          situation = 0;
+          break;
+        case 2:
+          situation = 1;
+          break;
+        case 3:
+          situation = 1;
+          break;
+        default:
+          break;
       }
-
-      setTP(tp - costs);
+      value = i[situation];
+      if (value === "l" && index === 1) {
+        i[situation] = "d";
+        costs = 0;
+      }
+      if (value === "l" && index === 3) {
+        i[situation] = "d";
+        costs = 0;
+      }
+      if (value === "d" && index === 0) {
+        i[situation] = "l";
+        costs = 0;
+      }
+      if (value === "d" && index === 2) {
+        i[situation] = "l";
+        costs = 0;
+      }
+      if (value === "l" && index === 0) {
+        i[situation] = "0";
+        setTP(tp + costs);
+      }
+      if (value === "l" && index === 2) {
+        i[situation] = "0";
+        setTP(tp + costs);
+      }
+      if (value === "d" && index === 1) {
+        i[situation] = "0";
+        setTP(tp + costs);
+      }
+      if (value === "d" && index === 3) {
+        i[situation] = "0";
+        setTP(tp + costs);
+      }
+      if (value === "0") {
+        switch (index) {
+          case 0:
+            i[situation] = "l";
+            break;
+          case 1:
+            i[situation] = "d";
+            break;
+          case 2:
+            i[situation] = "l";
+            break;
+          case 3:
+            i[situation] = "d";
+            break;
+          default:
+            break;
+        }
+        setTP(tp - costs);
+      }
+    } else {
+      if (value === "0") {
+        i[index] = "1";
+        setTP(tp - costs);
+      }
+      if (value === "1") {
+        i[index] = "0";
+        setTP(tp + costs);
+      }
     }
+
     buildSplit[tier] = i.join("");
 
     setBuild(buildSplit.join("-"));
@@ -134,12 +213,12 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
             >
               <CheckImage
                 src={`${url}/${perk}${_type.shortcut}.png`}
-                className="genericPerkIcon"
                 dataTip
                 dataFor={`${url}/${perk}${_type.shortcut}.png`}
                 active={isActive(
                   build.split("-")[tier],
-                  darkChange(index, _type)
+                  darkChange(index, _type),
+                  tier
                 )}
               />
               <ReactTooltip id={`${url}/${perk}${_type.shortcut}.png`}>
@@ -231,20 +310,18 @@ export const GenericPerks = (props) => {
   useEffect(() => {
     const tp = 95;
     const build = location.pathname.split("/").slice(-1)[0];
-    console.log(build);
     setBuild(build);
     const buildSplit = build.split("-");
     // split every number, so it easier to count how many are perks active
     const splits = buildSplit.map((v) => v.split(""));
     const costs = splits.map((split, index) =>
       split.map((number) => {
-        if (number === "1") return cost[index];
+        if (number === "1") return PERK_COSTS[index];
       })
     );
     const filterCosts = costs.flat().filter((v) => v !== undefined);
     let counter = 0;
     filterCosts.map((cost) => (counter += cost));
-    console.log(counter);
     setTP(tp - counter);
   }, []);
 

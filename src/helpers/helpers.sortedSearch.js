@@ -9,14 +9,12 @@ export const sortedSearch = (_array, _key, _query = "") => {
     return 0;
   });
 
-  const _arrayFilter = _sortArray.filter((v) =>
-    v[_key].toLowerCase().includes(_query)
-  );
-  const posQuery = _arrayFilter.map((v) =>
-    v[_key].toLowerCase().indexOf(_query)
-  );
-  const _arraySort = _arrayFilter
-    .map((v, i) => ({ ...v, pos: posQuery[i] }))
-    .sort((a, b) => a.pos - b.pos);
-  return _arraySort;
+  const _arr = [];
+  _sortArray.filter((v) => {
+    if (v[_key].toLowerCase().includes(_query)) {
+      _arr.push({ ...v, pos: v[_key].toLowerCase().indexOf(_query) });
+    }
+  });
+
+  return _arr.sort((a, b) => a.pos - b.pos);
 };

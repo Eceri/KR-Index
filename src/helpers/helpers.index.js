@@ -13,5 +13,7 @@ export {
   AWSoperationLists,
   getHeroSkills,
   listHeros,
+  listOrderedArtifacts,
 } from "./aws/aws.helpers";
 export { sortedSearch } from "./helpers.sortedSearch";
+export { ErrorHandler } from "./helpers.error";

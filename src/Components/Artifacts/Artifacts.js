@@ -10,25 +10,34 @@ import {
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE,
   AWSoperation,
-  listArtifacts,
   sortedSearch,
+  listOrderedArtifacts,
 } from "Helpers";
-import { Button } from "../atoms/atoms.index";
 import { Filterbox } from "Styles";
 
 // Styled Components
 const ArtifactContainer = styled.div`
   position: relative;
   padding-left: 1.5rem;
+
+  @media only screen and (max-width: 650px) {
+    padding-left: 0.2rem;
+  }
 `;
 
 const ArtifactImage = styled.img`
   margin-right: 1rem;
   margin-bottom: 1rem;
-  width: 96px;
+  width: 6rem;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 650px) {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 4.2rem;
   }
 `;
 
@@ -42,14 +51,9 @@ const ClickedArtifact = styled.section`
 
 // Implementation
 
-const filterArtifacts = (artifacts, query) => {
-  return artifacts.filter((v) =>
-    v.name.toLowerCase().includes(query.toLowerCase())
-  );
-};
-
 const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
-
+let token = null;
+let scroll = true;
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
@@ -63,10 +67,11 @@ export const Artifacts = () => {
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || [LOADING_ARTIFACT]
   );
-  const [direction, setDirection] = useState("ASC");
+  const [copyArtifacts, setCopyArtifacts] = useState(artifacts);
   const [searchQuery, setSearchQuery] = useState("");
   const scrollRef = useRef(null);
   const executeScroll = () => scrollToRef(scrollRef);
+  const [fetch, setFetch] = useState(true);
 
   useEffect(() => {
     executeScroll();
@@ -78,20 +83,50 @@ export const Artifacts = () => {
         setArtifactName(replaceChosenArtifactName);
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }, [replaceChosenArtifactName]);
 
-  useEffect(() => {
-    try {
-      AWSoperation(listArtifacts).then((artifacts) => {
-        setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
-        SET_LOCALSTORAGE(ARTIFACTS, artifacts.data.listArtifacts.items);
-      });
-    } catch (error) {
-      history.pushState(error, "Error", "/404");
+  const onScroll = () => {
+    if (scroll) {
+      setFetch(true);
+      scroll = false;
     }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", onScroll);
+    setCopyArtifacts(artifacts);
   }, []);
+
+  useEffect(() => {
+    if (searchQuery !== "") {
+      setArtifacts(sortedSearch(artifacts, "name", searchQuery));
+    } else {
+      setArtifacts(copyArtifacts);
+    }
+  }, [searchQuery]);
+
+  useEffect(() => {
+    if (fetch) {
+      try {
+        AWSoperation(listOrderedArtifacts, {
+          limit: 35,
+          nextToken: token,
+        }).then((artifact) => {
+          const { items, nextToken } = artifact.data.artifactsByOrder;
+          let joinArtifacts = artifacts;
+          joinArtifacts.concat(items);
+          token = nextToken;
+          setArtifacts(joinArtifacts);
+          SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
+        });
+        setFetch(false);
+      } catch (error) {
+        history.pushState(error, "Error", "/404");
+      }
+    }
+  }, [fetch]);
 
   return (
     <div id="content" ref={scrollRef}>
@@ -99,18 +134,13 @@ export const Artifacts = () => {
       <ClickedArtifact>{Artifact(artifactName)}</ClickedArtifact>
       <ArtifactContainer>
         <div style={{ marginBottom: "1rem" }}>
-          <Button
-            onClick={() => setDirection(direction === "ASC" ? "DESC" : "ASC")}
-          >
-            {direction}
-          </Button>
           <Filterbox
             placeholder="Filter..."
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
             value={searchQuery}
           />
         </div>
-        {filterArtifacts(artifacts, searchQuery).map((item, index) =>
+        {artifacts.map((item, index) =>
           renderArtifactPictures(item, index, setArtifactName)
         )}
       </ArtifactContainer>

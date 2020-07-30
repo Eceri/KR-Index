@@ -5,14 +5,16 @@ export const createArtifact = `mutation CreateArtifact(
   $description: [String]!, 
   $story: String!, 
   $drop: String!,
-  $release: String! 
+  $release: String!
+  $type: String!
   ) {
   createArtifact( input: {
     name: $name, 
     description: $description, 
     story: $story, 
     release: $release, 
-    drop: $drop
+    drop: $drop,
+    type: $type
   })
     {name}
 }
@@ -37,6 +39,21 @@ export const listArtifacts = `query ListArtifacts{
     }
   }
 }`;
+
+export const listOrderedArtifacts = `query OrderedArtifacts(
+  $limit: Int
+  $nextToken: String
+  ){
+  artifactsByOrder(limit: $limit type:"Artifact" nextToken: $nextToken){
+    items{
+      name
+      release
+      drop
+    }
+    nextToken
+  }
+}
+`;
 
 export const getHeroHeadInfo = `query GetHeroHeadInfo($name: String!){
   getHero(name: $name){
@@ -177,23 +194,23 @@ export const AWSoperation = async (createEvent, eventDetails) => {
   }
 };
 
-export const AWSoperationLists = async (listOperation) => {
-  let nextToken = null;
+export const AWSoperationLists = async (listOperation, token, limit) => {
+  let nextToken = token;
   let items = [];
 
   // Get operation name from query
   const operationSplit = listOperation.split("{")[1];
   const operationName = operationSplit.split("(")[0].trim();
-
   try {
-    do {
-      const result = await AWSoperation(listOperation, { nextToken });
-      nextToken = result.data[operationName].nextToken;
-      items = items.concat(result.data[operationName].items);
-    } while (nextToken);
-    return items;
+    const result = await AWSoperation(listOperation, {
+      nextToken,
+      limit,
+    });
+    nextToken = result.data[operationName].nextToken;
+    items = items.concat(result.data[operationName].items);
+    return result.data[operationName];
   } catch (err) {
-    console.log(err);
+    console.error(err);
     return null;
   }
 };

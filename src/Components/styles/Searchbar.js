@@ -36,6 +36,9 @@ export const SearchInput = styled.input`
   &:focus {
     outline: none;
   }
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Filterbox = styled.input`

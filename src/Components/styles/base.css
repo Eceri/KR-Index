@@ -8,6 +8,7 @@ body {
   text-align: justify;
   letter-spacing: 0.5px;
   overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
 hr {
   margin-bottom: 1.5rem;
@@ -67,7 +68,6 @@ footer,
   white-space: pre-line;
   min-width: 360px;
   max-width: 860px;
-  width: 100%;
 }
 #pageContainer {
   padding-top: 3rem;
