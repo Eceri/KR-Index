@@ -133,13 +133,21 @@ const genericWrapper = (
   );
 };
 
-const handleWheel = (event) => {
+const handleWheel = (event, fetch, setFetch) => {
   const container = document.getElementById("verticalScroll");
   let containerScrollPosition = container.scrollLeft;
   container.scrollTo({
     top: 0,
     left: (containerScrollPosition += event.deltaY),
   });
+
+  if (
+    container.clientWidth + containerScrollPosition + event.deltaY <
+      container.scrollWidth ||
+    fetch
+  )
+    return;
+  setFetch(true);
 };
 
 const checkURL = (url, setError, name) => {
@@ -188,6 +196,8 @@ export const PerkCalculator = (props) => {
   const [error, setError] = useGlobal("error");
   const [nextToken, setNextToken] = useState(null);
   const [copyHeroes, setCopyHeroes] = useState(heros);
+  const [fetch, setFetch] = useState(true);
+  const [fetchControl, setFetchControl] = useState(true);
 
   let { hero, build } = props.match.params;
 
@@ -196,15 +206,28 @@ export const PerkCalculator = (props) => {
     location.reload();
   }
   useEffect(() => {
-    AWSoperationLists(listHeros, nextToken, 10).then((res) => {
-      setNextToken(res.nextToken);
-      const sorted = sortedSearch(res.items, "name", "");
-      setHeros(sorted);
-      setCopyHeroes(sorted);
-    });
-    setName(hero);
     checkURL(build, setError, hero);
-  }, []);
+    if (fetch && fetchControl) {
+      try {
+        AWSoperation(listHeros, { nextToken, limit: 12 }).then((res) => {
+          const { items, nextToken } = res.data.listHeros;
+          let joinHeros = heros.concat(items);
+          setNextToken(nextToken);
+          // const sorted = sortedSearch(joinHeros, "name", "");
+          setHeros(joinHeros);
+          setCopyHeroes(joinHeros);
+          if (nextToken === null) {
+            setFetchControl(false);
+          }
+        });
+        setFetch(false);
+      } catch (error) {
+        history.pushState(error, "Error", "/404");
+      }
+    }
+
+    setName(hero);
+  }, [fetch]);
 
   useEffect(() => {
     AWSoperation(getHeroSkills, { name: name }).then((res) => {
@@ -285,7 +308,7 @@ export const PerkCalculator = (props) => {
               display: "flex",
             }}
             id="verticalScroll"
-            onWheel={(event) => handleWheel(event)}
+            onWheel={(event) => handleWheel(event, fetch, setFetch)}
           >
             {heros.map((hero) => (
               <HeroImage

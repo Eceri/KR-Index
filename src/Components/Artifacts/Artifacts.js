@@ -53,7 +53,6 @@ const ClickedArtifact = styled.section`
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
 let token = null;
-let scroll = true;
 export const Artifacts = () => {
   const chosenArtifactName = window.location.pathname.split("/")[2];
   const replaceChosenArtifactName =
@@ -65,13 +64,14 @@ export const Artifacts = () => {
     replaceChosenArtifactName || "Abyssal Crown"
   );
   const [artifacts, setArtifacts] = useState(
-    JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || [LOADING_ARTIFACT]
+    JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || []
   );
   const [copyArtifacts, setCopyArtifacts] = useState(artifacts);
   const [searchQuery, setSearchQuery] = useState("");
   const scrollRef = useRef(null);
   const executeScroll = () => scrollToRef(scrollRef);
   const [fetch, setFetch] = useState(true);
+  const [fetchControl, setFetchControl] = useState(true);
 
   useEffect(() => {
     executeScroll();
@@ -87,16 +87,20 @@ export const Artifacts = () => {
     }
   }, [replaceChosenArtifactName]);
 
-  const onScroll = () => {
-    if (scroll) {
-      setFetch(true);
-      scroll = false;
-    }
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop !==
+      document.documentElement.offsetHeight
+    )
+      return;
+
+    setFetch(true);
   };
 
   useEffect(() => {
-    document.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", handleScroll);
     setCopyArtifacts(artifacts);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -108,18 +112,20 @@ export const Artifacts = () => {
   }, [searchQuery]);
 
   useEffect(() => {
-    if (fetch) {
+    if (fetch && fetchControl) {
       try {
         AWSoperation(listOrderedArtifacts, {
           limit: 35,
           nextToken: token,
         }).then((artifact) => {
           const { items, nextToken } = artifact.data.artifactsByOrder;
-          let joinArtifacts = artifacts;
-          joinArtifacts.concat(items);
+          let joinArtifacts = artifacts.concat(items);
           token = nextToken;
           setArtifacts(joinArtifacts);
-          SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
+          // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
+          if (token === null) {
+            setFetchControl(false);
+          }
         });
         setFetch(false);
       } catch (error) {
