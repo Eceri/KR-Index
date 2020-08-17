@@ -52,7 +52,7 @@ module.exports = {
   },
   resolve: {
     /**
-     * @todo place relative paths here
+     * @todo place relative paths here, put them also in jsconfig.js for VS-Code
      */
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),

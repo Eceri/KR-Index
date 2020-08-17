@@ -316,14 +316,14 @@ export const GenericPerks = (props) => {
     const splits = buildSplit.map((v) => v.split(""));
     const costs = splits.map((split, index) =>
       split.map((number) => {
-        if (number === "1") return PERK_COSTS[index];
+        if (number !== "0") return PERK_COSTS[index];
       })
     );
     const filterCosts = costs.flat().filter((v) => v !== undefined);
     let counter = 0;
     filterCosts.map((cost) => (counter += cost));
     setTP(tp - counter);
-  }, []);
+  }, [build]);
 
   if (perks === undefined) {
     perks = [

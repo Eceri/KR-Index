@@ -3,13 +3,7 @@ import styles from "styled-components";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import {
-  AWSoperation,
-  getHeroSkills,
-  listHeros,
-  AWSoperationLists,
-  sortedSearch,
-} from "Helpers";
+import { AWSoperation, getHeroSkills, listHeros, sortedSearch } from "Helpers";
 import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
 import { Filterbox } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
@@ -31,7 +25,7 @@ const Container = styles.div`
 
 const PerkContainer = styles.div`
   margin:auto;
-  padding: 2rem;
+  padding: 1rem;
   @media only screen and (max-width: 650px) {
     padding: 0;
   }
@@ -46,12 +40,13 @@ const HeroImage = styles.span`
 
 const TP = styles.div`
   color: ${(props) => (props.value < 0 ? "red" : "white")}
+  padding-right: 1rem;
 `;
 
 const CopyTP = styles.input`
-  margin: 1rem;
+  margin-left: 2rem;
   padding: 0.2rem;
-  width: 100%;
+  width: 13rem;
   &:hover {
     cursor: pointer;
   }
@@ -61,7 +56,7 @@ const copyToClipboard = (copy) => {
   navigator.clipboard.writeText(copy);
 };
 
-const genericWrapper = (
+const renderPerks = (
   heroClass,
   name,
   perks,
@@ -71,6 +66,7 @@ const genericWrapper = (
   copySuccess,
   setCopySuccess
 ) => {
+  console.log(link);
   let displayName;
   if (name === undefined) {
     name = "kasel";
@@ -82,10 +78,26 @@ const genericWrapper = (
   return (
     <PerkContainer>
       <Row style={{ justifyContent: "space-between" }}>
-        <div style={{ width: "10rem" }}>{displayName}</div>
-        <TP value={tp}>TP: {tp}</TP>
-        <Button onClick={() => setReset(true)}>Reset</Button>
+        <div>
+          <div style={{ marginBottom: "0.75rem" }}>{displayName}</div>
+          <Image
+            src={`heroes/${name.toLowerCase()}/portrait.png`}
+            className="heroIcon"
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            paddingTop: "7rem",
+            paddingRight: "0.75rem",
+          }}
+        >
+          <TP value={tp}>TP: {tp}</TP>
+          <Button onClick={() => setReset(true)}>Reset</Button>
+        </div>
       </Row>
+
       <Row>
         <h3>T1</h3>
         <TierOnePerks />
@@ -106,7 +118,7 @@ const genericWrapper = (
         <h3>T5</h3>
         <GenericPerks tier={5} perks={perks} name={name} />
       </Row>
-      <Row>
+      <Row style={{ paddingRight: "0.75rem", margin: "1rem 1rem 0 0" }}>
         <CopyTP
           readOnly
           value={link}
@@ -114,21 +126,19 @@ const genericWrapper = (
             copyToClipboard(location.href);
             setCopySuccess(true);
           }}
+          data-tip
         />
+        <ReactTooltip className="tooltip">Copy to clipboard</ReactTooltip>
         <Button
-          style={{
-            height: "2rem",
-            marginTop: "0.8rem",
-          }}
+          icon="clipboard"
           onClick={() => {
             copyToClipboard(location.href);
             setCopySuccess(true);
           }}
         >
-          Copy
+          {copySuccess ? <span>Copied!</span> : <div>Copy to clipboard</div>}
         </Button>
       </Row>
-      {copySuccess && <div>Successfull copied link</div>}
     </PerkContainer>
   );
 };
@@ -209,7 +219,7 @@ export const PerkCalculator = (props) => {
     checkURL(build, setError, hero);
     if (fetch && fetchControl) {
       try {
-        AWSoperation(listHeros, { nextToken, limit: 12 }).then((res) => {
+        AWSoperation(listHeros, { nextToken }).then((res) => {
           const { items, nextToken } = res.data.listHeros;
           let joinHeros = heros.concat(items);
           setNextToken(nextToken);
@@ -265,6 +275,7 @@ export const PerkCalculator = (props) => {
   useEffect(() => {
     if (reset) {
       history.pushState(name, name, `/perks/${name}/${INIT_BUILD}`);
+      setLink(location.pathname.replace("/perks/", ""));
       setGlobalBuild(INIT_BUILD);
       setTP(95);
       setReset(false);
@@ -338,7 +349,7 @@ export const PerkCalculator = (props) => {
         </div>
       </Container>
       <Container>
-        {genericWrapper(
+        {renderPerks(
           perks.heroClass,
           name,
           perks,

@@ -122,8 +122,8 @@ export const Artifacts = () => {
           let joinArtifacts = artifacts.concat(items);
           token = nextToken;
           setArtifacts(joinArtifacts);
-          // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
           if (token === null) {
+            // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
             setFetchControl(false);
           }
         });

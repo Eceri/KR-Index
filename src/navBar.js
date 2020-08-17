@@ -40,18 +40,18 @@ const Misc = styles.div`
     background: black;
   }
   padding: 0.75rem;
+  width: 5rem;
 `;
 
 const Items = styles.div`
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   background: #262626;
   align-items: center;
-  
 `;
 
 const DropdownLink = styles((props) => <Link {...props} />)`
-  padding: 0.4rem;
+  padding: 0.75rem;
   width: 100%;
   height: 100%;
 `;
