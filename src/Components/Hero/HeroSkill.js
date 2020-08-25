@@ -1,6 +1,5 @@
 import React from "react";
-import { Image, UniqueTreasure } from "../components";
-
+import { Image, UniqueTreasure } from "Components";
 import "./../styles/heroSkills.css";
 
 export const HeroSkill = (props) => {

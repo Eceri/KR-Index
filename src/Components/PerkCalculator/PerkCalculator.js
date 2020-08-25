@@ -8,6 +8,7 @@ import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
 import { Filterbox } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
 import { Button } from "Atoms";
+import { HeroHeader } from "Components";
 
 // Styles
 const Row = styles.div`
@@ -78,13 +79,7 @@ const renderPerks = (
   return (
     <PerkContainer>
       <Row style={{ justifyContent: "space-between" }}>
-        <div>
-          <div style={{ marginBottom: "0.75rem" }}>{displayName}</div>
-          <Image
-            src={`heroes/${name.toLowerCase()}/portrait.png`}
-            className="heroIcon"
-          />
-        </div>
+          <HeroHeader heroPath={`heroes/${name}/`} heroName={`${displayName}`} />
         <div
           style={{
             display: "flex",

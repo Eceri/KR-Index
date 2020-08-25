@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Image } from "./../components";
-import "./../styles/HeroSkins.css";
+import { Image } from "Components";
+import "../styles/HeroSkins.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 //Relative Imports

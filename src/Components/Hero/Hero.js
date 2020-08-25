@@ -1,48 +1,35 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
+// Relative Imports
 import {
   Image,
   HeroGeneral,
   HeroStory,
   HeroSkins,
   HeroVoice,
-} from "./../components";
+  HeroHeader,
+} from "Components";
 import ReactTooltip from "react-tooltip";
-import { createHelmet } from "../../helpers/helpers.index";
-
-//import css
+import { createHelmet } from "Helpers";
 import "../styles/hero.css";
 import "../styles/tabStyles.css";
 
-//Relative Imports
-import { AWSoperation, getHeroHeadInfo } from "Helpers";
-
 export const Hero = (props) => {
-  const [headInfo, setHeadInfo] = useState({
-    name: "",
-    title: "",
-    class: "",
-    damageType: "",
-    position: "",
-  });
-  const heroName = props.match.params.hero
-    .toLowerCase()
-    .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-  const heroPath = `heroes/${heroName.toLowerCase()}/`;
-
   const [error, setError] = useGlobal("error");
+  const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
+  const correctName = props.match.params.hero;
   useEffect(() => {
-    try {
-      AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
-        setHeadInfo(res.data.getHero)
-      );
-    } catch (error) {
-      setError(error);
-    }
-  }, [heroName]);
+    correctName
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+    setGlobalHeroName(correctName);
+  }, [correctName]);
+
+  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
 
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
@@ -71,7 +58,7 @@ export const Hero = (props) => {
         url = "#story";
       } else if (index === 2) {
         url = "#skins";
-      } else url = `/heroes/${headInfo.name}`;
+      } else url = `/heroes/${heroName}`;
       props.history.push(url);
 
       return true;
@@ -80,52 +67,30 @@ export const Hero = (props) => {
   };
 
   //scroll-To, needs to be manually done, due to timing with the page
-  useEffect(() => {
-    setTimeout(() => {
-      if (scrollAnchor !== undefined) {
-        let element = document.getElementById(
-          `${scrollAnchor.slice(1)}-anchor`
-        );
-        let scrollToTopPosition = 0;
-        if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-        console.log("anchor: " + element.offsetTop);
-        window.scrollTo({
-          top: scrollToTopPosition,
-          left: 0,
-          behavior: "smooth",
-        });
-      }
-    });
-  }, [scrollAnchor]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (scrollAnchor !== undefined) {
+  //       let element = document.getElementById(
+  //         `${scrollAnchor.slice(1)}-anchor`
+  //       );
+  //       let scrollToTopPosition = 0;
+  //       if (element !== null) scrollToTopPosition = element.offsetTop - 60;
+  //       console.log("anchor: " + element.offsetTop);
+  //       window.scrollTo({
+  //         top: scrollToTopPosition,
+  //         left: 0,
+  //         behavior: "smooth",
+  //       });
+  //     }
+  //   });
+  // }, [scrollAnchor]);
 
   return (
     <>
       <>
-        {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)}
-        <div className="flexBox" id="hero">
-          <Image src={`${heroPath}portrait.png`} id={"portrait"} />
-          <div>
-            <h1>{headInfo.name}</h1>
-            <h2>{headInfo.title}</h2>
-            <div id="heroType" className="flexBox">
-              <Image
-                src={`classes/${headInfo.class.toLowerCase()}.png`}
-                id={"heroClassIcon"}
-                style={{ border: "none" }}
-                dataTip={headInfo.class}
-              />
-              <Image
-                src={`${headInfo.damageType}.png`}
-                id={"damageType"}
-                alt={"dmg type"}
-                style={{ border: "none" }}
-                dataTip={headInfo.damageType}
-              />
-              <p>{headInfo.position}</p>
-            </div>
-          </div>
-          <ReactTooltip border={true} />
-        </div>
+        {/* {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)} */}
+        {/* {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)} */}
+        <HeroHeader heroPath={heroPath} />
         <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
           <TabList>
             <Tab>General</Tab>
@@ -140,7 +105,7 @@ export const Hero = (props) => {
             <HeroStory
               heroPath={heroPath}
               heroName={heroName}
-              heroTitle={headInfo.title}
+              // heroTitle={headInfo.title}
             />
           </TabPanel>
           <TabPanel>

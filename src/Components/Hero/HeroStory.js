@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/HeroStory.css";
-import { Image } from "./../components";
+import { Image } from "Components";
 
 //Relative Imports
 import { AWSoperation, getHeroStories } from "Helpers";

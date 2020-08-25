@@ -11,11 +11,11 @@ import {
   Guides,
   StatCaps,
   PerkCalculator,
-} from "./Components/components";
-import NavBar from "./navBar";
+} from "Components";
+import NavBar from "./NavBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
-import { Footer } from "./Components/Footer.js";
+import { Footer } from "Components";
 import { createHelmet, ErrorHandler } from "Helpers";
 import { ErrorState, INIT_BUILD } from "Constants";
 

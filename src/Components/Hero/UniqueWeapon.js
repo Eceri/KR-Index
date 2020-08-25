@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Image } from "../components";
+import { Image } from "Components";
 import "../styles/UniqueWeapon.css";
-import { stars } from "../atoms/Stars/stars";
+import { Stars } from "Atoms";
 
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
@@ -30,7 +30,7 @@ export const UniqueWeapon = props => {
           className={"uwIcon"} />
         <div>
           <h2> {uniqueWeapon.name} </h2>
-          {stars(setStars, star)}
+          {Stars(setStars, star)}
         </div>
       </div>
       <p className="description"> {uniqueWeapon.effect[star]} </p>

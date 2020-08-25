@@ -3,9 +3,10 @@ import styled from "styled-components";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
-import { stars } from "../atoms/Stars/stars";
+import { Stars } from "Atoms";
 import { AWSoperation, getArtifact } from "Helpers";
-import { LOADING_ARTIFACT } from "../../Constants/constants.index";
+import { LOADING_ARTIFACT } from "Constants";
+import { Image } from "Components"
 
 const ArtifactText = styled.section`
   height: 7rem;
@@ -43,7 +44,7 @@ const SmallTab = styled((props) => <Tab {...props} />)`
 
 SmallTab.tabsRole = "Tab";
 
-const Artifact = (name) => {
+export const Artifact = (name) => {
   const [star, setStar] = useState(0);
   const [artifact, setArtifact] = useState(LOADING_ARTIFACT);
 
@@ -93,17 +94,15 @@ const Artifact = (name) => {
 
 const renderTop = (artifact, star, setStar) => (
   <div>
-    <img
-      src={require(`../../Assets/artifacts/${artifact.name}.png`)}
+    <Image
+      src={`artifacts/${artifact.name}.png`}
       alt="Pic"
       align="left"
       style={{ marginRight: "1rem", width: "96px", marginBottom: "2rem" }}
     />
     <NameAndStars>
       <h1>{artifact.name}</h1>
-      {stars(setStar, star)}
+      {Stars(setStar, star)}
     </NameAndStars>
   </div>
 );
-
-export default Artifact;

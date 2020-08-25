@@ -3,7 +3,7 @@ import ReactTooltip from "react-tooltip";
 import styles from "styled-components";
 
 // Relative Imports
-import { Image } from "../components";
+import { Image } from "Components";
 import { PERK_COSTS } from "Constants";
 import "../styles/genericPerks.css";
 
