@@ -12,6 +12,7 @@ import {
   AWSoperation,
   sortedSearch,
   listOrderedArtifacts,
+  picURL,
 } from "Helpers";
 import { Filterbox } from "Styles";
 
@@ -154,13 +155,6 @@ export const Artifacts = () => {
   );
 };
 
-const picURL = (name) => {
-  try {
-    return require(`Assets/artifacts/${name}.png`);
-  } catch (error) {
-    console.error(`Picture for ${name} is missing`);
-  }
-};
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
     <ArtifactImage
@@ -172,7 +166,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
           `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
-      src={picURL(item.name)}
+      src={picURL("artifacts", item.name)}
       alt={`Picture of ${item.name}`}
       align="left"
       data-tip

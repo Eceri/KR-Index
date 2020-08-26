@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
 import { stars } from "../atoms/Stars/stars";
-import { AWSoperation, getArtifact } from "Helpers";
+import { AWSoperation, getArtifact, picURL } from "Helpers";
 import { LOADING_ARTIFACT } from "../../Constants/constants.index";
 
 const ArtifactText = styled.section`
@@ -94,8 +94,8 @@ const Artifact = (name) => {
 const renderTop = (artifact, star, setStar) => (
   <div>
     <img
-      src={require(`../../Assets/artifacts/${artifact.name}.png`)}
-      alt="Pic"
+      src={picURL("artifacts", artifact.name)}
+      alt={`Picture of ${artifact.name}`}
       align="left"
       style={{ marginRight: "1rem", width: "96px", marginBottom: "2rem" }}
     />

@@ -1,6 +1,7 @@
 import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
 import styles from "styled-components";
+import { useHistory } from "react-router-dom";
 
 // Relative Imports
 import { Image } from "../components";
@@ -64,12 +65,11 @@ const isActive = (build, pos, tier) => {
   }
 };
 
-const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
+const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
   tier = tier - 1;
 
   const changer = (index) => {
-    const { pathname } = location;
-    const build = pathname.split("/").slice(-1)[0];
+    const build = hist.location.hash.replace("#", "");
     let buildSplit = build.split("-");
     const buildTier = buildSplit[tier];
     let i = buildTier.split("");
@@ -159,8 +159,9 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
 
     buildSplit[tier] = i.join("");
 
-    setBuild(buildSplit.join("-"));
-    history.pushState(tier, "Build", buildSplit.join("-"));
+    const buildJoin = buildSplit.join("-");
+    setBuild(buildJoin);
+    hist.replace({ hash: `#${buildJoin}` });
     isActive(buildSplit[tier], index);
   };
 
@@ -307,9 +308,12 @@ export const GenericPerks = (props) => {
   let { perks, url, name } = props;
   const { tier } = props;
 
+  const hist = useHistory();
+
   useEffect(() => {
     const tp = 95;
-    const build = location.pathname.split("/").slice(-1)[0];
+    const build = hist.location.hash.replace("#", "");
+    // const build = location.pathname.split("/").slice(-1)[0];
     setBuild(build);
     const buildSplit = build.split("-");
     // split every number, so it easier to count how many are perks active
@@ -347,7 +351,7 @@ export const GenericPerks = (props) => {
   return (
     <div>
       {pathname.includes("/perks")
-        ? perkView(perks, tier, setBuild, build, url, name, tp, setTP)
+        ? perkView(perks, tier, setBuild, build, url, name, tp, setTP, hist)
         : heroView(perks)}
     </div>
   );

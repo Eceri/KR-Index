@@ -1,9 +1,16 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
 import styles from "styled-components";
 import ReactTooltip from "react-tooltip";
+import { useHistory } from "react-router-dom";
 
 // Relative imports
-import { AWSoperation, getHeroSkills, listHeros, sortedSearch } from "Helpers";
+import {
+  AWSoperation,
+  getHeroSkills,
+  listHeros,
+  sortedSearch,
+  createHelmet,
+} from "Helpers";
 import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
 import { Filterbox } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
@@ -26,8 +33,10 @@ const Container = styles.div`
 const PerkContainer = styles.div`
   margin:auto;
   padding: 1rem;
+  width: 27rem;
   @media only screen and (max-width: 650px) {
     padding: 0;
+    width: 18.7rem;
   }
 `;
 
@@ -66,7 +75,6 @@ const renderPerks = (
   copySuccess,
   setCopySuccess
 ) => {
-  console.log(link);
   let displayName;
   if (name === undefined) {
     name = "kasel";
@@ -90,7 +98,6 @@ const renderPerks = (
             display: "flex",
             justifyContent: "space-between",
             paddingTop: "7rem",
-            paddingRight: "0.75rem",
           }}
         >
           <TP value={tp}>TP: {tp}</TP>
@@ -118,8 +125,14 @@ const renderPerks = (
         <h3>T5</h3>
         <GenericPerks tier={5} perks={perks} name={name} />
       </Row>
-      <Row style={{ paddingRight: "0.75rem", margin: "1rem 1rem 0 0" }}>
-        <CopyTP
+      <Row
+        style={{
+          // paddingRight: "0.75rem",
+          // margin: "1rem 1rem 0 0",
+          justifyContent: "space-between",
+        }}
+      >
+        {/* <CopyTP
           readOnly
           value={link}
           onClick={() => {
@@ -128,7 +141,8 @@ const renderPerks = (
           }}
           data-tip
         />
-        <ReactTooltip className="tooltip">Copy to clipboard</ReactTooltip>
+        <ReactTooltip className="tooltip">Copy to clipboard</ReactTooltip> */}
+        <div></div>
         <Button
           icon="clipboard"
           onClick={() => {
@@ -188,12 +202,13 @@ const checkURL = (url, setError, name) => {
     setError({
       message: "disfunctional URL",
       redirect: true,
-      url: `/perks/${name}/${INIT_BUILD}`,
+      url: `/perks/${name}/`,
+      hash: `#${INIT_BUILD}`,
     });
   }
 };
 
-export const PerkCalculator = (props) => {
+export const PerkCalculator = () => {
   const [name, setName] = useState("Kasel");
   const [reset, setReset] = useState(false);
   const [perks, setPerks] = useState(PERK_SAMPLE);
@@ -209,11 +224,17 @@ export const PerkCalculator = (props) => {
   const [fetch, setFetch] = useState(true);
   const [fetchControl, setFetchControl] = useState(true);
 
-  let { hero, build } = props.match.params;
+  const hist = useHistory();
 
-  if (hero === undefined || build === undefined) {
-    history.pushState("Redirect", "Redirect", `/perks/Kasel/${INIT_BUILD}`);
-    location.reload();
+  const hero = hist.location.pathname.split("/").slice(-1).shift();
+  const build = hist.location.hash.replace("#", "");
+
+  if (hero === "" || build === "") {
+    console.log("KASELLLLLLLLLLLLLLLLLLLLLLLLLLLL");
+    hist.push({
+      pathname: "/perks/Kasel",
+      hash: `#${INIT_BUILD}`,
+    });
   }
   useEffect(() => {
     checkURL(build, setError, hero);
@@ -223,9 +244,8 @@ export const PerkCalculator = (props) => {
           const { items, nextToken } = res.data.listHeros;
           let joinHeros = heros.concat(items);
           setNextToken(nextToken);
-          // const sorted = sortedSearch(joinHeros, "name", "");
           setHeros(joinHeros);
-          setCopyHeroes(joinHeros);
+          setCopyHeroes(sortedSearch(joinHeros, "name"));
           if (nextToken === null) {
             setFetchControl(false);
           }
@@ -270,11 +290,22 @@ export const PerkCalculator = (props) => {
         heroClass: res.data.getHero.class,
       });
     });
-  }, [name]);
+    hist.listen((location) => {
+      const hero = location.pathname.split("/")[2];
+      console.log(hero, name);
+      if (hero !== name) {
+        setName(hero);
+        setReset(true);
+      }
+    });
+  }, [name, hist]);
 
   useEffect(() => {
     if (reset) {
-      history.pushState(name, name, `/perks/${name}/${INIT_BUILD}`);
+      hist.push({
+        pathname: `/perks/${name}`,
+        hash: `#${INIT_BUILD}`,
+      });
       setLink(location.pathname.replace("/perks/", ""));
       setGlobalBuild(INIT_BUILD);
       setTP(95);
@@ -283,7 +314,8 @@ export const PerkCalculator = (props) => {
   }, [reset]);
 
   useEffect(() => {
-    setLink(location.pathname.replace("/perks/", ""));
+    const hashBuild = hist.location.hash.replace("#", "");
+    setLink(hashBuild);
   }, [globalBuild]);
 
   useEffect(() => {
@@ -304,11 +336,15 @@ export const PerkCalculator = (props) => {
 
   return (
     <>
+      {createHelmet(`Perks - ${name}`, name)}
       <Container>
+        <img src="https://krindex.s3.eu-central-1.amazonaws.com/heroes/artemia/The+Light's+Company.png" />
         <div style={{ width: "100%" }}>
           <Filterbox
             placeholder="Filter..."
-            onChange={(event) => setHeroFilter(event.currentTarget.value)}
+            onChange={(event) =>
+              setHeroFilter(event.currentTarget.value.toLowerCase())
+            }
             value={heroFilter}
           />
           <div
