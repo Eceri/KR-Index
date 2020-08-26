@@ -11,7 +11,7 @@ import {
   Guides,
   StatCaps,
   PerkCalculator,
-} from "./Components/components";
+} from "Components";
 
 export const Routes = () => (
   <Switch>

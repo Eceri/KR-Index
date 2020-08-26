@@ -10,7 +10,7 @@
       "Helpers": ["src/helpers/helpers.index.js"],
       "Atoms": ["src/Components/atoms/atoms.index.js"],
       "Styles": ["src/Components/styles/index.js"],
-      "Components": ["src/Components/components.js"],
+      "Components": ["src/Components/components.index.js"],
       "Constants": ["src/Constants/constants.index.js"]
     }
   },

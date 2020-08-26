@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Image } from "../components";
-import { stars } from "../atoms/Stars/stars";
+import { Image } from "Components";
+import { Stars } from "Atoms";
 import "../styles/UniqueTreasure.css";
 
 export const UniqueTreasure = props => {
@@ -21,7 +21,7 @@ export const UniqueTreasure = props => {
         <Image src={utPath} alt={`Unique Treasure ${skill.id}`} />
         <div>
           <h3>{skill.uniqueTreasure.name}</h3>
-          {stars(setStars, star)}
+          {Stars(setStars, star)}
         </div>
       </div>
       <p>{skill.uniqueTreasure.effect[star]}</p>

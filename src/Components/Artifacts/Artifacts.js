@@ -3,8 +3,8 @@ import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import Artifact from "./Artifact";
-import { LOADING_ARTIFACT } from "../../Constants/constants.index";
+import { Artifact, Image } from "Components";
+import { LOADING_ARTIFACT } from "Constants";
 import {
   createHelmet,
   GET_LOCALSTORAGE,
@@ -157,7 +157,7 @@ export const Artifacts = () => {
 
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
-    <ArtifactImage
+    <Image
       onClick={() => {
         setArtifactName(item.name);
         window.history.pushState(

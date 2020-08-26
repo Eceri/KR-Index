@@ -4,7 +4,7 @@ import styles from "styled-components";
 import { useHistory } from "react-router-dom";
 
 // Relative Imports
-import { Image } from "../components";
+import { Image } from "Components";
 import { PERK_COSTS } from "Constants";
 import "../styles/genericPerks.css";
 

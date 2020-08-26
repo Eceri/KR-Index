@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "./navBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
-import { Footer } from "./Components/Footer.js";
+import { Footer } from "Components";
 import { createHelmet, ErrorHandler } from "Helpers";
 import { ErrorState, INIT_BUILD } from "Constants";
 import { Routes } from "./Routes";

@@ -25,7 +25,7 @@ const Star = styled.button`
 `;
 
 const arr = [0, 1, 2, 3, 4, 5];
-export const stars = (setStar, active) => (
+export const Stars = (setStar, active) => (
   <div>
     {arr.map(v => (
       <Star

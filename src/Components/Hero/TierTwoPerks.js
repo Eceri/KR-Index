@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../../Assets/classes/classes";
-import { GenericPerks } from "../components";
+import { GenericPerks } from "Components";
 
 export const ClassPerks = (props) => {
   let currentClass = props.heroClass;
