@@ -2,7 +2,6 @@
 * @TODO:: List all Components here
 */
 //Misc
-export { Home } from "../home";
 export { Image } from "./Image";
 export { Footer } from "./Footer";
 export { StatCaps } from "./StatCaps";

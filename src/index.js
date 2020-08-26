@@ -5,7 +5,6 @@ import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 // Relative Imports
 import {
   Artifacts,
-  Home,
   Hero,
   Heroes,
   Guides,
@@ -18,6 +17,7 @@ import "./Components/styles/home.css";
 import { Footer } from "Components";
 import { createHelmet, ErrorHandler } from "Helpers";
 import { ErrorState, INIT_BUILD } from "Constants";
+import { Home } from "./home"
 
 // Amplify Settings
 import Amplify from "aws-amplify";

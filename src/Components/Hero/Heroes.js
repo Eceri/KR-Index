@@ -4,7 +4,7 @@ import ReactToolTip from "react-tooltip";
 import { Link } from "react-router-dom";
 
 import { Image } from "Components";
-import "./../styles/heroes.css";
+import "../styles/heroes.css";
 //AWS
 import { AWSoperation } from "Helpers";
 
