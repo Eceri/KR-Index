@@ -88,16 +88,10 @@ const renderPerks = (
     <PerkContainer>
       <Row style={{ justifyContent: "space-between" }}>
         <HeroHeader heroPath={`heroes/${name}/`} heroName={`${displayName}`} />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            paddingTop: "7rem",
-          }}
-        >
-          <TP value={tp}>TP: {tp}</TP>
-          <Button onClick={() => setReset(true)}>Reset</Button>
-        </div>
+      </Row>
+      <Row style={{ justifyContent: "flex-end" }}>
+        <TP value={tp}>TP: {tp}</TP>
+        <Button onClick={() => setReset(true)}>Reset</Button>
       </Row>
 
       <Row>
@@ -225,7 +219,6 @@ export const PerkCalculator = () => {
   const build = hist.location.hash.replace("#", "");
 
   if (hero === "" || build === "") {
-    console.log("KASELLLLLLLLLLLLLLLLLLLLLLLLLLLL");
     hist.push({
       pathname: "/perks/Kasel",
       hash: `#${INIT_BUILD}`,
