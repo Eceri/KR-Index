@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 // Relative Imports
 
-import NavBar from "./navBar";
+import NavBar from "./NavBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { Footer } from "Components";
