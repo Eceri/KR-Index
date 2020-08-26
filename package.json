@@ -1,6 +1,6 @@
 {
-  "name": "krc",
-  "version": "0.1.0",
+  "name": "krindex",
+  "version": "1.0.0",
   "private": true,
   "homepage": ".",
   "dependencies": {
