@@ -15,6 +15,13 @@ module.exports = (env) => {
       historyApiFallback: true,
       compress: true,
       index: "index.html",
+      hot: true,
+      proxy: {
+        "/assets": {
+          target: "https://dev.krindex.net/",
+          changeOrigin: true,
+        },
+      },
     },
     plugins: environmentPicker(env),
   });
