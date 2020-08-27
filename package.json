@@ -30,7 +30,7 @@
       "--no-sandbox",
       "--disable-setuid-sandbox"
     ],
-    "puppeteerExecutablePath": "/usr/bin/google/chrome/google-chrome"
+    "puppeteerExecutablePath": "/google/chrome/google-chrome"
   },
   "eslintConfig": {
     "extends": "react-app"
