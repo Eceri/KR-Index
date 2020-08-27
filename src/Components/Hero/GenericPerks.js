@@ -1,6 +1,6 @@
 import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
-import styles from "styled-components";
+import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
 // Relative Imports
@@ -8,10 +8,10 @@ import { Image } from "Components";
 import { PERK_COSTS } from "Constants";
 import "../styles/genericPerks.css";
 
-const CheckImage = styles((props) => <Image {...props} />)`
+const CheckImage = styled((props) => <Image {...props} />)`
   filter: ${(props) => (props.active ? "" : "grayscale(100%)")};
   &:hover {
-    cursor:pointer;
+    cursor: pointer;
   }
   width: 4rem;
   height: auto;
@@ -24,6 +24,11 @@ const CheckImage = styles((props) => <Image {...props} />)`
     margin-top: 0.1rem;
     margin-right: 0.4rem;
   }
+`;
+
+const PerkEffect = styled.p`
+  padding-top: 0.5rem;
+  width: 12rem;
 `;
 
 const heroView = (perks) => {
@@ -226,7 +231,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
                 <p>{`${mapSkillInfo(perks[perk].skillInfo)} [${
                   _type.name
                 }]`}</p>
-                <p>{perks[perk][_type.perkName]}</p>
+                <PerkEffect>{perks[perk][_type.perkName]}</PerkEffect>
               </ReactTooltip>
             </div>
           ))
@@ -268,7 +273,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
             <p>{`${name.charAt(0).toUpperCase()}${name.slice(1)} [${t5
               .charAt(0)
               .toUpperCase()}${t5.slice(1)}]`}</p>
-            <p>{perks.general[t5]}</p>
+            <PerkEffect>{perks.general[t5]}</PerkEffect>
           </ReactTooltip>
         </div>
       ));
@@ -292,7 +297,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
         />
         <ReactTooltip id={perk.name}>
           <p>{perk.name}</p>
-          <p>{perk.effect}</p>
+          <PerkEffect>{perk.effect}</PerkEffect>
         </ReactTooltip>
       </div>
     ));
@@ -313,7 +318,7 @@ export const GenericPerks = (props) => {
   useEffect(() => {
     const tp = 95;
     const build = hist.location.hash.replace("#", "");
-    // const build = location.pathname.split("/").slice(-1)[0];
+
     setBuild(build);
     const buildSplit = build.split("-");
     // split every number, so it easier to count how many are perks active

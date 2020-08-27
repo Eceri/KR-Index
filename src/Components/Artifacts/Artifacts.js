@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import { Artifact, Image } from "Components";
+import { Artifact } from "Components";
 import { LOADING_ARTIFACT } from "Constants";
 import {
   createHelmet,
@@ -12,7 +12,6 @@ import {
   AWSoperation,
   sortedSearch,
   listOrderedArtifacts,
-  picURL,
 } from "Helpers";
 import { Filterbox } from "Styles";
 
@@ -137,7 +136,11 @@ export const Artifacts = () => {
 
   return (
     <div id="content" ref={scrollRef}>
-      {createHelmet(artifactName)}
+      {createHelmet(
+        artifactName,
+        `Artifact - ${artifactName}`,
+        `/assets/artifacts/${artifactName}.png`
+      )}
       <ClickedArtifact>{Artifact(artifactName)}</ClickedArtifact>
       <ArtifactContainer>
         <div style={{ marginBottom: "1rem" }}>
