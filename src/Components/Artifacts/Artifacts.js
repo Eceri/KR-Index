@@ -139,7 +139,7 @@ export const Artifacts = () => {
       {createHelmet(
         artifactName,
         `Artifact - ${artifactName}`,
-        `/assets/artifacts/${artifactName}.png`
+        `artifacts/${artifactName}`
       )}
       <ClickedArtifact>{Artifact(artifactName)}</ClickedArtifact>
       <ArtifactContainer>
