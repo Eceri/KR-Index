@@ -13,7 +13,8 @@ export const createHelmet = (title, content, image = "") => (
     <meta property="og:title" content={title} />
     <meta property="og:description" content={content} />
     <meta property="og:image" content={image} />
-    <meta property="og:site_name" content="Krindex" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://krindex.net" />
+    <meta name="theme-color" content="#18181b" />
   </Helmet>
 );
