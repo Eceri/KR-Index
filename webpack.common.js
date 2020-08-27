@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -92,5 +93,6 @@ module.exports = {
     }),
     new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
+    new CompressionPlugin(),
   ],
 };
