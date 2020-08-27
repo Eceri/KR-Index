@@ -145,6 +145,7 @@ export const Artifacts = () => {
             placeholder="Filter..."
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
             value={searchQuery}
+            onClick={() => setFetch(true)}
           />
         </div>
         {artifacts.map((item, index) =>
@@ -157,7 +158,7 @@ export const Artifacts = () => {
 
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
-    <Image
+    <ArtifactImage
       onClick={() => {
         setArtifactName(item.name);
         window.history.pushState(
@@ -166,7 +167,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
           `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
-      src={picURL("artifacts", item.name)}
+      src={`/assets/artifacts/${item.name}.png`}
       alt={`Picture of ${item.name}`}
       align="left"
       data-tip
