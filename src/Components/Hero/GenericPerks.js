@@ -268,7 +268,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
             <p>{`${name.charAt(0).toUpperCase()}${name.slice(1)} [${t5
               .charAt(0)
               .toUpperCase()}${t5.slice(1)}]`}</p>
-            <p>{perks.general.dark}</p>
+            <p>{perks.general[t5]}</p>
           </ReactTooltip>
         </div>
       ));

@@ -116,21 +116,9 @@ const renderPerks = (
       </Row>
       <Row
         style={{
-          // paddingRight: "0.75rem",
-          // margin: "1rem 1rem 0 0",
           justifyContent: "space-between",
         }}
       >
-        {/* <CopyTP
-          readOnly
-          value={link}
-          onClick={() => {
-            copyToClipboard(location.href);
-            setCopySuccess(true);
-          }}
-          data-tip
-        />
-        <ReactTooltip className="tooltip">Copy to clipboard</ReactTooltip> */}
         <div></div>
         <Button
           icon="clipboard"
@@ -280,13 +268,15 @@ export const PerkCalculator = () => {
     });
     hist.listen((location) => {
       const hero = location.pathname.split("/")[2];
-      console.log(hero, name);
+      const hash = location.hash.replace("#", "");
       if (hero !== name) {
         setName(hero);
-        setReset(true);
+        if (hash === build) {
+          setReset(true);
+        }
       }
     });
-  }, [name, hist]);
+  }, [name]);
 
   useEffect(() => {
     if (reset) {
