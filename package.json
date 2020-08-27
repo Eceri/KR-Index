@@ -10,6 +10,7 @@
     "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.3",
+    "react-snap": "^1.23.0",
     "react-tabs": "^3.0.0",
     "react-tooltip": "^3.10.0",
     "reactn": "^2.2.7",
@@ -21,7 +22,8 @@
     "analyze": "webpack-dev-server --open --config webpack.dev.js --env.analyze",
     "build": "webpack --config webpack.prod.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"

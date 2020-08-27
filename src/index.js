@@ -1,5 +1,5 @@
 import React, { useGlobal, setGlobal } from "reactn";
-import { render } from "react-dom";
+import { render, hydrate } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 // Relative Imports
@@ -42,4 +42,9 @@ const Page = () => {
   );
 };
 
-render(<Page />, document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<Page />, rootElement);
+} else {
+  render(<Page />, rootElement);
+}
