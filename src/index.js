@@ -29,7 +29,11 @@ const Page = () => {
 
   return (
     <>
-      {createHelmet("Home", "frontpage", "./favicon")}
+      {createHelmet(
+        "King's Raid Index - Home",
+        "King's Raid landing Page",
+        "./favicon"
+      )}
       <div id="pageContainer">
         <BrowserRouter>
           <ErrorHandler />
@@ -43,8 +47,5 @@ const Page = () => {
 };
 
 const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<Page />, rootElement);
-} else {
-  render(<Page />, rootElement);
-}
+
+render(<Page />, rootElement);
