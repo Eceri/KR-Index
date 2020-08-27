@@ -272,7 +272,9 @@ export const PerkCalculator = () => {
       if (hero !== name) {
         setName(hero);
         if (hash === build) {
-          setReset(true);
+          setLink(location.pathname.replace("/perks/", ""));
+          setGlobalBuild(INIT_BUILD);
+          setTP(95);
         }
       }
     });
