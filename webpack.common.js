@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         test: /\.ext$/,
-        use: ["cache-lodaer", "css-loader", "file-loader"],
+        use: ["cache-loader", "css-loader", "file-loader"],
         include: path.resolve("src"),
       },
     ],
