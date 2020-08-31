@@ -64,13 +64,6 @@ const Dropdown = (show, setShow, direction) => {
   const renderShow = () =>
     show && (
       <Items>
-        {/* <DropdownLink
-          to={"/guides"}
-          className={"navLink"}
-          onClick={() => handleClick()}
-        >
-          Guides
-        </DropdownLink> */}
         <DropdownLink
           to={"/caps"}
           className={"navLink"}

@@ -23,6 +23,7 @@ module.exports = (env) => {
         },
       },
     },
+    stats: "errors-only",
     plugins: environmentPicker(env),
   });
 };

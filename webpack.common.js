@@ -62,6 +62,7 @@ module.exports = {
       Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
       Components: path.resolve(__dirname, "src/Components/components.index.js"),
       Constants: path.resolve(__dirname, "src/Constants/constants.index.js"),
+      Containers: path.resolve(__dirname, "src/Containers/containers.index.js"),
     },
   },
   optimization: {

@@ -1,66 +1,14 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
-import styles from "styled-components";
+import { useHistory, useLocation } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import { useHistory } from "react-router-dom";
 
 // Relative imports
-import {
-  AWSoperation,
-  getHeroSkills,
-  listHeros,
-  sortedSearch,
-  createHelmet,
-} from "Helpers";
-import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
-import { Filterbox } from "Styles";
+import { AWSoperation, getHeroSkills, createHelmet } from "Helpers";
+import { ClassPerks, TierOnePerks, GenericPerks } from "Components";
+import { TP, Row, PerkContainer, Flex, Questionmark } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
 import { Button } from "Atoms";
 import { HeroHeader } from "Components";
-
-// Styles
-const Row = styles.div`
-  display: flex;
-  & h3 {
-    margin-right: 1rem;
-    text-align: center;
-    margin-top: 1.5rem;
-  }
-`;
-
-const Container = styles.div`
-  display: flex;
-`;
-
-const PerkContainer = styles.div`
-  margin:auto;
-  padding: 1rem;
-  width: 27rem;
-  @media only screen and (max-width: 650px) {
-    padding: 0;
-    width: 18.7rem;
-  }
-`;
-
-const HeroImage = styles.span`
-  padding-right: 0.4rem;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-const TP = styles.div`
-  color: ${(props) => (props.value < 0 ? "red" : "white")}
-  padding-right: 1rem;
-`;
-
-const CopyTP = styles.input`
-  margin-left: 2rem;
-  padding: 0.2rem;
-  width: 13rem;
-  &:hover {
-    cursor: pointer;
-  }
-`;
 
 const copyToClipboard = (copy) => {
   navigator.clipboard.writeText(copy);
@@ -70,7 +18,6 @@ const renderPerks = (
   heroClass,
   name,
   perks,
-  link,
   tp,
   setReset,
   copySuccess,
@@ -91,9 +38,14 @@ const renderPerks = (
       </Row>
       <Row style={{ justifyContent: "flex-end" }}>
         <TP value={tp}>TP: {tp}</TP>
+        <Questionmark data-tip>?</Questionmark>
+        <ReactTooltip border={true}>
+          {/* TODO: Need better Sentence */}
+          To get all 95 TP you need to buy Transcendence Attribute points and
+          apply it your Hero of choice
+        </ReactTooltip>
         <Button onClick={() => setReset(true)}>Reset</Button>
       </Row>
-
       <Row>
         <h3>T1</h3>
         <TierOnePerks />
@@ -134,106 +86,29 @@ const renderPerks = (
   );
 };
 
-const handleWheel = (event, fetch, setFetch) => {
-  const container = document.getElementById("verticalScroll");
-  let containerScrollPosition = container.scrollLeft;
-  container.scrollTo({
-    top: 0,
-    left: (containerScrollPosition += event.deltaY),
-  });
+export const PerkCalculator = (props) => {
+  // Props
+  const { heroName, heroReset } = props;
 
-  if (
-    container.clientWidth + containerScrollPosition + event.deltaY <
-      container.scrollWidth ||
-    fetch
-  )
-    return;
-  setFetch(true);
-};
+  // history
+  const hist = useHistory();
+  const location = useLocation();
+  const { pathname, hash } = location;
 
-const checkURL = (url, setError, name) => {
-  const urlSplit = url.split("-");
-  const checkObject = [
-    { length: 5, content: ["0", "1"] },
-    { length: 5, content: ["0", "1"] },
-    { length: 2, content: ["0", "l", "d"] },
-    { length: 2, content: ["0", "l", "d"] },
-    { length: 2, content: ["0", "1"] },
-  ];
-  const checkLength = urlSplit.map(
-    (split, index) => checkObject[index].length === split.length && true
-  );
-  const split = urlSplit.map((string) => string.split(""));
-
-  const checkContent = split
-    .map((v, index) =>
-      v.map((a) => checkObject[index].content.map((c) => a === c && true))
-    )
-    .flat();
-
-  const checkTrue = checkContent
-    .map((v, index) => !v.includes(true) && index)
-    .filter((v) => v !== false);
-
-  if (checkLength.includes(false) || checkTrue.length > 0) {
-    setError({
-      message: "disfunctional URL",
-      redirect: true,
-      url: `/perks/${name}/`,
-      hash: `#${INIT_BUILD}`,
-    });
-  }
-};
-
-export const PerkCalculator = () => {
-  const [name, setName] = useState("Kasel");
+  // State
+  const [name, setName] = useState(heroName);
   const [reset, setReset] = useState(false);
   const [perks, setPerks] = useState(PERK_SAMPLE);
-  const [heros, setHeros] = useState([]);
-  const [heroFilter, setHeroFilter] = useState("");
-  const [link, setLink] = useState(location.href);
-  const [globalBuild, setGlobalBuild] = useGlobal("build");
-  const [tp, setTP] = useGlobal("tp");
   const [copySuccess, setCopySuccess] = useState(false);
-  const [error, setError] = useGlobal("error");
-  const [nextToken, setNextToken] = useState(null);
-  const [copyHeroes, setCopyHeroes] = useState(heros);
-  const [fetch, setFetch] = useState(true);
-  const [fetchControl, setFetchControl] = useState(true);
 
-  const hist = useHistory();
+  // Globals
+  const [tp, setTP] = useGlobal("tp");
+  const [globalBuild, setGlobalBuild] = useGlobal("build");
 
-  const hero = hist.location.pathname.split("/").slice(-1).shift();
-  const build = hist.location.hash.replace("#", "");
-
-  if (hero === "" || build === "") {
-    hist.push({
-      pathname: "/perks/Kasel",
-      hash: `#${INIT_BUILD}`,
-    });
-  }
   useEffect(() => {
-    checkURL(build, setError, hero);
-    if (fetch && fetchControl) {
-      try {
-        AWSoperation(listHeros, { nextToken }).then((res) => {
-          const { items, nextToken } = res.data.listHeros;
-          let joinHeros = heros.concat(items);
-          setNextToken(nextToken);
-          setHeros(joinHeros);
-          setCopyHeroes(sortedSearch(joinHeros, "name"));
-          if (nextToken === null) {
-            setFetchControl(false);
-          }
-        });
-        setFetch(false);
-      } catch (error) {
-        history.pushState(error, "Error", "/404");
-      }
-    }
-
+    const hero = pathname.split("/").slice(-1).shift();
     setName(hero);
-  }, [fetch]);
+  }, [pathname]);
 
   useEffect(() => {
     AWSoperation(getHeroSkills, { name: name }).then((res) => {
@@ -266,37 +141,7 @@ export const PerkCalculator = () => {
         heroClass: res.data.getHero.class,
       });
     });
-    hist.listen((location) => {
-      const hero = location.pathname.split("/")[2];
-      const hash = location.hash.replace("#", "");
-      if (hero !== name) {
-        setName(hero);
-        if (hash === build) {
-          setLink(location.pathname.replace("/perks/", ""));
-          setGlobalBuild(INIT_BUILD);
-          setTP(95);
-        }
-      }
-    });
   }, [name]);
-
-  useEffect(() => {
-    if (reset) {
-      hist.push({
-        pathname: `/perks/${name}`,
-        hash: `#${INIT_BUILD}`,
-      });
-      setLink(location.pathname.replace("/perks/", ""));
-      setGlobalBuild(INIT_BUILD);
-      setTP(95);
-      setReset(false);
-    }
-  }, [reset]);
-
-  useEffect(() => {
-    const hashBuild = hist.location.hash.replace("#", "");
-    setLink(hashBuild);
-  }, [globalBuild]);
 
   useEffect(() => {
     if (copySuccess) {
@@ -307,74 +152,38 @@ export const PerkCalculator = () => {
   }, [copySuccess]);
 
   useEffect(() => {
-    if (heroFilter !== "") {
-      setHeros(sortedSearch(copyHeroes, "name", heroFilter));
-    } else {
-      setHeros(copyHeroes);
+    setName(heroName);
+    if (heroReset) {
+      setReset(true);
     }
-  }, [heroFilter]);
+  }, [heroReset, heroName]);
+
+  useEffect(() => {
+    if (reset) {
+      hist.push({
+        pathname: `/perks/${name}`,
+        hash: `#${INIT_BUILD}`,
+      });
+      setGlobalBuild(INIT_BUILD);
+      setTP(95);
+      setReset(false);
+    }
+  }, [reset]);
 
   return (
     <>
       {createHelmet(`Perks - ${name}`, name)}
-      <Container>
-        <div style={{ width: "100%" }}>
-          <Filterbox
-            placeholder="Filter..."
-            onChange={(event) =>
-              setHeroFilter(event.currentTarget.value.toLowerCase())
-            }
-            value={heroFilter}
-          />
-          <div
-            style={{
-              overflow: "auto",
-              marginTop: "1.5rem",
-              height: "7.4rem",
-              display: "flex",
-            }}
-            id="verticalScroll"
-            onWheel={(event) => handleWheel(event, fetch, setFetch)}
-          >
-            {heros.map((hero) => (
-              <HeroImage
-                key={hero.name}
-                onClick={() => {
-                  setName(hero.name);
-                  setReset(true);
-                }}
-              >
-                <Image
-                  src={`heroes/${hero.name.toLowerCase()}/portrait.png`}
-                  className="heroIcon"
-                  dataTip
-                  dataFor={hero.name}
-                />
-                <ReactTooltip
-                  globalEventOff="touchstart"
-                  border={true}
-                  id={hero.name}
-                  className="tooltip"
-                >
-                  {hero.name}
-                </ReactTooltip>
-              </HeroImage>
-            ))}
-          </div>
-        </div>
-      </Container>
-      <Container>
+      <Flex>
         {renderPerks(
           perks.heroClass,
           name,
           perks,
-          link,
           tp,
           setReset,
           copySuccess,
           setCopySuccess
         )}
-      </Container>
+      </Flex>
     </>
   );
 };

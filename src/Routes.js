@@ -3,15 +3,8 @@ import { Switch, Route } from "react-router-dom";
 
 // Relative imports
 import { Notfound } from "./Notfound";
-import {
-  Artifacts,
-  Home,
-  Hero,
-  Heroes,
-  Guides,
-  StatCaps,
-  PerkCalculator,
-} from "Components";
+import { Artifacts, Home, Hero, Heroes, Guides, StatCaps } from "Components";
+import { PerksContainer } from "Containers";
 
 export const Routes = () => (
   <Switch>
@@ -22,7 +15,7 @@ export const Routes = () => (
     <Route path="/caps" component={StatCaps} />
     <Route exact path="/" component={Home} />
     <Route exact path="/guides" component={Guides} />
-    <Route path="/perks" component={PerkCalculator} />
+    <Route path="/perks" component={PerksContainer} />
     <Route path="/404" component={Notfound} />
     <Route path="*" component={Notfound} />
   </Switch>

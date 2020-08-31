@@ -1,11 +1,11 @@
-import React, { useGlobal, useEffect } from "reactn";
+import React, { useGlobal, useEffect, useState } from "reactn";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 // Relative Imports
 import { Image } from "Components";
-import { PERK_COSTS } from "Constants";
+import { PERK_COSTS, INIT_BUILD } from "Constants";
 import "../styles/genericPerks.css";
 
 const CheckImage = styled((props) => <Image {...props} />)`
@@ -166,7 +166,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
 
     const buildJoin = buildSplit.join("-");
     setBuild(buildJoin);
-    hist.replace({ hash: `#${buildJoin}` });
+    hist.replace({ hash: buildJoin });
     isActive(buildSplit[tier], index);
   };
 
@@ -307,21 +307,34 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
 };
 
 export const GenericPerks = (props) => {
-  const [build, setBuild] = useGlobal("build");
-  const [tp, setTP] = useGlobal("tp");
-
+  // Props
   let { perks, url, name } = props;
   const { tier } = props;
 
+  // State
+  const [build, setBuild] = useState(INIT_BUILD);
+
+  // Globals
+  const [globalBuild, setGlobalBuild] = useGlobal("build");
+  const [tp, setTP] = useGlobal("tp");
+
+  // History
   const hist = useHistory();
+  const location = useLocation();
+  let { hash } = location;
+
+  useEffect(() => {
+    hash = hash.replace("#", "");
+    if (hash !== build && hash !== "") {
+      setBuild(hash);
+    }
+  }, [hash]);
 
   useEffect(() => {
     const tp = 95;
-    const build = hist.location.hash.replace("#", "");
 
-    setBuild(build);
     const buildSplit = build.split("-");
-    // split every number, so it easier to count how many are perks active
+    // split every number, so it easier to count how many perks are active
     const splits = buildSplit.map((v) => v.split(""));
     const costs = splits.map((split, index) =>
       split.map((number) => {
@@ -332,7 +345,7 @@ export const GenericPerks = (props) => {
     let counter = 0;
     filterCosts.map((cost) => (counter += cost));
     setTP(tp - counter);
-  }, [build]);
+  }, [build, globalBuild]);
 
   if (perks === undefined) {
     perks = [
@@ -352,7 +365,6 @@ export const GenericPerks = (props) => {
   }
 
   const { pathname } = location;
-
   return (
     <div>
       {pathname.includes("/perks")
