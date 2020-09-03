@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Image } from "Components";
 import "../styles/HeroSkins.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
@@ -25,7 +24,7 @@ export const HeroSkins = (props) => {
       </TabList>
       {heroSkins.map((skin) => (
         <TabPanel key={`TabPanel-${skin}`}>
-          <Image
+          <img
             src={`${heroPath}${skin}.png`}
             alt={name}
             style={{ border: "none" }}

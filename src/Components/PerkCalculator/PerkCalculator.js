@@ -4,7 +4,7 @@ import ReactTooltip from "react-tooltip";
 
 // Relative imports
 import { AWSoperation, getHeroSkills, listHeros, sortedSearch } from "Helpers";
-import { ClassPerks, TierOnePerks, Image, GenericPerks } from "Components";
+import { ClassPerks, TierOnePerks, GenericPerks } from "Components";
 import { Filterbox } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
 import { Button } from "Atoms";
@@ -324,7 +324,7 @@ export const PerkCalculator = (props) => {
                   setReset(true);
                 }}
               >
-                <Image
+                <img
                   src={`heroes/${hero.name.toLowerCase()}/portrait.png`}
                   className="heroIcon"
                   dataTip

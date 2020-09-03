@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
 import { Link } from "react-router-dom";
 
-import { Image } from "Components";
 import "../styles/heroes.css";
 //AWS
 import { AWSoperation } from "Helpers";
@@ -23,7 +22,7 @@ export const Heroes = () => {
       {classes.map((heroClass) => (
         <div key={heroClass.name}>
           <h2 className={"classHeadline"}>
-            <Image
+            <img
               src={`classes/${heroClass.name.toLowerCase()}.png`}
               className="classIcon"
             />
@@ -32,7 +31,7 @@ export const Heroes = () => {
           <div className="heroesContainer">
             {heroClass.heroes.sort().map((hero) => (
               <Link to={`/heroes/${hero}`} key={hero}>
-                <Image
+                <img
                   src={`heroes/${hero.toLowerCase()}/portrait.png`}
                   dataTip={hero}
                   className="heroIcon"

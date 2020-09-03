@@ -1,7 +1,7 @@
 import React, { useGlobal, getGlobal, useState, useEffect } from "reactn";
-
-import { Image } from "Components";
 import ReactTooltip from "react-tooltip";
+
+import { createHelmet } from "Helpers";
 
 import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
@@ -32,18 +32,19 @@ export const HeroHeader = (props) => {
 
   return (
     <div className="flexBox">
-      <Image src={`${heroPath}portrait.png`} id={"portrait"} />
+    {createHelmet(heroName, `${heroName} - ${headInfo.title}`)}
+      <img src={`${heroPath}portrait.png`} id={"portrait"} />
       <div>
         <h1>{headInfo.name}</h1>
         <h2>{headInfo.title}</h2>
         <div id="heroType" className="flexBox">
-          <Image
+          <img
             src={`classes/${headInfo.class.toLowerCase()}.png`}
             id={"heroClassIcon"}
             style={{ border: "none" }}
             dataTip={headInfo.class}
           />
-          <Image
+          <img
             src={`${headInfo.damageType}.png`}
             id={"damageType"}
             alt={"dmg type"}

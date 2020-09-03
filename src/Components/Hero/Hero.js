@@ -42,9 +42,6 @@ export const Hero = (props) => {
     case "#skins":
       initalTabIndex = 2;
       break;
-    // case "#voice":
-    //   initalTabIndex = 3;
-    //   break;
     default:
       initalTabIndex = 0;
       scrollAnchor = hashFragments[0];
@@ -66,56 +63,45 @@ export const Hero = (props) => {
     return false;
   };
 
-  //scroll-To, needs to be manually done, due to timing with the page
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     if (scrollAnchor !== undefined) {
-  //       let element = document.getElementById(
-  //         `${scrollAnchor.slice(1)}-anchor`
-  //       );
-  //       let scrollToTopPosition = 0;
-  //       if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-  //       console.log("anchor: " + element.offsetTop);
-  //       window.scrollTo({
-  //         top: scrollToTopPosition,
-  //         left: 0,
-  //         behavior: "smooth",
-  //       });
-  //     }
-  //   });
-  // }, [scrollAnchor]);
+  // scroll-To, needs to be manually done, due to timing with the page
+  useEffect(() => {
+    setTimeout(() => {
+      if (scrollAnchor !== undefined) {
+        let element = document.getElementById(
+          `${scrollAnchor.slice(1)}-anchor`
+        );
+        let scrollToTopPosition = 0;
+        if (element !== null) scrollToTopPosition = element.offsetTop - 60;
+        console.log("anchor: " + element.offsetTop);
+        window.scrollTo({
+          top: scrollToTopPosition,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+    });
+  }, [scrollAnchor]);
 
   return (
     <>
-      <>
-        {/* {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)} */}
-        {/* {createHelmet(headInfo.name, `${headInfo.name} - ${headInfo.title}`)} */}
-        <HeroHeader heroPath={heroPath} />
-        <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
-          <TabList>
-            <Tab>General</Tab>
-            <Tab>Story</Tab>
-            <Tab>Skins</Tab>
-            {/* <Tab>Voice</Tab> */}
-          </TabList>
-          <TabPanel>
-            <HeroGeneral heroPath={heroPath} heroName={heroName} />
-          </TabPanel>
-          <TabPanel>
-            <HeroStory
-              heroPath={heroPath}
-              heroName={heroName}
-              // heroTitle={headInfo.title}
-            />
-          </TabPanel>
-          <TabPanel>
-            <HeroSkins heroPath={heroPath} heroName={heroName} />
-          </TabPanel>
-          {/* <TabPanel>
-              <HeroVoice heroPath={heroPath} voice={heroInfo.voice} />
-            </TabPanel> */}
-        </Tabs>
-      </>
+      <HeroHeader heroPath={heroPath} />
+      <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
+        <TabList>
+          <Tab>General</Tab>
+          <Tab>Story</Tab>
+          <Tab>Skins</Tab>
+          {/* <Tab>Voice</Tab> */}
+        </TabList>
+        <TabPanel>
+          <HeroGeneral heroPath={heroPath} heroName={heroName} />
+        </TabPanel>
+        <TabPanel>
+          <HeroStory heroPath={heroPath} heroName={heroName} />
+        </TabPanel>
+        <TabPanel>
+          <HeroSkins heroPath={heroPath} heroName={heroName} />
+        </TabPanel>
+      </Tabs>
     </>
   );
 };

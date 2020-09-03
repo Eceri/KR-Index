@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Image } from "Components";
 import { Stars } from "Atoms";
 import "../styles/UniqueTreasure.css";
 
@@ -18,7 +17,7 @@ export const UniqueTreasure = props => {
   return (
     <div className="ut">
       <div className="flexBox">
-        <Image src={utPath} alt={`Unique Treasure ${skill.id}`} />
+        <img src={utPath} alt={`Unique Treasure ${skill.id}`} />
         <div>
           <h3>{skill.uniqueTreasure.name}</h3>
           {Stars(setStars, star)}

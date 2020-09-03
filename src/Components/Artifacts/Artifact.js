@@ -6,7 +6,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Stars } from "Atoms";
 import { AWSoperation, getArtifact } from "Helpers";
 import { LOADING_ARTIFACT } from "Constants";
-import { Image } from "Components"
 
 const ArtifactText = styled.section`
   height: 7rem;
@@ -94,7 +93,7 @@ export const Artifact = (name) => {
 
 const renderTop = (artifact, star, setStar) => (
   <div>
-    <Image
+    <ArtifactImage
       src={`artifacts/${artifact.name}.png`}
       alt="Pic"
       align="left"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, UniqueTreasure } from "Components";
+import { UniqueTreasure } from "Components";
 import "./../styles/heroSkills.css";
 
 export const HeroSkill = (props) => {
@@ -8,7 +8,7 @@ export const HeroSkill = (props) => {
     let orbs = [];
     for (let i = 0; i < n; ++i) {
       orbs.push(
-        <Image
+        <img
           alt="Mana Orb"
           src={"manaOrb.png"}
           className={"mana"}
@@ -48,7 +48,7 @@ export const HeroSkill = (props) => {
           className={skillInfo.linked && index > 0 && "linkedSkill"}
         >
           <div className="flexBox">
-            <Image
+            <img
               src={`${heroPath}${skillInfo.skillNumber}.png`}
               alt={`Skill ${skillInfo.id} Icon`}
               className={"skillIcon"}
@@ -67,7 +67,7 @@ export const HeroSkill = (props) => {
       <div className="books">
         {skill.books.map((book) => (
           <p className={"bookEffects"} key={book}>
-            <Image
+            <img
               src={`book${skill.id}.png`}
               alt={"book icon"}
               className="bookImageMargin"
@@ -78,7 +78,7 @@ export const HeroSkill = (props) => {
       </div>
       <div className="skillPerks">
         <div className="flexBox">
-          <Image
+          <img
             src={`${heroPath}s${skill.id}l.png`}
             alt="light"
             className={"perkIcon"}

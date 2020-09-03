@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import { Artifact, Image } from "Components";
+import { Artifact} from "Components";
 import { LOADING_ARTIFACT } from "Constants";
 import {
   createHelmet,
@@ -163,7 +163,7 @@ const picURL = (name) => {
 };
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
-    <Image
+    <ArtifactImage
       onClick={() => {
         setArtifactName(item.name);
         window.history.pushState(

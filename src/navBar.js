@@ -7,7 +7,7 @@ import {
   AWSoperation,
   listArtifacts,
   sortedSearch,
-} from "./helpers/helpers.index";
+} from "Helpers";
 import { Searchbar } from "Atoms";
 import { ErrorState, INIT_BUILD } from "Constants";
 
@@ -140,8 +140,8 @@ export const NavBar = (page) => {
     <nav ref={miscRef}>
       <Link to={"/"} className={"navLink"} onClick={() => handleError()}>
         <img
-          src={`${require("Assets/icons/favicon.png")}`}
-          alt={"favicon.png"}
+          src={"favicon.ico"}
+          alt={"favicon"}
           style={{ width: 24, border: "none" }}
         />
       </Link>

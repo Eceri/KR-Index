@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Image } from "Components";
 import "../styles/UniqueWeapon.css";
 import { Stars } from "Atoms";
 
@@ -24,7 +23,7 @@ export const UniqueWeapon = props => {
   return (
     <div>
       <div className="flexBox" id="uw-anchor">
-        <Image
+        <img
           src={`${heroPath}uw.png`}
           alt="UW Icon"
           className={"uwIcon"} />
@@ -39,7 +38,7 @@ export const UniqueWeapon = props => {
         {soulWeapon ? (
           <>
             <div className="flexBox">
-              <Image
+              <img
                 src={`${heroPath}sw.png`}
                 alt="soul weapon"
                 className="swIcon"

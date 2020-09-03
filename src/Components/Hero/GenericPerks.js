@@ -3,11 +3,10 @@ import ReactTooltip from "react-tooltip";
 import styles from "styled-components";
 
 // Relative Imports
-import { Image } from "Components";
 import { PERK_COSTS } from "Constants";
 import "../styles/genericPerks.css";
 
-const CheckImage = styles((props) => <Image {...props} />)`
+const CheckImage = styles((props) => <img {...props} />)`
   filter: ${(props) => (props.active ? "" : "grayscale(100%)")};
   &:hover {
     cursor:pointer;
@@ -28,7 +27,7 @@ const CheckImage = styles((props) => <Image {...props} />)`
 const heroView = (perks) => {
   return perks.map((perk) => (
     <div className={"genericPerk"} key={perk.name}>
-      <Image
+      <img
         src={`genericPerks/${perk.name}.png`}
         className={"genericPerkIcon"}
       />

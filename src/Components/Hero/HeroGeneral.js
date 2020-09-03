@@ -1,11 +1,5 @@
 import React, { useEffect, useState, getGlobal } from "reactn";
-import {
-  Image,
-  ClassPerks,
-  TierOnePerks,
-  UniqueWeapon,
-  HeroSkill,
-} from "Components";
+import { ClassPerks, TierOnePerks, UniqueWeapon, HeroSkill } from "Components";
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Helpers";
 
@@ -38,7 +32,7 @@ export const HeroGeneral = (props) => {
       <hr />
       <h2 id="t5-anchor">T5</h2>
       <div className="flexBox transcendance">
-        <Image
+        <img
           src={`${heroPath}light.png`}
           alt={"light"}
           className={"perkIcon"}
@@ -46,7 +40,7 @@ export const HeroGeneral = (props) => {
         <p>{heroInfo.light}</p>
       </div>
       <div className="flexBox transcendance">
-        <Image
+        <img
           src={`${heroPath}dark.png`}
           alt={"dark"}
           className={"perkIcon"}

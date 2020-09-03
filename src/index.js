@@ -22,7 +22,6 @@ import { Home } from "./home"
 // Amplify Settings
 import Amplify from "aws-amplify";
 import aws_exports from "./aws-exports";
-
 Amplify.configure(aws_exports);
 
 setGlobal({
@@ -47,12 +46,10 @@ const Page = () => {
 
   return (
     <>
-      {createHelmet("Home", "frontpage", "./favicon")}
       <div id="pageContainer">
         <ErrorHandler />
         <BrowserRouter>
           <NavBar key={"components.js"} setError={setError} />
-
           <Switch>
             {/* <Route path="/heroes/Maya" component={Maya} /> */}
             <Route push={true} path="/heroes/:hero" component={Hero} />
