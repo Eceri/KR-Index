@@ -18,16 +18,15 @@ export const Hero = (props) => {
   const [error, setError] = useGlobal("error");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
-  const correctName = props.match.params.hero;
+  let correctName;
   useEffect(() => {
-    correctName
+    correctName = props.match.params.hero
       .toLowerCase()
       .split(" ")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
     setGlobalHeroName(correctName);
   }, [correctName]);
-  const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
 
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
@@ -82,6 +81,7 @@ export const Hero = (props) => {
   return (
     <>
       <HeroHeader />
+      {createHelmet(heroName, `Details - ${heroName}`, `/heroes/${heroName.toLowerCase()}/portrait.png`)}
       <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>

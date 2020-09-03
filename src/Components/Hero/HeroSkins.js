@@ -5,14 +5,14 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 //Relative Imports
 import { AWSoperation, getHeroSkins } from "Helpers";
 
-export const HeroSkins = (props) => {
+export const HeroSkins = () => {
   const [heroSkins, setHeroSkins] = useState(["Base"]);
   const heroName = getGlobal().heroName;
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
 
   useEffect(() => {
     AWSoperation(getHeroSkins, { name: heroName }).then((res) => {
-      setHeroSkins(heroSkins.concat(res.data.getHero.skins));
+      setHeroSkins(["Base"].concat(res.data.getHero.skins));
     });
   }, [heroName]);
   
