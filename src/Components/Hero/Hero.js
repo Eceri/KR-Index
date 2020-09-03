@@ -18,15 +18,17 @@ export const Hero = (props) => {
   const [error, setError] = useGlobal("error");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
-  let correctName;
+  let name = props.match.params.hero;
   useEffect(() => {
-    correctName = props.match.params.hero
-      .toLowerCase()
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-    setGlobalHeroName(correctName);
-  }, [correctName]);
+    if (heroName.toLowerCase() != name.toLowerCase()) {
+      let correctName = name
+        .toLowerCase()
+        .split(" ")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+      setGlobalHeroName(correctName);
+    }
+  }, [name]);
 
   //handling #-Fragments for Tabs
   let hashFragments = window.location.hash.split("-");
@@ -54,7 +56,6 @@ export const Hero = (props) => {
         url = "#skins";
       } else url = `/heroes/${heroName}`;
       props.history.push(url);
-
       return true;
     }
     return false;
@@ -81,7 +82,11 @@ export const Hero = (props) => {
   return (
     <>
       <HeroHeader />
-      {createHelmet(heroName, `Details - ${heroName}`, `/heroes/${heroName.toLowerCase()}/portrait.png`)}
+      {createHelmet(
+        heroName,
+        `Details - ${heroName}`,
+        `/heroes/${heroName.toLowerCase()}/portrait.png`
+      )}
       <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>

@@ -3,8 +3,10 @@ import { ClassPerks, TierOnePerks, UniqueWeapon, HeroSkill } from "Components";
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Helpers";
 
-export const HeroGeneral = (props) => {
-  const [heroInfo, setHeroInfo] = useState({});
+export const HeroGeneral = () => {
+  const [heroInfo, setHeroInfo] = useState({
+
+  });
   const heroName = getGlobal().heroName;
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   useEffect(() => {

@@ -6,7 +6,6 @@ export const UniqueTreasure = props => {
   const [star, setStars] = useState(0);
   const { skill } = props;
   const heroName = getGlobal().heroName;
-  console.log(heroName)
   if(skill == undefined){
     skill = {
       effect: ["","","","","",""],
