@@ -1,26 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import "../styles/HeroStory.css";
 
 //Relative Imports
-import { AWSoperation, getHeroStories } from "Helpers";
+import { AWSoperation, getHeroBackgroundData } from "Helpers";
 
 export const HeroStory = (props) => {
-  const [heroStories, setHeroStories] = useState({});
-  let { heroPath, heroName, heroTitle } = props;
+  const [heroBackgroudData, setHeroBackgroundData] = useState({});
+  const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
   useEffect(() => {
-    AWSoperation(getHeroStories, { name: heroName }).then((res) =>
-      setHeroStories(res.data.getHero)
+    AWSoperation(getHeroBackgroundData, { name: heroName }).then((res) =>
+      setHeroBackgroundData(res.data.getHero)
     );
   }, [heroName]);
+  console.log(heroBackgroudData.title)
 
+  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}`
+  
   let createStoryDiv = (name, story, iconPathFragment) => (
     <>
       <hr className="seperator" />
       <div key={`${iconPathFragment}Story`}>
         <div className="headline">
           <img
-            src={`${heroPath}${iconPathFragment}.png`}
+            src={`${assetsUrl}/${iconPathFragment}.png`}
             className="uniqueItem"
           />
           <h2>{name}</h2>
@@ -39,7 +42,7 @@ export const HeroStory = (props) => {
 
   return (
     <>
-      {Object.keys(heroStories).length > 1 ? (
+      {Object.keys(heroBackgroudData).length > 1 ? (
         <>
           <div>
             <div id={"profile"}>
@@ -47,18 +50,18 @@ export const HeroStory = (props) => {
               <table id="profileTable">
                 <tbody>
                   {createTableRow("Name", heroName)}
-                  {createTableRow("Title", heroTitle)}
-                  {createTableRow("Gender", heroStories.profile.gender)}
-                  {createTableRow("Race", heroStories.profile.race)}
-                  {createTableRow("Age", heroStories.profile.age)}
-                  {createTableRow("Height", heroStories.profile.height)}
-                  {createTableRow("Birthday", heroStories.profile.birthday)}
+                  {createTableRow("Title", heroBackgroudData.title)}
+                  {createTableRow("Gender", heroBackgroudData.profile.gender)}
+                  {createTableRow("Race", heroBackgroudData.profile.race)}
+                  {createTableRow("Age", heroBackgroudData.profile.age)}
+                  {createTableRow("Height", heroBackgroudData.profile.height)}
+                  {createTableRow("Birthday", heroBackgroudData.profile.birthday)}
                   {createTableRow(
                     "Constellation",
-                    heroStories.profile.constellation
+                    heroBackgroudData.profile.constellation
                   )}
-                  {createTableRow("Likes", heroStories.profile.likes)}
-                  {createTableRow("Dislikes", heroStories.profile.dislikes)}
+                  {createTableRow("Likes", heroBackgroudData.profile.likes)}
+                  {createTableRow("Dislikes", heroBackgroudData.profile.dislikes)}
                 </tbody>
               </table>
             </div>
@@ -66,35 +69,38 @@ export const HeroStory = (props) => {
           <hr />
           <div>
             <div className="headline">
-              <img src={`${heroPath}portrait.png`} className="uniqueItem" />
+              <img
+                src={`${assetsUrl}/portrait.png`}
+                className="uniqueItem"
+              />
               <h2>{heroName}</h2>
             </div>
-            <p className={"story"}>{heroStories.story}</p>
+            <p className={"story"}>{heroBackgroudData.story}</p>
           </div>
           {createStoryDiv(
-            heroStories.uniqueWeapon.name,
-            heroStories.uniqueWeapon.story,
+            heroBackgroudData.uniqueWeapon.name,
+            heroBackgroudData.uniqueWeapon.story,
             "uw"
           )}
-          {createStoryDiv("Soul", heroStories.soulWeapon.story, "sw")}
+          {createStoryDiv("Soul", heroBackgroudData.soulWeapon.story, "sw")}
           {createStoryDiv(
-            heroStories.skill1.uniqueTreasure.name,
-            heroStories.skill1.uniqueTreasure.story,
+            heroBackgroudData.skill1.uniqueTreasure.name,
+            heroBackgroudData.skill1.uniqueTreasure.story,
             "ut1"
           )}
           {createStoryDiv(
-            heroStories.skill2.uniqueTreasure.name,
-            heroStories.skill2.uniqueTreasure.story,
+            heroBackgroudData.skill2.uniqueTreasure.name,
+            heroBackgroudData.skill2.uniqueTreasure.story,
             "ut2"
           )}
           {createStoryDiv(
-            heroStories.skill3.uniqueTreasure.name,
-            heroStories.skill3.uniqueTreasure.story,
+            heroBackgroudData.skill3.uniqueTreasure.name,
+            heroBackgroudData.skill3.uniqueTreasure.story,
             "ut3"
           )}
           {createStoryDiv(
-            heroStories.skill4.uniqueTreasure.name,
-            heroStories.skill4.uniqueTreasure.story,
+            heroBackgroudData.skill4.uniqueTreasure.name,
+            heroBackgroudData.skill4.uniqueTreasure.story,
             "ut4"
           )}
         </>

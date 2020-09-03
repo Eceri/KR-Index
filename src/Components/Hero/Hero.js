@@ -3,7 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
 import {
-  Image,
   HeroGeneral,
   HeroStory,
   HeroSkins,
@@ -28,7 +27,6 @@ export const Hero = (props) => {
       .join(" ");
     setGlobalHeroName(correctName);
   }, [correctName]);
-
   const heroPath = `heroes/${props.match.params.hero.toLowerCase()}/`;
 
   //handling #-Fragments for Tabs
@@ -72,7 +70,6 @@ export const Hero = (props) => {
         );
         let scrollToTopPosition = 0;
         if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-        console.log("anchor: " + element.offsetTop);
         window.scrollTo({
           top: scrollToTopPosition,
           left: 0,
@@ -84,7 +81,7 @@ export const Hero = (props) => {
 
   return (
     <>
-      <HeroHeader heroPath={heroPath} />
+      <HeroHeader />
       <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>
@@ -93,15 +90,16 @@ export const Hero = (props) => {
           {/* <Tab>Voice</Tab> */}
         </TabList>
         <TabPanel>
-          <HeroGeneral heroPath={heroPath} heroName={heroName} />
+          <HeroGeneral />
         </TabPanel>
         <TabPanel>
-          <HeroStory heroPath={heroPath} heroName={heroName} />
+          <HeroStory />
         </TabPanel>
         <TabPanel>
-          <HeroSkins heroPath={heroPath} heroName={heroName} />
+          <HeroSkins />
         </TabPanel>
       </Tabs>
+      <ReactTooltip />
     </>
   );
 };

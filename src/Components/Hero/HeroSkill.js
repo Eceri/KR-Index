@@ -1,16 +1,18 @@
-import React from "react";
+import React, { getGlobal } from "reactn";
 import { UniqueTreasure } from "Components";
 import "./../styles/heroSkills.css";
 
 export const HeroSkill = (props) => {
-  let { heroPath, skill } = props;
+  let { skill } = props;
+  const heroName = getGlobal().heroName;
+  let assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   const manaCost = (n) => {
     let orbs = [];
     for (let i = 0; i < n; ++i) {
       orbs.push(
         <img
           alt="Mana Orb"
-          src={"manaOrb.png"}
+          src={"/assets/manaOrb.png"}
           className={"mana"}
           key={`orb${i}`}
         />
@@ -49,7 +51,7 @@ export const HeroSkill = (props) => {
         >
           <div className="flexBox">
             <img
-              src={`${heroPath}${skillInfo.skillNumber}.png`}
+              src={`${assetsUrl}${skillInfo.skillNumber}.png`}
               alt={`Skill ${skillInfo.id} Icon`}
               className={"skillIcon"}
             />
@@ -68,7 +70,7 @@ export const HeroSkill = (props) => {
         {skill.books.map((book) => (
           <p className={"bookEffects"} key={book}>
             <img
-              src={`book${skill.id}.png`}
+              src={`/assets/book${skill.id}.png`}
               alt={"book icon"}
               className="bookImageMargin"
             />
@@ -79,22 +81,22 @@ export const HeroSkill = (props) => {
       <div className="skillPerks">
         <div className="flexBox">
           <img
-            src={`${heroPath}s${skill.id}l.png`}
+            src={`${assetsUrl}s${skill.id}l.png`}
             alt="light"
             className={"perkIcon"}
           />
           <p> {skill.light}</p>
         </div>
         <div className="flexBox">
-          <Image
-            src={`${heroPath}s${skill.id}d.png`}
+          <img
+            src={`${assetsUrl}s${skill.id}d.png`}
             alt="dark"
             className={"perkIcon"}
           />
           <p>{skill.dark}</p>
         </div>
       </div>
-      <UniqueTreasure heroPath={heroPath} skill={skill} />
+      <UniqueTreasure skill={skill} />
       {skill.id < 4 && <hr className="seperator" />}
     </div>
   );

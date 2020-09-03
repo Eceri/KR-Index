@@ -91,72 +91,66 @@ const PlugGame = () => {
   );
 };
 
-export const Home = () => {
-  return (
-    <React.Fragment>
-<<<<<<< HEAD
-    {createHelmet("KR Index", "Homepage")}
-=======
-      {createHelmet("King's Raid Index", "King's Raid Index landing Page")}
->>>>>>> 0a913e107fd3b86a14d83101636abcb58f929e2e
-      <div>
-        <h1>Welcome to the King's Raid Index</h1>
-        <div id="welcome">
-          <div>
-            <p>This page is a Database for the mobile game King's Raid.</p>
-            <p>
-              King's Raid (Korean: 킹스레이드) is a free-to-play side-scrolling
-              RPG mobile game developed by South Korean game developer Vespa. It
-              was first released on September 19, 2016 for operating systems
-              Android and iOS in Thailand. The global version consists of 3
-              servers, which were opened on February 16, 2017.
-            </p>
-          </div>
-          <div id="communityLinks">
-            <p>Community Links:</p>
-            <a
-              href="https://www.reddit.com/r/Kings_Raid/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`${require("Assets/icons/reddit_share_circle_48.png")}`}
-                alt="snoo"
-                data-tip="reddit"
-              />
-            </a>
-            <a
-              href="https://discord.gg/sHjshB"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`${require("Assets/icons/Discord-Logo-White.png")}`}
-                alt="discord"
-                data-tip="Community Discord"
-              />
-            </a>
-            <a
-              href="https://www.plug.game/kingsraid/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`${require("Assets/icons/Plug_Cafe_Logo.bmp")}`}
-                alt="plug.game"
-                data-tip="Official Plug"
-              />
-            </a>
-          </div>
+export const Home = () => (
+  <>
+    {/* {createHelmet("King's Raid Index", "King's Raid Index landing Page")} */}
+    <div>
+      <h1>Welcome to the King's Raid Index</h1>
+      <div id="welcome">
+        <div>
+          <p>This page is a Database for the mobile game King's Raid.</p>
+          <p>
+            King's Raid (Korean: 킹스레이드) is a free-to-play side-scrolling
+            RPG mobile game developed by South Korean game developer Vespa. It
+            was first released on September 19, 2016 for operating systems
+            Android and iOS in Thailand. The global version consists of 3
+            servers, which were opened on February 16, 2017.
+          </p>
         </div>
-        {PlugGame()}
-        <ReactTooltip border={true} />
+        <div id="communityLinks">
+          <p>Community Links:</p>
+          <a
+            href="https://www.reddit.com/r/Kings_Raid/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="linkLogo"
+              src={`${require("Assets/icons/reddit_share_circle_48.png")}`}
+              alt="snoo"
+              data-tip="reddit"
+            />
+          </a>
+          <a
+            href="https://discord.gg/dQJ6hB"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="linkLogo"
+              src={`${require("Assets/icons/Discord-Logo-White.png")}`}
+              alt="discord"
+              data-tip="Community Discord"
+            />
+          </a>
+          <a
+            href="https://www.plug.game/kingsraid/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="linkLogo"
+              src={`${require("Assets/icons/Plug_Cafe_Logo.bmp")}`}
+              alt="plug.game"
+              data-tip="Official Plug"
+            />
+          </a>
+        </div>
       </div>
-    </React.Fragment>
-  );
-};
+      {PlugGame()}
+      <ReactTooltip border={true} />
+    </div>
+  </>
+);
 
 export default Home;

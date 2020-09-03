@@ -6,7 +6,7 @@ import { AWSoperation, getHeroGeneralInfo } from "Helpers";
 export const HeroGeneral = (props) => {
   const [heroInfo, setHeroInfo] = useState({});
   const heroName = getGlobal().heroName;
-  const { heroPath } = props;
+  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   useEffect(() => {
     AWSoperation(getHeroGeneralInfo, {
       name: heroName,
@@ -16,24 +16,23 @@ export const HeroGeneral = (props) => {
     <>
       <h2> Unique Weapon </h2> <hr />
       <UniqueWeapon
-        heroPath={heroPath}
         uniqueWeapon={heroInfo.uniqueWeapon}
         soulWeapon={heroInfo.soulWeapon}
       />
       <h2 className="subSectionHeadline">Skills</h2>
       <hr />
       <div id={"skills"}>
-        <HeroSkill skill={heroInfo.skill1} heroPath={heroPath} />
-        <HeroSkill skill={heroInfo.skill2} heroPath={heroPath} />
-        <HeroSkill skill={heroInfo.skill3} heroPath={heroPath} />
-        <HeroSkill skill={heroInfo.skill4} heroPath={heroPath} />
+        <HeroSkill skill={heroInfo.skill1} />
+        <HeroSkill skill={heroInfo.skill2} />
+        <HeroSkill skill={heroInfo.skill3} />
+        <HeroSkill skill={heroInfo.skill4} />
       </div>
       <h2 className="subSectionHeadline">Transcendence</h2>
       <hr />
       <h2 id="t5-anchor">T5</h2>
       <div className="flexBox transcendance">
         <img
-          src={`${heroPath}light.png`}
+          src={`${assetsUrl}light.png`}
           alt={"light"}
           className={"perkIcon"}
         />
@@ -41,7 +40,7 @@ export const HeroGeneral = (props) => {
       </div>
       <div className="flexBox transcendance">
         <img
-          src={`${heroPath}dark.png`}
+          src={`${assetsUrl}dark.png`}
           alt={"dark"}
           className={"perkIcon"}
         />

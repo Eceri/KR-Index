@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, getGlobal } from "reactn";
 import "../styles/UniqueWeapon.css";
 import { Stars } from "Atoms";
 
 export const UniqueWeapon = props => {
   const [star, setStars] = useState(0);
-  let { heroPath, uniqueWeapon, soulWeapon } = props
+  let { uniqueWeapon, soulWeapon } = props
+  const assetsUrl = `/assets/heroes/${getGlobal().heroName.toLowerCase()}/`;
   if(uniqueWeapon == undefined || soulWeapon == undefined){
     uniqueWeapon = {
       effect: ["","","","","",""],
@@ -24,7 +25,7 @@ export const UniqueWeapon = props => {
     <div>
       <div className="flexBox" id="uw-anchor">
         <img
-          src={`${heroPath}uw.png`}
+          src={`${assetsUrl}uw.png`}
           alt="UW Icon"
           className={"uwIcon"} />
         <div>
@@ -39,7 +40,7 @@ export const UniqueWeapon = props => {
           <>
             <div className="flexBox">
               <img
-                src={`${heroPath}sw.png`}
+                src={`${assetsUrl}sw.png`}
                 alt="soul weapon"
                 className="swIcon"
               />

@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
 
-import { PerkCalculator, Image } from "Components";
+import { PerkCalculator } from "Components";
 import { Flex, Filterbox } from "Styles";
 import { AWSoperation, listHeros, sortedSearch } from "Helpers";
 import { INIT_BUILD } from "Constants";
@@ -83,7 +83,6 @@ export const PerksContainer = () => {
   const build = hist.location.hash.replace("#", "");
 
   // States
-  const [name, setName] = useState(hero);
   const [reset, setReset] = useState(false);
   const [heroFilter, setHeroFilter] = useState("");
   const [heros, setHeros] = useState([]);
@@ -94,6 +93,7 @@ export const PerksContainer = () => {
   const [fetchControl, setFetchControl] = useState(true);
 
   // Globals
+  const [name, setName] = useGlobal("heroName");
   const [error, setError] = useGlobal("error");
 
   if (hero === "") {
@@ -166,8 +166,8 @@ export const PerksContainer = () => {
                   setReset(true);
                 }}
               >
-                <Image
-                  src={`heroes/${hero.name.toLowerCase()}/portrait.png`}
+                <img
+                  src={`/assets/heroes/${hero.name.toLowerCase()}/portrait.png`}
                   className="heroIcon"
                   dataTip
                   dataFor={hero.name}

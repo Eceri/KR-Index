@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { Footer } from "Components";
-import { createHelmet, ErrorHandler } from "Helpers";
+import { ErrorHandler } from "Helpers";
 import { ErrorState, INIT_BUILD } from "Constants";
 import { Routes } from "./Routes";
 
@@ -20,6 +20,14 @@ setGlobal({
   error: ErrorState,
   build: INIT_BUILD,
   tp: 95,
+  heroName: "",
+  headInfo: {
+    name: "",
+    title: "",
+    class: "",
+    damageType: "",
+    position: "",
+  }
 });
 
 const Page = () => {

@@ -34,7 +34,7 @@ const heroView = (perks) => {
   return perks.map((perk) => (
     <div className={"genericPerk"} key={perk.name}>
       <img
-        src={`genericPerks/${perk.name}.png`}
+        src={`/assets/genericPerks/${perk.name}.png`}
         className={"genericPerkIcon"}
       />
       <div>
@@ -176,7 +176,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
 
   const chooseTier = (perks, tier) => {
     let sliceTier;
-    url = `heroes/${name}`;
+    url = `/assets/heroes/${name}`;
 
     const mapSkillInfo = (skills) => {
       const result = skills.map((skill) => skill.name);
@@ -254,7 +254,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
     }
     if (tier === 4) {
       const t5Array = ["light", "dark"];
-      url = `heroes/${name}`;
+      url = `/assets/heroes/${name}`;
       return t5Array.map((t5, index) => (
         <div
           key={`${t5}${index}`}
@@ -288,7 +288,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
         onClick={() => changer(index)}
       >
         <CheckImage
-          src={`${url}${perk.name}.png`}
+          src={`/assets/${url}${perk.name}.png`}
           className={"genericPerkIcon"}
           dataTip
           dataFor={perk.name}

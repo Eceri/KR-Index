@@ -23,7 +23,7 @@ export const Heroes = () => {
         <div key={heroClass.name}>
           <h2 className={"classHeadline"}>
             <img
-              src={`classes/${heroClass.name.toLowerCase()}.png`}
+              src={`/assets/classes/${heroClass.name.toLowerCase()}.png`}
               className="classIcon"
             />
             {heroClass.name}s
@@ -32,7 +32,7 @@ export const Heroes = () => {
             {heroClass.heroes.sort().map((hero) => (
               <Link to={`/heroes/${hero}`} key={hero}>
                 <img
-                  src={`heroes/${hero.toLowerCase()}/portrait.png`}
+                  src={`/assets/heroes/${hero.toLowerCase()}/portrait.png`}
                   dataTip={hero}
                   className="heroIcon"
                 />
