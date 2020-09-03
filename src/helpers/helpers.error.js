@@ -1,5 +1,6 @@
 import React, { useEffect, useGlobal } from "reactn";
 import styles from "styled-components";
+import { useHistory } from "react-router-dom";
 
 // Relative imports
 import { ErrorState } from "Constants";
@@ -18,7 +19,9 @@ const ErrorBoard = styles.div`
 export const ErrorHandler = () => {
   const [error, setError] = useGlobal("error");
 
-  const { component, message, redirect, url } = error;
+  const history = useHistory();
+
+  const { component, message, redirect, url, hash } = error;
 
   useEffect(() => {
     if (message !== "") {
@@ -27,7 +30,10 @@ export const ErrorHandler = () => {
       }, 2000);
     }
     if (redirect) {
-      history.pushState(error, message, url);
+      history.push({
+        pathname: url,
+        hash: hash,
+      });
     }
   }, [component, message, redirect, url]);
 

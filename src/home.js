@@ -94,7 +94,11 @@ const PlugGame = () => {
 export const Home = () => {
   return (
     <React.Fragment>
+<<<<<<< HEAD
     {createHelmet("KR Index", "Homepage")}
+=======
+      {createHelmet("King's Raid Index", "King's Raid Index landing Page")}
+>>>>>>> 0a913e107fd3b86a14d83101636abcb58f929e2e
       <div>
         <h1>Welcome to the King's Raid Index</h1>
         <div id="welcome">

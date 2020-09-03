@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -45,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.ext$/,
-        use: ["cache-lodaer", "css-loader", "file-loader"],
+        use: ["cache-loader", "css-loader", "file-loader"],
         include: path.resolve("src"),
       },
     ],
@@ -61,6 +62,7 @@ module.exports = {
       Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
       Components: path.resolve(__dirname, "src/Components/components.index.js"),
       Constants: path.resolve(__dirname, "src/Constants/constants.index.js"),
+      Containers: path.resolve(__dirname, "src/Containers/containers.index.js"),
     },
   },
   optimization: {
@@ -92,5 +94,12 @@ module.exports = {
     }),
     new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
+    new CompressionPlugin({
+      filename: "[path].gz",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
   ],
 };

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "styled-components";
 
 // Relative imports
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   AWSoperation,
   listArtifacts,
@@ -50,7 +50,7 @@ const Items = styles.div`
   align-items: center;
 `;
 
-const DropdownLink = styles((props) => <Link {...props} />)`
+const DropdownLink = styles((props) => <NavLink {...props} />)`
   padding: 0.75rem;
   width: 100%;
   height: 100%;
@@ -64,13 +64,6 @@ const Dropdown = (show, setShow, direction) => {
   const renderShow = () =>
     show && (
       <Items>
-        {/* <DropdownLink
-          to={"/guides"}
-          className={"navLink"}
-          onClick={() => handleClick()}
-        >
-          Guides
-        </DropdownLink> */}
         <DropdownLink
           to={"/caps"}
           className={"navLink"}
@@ -79,7 +72,7 @@ const Dropdown = (show, setShow, direction) => {
           Caps
         </DropdownLink>
         <DropdownLink
-          to={`/perks/Kasel/${INIT_BUILD}`}
+          to={`/perks/Kasel#${INIT_BUILD}`}
           className={"navLink"}
           onClick={() => handleClick()}
         >
@@ -138,23 +131,23 @@ export const NavBar = (page) => {
 
   return (
     <nav ref={miscRef}>
-      <Link to={"/"} className={"navLink"} onClick={() => handleError()}>
+      <NavLink to={"/"} className={"navLink"} onClick={() => handleError()}>
         <img
           src={"favicon.ico"}
           alt={"favicon"}
           style={{ width: 24, border: "none" }}
         />
-      </Link>
-      <Link to={"/heroes"} className="navLink" onClick={() => handleError()}>
+      </NavLink>
+      <NavLink to={"/heroes"} className="navLink" onClick={() => handleError()}>
         Heroes
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to={"/artifacts"}
         className={"navLink"}
         onClick={() => handleError()}
       >
         Artifacts
-      </Link>
+      </NavLink>
       {Dropdown(show, setShow, direction, setDirection)}
       <Searchbar artifacts={artifacts} />
     </nav>

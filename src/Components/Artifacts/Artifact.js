@@ -93,9 +93,9 @@ export const Artifact = (name) => {
 
 const renderTop = (artifact, star, setStar) => (
   <div>
-    <ArtifactImage
-      src={`artifacts/${artifact.name}.png`}
-      alt="Pic"
+    <img
+      src={`/assets/artifacts/${artifact.name}.png`}
+      alt={`Picture of ${artifact.name}`}
       align="left"
       style={{ marginRight: "1rem", width: "96px", marginBottom: "2rem" }}
     />

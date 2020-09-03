@@ -1,15 +1,16 @@
-import React, { useGlobal, useEffect } from "reactn";
+import React, { useGlobal, useEffect, useState } from "reactn";
 import ReactTooltip from "react-tooltip";
-import styles from "styled-components";
+import styled from "styled-components";
+import { useHistory, useLocation } from "react-router-dom";
 
 // Relative Imports
-import { PERK_COSTS } from "Constants";
+import { PERK_COSTS, INIT_BUILD } from "Constants";
 import "../styles/genericPerks.css";
 
-const CheckImage = styles((props) => <img {...props} />)`
+const CheckImage = styled((props) => <img {...props} />)`
   filter: ${(props) => (props.active ? "" : "grayscale(100%)")};
   &:hover {
-    cursor:pointer;
+    cursor: pointer;
   }
   width: 4rem;
   height: auto;
@@ -22,6 +23,11 @@ const CheckImage = styles((props) => <img {...props} />)`
     margin-top: 0.1rem;
     margin-right: 0.4rem;
   }
+`;
+
+const PerkEffect = styled.p`
+  padding-top: 0.5rem;
+  width: 12rem;
 `;
 
 const heroView = (perks) => {
@@ -63,12 +69,11 @@ const isActive = (build, pos, tier) => {
   }
 };
 
-const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
+const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
   tier = tier - 1;
 
   const changer = (index) => {
-    const { pathname } = location;
-    const build = pathname.split("/").slice(-1)[0];
+    const build = hist.location.hash.replace("#", "");
     let buildSplit = build.split("-");
     const buildTier = buildSplit[tier];
     let i = buildTier.split("");
@@ -158,8 +163,9 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
 
     buildSplit[tier] = i.join("");
 
-    setBuild(buildSplit.join("-"));
-    history.pushState(tier, "Build", buildSplit.join("-"));
+    const buildJoin = buildSplit.join("-");
+    setBuild(buildJoin);
+    hist.replace({ hash: buildJoin });
     isActive(buildSplit[tier], index);
   };
 
@@ -224,7 +230,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
                 <p>{`${mapSkillInfo(perks[perk].skillInfo)} [${
                   _type.name
                 }]`}</p>
-                <p>{perks[perk][_type.perkName]}</p>
+                <PerkEffect>{perks[perk][_type.perkName]}</PerkEffect>
               </ReactTooltip>
             </div>
           ))
@@ -266,7 +272,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
             <p>{`${name.charAt(0).toUpperCase()}${name.slice(1)} [${t5
               .charAt(0)
               .toUpperCase()}${t5.slice(1)}]`}</p>
-            <p>{perks.general.dark}</p>
+            <PerkEffect>{perks.general[t5]}</PerkEffect>
           </ReactTooltip>
         </div>
       ));
@@ -290,7 +296,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
         />
         <ReactTooltip id={perk.name}>
           <p>{perk.name}</p>
-          <p>{perk.effect}</p>
+          <PerkEffect>{perk.effect}</PerkEffect>
         </ReactTooltip>
       </div>
     ));
@@ -300,18 +306,34 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP) => {
 };
 
 export const GenericPerks = (props) => {
-  const [build, setBuild] = useGlobal("build");
-  const [tp, setTP] = useGlobal("tp");
-
+  // Props
   let { perks, url, name } = props;
   const { tier } = props;
 
+  // State
+  const [build, setBuild] = useState(INIT_BUILD);
+
+  // Globals
+  const [globalBuild, setGlobalBuild] = useGlobal("build");
+  const [tp, setTP] = useGlobal("tp");
+
+  // History
+  const hist = useHistory();
+  const location = useLocation();
+  let { hash } = location;
+
+  useEffect(() => {
+    hash = hash.replace("#", "");
+    if (hash !== build && hash !== "") {
+      setBuild(hash);
+    }
+  }, [hash]);
+
   useEffect(() => {
     const tp = 95;
-    const build = location.pathname.split("/").slice(-1)[0];
-    setBuild(build);
+
     const buildSplit = build.split("-");
-    // split every number, so it easier to count how many are perks active
+    // split every number, so it easier to count how many perks are active
     const splits = buildSplit.map((v) => v.split(""));
     const costs = splits.map((split, index) =>
       split.map((number) => {
@@ -322,7 +344,7 @@ export const GenericPerks = (props) => {
     let counter = 0;
     filterCosts.map((cost) => (counter += cost));
     setTP(tp - counter);
-  }, [build]);
+  }, [build, globalBuild]);
 
   if (perks === undefined) {
     perks = [
@@ -342,11 +364,10 @@ export const GenericPerks = (props) => {
   }
 
   const { pathname } = location;
-
   return (
     <div>
       {pathname.includes("/perks")
-        ? perkView(perks, tier, setBuild, build, url, name, tp, setTP)
+        ? perkView(perks, tier, setBuild, build, url, name, tp, setTP, hist)
         : heroView(perks)}
     </div>
   );

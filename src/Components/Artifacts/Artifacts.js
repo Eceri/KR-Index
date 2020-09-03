@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import { Artifact} from "Components";
+import { Artifact } from "Components";
 import { LOADING_ARTIFACT } from "Constants";
 import {
   createHelmet,
@@ -136,7 +136,11 @@ export const Artifacts = () => {
 
   return (
     <div id="content" ref={scrollRef}>
-      {createHelmet(artifactName)}
+      {createHelmet(
+        artifactName,
+        `Artifact - ${artifactName}`,
+        `artifacts/${artifactName}`
+      )}
       <ClickedArtifact>{Artifact(artifactName)}</ClickedArtifact>
       <ArtifactContainer>
         <div style={{ marginBottom: "1rem" }}>
@@ -144,6 +148,7 @@ export const Artifacts = () => {
             placeholder="Filter..."
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
             value={searchQuery}
+            onClick={() => setFetch(true)}
           />
         </div>
         {artifacts.map((item, index) =>
@@ -154,13 +159,6 @@ export const Artifacts = () => {
   );
 };
 
-const picURL = (name) => {
-  try {
-    return require(`Assets/artifacts/${name}.png`);
-  } catch (error) {
-    console.error(`Picture for ${name} is missing`);
-  }
-};
 const renderArtifactPictures = (item, index, setArtifactName) => (
   <React.Fragment key={item.name + index}>
     <ArtifactImage
@@ -172,7 +170,7 @@ const renderArtifactPictures = (item, index, setArtifactName) => (
           `/artifacts/${encodeURIComponent(item.name)}`
         );
       }}
-      src={`artifacts/${item.name}.png`}
+      src={`/assets/artifacts/${item.name}.png`}
       alt={`Picture of ${item.name}`}
       align="left"
       data-tip
