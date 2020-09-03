@@ -4,15 +4,15 @@ import { ClassPerks, TierOnePerks, UniqueWeapon, HeroSkill } from "Components";
 import { AWSoperation, getHeroGeneralInfo } from "Helpers";
 
 export const HeroGeneral = () => {
-  const [heroInfo, setHeroInfo] = useState({
-
-  });
+  const [heroInfo, setHeroInfo] = useState({});
   const heroName = getGlobal().heroName;
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   useEffect(() => {
-    AWSoperation(getHeroGeneralInfo, {
-      name: heroName,
-    }).then((res) => setHeroInfo(res.data.getHero));
+    if (heroName != "") {
+      AWSoperation(getHeroGeneralInfo, {
+        name: heroName,
+      }).then((res) => setHeroInfo(res.data.getHero));
+    }
   }, [heroName]);
   return (
     <>
@@ -41,11 +41,7 @@ export const HeroGeneral = () => {
         <p>{heroInfo.light}</p>
       </div>
       <div className="flexBox transcendance">
-        <img
-          src={`${assetsUrl}dark.png`}
-          alt={"dark"}
-          className={"perkIcon"}
-        />
+        <img src={`${assetsUrl}dark.png`} alt={"dark"} className={"perkIcon"} />
         <p>{heroInfo.dark}</p>
       </div>
       <hr className="seperator" />

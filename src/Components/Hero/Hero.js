@@ -63,20 +63,19 @@ export const Hero = (props) => {
 
   // scroll-To, needs to be manually done, due to timing with the page
   useEffect(() => {
-    setTimeout(() => {
-      if (scrollAnchor !== undefined) {
-        let element = document.getElementById(
-          `${scrollAnchor.slice(1)}-anchor`
-        );
-        let scrollToTopPosition = 0;
-        if (element !== null) scrollToTopPosition = element.offsetTop - 60;
-        window.scrollTo({
-          top: scrollToTopPosition,
-          left: 0,
-          behavior: "smooth",
-        });
+    if (scrollAnchor !== undefined) {
+      let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
+      let scrollToTopPosition = 0;
+      if (element !== null) {
+        scrollToTopPosition = element.offsetTop - 60;
       }
-    });
+      console.log(element);
+      window.scrollTo({
+        top: scrollToTopPosition,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   }, [scrollAnchor]);
 
   return (
