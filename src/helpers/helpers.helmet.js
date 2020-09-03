@@ -11,7 +11,6 @@ export const createHelmet = (title, content, image = "") => (
   <Helmet>
     <title>{title}</title>
     <meta name="description" content={content} />
-    <link rel="favicon" type="image/png" href="https://www.krindex.net/assets/icons/favicon.png" />
     <link type="application/json+oembed" href="../oembed.json" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={content} />

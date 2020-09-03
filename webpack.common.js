@@ -1,7 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -88,9 +87,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
-    }),
-    new FaviconsWebpackPlugin({
-      logo: "./src/Assets/icons/favicon.png",
     }),
     new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
