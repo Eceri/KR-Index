@@ -32,3 +32,11 @@ export const PERK_SAMPLE = {
     dark: "",
   },
 };
+
+export const PERK_URL_CHECK = [
+  { length: 5, content: ["0", "1"] },
+  { length: 5, content: ["0", "1"] },
+  { length: 2, content: ["0", "l", "d"] },
+  { length: 2, content: ["0", "l", "d"] },
+  { length: 2, content: ["0", "1"] },
+];

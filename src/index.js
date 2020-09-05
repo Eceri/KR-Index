@@ -1,5 +1,5 @@
 import React, { useGlobal, setGlobal } from "reactn";
-import { render, hydrate } from "react-dom";
+import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 // Relative Imports
@@ -22,6 +22,7 @@ setGlobal({
   error: ErrorState,
   build: INIT_BUILD,
   tp: 95,
+  heroName: "",
 });
 
 const Page = () => {

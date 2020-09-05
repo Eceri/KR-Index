@@ -1,7 +1,7 @@
 import React, { useEffect, useState, getGlobal } from "reactn";
 import {
   Image,
-  ClassPerks,
+  TierTwoPerks,
   TierOnePerks,
   UniqueWeapon,
   HeroSkill,
@@ -13,10 +13,13 @@ export const HeroGeneral = (props) => {
   const [heroInfo, setHeroInfo] = useState({});
   const heroName = getGlobal().heroName;
   const { heroPath } = props;
+
   useEffect(() => {
     AWSoperation(getHeroGeneralInfo, {
       name: heroName,
-    }).then((res) => setHeroInfo(res.data.getHero));
+    }).then((res) => {
+      setHeroInfo(res.data.getHero);
+    });
   }, [heroName]);
   return (
     <>
@@ -58,7 +61,7 @@ export const HeroGeneral = (props) => {
       <TierOnePerks />
       <hr className="seperator" />
       <h2 id="t2-anchor">T2 - Class-Specific</h2>
-      <ClassPerks heroClass={heroInfo.class} />
+      <TierTwoPerks heroClass={heroInfo.class} />
     </>
   );
 };

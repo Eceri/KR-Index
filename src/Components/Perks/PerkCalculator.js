@@ -4,7 +4,7 @@ import ReactTooltip from "react-tooltip";
 
 // Relative imports
 import { AWSoperation, getHeroSkills, createHelmet } from "Helpers";
-import { ClassPerks, TierOnePerks, GenericPerks } from "Components";
+import { TierTwoPerks, TierOnePerks, GenericPerks } from "Components";
 import { TP, Row, PerkContainer, Flex, Questionmark } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
 import { Button } from "Atoms";
@@ -52,7 +52,7 @@ const renderPerks = (
       </Row>
       <Row>
         <h3>T2</h3>
-        <ClassPerks heroClass={heroClass} />
+        <TierTwoPerks heroClass={heroClass} />
       </Row>
       <Row>
         <h3>T3</h3>

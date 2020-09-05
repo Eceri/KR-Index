@@ -1,35 +1,11 @@
 import React, { useGlobal, useEffect, useState } from "reactn";
 import ReactTooltip from "react-tooltip";
-import styled from "styled-components";
 import { useHistory, useLocation } from "react-router-dom";
 
 // Relative Imports
 import { Image } from "Components";
 import { PERK_COSTS, INIT_BUILD } from "Constants";
-import "../styles/genericPerks.css";
-
-const CheckImage = styled((props) => <Image {...props} />)`
-  filter: ${(props) => (props.active ? "" : "grayscale(100%)")};
-  &:hover {
-    cursor: pointer;
-  }
-  width: 4rem;
-  height: auto;
-  min-height: 4rem;
-  margin-top: 0.3rem;
-  margin-right: 0.75rem;
-  @media only screen and (max-width: 650px) {
-    width: 3rem;
-    min-height: 3rem;
-    margin-top: 0.1rem;
-    margin-right: 0.4rem;
-  }
-`;
-
-const PerkEffect = styled.p`
-  padding-top: 0.5rem;
-  width: 12rem;
-`;
+import { CheckImage, PerkEffect } from "Styles";
 
 const heroView = (perks) => {
   return perks.map((perk) => (
@@ -218,9 +194,9 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
               onClick={() => changer(darkChange(index, _type))}
             >
               <CheckImage
-                src={`${url}/${perk}${_type.shortcut}.png`}
-                dataTip
-                dataFor={`${url}/${perk}${_type.shortcut}.png`}
+                src={`/assets/${url}/${perk}${_type.shortcut}.png`}
+                data-tip
+                data-for={`${url}/${perk}${_type.shortcut}.png`}
                 active={isActive(
                   build.split("-")[tier],
                   darkChange(index, _type),
@@ -263,10 +239,10 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
           onClick={() => changer(index)}
         >
           <CheckImage
-            src={`${url}/${t5}.png`}
+            src={`/assets/${url}/${t5}.png`}
             className="genericPerkIcon"
-            dataTip
-            dataFor={`${url}/${t5}.png`}
+            data-tip
+            data-for={`${url}/${t5}.png`}
             active={isActive(build.split("-")[tier], index)}
           />
           <ReactTooltip id={`${url}/${t5}.png`}>
@@ -289,10 +265,10 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
         onClick={() => changer(index)}
       >
         <CheckImage
-          src={`${url}${perk.name}.png`}
+          src={`/assets/${url}${perk.name}.png`}
           className={"genericPerkIcon"}
-          dataTip
-          dataFor={perk.name}
+          data-tip
+          data-for={perk.name}
           active={isActive(build.split("-")[tier], index)}
         />
         <ReactTooltip id={perk.name}>

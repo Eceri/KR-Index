@@ -33,3 +33,26 @@ export const Questionmark = styled.span`
     cursor: pointer;
   }
 `;
+
+export const CheckImage = styled.img`
+  filter: ${(props) => (props.active ? "" : "grayscale(100%)")};
+  &:hover {
+    cursor: pointer;
+  }
+  width: 4rem;
+  height: auto;
+  min-height: 4rem;
+  margin-top: 0.3rem;
+  margin-right: 0.75rem;
+  @media only screen and (max-width: 650px) {
+    width: 3rem;
+    min-height: 3rem;
+    margin-top: 0.1rem;
+    margin-right: 0.4rem;
+  }
+`;
+
+export const PerkEffect = styled.p`
+  padding-top: 0.5rem;
+  width: 12rem;
+`;

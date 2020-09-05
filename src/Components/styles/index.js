@@ -5,10 +5,29 @@ export {
   SearchListElement,
   SearchInput,
   Filterbox,
-} from "./Searchbar";
+} from "./styles.search";
 
-export { TP, Row, PerkContainer, Questionmark } from "./perks.styles";
+export {
+  TP,
+  Row,
+  PerkContainer,
+  Questionmark,
+  CheckImage,
+  PerkEffect,
+} from "./styles.perks";
+
+export { HeroImage } from "./styles.hero";
 
 export const Flex = styled.div`
   display: flex;
 `;
+
+export {
+  Announcement,
+  Title,
+  TitleType,
+  TextContainer,
+  News,
+  SmallTab,
+  MovingImage,
+} from "./styles.news";
