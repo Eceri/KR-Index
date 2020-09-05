@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useGlobal } from "reactn";
 import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import { Image } from "Components";
-import "./../styles/heroes.css";
+import "../styles/heroes.css";
 //AWS
 import { AWSoperation } from "Helpers";
 
 export const Heroes = () => {
   let classes = require("./../../Assets/classes/classes.json");
+  const [heroName, setGlobalHeroName] = useGlobal("heroName");
   const title = (
     <Helmet>
       <title>{`Heroes`}</title>
@@ -23,21 +23,25 @@ export const Heroes = () => {
       {classes.map((heroClass) => (
         <div key={heroClass.name}>
           <h2 className={"classHeadline"}>
-            <Image
-              src={`classes/${heroClass.name.toLowerCase()}.png`}
+            <img
+              src={`/assets/classes/${heroClass.name.toLowerCase()}.png`}
               className="classIcon"
             />
             {heroClass.name}s
           </h2>
           <div className="heroesContainer">
             {heroClass.heroes.sort().map((hero) => (
-              <Link to={`/heroes/${hero}`} key={hero}>
-                <Image
-                  src={`heroes/${hero.toLowerCase()}/portrait.png`}
-                  dataTip={hero}
+              <NavLink
+                to={`/heroes/${hero}`}
+                key={hero}
+                onClick={() => setGlobalHeroName(hero)}
+              >
+                <img
+                  src={`/assets/heroes/${hero.toLowerCase()}/portrait.png`}
+                  data-tip={hero}
                   className="heroIcon"
                 />
-              </Link>
+              </NavLink>
             ))}
             <ReactToolTip border={true} className={"tooltip"} />
           </div>

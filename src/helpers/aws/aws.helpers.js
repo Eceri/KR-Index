@@ -125,8 +125,10 @@ const utStoryRequest = `{
     story
   }
 }`;
-export const getHeroStories = `query GetHeroStories($name: String!){
+export const getHeroBackgroundData = `query GetHeroBackgroundData($name: String!){
   getHero(name: $name){
+    name
+    title
     profile{
       age
       birthday

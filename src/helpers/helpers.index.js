@@ -7,7 +7,7 @@ export {
   listPlugPosts,
   getHeroHeadInfo,
   getHeroGeneralInfo,
-  getHeroStories,
+  getHeroBackgroundData,
   getHeroSkins,
   AWSoperation,
   AWSoperationLists,

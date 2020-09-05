@@ -34,7 +34,7 @@ const renderPerks = (
   return (
     <PerkContainer>
       <Row style={{ justifyContent: "space-between" }}>
-        <HeroHeader heroPath={`heroes/${name}/`} heroName={`${displayName}`} />
+        <HeroHeader />
       </Row>
       <Row style={{ justifyContent: "flex-end" }}>
         <TP value={tp}>TP: {tp}</TP>

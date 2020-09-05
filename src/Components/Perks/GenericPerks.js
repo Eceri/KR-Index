@@ -3,15 +3,14 @@ import ReactTooltip from "react-tooltip";
 import { useHistory, useLocation } from "react-router-dom";
 
 // Relative Imports
-import { Image } from "Components";
 import { PERK_COSTS, INIT_BUILD } from "Constants";
 import { CheckImage, PerkEffect } from "Styles";
 
 const heroView = (perks) => {
   return perks.map((perk) => (
     <div className={"genericPerk"} key={perk.name}>
-      <Image
-        src={`genericPerks/${perk.name}.png`}
+      <img
+        src={`/assets/genericPerks/${perk.name}.png`}
         className={"genericPerkIcon"}
       />
       <div>
@@ -153,7 +152,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
 
   const chooseTier = (perks, tier) => {
     let sliceTier;
-    url = `heroes/${name}`;
+    url = `/assets/heroes/${name}`;
 
     const mapSkillInfo = (skills) => {
       const result = skills.map((skill) => skill.name);
@@ -194,7 +193,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
               onClick={() => changer(darkChange(index, _type))}
             >
               <CheckImage
-                src={`/assets/${url}/${perk}${_type.shortcut}.png`}
+                src={`${url}/${perk}${_type.shortcut}.png`}
                 data-tip
                 data-for={`${url}/${perk}${_type.shortcut}.png`}
                 active={isActive(
@@ -231,7 +230,6 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
     }
     if (tier === 4) {
       const t5Array = ["light", "dark"];
-      url = `heroes/${name}`;
       return t5Array.map((t5, index) => (
         <div
           key={`${t5}${index}`}
@@ -239,7 +237,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
           onClick={() => changer(index)}
         >
           <CheckImage
-            src={`/assets/${url}/${t5}.png`}
+            src={`${url}/${t5}.png`}
             className="genericPerkIcon"
             data-tip
             data-for={`${url}/${t5}.png`}

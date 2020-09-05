@@ -87,7 +87,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
-      favicon: "./src/Assets/icons/favicon.png",
     }),
     new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),

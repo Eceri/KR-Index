@@ -10,6 +10,7 @@ import Helmet from "react-helmet";
 export const createHelmet = (title, content, image = "") => (
   <Helmet>
     <title>{title}</title>
+    <meta name="description" content={content} />
     <link type="application/json+oembed" href="../oembed.json" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={content} />

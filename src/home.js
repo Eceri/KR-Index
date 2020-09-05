@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useGlobal, useRef } from "reactn";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
 import { Tabs, TabList, TabPanel } from "react-tabs";
 
@@ -93,7 +93,7 @@ export const Home = () => {
   }, [error]);
 
   return (
-    <React.Fragment>
+    <>
       {createHelmet("King's Raid Index", "King's Raid Index News")}
       <div>
         <h1>Welcome to the King's Raid Index</h1>
@@ -151,7 +151,7 @@ export const Home = () => {
         <PlugGamePosts />
         <ReactTooltip border={true} />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
