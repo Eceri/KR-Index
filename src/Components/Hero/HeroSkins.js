@@ -91,6 +91,7 @@ const CloseButton = styled((props) => <span {...props} role="button">&times;</sp
   font-size: 5rem;
   line-height: 1rem;
   cursor: pointer;
+  Christmas of the Imperial Guard
 `;
 export const HeroSkins = () => {
   const heroName = getGlobal().heroName;
