@@ -1,20 +1,12 @@
 import React, { useState, useGlobal, useEffect } from "reactn";
 import { useHistory } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import styled from "styled-components";
 
+// Relative Imports
 import { PerkCalculator } from "Components";
-import { Flex, Filterbox } from "Styles";
+import { Flex, Filterbox, HeroImage } from "Styles";
 import { AWSoperation, listHeros, sortedSearch } from "Helpers";
-import { INIT_BUILD } from "Constants";
-
-// Styles
-const HeroImage = styled.span`
-  padding-right: 0.4rem;
-  &:hover {
-    cursor: pointer;
-  }
-`;
+import { INIT_BUILD, PERK_URL_CHECK } from "Constants";
 
 const handleWheel = (event, fetch, setFetch) => {
   const container = document.getElementById("verticalScroll");
@@ -38,21 +30,15 @@ const checkURL = (build, setError, name, hist) => {
     return null;
   }
   const urlSplit = build.split("-");
-  const checkObject = [
-    { length: 5, content: ["0", "1"] },
-    { length: 5, content: ["0", "1"] },
-    { length: 2, content: ["0", "l", "d"] },
-    { length: 2, content: ["0", "l", "d"] },
-    { length: 2, content: ["0", "1"] },
-  ];
+
   const checkLength = urlSplit.map(
-    (split, index) => checkObject[index].length === split.length && true
+    (split, index) => PERK_URL_CHECK[index].length === split.length && true
   );
   const split = urlSplit.map((string) => string.split(""));
 
   const checkContent = split
     .map((v, index) =>
-      v.map((a) => checkObject[index].content.map((c) => a === c && true))
+      v.map((a) => PERK_URL_CHECK[index].content.map((c) => a === c && true))
     )
     .flat();
 
@@ -60,7 +46,7 @@ const checkURL = (build, setError, name, hist) => {
     .map((v, index) => !v.includes(true) && index)
     .filter((v) => v !== false);
 
-  if (urlSplit.length < checkObject.length) {
+  if (urlSplit.length < PERK_URL_CHECK.length) {
     hist.push({ hash: INIT_BUILD });
     return null;
   }
@@ -169,8 +155,8 @@ export const PerksContainer = () => {
                 <img
                   src={`/assets/heroes/${hero.name.toLowerCase()}/portrait.png`}
                   className="heroIcon"
-                  dataTip
-                  dataFor={hero.name}
+                  data-tip
+                  data-for={hero.name}
                 />
                 <ReactTooltip
                   globalEventOff="touchstart"

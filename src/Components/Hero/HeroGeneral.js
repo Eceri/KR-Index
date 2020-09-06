@@ -1,5 +1,10 @@
 import React, { useEffect, useState, getGlobal } from "reactn";
-import { ClassPerks, TierOnePerks, UniqueWeapon, HeroSkill } from "Components";
+import {
+  TierTwoPerks,
+  TierOnePerks,
+  UniqueWeapon,
+  HeroSkill,
+} from "Components";
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Helpers";
 
@@ -49,7 +54,7 @@ export const HeroGeneral = () => {
       <TierOnePerks />
       <hr className="seperator" />
       <h2 id="t2-anchor">T2 - Class-Specific</h2>
-      <ClassPerks heroClass={heroInfo.class} />
+      <TierTwoPerks heroClass={heroInfo.class} />
     </>
   );
 };

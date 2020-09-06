@@ -1,5 +1,5 @@
 import React, { useGlobal, setGlobal } from "reactn";
-import { render, hydrate } from "react-dom";
+import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 // Relative Imports
@@ -27,7 +27,7 @@ setGlobal({
     class: "",
     damageType: "",
     position: "",
-  }
+  },
 });
 
 const Page = () => {
@@ -39,7 +39,7 @@ const Page = () => {
         <BrowserRouter>
           <ErrorHandler />
           <NavBar key={"components.js"} setError={setError} />
-          {Routes()}
+          <Routes />
         </BrowserRouter>
       </div>
       <Footer />

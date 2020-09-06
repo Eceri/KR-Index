@@ -1,6 +1,6 @@
 /*
-* @TODO:: List all Components here
-*/
+ * @TODO:: List all Components here
+ */
 //Misc
 export { Footer } from "./Footer";
 export { StatCaps } from "./StatCaps";
@@ -18,10 +18,10 @@ export { Maya } from "./Hero/Maya";
 export { UniqueTreasure } from "./Hero/UniqueTreasure";
 export { UniqueWeapon } from "./Hero/UniqueWeapon";
 //Perks
-export { TierOnePerks } from "./Hero/TierOnePerks";
-export { ClassPerks } from "./Hero/TierTwoPerks";
-export { GenericPerks } from "./Hero/GenericPerks";
-export { PerkCalculator } from "./PerkCalculator/PerkCalculator";
+export { TierOnePerks } from "./Perks/TierOnePerks";
+export { TierTwoPerks } from "./Perks/TierTwoPerks";
+export { GenericPerks } from "./Perks/GenericPerks";
+export { PerkCalculator } from "./Perks/PerkCalculator";
 //Artifacts
 export { Artifacts } from "./Artifacts/Artifacts";
 export { Artifact } from "./Artifacts/Artifact";

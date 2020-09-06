@@ -9,7 +9,7 @@ import { AWSoperation } from "Helpers";
 
 export const Heroes = () => {
   let classes = require("./../../Assets/classes/classes.json");
-  const [heroName, setGlobalHeroName] = useGlobal("heroName")
+  const [heroName, setGlobalHeroName] = useGlobal("heroName");
   const title = (
     <Helmet>
       <title>{`Heroes`}</title>
@@ -31,13 +31,14 @@ export const Heroes = () => {
           </h2>
           <div className="heroesContainer">
             {heroClass.heroes.sort().map((hero) => (
-              <NavLink 
-                  to={`/heroes/${hero}`} 
-                  key={hero}
-                  onClick={() => setGlobalHeroName(hero)}>
+              <NavLink
+                to={`/heroes/${hero}`}
+                key={hero}
+                onClick={() => setGlobalHeroName(hero)}
+              >
                 <img
                   src={`/assets/heroes/${hero.toLowerCase()}/portrait.png`}
-                  dataTip={hero}
+                  data-tip={hero}
                   className="heroIcon"
                 />
               </NavLink>
