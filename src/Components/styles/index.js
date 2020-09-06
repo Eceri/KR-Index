@@ -28,6 +28,5 @@ export {
   TitleType,
   TextContainer,
   News,
-  SmallTab,
   MovingImage,
 } from "./styles.news";
