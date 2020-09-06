@@ -86,62 +86,67 @@ const renderPerks = (
   );
 };
 
-export const PerkCalculator = (props) => {
-  // Props
-  const { heroName, heroReset } = props;
-
+export const PerkCalculator = ({ heroReset }) => {
   // history
   const hist = useHistory();
   const location = useLocation();
-  const { pathname, hash } = location;
+  const { pathname } = location;
 
   // State
-  const [name, setName] = useState(heroName);
-  const [reset, setReset] = useState(false);
+  const [reset, setReset] = useState(heroReset);
   const [perks, setPerks] = useState(PERK_SAMPLE);
   const [copySuccess, setCopySuccess] = useState(false);
 
   // Globals
+  const [heroName, setHeroName] = useGlobal("heroName");
   const [tp, setTP] = useGlobal("tp");
   const [globalBuild, setGlobalBuild] = useGlobal("build");
+  const [error, setError] = useGlobal("error");
 
   useEffect(() => {
     const hero = pathname.split("/").slice(-1).shift();
-    setName(hero);
+    setHeroName(hero);
   }, [pathname]);
 
   useEffect(() => {
-    AWSoperation(getHeroSkills, { name: name }).then((res) => {
-      const { dark, light, skill1, skill2, skill3, skill4 } = res.data.getHero;
-      setPerks({
-        s1: {
-          light: skill1.light,
-          dark: skill1.dark,
-          skillInfo: skill1.skillInfo,
-        },
-        s2: {
-          light: skill2.light,
-          dark: skill2.dark,
-          skillInfo: skill2.skillInfo,
-        },
-        s3: {
-          light: skill3.light,
-          dark: skill3.dark,
-          skillInfo: skill3.skillInfo,
-        },
-        s4: {
-          light: skill4.light,
-          dark: skill4.dark,
-          skillInfo: skill4.skillInfo,
-        },
-        general: {
-          light: light,
-          dark: dark,
-        },
-        heroClass: res.data.getHero.class,
+    try {
+      AWSoperation(getHeroSkills, { name: heroName }).then(({ data }) => {
+        if (data === undefined) {
+          return null;
+        }
+        const { dark, light, skill1, skill2, skill3, skill4 } = data.getHero;
+        setPerks({
+          s1: {
+            light: skill1.light,
+            dark: skill1.dark,
+            skillInfo: skill1.skillInfo,
+          },
+          s2: {
+            light: skill2.light,
+            dark: skill2.dark,
+            skillInfo: skill2.skillInfo,
+          },
+          s3: {
+            light: skill3.light,
+            dark: skill3.dark,
+            skillInfo: skill3.skillInfo,
+          },
+          s4: {
+            light: skill4.light,
+            dark: skill4.dark,
+            skillInfo: skill4.skillInfo,
+          },
+          general: {
+            light: light,
+            dark: dark,
+          },
+          heroClass: data.getHero.class,
+        });
       });
-    });
-  }, [name]);
+    } catch (error) {
+      setError({ message: error.message, redirect: false });
+    }
+  }, [heroName]);
 
   useEffect(() => {
     if (copySuccess) {
@@ -152,16 +157,13 @@ export const PerkCalculator = (props) => {
   }, [copySuccess]);
 
   useEffect(() => {
-    setName(heroName);
-    if (heroReset) {
-      setReset(true);
-    }
-  }, [heroReset, heroName]);
+    setReset(heroReset);
+  }, [heroReset]);
 
   useEffect(() => {
     if (reset) {
       hist.push({
-        pathname: `/perks/${name}`,
+        pathname: `/perks/${heroName}`,
         hash: `#${INIT_BUILD}`,
       });
       setGlobalBuild(INIT_BUILD);
@@ -172,11 +174,11 @@ export const PerkCalculator = (props) => {
 
   return (
     <>
-      {createHelmet(`Perks - ${name}`, name)}
+      {createHelmet(`Perks - ${heroName}`, heroName)}
       <Flex>
         {renderPerks(
           perks.heroClass,
-          name,
+          heroName,
           perks,
           tp,
           setReset,

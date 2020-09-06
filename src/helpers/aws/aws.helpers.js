@@ -205,13 +205,26 @@ export const allPlugsByOrder = `query TypePlugsByOrder{
 
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
-    let res = await API.graphql(graphqlOperation(createEvent, eventDetails));
+    let { data } = await API.graphql(
+      graphqlOperation(createEvent, eventDetails)
+    );
     const contextSplit = createEvent.split("{");
-    const contextName = contextSplit[1].split(/[{(]/g)[0];
-    if (res.data[contextName.trim()] === null) {
+    const contextName = contextSplit[1].split(/[{(]/g)[0].trim();
+    let result = data[contextName];
+    const isList = data[contextName].items !== undefined ? true : false;
+    let hasNextToken = false;
+
+    if (eventDetails !== undefined) {
+      hasNextToken = Object.keys(eventDetails).includes("nextToken");
+    }
+    if (isList && hasNextToken === false) {
+      result = result.items;
+    }
+
+    if (result === null) {
       throw Error;
     } else {
-      return res;
+      return result;
     }
   } catch (error) {
     return new Error(error);

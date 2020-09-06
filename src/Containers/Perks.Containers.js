@@ -90,14 +90,13 @@ export const PerksContainer = () => {
   }
 
   useEffect(() => {
-    checkURL(build, setError, hero, hist, setName);
+    checkURL(build, setError, hero, hist);
   }, []);
 
   useEffect(() => {
     if (fetch && fetchControl) {
       try {
-        AWSoperation(listHeros, { nextToken }).then((res) => {
-          const { items, nextToken } = res.data.listHeros;
+        AWSoperation(listHeros, { nextToken }).then(({ items, nextToken }) => {
           let joinHeros = heros.concat(items);
           setNextToken(nextToken);
           setHeros(joinHeros);
@@ -111,7 +110,6 @@ export const PerksContainer = () => {
         history.pushState(error, "Error", "/404");
       }
     }
-
     setName(hero);
   }, [fetch]);
 
@@ -122,6 +120,10 @@ export const PerksContainer = () => {
       setHeros(copyHeroes);
     }
   }, [heroFilter]);
+
+  useEffect(() => {
+    setReset(false);
+  }, [reset]);
 
   return (
     <>
@@ -171,7 +173,7 @@ export const PerksContainer = () => {
           </div>
         </div>
       </Flex>
-      <PerkCalculator heroName={name} heroReset={reset} />
+      <PerkCalculator heroReset={reset} />
     </>
   );
 };

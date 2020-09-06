@@ -66,8 +66,8 @@ export const Artifact = (name) => {
         }
       })
       .join(" ");
-    AWSoperation(getArtifact, { name: correctName }).then((res) =>
-      setArtifact(res.data.getArtifact)
+    AWSoperation(getArtifact, { name: correctName }).then((artifact) =>
+      setArtifact(artifact)
     );
   }, [name]);
 

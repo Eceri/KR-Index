@@ -24,7 +24,7 @@ const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
 const resizeTitle = (title) => {
   const text = title.split("]");
 
-  return text[1];
+  return text.slice(1).join("]");
 };
 
 const typeOfTitle = (title) => {
@@ -47,8 +47,8 @@ const PlugGamePosts = () => {
 
   useEffect(() => {
     AWSoperation(typePlugsByOrder, { type: DB_PLUG_TYPES[tabIndex] }).then(
-      (res) => {
-        setActiveNews(dataSuffix(res));
+      (news) => {
+        setActiveNews(news);
       }
     );
   }, [tabIndex]);

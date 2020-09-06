@@ -3,11 +3,7 @@ import styles from "styled-components";
 
 // Relative imports
 import { NavLink } from "react-router-dom";
-import {
-  AWSoperation,
-  listArtifacts,
-  sortedSearch,
-} from "Helpers";
+import { AWSoperation, listArtifacts, sortedSearch } from "Helpers";
 import { Searchbar } from "Atoms";
 import { ErrorState, INIT_BUILD } from "Constants";
 
@@ -109,7 +105,7 @@ export const NavBar = (page) => {
 
   useEffect(() => {
     AWSoperation(listArtifacts).then((artifacts) => {
-      setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
+      setArtifacts(sortedSearch(artifacts, "name"));
     });
     document.addEventListener("mousedown", handleClickOutside);
     return () => {

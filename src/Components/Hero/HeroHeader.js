@@ -6,14 +6,17 @@ import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
 export const HeroHeader = () => {
   const [error, setError] = useGlobal("error");
-  const [headInfo, setGlobalHeadInfo] = useGlobal("headInfo");
+  const [
+    { title, name, damageType, position, class: heroClass },
+    setGlobalHeadInfo,
+  ] = useGlobal("headInfo");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
   useEffect(() => {
     if (heroName != "") {
       try {
-        AWSoperation(getHeroHeadInfo, { name: heroName }).then((res) =>
-          setGlobalHeadInfo(res.data.getHero)
+        AWSoperation(getHeroHeadInfo, { name: heroName }).then((hero) =>
+          setGlobalHeadInfo(hero)
         );
       } catch (err) {
         setError(err);
@@ -23,29 +26,29 @@ export const HeroHeader = () => {
 
   return (
     <div className="flexBox">
-      {createHelmet(heroName, `${heroName} - ${headInfo.title}`)}
+      {createHelmet(heroName, `${heroName} - ${title}`)}
       <img
         src={`/assets/heroes/${heroName.toLowerCase()}/portrait.png`}
         id={"portrait"}
       />
       <div>
-        <h1>{headInfo.name}</h1>
-        <h2>{headInfo.title}</h2>
+        <h1>{name}</h1>
+        <h2>{title}</h2>
         <div id="heroType" className="flexBox">
           <img
-            src={`/assets/classes/${headInfo.class.toLowerCase()}.png`}
+            src={`/assets/classes/${heroClass.toLowerCase()}.png`}
             id={"heroClassIcon"}
             style={{ border: "none" }}
-            datatip={headInfo.class}
+            datatip={heroClass}
           />
           <img
-            src={`/assets/${headInfo.damageType}.png`}
+            src={`/assets/${damageType}.png`}
             id={"damageType"}
             alt={"dmg type"}
             style={{ border: "none" }}
-            datatip={headInfo.damageType}
+            datatip={damageType}
           />
-          <p>{headInfo.position}</p>
+          <p>{position}</p>
         </div>
       </div>
       <ReactTooltip />

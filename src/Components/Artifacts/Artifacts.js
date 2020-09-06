@@ -12,6 +12,7 @@ import {
   AWSoperation,
   sortedSearch,
   listOrderedArtifacts,
+  useWindowDimensions,
 } from "Helpers";
 import { Filterbox } from "Styles";
 
@@ -60,6 +61,8 @@ export const Artifacts = () => {
       ? decodeURIComponent(chosenArtifactName)
       : LOADING_ARTIFACT.name;
   const ARTIFACTS = "Artifacts";
+
+  // State
   const [artifactName, setArtifactName] = useState(
     replaceChosenArtifactName || "Abyssal Crown"
   );
@@ -68,14 +71,32 @@ export const Artifacts = () => {
   );
   const [copyArtifacts, setCopyArtifacts] = useState(artifacts);
   const [searchQuery, setSearchQuery] = useState("");
-  const scrollRef = useRef(null);
-  const executeScroll = () => scrollToRef(scrollRef);
   const [fetch, setFetch] = useState(true);
   const [fetchControl, setFetchControl] = useState(true);
+
+  const { height } = useWindowDimensions();
+  // Scroll
+  const scrollRef = useRef(null);
+  const executeScroll = () => scrollToRef(scrollRef);
 
   useEffect(() => {
     executeScroll();
   }, [artifactName]);
+
+  const handleScroll = () => {
+    if (
+      height + document.documentElement.scrollTop !==
+      document.documentElement.offsetHeight
+    )
+      return;
+
+    setFetch(true);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     try {
@@ -86,22 +107,6 @@ export const Artifacts = () => {
       console.error(error);
     }
   }, [replaceChosenArtifactName]);
-
-  const handleScroll = () => {
-    if (
-      window.innerHeight + document.documentElement.scrollTop !==
-      document.documentElement.offsetHeight
-    )
-      return;
-
-    setFetch(true);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    setCopyArtifacts(artifacts);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     if (searchQuery !== "") {
@@ -117,11 +122,11 @@ export const Artifacts = () => {
         AWSoperation(listOrderedArtifacts, {
           limit: 35,
           nextToken: token,
-        }).then((artifact) => {
-          const { items, nextToken } = artifact.data.artifactsByOrder;
+        }).then(({ items, nextToken }) => {
           let joinArtifacts = artifacts.concat(items);
           token = nextToken;
           setArtifacts(joinArtifacts);
+          setCopyArtifacts(joinArtifacts);
           if (token === null) {
             // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
             setFetchControl(false);

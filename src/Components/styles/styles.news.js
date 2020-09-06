@@ -39,13 +39,15 @@ const colors = {
   },
 };
 
-const colorPicker = (border) => {
-  let { name, type } = border;
+const colorPicker = ({ name, type }) => {
   if (name === "" || type === "") {
     return "";
   }
-  const test = name.toLowerCase().replace(/[!’´`'-]/g, "");
-  let nameToColor = test.split(" ");
+  const text = name
+    .toLowerCase()
+    .replace(/[!’´`'-]/g, "")
+    .replace(/\//g, " ");
+  let nameToColor = text.split(" ");
   nameToColor = nameToColor
     .map((v, i) => {
       if (i > 0) {
