@@ -6,7 +6,7 @@ import { useDrag } from "react-use-gesture";
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
-import { AWSoperation, typePlugsByOrder } from "Helpers";
+import { AWSoperation, typePlugsByOrder, useWindowDimensions } from "Helpers";
 import {
   Announcement,
   Title,
@@ -43,6 +43,7 @@ const PlugGamePosts = () => {
   //  States
   const [activeNews, setActiveNews] = useState([NEWS_DEFAULT]);
   const [tabIndex, setTabIndex] = useState(0);
+  const { isMobile } = useWindowDimensions();
 
   useEffect(() => {
     AWSoperation(typePlugsByOrder, { type: DB_PLUG_TYPES[tabIndex] }).then(
@@ -53,6 +54,9 @@ const PlugGamePosts = () => {
   }, [tabIndex]);
 
   const bindSwipe = useDrag(({ vxvy: [vx], last }) => {
+    if (!isMobile) {
+      return null;
+    }
     if (last && vx < 0.3) {
       // Swipe Left
       if (tabIndex < plugTypes.length - 1) {
