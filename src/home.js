@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
-import { Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useDrag } from "react-use-gesture";
 
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
@@ -12,7 +13,6 @@ import {
   TitleType,
   TextContainer,
   News,
-  SmallTab,
   MovingImage,
 } from "Styles";
 import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
@@ -41,39 +41,59 @@ const dataSuffix = (res) => {
 // render function
 const PlugGamePosts = () => {
   //  States
-  const [active, setActive] = useState([NEWS_DEFAULT]);
+  const [activeNews, setActiveNews] = useState([NEWS_DEFAULT]);
   const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {
     AWSoperation(typePlugsByOrder, { type: DB_PLUG_TYPES[tabIndex] }).then(
       (res) => {
-        setActive(dataSuffix(res));
+        setActiveNews(dataSuffix(res));
       }
     );
   }, [tabIndex]);
 
+  const bindSwipe = useDrag(({ vxvy: [vx], last }) => {
+    if (last && vx < 0.3) {
+      // Swipe Left
+      if (tabIndex < plugTypes.length - 1) {
+        setTabIndex(tabIndex + 1);
+      }
+    } else if (last && vx > 0.3) {
+      // Swipe Right
+      if (tabIndex > 0) {
+        setTabIndex(tabIndex - 1);
+      }
+    }
+  });
+
   return (
     <News>
       <h2 style={{ marginBottom: "1.5rem" }}>News</h2>
-      <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+      <Tabs
+        selectedTabClassName={"active_TabList"}
+        selectedTabPanelClassName={"active_TabPanel"}
+        selectedIndex={tabIndex}
+        onSelect={(index) => setTabIndex(index)}
+        {...bindSwipe()}
+      >
         <TabList>
           {plugTypes.map((type) => (
-            <SmallTab key={type}>{type}</SmallTab>
+            <Tab key={type}>{type}</Tab>
           ))}
         </TabList>
         {plugTypes.map((type) => (
           <TabPanel key={type}>
-            {active.map((notice) => (
+            {activeNews.map((active) => (
               <Announcement
-                key={notice.url}
-                onClick={() => window.open(notice.url, "_blank")}
-                borderColor={{ name: typeOfTitle(notice.title), type: type }}
+                key={active.url}
+                onClick={() => window.open(active.url, "_blank")}
+                borderColor={{ name: typeOfTitle(active.title), type: type }}
               >
                 <TextContainer>
-                  <TitleType>{typeOfTitle(notice.title)}</TitleType>
-                  <Title>{resizeTitle(notice.title)}</Title>
+                  <TitleType>{typeOfTitle(active.title)}</TitleType>
+                  <Title>{resizeTitle(active.title)}</Title>
                 </TextContainer>
-                <MovingImage src={notice.thumbnail} />
+                <MovingImage src={active.thumbnail} />
               </Announcement>
             ))}
           </TabPanel>

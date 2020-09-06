@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { Tab } from "react-tabs";
+import styled, { css, keyframes } from "styled-components";
 
 const purple = "#4b2665";
 const guide = "#f0e7d3";
@@ -100,27 +99,32 @@ export const TextContainer = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+`;
+
+const animation = (props) => css`
+  1s ${fadeIn} linear
+`;
+
 export const News = styled.div`
   padding: 1rem;
   @media only screen and (max-width: 650px) {
     padding: 0;
   }
-`;
-
-export const SmallTab = styled((props) => <Tab {...props} />)`
-  width: 4rem;
-  list-style: none;
-  padding: 0.3rem;
-  text-align: center;
-  &:hover {
-    cursor: pointer;
+  .active_TabPanel {
+    animation: ${animation};
   }
-  @media only screen and (max-width: 650px) {
-    font-size: 1rem;
+  .active_TabList {
+    animation: ${animation};
+    background: dimgray;
   }
 `;
-
-SmallTab.tabsRole = "Tab";
 
 export const MovingImage = styled.img`
   height: 100%;

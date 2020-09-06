@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const ManifestPlugin = require("webpack-manifest-plugin");
 
 module.exports = {
   entry: {
@@ -97,5 +98,6 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8,
     }),
+    new ManifestPlugin(),
   ],
 };

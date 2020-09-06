@@ -5,6 +5,7 @@ import { useHistory, useLocation } from "react-router-dom";
 // Relative Imports
 import { PERK_COSTS, INIT_BUILD } from "Constants";
 import { CheckImage, PerkEffect } from "Styles";
+import "../styles/genericPerks.css";
 
 const heroView = (perks) => {
   return perks.map((perk) => (
@@ -339,6 +340,7 @@ export const GenericPerks = (props) => {
   }
 
   const { pathname } = location;
+
   return (
     <div>
       {pathname.includes("/perks")
