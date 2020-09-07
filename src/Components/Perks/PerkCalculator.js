@@ -110,11 +110,19 @@ export const PerkCalculator = ({ heroReset }) => {
 
   useEffect(() => {
     try {
-      AWSoperation(getHeroSkills, { name: heroName }).then(({ data }) => {
-        if (data === undefined) {
+      AWSoperation(getHeroSkills, { name: heroName }).then((heroSkills) => {
+        if (heroSkills === undefined) {
           return null;
         }
-        const { dark, light, skill1, skill2, skill3, skill4 } = data.getHero;
+        const {
+          dark,
+          light,
+          skill1,
+          skill2,
+          skill3,
+          skill4,
+          class: heroClass,
+        } = heroSkills;
         setPerks({
           s1: {
             light: skill1.light,
@@ -140,7 +148,7 @@ export const PerkCalculator = ({ heroReset }) => {
             light: light,
             dark: dark,
           },
-          heroClass: data.getHero.class,
+          heroClass: heroClass,
         });
       });
     } catch (error) {
@@ -171,6 +179,10 @@ export const PerkCalculator = ({ heroReset }) => {
       setReset(false);
     }
   }, [reset]);
+
+  useEffect(() => {
+    console.log(perks);
+  }, [perks]);
 
   return (
     <>

@@ -16,7 +16,7 @@ export const HeroGeneral = () => {
     if (heroName != "") {
       AWSoperation(getHeroGeneralInfo, {
         name: heroName,
-      }).then((res) => setHeroInfo(res.data.getHero));
+      }).then((hero) => setHeroInfo(hero));
     }
   }, [heroName]);
   return (

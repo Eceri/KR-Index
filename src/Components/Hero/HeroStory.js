@@ -9,14 +9,14 @@ export const HeroStory = (props) => {
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
 
   useEffect(() => {
-    AWSoperation(getHeroBackgroundData, { name: heroName }).then((res) =>
-      setHeroBackgroundData(res.data.getHero)
+    AWSoperation(getHeroBackgroundData, { name: heroName }).then((background) =>
+      setHeroBackgroundData(background)
     );
   }, [heroName]);
-  console.log(heroBackgroudData.title)
+  console.log(heroBackgroudData.title);
 
-  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}`
-  
+  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}`;
+
   let createStoryDiv = (name, story, iconPathFragment) => (
     <>
       <hr className="seperator" />
@@ -55,13 +55,19 @@ export const HeroStory = (props) => {
                   {createTableRow("Race", heroBackgroudData.profile.race)}
                   {createTableRow("Age", heroBackgroudData.profile.age)}
                   {createTableRow("Height", heroBackgroudData.profile.height)}
-                  {createTableRow("Birthday", heroBackgroudData.profile.birthday)}
+                  {createTableRow(
+                    "Birthday",
+                    heroBackgroudData.profile.birthday
+                  )}
                   {createTableRow(
                     "Constellation",
                     heroBackgroudData.profile.constellation
                   )}
                   {createTableRow("Likes", heroBackgroudData.profile.likes)}
-                  {createTableRow("Dislikes", heroBackgroudData.profile.dislikes)}
+                  {createTableRow(
+                    "Dislikes",
+                    heroBackgroudData.profile.dislikes
+                  )}
                 </tbody>
               </table>
             </div>
@@ -69,10 +75,7 @@ export const HeroStory = (props) => {
           <hr />
           <div>
             <div className="headline">
-              <img
-                src={`${assetsUrl}/portrait.png`}
-                className="uniqueItem"
-              />
+              <img src={`${assetsUrl}/portrait.png`} className="uniqueItem" />
               <h2>{heroName}</h2>
             </div>
             <p className={"story"}>{heroBackgroudData.story}</p>
