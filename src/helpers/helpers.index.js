@@ -10,7 +10,6 @@ export {
   getHeroBackgroundData,
   getHeroSkins,
   AWSoperation,
-  AWSoperationLists,
   getHeroSkills,
   listHeros,
   listOrderedArtifacts,

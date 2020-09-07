@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useGlobal } from "reactn";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
+import { useLocation } from "react-router-dom";
 
 // Relative imports
 import { Artifact } from "Components";
@@ -51,25 +52,25 @@ const ClickedArtifact = styled.section`
 `;
 
 // Implementation
-
 const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
 let token = null;
+const ARTIFACTS = "Artifacts";
 export const Artifacts = () => {
-  const chosenArtifactName = window.location.pathname.split("/")[2];
+  // Location
+  const { pathname } = useLocation();
+  const chosenArtifactName = pathname.split("/")[2];
   const replaceChosenArtifactName =
     chosenArtifactName !== undefined
       ? decodeURIComponent(chosenArtifactName)
       : LOADING_ARTIFACT.name;
-  const ARTIFACTS = "Artifacts";
 
   // State
   const [artifactName, setArtifactName] = useState(
-    replaceChosenArtifactName || "Abyssal Crown"
+    replaceChosenArtifactName || LOADING_ARTIFACT.name
   );
   const [artifacts, setArtifacts] = useState(
     JSON.parse(GET_LOCALSTORAGE(ARTIFACTS)) || []
   );
-  const [copyArtifacts, setCopyArtifacts] = useState(artifacts);
   const [searchQuery, setSearchQuery] = useState("");
   const [fetch, setFetch] = useState(true);
   const [fetchControl, setFetchControl] = useState(true);
@@ -79,23 +80,30 @@ export const Artifacts = () => {
   const scrollRef = useRef(null);
   const executeScroll = () => scrollToRef(scrollRef);
 
+  // Globals
+  const [globalArtifacts, setGlobalArtifacts] = useGlobal("artifacts");
+
   useEffect(() => {
     executeScroll();
   }, [artifactName]);
 
-  const handleScroll = () => {
-    if (
-      height + document.documentElement.scrollTop !==
-      document.documentElement.offsetHeight
-    )
-      return;
+  // const handleScroll = () => {
+  //   if (
+  //     height + document.documentElement.scrollTop !==
+  //     document.documentElement.offsetHeight
+  //   )
+  //     return;
 
-    setFetch(true);
-  };
+  //   setFetch(true);
+  // };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    AWSoperation(listOrderedArtifacts).then((artifacts) => {
+      setArtifacts(artifacts);
+      setGlobalArtifacts(artifacts);
+    });
+    // window.addEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -110,34 +118,35 @@ export const Artifacts = () => {
 
   useEffect(() => {
     if (searchQuery !== "") {
-      setArtifacts(sortedSearch(artifacts, "name", searchQuery));
+      setArtifacts(sortedSearch(globalArtifacts, "name", searchQuery));
     } else {
-      setArtifacts(copyArtifacts);
+      setArtifacts(globalArtifacts);
     }
   }, [searchQuery]);
 
-  useEffect(() => {
-    if (fetch && fetchControl) {
-      try {
-        AWSoperation(listOrderedArtifacts, {
-          limit: 35,
-          nextToken: token,
-        }).then(({ items, nextToken }) => {
-          let joinArtifacts = artifacts.concat(items);
-          token = nextToken;
-          setArtifacts(joinArtifacts);
-          setCopyArtifacts(joinArtifacts);
-          if (token === null) {
-            // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
-            setFetchControl(false);
-          }
-        });
-        setFetch(false);
-      } catch (error) {
-        history.pushState(error, "Error", "/404");
-      }
-    }
-  }, [fetch]);
+  // useEffect(() => {
+
+  //   if (fetch && fetchControl) {
+  //     try {
+  //       AWSoperation(listOrderedArtifacts, {
+  //         limit: 35,
+  //         nextToken: token,
+  //       }).then(({ items, nextToken }) => {
+  //         let joinArtifacts = artifacts.concat(items);
+  //         token = nextToken;
+  //         setArtifacts(joinArtifacts);
+  //         setCopyArtifacts(joinArtifacts);
+  //         if (token === null) {
+  //           // SET_LOCALSTORAGE(ARTIFACTS, joinArtifacts);
+  //           setFetchControl(false);
+  //         }
+  //       });
+  //       setFetch(false);
+  //     } catch (error) {
+  //       history.pushState(error, "Error", "/404");
+  //     }
+  //   }
+  // }, [fetch]);
 
   return (
     <div id="content" ref={scrollRef}>
@@ -164,26 +173,30 @@ export const Artifacts = () => {
   );
 };
 
-const renderArtifactPictures = (item, index, setArtifactName) => (
-  <React.Fragment key={item.name + index}>
+const renderArtifactPictures = (
+  { name, drop, release },
+  index,
+  setArtifactName
+) => (
+  <React.Fragment key={name + index}>
     <ArtifactImage
       onClick={() => {
-        setArtifactName(item.name);
+        setArtifactName(name);
         window.history.pushState(
-          `artifact/${item.name}`,
-          item.name,
-          `/artifacts/${encodeURIComponent(item.name)}`
+          `artifact/${name}`,
+          name,
+          `/artifacts/${encodeURIComponent(name)}`
         );
       }}
-      src={`/assets/artifacts/${item.name}.png`}
-      alt={`Picture of ${item.name}`}
+      src={`/assets/artifacts/${name}.png`}
+      alt={`Picture of ${name}`}
       align="left"
       data-tip
-      data-for={item.name}
+      data-for={name}
     />
-    <ReactTooltip id={item.name}>
-      {item.name}
-      {`\n Drop: ${item.drop} \n Release: ${item.release}`}
+    <ReactTooltip id={name}>
+      {name}
+      {`\n Drop: ${drop} \n Release: ${release}`}
     </ReactTooltip>
   </React.Fragment>
 );

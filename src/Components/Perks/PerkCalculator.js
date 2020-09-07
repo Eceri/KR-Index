@@ -180,10 +180,6 @@ export const PerkCalculator = ({ heroReset }) => {
     }
   }, [reset]);
 
-  useEffect(() => {
-    console.log(perks);
-  }, [perks]);
-
   return (
     <>
       {createHelmet(`Perks - ${heroName}`, heroName)}

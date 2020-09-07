@@ -1,9 +1,15 @@
-import React, { useEffect, useState, useRef } from "react";
-import { SearchBox, SearchInput, SearchListElement } from "Styles";
+import React, { useEffect, useState, useRef, useGlobal } from "reactn";
 
 // Relative imports
 import classes from "Assets/classes/classes.json";
-import { sortedSearch } from "Helpers";
+import { SearchBox, SearchInput, SearchListElement } from "Styles";
+import {
+  AWSoperation,
+  listOrderedArtifacts,
+  sortedSearch,
+  useWindowDimensions,
+} from "Helpers";
+import Icon_mg from "Assets/icons/magnifying-glass.js";
 
 const classesSorted = [
   ...classes
@@ -34,15 +40,27 @@ const searchFilter = (_array) => {
   return resultArray;
 };
 
-export const Searchbar = (props) => {
-  const { artifacts } = props;
+export const Searchbar = () => {
+  // State
+  const [artifacts, setArtifacts] = useState(
+    JSON.parse(localStorage.getItem("Artifacts")) || []
+  );
+  // Search
   const [searchQuery, setSearchQuery] = useState("");
   const [arrayCopy, setArrayCopy] = useState([]);
   const [arraySearch, setArraySearch] = useState([]);
   const [search, setSearch] = useState(false);
   const [selected, setSelected] = useState(0);
 
+  // Globals
+  const [globalArtifacts, setGlobalArtifacts] = useGlobal("artifacts");
+
+  // Mobile Check
+  const { isMobile } = useWindowDimensions();
+  const [mobile, setMobile] = useState(true);
+
   const ref = useRef();
+  const inputRef = useRef();
 
   const handleClick = (event) => {
     if (ref.current.contains(event.target)) {
@@ -74,6 +92,20 @@ export const Searchbar = (props) => {
   }, []);
 
   useEffect(() => {
+    if (isMobile && !search) {
+      setMobile(true);
+    }
+    if (globalArtifacts.length > 1) {
+      setArtifacts(globalArtifacts);
+    } else if (search && artifacts.length < 1) {
+      AWSoperation(listOrderedArtifacts).then((artifacts) => {
+        setArtifacts(artifacts);
+        setGlobalArtifacts(artifacts);
+      });
+    }
+  }, [search]);
+
+  useEffect(() => {
     const _array = searchFilter(artifacts, "");
     setArrayCopy(_array);
     setArraySearch(_array);
@@ -92,6 +124,12 @@ export const Searchbar = (props) => {
     setArraySearch(resultArraySort);
   }, [searchQuery]);
 
+  useEffect(() => {
+    if (!mobile) {
+      inputRef.current.focus();
+    }
+  }, [mobile]);
+
   return (
     <div
       ref={ref}
@@ -101,11 +139,11 @@ export const Searchbar = (props) => {
       {search && (
         <SearchBox>
           <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
-            {arraySearch.map((item, index) => (
+            {arraySearch.map(({ type, name }, index) => (
               <SearchListElement
-                to={`/${item.type}/${item.name}`}
+                to={`/${type}/${name}`}
                 activeStyle={{ color: "lightgrey" }}
-                key={item.name}
+                key={name}
                 onClick={() => {
                   setSearch(false);
                   setSearchQuery("");
@@ -114,16 +152,34 @@ export const Searchbar = (props) => {
                 onMouseOver={() => setSelected(index)}
                 tabIndex={index}
               >
-                {item.name}
+                {name}
               </SearchListElement>
             ))}
           </ul>
         </SearchBox>
       )}
+      {isMobile && mobile && (
+        <Icon_mg
+          alt="Searchicon"
+          style={{
+            border: "1px solid transparent",
+            height: "1.5rem",
+            fill: "white",
+            margin: "0.5rem",
+            marginTop: "0.7rem",
+          }}
+          onClick={() => {
+            setMobile(false);
+            setSearch(true);
+          }}
+        />
+      )}
       <SearchInput
+        ref={inputRef}
+        isMobile={mobile}
         placeholder="Search..."
-        onChange={(e) => {
-          setSearchQuery(e.currentTarget.value.toLowerCase());
+        onChange={({ currentTarget: { value } }) => {
+          setSearchQuery(value.toLowerCase());
         }}
         value={searchQuery}
         aria-label="Search"

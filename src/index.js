@@ -8,7 +8,7 @@ import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { Footer } from "Components";
 import { ErrorHandler } from "Helpers";
-import { ErrorState, INIT_BUILD } from "Constants";
+import { ErrorState, INIT_BUILD, LOADING_ARTIFACT } from "Constants";
 import { Routes } from "./Routes";
 
 // Amplify Settings
@@ -28,6 +28,7 @@ setGlobal({
     damageType: "",
     position: "",
   },
+  artifacts: [LOADING_ARTIFACT],
 });
 
 const Page = () => {
