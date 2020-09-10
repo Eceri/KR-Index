@@ -8,17 +8,41 @@ import {
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
-export const HeroGeneral = () => {
+export const HeroGeneral = (props) => {
   const [heroInfo, setHeroInfo] = useState({});
-  const heroName = getGlobal().heroName;
+  const { heroName } = getGlobal();
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     if (heroName != "") {
       AWSoperation(getHeroGeneralInfo, {
         name: heroName,
-      }).then((hero) => setHeroInfo(hero));
+      }).then((hero) => {
+        setHeroInfo(hero);
+        setIsLoading(false);
+      });
     }
+    return () => setIsLoading(true);
   }, [heroName]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    let scrollAnchor = window.location.hash;
+    if (scrollAnchor !== undefined && scrollAnchor !== null) {
+      let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
+      let scrollToTopPosition = 0;
+      if (element !== null) {
+        scrollToTopPosition = element.offsetTop - 50;
+      }
+      window.scrollTo({
+        top: scrollToTopPosition,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [window.location.hash, isLoading]);
+
   return (
     <>
       <h2> Unique Weapon </h2> <hr />

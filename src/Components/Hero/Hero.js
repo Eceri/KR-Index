@@ -1,17 +1,8 @@
-import React, { useEffect, useState, useGlobal, Suspense } from "reactn";
+import React, { useEffect, useState, useGlobal, useLayoutEffect } from "reactn";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import { Spinner } from "Styles";
-
 // Relative Imports
-import {
-  HeroGeneral,
-  HeroStory,
-  HeroSkins,
-  HeroVoice,
-  HeroHeader,
-} from "Components";
-import ReactTooltip from "react-tooltip";
+import { HeroGeneral, HeroStory, HeroSkins, HeroHeader } from "Components";
 import { createHelmet } from "Helpers";
 import "../styles/hero.css";
 import "../styles/tabStyles.css";
@@ -20,7 +11,6 @@ export const Hero = (props) => {
   const [error, setError] = useGlobal("error");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
   const [tabIndex, setTabIndex] = useState(0);
-  const [scrollAnchor, setScrollAnchor] = useState();
 
   useEffect(() => {
     let correctName = props.match.params.hero
@@ -36,27 +26,23 @@ export const Hero = (props) => {
 
   //Change method for React-Tabs
   const tabSelected = (index, lastIndex) => {
-    console.log("tab Selected Called");
-    if (index !== lastIndex) {
-      setTabIndex(index);
-      let url;
-      if (index === 1) {
-        url = `#story`;
-      } else if (index === 2) {
-        url = `#skins`;
-      } else url = `/heroes/${heroName}`;
-      props.history.push(url);
-      return true;
-    }
-    return false;
+    if (index == lastIndex) return false;
+
+    setTabIndex(index);
+    let url;
+    if (index === 1) {
+      url = `#story`;
+    } else if (index === 2) {
+      url = `#skins`;
+    } else url = `/heroes/${heroName}`;
+    props.history.push(url);
   };
-  // scroll-To, needs to be manually done, due to timing with the page
 
   //handling #-Fragments for Tabs
   useEffect(() => {
-    let hashFragments = window.location.hash.split("-");
-    setScrollAnchor(hashFragments[1]);
-    switch (hashFragments[0]) {
+    let hashFragment = window.location.hash;
+    let anchorIndex = 1;
+    switch (hashFragment) {
       case "#story":
         setTabIndex(1);
         break;
@@ -64,50 +50,27 @@ export const Hero = (props) => {
         setTabIndex(2);
         break;
       default:
+        anchorIndex = 0;
         setTabIndex(0);
-        setScrollAnchor(hashFragments[0]);
         break;
     }
-    console.log(
-      "hash changed",
-      window.location.hash,
-      "scroll anchor",
-      scrollAnchor
-    );
   }, [window.location.hash]);
 
-  //scroll to a component.
-  useEffect(() => {
-    console.log("scrollAnchor changed", scrollAnchor);
-    if (scrollAnchor !== undefined && scrollAnchor !== null) {
-      let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
-      let scrollToTopPosition = 0;
-      if (element !== null) {
-        scrollToTopPosition = element.offsetTop - 60;
-      }
-      window.scrollTo({
-        top: scrollToTopPosition,
-        left: 0,
-        behavior: "smooth",
-      });
-      console.log("scrolled");
-    }
-  }, [scrollAnchor]);
-
+  //create helmet for title
+  const helmet = createHelmet(
+    heroName,
+    `Details - ${heroName}`,
+    `/heroes/${heroName.toLowerCase()}/portrait.png`
+  );
   return (
     <>
       <HeroHeader />
-      {createHelmet(
-        heroName,
-        `Details - ${heroName}`,
-        `/heroes/${heroName.toLowerCase()}/portrait.png`
-      )}
+      {helmet}
       <Tabs selectedIndex={tabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>
           <Tab>Story</Tab>
           <Tab>Skins</Tab>
-          {/* <Tab>Voice</Tab> */}
         </TabList>
         <TabPanel>
           <HeroGeneral />
@@ -119,7 +82,6 @@ export const Hero = (props) => {
           <HeroSkins />
         </TabPanel>
       </Tabs>
-      <ReactTooltip />
     </>
   );
 };

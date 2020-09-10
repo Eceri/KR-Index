@@ -1,7 +1,6 @@
 import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
 
-import { createHelmet } from "Helpers";
 import { AWSoperation, getHeroHeadInfo } from "Aws";
 
 export const HeroHeader = () => {
@@ -38,14 +37,14 @@ export const HeroHeader = () => {
             src={`/assets/classes/${heroClass.toLowerCase()}.png`}
             id={"heroClassIcon"}
             style={{ border: "none" }}
-            datatip={heroClass}
+            data-tip={heroClass}
           />
           <img
             src={`/assets/${damageType}.png`}
             id={"damageType"}
             alt={"dmg type"}
             style={{ border: "none" }}
-            datatip={damageType}
+            data-tip={damageType}
           />
           <p>{position}</p>
         </div>
