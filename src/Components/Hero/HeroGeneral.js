@@ -1,4 +1,4 @@
-import React, { useEffect, useState, getGlobal } from "reactn";
+import React, { useEffect, useState, getGlobal, useGlobal } from "reactn";
 import {
   TierTwoPerks,
   TierOnePerks,
@@ -9,6 +9,7 @@ import {
 import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
 export const HeroGeneral = (props) => {
+  const [error, setError] = useGlobal("error")
   const [heroInfo, setHeroInfo] = useState({});
   const { heroName } = getGlobal();
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
@@ -21,7 +22,12 @@ export const HeroGeneral = (props) => {
       }).then((hero) => {
         setHeroInfo(hero);
         setIsLoading(false);
-      });
+      })
+      .catch(err => setError({
+        message: "Bad Hero",
+        redirect: true,
+        url: `/heroes/`
+      }))
     }
     return () => setIsLoading(true);
   }, [heroName]);

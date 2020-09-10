@@ -28,6 +28,7 @@ export const AWSoperation = async (createEvent, eventDetails) => {
     const contextSplit = createEvent.split("{");
     const contextName = contextSplit[1].split(/[{(]/g)[0].trim();
     let result = data[contextName];
+    if (result == null) throw "test";
     const isList = data[contextName].items !== undefined ? true : false;
     let hasNextToken = false;
 
@@ -44,6 +45,6 @@ export const AWSoperation = async (createEvent, eventDetails) => {
       return result;
     }
   } catch (error) {
-    return new Error(error);
+    throw error;
   }
 };

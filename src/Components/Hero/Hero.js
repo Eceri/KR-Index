@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useGlobal, useLayoutEffect } from "reactn";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
