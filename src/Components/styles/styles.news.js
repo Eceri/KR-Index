@@ -1,51 +1,17 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
+import { Tab } from "react-tabs";
+import { colors } from "./styles.colors";
 
-const purple = "#4b2665";
-const guide = "#f0e7d3";
-const maintenance = "#ff7b00";
-const gg = "#4867aa";
-const teal = "#00c9b0";
-const events = "#FF72C0";
-const specialShop = "#8D488D";
-const colors = {
-  notices: {
-    notice: "white",
-    maintenanceNotice: "#c7ced4",
-    emergencyMaintenanceComplete: maintenance,
-    emergencyMaintenance: maintenance,
-    maintenanceCompleted: "#ffc100",
-    extendedMaintenance: maintenance,
-  },
-  patches: {
-    patchNote: teal,
-    gameGuide: gg,
-  },
-  content: {
-    kingsRaidVod: purple,
-    gmNote: "darkblue",
-    vod: purple,
-    guide: guide,
-    teaser: purple,
-    developersNote: "darkblue",
-  },
-  events: {
-    event: events,
-    facebookTwitter: events,
-  },
-  shop: {
-    specialShopUpdate: specialShop,
-    specialShop: specialShop,
-  },
-};
-
-const colorPicker = (border) => {
-  let { name, type } = border;
+const colorPicker = ({ name, type }) => {
   if (name === "" || type === "") {
     return "";
   }
-  const test = name.toLowerCase().replace(/[!’´`'-]/g, "");
-  let nameToColor = test.split(" ");
+  const text = name
+    .toLowerCase()
+    .replace(/[!’´`'-]/g, "")
+    .replace(/\//g, " ");
+  let nameToColor = text.split(" ");
   nameToColor = nameToColor
     .map((v, i) => {
       if (i > 0) {
@@ -56,7 +22,7 @@ const colorPicker = (border) => {
     })
     .join("");
   type = `${type.charAt(0).toLowerCase()}${type.slice(1)}`;
-  return colors[type][nameToColor];
+  return colors.News[type][nameToColor];
 };
 
 // Styling
@@ -69,6 +35,7 @@ export const Announcement = styled.div`
   &:hover {
     cursor: pointer;
     background-color: #262626;
+    border-color: white;
   }
   border: 2px solid transparent;
   border-left-color: ${(props) => colorPicker(props.borderColor)};
@@ -87,7 +54,6 @@ export const TitleType = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  // padding: 1rem;
   display: flex;
   flex-direction: column;
   min-width: calc(18rem - 5rem);
@@ -128,10 +94,23 @@ export const News = styled.div`
 
 export const MovingImage = styled.img`
   height: 100%;
-  width: 240px;
+  width: 15rem;
+  object-fit: cover;
   @media only screen and (max-width: 650px) {
-    max-width: 5rem;
-    object-fit: cover;
+    min-wdith: 5rem;
+    max-width: 33%;
     object-position: 40% 0;
   }
 `;
+
+export const SmallTab = styled((props) => <Tab {...props} />)`
+  width: 20%;
+  list-style: none;
+  padding: 0.3rem;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+SmallTab.tabsRole = "Tab";

@@ -8,7 +8,12 @@ import "./Components/styles/base.css";
 import "./Components/styles/home.css";
 import { Footer } from "Components";
 import { ErrorHandler } from "Helpers";
-import { ErrorState, INIT_BUILD } from "Constants";
+import {
+  ErrorState,
+  INIT_BUILD,
+  LOADING_ARTIFACT,
+  INIT_HEROHEADER,
+} from "Constants";
 import { Routes } from "./Routes";
 
 // Amplify Settings
@@ -21,13 +26,8 @@ setGlobal({
   build: INIT_BUILD,
   tp: 95,
   heroName: "",
-  headInfo: {
-    name: "",
-    title: "",
-    class: "",
-    damageType: "",
-    position: "",
-  },
+  headInfo: INIT_HEROHEADER,
+  artifacts: [LOADING_ARTIFACT],
 });
 
 const Page = () => {

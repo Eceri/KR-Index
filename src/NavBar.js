@@ -3,11 +3,6 @@ import styles from "styled-components";
 
 // Relative imports
 import { NavLink } from "react-router-dom";
-import {
-  AWSoperation,
-  listArtifacts,
-  sortedSearch,
-} from "Helpers";
 import { Searchbar } from "Atoms";
 import { ErrorState, INIT_BUILD } from "Constants";
 
@@ -34,7 +29,7 @@ const Arrow = styles.span`
   }}
 `;
 
-const Misc = styles.div`
+const Tools = styles.div`
   &:hover {
     cursor: pointer;
     background: black;
@@ -83,20 +78,18 @@ const Dropdown = (show, setShow, direction) => {
 
   return (
     <div>
-      <Misc onClick={() => handleClick()}>
-        Misc <Arrow direction={direction} style={{ marginLeft: "0.2rem" }} />
-      </Misc>
+      <Tools onClick={() => handleClick()}>
+        Tools <Arrow direction={direction} style={{ marginLeft: "0.2rem" }} />
+      </Tools>
       {renderShow()}
     </div>
   );
 };
 
 export const NavBar = (page) => {
-  const [artifacts, setArtifacts] = useState(
-    JSON.parse(localStorage.getItem("Artifacts")) || []
-  );
   const [show, setShow] = useState(false);
   const [direction, setDirection] = useState("down");
+  const [mobileSearch, setMobileSearch] = useState(false);
 
   const miscRef = useRef();
 
@@ -108,9 +101,6 @@ export const NavBar = (page) => {
   };
 
   useEffect(() => {
-    AWSoperation(listArtifacts).then((artifacts) => {
-      setArtifacts(sortedSearch(artifacts.data.listArtifacts.items, "name"));
-    });
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -148,8 +138,12 @@ export const NavBar = (page) => {
       >
         Artifacts
       </NavLink>
-      {Dropdown(show, setShow, direction, setDirection)}
-      <Searchbar artifacts={artifacts} />
+      {mobileSearch ? (
+        <></>
+      ) : (
+        <>{Dropdown(show, setShow, direction, setDirection)}</>
+      )}
+      <Searchbar setMobileSearch={setMobileSearch} />
     </nav>
   );
 };

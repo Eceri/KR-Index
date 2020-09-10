@@ -281,11 +281,7 @@ const perkView = (perks, tier, setBuild, build, url, name, tp, setTP, hist) => {
   return <div style={{ display: "flex" }}>{chooseTier(perks, tier)}</div>;
 };
 
-export const GenericPerks = (props) => {
-  // Props
-  let { perks, url, name } = props;
-  const { tier } = props;
-
+export const GenericPerks = ({ perks, url, name, tier }) => {
   // State
   const [build, setBuild] = useState(INIT_BUILD);
 

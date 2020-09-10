@@ -5,7 +5,8 @@ import ReactTooltip from "react-tooltip";
 // Relative Imports
 import { PerkCalculator } from "Components";
 import { Flex, Filterbox, HeroImage } from "Styles";
-import { AWSoperation, listHeros, sortedSearch } from "Helpers";
+import { AWSoperation, listHeros } from "Aws";
+import { sortedSearch } from "Helpers";
 import { INIT_BUILD, PERK_URL_CHECK } from "Constants";
 
 const handleWheel = (event, fetch, setFetch) => {
@@ -90,14 +91,13 @@ export const PerksContainer = () => {
   }
 
   useEffect(() => {
-    checkURL(build, setError, hero, hist, setName);
+    checkURL(build, setError, hero, hist);
   }, []);
 
   useEffect(() => {
     if (fetch && fetchControl) {
       try {
-        AWSoperation(listHeros, { nextToken }).then((res) => {
-          const { items, nextToken } = res.data.listHeros;
+        AWSoperation(listHeros, { nextToken }).then(({ items, nextToken }) => {
           let joinHeros = heros.concat(items);
           setNextToken(nextToken);
           setHeros(joinHeros);
@@ -111,7 +111,6 @@ export const PerksContainer = () => {
         history.pushState(error, "Error", "/404");
       }
     }
-
     setName(hero);
   }, [fetch]);
 
@@ -122,6 +121,10 @@ export const PerksContainer = () => {
       setHeros(copyHeroes);
     }
   }, [heroFilter]);
+
+  useEffect(() => {
+    setReset(false);
+  }, [reset]);
 
   return (
     <>
@@ -171,7 +174,7 @@ export const PerksContainer = () => {
           </div>
         </div>
       </Flex>
-      <PerkCalculator heroName={name} heroReset={reset} />
+      <PerkCalculator heroReset={reset} />
     </>
   );
 };

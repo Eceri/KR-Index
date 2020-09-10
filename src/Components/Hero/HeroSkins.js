@@ -4,7 +4,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 //Relative Imports
-import { AWSoperation, getHeroSkins } from "Helpers";
+import { AWSoperation, getHeroSkins } from "Aws";
 
 //styled components
 const SkinsWrapper = styled.div`
@@ -85,7 +85,11 @@ const LightboxImage = styled.img`
   min-width: max-content;
   min-height: max-content;
 `;
-const CloseButton = styled((props) => <span {...props} role="button">&times;</span>)`
+const CloseButton = styled((props) => (
+  <span {...props} role="button">
+    &times;
+  </span>
+))`
   position: fixed;
   top: 1rem;
   width: 2rem;
@@ -134,8 +138,8 @@ export const HeroSkins = () => {
     if (heroName != "") {
       let skinGalleryItems = [getImageItem("Base")];
       AWSoperation(getHeroSkins, { name: heroName })
-        .then((res) => {
-          for (let skin of res.data.getHero.skins) {
+        .then(({ skins }) => {
+          for (let skin of skins) {
             skinGalleryItems.push(getImageItem(skin));
           }
           setHeroSkins(skinGalleryItems);

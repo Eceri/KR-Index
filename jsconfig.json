@@ -8,6 +8,7 @@
       // Put your alias here and in webpack.common.js
       "Assets": ["src/Assets/"],
       "Helpers": ["src/helpers/helpers.index.js"],
+      "Aws": ["src/helpers/aws/aws.helpers.js"],
       "Atoms": ["src/Components/atoms/atoms.index.js"],
       "Styles": ["src/Components/styles/index.js"],
       "Components": ["src/Components/components.index.js"],

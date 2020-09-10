@@ -6,7 +6,7 @@ import {
   HeroSkill,
 } from "Components";
 //aws
-import { AWSoperation, getHeroGeneralInfo } from "Helpers";
+import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
 export const HeroGeneral = () => {
   const [heroInfo, setHeroInfo] = useState({});
@@ -16,7 +16,7 @@ export const HeroGeneral = () => {
     if (heroName != "") {
       AWSoperation(getHeroGeneralInfo, {
         name: heroName,
-      }).then((res) => setHeroInfo(res.data.getHero));
+      }).then((hero) => setHeroInfo(hero));
     }
   }, [heroName]);
   return (

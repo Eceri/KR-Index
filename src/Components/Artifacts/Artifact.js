@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
 import { Stars } from "Atoms";
-import { AWSoperation, getArtifact } from "Helpers";
+import { AWSoperation, getArtifact } from "Aws";
 import { LOADING_ARTIFACT } from "Constants";
 
 const ArtifactText = styled.section`
@@ -66,8 +66,8 @@ export const Artifact = (name) => {
         }
       })
       .join(" ");
-    AWSoperation(getArtifact, { name: correctName }).then((res) =>
-      setArtifact(res.data.getArtifact)
+    AWSoperation(getArtifact, { name: correctName }).then((artifact) =>
+      setArtifact(artifact)
     );
   }, [name]);
 
