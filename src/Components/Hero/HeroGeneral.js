@@ -9,7 +9,7 @@ import {
 import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
 export const HeroGeneral = (props) => {
-  const [error, setError] = useGlobal("error")
+  const [error, setError] = useGlobal("error");
   const [heroInfo, setHeroInfo] = useState({});
   const { heroName } = getGlobal();
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
@@ -19,15 +19,18 @@ export const HeroGeneral = (props) => {
     if (heroName != "") {
       AWSoperation(getHeroGeneralInfo, {
         name: heroName,
-      }).then((hero) => {
-        setHeroInfo(hero);
-        setIsLoading(false);
       })
-      .catch(err => setError({
-        message: "Bad Hero",
-        redirect: true,
-        url: `/heroes/`
-      }))
+        .then((hero) => {
+          setHeroInfo(hero);
+          setIsLoading(false);
+        })
+        .catch((err) =>
+          setError({
+            message: "Bad Hero",
+            redirect: true,
+            url: `/heroes/`,
+          })
+        );
     }
     return () => setIsLoading(true);
   }, [heroName]);
