@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, useGlobal } from "reactn";
+import { NavLink } from "react-router-dom";
 
 // Relative imports
 import { SearchBox, SearchInput, SearchListElement } from "Styles";
@@ -89,7 +90,7 @@ export const Searchbar = ({ setMobileSearch }) => {
       });
     }
     AWSoperation(listHerosHeadInfos).then((heros) =>
-      setHeros(heros.map((hero) => ({ ...hero, type: "heroe" })))
+      setHeros(heros.map((hero) => ({ ...hero, type: "Hero" })))
     );
   }, [search]);
 
@@ -138,6 +139,29 @@ export const Searchbar = ({ setMobileSearch }) => {
     }
   }, [mobile]);
 
+  const suggestedText = (name) => {
+    const index = name.toLowerCase().indexOf(searchQuery);
+    const { length } = searchQuery;
+    const beforeBold = name.slice(0, index);
+    const afterBold = name.slice(index + length);
+    const bold = (
+      <span
+        style={{
+          textDecoration: "underline",
+        }}
+      >
+        {name.slice(index, index + length)}
+      </span>
+    );
+    return (
+      <>
+        {beforeBold}
+        {bold}
+        {afterBold}
+      </>
+    );
+  };
+
   return (
     <div
       ref={ref}
@@ -149,7 +173,9 @@ export const Searchbar = ({ setMobileSearch }) => {
           <ul style={{ margin: 0, padding: 0, maxHeight: "15rem" }}>
             {arraySearch.map(({ type, name }, index) => (
               <SearchListElement
-                to={`/${type}s/${name}`}
+                to={`/${type.toLowerCase()}${
+                  type.slice(-1) === "o" ? "es" : "s"
+                }/${name}`}
                 activeStyle={{ color: "lightgrey", backgroundColor: "#262626" }}
                 key={name}
                 onClick={() => {
@@ -161,9 +187,13 @@ export const Searchbar = ({ setMobileSearch }) => {
                 tabIndex={index}
               >
                 <div>
-                  {console.log(name.slice(name.indexOf(searchQuery)))}
-                  {name}
-                  <span style={{ fontSize: "0.8rem" }}>{` in ${type}s`}</span>
+                  {suggestedText(name)}
+                  <NavLink
+                    to={`/${type.toLowerCase()}${
+                      type.slice(-1) === "o" ? "es" : "s"
+                    }`}
+                    style={{ fontSize: "0.8rem" }}
+                  >{` in ${type}`}</NavLink>
                 </div>
               </SearchListElement>
             ))}
