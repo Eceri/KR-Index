@@ -20,29 +20,10 @@ export const HeroSkill = (props) => {
     }
     return orbs;
   };
-  if (skill == undefined) {
-    skill = {
-      id: 0,
-      skillInfo: [
-        {
-          skillNumber: "",
-          id: 0,
-          cost: 0,
-          cooldown: 0,
-          description: "",
-        },
-      ],
-      books: [""],
-      light: "",
-      dark: "",
-      uniqueTreasure: {
-        name: "",
-        effect: "",
-      },
-    };
-  }
 
-  return (
+  return skill == undefined ? (
+    <p />
+  ) : (
     <div className="skill" id={`s${skill.id}-anchor`}>
       {skill.skillInfo.map((skillInfo, index) => (
         <div

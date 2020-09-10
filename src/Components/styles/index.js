@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export { Spinner } from "./styles.spinner";
+
 export {
   SearchBox,
   SearchListElement,
