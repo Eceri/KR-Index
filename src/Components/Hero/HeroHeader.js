@@ -1,6 +1,5 @@
 import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
-import { createHelmet } from "Helpers";
 
 import { AWSoperation, getHeroHeadInfo } from "Helpers";
 
@@ -23,7 +22,6 @@ export const HeroHeader = () => {
 
   return (
     <div className="flexBox">
-      {createHelmet(heroName, `${heroName} - ${headInfo.title}`)}
       <img
         src={`/assets/heroes/${heroName.toLowerCase()}/portrait.png`}
         id={"portrait"}

@@ -54,6 +54,12 @@ const SkinsWrapper = styled.div`
     bottom: unset;
     background-color: #262626;
   }
+  .image-gallery-image {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+  }
 `;
 const Lightbox = styled.div`
   position: fixed;

@@ -1,5 +1,7 @@
-import React, { useEffect, useState, useGlobal } from "reactn";
+import React, { useEffect, useState, useGlobal, Suspense } from "reactn";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
+import { Spinner } from "Styles";
 
 // Relative Imports
 import {
@@ -17,64 +19,78 @@ import "../styles/tabStyles.css";
 export const Hero = (props) => {
   const [error, setError] = useGlobal("error");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
+  const [tabIndex, setTabIndex] = useState(0);
+  const [scrollAnchor, setScrollAnchor] = useState();
 
-  let name = props.match.params.hero;
   useEffect(() => {
-    if (heroName.toLowerCase() != name.toLowerCase()) {
-      let correctName = name
-        .toLowerCase()
-        .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-      setGlobalHeroName(correctName);
-    }
-  }, [name]);
+    let correctName = props.match.params.hero
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+    setGlobalHeroName(correctName);
+    return () => {
+      setGlobalHeroName("");
+    };
+  }, [props.match.params.hero]);
 
-  //handling #-Fragments for Tabs
-  let hashFragments = window.location.hash.split("-");
-  let initalTabIndex;
-  let scrollAnchor = hashFragments[1];
-  switch (hashFragments[0]) {
-    case "#story":
-      initalTabIndex = 1;
-      break;
-    case "#skins":
-      initalTabIndex = 2;
-      break;
-    default:
-      initalTabIndex = 0;
-      scrollAnchor = hashFragments[0];
-      break;
-  }
   //Change method for React-Tabs
   const tabSelected = (index, lastIndex) => {
+    console.log("tab Selected Called");
     if (index !== lastIndex) {
+      setTabIndex(index);
       let url;
       if (index === 1) {
-        url = "#story";
+        url = `#story`;
       } else if (index === 2) {
-        url = "#skins";
+        url = `#skins`;
       } else url = `/heroes/${heroName}`;
       props.history.push(url);
       return true;
     }
     return false;
   };
-
   // scroll-To, needs to be manually done, due to timing with the page
+
+  //handling #-Fragments for Tabs
   useEffect(() => {
-    if (scrollAnchor !== undefined) {
+    let hashFragments = window.location.hash.split("-");
+    setScrollAnchor(hashFragments[1]);
+    switch (hashFragments[0]) {
+      case "#story":
+        setTabIndex(1);
+        break;
+      case "#skins":
+        setTabIndex(2);
+        break;
+      default:
+        setTabIndex(0);
+        setScrollAnchor(hashFragments[0]);
+        break;
+    }
+    console.log(
+      "hash changed",
+      window.location.hash,
+      "scroll anchor",
+      scrollAnchor
+    );
+  }, [window.location.hash]);
+
+  //scroll to a component.
+  useEffect(() => {
+    console.log("scrollAnchor changed", scrollAnchor);
+    if (scrollAnchor !== undefined && scrollAnchor !== null) {
       let element = document.getElementById(`${scrollAnchor.slice(1)}-anchor`);
       let scrollToTopPosition = 0;
       if (element !== null) {
         scrollToTopPosition = element.offsetTop - 60;
       }
-      console.log(element);
       window.scrollTo({
         top: scrollToTopPosition,
         left: 0,
         behavior: "smooth",
       });
+      console.log("scrolled");
     }
   }, [scrollAnchor]);
 
@@ -86,7 +102,7 @@ export const Hero = (props) => {
         `Details - ${heroName}`,
         `/heroes/${heroName.toLowerCase()}/portrait.png`
       )}
-      <Tabs defaultIndex={initalTabIndex} onSelect={tabSelected}>
+      <Tabs selectedIndex={tabIndex} onSelect={tabSelected}>
         <TabList>
           <Tab>General</Tab>
           <Tab>Story</Tab>
