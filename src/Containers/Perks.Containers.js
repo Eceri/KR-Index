@@ -5,7 +5,8 @@ import ReactTooltip from "react-tooltip";
 // Relative Imports
 import { PerkCalculator } from "Components";
 import { Flex, Filterbox, HeroImage } from "Styles";
-import { AWSoperation, listHeros, sortedSearch } from "Helpers";
+import { AWSoperation, listHeros } from "Aws";
+import { sortedSearch } from "Helpers";
 import { INIT_BUILD, PERK_URL_CHECK } from "Constants";
 
 const handleWheel = (event, fetch, setFetch) => {

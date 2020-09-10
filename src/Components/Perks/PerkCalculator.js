@@ -3,7 +3,8 @@ import { useHistory, useLocation } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 
 // Relative imports
-import { AWSoperation, getHeroSkills, createHelmet } from "Helpers";
+import { createHelmet } from "Helpers";
+import { AWSoperation, getHeroSkills } from "Aws";
 import { TierTwoPerks, TierOnePerks, GenericPerks } from "Components";
 import { TP, Row, PerkContainer, Flex, Questionmark } from "Styles";
 import { INIT_BUILD, PERK_SAMPLE } from "Constants";
@@ -109,50 +110,52 @@ export const PerkCalculator = ({ heroReset }) => {
   }, [pathname]);
 
   useEffect(() => {
-    try {
-      AWSoperation(getHeroSkills, { name: heroName }).then((heroSkills) => {
-        if (heroSkills === undefined) {
-          return null;
-        }
-        const {
-          dark,
-          light,
-          skill1,
-          skill2,
-          skill3,
-          skill4,
-          class: heroClass,
-        } = heroSkills;
-        setPerks({
-          s1: {
-            light: skill1.light,
-            dark: skill1.dark,
-            skillInfo: skill1.skillInfo,
-          },
-          s2: {
-            light: skill2.light,
-            dark: skill2.dark,
-            skillInfo: skill2.skillInfo,
-          },
-          s3: {
-            light: skill3.light,
-            dark: skill3.dark,
-            skillInfo: skill3.skillInfo,
-          },
-          s4: {
-            light: skill4.light,
-            dark: skill4.dark,
-            skillInfo: skill4.skillInfo,
-          },
-          general: {
-            light: light,
-            dark: dark,
-          },
-          heroClass: heroClass,
+    if (heroName !== "") {
+      try {
+        AWSoperation(getHeroSkills, { name: heroName }).then((heroSkills) => {
+          if (heroSkills === undefined) {
+            return null;
+          }
+          const {
+            dark,
+            light,
+            skill1,
+            skill2,
+            skill3,
+            skill4,
+            class: heroClass,
+          } = heroSkills;
+          setPerks({
+            s1: {
+              light: skill1.light,
+              dark: skill1.dark,
+              skillInfo: skill1.skillInfo,
+            },
+            s2: {
+              light: skill2.light,
+              dark: skill2.dark,
+              skillInfo: skill2.skillInfo,
+            },
+            s3: {
+              light: skill3.light,
+              dark: skill3.dark,
+              skillInfo: skill3.skillInfo,
+            },
+            s4: {
+              light: skill4.light,
+              dark: skill4.dark,
+              skillInfo: skill4.skillInfo,
+            },
+            general: {
+              light: light,
+              dark: dark,
+            },
+            heroClass: heroClass,
+          });
         });
-      });
-    } catch (error) {
-      setError({ message: error.message, redirect: false });
+      } catch (error) {
+        setError({ message: error.message, redirect: false });
+      }
     }
   }, [heroName]);
 

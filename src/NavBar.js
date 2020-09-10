@@ -89,6 +89,7 @@ const Dropdown = (show, setShow, direction) => {
 export const NavBar = (page) => {
   const [show, setShow] = useState(false);
   const [direction, setDirection] = useState("down");
+  const [mobileSearch, setMobileSearch] = useState(false);
 
   const miscRef = useRef();
 
@@ -137,8 +138,12 @@ export const NavBar = (page) => {
       >
         Artifacts
       </NavLink>
-      {Dropdown(show, setShow, direction, setDirection)}
-      <Searchbar />
+      {mobileSearch ? (
+        <></>
+      ) : (
+        <>{Dropdown(show, setShow, direction, setDirection)}</>
+      )}
+      <Searchbar setMobileSearch={setMobileSearch} />
     </nav>
   );
 };

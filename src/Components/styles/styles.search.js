@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const searchWidth = "16rem";
+const searchWidth = "20rem";
 
 export const SearchBox = styled.div`
   width: ${searchWidth};
@@ -22,9 +22,10 @@ export const SearchListElement = styled(NavLink)`
   color: black;
 
   &:hover {
-    background-color: #71b9f5;
+    color: white;
+    background-color: dimgrey;
   }
-  background-color: ${(props) => props.selected && "#71b9f5"};
+  ${(props) => props.selected && "background-color:dimgrey; color: white;"};
 `;
 
 export const SearchInput = styled.input`
@@ -35,11 +36,9 @@ export const SearchInput = styled.input`
 
   &:focus {
     outline: none;
+    display: block;
   }
-  display: ${(props) => (props.isMobile ? "none" : "")};
-  // @media only screen and (max-width: 480px) {
-  //   display: none;
-  // }
+  display: ${(props) => props.isMobile && "none"};
 `;
 
 export const Filterbox = styled.input`

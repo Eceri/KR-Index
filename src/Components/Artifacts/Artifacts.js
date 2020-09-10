@@ -10,11 +10,10 @@ import {
   createHelmet,
   GET_LOCALSTORAGE,
   SET_LOCALSTORAGE,
-  AWSoperation,
   sortedSearch,
-  listOrderedArtifacts,
   useWindowDimensions,
 } from "Helpers";
+import { listOrderedArtifacts, AWSoperation } from "Aws";
 import { Filterbox } from "Styles";
 
 // Styled Components

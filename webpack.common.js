@@ -58,6 +58,7 @@ module.exports = {
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),
       Helpers: path.resolve(__dirname, "src/helpers/helpers.index.js"),
+      Aws: path.resolve(__dirname, "src/helpers/aws/aws.helpers.js"),
       Atoms: path.resolve(__dirname, "src/Components/atoms/atoms.index.js"),
       Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
       Components: path.resolve(__dirname, "src/Components/components.index.js"),

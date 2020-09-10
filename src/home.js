@@ -6,7 +6,8 @@ import { useDrag } from "react-use-gesture";
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
-import { AWSoperation, typePlugsByOrder, useWindowDimensions } from "Helpers";
+import { AWSoperation, typePlugsByOrder } from "Aws";
+import { useWindowDimensions } from "Helpers";
 import {
   Announcement,
   Title,
@@ -14,6 +15,7 @@ import {
   TextContainer,
   News,
   MovingImage,
+  SmallTab,
 } from "Styles";
 import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
 
@@ -82,7 +84,7 @@ const PlugGamePosts = () => {
       >
         <TabList>
           {plugTypes.map((type) => (
-            <Tab key={type}>{type}</Tab>
+            <SmallTab key={type}>{type}</SmallTab>
           ))}
         </TabList>
         {plugTypes.map((type) => (

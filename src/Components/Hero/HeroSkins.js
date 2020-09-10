@@ -4,7 +4,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 //Relative Imports
-import { AWSoperation, getHeroSkins } from "Helpers";
+import { AWSoperation, getHeroSkins } from "Aws";
 
 //styled components
 const SkinsWrapper = styled.div`

@@ -1,8 +1,8 @@
 import React, { useGlobal, useEffect } from "reactn";
 import ReactTooltip from "react-tooltip";
-import { createHelmet } from "Helpers";
 
-import { AWSoperation, getHeroHeadInfo } from "Helpers";
+import { createHelmet } from "Helpers";
+import { AWSoperation, getHeroHeadInfo } from "Aws";
 
 export const HeroHeader = () => {
   const [error, setError] = useGlobal("error");

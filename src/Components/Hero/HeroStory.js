@@ -2,7 +2,7 @@ import React, { useEffect, useState, useGlobal } from "reactn";
 import "../styles/HeroStory.css";
 
 //Relative Imports
-import { AWSoperation, getHeroBackgroundData } from "Helpers";
+import { AWSoperation, getHeroBackgroundData } from "Aws";
 
 export const HeroStory = (props) => {
   const [heroBackgroudData, setHeroBackgroundData] = useState({});

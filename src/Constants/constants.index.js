@@ -14,3 +14,5 @@ export {
 export { NEWS_DEFAULT, DB_PLUG_TYPES } from "./constants.News";
 
 export const INIT_BUILD = "00000-00000-00-00-00";
+
+export { INIT_HEROHEADER } from "./Components/constants.Hero";
