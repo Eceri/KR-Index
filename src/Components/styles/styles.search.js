@@ -18,6 +18,7 @@ export const SearchListElement = styled(NavLink)`
   list-style-type: none;
   display: block;
   cursor: pointer;
+  padding: 0.3rem;
   padding-left: 0.5rem;
   color: black;
 

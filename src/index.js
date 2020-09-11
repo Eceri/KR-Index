@@ -28,6 +28,7 @@ setGlobal({
   heroName: "",
   headInfo: INIT_HEROHEADER,
   artifacts: [LOADING_ARTIFACT],
+  headInfos: [INIT_HEROHEADER],
 });
 
 const Page = () => {

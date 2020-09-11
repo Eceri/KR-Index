@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, useGlobal } from "reactn";
+import { useHistory } from "react-router-dom";
 
 // Relative imports
 import { SearchBox, SearchInput, SearchListElement } from "Styles";
@@ -24,6 +25,7 @@ export const Searchbar = ({ setMobileSearch }) => {
 
   // Globals
   const [globalArtifacts, setGlobalArtifacts] = useGlobal("artifacts");
+  const [globalHeroHeader, setGlobalHeroHeader] = useGlobal("headInfos");
 
   // Mobile Check
   const { isMobile } = useWindowDimensions();
@@ -31,6 +33,9 @@ export const Searchbar = ({ setMobileSearch }) => {
 
   const ref = useRef();
   const inputRef = useRef();
+
+  // History
+  const history = useHistory();
 
   const handleClick = ({ target }) => {
     if (ref.current.contains(target)) {
@@ -41,15 +46,23 @@ export const Searchbar = ({ setMobileSearch }) => {
 
   const handleKey = ({ keyCode }) => {
     if (keyCode === 40) {
-      // console.log("Down");
+      // Down
       setSelected(selected + 1);
     }
     if (keyCode === 38) {
-      // console.log("UP");
+      // Up
       setSelected(selected - 1);
     }
     if (keyCode === 13) {
-      // console.log("Enter");
+      // Enter
+      const { type, name } = arraySearch[selected];
+      const firstPart = `/${type.toLowerCase()}${
+        type.slice(-1) === "o" ? "es" : "s"
+      }`;
+      const secondPart = `/${name}`;
+      history.push({ pathname: `${firstPart}${secondPart}` });
+      setSearch(false);
+      setSearchQuery("");
     }
   };
 
@@ -83,16 +96,21 @@ export const Searchbar = ({ setMobileSearch }) => {
         setGlobalArtifacts(artifacts);
       });
     }
-    AWSoperation(listHerosHeadInfos).then((heros) =>
-      setHeros(heros.map((hero) => ({ ...hero, type: "Hero" })))
-    );
+    if (globalHeroHeader.length > 1) {
+      setHeros(globalArtifacts);
+    } else if (search && heros.length < 1) {
+      AWSoperation(listHerosHeadInfos).then((heros) => {
+        const result = heros.map((hero) => ({ ...hero, type: "Hero" }));
+        setHeros(result);
+        setGlobalHeroHeader(result);
+      });
+    }
   }, [search]);
 
   useEffect(() => {
     if (artifacts.length > 1 && heros.length > 1) {
       const _array = sortedSearch([...heros, ...artifacts], "name");
       setArrayCopy(_array);
-      // setArraySearch(_array);
     }
   }, [artifacts, heros]);
 
@@ -103,6 +121,10 @@ export const Searchbar = ({ setMobileSearch }) => {
     const heroHeader = Object.keys(INIT_HEROHEADER).slice(1);
     const heroHeaderShortcut = heroHeader.map((v) => v[0]);
     const isKeySearch = debouncedSearchTerm.includes(":");
+
+    if (debouncedSearchTerm === "") {
+      setArraySearch([]);
+    }
 
     if (debouncedSearchTerm) {
       if (isKeySearch) {
@@ -170,7 +192,7 @@ export const Searchbar = ({ setMobileSearch }) => {
                 to={`/${type.toLowerCase()}${
                   type.slice(-1) === "o" ? "es" : "s"
                 }/${name}`}
-                activeStyle={{ color: "lightgrey", backgroundColor: "#262626" }}
+                activeStyle={{ color: "darkblue" }}
                 key={name}
                 onClick={() => {
                   setSearch(false);
