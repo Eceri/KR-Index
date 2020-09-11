@@ -143,7 +143,7 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/reddit_share_circle_48.png")}`}
+                src={`/assets/icons/reddit_share_circle_48.png`}
                 alt="snoo"
                 data-tip="reddit"
               />
@@ -155,7 +155,7 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/Discord-Logo-White.png")}`}
+                src={`/assets/icons/Discord-Logo-White.png`}
                 alt="discord"
                 data-tip="Community Discord"
               />
@@ -167,7 +167,7 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/Plug_Cafe_Logo.bmp")}`}
+                src={`/assets/icons/Plug_Cafe_Logo.bmp`}
                 alt="plug.game"
                 data-tip="Official Plug"
               />

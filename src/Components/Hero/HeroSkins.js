@@ -2,6 +2,7 @@ import React, { useState, useEffect, getGlobal } from "reactn";
 import styled from "styled-components";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import ReactTooltip from "react-tooltip";
 
 //Relative Imports
 import { AWSoperation, getHeroSkins } from "Aws";
@@ -9,6 +10,7 @@ import { AWSoperation, getHeroSkins } from "Aws";
 //styled components
 const SkinsWrapper = styled.div`
   .custom-thumbnail {
+    cursor: pointer;
     width: 100%;
     max-width: 100px;
   }
@@ -61,55 +63,11 @@ const SkinsWrapper = styled.div`
     min-height: 100px;
   }
 `;
-const Lightbox = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3000;
-  overflow: auto;
-  display: grid;
-  overscroll-behavior-y: contain;
-  --webkit-overflow-scrolling: touch;
-`;
-const LightboxImageWrapper = styled.div`
-  justify-self: center;
-  align-self: center;
-`;
-const LightboxImage = styled.img`
-  border: none;
-  max-width: 100%;
-  max-height: 100%;
-  min-width: max-content;
-  min-height: max-content;
-`;
-const CloseButton = styled((props) => (
-  <span {...props} role="button">
-    &times;
-  </span>
-))`
-  position: fixed;
-  top: 1rem;
-  width: 2rem;
-  height: 2rem;
-  z-index: 3001;
-  &:hover {
-    opacity: 1;
-  }
-  font-size: 5rem;
-  line-height: 1rem;
-  cursor: pointer;
-`;
 export const HeroSkins = () => {
   const heroName = getGlobal().heroName;
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   const [heroSkins, setHeroSkins] = useState([]);
-  const [lightboxState, setLightboxState] = useState({
-    isOpen: false,
-    imgUrl: "",
-  });
+  const [currentSkinUrl, setCurrentSkinUrl] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
   //Image Item for Gallery
@@ -137,49 +95,18 @@ export const HeroSkins = () => {
   useEffect(() => {
     if (heroName != "") {
       let skinGalleryItems = [getImageItem("Base")];
+      setCurrentSkinUrl(skinGalleryItems[0].original);
       AWSoperation(getHeroSkins, { name: heroName })
         .then(({ skins }) => {
           for (let skin of skins) {
             skinGalleryItems.push(getImageItem(skin));
           }
           setHeroSkins(skinGalleryItems);
-          setLightboxState({
-            isOpen: lightboxState.isOpen,
-            imgUrl: skinGalleryItems[0].original,
-          });
         })
         .then(() => setIsLoading(false));
     }
   }, [heroName]);
 
-  //open lightbox
-  const handleImageOnclick = (event) => {
-    document.body.style.overflowY = "hidden";
-    setLightboxState({
-      isOpen: true,
-      imgUrl: lightboxState.imgUrl,
-    });
-
-    let lightbox = document.getElementById("lightbox");
-    setTimeout(() => {
-      lightbox.scrollTo({
-        top: (lightbox.scrollHeight - lightbox.offsetHeight) / 2,
-        left: (lightbox.scrollWidth - lightbox.offsetWidth) / 2,
-      });
-    });
-  };
-  //close Lightbox
-  const handleCloseLightboxClick = () => {
-    document.body.style.overflowY = "auto";
-    setLightboxState({
-      isOpen: false,
-      imgUrl: lightboxState.imgUrl,
-    });
-  };
-  //prevent ImageClick closing lightbox
-  const handleLightboxImageClick = (event) => {
-    event.stopPropagation();
-  };
   //scroll to Thumbnail Position in case its out of view
   const handleOnBeforeSlide = (event) => {
     let thumbnailsContainer = document.getElementsByClassName(
@@ -190,6 +117,8 @@ export const HeroSkins = () => {
     ];
     let thumbnailsContainerRect = thumbnailsContainer.getBoundingClientRect();
     let targetThumbnailRect = targetThumbnail.getBoundingClientRect();
+
+    setCurrentSkinUrl(heroSkins[event].original);
 
     //TODO: add vertical check.
     if (thumbnailsContainerRect.left > targetThumbnailRect.left) {
@@ -205,12 +134,32 @@ export const HeroSkins = () => {
         targetThumbnail.offsetTop
       );
     }
-
-    setLightboxState({
-      isOpen: lightboxState.isOpen,
-      imgUrl: heroSkins[event].original,
-    });
   };
+
+  //hacky open in new tab button
+  const customFullScreenButton = () => (
+    <a
+      type="button"
+      aria-label="Open Image in new Tab"
+      className="image-gallery-icon image-gallery-fullscreen-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      href={currentSkinUrl}
+      data-tip={`Open in new tab`}
+    >
+      <svg
+        width="2rem"
+        height="2rem"
+        xmlns="http://www.w3.org/2000/svg"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        fill="white"
+        strokeWidth="4"
+      >
+        <path d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" />
+      </svg>
+    </a>
+  );
 
   return isLoading ? (
     <div> </div>
@@ -220,34 +169,16 @@ export const HeroSkins = () => {
         items={heroSkins}
         showPlayButton={false}
         thumbnailPosition={thumbnailsPosition}
-        showFullscreenButton={false}
+        showFullscreenButton={true}
+        renderFullscreenButton={customFullScreenButton}
         infinite={true}
         showIndex={false}
         disableThumbnailScroll={true}
         showBullets={true}
         slideOnThumbnailOver={false}
-        onClick={handleImageOnclick}
         onBeforeSlide={handleOnBeforeSlide}
       />
-      <Lightbox
-        id="lightbox"
-        style={lightboxState.isOpen ? { diplay: "block" } : { display: "none" }}
-        onClick={handleCloseLightboxClick}
-        onScroll={(event) => event.stopPropagation()}
-      >
-        <CloseButton
-          className="close"
-          onClick={handleCloseLightboxClick}
-          style={{ right: thumbnailsPosition == "left" ? "2rem" : "1rem" }}
-        />
-        <LightboxImageWrapper>
-          <LightboxImage
-            id="lightbox-image"
-            src={lightboxState.imgUrl}
-            onClick={handleLightboxImageClick}
-          />
-        </LightboxImageWrapper>
-      </Lightbox>
+      <ReactTooltip border={true} />
     </SkinsWrapper>
   );
 };
