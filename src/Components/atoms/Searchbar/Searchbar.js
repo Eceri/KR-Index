@@ -1,15 +1,9 @@
 import React, { useEffect, useState, useRef, useGlobal } from "reactn";
-import { NavLink } from "react-router-dom";
 
 // Relative imports
 import { SearchBox, SearchInput, SearchListElement } from "Styles";
 import { sortedSearch, useWindowDimensions, useDebounce } from "Helpers";
-import {
-  AWSoperation,
-  listOrderedArtifacts,
-  listHeros,
-  listHerosHeadInfos,
-} from "Aws";
+import { AWSoperation, listOrderedArtifacts, listHerosHeadInfos } from "Aws";
 import Icon_mg from "Assets/icons/magnifying-glass.js";
 import { INIT_HEROHEADER } from "Constants";
 
@@ -47,15 +41,15 @@ export const Searchbar = ({ setMobileSearch }) => {
 
   const handleKey = ({ keyCode }) => {
     if (keyCode === 40) {
-      console.log("Down");
+      // console.log("Down");
       setSelected(selected + 1);
     }
     if (keyCode === 38) {
-      console.log("UP");
+      // console.log("UP");
       setSelected(selected - 1);
     }
     if (keyCode === 13) {
-      console.log("Enter");
+      // console.log("Enter");
     }
   };
 
@@ -188,12 +182,7 @@ export const Searchbar = ({ setMobileSearch }) => {
               >
                 <div>
                   {suggestedText(name)}
-                  <NavLink
-                    to={`/${type.toLowerCase()}${
-                      type.slice(-1) === "o" ? "es" : "s"
-                    }`}
-                    style={{ fontSize: "0.8rem" }}
-                  >{` in ${type}`}</NavLink>
+                  <span style={{ fontSize: "0.8rem" }}>{` in ${type}`}</span>
                 </div>
               </SearchListElement>
             ))}
