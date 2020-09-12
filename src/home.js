@@ -107,13 +107,6 @@ const PlugGamePosts = () => {
 
 // Main
 export const Home = () => {
-  // Globals
-  const [error, setError] = useGlobal("error");
-
-  useEffect(() => {
-    console.log("ERROR:------", error);
-  }, [error]);
-
   return (
     <>
       {createHelmet("King's Raid Index", "King's Raid Index News")}

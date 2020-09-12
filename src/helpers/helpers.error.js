@@ -4,16 +4,19 @@ import { useHistory } from "react-router-dom";
 
 // Relative imports
 import { ErrorState } from "Constants";
+import { useDebounce } from "Helpers";
 
 const ErrorBoard = styles.div`
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
   left: calc(50% - 6rem);
   width: 12rem;
   height: 3rem;
   padding: 0.75rem;
-  background-color: #262626;
+  background-color: #CD0000;
   text-align: center;
+  border: 2px solid black;
+  visibility: ${(props) => (props.message === "" ? "hidden" : "visible")};
   `;
 export const CustomError = (message, redirect = false, url = "", hash = "") => {
   return {
@@ -29,19 +32,21 @@ export const ErrorHandler = () => {
 
   const history = useHistory();
 
+  const debouncedTerm = useDebounce(redirect, 200);
+
   useEffect(() => {
     if (message !== "") {
       setTimeout(() => {
         setError(ErrorState);
       }, 2000);
     }
-    if (redirect) {
+    if (debouncedTerm) {
       history.push({
         pathname: url,
         hash: hash,
       });
     }
-  }, [message, redirect, url]);
+  }, [message, debouncedTerm, url, hash]);
 
-  return <>{message !== "" ? <ErrorBoard>Error</ErrorBoard> : <></>}</>;
+  return <ErrorBoard message={message}>{message}</ErrorBoard>;
 };
