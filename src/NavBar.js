@@ -131,17 +131,19 @@ export const NavBar = (page) => {
       <NavLink to={"/heroes"} className="navLink" onClick={() => handleError()}>
         Heroes
       </NavLink>
-      <NavLink
-        to={"/artifacts"}
-        className={"navLink"}
-        onClick={() => handleError()}
-      >
-        Artifacts
-      </NavLink>
       {mobileSearch ? (
         <></>
       ) : (
-        <>{Dropdown(show, setShow, direction, setDirection)}</>
+        <>
+          <NavLink
+            to={"/artifacts"}
+            className={"navLink"}
+            onClick={() => handleError()}
+          >
+            Artifacts
+          </NavLink>
+          {Dropdown(show, setShow, direction, setDirection)}
+        </>
       )}
       <Searchbar setMobileSearch={setMobileSearch} />
     </nav>

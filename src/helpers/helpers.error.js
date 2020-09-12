@@ -14,14 +14,20 @@ const ErrorBoard = styles.div`
   padding: 0.75rem;
   background-color: #262626;
   text-align: center;
-`;
+  `;
+export const CustomError = (message, redirect = false, url = "", hash = "") => {
+  return {
+    message,
+    redirect,
+    url,
+    hash,
+  };
+};
 
 export const ErrorHandler = () => {
-  const [error, setError] = useGlobal("error");
+  const [{ message, redirect, url, hash }, setError] = useGlobal("error");
 
   const history = useHistory();
-
-  const { component, message, redirect, url, hash } = error;
 
   useEffect(() => {
     if (message !== "") {
@@ -35,7 +41,7 @@ export const ErrorHandler = () => {
         hash: hash,
       });
     }
-  }, [component, message, redirect, url]);
+  }, [message, redirect, url]);
 
   return <>{message !== "" ? <ErrorBoard>Error</ErrorBoard> : <></>}</>;
 };

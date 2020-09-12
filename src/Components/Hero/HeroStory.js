@@ -13,7 +13,8 @@ export const HeroStory = (props) => {
       setHeroBackgroundData(background)
     );
   }, [heroName]);
-  console.log(heroBackgroudData.title);
+  // TODO: CONSOLE.log
+  // console.log(heroBackgroudData.title);
 
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}`;
 

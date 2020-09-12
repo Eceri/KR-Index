@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tabs, TabList, TabPanel } from "react-tabs";
 import { useDrag } from "react-use-gesture";
 
 // Relative import
@@ -34,10 +34,6 @@ const typeOfTitle = (title) => {
 
   const type = text[0].replace("[", "");
   return type;
-};
-
-const dataSuffix = (res) => {
-  return res["data"]["typePlugsByOrder"]["items"];
 };
 
 // render function

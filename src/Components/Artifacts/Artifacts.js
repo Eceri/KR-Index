@@ -52,7 +52,7 @@ const ClickedArtifact = styled.section`
 
 // Implementation
 const scrollToRef = (ref) => window.scrollTo(0, ref.offsetTop);
-let token = null;
+// let token = null;
 const ARTIFACTS = "Artifacts";
 export const Artifacts = () => {
   // Location
@@ -106,12 +106,8 @@ export const Artifacts = () => {
   }, []);
 
   useEffect(() => {
-    try {
-      if (chosenArtifactName !== "") {
-        setArtifactName(replaceChosenArtifactName);
-      }
-    } catch (error) {
-      console.error(error);
+    if (chosenArtifactName !== "") {
+      setArtifactName(replaceChosenArtifactName);
     }
   }, [replaceChosenArtifactName]);
 

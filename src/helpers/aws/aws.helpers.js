@@ -1,4 +1,3 @@
-import { API, graphqlOperation } from "aws-amplify";
 export {
   getHeroHeadInfo,
   getHeroGeneralInfo,
@@ -20,6 +19,11 @@ export {
   allPlugsByOrder,
 } from "./aws.helpers.plugposts";
 
+export const RESULT_NULL = "Error: result is null";
+
+// Imports
+import { API, graphqlOperation } from "aws-amplify";
+
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
     let { data } = await API.graphql(
@@ -28,7 +32,7 @@ export const AWSoperation = async (createEvent, eventDetails) => {
     const contextSplit = createEvent.split("{");
     const contextName = contextSplit[1].split(/[{(]/g)[0].trim();
     let result = data[contextName];
-    if (result == null) throw "test";
+    if (result == null) throw RESULT_NULL;
     const isList = data[contextName].items !== undefined ? true : false;
     let hasNextToken = false;
 
