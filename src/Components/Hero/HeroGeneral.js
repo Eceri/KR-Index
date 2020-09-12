@@ -24,15 +24,14 @@ export const HeroGeneral = (props) => {
           setHeroInfo(hero);
           setIsLoading(false);
         })
-        .catch((err) =>
+        .catch((err) => {
           setError({
             message: "Bad Hero",
             redirect: true,
             url: `/heroes/`,
-          })
-        );
+          });
+        });
     }
-    return () => setIsLoading(true);
   }, [heroName]);
 
   useEffect(() => {

@@ -19,9 +19,7 @@ export const Hero = (props) => {
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
     setGlobalHeroName(correctName);
-    return () => {
-      setGlobalHeroName("");
-    };
+    return () => setGlobalHeroName("");
   }, [props.match.params.hero]);
 
   //Change method for React-Tabs

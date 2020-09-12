@@ -12,7 +12,7 @@ export const StatCaps = () => {
     return (
       <tr
         key={name}
-        class={clicked ? "selected " : ""}
+        className={clicked ? "selected " : ""}
         onClick={() => setClicked(!clicked)}
       >
         <td>{stat.name}</td>
@@ -297,15 +297,6 @@ export const StatCaps = () => {
           {createTableRow(manaPerAttack, manaPerAttack.X2)}
         </tbody>
       </table>
-
-      {/* <br></br>
-      <p id="thanks">
-        Thanks to{" "}
-        <a href="https://github.com/duckness" target="_blank" style ={{color:"pink"}}>
-          Duckness
-        </a>{" "}
-         for his work with the stats.
-      </p> */}
     </div>
   );
 };

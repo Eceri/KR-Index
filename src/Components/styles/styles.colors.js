@@ -1,11 +1,16 @@
-const purple = "#4b2665";
+const purple = "#af36ff";
 const guide = "#f0e7d3";
 const maintenance = "#ff7b00";
-const gg = "#4867aa";
+const gameGuide = "#4867aa";
 const teal = "#00c9b0";
 const events = "#FF72C0";
 const specialShop = "#8D488D";
+const notes = "#3636fa";
 export const colors = {
+  background: "#404040",
+  font: "white",
+  hover: "dimgrey",
+  nav: "#262626",
   News: {
     notices: {
       notice: "white",
@@ -17,15 +22,15 @@ export const colors = {
     },
     patches: {
       patchNote: teal,
-      gameGuide: gg,
+      gameGuide: gameGuide,
     },
     content: {
       kingsRaidVod: purple,
-      gmNote: "darkblue",
+      gmNote: notes,
       vod: purple,
       guide: guide,
       teaser: purple,
-      developersNote: "darkblue",
+      developersNote: notes,
     },
     events: {
       event: events,
@@ -35,9 +40,5 @@ export const colors = {
       specialShopUpdate: specialShop,
       specialShop: specialShop,
     },
-  },
-  background: "#404040",
-  font: "white",
-  hover: "dimgrey",
-  nav: "#262626",
+  }
 };

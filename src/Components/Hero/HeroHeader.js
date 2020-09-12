@@ -22,10 +22,17 @@ export const HeroHeader = () => {
     } else if (heroName !== "") {
       AWSoperation(getHeroHeadInfo, { name: heroName })
         .then((hero) => {
+          console.log("setting hero info...")
           setGlobalHeadInfo(hero);
           setIsLoading(false);
         })
-        .catch((err) => setError(CustomError("Bad Hero", true, "/heroes")));
+        .catch((err) => {
+          setError({
+            message: "Bad Hero",
+            redirect: true,
+            url: `/heroes/`,
+          });
+        });
     }
   }, [heroName]);
 
