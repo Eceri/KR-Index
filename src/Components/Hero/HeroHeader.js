@@ -3,6 +3,7 @@ import ReactTooltip from "react-tooltip";
 
 import { AWSoperation, getHeroHeadInfo } from "Aws";
 import { Spinner } from "Styles";
+import { Redirect } from "react-router-dom";
 
 export const HeroHeader = () => {
   const [error, setError] = useGlobal("error");
@@ -17,16 +18,18 @@ export const HeroHeader = () => {
     if (heroName !== "") {
       AWSoperation(getHeroHeadInfo, { name: heroName })
         .then((hero) => {
+          console.log("setting hero info...")
           setGlobalHeadInfo(hero);
           setIsLoading(false);
         })
-        .catch((err) =>
+        .catch((err) => {
+          console.log(err);
           setError({
             message: "Bad Hero",
             redirect: true,
             url: `/heroes/`,
-          })
-        );
+          });
+        });
     }
   }, [heroName]);
 
