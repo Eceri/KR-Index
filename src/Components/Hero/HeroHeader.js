@@ -16,25 +16,27 @@ export const HeroHeader = () => {
   const [globalHeadInfos, setGlobalHeadInfos] = useGlobal("headInfos");
 
   useEffect(() => {
-    if (globalHeadInfos.length > 1) {
-      setGlobalHeadInfo(globalHeadInfos.find((v) => v.name === heroName));
-      setIsLoading(false);
-    } else if (heroName !== "") {
-      AWSoperation(getHeroHeadInfo, { name: heroName })
-        .then((hero) => {
-          console.log("setting hero info...")
-          setGlobalHeadInfo(hero);
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          setError({
-            message: "Bad Hero",
-            redirect: true,
-            url: `/heroes/`,
+    if (heroName !== "") {
+      if (globalHeadInfos.length > 1) {
+        setGlobalHeadInfo(globalHeadInfos.find((v) => v.name === heroName));
+        setIsLoading(false);
+      } else {
+        AWSoperation(getHeroHeadInfo, { name: heroName })
+          .then((hero) => {
+            console.log("setting hero info...");
+            setGlobalHeadInfo(hero);
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            setError({
+              message: "Bad Hero",
+              redirect: true,
+              url: `/heroes/`,
+            });
           });
-        });
+      }
     }
-  }, [heroName]);
+  }, [heroName, globalHeadInfos]);
 
   return isLoading ? (
     <Spinner></Spinner>

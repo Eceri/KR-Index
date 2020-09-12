@@ -25,7 +25,7 @@ export const Searchbar = ({ setMobileSearch }) => {
 
   // Globals
   const [globalArtifacts, setGlobalArtifacts] = useGlobal("artifacts");
-  const [globalHeroHeader, setGlobalHeroHeader] = useGlobal("headInfos");
+  const [globalHeroHeaders, setGlobalHeroHeaders] = useGlobal("headInfos");
 
   // Mobile Check
   const { isMobile } = useWindowDimensions();
@@ -96,13 +96,13 @@ export const Searchbar = ({ setMobileSearch }) => {
         setGlobalArtifacts(artifacts);
       });
     }
-    if (globalHeroHeader.length > 1) {
-      setHeros(globalArtifacts);
+    if (globalHeroHeaders.length > 1) {
+      setHeros(globalHeroHeaders);
     } else if (search && heros.length < 1) {
       AWSoperation(listHerosHeadInfos).then((heros) => {
         const result = heros.map((hero) => ({ ...hero, type: "Hero" }));
         setHeros(result);
-        setGlobalHeroHeader(result);
+        setGlobalHeroHeaders(result);
       });
     }
   }, [search]);
@@ -233,6 +233,7 @@ export const Searchbar = ({ setMobileSearch }) => {
         placeholder="Find Heroes and Artifacts..."
         onChange={({ currentTarget: { value } }) => {
           setSearchQuery(value);
+          setSearch(true);
         }}
         value={searchQuery}
         aria-label="Search"
