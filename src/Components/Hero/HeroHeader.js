@@ -1,43 +1,41 @@
-import React, { useGlobal, useEffect, useState } from "reactn";
+import React, { useGlobal, useEffect, useState, getGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
 
 import { AWSoperation, getHeroHeadInfo } from "Aws";
-import { Spinner } from "Styles";
 import { CustomError } from "Helpers";
 
 export const HeroHeader = () => {
+  //states
+  const [isLoading, setIsLoading] = useState(true);
+  //globals
   const [error, setError] = useGlobal("error");
   const [
     { title, name, damageType, position, class: heroClass },
     setGlobalHeadInfo,
   ] = useGlobal("headInfo");
-  const [heroName, setGlobalHeroName] = useGlobal("heroName");
-  const [isLoading, setIsLoading] = useState(true);
-  const [globalHeadInfos, setGlobalHeadInfos] = useGlobal("headInfos");
+  const { heroName, headInfos } = getGlobal();
 
   useEffect(() => {
-    if (globalHeadInfos.length > 1) {
-      setGlobalHeadInfo(globalHeadInfos.find((v) => v.name === heroName));
+    if (headInfos.length > 1) {
+      setGlobalHeadInfo(headInfos.find((v) => v.name === heroName));
       setIsLoading(false);
     } else if (heroName !== "") {
       AWSoperation(getHeroHeadInfo, { name: heroName })
         .then((hero) => {
-          console.log("setting hero info...")
           setGlobalHeadInfo(hero);
           setIsLoading(false);
         })
         .catch((err) => {
           setError({
-            message: "Bad Hero",
-            redirect: true,
-            url: `/heroes/`,
+            message: "Hero not found.",
           });
         });
     }
+    return () => setIsLoading(true);
   }, [heroName]);
 
   return isLoading ? (
-    <Spinner></Spinner>
+   <></>
   ) : (
     <div className="flexBox">
       <img

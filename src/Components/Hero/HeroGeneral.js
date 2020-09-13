@@ -5,15 +5,20 @@ import {
   UniqueWeapon,
   HeroSkill,
 } from "Components";
+import { Spinner } from "Styles";
+import { CustomError } from "Helpers";
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
 export const HeroGeneral = (props) => {
-  const [error, setError] = useGlobal("error");
+  //States
   const [heroInfo, setHeroInfo] = useState({});
-  const { heroName } = getGlobal();
-  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
   const [isLoading, setIsLoading] = useState(true);
+  //Globals
+  const [error, setError] = useGlobal("error");
+  const { heroName } = getGlobal();
+
+  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
 
   useEffect(() => {
     if (heroName != "") {
@@ -25,13 +30,11 @@ export const HeroGeneral = (props) => {
           setIsLoading(false);
         })
         .catch((err) => {
-          setError({
-            message: "Bad Hero",
-            redirect: true,
-            url: `/heroes/`,
-          });
+          let error = CustomError(`Hero Not Found.`, true, `/heroes/`)
+          setError(error);
         });
     }
+    return () => setIsLoading(true);
   }, [heroName]);
 
   useEffect(() => {
@@ -51,7 +54,9 @@ export const HeroGeneral = (props) => {
     }
   }, [window.location.hash, isLoading]);
 
-  return (
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <>
       <h2> Unique Weapon </h2> <hr />
       <UniqueWeapon

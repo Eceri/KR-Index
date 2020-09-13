@@ -5,6 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ReactTooltip from "react-tooltip";
 
 //Relative Imports
+import { Spinner } from "Styles";
 import { AWSoperation, getHeroSkins } from "Aws";
 
 //styled components
@@ -146,7 +147,7 @@ export const HeroSkins = () => {
       rel="noopener noreferrer"
       href={currentSkinUrl}
       data-tip={`Open in new tab`}
-      style={{margin: "20px", padding: 0,}}
+      style={{ margin: "20px", padding: 0 }}
     >
       <svg
         width="2rem"
@@ -164,7 +165,7 @@ export const HeroSkins = () => {
   );
 
   return isLoading ? (
-    <div> </div>
+    <Spinner />
   ) : (
     <SkinsWrapper>
       <ImageGallery

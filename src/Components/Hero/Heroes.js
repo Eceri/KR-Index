@@ -9,14 +9,16 @@ import { AWSoperation } from "Helpers";
 
 export const Heroes = () => {
   let classes = require("./../../Assets/classes/classes.json");
+  //Globals
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
+  
   const title = (
     <Helmet>
       <title>{`Heroes`}</title>
       <meta name="description" content="Heroes overview" />
     </Helmet>
   );
-
+  
   return (
     <>
       {title}

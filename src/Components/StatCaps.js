@@ -253,8 +253,6 @@ export const StatCaps = () => {
 
   const attenuateInv = (x, k, a, b) => {
     let actual = k - Math.floor((k * 1000000) / (a * x * x + b * x + 1000000));
-    // TODO: Console log
-    console.log(actual);
     return actual;
   };
   const attenuate = (x, k, a, b) => {

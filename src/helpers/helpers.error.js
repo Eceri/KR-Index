@@ -13,10 +13,10 @@ const ErrorBoard = styles.div`
   width: 12rem;
   height: 3rem;
   padding: 0.75rem;
-  background-color: #CD0000;
+  background-color: #631414;
   text-align: center;
-  border: 2px solid black;
   visibility: ${(props) => (props.message === "" ? "hidden" : "visible")};
+  z-index: 4000;
   `;
 export const CustomError = (message, redirect = false, url = "", hash = "") => {
   return {
