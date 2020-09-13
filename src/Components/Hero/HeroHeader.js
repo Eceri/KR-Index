@@ -29,12 +29,12 @@ export const HeroHeader = () => {
           setError({
             message: "Hero not found.",
           });
-      }
+        });
     }
   }, [heroName, headInfos]);
 
   return isLoading ? (
-   <></>
+    <></>
   ) : (
     <div className="flexBox">
       <img
