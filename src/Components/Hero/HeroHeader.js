@@ -29,10 +29,9 @@ export const HeroHeader = () => {
           setError({
             message: "Hero not found.",
           });
-        });
+      }
     }
-    return () => setIsLoading(true);
-  }, [heroName]);
+  }, [heroName, headInfos]);
 
   return isLoading ? (
    <></>
