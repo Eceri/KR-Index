@@ -10,9 +10,7 @@ import { INIT_HEROHEADER } from "Constants";
 
 export const Searchbar = ({ setMobileSearch }) => {
   // State
-  const [artifacts, setArtifacts] = useState(
-    JSON.parse(localStorage.getItem("Artifacts")) || []
-  );
+  const [artifacts, setArtifacts] = useState([]);
   const [heros, setHeros] = useState([]);
   // Search
   const [searchQuery, setSearchQuery] = useState("");
