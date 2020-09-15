@@ -1,4 +1,4 @@
-import React, { useGlobal, useEffect, useState, getGlobal } from "reactn";
+import React, { useEffect, useState, useGlobal, getGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
 
 import { AWSoperation, getHeroHeadInfo } from "Aws";
@@ -16,20 +16,22 @@ export const HeroHeader = () => {
   const { heroName, headInfos } = getGlobal();
 
   useEffect(() => {
-    if (headInfos.length > 1) {
-      setGlobalHeadInfo(headInfos.find((v) => v.name === heroName));
-      setIsLoading(false);
-    } else if (heroName !== "") {
-      AWSoperation(getHeroHeadInfo, { name: heroName })
-        .then((hero) => {
-          setGlobalHeadInfo(hero);
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          setError({
-            message: "Hero not found.",
+    if (heroName !== "") {
+      if (headInfos.length > 1) {
+        setGlobalHeadInfo(headInfos.find((v) => v.name === heroName));
+        setIsLoading(false);
+      } else {
+        AWSoperation(getHeroHeadInfo, { name: heroName })
+          .then((hero) => {
+            setGlobalHeadInfo(hero);
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            setError({
+              message: "Hero not found.",
+            });
           });
-        });
+      }
     }
   }, [heroName, headInfos]);
 
