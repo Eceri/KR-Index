@@ -6,6 +6,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 
+// custom config
+const { webpackPaths } = require("./settings");
+
 module.exports = {
   entry: {
     app: "./src/index.js",
@@ -26,7 +29,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp)$/,
+        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp|avif)$/,
         use: [
           {
             loader: "file-loader",
@@ -52,18 +55,8 @@ module.exports = {
     ],
   },
   resolve: {
-    /**
-     * @todo place relative paths here, put them also in jsconfig.js for VS-Code
-     */
     alias: {
-      Assets: path.resolve(__dirname, "src/Assets/"),
-      Helpers: path.resolve(__dirname, "src/helpers/helpers.index.js"),
-      Aws: path.resolve(__dirname, "src/helpers/aws/aws.helpers.js"),
-      Atoms: path.resolve(__dirname, "src/Components/atoms/atoms.index.js"),
-      Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
-      Components: path.resolve(__dirname, "src/Components/components.index.js"),
-      Constants: path.resolve(__dirname, "src/Constants/constants.index.js"),
-      Containers: path.resolve(__dirname, "src/Containers/containers.index.js"),
+      ...webpackPaths(),
     },
   },
   optimization: {

@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`First check 1`] = `
+Array [
+  <div>
+    <img
+      align="left"
+      alt="Picture of Abyssal Crown"
+      src="/assets/artifacts/Abyssal Crown.png"
+      style={
+        Object {
+          "marginBottom": "2rem",
+          "marginRight": "1rem",
+          "width": "96px",
+        }
+      }
+    />
+    <section
+      className="sc-iAyFgw bfgzGX"
+    >
+      <h1>
+        Abyssal Crown
+      </h1>
+      <div>
+        <button
+          className="sc-jKJlTe fTTccZ"
+          onClick={[Function]}
+        >
+          <span
+            style={
+              Object {
+                "fontSize": "2rem",
+                "fontWeight": "700",
+                "textShadow": "0.5px 0.5px #ffd700",
+              }
+            }
+          >
+            ○
+          </span>
+        </button>
+        <button
+          className="sc-jKJlTe eWVsAI"
+          onClick={[Function]}
+        >
+          ★
+        </button>
+        <button
+          className="sc-jKJlTe eWVsAI"
+          onClick={[Function]}
+        >
+          ★
+        </button>
+        <button
+          className="sc-jKJlTe eWVsAI"
+          onClick={[Function]}
+        >
+          ★
+        </button>
+        <button
+          className="sc-jKJlTe eWVsAI"
+          onClick={[Function]}
+        >
+          ★
+        </button>
+        <button
+          className="sc-jKJlTe imuKtT"
+          onClick={[Function]}
+        >
+          ★
+        </button>
+      </div>
+    </section>
+  </div>,
+  <div
+    className="react-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <ul
+      className="react-tabs__tab-list"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-1"
+        aria-disabled="false"
+        aria-selected="true"
+        className="sc-hSdWYo kvZVsQ react-tabs__tab--selected"
+        id="react-tabs-0"
+        role="tab"
+        tabIndex="0"
+      >
+        Effect
+      </li>
+      <li
+        aria-controls="react-tabs-3"
+        aria-disabled="false"
+        aria-selected="false"
+        className="sc-hSdWYo kvZVsQ"
+        id="react-tabs-2"
+        role="tab"
+        tabIndex={null}
+      >
+        Story
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-0"
+      className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+      id="react-tabs-1"
+      role="tabpanel"
+    >
+      <section
+        className="sc-kkGfuU ciKcse"
+      >
+        30 sec after the battle starts, increases ATK of the ally with the highest ATK by 30%. This effect cannot be dispelled, and it does not stack with other effects for allies.
+      </section>
+    </div>
+    <div
+      aria-labelledby="react-tabs-2"
+      className="react-tabs__tab-panel"
+      id="react-tabs-3"
+      role="tabpanel"
+    />
+  </div>,
+]
+`;

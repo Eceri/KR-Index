@@ -7,7 +7,7 @@
 .vscode
 
 # testing
-/coverage
+/__tests__/coverage
 
 # production
 /build
@@ -20,7 +20,6 @@ krc.code-workspace
 .env.development.local
 .env.test.local
 .env.production.local
-/Client/.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -36,13 +35,8 @@ node_modules
 /Server/apidoc
 playground.json
 
-<<<<<<< HEAD
 /amplify
 #amplify
-=======
-#amplify
-amplify
->>>>>>> 742b1cf381aa03ab86b182540dda4da3e314e00c
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
