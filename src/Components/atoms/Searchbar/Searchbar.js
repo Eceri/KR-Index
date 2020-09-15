@@ -192,7 +192,7 @@ export const Searchbar = ({ setMobileSearch }) => {
                 to={`/${type.toLowerCase()}${
                   type.slice(-1) === "o" ? "es" : "s"
                 }/${name}`}
-                activeStyle={{ color: "darkblue" }}
+                activeStyle={{ color: "black", backgroundColor: "lightgray" }}
                 key={name}
                 onClick={() => {
                   setSearch(false);

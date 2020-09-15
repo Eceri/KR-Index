@@ -1,4 +1,4 @@
-import React, { useState, useEffect, getGlobal } from "reactn";
+import React, { useState, useEffect, getGlobal, useGlobal } from "reactn";
 import styled from "styled-components";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -7,6 +7,7 @@ import ReactTooltip from "react-tooltip";
 //Relative Imports
 import { Spinner } from "Styles";
 import { AWSoperation, getHeroSkins } from "Aws";
+import { CustomError } from "Helpers";
 
 //styled components
 const SkinsWrapper = styled.div`
@@ -65,11 +66,15 @@ const SkinsWrapper = styled.div`
   }
 `;
 export const HeroSkins = () => {
+  //Globals
+  const [error, setError] = useGlobal("error");
   const heroName = getGlobal().heroName;
-  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
+  //States
   const [heroSkins, setHeroSkins] = useState([]);
   const [currentSkinUrl, setCurrentSkinUrl] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  
+  const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
 
   //Image Item for Gallery
   const getImageItem = (imageSrc) => ({
@@ -104,7 +109,11 @@ export const HeroSkins = () => {
           }
           setHeroSkins(skinGalleryItems);
         })
-        .then(() => setIsLoading(false));
+        .then(() => setIsLoading(false))
+        .catch((err) => {
+          let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
+          setError(error);
+        });;
     }
   }, [heroName]);
 

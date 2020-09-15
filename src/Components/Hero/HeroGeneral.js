@@ -25,12 +25,10 @@ export const HeroGeneral = (props) => {
       AWSoperation(getHeroGeneralInfo, {
         name: heroName,
       })
-        .then((hero) => {
-          setHeroInfo(hero);
-          setIsLoading(false);
-        })
+        .then((hero) => setHeroInfo(hero))
+        .then(() => setIsLoading(false))
         .catch((err) => {
-          let error = CustomError(`Hero Not Found.`, true, `/heroes/`)
+          let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
           setError(error);
         });
     }
