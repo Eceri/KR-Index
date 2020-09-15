@@ -41,7 +41,7 @@ export const ErrorHandler = () => {
       }, 2000);
     }
     if (debouncedTerm) {
-      history.push({
+      history.replace({
         pathname: url,
         hash: hash,
       });
