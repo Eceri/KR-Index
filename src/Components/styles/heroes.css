@@ -1,0 +1,27 @@
+.heroIcon {
+  width: 95px;
+  height: 95px;
+}
+.heroesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heroesContainer > a {
+  margin: 0.25rem;
+}
+.classIcon {
+  border: none;
+  width: 20px;
+  margin-right: 0.5rem;
+}
+.classHeadline {
+  margin: 1rem 0 0.5rem 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .heroIcon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}

@@ -1,137 +1,54 @@
+export {
+  getHeroHeadInfo,
+  getHeroGeneralInfo,
+  getHeroSkills,
+  getHeroBackgroundData,
+  getHeroSkins,
+  listHeros,
+  listHerosHeadInfos,
+} from "./aws.helpers.heros";
+export {
+  createArtifact,
+  getArtifact,
+  listArtifacts,
+  listOrderedArtifacts,
+} from "./aws.helpers.artifacts";
+export {
+  listPlugPosts,
+  typePlugsByOrder,
+  allPlugsByOrder,
+} from "./aws.helpers.plugposts";
+
+export const RESULT_NULL = "Error: result is null";
+
+// Imports
 import { API, graphqlOperation } from "aws-amplify";
-
-export const createArtifact = `mutation CreateArtifact(
-  $name: String!, 
-  $description: [String]!, 
-  $story: String!, 
-  $drop: String!,
-  $release: String! 
-  ) {
-  createArtifact( input: {
-    name: $name, 
-    description: $description, 
-    story: $story, 
-    release: $release, 
-    drop: $drop
-  })
-    {name}
-}
-`;
-
-export const getArtifact = `query GetArtifact($name: String!){
-  getArtifact(name: $name){
-    name
-    description
-    story
-    release
-    drop
-  }
-}`;
-
-export const listArtifacts = `query ListArtifacts{
-  listArtifacts(limit: 84){
-    items {
-      name
-      release
-      drop
-    }
-  }
-}`;
-
-export const getHeroHeadInfo = `query GetHeroHeadInfo($name: String!){
-  getHero(name: $name){
-    name
-    title
-    position
-    class
-    damageType
-  }
-}`;
-const skillRequest = `{
-  light
-  books
-  skillInfo{
-    description
-    name
-    cooldown
-    cost
-    skillNumber
-    linked
-  }
-  dark
-  id
-  uniqueTreasure{
-    name
-    effect
-  }
-}`
-
-export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
-  getHero(name: $name){
-    class
-    uniqueWeapon{
-      name
-      effect
-    }
-    soulWeapon{
-      activation
-      advancement0
-      advancement1
-      advancement2
-      cd
-      charges
-    }
-    skill1${skillRequest}
-    skill2${skillRequest}
-    skill3${skillRequest}
-    skill4${skillRequest}
-    light
-    dark
-  }
-}`;
-const utStoryRequest = `{
-  uniqueTreasure{
-    name
-    story
-  }
-}`
-export const getHeroStories = `query GetHeroStories($name: String!){
-  getHero(name: $name){
-    profile{
-      age
-      birthday
-      constellation
-      dislikes
-      likes
-      gender
-      height
-      race
-    }
-    story
-    uniqueWeapon{
-      name
-      story
-    }
-    soulWeapon{
-      story
-    }
-    skill1${utStoryRequest}
-    skill2${utStoryRequest}
-    skill3${utStoryRequest}
-    skill4${utStoryRequest}
-  }
-}`
-
-export const getHeroSkins = `query GetHeroSkins($name: String!){
-  getHero(name: $name){
-    skins
-  }
-}`;
 
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
-    return await API.graphql(graphqlOperation(createEvent, eventDetails));
+    let { data } = await API.graphql(
+      graphqlOperation(createEvent, eventDetails)
+    );
+    const contextSplit = createEvent.split("{");
+    const contextName = contextSplit[1].split(/[{(]/g)[0].trim();
+    let result = data[contextName];
+    if (result == null) throw RESULT_NULL;
+    const isList = data[contextName].items !== undefined ? true : false;
+    let hasNextToken = false;
+
+    if (eventDetails !== undefined) {
+      hasNextToken = Object.keys(eventDetails).includes("nextToken");
+    }
+    if (isList && hasNextToken === false) {
+      result = result.items;
+    }
+
+    if (result === null) {
+      throw Error;
+    } else {
+      return result;
+    }
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };

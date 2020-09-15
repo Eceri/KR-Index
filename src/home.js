@@ -1,94 +1,115 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
-import styled from "styled-components";
+import { Tabs, TabList, TabPanel } from "react-tabs";
+import { useDrag } from "react-use-gesture";
 
 // Relative import
 import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
+import { AWSoperation, typePlugsByOrder } from "Aws";
+import { useWindowDimensions } from "Helpers";
+import {
+  Announcement,
+  Title,
+  TitleType,
+  TextContainer,
+  News,
+  MovingImage,
+  SmallTab,
+} from "Styles";
+import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
 
-// Styling
-const Announcement = styled.div`
-  min-height: 10rem;
-  border: 1px solid white;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  &:hover {
-    box-shadow: 2px 2px 3px black;
-    cursor: pointer;
-  }
-`;
-const Author = styled.div`
-  width: 7rem;
-  display: flex;
-  flex-direction: row;
-  &:hover {
-    cursor: pointer;
-    color: #71b9f5;
-  }
-`;
-const AuthorPic = styled.img`
-  height: 1.5rem;
-  border: 0px solid transparent;
-`;
+// Frontend Variable
+const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
 
-const _dataObj = {
-  title: "",
-  description: "",
-  url: "",
-  timestamp: "",
-  author: {
-    name: "",
-    url: "",
-    icon_url: "",
-  },
-  thumbnail: "",
+// Helper functions
+const resizeTitle = (title) => {
+  const text = title.split("]");
+
+  return text.slice(1).join("]");
 };
-const PlugGame = () => {
-  const [active, setActive] = useState([_dataObj]);
-  const [shouldFetch, setShouldFetch] = useState(true);
 
-  // TODO: Settings are not required anymore
-  // useEffect(() => {
-  //   shouldFetch === true &&
-  //     fetch(`${settings().api}pug`)
-  //       .then((res) => res.json())
-  //       .then((resJSON) => setActive(resJSON));
-  //   setShouldFetch(false);
-  // }, [shouldFetch]);
+const typeOfTitle = (title) => {
+  const text = title.split("]");
+
+  const type = text[0].replace("[", "");
+  return type;
+};
+
+// render function
+const PlugGamePosts = () => {
+  //  States
+  const [activeNews, setActiveNews] = useState([NEWS_DEFAULT]);
+  const [tabIndex, setTabIndex] = useState(0);
+  const { isMobile } = useWindowDimensions();
+
+  useEffect(() => {
+    AWSoperation(typePlugsByOrder, { type: DB_PLUG_TYPES[tabIndex] }).then(
+      (news) => {
+        setActiveNews(news);
+      }
+    );
+  }, [tabIndex]);
+
+  const bindSwipe = useDrag(({ vxvy: [vx], last }) => {
+    if (!isMobile) {
+      return null;
+    }
+    if (last && vx < 0.3) {
+      // Swipe Left
+      if (tabIndex < plugTypes.length - 1) {
+        setTabIndex(tabIndex + 1);
+      }
+    } else if (last && vx > 0.3) {
+      // Swipe Right
+      if (tabIndex > 0) {
+        setTabIndex(tabIndex - 1);
+      }
+    }
+  });
 
   return (
-    <>
-      {active.length > 1 ? (
-        active.map((_data) => (
-          <Announcement
-            key={_data.url}
-            onClick={() => window.open(_data.url, "_blank")}
-          >
-            <div style={{ paddingBottom: "0.5rem" }}>
-              <h3 style={{ paddingBottom: "0.5rem" }}>{_data.title}</h3>
-              <img style={{ maxHeight: "8rem" }} src={_data.thumbnail} />
-              <div>{_data.description}</div>
-              <div>{_data.timestamp}</div>
-            </div>
-            <Author onClick={() => window.open(_data.author.url, "_blank")}>
-              <AuthorPic src={_data.author.icon_url} />
-              <p style={{ paddingLeft: "0.2rem", cursor: "pointer" }}>
-                {_data.author.name}
-              </p>
-            </Author>
-          </Announcement>
-        ))
-      ) : (
-        <div className="loader"></div>
-      )}
-    </>
+    <News>
+      <h2 style={{ marginBottom: "1.5rem" }}>News</h2>
+      <Tabs
+        selectedTabClassName={"active_TabList"}
+        selectedTabPanelClassName={"active_TabPanel"}
+        selectedIndex={tabIndex}
+        onSelect={(index) => setTabIndex(index)}
+        {...bindSwipe()}
+      >
+        <TabList>
+          {plugTypes.map((type) => (
+            <SmallTab key={type}>{type}</SmallTab>
+          ))}
+        </TabList>
+        {plugTypes.map((type) => (
+          <TabPanel key={type}>
+            {activeNews.map((active) => (
+              <Announcement
+                key={active.url}
+                onClick={() => window.open(active.url, "_blank")}
+                borderColor={{ name: typeOfTitle(active.title), type: type }}
+              >
+                <TextContainer>
+                  <TitleType>{typeOfTitle(active.title)}</TitleType>
+                  <Title>{resizeTitle(active.title)}</Title>
+                </TextContainer>
+                <MovingImage src={active.thumbnail} />
+              </Announcement>
+            ))}
+          </TabPanel>
+        ))}
+      </Tabs>
+    </News>
   );
 };
 
+// Main
 export const Home = () => {
   return (
-    <React.Fragment>
-      {createHelmet("Home", "Homepage")}
+    <>
+      {createHelmet("King's Raid Index", "King's Raid Index News")}
       <div>
         <h1>Welcome to the King's Raid Index</h1>
         <div id="welcome">
@@ -111,7 +132,7 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/reddit_share_circle_48.png")}`}
+                src={`/assets/icons/reddit_share_circle_48.png`}
                 alt="snoo"
                 data-tip="reddit"
               />
@@ -123,7 +144,7 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/Discord-Logo-White.png")}`}
+                src={`/assets/icons/Discord-Logo-White.png`}
                 alt="discord"
                 data-tip="Community Discord"
               />
@@ -135,16 +156,17 @@ export const Home = () => {
             >
               <img
                 className="linkLogo"
-                src={`${require("Assets/icons/Plug_Cafe_Logo.bmp")}`}
+                src={`/assets/icons/Plug_Cafe_Logo.bmp`}
                 alt="plug.game"
                 data-tip="Official Plug"
               />
             </a>
           </div>
         </div>
+        <PlugGamePosts />
         <ReactTooltip border={true} />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

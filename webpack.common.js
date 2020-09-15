@@ -1,9 +1,10 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
+const ManifestPlugin = require("webpack-manifest-plugin");
 
 module.exports = {
   entry: {
@@ -45,20 +46,24 @@ module.exports = {
       },
       {
         test: /\.ext$/,
-        use: ["cache-lodaer", "css-loader", "file-loader"],
+        use: ["cache-loader", "css-loader", "file-loader"],
         include: path.resolve("src"),
       },
     ],
   },
   resolve: {
     /**
-     * @todo place relative paths here
+     * @todo place relative paths here, put them also in jsconfig.js for VS-Code
      */
     alias: {
       Assets: path.resolve(__dirname, "src/Assets/"),
       Helpers: path.resolve(__dirname, "src/helpers/helpers.index.js"),
+      Aws: path.resolve(__dirname, "src/helpers/aws/aws.helpers.js"),
       Atoms: path.resolve(__dirname, "src/Components/atoms/atoms.index.js"),
       Styles: path.resolve(__dirname, "src/Components/styles/index.js"),
+      Components: path.resolve(__dirname, "src/Components/components.index.js"),
+      Constants: path.resolve(__dirname, "src/Constants/constants.index.js"),
+      Containers: path.resolve(__dirname, "src/Containers/containers.index.js"),
     },
   },
   optimization: {
@@ -85,10 +90,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
-    new FaviconsWebpackPlugin({
-      logo: "./src/Assets/icons/favicon.png",
-    }),
     new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
+    new CompressionPlugin({
+      filename: "[path].gz",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
+    new ManifestPlugin(),
   ],
 };

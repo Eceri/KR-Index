@@ -1,3 +1,3 @@
 export { Button } from "./Button/Button";
-export { stars } from "./Stars/stars";
+export { Stars } from "./Stars/Stars";
 export { Searchbar } from "./Searchbar/Searchbar";

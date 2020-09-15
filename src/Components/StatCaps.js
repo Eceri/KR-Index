@@ -12,7 +12,7 @@ export const StatCaps = () => {
     return (
       <tr
         key={name}
-        class={clicked ? "selected " : ""}
+        className={clicked ? "selected " : ""}
         onClick={() => setClicked(!clicked)}
       >
         <td>{stat.name}</td>
@@ -253,7 +253,6 @@ export const StatCaps = () => {
 
   const attenuateInv = (x, k, a, b) => {
     let actual = k - Math.floor((k * 1000000) / (a * x * x + b * x + 1000000));
-    console.log(actual);
     return actual;
   };
   const attenuate = (x, k, a, b) => {
@@ -297,14 +296,14 @@ export const StatCaps = () => {
         </tbody>
       </table>
 
-      {/* <br></br>
+      <br></br>
       <p id="thanks">
         Thanks to{" "}
-        <a href="https://github.com/duckness" target="_blank" style ={{color:"pink"}}>
+        <a href="https://github.com/duckness" target="_blank" style ={{color:"darkgray"}}>
           Duckness
         </a>{" "}
          for his work with the stats.
-      </p> */}
+      </p>
     </div>
   );
 };

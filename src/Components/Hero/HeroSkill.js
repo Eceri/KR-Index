@@ -1,44 +1,38 @@
-import React from "react";
-import { Image, UniqueTreasure } from "../components";
+import React, { getGlobal } from "reactn";
+import { UniqueTreasure } from "Components";
+import "./../styles/heroSkills.css";
 
-import "./../styles/heroSkills.css"
-
-export const HeroSkill = props => {
-  let { heroPath, skill } = props
-  const manaCost = n => {
+export const HeroSkill = (props) => {
+  let { skill } = props;
+  const heroName = getGlobal().heroName;
+  let assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
+  const manaCost = (n) => {
     let orbs = [];
     for (let i = 0; i < n; ++i) {
-      orbs.push(<Image alt="Mana Orb" src={"manaOrb.png"} className={"mana"} key={`orb${i}`} />);
+      orbs.push(
+        <img
+          alt="Mana Orb"
+          src={"/assets/manaOrb.png"}
+          className={"mana"}
+          key={`orb${i}`}
+        />
+      );
     }
     return orbs;
   };
-  if(skill == undefined){
-    skill = {
-      id: 0,
-      skillInfo: [{
-        skillNumber: "",
-        id: 0,
-        cost: 0,
-        cooldown: 0,
-        description: ""
-      }],
-      books: [""],
-      light: "",
-      dark: "",
-      uniqueTreasure: {
-        name: "", 
-        effect: ""
-      }
-    }
-  }
 
-  return (
-    <div className="skill" id={`s${skill.id}-anchor`} >
+  return skill == undefined ? (
+    <p />
+  ) : (
+    <div className="skill" id={`s${skill.id}-anchor`}>
       {skill.skillInfo.map((skillInfo, index) => (
-        <div key={skillInfo.skillNumber} className={skillInfo.linked && index > 0 && "linkedSkill"}>
+        <div
+          key={skillInfo.skillNumber}
+          className={skillInfo.linked && index > 0 && "linkedSkill"}
+        >
           <div className="flexBox">
-            <Image
-              src={`${heroPath}${skillInfo.skillNumber}.png`}
+            <img
+              src={`${assetsUrl}${skillInfo.skillNumber}.png`}
               alt={`Skill ${skillInfo.id} Icon`}
               className={"skillIcon"}
             />
@@ -46,9 +40,7 @@ export const HeroSkill = props => {
               <h2>{skillInfo.name}</h2>
               {manaCost(skillInfo.cost)}
               {skillInfo.cooldown > 0 && (
-                <span className={"cooldown"}>
-                  {skillInfo.cooldown} Secs
-                </span>
+                <span className={"cooldown"}>{skillInfo.cooldown} Secs</span>
               )}
             </div>
           </div>
@@ -56,10 +48,10 @@ export const HeroSkill = props => {
         </div>
       ))}
       <div className="books">
-        {skill.books.map(book => (
+        {skill.books.map((book) => (
           <p className={"bookEffects"} key={book}>
-            <Image
-              src={`book${skill.id}.png`}
+            <img
+              src={`/assets/book${skill.id}.png`}
               alt={"book icon"}
               className="bookImageMargin"
             />
@@ -69,23 +61,23 @@ export const HeroSkill = props => {
       </div>
       <div className="skillPerks">
         <div className="flexBox">
-          <Image
-            src={`${heroPath}s${skill.id}l.png`}
+          <img
+            src={`${assetsUrl}s${skill.id}l.png`}
             alt="light"
             className={"perkIcon"}
           />
           <p> {skill.light}</p>
         </div>
         <div className="flexBox">
-          <Image
-            src={`${heroPath}s${skill.id}d.png`}
+          <img
+            src={`${assetsUrl}s${skill.id}d.png`}
             alt="dark"
             className={"perkIcon"}
           />
           <p>{skill.dark}</p>
         </div>
       </div>
-      <UniqueTreasure heroPath={heroPath} skill={skill} />
+      <UniqueTreasure skill={skill} />
       {skill.id < 4 && <hr className="seperator" />}
     </div>
   );

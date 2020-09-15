@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
-import { stars } from "../atoms/Stars/stars";
-import { AWSoperation, getArtifact } from "Helpers";
-import { LOADING_ARTIFACT } from "../../Constants/constants.index";
+import { Stars } from "Atoms";
+import { AWSoperation, getArtifact } from "Aws";
+import { LOADING_ARTIFACT } from "Constants";
 
 const ArtifactText = styled.section`
   height: 7rem;
@@ -43,7 +43,7 @@ const SmallTab = styled((props) => <Tab {...props} />)`
 
 SmallTab.tabsRole = "Tab";
 
-const Artifact = (name) => {
+export const Artifact = (name) => {
   const [star, setStar] = useState(0);
   const [artifact, setArtifact] = useState(LOADING_ARTIFACT);
 
@@ -66,8 +66,8 @@ const Artifact = (name) => {
         }
       })
       .join(" ");
-    AWSoperation(getArtifact, { name: correctName }).then((res) =>
-      setArtifact(res.data.getArtifact)
+    AWSoperation(getArtifact, { name: correctName }).then((artifact) =>
+      setArtifact(artifact)
     );
   }, [name]);
 
@@ -94,16 +94,14 @@ const Artifact = (name) => {
 const renderTop = (artifact, star, setStar) => (
   <div>
     <img
-      src={require(`../../Assets/artifacts/${artifact.name}.png`)}
-      alt="Pic"
+      src={`/assets/artifacts/${artifact.name}.png`}
+      alt={`Picture of ${artifact.name}`}
       align="left"
       style={{ marginRight: "1rem", width: "96px", marginBottom: "2rem" }}
     />
     <NameAndStars>
       <h1>{artifact.name}</h1>
-      {stars(setStar, star)}
+      {Stars(setStar, star)}
     </NameAndStars>
   </div>
 );
-
-export default Artifact;
