@@ -6,6 +6,8 @@ export {
   getHeroSkins,
   listHeros,
   listHerosHeadInfos,
+  getAllHeroData,
+  listHeroesWithClass,
 } from "./aws.helpers.heros";
 export {
   createArtifact,
