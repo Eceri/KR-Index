@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 // Relative Imports
 import { HeroGeneral, HeroStory, HeroSkins, HeroHeader } from "Components";
+import { Spinner } from "Styles";
 import { createHelmet } from "Helpers";
 import "../styles/hero.css";
 import "../styles/tabStyles.css";

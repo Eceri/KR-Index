@@ -34,6 +34,8 @@ setGlobal({
 const Page = () => {
   const [error, setError] = useGlobal("error");
 
+  window.localStorage.clear();
+
   return (
     <>
       <div id="pageContainer">

@@ -1,20 +1,29 @@
 import React, { useEffect, useState, useGlobal } from "reactn";
-import "../styles/HeroStory.css";
 
 //Relative Imports
+import "../styles/HeroStory.css";
+import { Spinner } from "Styles";
+import { CustomError } from "Helpers";
 import { AWSoperation, getHeroBackgroundData } from "Aws";
 
 export const HeroStory = (props) => {
-  const [heroBackgroudData, setHeroBackgroundData] = useState({});
+  //Globals
+  const [error, setError] = useGlobal("error");
   const [heroName, setGlobalHeroName] = useGlobal("heroName");
+  //States
+  const [heroBackgroudData, setHeroBackgroundData] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    AWSoperation(getHeroBackgroundData, { name: heroName }).then((background) =>
-      setHeroBackgroundData(background)
-    );
+    AWSoperation(getHeroBackgroundData, { name: heroName })
+      .then((background) => setHeroBackgroundData(background))
+      .then(() => setIsLoading(false))
+      .catch((err) => {
+        let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
+        setError(error);
+      });
+    return () => setIsLoading(true);
   }, [heroName]);
-  // TODO: CONSOLE.log
-  // console.log(heroBackgroudData.title);
 
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}`;
 
@@ -41,7 +50,9 @@ export const HeroStory = (props) => {
     </tr>
   );
 
-  return (
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <>
       {Object.keys(heroBackgroudData).length > 1 ? (
         <>

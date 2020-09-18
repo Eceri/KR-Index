@@ -7,6 +7,7 @@ export const getHeroHeadInfo = `query GetHeroHeadInfo($name: String!){
     damageType
   }
 }`;
+
 const skillRequest = `{
   light
   books
@@ -25,7 +26,6 @@ const skillRequest = `{
     effect
   }
 }`;
-
 export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
   getHero(name: $name){
     class
@@ -123,3 +123,72 @@ export const listHerosHeadInfos = `query ListHerosHeadInfos{
     }
   }
 }`;
+
+const skillCompleteRequest = `{
+  id
+  light
+  dark
+  books
+  skillInfo {
+    description
+    name
+    skillNumber
+    cooldown
+    cost
+    linked
+  }
+  uniqueTreasure {
+    name
+    effect
+    story
+  }
+}`
+export const getAllHeroData = `query GetAllHeroData($name: String!) {
+  getHero(name: $name){
+    name
+    title
+    class
+    damageType
+    position
+    profile{
+      age
+      birthday
+      constellation
+      dislikes
+      likes
+      gender
+      height
+      race
+    }
+    uniqueWeapon{
+      name
+      effect
+      story
+    }
+    soulWeapon{
+      activation
+      advancement0
+      advancement1
+      advancement2
+      cd
+      charges
+      story
+    }
+    skill1${skillCompleteRequest}
+    skill2${skillCompleteRequest}
+    skill3${skillCompleteRequest}
+    skill4${skillCompleteRequest}
+    dark
+    light
+    story
+    skins
+  }
+}`;
+
+export const listHeroesWithClass = `query {
+  listHeroes{
+    name
+    class
+  }
+}
+`
