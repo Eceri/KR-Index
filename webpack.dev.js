@@ -10,6 +10,14 @@ module.exports = (env) => {
     mode: "development",
     devtool: "eval-source-map",
     devServer: {
+      before(app, server) {
+        const chokidar = require("chokidar");
+        chokidar
+          .watch(path.resolve(__dirname, "src"))
+          .on("all", (event, path) => {
+            server.sockWrite(server.sockets, "content-changed");
+          });
+      },
       contentBase: path.resolve(__dirname, "build"),
       hot: true,
       historyApiFallback: true,
