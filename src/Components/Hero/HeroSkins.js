@@ -1,6 +1,7 @@
 import React, { useState, useEffect, getGlobal, useGlobal } from "reactn";
 import styled from "styled-components";
-import ImageGallery from "react-image-gallery";
+const ImageGallery = React.lazy(() => import("react-image-gallery"));
+// import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ReactTooltip from "react-tooltip";
 
@@ -73,7 +74,7 @@ export const HeroSkins = () => {
   const [heroSkins, setHeroSkins] = useState([]);
   const [currentSkinUrl, setCurrentSkinUrl] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
 
   //Image Item for Gallery
@@ -113,7 +114,7 @@ export const HeroSkins = () => {
         .catch((err) => {
           let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
           setError(error);
-        });;
+        });
     }
   }, [heroName]);
 
