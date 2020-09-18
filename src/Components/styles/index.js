@@ -32,4 +32,5 @@ export {
   News,
   MovingImage,
   SmallTab,
+  LoadMoreButton,
 } from "./styles.news";
