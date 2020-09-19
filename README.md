@@ -56,5 +56,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN Links & Images -->
 
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/Eceri/KR-Index?style=for-the-badge
+[license-url]: https://github.com/Eceri/KR-Index/blob/feature/LICENSE
