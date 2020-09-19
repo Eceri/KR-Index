@@ -12,6 +12,14 @@ module.exports = (env) => {
     devServer: {
       contentBase: [path.resolve(__dirname, "build"), path.resolve(__dirname, "localAssets")],
       contentBasePublicPath: ["public", "/assets"],
+      before(app, server) {
+        const chokidar = require("chokidar");
+        chokidar
+          .watch(path.resolve(__dirname, "src"))
+          .on("all", (event, path) => {
+            server.sockWrite(server.sockets, "content-changed");
+          });
+      },
       hot: true,
       historyApiFallback: true,
       compress: true,

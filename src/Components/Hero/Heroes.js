@@ -29,7 +29,7 @@ export const Heroes = () => {
   useEffect(() => {
     AWSoperation(listHeroesWithClass)
       .then((res) => {
-        res.sort((heroA, heroB) => heroA.name < heroB.name);
+        res.sort((heroA, heroB) => heroA.name > heroB.name);
         let sortedHeroes = groupElementsBy(res, (hero) =>
           classOrder.indexOf(hero.class)
         );

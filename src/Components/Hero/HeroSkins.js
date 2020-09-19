@@ -73,7 +73,7 @@ export const HeroSkins = () => {
   const [heroSkins, setHeroSkins] = useState([]);
   const [currentSkinUrl, setCurrentSkinUrl] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const assetsUrl = `/assets/heroes/${heroName.toLowerCase()}/`;
 
   //Image Item for Gallery
@@ -113,7 +113,7 @@ export const HeroSkins = () => {
         .catch((err) => {
           let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
           setError(error);
-        });;
+        });
     }
   }, [heroName]);
 

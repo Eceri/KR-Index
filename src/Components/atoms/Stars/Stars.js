@@ -34,6 +34,7 @@ export const Stars = (setStar, active) => (
         onClick={() => setStar(v)}
         key={v}
         active={active >= v ? true : false}
+        data-testid={index}
       >
         {v > 0 ? "★" : renderCircle()}
       </Star>

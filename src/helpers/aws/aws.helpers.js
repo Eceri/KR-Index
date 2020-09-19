@@ -24,7 +24,7 @@ export {
 export const RESULT_NULL = "Error: result is null";
 
 // Imports
-import { API, graphqlOperation } from "aws-amplify";
+import { API, graphqlOperation } from "@aws-amplify/api";
 
 export const AWSoperation = async (createEvent, eventDetails) => {
   try {
