@@ -4,12 +4,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
-const ManifestPlugin = require("webpack-manifest-plugin");
+const threadLoader = require("thread-loader");
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+
+const smp = new SpeedMeasurePlugin();
 
 // custom config
 const { webpackPaths } = require("./settings");
+threadLoader.warmup(["babel-loader"]);
 
-module.exports = {
+module.exports = smp.wrap({
   entry: {
     app: "./src/index.js",
   },
@@ -23,10 +27,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-        },
+        include: path.resolve("src"),
+        use: ["thread-loader", "babel-loader"],
       },
       {
         test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp|avif)$/,
@@ -59,12 +61,13 @@ module.exports = {
       ...webpackPaths(),
     },
   },
+
   optimization: {
     runtimeChunk: "single",
     splitChunks: {
       chunks: "all",
       maxInitialRequests: 20,
-      minSize: 0,
+      maxSize: 244000,
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
@@ -92,6 +95,5 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8,
     }),
-    new ManifestPlugin(),
   ],
-};
+});

@@ -17,7 +17,7 @@ import {
 import { Routes } from "./Routes";
 
 // Amplify Settings
-import Amplify from "aws-amplify";
+import Amplify from "@aws-amplify/core";
 import aws_exports from "./aws-exports";
 Amplify.configure(aws_exports);
 

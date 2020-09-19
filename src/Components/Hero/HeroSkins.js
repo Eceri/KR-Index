@@ -1,7 +1,6 @@
 import React, { useState, useEffect, getGlobal, useGlobal } from "reactn";
 import styled from "styled-components";
-const ImageGallery = React.lazy(() => import("react-image-gallery"));
-// import ImageGallery from "react-image-gallery";
+import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ReactTooltip from "react-tooltip";
 
