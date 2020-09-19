@@ -10,18 +10,13 @@ module.exports = (env) => {
     mode: "development",
     devtool: "eval-source-map",
     devServer: {
-      contentBase: path.resolve(__dirname, "build"),
+      contentBase: [path.resolve(__dirname, "build"), path.resolve(__dirname, "localAssets")],
+      contentBasePublicPath: ["public", "/assets"],
       hot: true,
       historyApiFallback: true,
       compress: true,
       index: "index.html",
-      hot: true,
-      proxy: {
-        "/assets": {
-          target: "https://dev.krindex.net/",
-          changeOrigin: true,
-        },
-      },
+      hot: true
     },
     stats: "errors-only",
     plugins: environmentPicker(env),
