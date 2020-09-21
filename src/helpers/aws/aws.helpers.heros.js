@@ -186,7 +186,7 @@ export const getAllHeroData = `query GetAllHeroData($name: String!) {
 }`;
 
 export const listHeroesWithClass = `query {
-  listHeroes{
+  allHeroes{
     name
     class
   }
