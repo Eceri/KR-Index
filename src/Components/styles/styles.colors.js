@@ -18,6 +18,7 @@ export const colors = {
       emergencyMaintenanceComplete: maintenance,
       emergencyMaintenance: maintenance,
       maintenanceCompleted: "#ffc100",
+      maintenanceComplete: "#ffc100",
       extendedMaintenance: maintenance,
     },
     patches: {
@@ -40,5 +41,5 @@ export const colors = {
       specialShopUpdate: specialShop,
       specialShop: specialShop,
     },
-  }
+  },
 };

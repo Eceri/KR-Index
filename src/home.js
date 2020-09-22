@@ -124,7 +124,7 @@ const PlugGamePosts = () => {
           </TabPanel>
         ))}
       </Tabs>
-      {fetchable ? (
+      {fetchable && activeNews.length > 2 ? (
         <LoadMoreButton onClick={() => setFetch(true)}>
           Load more News
         </LoadMoreButton>
