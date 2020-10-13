@@ -23,6 +23,7 @@ export const colors = {
     },
     patches: {
       patchNote: teal,
+      patchNotes: teal,
       gameGuide: gameGuide,
     },
     content: {
@@ -36,6 +37,7 @@ export const colors = {
     events: {
       event: events,
       facebookTwitter: events,
+      notice: "white",
     },
     shop: {
       specialShopUpdate: specialShop,

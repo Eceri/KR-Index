@@ -118,7 +118,10 @@ const PlugGamePosts = () => {
                   <TitleType>{typeOfTitle(title)}</TitleType>
                   <Title>{resizeTitle(title)}</Title>
                 </TextContainer>
-                <MovingImage src={thumbnail} alt={`${type} - picture`} />
+                <MovingImage
+                  src={thumbnail.startsWith("http:") ? "" : thumbnail}
+                  alt={`${typeOfTitle(title)} - picture`}
+                />
               </Announcement>
             ))}
           </TabPanel>
