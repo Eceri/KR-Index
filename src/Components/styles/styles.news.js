@@ -25,7 +25,7 @@ const colorPicker = ({ name, type }) => {
     })
     .join("");
   type = `${type.charAt(0).toLowerCase()}${type.slice(1)}`;
-  return colors.News[type][nameToColor];
+  return colors.News[nameToColor];
 };
 
 // Styling
