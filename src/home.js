@@ -1,13 +1,10 @@
-import React, { useEffect, useState, useGlobal } from "reactn";
+import React, { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
 import { Tabs, TabList, TabPanel } from "react-tabs";
 import { useDrag } from "react-use-gesture";
 
 // Relative import
-import { createHelmet } from "./helpers/helpers.helmet";
 import "./Components/styles/home.css";
-import { AWSoperation, typePlugsByOrder } from "Aws";
-import { useWindowDimensions } from "Helpers";
 import {
   Announcement,
   Title,
@@ -16,7 +13,11 @@ import {
   News,
   MovingImage,
   SmallTab,
+  LoadMoreButton,
 } from "Styles";
+
+import { AWSoperation, typePlugsByOrder } from "Aws";
+import { useWindowDimensions, createHelmet } from "Helpers";
 import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
 
 // Frontend Variable
@@ -41,15 +42,31 @@ const PlugGamePosts = () => {
   //  States
   const [activeNews, setActiveNews] = useState([NEWS_DEFAULT]);
   const [tabIndex, setTabIndex] = useState(0);
+
+  // Load more News
+  const [fetch, setFetch] = useState(true);
+  const [next, setNext] = useState(null);
+  const [fetchable, setFetchable] = useState(true);
+
+  // Mobile
   const { isMobile } = useWindowDimensions();
 
   useEffect(() => {
-    AWSoperation(typePlugsByOrder, { type: DB_PLUG_TYPES[tabIndex] }).then(
-      (news) => {
-        setActiveNews(news);
-      }
-    );
-  }, [tabIndex]);
+    if (fetch) {
+      AWSoperation(typePlugsByOrder, {
+        type: DB_PLUG_TYPES[tabIndex],
+        nextToken: next,
+      }).then(({ items, nextToken }) => {
+        const active = activeNews.length > 2 ? activeNews.concat(items) : items;
+        setActiveNews(active);
+        setNext(nextToken);
+        if (nextToken === null) {
+          setFetchable(false);
+        }
+      });
+      setFetch(false);
+    }
+  }, [tabIndex, fetch]);
 
   const bindSwipe = useDrag(({ vxvy: [vx], last }) => {
     if (!isMobile) {
@@ -75,7 +92,13 @@ const PlugGamePosts = () => {
         selectedTabClassName={"active_TabList"}
         selectedTabPanelClassName={"active_TabPanel"}
         selectedIndex={tabIndex}
-        onSelect={(index) => setTabIndex(index)}
+        onSelect={(index) => {
+          setTabIndex(index);
+          setFetch(true);
+          setFetchable(true);
+          setNext(null);
+          setActiveNews([NEWS_DEFAULT]);
+        }}
         {...bindSwipe()}
       >
         <TabList>
@@ -85,22 +108,39 @@ const PlugGamePosts = () => {
         </TabList>
         {plugTypes.map((type) => (
           <TabPanel key={type}>
-            {activeNews.map((active) => (
+            {activeNews.map(({ url, title, thumbnail }) => (
               <Announcement
-                key={active.url}
-                onClick={() => window.open(active.url, "_blank")}
-                borderColor={{ name: typeOfTitle(active.title), type: type }}
+                key={url}
+                onClick={() => window.open(url, "_blank")}
+                borderColor={{ name: typeOfTitle(title), type: type }}
               >
                 <TextContainer>
-                  <TitleType>{typeOfTitle(active.title)}</TitleType>
-                  <Title>{resizeTitle(active.title)}</Title>
+                  <TitleType>{typeOfTitle(title)}</TitleType>
+                  <Title>{resizeTitle(title)}</Title>
                 </TextContainer>
-                <MovingImage src={active.thumbnail} />
+                <MovingImage src={thumbnail} alt={`${type} - picture`} />
               </Announcement>
             ))}
           </TabPanel>
         ))}
       </Tabs>
+      {fetchable && activeNews.length > 2 ? (
+        <LoadMoreButton onClick={() => setFetch(true)}>
+          Load more News
+        </LoadMoreButton>
+      ) : (
+        <div
+          style={{
+            textAlign: "center",
+            padding: "0.5rem",
+            marginTop: "1rem",
+            border: "1px solid transparent",
+            borderTopColor: "#262626",
+          }}
+        >
+          End of list
+        </div>
+      )}
     </News>
   );
 };

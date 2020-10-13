@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`First check 1`] = `
+<div>
+  <div>
+    <button
+      class="sc-htpNat dHFSAj"
+    >
+      <span
+        style="font-size: 2rem; font-weight: 700; text-shadow: 0.5px 0.5px #ffd700;"
+      >
+        ○
+      </span>
+    </button>
+    <button
+      class="sc-htpNat dHFSAj"
+    >
+      ★
+    </button>
+    <button
+      class="sc-htpNat dHFSAj"
+    >
+      ★
+    </button>
+    <button
+      class="sc-htpNat dHFSAj"
+    >
+      ★
+    </button>
+    <button
+      class="sc-htpNat dHFSAj"
+    >
+      ★
+    </button>
+    <button
+      class="sc-htpNat eQUMIE"
+    >
+      ★
+    </button>
+  </div>
+</div>
+`;

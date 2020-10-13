@@ -106,7 +106,9 @@ export const PerkCalculator = ({ heroReset }) => {
 
   useEffect(() => {
     const hero = pathname.split("/").slice(-1).shift();
-    setHeroName(hero);
+    const correctName =
+      hero.charAt(0).toUpperCase() + hero.slice(1).toLowerCase();
+    setHeroName(correctName);
   }, [pathname]);
 
   useEffect(() => {

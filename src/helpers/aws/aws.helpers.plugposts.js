@@ -10,14 +10,15 @@ export const listPlugPosts = `query ListPlugPosts($nextToken: String){
   }
 }`;
 
-export const typePlugsByOrder = `query TypePlugsByOrder($type: String){
-  typePlugsByOrder(type: $type sortDirection: DESC){
+export const typePlugsByOrder = `query TypePlugsByOrder($type: String, $nextToken: String){
+  typePlugsByOrder(type: $type sortDirection: DESC nextToken: $nextToken){
     items {
       title
       url
       postID
       thumbnail
     }
+    nextToken
   }
 }`;
 

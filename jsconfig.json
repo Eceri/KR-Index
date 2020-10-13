@@ -1,11 +1,9 @@
-// Configurations for VS-Code
 {
   "compilerOptions": {
     "target": "es2020",
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      // Put your alias here and in webpack.common.js
       "Assets": ["src/Assets/"],
       "Helpers": ["src/helpers/helpers.index.js"],
       "Aws": ["src/helpers/aws/aws.helpers.js"],
@@ -16,5 +14,7 @@
       "Containers": ["src/Containers/containers.index.js"]
     }
   },
-  "exclude": ["node_modules", "dist", "amplify"]
+  "exclude": ["node_modules", "dist", "amplify"],
+  "typeAcquisition": { "include": ["jest"] },
+  "include": ["src", "__tests__"]
 }

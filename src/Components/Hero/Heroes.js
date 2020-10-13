@@ -7,16 +7,8 @@ import "../styles/heroes.css";
 //AWS
 import { AWSoperation, listHeroesWithClass } from "Aws";
 import { Spinner } from "Styles";
+import { createHelmet, groupElementsBy } from "Helpers";
 
-const groupBy = (items, keyFn) => {
-  const result = [];
-  items.forEach((item) => {
-    const key = keyFn(item);
-    const group = result[key];
-    group ? group.push(item) : (result[key] = [item]);
-  });
-  return result;
-};
 export const Heroes = () => {
   //States
   const [classes, setClasses] = useState([]);
@@ -37,10 +29,11 @@ export const Heroes = () => {
   useEffect(() => {
     AWSoperation(listHeroesWithClass)
       .then((res) => {
-        res.sort((heroA, heroB) => heroA.name < heroB.name);
-        let sortedHeroes = groupBy(res, (hero) =>
+        res.sort((heroA, heroB) => heroA.name > heroB.name);
+        let sortedHeroes = groupElementsBy(res, (hero) =>
           classOrder.indexOf(hero.class)
         );
+        console.log(sortedHeroes);
         setClasses(sortedHeroes);
       })
       .then(() => setIsLoading(false));
@@ -79,12 +72,8 @@ export const Heroes = () => {
       })}
     </>
   );
-  const title = (
-    <Helmet>
-      <title>{`Heroes`}</title>
-      <meta name="description" content="Heroes overview" />
-    </Helmet>
-  );
+  const title = createHelmet(`Heroes`, `Heroes overview`);
+
   return (
     <>
       {title}
