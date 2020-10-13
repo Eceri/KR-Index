@@ -276,7 +276,7 @@ export const StatCaps = () => {
         <thead>
           <tr>
             <th>Stat</th>
-            <th>Softap</th>
+            <th>Softcap</th>
             <th>Actual Value</th>
           </tr>
         </thead>
