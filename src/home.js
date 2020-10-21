@@ -112,7 +112,7 @@ const PlugGamePosts = () => {
               <Announcement
                 key={url}
                 onClick={() => window.open(url, "_blank")}
-                borderColor={{ name: typeOfTitle(title), type: type }}
+                borderColor={{ name: typeOfTitle(title) }}
               >
                 <TextContainer>
                   <TitleType>{typeOfTitle(title)}</TitleType>
