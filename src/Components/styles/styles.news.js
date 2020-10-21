@@ -6,8 +6,8 @@ import { colors } from "./styles.colors";
 
 import { Button } from "Atoms";
 
-const colorPicker = ({ name, type }) => {
-  if (name === "" || type === "") {
+const colorPicker = ({ name }) => {
+  if (name === "") {
     return "";
   }
   const text = name
@@ -24,8 +24,7 @@ const colorPicker = ({ name, type }) => {
       }
     })
     .join("");
-  type = `${type.charAt(0).toLowerCase()}${type.slice(1)}`;
-  return colors.News[type][nameToColor];
+  return colors.News[nameToColor];
 };
 
 // Styling
