@@ -8,7 +8,8 @@ import {
   Hero,
   Heroes,
   Guides,
-  StatCaps
+  StatCaps,
+  Gears
 } from "Components";
 import { Home } from "./home"
 import { PerksContainer } from "Containers";
@@ -22,6 +23,7 @@ export const Routes = () => (
     <Route path="/artifacts" component={Artifacts} />
     <Route path="/caps" component={StatCaps} />
     <Route exact path="/guides" component={Guides} />
+    <Route path="/gear" component={Gears} />
     <Route path="/404" component={Notfound} />
     <Route exact path="/" component={Home} />
     <Route path="*" component={Notfound} />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, getGlobal, useGlobal } from "reactn";
+import styled from "styled-components";
 import {
   TierTwoPerks,
   TierOnePerks,
@@ -10,6 +11,16 @@ import { CustomError } from "Helpers";
 //aws
 import { AWSoperation, getHeroGeneralInfo } from "Aws";
 
+//Styled Components
+const NpcBonusWrapperDiv = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  img {
+    height: 3rem;
+    border: none;
+  }
+`;
 export const HeroGeneral = (props) => {
   //States
   const [heroInfo, setHeroInfo] = useState({});
@@ -29,6 +40,7 @@ export const HeroGeneral = (props) => {
         .then(() => setIsLoading(false))
         .catch((err) => {
           let error = CustomError(`Hero Not Found.`, true, `/heroes/`);
+          console.log(err)
           setError(error);
         });
     }
@@ -56,6 +68,15 @@ export const HeroGeneral = (props) => {
     <Spinner />
   ) : (
     <>
+      {heroInfo.npcBonus && (
+        <NpcBonusWrapperDiv>
+          <img src={`${assetsUrl}npcBonus.png`} />
+          <p>
+            {heroInfo.npcBonus.name}
+            <p>{heroInfo.npcBonus.effect}</p>
+          </p>
+        </NpcBonusWrapperDiv>
+      )}
       <h2> Unique Weapon </h2> <hr />
       <UniqueWeapon
         uniqueWeapon={heroInfo.uniqueWeapon}
