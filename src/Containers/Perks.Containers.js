@@ -66,7 +66,8 @@ export const PerksContainer = () => {
   // History
   const hist = useHistory();
 
-  const hero = hist.location.pathname.split("/").slice(-1).shift();
+  const urlHero = hist.location.pathname.split("/").slice(-1).shift();
+  const hero = urlHero.charAt(0).toUpperCase() + urlHero.slice(1).toLowerCase();
   const build = hist.location.hash.replace("#", "");
 
   // States

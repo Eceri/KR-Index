@@ -175,6 +175,7 @@ const renderArtifactPictures = (
 ) => (
   <React.Fragment key={name + index}>
     <ArtifactImage
+      loading="lazy"
       onClick={() => {
         setArtifactName(name);
         window.history.pushState(

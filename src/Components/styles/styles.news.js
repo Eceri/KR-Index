@@ -1,10 +1,13 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
 import { Tab } from "react-tabs";
+
 import { colors } from "./styles.colors";
 
-const colorPicker = ({ name, type }) => {
-  if (name === "" || type === "") {
+import { Button } from "Atoms";
+
+const colorPicker = ({ name }) => {
+  if (name === "") {
     return "";
   }
   const text = name
@@ -21,8 +24,7 @@ const colorPicker = ({ name, type }) => {
       }
     })
     .join("");
-  type = `${type.charAt(0).toLowerCase()}${type.slice(1)}`;
-  return colors.News[type][nameToColor];
+  return colors.News[nameToColor];
 };
 
 // Styling
@@ -114,3 +116,14 @@ export const SmallTab = styled((props) => <Tab {...props} />)`
 `;
 
 SmallTab.tabsRole = "Tab";
+
+export const LoadMoreButton = styled((props) => <Button {...props} />)`
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;

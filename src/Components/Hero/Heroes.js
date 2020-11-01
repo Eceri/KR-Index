@@ -9,16 +9,8 @@ import heroClasses from "./../../Assets/classes/classes.json"
 //AWS
 import { AWSoperation, listHeroesWithClass } from "Aws";
 import { Spinner } from "Styles";
+import { createHelmet, groupElementsBy } from "Helpers";
 
-const groupBy = (items, keyFn) => {
-  const result = [];
-  items.forEach((item) => {
-    const key = keyFn(item);
-    const group = result[key];
-    group ? group.push(item) : (result[key] = [item]);
-  });
-  return result;
-};
 export const Heroes = () => {
   //States
   const [classes, setClasses] = useState([]);
@@ -95,12 +87,8 @@ export const Heroes = () => {
       })}
     </>
   );
-  const title = (
-    <Helmet>
-      <title>{`Heroes`}</title>
-      <meta name="description" content="Heroes overview" />
-    </Helmet>
-  );
+  const title = createHelmet(`Heroes`, `Heroes overview`);
+
   return (
     <>
       {title}
