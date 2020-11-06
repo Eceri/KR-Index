@@ -114,8 +114,8 @@ export const listHeros = `query ListHeros($nextToken: String){
   }
 }`;
 
-export const listHerosHeadInfos = `query ListHerosHeadInfos{
-  allHeroes{
+export const listHerosHeadInfos = `query ListHeroesHeadInfo($nextToken: String){
+  listHeros(nextToken: $nextToken limit: 50){
     items{
       name
       title
@@ -123,6 +123,7 @@ export const listHerosHeadInfos = `query ListHerosHeadInfos{
       class
       damageType
     }
+    nextToken
   }
 }`;
 
@@ -188,10 +189,12 @@ export const getAllHeroData = `query GetAllHeroData($name: String!) {
   }
 }`;
 
-export const listHeroesWithClass = `query {
-  allHeroes{
-    name
-    class
+export const listHeroesWithClass = `query ListHeroesWithClass($nextToken: String){
+  listHeros(nextToken: $nextToken limit: 50){
+    items{
+      name
+      class
+    }
+    nextToken
   }
-}
-`;
+}`;

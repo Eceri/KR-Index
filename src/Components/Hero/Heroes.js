@@ -4,7 +4,7 @@ import ReactToolTip from "react-tooltip";
 import { NavLink } from "react-router-dom";
 
 import "../styles/heroes.css";
-import heroClasses from "./../../Assets/classes/classes.json"
+import heroClasses from "./../../Assets/classes/classes.json";
 
 //AWS
 import { AWSoperation, listHeroesWithClass } from "Aws";
@@ -29,30 +29,29 @@ export const Heroes = () => {
   ];
 
   useEffect(() => {
-    // AWSoperation(listHeroesWithClass)
-    //   .then((res) => {
-    //     res.sort((heroA, heroB) => heroA.name > heroB.name);
-    //     let sortedHeroes = groupBy(res, (hero) =>
-    //       classOrder.indexOf(hero.class)
-    //     );
-    //     setClasses(sortedHeroes);
-    //   })
-    //   .then(() => setIsLoading(false));
+    let fetchData = async () => {
+      let fetched = false;
+      let fetchedHeroes = [];
+      let currentToken;
+      do {
+        await AWSoperation(listHeroesWithClass, {
+          nextToken: currentToken,
+        }).then(({ items, nextToken }) => {
+          fetchedHeroes.push(...items);
+          if (nextToken) currentToken = nextToken;
+          else fetched = true;
+        });
+      } while (!fetched);
 
-    let sortedClasses = [];
-    let count = 0;
-    for (let heroClass of heroClasses){
-      let classGroup = []
-      for(let hero of heroClass.heroes){
-        classGroup.push({"name":  `${hero}`})
-        count++;
-      }
-      sortedClasses[classOrder.indexOf(heroClass.name)] = classGroup.sort((heroA, heroB) => heroA.name > heroB.name);
-    }
-    console.log(count);
-    setClasses(sortedClasses)
-    setIsLoading(false);
-  }, []);
+      fetchedHeroes.sort((heroA, heroB) => heroA.name > heroB.name);
+      let sortedHeroes = groupElementsBy(fetchedHeroes, (hero) =>
+        classOrder.indexOf(hero.class)
+      );
+      setClasses(sortedHeroes);
+      setIsLoading(false);
+    };
+    fetchData();
+  }, [fetch]);
 
   const Heroes = () => (
     <>
