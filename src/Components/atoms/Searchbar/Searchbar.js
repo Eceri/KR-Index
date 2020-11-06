@@ -97,11 +97,25 @@ export const Searchbar = ({ setMobileSearch }) => {
     if (globalHeroHeaders.length > 1) {
       setHeros(globalHeroHeaders);
     } else if (search && heros.length < 1) {
-      AWSoperation(listHerosHeadInfos).then((heros) => {
-        const result = heros.map((hero) => ({ ...hero, type: "Hero" }));
+      let fetchData = async () => {
+        let fetched = false;
+        let fetchedHeroes = [];
+        let currentToken;
+        do {
+          await AWSoperation(listHerosHeadInfos, {
+            nextToken: currentToken,
+          }).then(({ items, nextToken }) => {
+            fetchedHeroes.push(...items);
+            if (nextToken) currentToken = nextToken;
+            else fetched = true;
+          });
+        } while (!fetched);
+
+        const result = fetchedHeroes.map((hero) => ({ ...hero, type: "Hero" }));
         setHeros(result);
         setGlobalHeroHeaders(result);
-      });
+      };
+      fetchData();
     }
   }, [search]);
 

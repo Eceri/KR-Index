@@ -26,6 +26,7 @@ const skillRequest = `{
     effect
   }
 }`;
+
 export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
   getHero(name: $name){
     class
@@ -72,6 +73,7 @@ const utStoryRequest = `{
     story
   }
 }`;
+
 export const getHeroBackgroundData = `query GetHeroBackgroundData($name: String!){
   getHero(name: $name){
     name
@@ -116,8 +118,8 @@ export const listHeros = `query ListHeros($nextToken: String){
   }
 }`;
 
-export const listHerosHeadInfos = `query ListHerosHeadInfos{
-  listHeros(limit: 95){
+export const listHerosHeadInfos = `query ListHeroesHeadInfo($nextToken: String){
+  listHeros(nextToken: $nextToken limit: 50){
     items{
       name
       title
@@ -125,6 +127,7 @@ export const listHerosHeadInfos = `query ListHerosHeadInfos{
       class
       damageType
     }
+    nextToken
   }
 }`;
 
@@ -146,7 +149,8 @@ const skillCompleteRequest = `{
     effect
     story
   }
-}`
+}`;
+
 export const getAllHeroData = `query GetAllHeroData($name: String!) {
   getHero(name: $name){
     name
@@ -189,10 +193,12 @@ export const getAllHeroData = `query GetAllHeroData($name: String!) {
   }
 }`;
 
-export const listHeroesWithClass = `query {
-  listHeroes{
-    name
-    class
+export const listHeroesWithClass = `query ListHeroesWithClass($nextToken: String){
+  listHeros(nextToken: $nextToken limit: 50){
+    items{
+      name
+      class
+    }
+    nextToken
   }
-}
-`
+}`;

@@ -22,6 +22,8 @@ import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
 
 // Frontend Variable
 const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
+const GM_NOTE =
+  "https://g-plug.pstatic.net/20200915_97/16001363921830R2Dl_PNG/S_GMNote_EN_NoSub.png?type=lfa686_320";
 
 // Helper functions
 const resizeTitle = (title) => {

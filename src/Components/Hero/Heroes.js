@@ -4,6 +4,8 @@ import ReactToolTip from "react-tooltip";
 import { NavLink } from "react-router-dom";
 
 import "../styles/heroes.css";
+import heroClasses from "./../../Assets/classes/classes.json";
+
 //AWS
 import { AWSoperation, listHeroesWithClass } from "Aws";
 import { Spinner } from "Styles";
@@ -27,17 +29,29 @@ export const Heroes = () => {
   ];
 
   useEffect(() => {
-    AWSoperation(listHeroesWithClass)
-      .then((res) => {
-        res.sort((heroA, heroB) => heroA.name > heroB.name);
-        let sortedHeroes = groupElementsBy(res, (hero) =>
-          classOrder.indexOf(hero.class)
-        );
-        console.log(sortedHeroes);
-        setClasses(sortedHeroes);
-      })
-      .then(() => setIsLoading(false));
-  }, []);
+    let fetchData = async () => {
+      let fetched = false;
+      let fetchedHeroes = [];
+      let currentToken;
+      do {
+        await AWSoperation(listHeroesWithClass, {
+          nextToken: currentToken,
+        }).then(({ items, nextToken }) => {
+          fetchedHeroes.push(...items);
+          if (nextToken) currentToken = nextToken;
+          else fetched = true;
+        });
+      } while (!fetched);
+
+      fetchedHeroes.sort((heroA, heroB) => heroA.name > heroB.name);
+      let sortedHeroes = groupElementsBy(fetchedHeroes, (hero) =>
+        classOrder.indexOf(hero.class)
+      );
+      setClasses(sortedHeroes);
+      setIsLoading(false);
+    };
+    fetchData();
+  }, [fetch]);
 
   const Heroes = () => (
     <>

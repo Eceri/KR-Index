@@ -105,7 +105,7 @@ export const PerkCalculator = ({ heroReset }) => {
   const [error, setError] = useGlobal("error");
 
   useEffect(() => {
-    const hero = pathname.split("/").slice(-1).shift();
+    const hero = pathname.split("/").filter(v=>v).slice(-1).shift();
     const correctName =
       hero.charAt(0).toUpperCase() + hero.slice(1).toLowerCase();
     setHeroName(correctName);
