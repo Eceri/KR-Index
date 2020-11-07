@@ -145,6 +145,7 @@ export const Searchbar = ({ setMobileSearch }) => {
         const search = keySearch[1].trim();
         let indexShortcut = -1;
 
+
         if (heroHeader.includes(_key) || heroHeaderShortcut.includes(_key)) {
           indexShortcut = heroHeaderShortcut.indexOf(_key);
           if (indexShortcut !== -1) {
@@ -168,7 +169,7 @@ export const Searchbar = ({ setMobileSearch }) => {
   }, [mobile]);
 
   const suggestedText = (name) => {
-    const index = name.toLowerCase().indexOf(searchQuery);
+    const index = name.toLowerCase().indexOf(searchQuery.toLowerCase());
     const { length } = searchQuery;
     const beforeBold = name.slice(0, index);
     const afterBold = name.slice(index + length);
