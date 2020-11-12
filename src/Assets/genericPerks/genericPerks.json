@@ -13,12 +13,12 @@
     "effect": "DEF is increased by 35%"
   },
   {
-    "name": "Crit Resistance Up",
-    "effect": "Crit Resistance increases by 250"
+    "name": "Crit Resist Up",
+    "effect": "Crit Resistance is increased by 250"
 
   },
   {
     "name": "Monster Hunting",
-    "effect": "Increases DMG to non-hero Enemies by 10% and takes 10% less dmg."
+    "effect": "Increases DMG to Non-Hero Enemies by 10% and takes 10% reduced DMG."
   }
 ]
