@@ -18,8 +18,8 @@
     ],
     "classTranscendencePerks": [
       {
-        "name": "Expirienced Fighter",
-        "effect": "Increases the dmg targets take by 20%."
+        "name": "Experienced Fighter",
+        "effect": "Attacked targets take 20% more DMG. Does not stack."
       },
       {
         "name": "Excellent Strategy",
