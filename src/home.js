@@ -170,7 +170,7 @@ const PlugGamePosts = () => {
         <h2 style={{ marginBottom: "1.5rem" }}>
           {showArchive ? "Archive" : "News"}
         </h2>
-        <Button
+        {/* <Button
           disabled={debouncedToggle !== showArchive}
           style={{ height: "2rem", width: "3.5rem" }}
           onClick={() => {
@@ -179,7 +179,7 @@ const PlugGamePosts = () => {
           }}
         >
           {showArchive ? "News" : "Archive"}
-        </Button>
+        </Button> */}
       </div>
       {showArchive ? (
         renderArchive()
