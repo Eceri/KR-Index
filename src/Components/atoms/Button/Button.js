@@ -19,6 +19,10 @@ const ButtonStyle = styled.button`
     outline: none;
   }
   vertical-align: middle;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 const Icon = styled.img`

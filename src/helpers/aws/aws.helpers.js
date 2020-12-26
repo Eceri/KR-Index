@@ -20,6 +20,7 @@ export {
   typePlugsByOrder,
   allPlugsByOrder,
 } from "./aws.helpers.plugposts";
+export { allTempNewsByOrder } from "./aws.helpers.tempKRNews";
 
 export const RESULT_NULL = "Error: result is null";
 

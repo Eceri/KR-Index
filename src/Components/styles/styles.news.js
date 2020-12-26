@@ -6,16 +6,9 @@ import { colors } from "./styles.colors";
 
 import { Button } from "Atoms";
 
-const colorPicker = ({ name }) => {
-  if (name === "") {
-    return "";
-  }
-  const text = name
-    .toLowerCase()
-    .replace(/[!’´`'-]/g, "")
-    .replace(/\//g, " ");
-  let nameToColor = text.split(" ");
-  nameToColor = nameToColor
+const string2Key = (_string, _split) => {
+  return _string
+    .split(_split)
     .map((v, i) => {
       if (i > 0) {
         return `${v.charAt(0).toUpperCase()}${v.slice(1)}`;
@@ -24,6 +17,22 @@ const colorPicker = ({ name }) => {
       }
     })
     .join("");
+};
+
+const colorPicker = ({ name, archive }) => {
+  let nameToColor = "";
+  if (name === "") {
+    return "";
+  }
+  if (archive) {
+    const text = name
+      .toLowerCase()
+      .replace(/[!’´`'-]/g, "")
+      .replace(/\//g, " ");
+    nameToColor = string2Key(text, " ");
+  } else {
+    nameToColor = string2Key(name, "-");
+  }
   return colors.News[nameToColor];
 };
 
@@ -41,6 +50,7 @@ export const Announcement = styled.div`
   }
   border: 2px solid transparent;
   border-left-color: ${(props) => colorPicker(props.borderColor)};
+  border-right-color: #404040;
 `;
 
 export const Title = styled.h3`
