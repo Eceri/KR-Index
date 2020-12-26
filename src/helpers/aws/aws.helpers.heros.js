@@ -48,6 +48,10 @@ export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
     skill4${skillRequest}
     light
     dark
+    npcBonus{
+      name
+      effect
+    }
   }
 }`;
 

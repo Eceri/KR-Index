@@ -16,9 +16,10 @@ import {
   LoadMoreButton,
 } from "Styles";
 
-import { AWSoperation, typePlugsByOrder } from "Aws";
-import { useWindowDimensions, createHelmet } from "Helpers";
+import { AWSoperation, typePlugsByOrder, allTempNewsByOrder } from "Aws";
+import { useWindowDimensions, createHelmet, useDebounce } from "Helpers";
 import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
+import { Button } from "Atoms";
 
 // Frontend Variable
 const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
@@ -50,15 +51,30 @@ const PlugGamePosts = () => {
   const [next, setNext] = useState(null);
   const [fetchable, setFetchable] = useState(true);
 
+  // Toggle archive
+  const [showArchive, setShowArchive] = useState(false);
+  const debouncedToggle = useDebounce(showArchive, 700);
+
   // Mobile
   const { isMobile } = useWindowDimensions();
 
   useEffect(() => {
+    setNext(null);
+    setFetch(true);
+  }, [showArchive]);
+
+  useEffect(() => {
     if (fetch) {
-      AWSoperation(typePlugsByOrder, {
-        type: DB_PLUG_TYPES[tabIndex],
-        nextToken: next,
-      }).then(({ items, nextToken }) => {
+      const params = showArchive
+        ? {
+            type: DB_PLUG_TYPES[tabIndex],
+            nextToken: next,
+          }
+        : {
+            nextToken: next,
+          };
+      const operation = showArchive ? typePlugsByOrder : allTempNewsByOrder;
+      AWSoperation(operation, params).then(({ items, nextToken }) => {
         const active = activeNews.length > 2 ? activeNews.concat(items) : items;
         setActiveNews(active);
         setNext(nextToken);
@@ -87,9 +103,8 @@ const PlugGamePosts = () => {
     }
   });
 
-  return (
-    <News>
-      <h2 style={{ marginBottom: "1.5rem" }}>News</h2>
+  const renderArchive = () => (
+    <>
       <Tabs
         selectedTabClassName={"active_TabList"}
         selectedTabPanelClassName={"active_TabPanel"}
@@ -114,7 +129,7 @@ const PlugGamePosts = () => {
               <Announcement
                 key={url}
                 onClick={() => window.open(url, "_blank")}
-                borderColor={{ name: typeOfTitle(title) }}
+                borderColor={{ name: typeOfTitle(title), archive: true }}
               >
                 <TextContainer>
                   <TitleType>{typeOfTitle(title)}</TitleType>
@@ -144,6 +159,61 @@ const PlugGamePosts = () => {
           }}
         >
           End of list
+        </div>
+      )}
+    </>
+  );
+
+  return (
+    <News>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <h2 style={{ marginBottom: "1.5rem" }}>
+          {showArchive ? "Archive" : "News"}
+        </h2>
+        <Button
+          disabled={debouncedToggle !== showArchive}
+          style={{ height: "2rem", width: "3.5rem" }}
+          onClick={() => {
+            setShowArchive(!showArchive);
+            setActiveNews([NEWS_DEFAULT]);
+          }}
+        >
+          {showArchive ? "News" : "Archive"}
+        </Button>
+      </div>
+      {showArchive ? (
+        renderArchive()
+      ) : (
+        <div>
+          {activeNews.map(({ title, url, type }) => (
+            <Announcement
+              key={url}
+              onClick={() => window.open(url, "_blank")}
+              borderColor={{ name: type }}
+            >
+              <TextContainer>
+                <TitleType>{typeOfTitle(title)}</TitleType>
+                <Title>{resizeTitle(title)}</Title>
+              </TextContainer>
+            </Announcement>
+          ))}
+          {fetchable && activeNews.length > 2 ? (
+            <LoadMoreButton onClick={() => setFetch(true)}>
+              Load more News
+            </LoadMoreButton>
+          ) : (
+            <div
+              style={{
+                textAlign: "center",
+                padding: "0.5rem",
+                marginTop: "1rem",
+                border: "1px solid transparent",
+                borderTopColor: "#262626",
+              }}
+            >
+              End of list
+            </div>
+          )}
         </div>
       )}
     </News>
