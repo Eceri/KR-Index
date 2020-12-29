@@ -110,7 +110,7 @@ export const getHeroSkins = `query GetHeroSkins($name: String!){
 }`;
 
 export const listHeros = `query ListHeros($nextToken: String){
-  listHeros(nextToken: $nextToken limit: 95){
+  listHeros(nextToken: $nextToken limit: 50){
     items{
       name
     }
