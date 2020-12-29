@@ -55,3 +55,23 @@ export const AWSoperation = async (createEvent, eventDetails) => {
     throw error;
   }
 };
+
+export const Pagination = async (createEvent, eventDetails, steps = false) => {
+  let fetched = false;
+  const fetchedItems = [];
+  let currentToken;
+
+  if (!steps) {
+    do {
+      eventDetails = { ...eventDetails, nextToken: currentToken };
+      await AWSoperation(createEvent, eventDetails).then(
+        ({ items, nextToken }) => {
+          fetchedItems.push(...items);
+          if (nextToken) currentToken = nextToken;
+          else fetched = true;
+        }
+      );
+    } while (!fetched);
+    return fetchedItems;
+  }
+};
