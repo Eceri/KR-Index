@@ -20,6 +20,7 @@ export {
   typePlugsByOrder,
   allPlugsByOrder,
 } from "./aws.helpers.plugposts";
+export { allTempNewsByOrder } from "./aws.helpers.tempKRNews";
 
 export const RESULT_NULL = "Error: result is null";
 
@@ -55,16 +56,22 @@ export const AWSoperation = async (createEvent, eventDetails) => {
   }
 };
 
-export const listAllOperation = async (_event) => {
-  let fetchedData = [];
+export const Pagination = async (createEvent, eventDetails, steps = false) => {
+  let fetched = false;
+  const fetchedItems = [];
   let currentToken;
-  do {
-    await AWSoperation(_event, {
-      nextToken: currentToken,
-    }).then(({ items, nextToken }) => {
-      fetchedData.push(...items);
-      currentToken = nextToken;
-    });
-  } while (currentToken);
-  return fetchedData;
+
+  if (!steps) {
+    do {
+      eventDetails = { ...eventDetails, nextToken: currentToken };
+      await AWSoperation(createEvent, eventDetails).then(
+        ({ items, nextToken }) => {
+          fetchedItems.push(...items);
+          if (nextToken) currentToken = nextToken;
+          else fetched = true;
+        }
+      );
+    } while (!fetched);
+    return fetchedItems;
+  }
 };

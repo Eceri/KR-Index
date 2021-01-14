@@ -73,13 +73,14 @@ const Dropdown = (show, setShow, direction) => {
         >
           Perks
         </DropdownLink>
-        <DropdownLink 
+        {/* TODO: Make gears work */}
+        {/* <DropdownLink 
           to={`/gear`}
           className={`navLink`}
           onClick={() => handleClick()}
         >
           Gears
-        </DropdownLink>
+        </DropdownLink> */}
       </Items>
     );
 

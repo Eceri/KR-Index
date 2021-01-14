@@ -13,18 +13,21 @@ export const colors = {
   hover: "dimgrey",
   nav: "#262626",
   News: {
-    notice: "white",
     maintenanceNotice: "#c7ced4",
     emergencyMaintenanceComplete: maintenance,
+    emergencyMaintenanceNotice: maintenance,
     emergencyMaintenance: maintenance,
     maintenanceCompleted: "#ffc100",
     maintenanceComplete: "#ffc100",
     extendedMaintenance: maintenance,
     kingsRaidStudio: krStudio,
+    kingsRaidMedia: "#5A159C",
 
     patchNote: teal,
     patchNotes: teal,
     gameGuide: gameGuide,
+    gameContent: "#08B2CF",
+    guide: "#93271C",
 
     kingsRaidVod: purple,
     gmNote: notes,

@@ -38,9 +38,8 @@ export const listArtifacts = `query ListArtifacts{
   }
 }`;
 
-// TODO: Limitless
 export const listOrderedArtifacts = `query OrderedArtifacts{
-  artifactsByOrder(type:"Artifact"){
+  artifactsByOrder(type:"Artifact", limit: 90){
     items{
       name
       release
@@ -50,18 +49,3 @@ export const listOrderedArtifacts = `query OrderedArtifacts{
   }
 }
 `;
-
-// export const listOrderedArtifacts = `query OrderedArtifacts(
-//   $limit: Int
-//   $nextToken: String
-//   ){
-//   artifactsByOrder(limit: $limit type:"Artifact" nextToken: $nextToken){
-//     items{
-//       name
-//       release
-//       drop
-//     }
-//     nextToken
-//   }
-// }
-// `;

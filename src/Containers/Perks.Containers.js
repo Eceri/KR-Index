@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 // Relative Imports
 import { PerkCalculator } from "Components";
 import { Flex, Filterbox, HeroImage } from "Styles";
-import { AWSoperation, listHeros } from "Aws";
+import { AWSoperation, listHeros, Pagination } from "Aws";
 import { sortedSearch } from "Helpers";
 import { INIT_BUILD, PERK_URL_CHECK } from "Constants";
 
@@ -66,7 +66,11 @@ export const PerksContainer = () => {
   // History
   const hist = useHistory();
 
-  const urlHero = hist.location.pathname.split("/").filter(v=>v).slice(-1).shift();
+  const urlHero = hist.location.pathname
+    .split("/")
+    .filter((v) => v)
+    .slice(-1)
+    .shift();
   const hero = urlHero.charAt(0).toUpperCase() + urlHero.slice(1).toLowerCase();
   const build = hist.location.hash.replace("#", "");
 
@@ -96,22 +100,14 @@ export const PerksContainer = () => {
   }, []);
 
   useEffect(() => {
-    if (fetch && fetchControl) {
-      try {
-        AWSoperation(listHeros, { nextToken }).then(({ items, nextToken }) => {
-          let joinHeros = heros.concat(items);
-          setNextToken(nextToken);
-          setHeros(joinHeros);
-          setCopyHeroes(sortedSearch(joinHeros, "name"));
-          if (nextToken === null) {
-            setFetchControl(false);
-          }
-        });
-        setFetch(false);
-      } catch (error) {
+    Pagination(listHeros)
+      .then((heroes) => {
+        setHeros(heroes);
+        setCopyHeroes(sortedSearch(heroes, "name"));
+      })
+      .catch((error) => {
         history.pushState(error, "Error", "/404");
-      }
-    }
+      });
     setName(hero);
   }, [fetch]);
 
