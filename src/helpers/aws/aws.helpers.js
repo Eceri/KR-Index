@@ -54,3 +54,17 @@ export const AWSoperation = async (createEvent, eventDetails) => {
     throw error;
   }
 };
+
+export const listAllOperation = async (_event) => {
+  let fetchedData = [];
+  let currentToken;
+  do {
+    await AWSoperation(_event, {
+      nextToken: currentToken,
+    }).then(({ items, nextToken }) => {
+      fetchedData.push(...items);
+      currentToken = nextToken;
+    });
+  } while (currentToken);
+  return fetchedData;
+};
