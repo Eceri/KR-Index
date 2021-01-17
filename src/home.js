@@ -265,15 +265,15 @@ export const Home = () => {
               />
             </a>
             <a
-              href="https://www.plug.game/kingsraid/"
+              href="https://kr-official.community/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 className="linkLogo"
-                src={`/assets/icons/Plug_Cafe_Logo.bmp`}
-                alt="plug.game"
-                data-tip="Official Plug"
+                src={`/assets/icons/kr_official_icon.png`}
+                alt="official community"
+                data-tip="Official Community"
               />
             </a>
           </div>
