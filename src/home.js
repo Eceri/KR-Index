@@ -76,6 +76,7 @@ const PlugGamePosts = () => {
       const operation = showArchive ? typePlugsByOrder : allTempNewsByOrder;
       AWSoperation(operation, params).then(({ items, nextToken }) => {
         const active = activeNews.length > 2 ? activeNews.concat(items) : items;
+        console.log(active);
         setActiveNews(active);
         setNext(nextToken);
         if (nextToken === null) {
