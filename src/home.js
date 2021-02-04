@@ -232,7 +232,7 @@ export const Home = () => {
     flex: 100%;
     justify-content: center;
   `;
-  const KreWrapper = styled.div`
+  const div = styled.div`
     display: flex;
   `;
   const KreIcon = styled.img`
@@ -316,7 +316,7 @@ export const Home = () => {
             </a>
           </CommunityLinks>
         </CommunityLinksWrapper>
-        <KreWrapper>
+        <div>
           <KreLink
           >
             <KreIcon
@@ -333,7 +333,7 @@ export const Home = () => {
             to help contribute towards a more comprehensive collection of King's
             Raid information.
           </p>
-        </KreWrapper>
+        </div>
         <hr />
         <PlugGamePosts />
         <ReactTooltip border={true} />
