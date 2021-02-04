@@ -232,13 +232,9 @@ export const Home = () => {
     flex: 100%;
     justify-content: center;
   `;
-  const KreWrapper = styled.div`
-    display: flex;
-  `;
   const KreIcon = styled.img`
     border-radius: 15px;
     width: auto;
-    float: left;
     margin-right: 1rem
     height: 100%;
     max-height: 6rem
@@ -256,6 +252,7 @@ export const Home = () => {
   </a>
   const KreLink = styled(kreLinkTemplate)`
     color: darkgrey;
+    float: left;
   `;
   return (
     <>
