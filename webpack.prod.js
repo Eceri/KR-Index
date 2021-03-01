@@ -13,14 +13,14 @@ module.exports = merge(common, {
   },
   plugins: [
     new SitemapPlugin({
-      base: "https://www.krindex.net/",
+      base: "https://www.krindex.net",
       paths,
       options: {
-        filename: "map.xml",
+        filename: "./map.xml",
       },
     }),
     new RobotstxtPlugin({
-      filePath: "",
+      filePath: "./robots.txt",
       policy: [{ userAgent: "*", allow: "/", crawlDelay: 10 }],
     }),
   ],
