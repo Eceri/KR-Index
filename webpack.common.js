@@ -86,7 +86,7 @@ module.exports = smp.wrap({
         },
       },
     },
-    minimizer: [new CssMinimizerPlugin()],
+    minimizer: [new CssMinimizerPlugin({ exclude: /(node_modules)/ })],
   },
   plugins: [
     new CleanWebpackPlugin(),
