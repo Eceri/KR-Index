@@ -21,12 +21,15 @@ threadLoader.warmup([
 module.exports = smp.wrap({
   entry: {
     app: "./src/index.js",
+    Home: path.resolve(__dirname, "src/home.js"),
+    Heroes: path.resolve(__dirname, "src/Components/Hero/Heroes.js"),
+    Artifacts: path.resolve(__dirname, "src/Components/Artifacts/Artifacts.js"),
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "[name].[hash].js",
+    filename: "[name].[contenthash].js",
     publicPath: "/",
-    chunkFilename: "[name].[hash].js",
+    chunkFilename: "[name].[contenthash].js",
   },
   module: {
     rules: [
@@ -69,8 +72,8 @@ module.exports = smp.wrap({
     runtimeChunk: "single",
     splitChunks: {
       chunks: "all",
-      maxInitialRequests: 20,
-      maxSize: 244000,
+      maxInitialRequests: Infinity,
+      minSize: 0,
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
