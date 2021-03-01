@@ -133,7 +133,7 @@ export const NavBar = (page) => {
         <img
           src={"/assets/icons/favicon.png"}
           alt={"favicon"}
-          style={{ width: 24, border: "none" }}
+          style={{ width: 24, border: "none", height: 24 }}
         />
       </NavLink>
       <NavLink to={"/heroes"} className="navLink" onClick={() => handleError()}>

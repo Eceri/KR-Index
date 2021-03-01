@@ -245,15 +245,17 @@ export const Home = () => {
   `;
 
   //create template Link to be used as base for styled component.
-  const kreLinkTemplate = props => <a
-    href="https://discord.gg/Y6fynAy"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-tip="KRE Discord"
-    {...props}
-  >
-    {props.children}
-  </a>
+  const kreLinkTemplate = (props) => (
+    <a
+      href="https://discord.gg/Y6fynAy"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-tip="KRE Discord"
+      {...props}
+    >
+      {props.children}
+    </a>
+  );
   const KreLink = styled(kreLinkTemplate)`
     color: darkgrey;
   `;
@@ -265,7 +267,7 @@ export const Home = () => {
         <div id="welcome">
           <div>
             <p>This page is a Database for the mobile game King's Raid.</p>
-            <p>
+            <p style={{ height: "6rem", width: "100%" }}>
               King's Raid (Korean: 킹스레이드) is a free-to-play side-scrolling
               RPG mobile game developed by South Korean game developer Vespa. It
               was first released on September 19, 2016 for operating systems
@@ -288,6 +290,8 @@ export const Home = () => {
                 src={`/assets/icons/reddit_share_circle_48.png`}
                 alt="snoo"
                 data-tip="reddit"
+                widht="24"
+                height="24"
               />
             </a>
             <a
@@ -317,16 +321,12 @@ export const Home = () => {
           </CommunityLinks>
         </CommunityLinksWrapper>
         <div>
-          <KreLink
-          >
-            <KreIcon
-              src={`/assets/icons/KRE_icon.png`}
-              alt="KRE Discord"
-            />
+          <KreLink>
+            <KreIcon src={`/assets/icons/KRE_icon.png`} alt="KRE Discord" />
           </KreLink>
-          <p>
+          <p style={{ height: "7rem", width: "100%" }}>
             Looking for guides or wanna help writing them? Head over to the
-            <KreLink > King's Raid Encyclopedia </KreLink> discord server. There
+            <KreLink> King's Raid Encyclopedia </KreLink> discord server. There
             are currently only guides on select characters and content. More
             will be added in the future. If you are knowledgeable about the game
             or have strong writing skills, please consider visiting the server

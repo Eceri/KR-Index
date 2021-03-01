@@ -12,7 +12,7 @@ export const Footer = () => {
         <img
           src={`${require("Assets/icons/GitHub-Mark-Light-32px.png")}`}
           alt="github"
-          style={{ border: "none" }}
+          style={{ border: "none", height: 24, widht: 24 }}
         />
       </a>
     </footer>

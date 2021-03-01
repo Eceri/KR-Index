@@ -63,6 +63,7 @@ module.exports = smp.wrap({
   },
 
   optimization: {
+    moduleIds: "deterministic",
     runtimeChunk: "single",
     splitChunks: {
       chunks: "all",
