@@ -20,6 +20,7 @@ import { AWSoperation, typePlugsByOrder, allTempNewsByOrder } from "Aws";
 import { useWindowDimensions, createHelmet, useDebounce } from "Helpers";
 import { NEWS_DEFAULT, DB_PLUG_TYPES } from "Constants";
 import { Button } from "Atoms";
+import styled from "styled-components";
 
 // Frontend Variable
 const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
@@ -223,6 +224,37 @@ const PlugGamePosts = () => {
 
 // Main
 export const Home = () => {
+  const CommunityLinksWrapper = styled.div`
+    align-items: center;
+    text-align: center;
+  `;
+  const CommunityLinks = styled.div`
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+  `;
+  const KreIcon = styled.img`
+    border-radius: 15px;
+    width: auto;
+    margin-right: 1rem
+    height: 100%;
+    max-height: 6rem
+  `;
+
+  //create template Link to be used as base for styled component.
+  const kreLinkTemplate = props => <a
+    href="https://discord.gg/Y6fynAy"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-tip="KRE Discord"
+    {...props}
+  >
+    {props.children}
+  </a>
+  const KreLink = styled(kreLinkTemplate)`
+    color: darkgrey;
+    float: left;
+  `;
   return (
     <>
       {createHelmet("King's Raid Index", "King's Raid Index News")}
@@ -239,8 +271,11 @@ export const Home = () => {
               servers, which were opened on February 16, 2017.
             </p>
           </div>
-          <div id="communityLinks">
-            <p>Community Links:</p>
+        </div>
+        <hr />
+        <CommunityLinksWrapper>
+          <h2>Community Links</h2>
+          <CommunityLinks>
             <a
               href="https://www.reddit.com/r/Kings_Raid/"
               target="_blank"
@@ -254,7 +289,7 @@ export const Home = () => {
               />
             </a>
             <a
-              href="https://discord.gg/sHjshB"
+              href="https://discord.gg/8gzBRQJ9"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -266,19 +301,38 @@ export const Home = () => {
               />
             </a>
             <a
-              href="https://www.plug.game/kingsraid/"
+              href="https://kr-official.community/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 className="linkLogo"
-                src={`/assets/icons/Plug_Cafe_Logo.bmp`}
-                alt="plug.game"
-                data-tip="Official Plug"
+                src={`/assets/icons/kr_official_icon.png`}
+                alt="official community"
+                data-tip="Official Community"
               />
             </a>
-          </div>
-        </div>
+          </CommunityLinks>
+        </CommunityLinksWrapper>
+        <KreWrapper>
+          <KreLink
+          >
+            <KreIcon
+              src={`/assets/icons/KRE_icon.png`}
+              alt="KRE Discord"
+            />
+          </KreLink>
+          <p>
+            Looking for guides or wanna help writing them? Head over to the
+            <KreLink > King's Raid Encyclopedia </KreLink> discord server. There
+            are currently only guides on select characters and content. More
+            will be added in the future. If you are knowledgeable about the game
+            or have strong writing skills, please consider visiting the server
+            to help contribute towards a more comprehensive collection of King's
+            Raid information.
+          </p>
+        </KreWrapper>
+        <hr />
         <PlugGamePosts />
         <ReactTooltip border={true} />
       </div>

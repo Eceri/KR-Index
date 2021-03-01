@@ -1,3 +1,4 @@
+let heroRequestLimit = 50;
 export const getHeroHeadInfo = `query GetHeroHeadInfo($name: String!){
   getHero(name: $name){
     name
@@ -5,6 +6,10 @@ export const getHeroHeadInfo = `query GetHeroHeadInfo($name: String!){
     position
     class
     damageType
+    npcBonus{
+      name
+      effect
+    }
   }
 }`;
 
@@ -48,10 +53,6 @@ export const getHeroGeneralInfo = `query GetHeroGeneralInfo($name: String!){
     skill4${skillRequest}
     light
     dark
-    npcBonus{
-      name
-      effect
-    }
   }
 }`;
 
@@ -110,7 +111,7 @@ export const getHeroSkins = `query GetHeroSkins($name: String!){
 }`;
 
 export const listHeros = `query ListHeros($nextToken: String){
-  listHeros(nextToken: $nextToken limit: 50){
+  listHeros(nextToken: $nextToken limit: ${heroRequestLimit}){
     items{
       name
     }
@@ -119,13 +120,17 @@ export const listHeros = `query ListHeros($nextToken: String){
 }`;
 
 export const listHerosHeadInfos = `query ListHeroesHeadInfo($nextToken: String){
-  listHeros(nextToken: $nextToken limit: 50){
+  listHeros(nextToken: $nextToken limit: ${heroRequestLimit}){
     items{
       name
       title
       position
       class
       damageType
+      npcBonus{
+        name
+        effect
+      }
     }
     nextToken
   }
@@ -194,7 +199,7 @@ export const getAllHeroData = `query GetAllHeroData($name: String!) {
 }`;
 
 export const listHeroesWithClass = `query ListHeroesWithClass($nextToken: String){
-  listHeros(nextToken: $nextToken limit: 50){
+  listHeros(nextToken: $nextToken limit: ${heroRequestLimit}){
     items{
       name
       class
