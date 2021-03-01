@@ -1,7 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -32,21 +31,19 @@ module.exports = smp.wrap({
   module: {
     rules: [
       {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
+      },
+      {
         test: /\.js$/,
-        include: path.resolve("src"),
+        exclude: /node_modules/,
         use: ["thread-loader", "babel-loader"],
       },
       {
         test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp|avif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              esModule: false,
-              publicPath: "/",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
       {
         test: /\.css$/i,
@@ -93,7 +90,6 @@ module.exports = smp.wrap({
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
-    new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
     new CompressionPlugin({
       filename: "[path].gz",
