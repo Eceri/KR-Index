@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial")
+    url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+  font-display: swap;
+}
+
 body {
   background-color: #18181b;
   margin: 0;
