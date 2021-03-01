@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const threadLoader = require("thread-loader");
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
@@ -11,7 +12,12 @@ const smp = new SpeedMeasurePlugin();
 
 // custom config
 const { webpackPaths } = require("./settings");
-threadLoader.warmup(["babel-loader"]);
+threadLoader.warmup([
+  "babel-loader",
+  "file-loader",
+  "cache-loader",
+  "css-loader",
+]);
 
 module.exports = smp.wrap({
   entry: {
@@ -80,6 +86,7 @@ module.exports = smp.wrap({
         },
       },
     },
+    minimizer: [new CssMinimizerPlugin()],
   },
   plugins: [
     new CleanWebpackPlugin(),
