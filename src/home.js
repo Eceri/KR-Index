@@ -316,6 +316,8 @@ export const Home = () => {
                 src={`/assets/icons/kr_official_icon.png`}
                 alt="official community"
                 data-tip="Official Community"
+                width="32px"
+                height="32px"
               />
             </a>
           </CommunityLinks>
