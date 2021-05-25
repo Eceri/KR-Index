@@ -242,15 +242,17 @@ export const Home = () => {
   `;
 
   //create template Link to be used as base for styled component.
-  const kreLinkTemplate = props => <a
-    href="https://discord.gg/Y6fynAy"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-tip="KRE Discord"
-    {...props}
-  >
-    {props.children}
-  </a>
+  const kreLinkTemplate = (props) => (
+    <a
+      href="https://discord.gg/Y6fynAy"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-tip="KRE Discord"
+      {...props}
+    >
+      {props.children}
+    </a>
+  );
   const KreLink = styled(kreLinkTemplate)`
     color: darkgrey;
     float: left;
@@ -314,24 +316,20 @@ export const Home = () => {
             </a>
           </CommunityLinks>
         </CommunityLinksWrapper>
-        <KreWrapper>
-          <KreLink
-          >
-            <KreIcon
-              src={`/assets/icons/KRE_icon.png`}
-              alt="KRE Discord"
-            />
+        <div>
+          <KreLink>
+            <KreIcon src={`/assets/icons/KRE_icon.png`} alt="KRE Discord" />
           </KreLink>
           <p>
             Looking for guides or wanna help writing them? Head over to the
-            <KreLink > King's Raid Encyclopedia </KreLink> discord server. There
+            <KreLink> King's Raid Encyclopedia </KreLink> discord server. There
             are currently only guides on select characters and content. More
             will be added in the future. If you are knowledgeable about the game
             or have strong writing skills, please consider visiting the server
             to help contribute towards a more comprehensive collection of King's
             Raid information.
           </p>
-        </KreWrapper>
+        </div>
         <hr />
         <PlugGamePosts />
         <ReactTooltip border={true} />

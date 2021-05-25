@@ -86,7 +86,6 @@ module.exports = smp.wrap({
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
-    new HashedModuleIdsPlugin(),
     new MiniCssExtractPlugin(),
     new CompressionPlugin({
       filename: "[path].gz",

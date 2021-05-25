@@ -1,10 +1,8 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 const path = require("path");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
-const { HashedModuleIdsPlugin } = require("webpack");
-const WebpackMonitor = require("webpack-monitor");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = (env) => {
   return merge(common, {
@@ -39,18 +37,7 @@ const environmentPicker = (env) => {
   // Is env defined ?
   if (env) {
     if (env.analyze) {
-      return [
-        new BundleAnalyzerPlugin(),
-        new HashedModuleIdsPlugin(),
-        new WebpackMonitor({
-          capture: true,
-          target: "./monitor/stats.json",
-          launch: true,
-          port: 3031,
-        }),
-      ];
+      return [new BundleAnalyzerPlugin()];
     }
-  } else {
-    return [new HashedModuleIdsPlugin()];
   }
 };
