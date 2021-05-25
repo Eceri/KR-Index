@@ -1,8 +1,8 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { HashedModuleIdsPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const threadLoader = require("thread-loader");
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
@@ -11,11 +11,20 @@ const smp = new SpeedMeasurePlugin();
 
 // custom config
 const { webpackPaths } = require("./settings");
-threadLoader.warmup(["babel-loader"]);
+threadLoader.warmup([
+  "babel-loader",
+  "file-loader",
+  "cache-loader",
+  "css-loader",
+  "babel-loader",
+]);
 
 module.exports = smp.wrap({
   entry: {
     app: "./src/index.js",
+    Home: path.resolve(__dirname, "src/home.js"),
+    Heroes: path.resolve(__dirname, "src/Components/Hero/Heroes.js"),
+    Artifacts: path.resolve(__dirname, "src/Components/Artifacts/Artifacts.js"),
   },
   output: {
     path: path.resolve(__dirname, "build"),
@@ -40,15 +49,7 @@ module.exports = smp.wrap({
       },
       {
         test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|bmp|avif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              esModule: false,
-              publicPath: "/",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
       {
         test: /\.css$/i,
@@ -88,6 +89,7 @@ module.exports = smp.wrap({
         },
       },
     },
+    minimizer: [new CssMinimizerPlugin({ exclude: /(node_modules)/ })],
   },
   plugins: [
     new CleanWebpackPlugin(),
