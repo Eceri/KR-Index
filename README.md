@@ -21,6 +21,8 @@
     <a href="https://github.com/Eceri/KR-Index/issues">Report Bug</a>
     ·
     <a href="https://github.com/Eceri/KR-Index/issues">Request Feature</a>
+    ·
+    <a href="https://discord.gg/gjutgW9en2">Discord</a>
   </p>
 </p>
 
