@@ -3,7 +3,15 @@ import { Switch, Route } from "react-router-dom";
 
 // Relative imports
 import { Notfound } from "./Notfound";
-import { Artifacts, Hero, Heroes, Guides, StatCaps, Gears } from "Components";
+import {
+  Artifacts,
+  Hero,
+  Heroes,
+  Guides,
+  StatCaps,
+  Gears,
+  Runes,
+} from "Components";
 import { Home } from "./home";
 import { PerksContainer } from "Containers";
 
@@ -16,6 +24,7 @@ export const Routes = () => (
     <Route path="/artifacts" component={Artifacts} />
     <Route path="/caps" component={StatCaps} />
     <Route exact path="/guides" component={Guides} />
+    <Route exact path="/runes" component={Runes} />
     {/* TODO: Make gears work */}
     {/* <Route path="/gear" component={Gears} /> */}
     <Route path="/404" component={Notfound} />

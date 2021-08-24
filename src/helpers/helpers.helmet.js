@@ -10,7 +10,7 @@ import Helmet from "react-helmet";
 export const createHelmet = (
   title = "King's Raid Index|Database",
   content = "News, Heroes, Artifacts and everything you need to know about King's Raid on one Page",
-  image = "/assets/icons/favicon.png"
+  image = "/assets/icons/favicon.ico"
 ) => (
   <Helmet>
     <title>{title}</title>

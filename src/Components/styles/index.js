@@ -34,3 +34,5 @@ export {
   SmallTab,
   LoadMoreButton,
 } from "./styles.news";
+
+export { RuneContainer, RunesPage } from "./styles.rune";

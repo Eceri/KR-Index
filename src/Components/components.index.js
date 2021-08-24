@@ -6,6 +6,7 @@ export { Footer } from "./Footer";
 export { StatCaps } from "./StatCaps";
 export { Guides } from "./Guides/Guides";
 export { Gears } from "./gears.js";
+export { Runes } from "./Runes/Runes";
 //Heroes
 export { Heroes } from "./Hero/Heroes";
 export { Hero } from "./Hero/Hero";
