@@ -24,8 +24,6 @@ import styled from "styled-components";
 
 // Frontend Variable
 const plugTypes = ["Notices", "Patches", "Content", "Events", "Shop"];
-const GM_NOTE =
-  "https://g-plug.pstatic.net/20200915_97/16001363921830R2Dl_PNG/S_GMNote_EN_NoSub.png?type=lfa686_320";
 
 // Helper functions
 const resizeTitle = (title) => {
@@ -77,7 +75,6 @@ const PlugGamePosts = () => {
       const operation = showArchive ? typePlugsByOrder : allTempNewsByOrder;
       AWSoperation(operation, params).then(({ items, nextToken }) => {
         const active = activeNews.length > 2 ? activeNews.concat(items) : items;
-        console.log(active);
         setActiveNews(active);
         setNext(nextToken);
         if (nextToken === null) {
@@ -172,7 +169,7 @@ const PlugGamePosts = () => {
         <h2 style={{ marginBottom: "1.5rem" }}>
           {showArchive ? "Archive" : "News"}
         </h2>
-        <Button
+        {/* <Button
           disabled={debouncedToggle !== showArchive}
           style={{ height: "2rem", width: "3.5rem" }}
           onClick={() => {
@@ -181,7 +178,7 @@ const PlugGamePosts = () => {
           }}
         >
           {showArchive ? "News" : "Archive"}
-        </Button>
+        </Button> */}
       </div>
       {showArchive ? (
         renderArchive()

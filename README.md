@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Eceri/KR-Index">
-    <img src="https://krindex.net/assets/icons/favicon.png" alt="Logo" width="80" height="80">
+    <img src="https://krindex.net/assets/icons/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">King's Raid Index</h3>
@@ -36,7 +36,7 @@
 ## Getting started
 
 1. `npm ci`
-2. `npm start`
+2. `npm run start`
 
 ---
 
