@@ -2,7 +2,7 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "crit": "110"
     },
     "imagePath": "384_128_64x64.png"
@@ -10,7 +10,7 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "penetration": "110"
     },
     "imagePath": "960_704_64x64.png"
@@ -18,7 +18,7 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "critDmg": "22%"
     },
     "imagePath": "960_768_64x64.png"
@@ -26,15 +26,15 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
-      "acc": "110"
+      "ATK": "11%",
+      "Acc": "110"
     },
     "imagePath": "704_128_64x64.png"
   },
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "tough": "55"
     },
     "imagePath": "832_832_64x64.png"
@@ -42,15 +42,15 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atk": "11%",
-      "def": "11%"
+      "ATK": "11%",
+      "DEF": "11%"
     },
     "imagePath": "768_128_64x64.png"
   },
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "dodge": "55"
     },
     "imagePath": "320_0_64x64.png"
@@ -58,7 +58,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "block": "55"
     },
     "imagePath": "960_576_64x64.png"
@@ -66,15 +66,15 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
-      "mpRecoveryAttack": "220"
+      "ATK": "11%",
+      "MP/Attack": "220"
     },
     "imagePath": "832_128_64x64.png"
   },
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
+      "ATK": "11%",
       "maxHp": "11%"
     },
     "imagePath": "960_448_64x64.png"
@@ -99,7 +99,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "penetration": "110",
-      "acc": "110"
+      "Acc": "110"
     },
     "imagePath": "960_256_64x64.png"
   },
@@ -114,7 +114,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "penetration": "110"
     },
     "imagePath": "0_192_64x64.png"
@@ -139,7 +139,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "penetration": "110",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "64_192_64x64.png"
   },
@@ -163,7 +163,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "crit": "110",
-      "acc": "110"
+      "Acc": "110"
     },
     "imagePath": "832_960_64x64.png"
   },
@@ -179,7 +179,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "crit": "110",
-      "def": "11%"
+      "DEF": "11%"
     },
     "imagePath": "768_832_64x64.png"
   },
@@ -203,7 +203,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "crit": "110",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "576_128_64x64.png"
   },
@@ -219,7 +219,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "critDmg": "22%",
-      "acc": "110"
+      "Acc": "110"
     },
     "imagePath": "832_0_64x64.png"
   },
@@ -235,7 +235,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "critDmg": "22%",
-      "def": "11%"
+      "DEF": "11%"
     },
     "imagePath": "384_0_64x64.png"
   },
@@ -259,7 +259,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "critDmg": "22%",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "576_256_64x64.png"
   },
@@ -274,7 +274,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "acc": "110",
+      "Acc": "110",
       "tough": "55"
     },
     "imagePath": "832_448_64x64.png"
@@ -282,15 +282,15 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "acc": "110",
-      "def": "11%"
+      "Acc": "110",
+      "DEF": "11%"
     },
     "imagePath": "832_384_64x64.png"
   },
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "acc": "110",
+      "Acc": "110",
       "dodge": "55"
     },
     "imagePath": "704_192_64x64.png"
@@ -298,7 +298,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "acc": "110",
+      "Acc": "110",
       "block": "55"
     },
     "imagePath": "640_192_64x64.png"
@@ -306,15 +306,15 @@
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "acc": "110",
-      "mpRecoveryAttack": "220"
+      "Acc": "110",
+      "MP/Attack": "220"
     },
     "imagePath": "832_768_64x64.png"
   },
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "acc": "110",
+      "Acc": "110",
       "maxHp": "11%"
     },
     "imagePath": "832_192_64x64.png"
@@ -322,7 +322,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "tough": "55"
     },
     "imagePath": "832_576_64x64.png"
@@ -346,7 +346,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "mpRecoveryAttack": "220",
+      "MP/Attack": "220",
       "tough": "55"
     },
     "imagePath": "256_128_64x64.png"
@@ -362,7 +362,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "dodge": "55"
     },
     "imagePath": "320_128_64x64.png"
@@ -370,7 +370,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "block": "55"
     },
     "imagePath": "896_0_64x64.png"
@@ -378,15 +378,15 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
-      "mpRecoveryAttack": "220"
+      "DEF": "11%",
+      "MP/Attack": "220"
     },
     "imagePath": "512_256_64x64.png"
   },
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "maxHp": "11%"
     },
     "imagePath": "896_448_64x64.png"
@@ -403,7 +403,7 @@
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
       "dodge": "55",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "768_448_64x64.png"
   },
@@ -419,7 +419,7 @@
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
       "block": "55",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "192_256_64x64.png"
   },
@@ -435,15 +435,15 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "maxHp": "11%",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "960_512_64x64.png"
   },
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "atk": "11%",
-      "atkSpeed": "110"
+      "ATK": "11%",
+      "ATK Spd": "110"
     },
     "imagePath": "960_640_64x64.png"
   },
@@ -451,7 +451,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "critDmg": "22%",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "768_704_64x64.png"
   },
@@ -459,7 +459,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "crit": "110",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "256_256_64x64.png"
   },
@@ -467,15 +467,15 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "maxHp": "11%",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "768_0_64x64.png"
   },
   {
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
-      "mpRecoveryAttack": "220",
-      "atkSpeed": "110"
+      "MP/Attack": "220",
+      "ATK Spd": "110"
     },
     "imagePath": "640_128_64x64.png"
   },
@@ -483,7 +483,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "block": "55",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "448_192_64x64.png"
   },
@@ -491,7 +491,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "tough": "55",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "192_192_64x64.png"
   },
@@ -499,7 +499,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "recovery": "11%",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "640_0_64x64.png"
   },
@@ -507,7 +507,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "lifeSteal": "110",
-      "atk": "11%"
+      "ATK": "11%"
     },
     "imagePath": "704_0_64x64.png"
   },
@@ -523,7 +523,7 @@
     "displayName": "Rune of Fear: Velkazar",
     "stats": {
       "lifeSteal": "110",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "192_0_64x64.png"
   },
@@ -554,7 +554,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "mpRecoveryAttack": "220",
+      "MP/Attack": "220",
       "debuffAcc": "110"
     },
     "imagePath": "0_0_64x64.png"
@@ -562,7 +562,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "acc": "110",
+      "Acc": "110",
       "debuffAcc": "110"
     },
     "imagePath": "832_320_64x64.png"
@@ -578,7 +578,7 @@
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atkSpeed": "110",
+      "ATK Spd": "110",
       "debuffAcc": "110"
     },
     "imagePath": "448_256_64x64.png"
@@ -587,7 +587,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "ccResist": "110",
-      "mpRecoveryAttack": "220"
+      "MP/Attack": "220"
     },
     "imagePath": "960_128_64x64.png"
   },
@@ -619,23 +619,23 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "ccResist": "110",
-      "atkSpeed": "110"
+      "ATK Spd": "110"
     },
     "imagePath": "576_0_64x64.png"
   },
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atk": "11%",
-      "mpRecoverySecond": "33%"
+      "ATK": "11%",
+      "MP/Second": "33%"
     },
     "imagePath": "896_256_64x64.png"
   },
   {
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
-      "atkSpeed": "110",
-      "mpRecoverySecond": "33%"
+      "ATK Spd": "110",
+      "MP/Second": "33%"
     },
     "imagePath": "960_832_64x64.png"
   },
@@ -643,7 +643,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "critDmg": "22%",
-      "mpRecoverySecond": "33%"
+      "MP/Second": "33%"
     },
     "imagePath": "960_64_64x64.png"
   },
@@ -651,7 +651,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "ccResist": "110",
-      "mpRecoverySecond": "33%"
+      "MP/Second": "33%"
     },
     "imagePath": "320_192_64x64.png"
   },
@@ -659,7 +659,7 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "tough": "55",
-      "mpRecoverySecond": "33%"
+      "MP/Second": "33%"
     },
     "imagePath": "832_640_64x64.png"
   },
@@ -667,14 +667,14 @@
     "displayName": "Rune of Disaster: Velkazar",
     "stats": {
       "debuffAcc": "110",
-      "mpRecoverySecond": "33%"
+      "MP/Second": "33%"
     },
     "imagePath": "64_0_64x64.png"
   },
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "pDeff": "22%",
+      "P.DEFF": "22%",
       "maxHp": "11%"
     },
     "imagePath": "768_192_64x64.png"
@@ -682,7 +682,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "pDeff": "22%",
+      "P.DEFF": "22%",
       "tough": "55"
     },
     "imagePath": "576_192_64x64.png"
@@ -690,7 +690,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "mDeff": "22%",
+      "M.DEFF": "22%",
       "maxHp": "11%"
     },
     "imagePath": "64_128_64x64.png"
@@ -698,7 +698,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "mDeff": "22%",
+      "M.DEFF": "22%",
       "tough": "55"
     },
     "imagePath": "832_256_64x64.png"
@@ -714,7 +714,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "recovery": "11%"
     },
     "imagePath": "0_128_64x64.png"
@@ -746,7 +746,7 @@
   {
     "displayName": "Rune of Immortality: Velkazar",
     "stats": {
-      "def": "11%",
+      "DEF": "11%",
       "critResistance": "55"
     },
     "imagePath": "896_384_64x64.png"

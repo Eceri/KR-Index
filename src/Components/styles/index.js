@@ -35,4 +35,9 @@ export {
   LoadMoreButton,
 } from "./styles.news";
 
-export { RuneContainer, RunesPage } from "./styles.rune";
+export {
+  RuneContainer,
+  RunesPage,
+  RunesPageContainer,
+  StatFilter,
+} from "./styles.rune";

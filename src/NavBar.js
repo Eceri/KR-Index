@@ -73,6 +73,13 @@ const Dropdown = (show, setShow, direction) => {
         >
           Perks
         </DropdownLink>
+        <DropdownLink
+          to={`/runes`}
+          className={"navLink"}
+          onClick={() => handleClick()}
+        >
+          Velk Runes
+        </DropdownLink>
         {/* TODO: Make gears work */}
         {/* <DropdownLink 
           to={`/gear`}

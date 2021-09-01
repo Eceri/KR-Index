@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useDrag } from "react-use-gesture";
 
 import { Button, Rune } from "Atoms";
-import { RunesPage } from "Styles";
+import { RunesPage, RunesPageContainer, StatFilter } from "Styles";
+import { useWindowDimensions } from "Helpers";
 import velkazarRunes from "./velkazarRunes.json";
 
 const velk = velkazarRunes.sort((a, b) => {
@@ -11,9 +13,27 @@ const velk = velkazarRunes.sort((a, b) => {
 });
 
 export const Runes = () => {
+  // Mobile Check
+  const { isMobile } = useWindowDimensions();
+  // const [mobile, setMobile] = useState(isMobile);
+
   const [runes, setRunes] = useState(velk);
   const [filteredRunes, setFilteredRunes] = useState(velk);
   const [query, setQuery] = useState({});
+  const [showStats, setShowStats] = useState(false);
+
+  const bindSwipe = useDrag(({ vxvy: [vx], last }) => {
+    if (!isMobile) {
+      return null;
+    }
+    if (last && vx < 0.3) {
+      // Swipe Left
+      setShowStats(false);
+    } else if (last && vx > 0.3) {
+      // Swipe Right
+      setShowStats(true);
+    }
+  });
 
   let testArr = [];
   velk.forEach(({ stats }) => {
@@ -40,8 +60,8 @@ export const Runes = () => {
   }, [query]);
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <div style={{ width: "10rem" }}>
+    <RunesPageContainer {...bindSwipe()}>
+      <StatFilter showStats={showStats}>
         <Button onClick={() => setQuery({})}>Clear</Button>
         {testArr.map((t) => (
           <div key={t}>
@@ -64,10 +84,8 @@ export const Runes = () => {
             </label>
           </div>
         ))}
-      </div>
-      <RunesPage>
-        {filteredRunes.slice(0, 7).map((rune) => Rune(rune))}
-      </RunesPage>
-    </div>
+      </StatFilter>
+      <RunesPage>{filteredRunes.map((rune) => Rune(rune))}</RunesPage>
+    </RunesPageContainer>
   );
 };
