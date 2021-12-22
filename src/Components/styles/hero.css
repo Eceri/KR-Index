@@ -2,20 +2,6 @@
   padding-top: 1rem;
   margin: 1rem 0;
 }
-#portrait{
-  height: 100px;
-  width: auto;
-}
-#heroClassIcon{
-  width: 25px;
-  margin-right: .5rem;
-  border: none;
-}
-#damageType{
-  height: 25px;
-  vertical-align: top;
-  margin-right: 10px;
-}
 .description{
   margin: .5rem 0 1rem 0;
 }

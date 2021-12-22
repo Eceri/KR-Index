@@ -91,10 +91,6 @@ const animation = (props) => css`
 `;
 
 export const News = styled.div`
-  padding: 1rem;
-  @media only screen and (max-width: 650px) {
-    padding: 0;
-  }
   .active_TabPanel {
     animation: ${animation};
   }

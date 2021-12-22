@@ -44,8 +44,9 @@ const Page = () => {
           <NavBar key={"components.js"} setError={setError} />
           <Routes />
         </BrowserRouter>
-      </div>
+      <hr />
       <Footer />
+      </div>
     </>
   );
 };

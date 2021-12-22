@@ -159,7 +159,7 @@ export const StatCaps = () => {
     B4: 0,
   };
   const pen = {
-    name: "Penetration",
+    name: "Penetration, Tough",
     MaxK: 900,
     X1: 1000,
     A1: 2,

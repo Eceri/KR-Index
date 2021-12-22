@@ -68,12 +68,12 @@ const PlugGamePosts = () => {
     if (fetch) {
       const params = showArchive
         ? {
-            type: DB_PLUG_TYPES[tabIndex],
-            nextToken: next,
-          }
+          type: DB_PLUG_TYPES[tabIndex],
+          nextToken: next,
+        }
         : {
-            nextToken: next,
-          };
+          nextToken: next,
+        };
       const operation = showArchive ? typePlugsByOrder : allTempNewsByOrder;
       AWSoperation(operation, params).then(({ items, nextToken }) => {
         const active = activeNews.length > 2 ? activeNews.concat(items) : items;
@@ -223,123 +223,119 @@ const PlugGamePosts = () => {
 
 // Main
 export const Home = () => {
-  const CommunityLinksWrapper = styled.div`
-    align-items: center;
-    text-align: center;
+  const ContentContainer = styled.div`
+    h2,
+    h1 {
+      text-align: center;
+      margin: .5rem 0;
+    }
   `;
-  const CommunityLinks = styled.div`
-    display: flex;
-    flex: 100%;
-    justify-content: center;
-  `;
-  const div = styled.div`
-    display: flex;
-  `;
-  const KreIcon = styled.img`
-    border-radius: 15px;
-    width: auto;
-    float: left;
-    margin-right: 1rem
-    height: 100%;
-    max-height: 6rem
+  //nth-child-selector will have to be adjusted if # of links changes.
+  const LinkContainer = styled.div`
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media (max-width: 25.5em) {
+      a:nth-last-child(-n+2) {
+        grid-column: span 2;
+      }
+    }
+
   `;
 
+  const circleIconClassName = `img-border-radius-circle`;
   //create template Link to be used as base for styled component.
-  const kreLinkTemplate = (props) => (
-    <a
-      href="https://discord.gg/Y6fynAy"
+  const communityLinkTemplate = (props) => {
+    return <a
+      className={props.className}
+      href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-      data-tip="KRE Discord"
-      {...props}
+      data-tip={props.dataTip}
     >
+      <img
+        src={`${props.icon}`}
+        className={props.circleIcon && circleIconClassName}
+      />
       {props.children}
     </a>
-  );
-  const KreLink = styled(kreLinkTemplate)`
-    color: darkgrey;
+  };
+  const CommunityLink = styled(communityLinkTemplate)`
+    background-color: #262626 ;
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    gap: .5rem;
+    padding: .5rem;
+    align-items: center;
+    border-radius: .25rem;
+    
+    img {
+      height: 3rem;
+      width: auto;
+      border: none;
+    }
+    .${circleIconClassName} {
+      border-radius: 50%;
+    }
+    p {
+      padding: 0 .5rem;
+    }
   `;
   return (
     <>
       {createHelmet("King's Raid Index", "King's Raid Index News")}
-      <div>
-        <h1>Welcome to the King's Raid Index</h1>
-        <div id="welcome">
-          <div>
-            <p>This page is a Database for the mobile game King's Raid.</p>
-            <p style={{ height: "6rem", width: "100%" }}>
-              King's Raid (Korean: 킹스레이드) is a free-to-play side-scrolling
-              RPG mobile game developed by South Korean game developer Vespa. It
-              was first released on September 19, 2016 for operating systems
-              Android and iOS in Thailand. The global version consists of 3
-              servers, which were opened on February 16, 2017.
-            </p>
-          </div>
-        </div>
-        <hr />
-        <CommunityLinksWrapper>
-          <h2>Community Links</h2>
-          <CommunityLinks>
-            <a
-              href="https://www.reddit.com/r/Kings_Raid/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`/assets/icons/reddit_share_circle_48.png`}
-                alt="snoo"
-                data-tip="reddit"
-                widht="24"
-                height="24"
-              />
-            </a>
-            <a
-              href="https://discord.gg/8gzBRQJ9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`/assets/icons/Discord-Logo-White.png`}
-                alt="discord"
-                data-tip="Community Discord"
-              />
-            </a>
-            <a
-              href="https://kr-official.community/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="linkLogo"
-                src={`/assets/icons/kr_official_icon.png`}
-                alt="official community"
-                data-tip="Official Community"
-                width="32px"
-                height="32px"
-              />
-            </a>
-          </CommunityLinks>
-        </CommunityLinksWrapper>
+      <ContentContainer>
+        <h1>Welcome to the KRI</h1>
         <div>
-          <KreLink>
-            <KreIcon src={`/assets/icons/KRE_icon.png`} alt="KRE Discord" />
-          </KreLink>
-          <p style={{ height: "7rem", width: "100%" }}>
-            Looking for guides or wanna help writing them? Head over to the
-            <KreLink> King's Raid Encyclopedia </KreLink> discord server. There
-            are currently only guides on select characters and content. More
-            will be added in the future. If you are knowledgeable about the game
-            or have strong writing skills, please consider visiting the server
-            to help contribute towards a more comprehensive collection of King's
-            Raid information.
+          <p>This page is a Database for the mobile game King's Raid.</p>
+          <p style={{ paddingTop: ".5rem" }}>
+            King's Raid (Korean: 킹스레이드) is a free-to-play side-scrolling
+            RPG mobile game developed by South Korean game developer Vespa. It
+            was first released on September 19, 2016 for operating systems
+            Android and iOS in Thailand. The global version consists of 3
+            servers, which were opened on February 16, 2017.
           </p>
         </div>
         <hr />
+        <h2>Community Links</h2>
+        <LinkContainer>
+          <CommunityLink
+            circleIcon
+            icon={"/assets/icons/kr_official_icon.png"}
+            dataTip={"Official Website"}
+            href={"https://kr-official.community/"}
+          >
+            Official Website
+          </CommunityLink>
+          <CommunityLink
+            icon={"/assets/icons/Discord-Logo-White.png"}
+            dataTip={"Official Discord Server"}
+            href={"https://discord.gg/FgzqsYzU4A"}
+          >
+            Official Discord
+          </CommunityLink>
+          <CommunityLink
+            icon={"/assets/icons/reddit_share_circle_48.png"}
+            dataTip={"Community sub"}
+            href={"https://www.reddit.com/r/Kings_Raid/"}
+          >
+            Reddit Community
+          </CommunityLink>
+          <CommunityLink
+            circleIcon
+            icon={"/assets/icons/KRE_icon.png"}
+            dataTip={"Community discord for Guides, Discussions, and everything"}
+            href={"https://discord.gg/kre"}
+          >
+            KRE Community Discord Server
+          </CommunityLink>
+        </LinkContainer>
+        <hr />
         <PlugGamePosts />
         <ReactTooltip border={true} />
-      </div>
+      </ContentContainer>
     </>
   );
 };
