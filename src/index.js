@@ -1,6 +1,7 @@
 import React, { useGlobal, setGlobal } from "reactn";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import styled from "styled-components";
 
 // Relative Imports
 import NavBar from "./NavBar";
@@ -36,6 +37,8 @@ const Page = () => {
 
   window.localStorage.clear();
 
+  //styled-components
+
   return (
     <>
       <div id="pageContainer">
@@ -45,8 +48,8 @@ const Page = () => {
           <Routes />
         </BrowserRouter>
       <hr />
-      <Footer />
       </div>
+      <Footer />
     </>
   );
 };
