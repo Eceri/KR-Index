@@ -36,9 +36,9 @@ export const HeroHeader = (props) => {
   }, [heroName, headInfos]);
 
   let perkLink = true;
-  if(props.perkLink == false){
+  if (props.perkLink == false) {
     perkLink = false;
-  } 
+  }
 
   //styled-components
   const HeroHeaderContainer = styled.div`
@@ -68,7 +68,7 @@ export const HeroHeader = (props) => {
     height: 2rem;
     width: auto;
   `;
-  const HeroPerkLinkDiv = styled.div`
+  const HeroPerkLink = styled.a`
     box-sizing: border-box;
 
     display: flex;
@@ -121,15 +121,11 @@ export const HeroHeader = (props) => {
           data-tip={damageType}
         />
         <p>{position}</p>
-      </HeroDetailsDiv>
-      {perkLink && <HeroPerkLinkDiv>
-        <a href={`/perks/${name}`} >
-          Perks Viewer 
-        </a>
-          <img 
-            src="/assets/icons/white_eye_icon.png"
-          />
-      </HeroPerkLinkDiv>}
+      </HeroDetailsDiv >
+      {perkLink && <HeroPerkLink href={`/perks/${name}`}>
+        Perks Viewer
+        <img src="/assets/icons/white_eye_icon.png" />
+      </HeroPerkLink>}
       <ReactTooltip />
     </HeroHeaderContainer>
   );
