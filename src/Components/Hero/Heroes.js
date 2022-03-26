@@ -1,15 +1,14 @@
 import React, { useEffect, useGlobal, useState } from "reactn";
-import Helmet from "react-helmet";
 import ReactToolTip from "react-tooltip";
-import { NavLink } from "react-router-dom";
+import { NavLink, NavLink as StyledNavLink } from "react-router-dom";
 
 import "../styles/heroes.css";
-import heroClasses from "./../../Assets/classes/classes.json";
 
 //AWS
 import { AWSoperation, listHeroesWithClass } from "Aws";
 import { Spinner } from "Styles";
 import { createHelmet, groupElementsBy } from "Helpers";
+import styled from "styled-components";
 
 export const Heroes = () => {
   //States
@@ -27,6 +26,35 @@ export const Heroes = () => {
     "Wizard",
     "Priest",
   ];
+
+  //styledComponents
+  const HeroClassContainer = styled.div`
+    display: grid;
+    grid-gap: 1rem .5rem;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    justify-content: center;
+    text-align: center;
+  `;
+  const HeroPortrait = styled.img`
+    width: auto;
+  `;
+  const StyledNavLink = styled(NavLink)`
+    display: flex;
+    flex-direction: column;
+  `;
+  const ClassIcon = styled.img`
+    border: none;
+    height: 1.5rem;
+    width: auto;
+    float: left;
+    `;
+  const ClassHeadlineContainer = styled.div`
+    margin: .5rem 0;
+    gap: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  `;
 
   useEffect(() => {
     let fetchData = async () => {
@@ -59,28 +87,31 @@ export const Heroes = () => {
         let heroClass = classOrder[index];
         return (
           <div key={index}>
-            <h2 className={"classHeadline"}>
-              <img
+            <ClassHeadlineContainer>
+              <ClassIcon
                 src={`/assets/classes/${heroClass.toLowerCase()}.png`}
                 className="classIcon"
               />
-              {heroClass}s
-            </h2>
-            <div className="heroesContainer">
+              <h2>
+                {`${heroClass}s`}
+              </h2>
+            </ClassHeadlineContainer>
+            <HeroClassContainer>
               {heroes.map(({ name: hero }) => (
-                <NavLink
+                <StyledNavLink
                   to={`/heroes/${hero}`}
                   key={hero}
                   onClick={() => setGlobalHeroName(hero)}
                 >
-                  <img
+                  <HeroPortrait
                     src={`/assets/heroes/${hero.toLowerCase()}/portrait.png`}
                     data-tip={hero}
                     className="heroIcon"
                   />
-                </NavLink>
+                  {hero}
+                </StyledNavLink>
               ))}
-            </div>
+            </HeroClassContainer>
           </div>
         );
       })}

@@ -1,8 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
 export const Footer = () => {
+  const StyledFooter = styled.footer`
+    display: flex;
+    flex-direction: row;
+    flex: 1fr;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+  `;
   return (
-    <footer id={"footer"}>
+    <StyledFooter>
       <a
         href="https://github.com/Eceri/KR-Index"
         target="_blank"
@@ -29,6 +38,6 @@ export const Footer = () => {
           height="36px"
         />
       </a>
-    </footer>
+    </StyledFooter>
   );
 };

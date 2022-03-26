@@ -157,6 +157,7 @@ export const PerksContainer = () => {
                   className="heroIcon"
                   data-tip
                   data-for={hero.name}
+                  style={{height:"6rem"}}
                 />
                 <ReactTooltip
                   globalEventOff="touchstart"

@@ -27,10 +27,13 @@
 #caps td{
   margin: 0 20px;
   min-width: 60px;
-  width: 33%;
   padding: 4px 10px;
   align-items: center;
   text-align: center;
+}
+#caps td {
+  border-top: #262626 1px solid;
+  border-collapse: collapse;
 }
 #caps tr:hover{
   background-color: #262626;

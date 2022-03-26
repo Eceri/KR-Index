@@ -2,9 +2,9 @@ import React, { useEffect, useState, useGlobal, getGlobal } from "reactn";
 import ReactTooltip from "react-tooltip";
 
 import { AWSoperation, getHeroHeadInfo } from "Aws";
-import { CustomError } from "Helpers";
+import styled from "styled-components";
 
-export const HeroHeader = () => {
+export const HeroHeader = (props) => {
   //states
   const [isLoading, setIsLoading] = useState(true);
   //globals
@@ -35,35 +35,98 @@ export const HeroHeader = () => {
     }
   }, [heroName, headInfos]);
 
+  let perkLink = true;
+  if (props.perkLink == false) {
+    perkLink = false;
+  }
+
+  //styled-components
+  const HeroHeaderContainer = styled.div`
+    display: grid;
+    grid-gap: 0 .5rem;
+    grid-auto-columns: min-content auto;
+    align-items: center;
+    .col-start-2 {
+      grid-column-start: 2;
+    }
+
+    @media (max-width: 30em) {
+    }
+  `;
+  const HeroDetailsDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+  `;
+  const HeroPortrait = styled.img`
+    height: 7rem; 
+    width: auto;
+    grid-row: span 3;
+  `;
+  const HeroClassAndTypeIcon = styled.img`
+    height: 2rem;
+    width: auto;
+  `;
+  const HeroPerkLink = styled.a`
+    box-sizing: border-box;
+
+    display: flex;
+    gap: .5rem;
+
+    border: 1px solid #262626;
+    background-color: #262626;
+    padding:.5rem;
+    text-align: center
+    border-radius: .25rem;
+    grid-column-start: 3;
+    grid-row: 1 / 3;
+
+    min-width: 8rem;
+    height: auto;
+    @media (max-width: 30em) {
+      grid-row: 4 / 5;
+      grid-column-start: 2;
+      justify-self: end;
+      margin-top: 1rem;
+    }
+    :hover {
+      border: 1px solid white;
+    }
+    img {
+      border: none;
+      width: 1.5rem;
+    }
+  `;
+
   return isLoading ? (
     <></>
   ) : (
-    <div className="flexBox">
-      <img
+    <HeroHeaderContainer>
+      <HeroPortrait
         src={`/assets/heroes/${heroName.toLowerCase()}/portrait.png`}
-        id={"portrait"}
       />
-      <div>
-        <h1>{name}</h1>
-        <h2>{title}</h2>
-        <div id="heroType" className="flexBox">
-          <img
-            src={`/assets/classes/${heroClass.toLowerCase()}.png`}
-            id={"heroClassIcon"}
-            style={{ border: "none" }}
-            data-tip={heroClass}
-          />
-          <img
-            src={`/assets/${damageType}.png`}
-            id={"damageType"}
-            alt={"dmg type"}
-            style={{ border: "none" }}
-            data-tip={damageType}
-          />
-          <p>{position}</p>
-        </div>
-      </div>
+      <h1 className="col-start-2">{name}</h1>
+      <h2 className="col-start-2">{title}</h2>
+      <HeroDetailsDiv className="col-start-2">
+        <HeroClassAndTypeIcon
+          src={`/assets/classes/${heroClass.toLowerCase()}.png`}
+          style={{ border: "none" }}
+          data-tip={heroClass}
+        />
+        <HeroClassAndTypeIcon
+          src={`/assets/${damageType}.png`}
+          alt={"dmg type"}
+          style={{ border: "none" }}
+          data-tip={damageType}
+        />
+        <p>{position}</p>
+      </HeroDetailsDiv >
+      {perkLink && <HeroPerkLink href={`/perks/${name}`}>
+        Perks Viewer
+        <img src="/assets/icons/white_eye_icon.png" />
+      </HeroPerkLink>}
       <ReactTooltip />
-    </div>
+    </HeroHeaderContainer>
   );
 };
