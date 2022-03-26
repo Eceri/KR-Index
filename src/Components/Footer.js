@@ -17,7 +17,7 @@ export const Footer = () => {
         />
       </a>
       <a
-        href="https://discord.gg/8gzBRQJ9"
+        href="https://discord.gg/BympyXMBaB"
         target="_blank"
         rel="noopener noreferrer"
         style={{ alignItems: "center" }}
